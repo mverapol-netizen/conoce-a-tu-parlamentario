@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conoce a tu parlamentario: ingresa tu comuna, descubre tu distrito y elige a una diputada o diputado para conocer su trabajo parlamentario.">
+  <meta name="theme-color" content="#0f2f53">
+  <title>Conoce a tu parlamentario</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Conoce a tu parlamentario, inicio">
+        <span class="brand-mark" aria-hidden="true">CP</span>
+        <span>Conoce a tu parlamentario</span>
+      </a>
+      <span class="data-badge">Cámara 2026–2030</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Representación política, sin vueltas</p>
+          <h1>¿Quién te representa en el Congreso?</h1>
+          <p class="lead">Escribe tu comuna. Nosotros encontramos tu distrito y te mostramos las diputadas y diputados que lo representan.</p>
+
+          <form id="commune-form" class="search-card" novalidate>
+            <label for="commune-input">Tu comuna</label>
+            <div class="search-row">
+              <input
+                id="commune-input"
+                name="commune"
+                type="text"
+                list="communes-list"
+                autocomplete="off"
+                placeholder="Ej.: Maipú, Valdivia, Arica…"
+                aria-describedby="search-help"
+                required
+              >
+              <datalist id="communes-list"></datalist>
+              <button type="submit">Buscar</button>
+            </div>
+            <p id="search-help" class="help-text">Puedes escribir con o sin tildes.</p>
+            <div id="search-message" class="search-message" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="hero-aside" aria-label="Cómo funciona">
+          <div class="steps-card">
+            <p class="steps-title">En 3 pasos</p>
+            <ol>
+              <li><span>1</span><div><strong>Escribe tu comuna</strong><small>No necesitas saber tu distrito.</small></div></li>
+              <li><span>2</span><div><strong>Identificamos tu distrito</strong><small>Usamos la división electoral vigente.</small></div></li>
+              <li><span>3</span><div><strong>Elige a un representante</strong><small>La ficha parlamentaria será la siguiente capa del proyecto.</small></div></li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="results" class="results-section" hidden>
+      <div class="container">
+        <div id="district-summary" class="district-summary"></div>
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Tus representantes</p>
+            <h2>Elige una diputada o diputado</h2>
+          </div>
+          <p id="representative-count" class="count-pill"></p>
+        </div>
+
+        <div id="representatives-grid" class="representatives-grid"></div>
+
+        <div id="selection-panel" class="selection-panel" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Primera versión</p>
+          <h2>Una puerta de entrada a la labor parlamentaria</h2>
+        </div>
+        <p>Esta base resuelve el primer recorrido del proyecto: <strong>comuna → distrito → representantes → selección</strong>. A partir del parlamentario elegido podremos sumar votaciones, asistencia, mociones, comisiones, posiciones, trayectoria y otras capas de información pública.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Conoce a tu parlamentario</p>
+      <p>Base de datos actualizada: 1 de septiembre de 2026 · Fuentes: BCN, Cámara de Diputadas y Diputados y Servel.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
