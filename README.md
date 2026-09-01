@@ -4,10 +4,14 @@ Primera versión funcional de un proyecto cívico para conectar a una persona co
 
 ## Qué hace esta versión
 
-1. La persona escribe su **comuna**.
-2. El sitio identifica automáticamente su **distrito electoral**.
-3. Muestra las **diputadas y diputados del distrito**.
-4. Permite **elegir uno** para continuar, en futuras versiones, hacia una ficha parlamentaria detallada.
+1. La persona busca y selecciona su **región**.
+2. El sitio limita automáticamente el segundo filtro a las **comunas de esa región**.
+3. La persona busca y selecciona su **comuna**.
+4. El sitio identifica automáticamente su **distrito electoral**.
+5. Muestra las **diputadas y diputados del distrito**.
+6. Permite **elegir uno** para continuar, en futuras versiones, hacia una ficha parlamentaria detallada.
+
+Los filtros tienen autocompletado progresivo y toleran tildes, mayúsculas, minúsculas y varias formas habituales de nombrar las regiones. Las regiones se presentan según su numeración oficial.
 
 La aplicación funciona 100% en el navegador: no requiere servidor, base de datos, instalación ni claves API. Por eso puede publicarse directamente con **GitHub Pages**.
 
@@ -49,6 +53,7 @@ También puedes probar enlaces directos, por ejemplo:
 
 ```text
 index.html?comuna=Maipu
+index.html?region=Metropolitana
 ```
 
 ## Cómo subirlo a GitHub y publicarlo
