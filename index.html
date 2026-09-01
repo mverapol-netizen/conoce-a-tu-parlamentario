@@ -25,56 +25,37 @@
         <div class="hero-copy">
           <p class="eyebrow">Representación política, sin vueltas</p>
           <h1>¿Quién te representa en el Congreso?</h1>
-          <p class="lead">Selecciona primero tu región y luego tu comuna. Nosotros encontramos tu distrito y te mostramos las diputadas y diputados que lo representan.</p>
+          <p class="lead">Elige tu región y luego tu comuna. Nosotros encontramos tu distrito y te mostramos las diputadas y diputados que lo representan.</p>
 
           <form id="location-form" class="search-card" novalidate>
             <div class="filters-grid">
               <div class="filter-field">
-                <label for="region-input"><span class="field-number">1</span> Tu región</label>
-                <div class="combo-wrap">
-                  <input
-                    id="region-input"
-                    name="region"
-                    type="text"
-                    autocomplete="off"
-                    placeholder="Ej.: Metropolitana, Tarapacá…"
-                    role="combobox"
-                    aria-autocomplete="list"
-                    aria-expanded="false"
-                    aria-controls="region-options"
-                    aria-describedby="region-help"
-                    required
-                  >
-                  <div id="region-options" class="autocomplete-menu" role="listbox" hidden></div>
+                <p class="filter-label"><span class="field-number">1</span> Tu región</p>
+                <div class="selector-wrap">
+                  <button id="region-trigger" class="selector-trigger" type="button" aria-expanded="false" aria-controls="region-options">
+                    <span id="region-value" class="selector-value is-placeholder">Selecciona tu región</span>
+                    <span class="selector-chevron" aria-hidden="true">⌄</span>
+                  </button>
+                  <div id="region-options" class="selector-menu" role="listbox" hidden></div>
                 </div>
-                <p id="region-help" class="field-help">Escribe el nombre o selecciona una región.</p>
+                <p class="field-help">Las regiones aparecen en su orden tradicional.</p>
               </div>
 
               <div class="filter-field">
-                <label for="commune-input"><span class="field-number">2</span> Tu comuna</label>
-                <div class="combo-wrap">
-                  <input
-                    id="commune-input"
-                    name="commune"
-                    type="text"
-                    autocomplete="off"
-                    placeholder="Primero selecciona tu región"
-                    role="combobox"
-                    aria-autocomplete="list"
-                    aria-expanded="false"
-                    aria-controls="commune-options"
-                    aria-describedby="commune-help"
-                    disabled
-                    required
-                  >
-                  <div id="commune-options" class="autocomplete-menu" role="listbox" hidden></div>
+                <p class="filter-label"><span class="field-number">2</span> Tu comuna</p>
+                <div class="selector-wrap">
+                  <button id="commune-trigger" class="selector-trigger" type="button" aria-expanded="false" aria-controls="commune-options" disabled>
+                    <span id="commune-value" class="selector-value is-placeholder">Primero elige tu región</span>
+                    <span class="selector-chevron" aria-hidden="true">⌄</span>
+                  </button>
+                  <div id="commune-options" class="selector-menu commune-menu" role="listbox" hidden></div>
                 </div>
-                <p id="commune-help" class="field-help">Las comunas se filtrarán según tu región.</p>
+                <p id="commune-help" class="field-help">Aquí aparecerán solo las comunas de la región elegida.</p>
               </div>
             </div>
 
             <div class="search-actions">
-              <p class="help-text">Puedes escribir con o sin tildes, en mayúsculas o minúsculas. Las opciones se acotan mientras escribes.</p>
+              <p class="help-text">No necesitas escribir nada: abre cada pestaña y selecciona una opción.</p>
               <button id="search-button" type="submit" disabled>Ver representantes</button>
             </div>
             <div id="search-message" class="search-message" role="status" aria-live="polite"></div>
@@ -85,7 +66,7 @@
           <div class="steps-card">
             <p class="steps-title">En 3 pasos</p>
             <ol>
-              <li><span>1</span><div><strong>Región y comuna</strong><small>Primero acotamos el territorio para evitar errores.</small></div></li>
+              <li><span>1</span><div><strong>Elige región y comuna</strong><small>Sin escribir: solo selecciona en las pestañas.</small></div></li>
               <li><span>2</span><div><strong>Identificamos tu distrito</strong><small>Usamos la división electoral vigente.</small></div></li>
               <li><span>3</span><div><strong>Elige a un representante</strong><small>La ficha parlamentaria será la siguiente capa del proyecto.</small></div></li>
             </ol>
@@ -107,7 +88,6 @@
         </div>
 
         <div id="representatives-grid" class="representatives-grid"></div>
-
         <div id="selection-panel" class="selection-panel" hidden aria-live="polite"></div>
       </div>
     </section>
