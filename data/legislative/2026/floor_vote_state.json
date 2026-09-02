@@ -1,6 +1,8 @@
 {
   "updated_for": "2026-09-02",
   "annual_votes_since_period_start": 601,
+  "recent_recheck_days": 35,
+  "recent_recheck_cutoff": "2026-07-29",
   "skipped_non_project": [
     "88294",
     "88295",
