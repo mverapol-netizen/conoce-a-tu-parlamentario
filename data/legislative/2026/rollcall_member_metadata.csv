@@ -1,0 +1,156 @@
+﻿diputado_id,diputado_nombre,binary_votes,affirmative,against,missing_for_spatial_model,binary_participation_share
+803,René Alinco Bustos,276,169,107,88,0.758242
+815,Sergio Bobadilla Muñoz,348,253,95,16,0.956044
+843,René Manuel García García,305,233,72,59,0.837912
+872,Jaime Mulet Martínez,320,229,91,44,0.879121
+915,Germán Verdugo Soto,338,243,95,26,0.928571
+986,Marcela Hernando Pérez,287,223,64,77,0.788462
+1009,Jorge Alessandri Vergara,322,229,93,42,0.884615
+1012,Boris Barrera Moreno,347,189,158,17,0.953297
+1013,Alejandro Bernales Maldonado,315,245,70,49,0.865385
+1015,Jorge Brito Hasbún,306,173,133,58,0.840659
+1017,Álvaro Carter Fernández,335,240,95,29,0.920330
+1021,Andrés Celis Montt,314,227,87,50,0.862637
+1025,Catalina Del Real Mihovilovic,298,221,77,66,0.818681
+1028,Eduardo Durán Salinas,335,246,89,29,0.920330
+1038,Marcos Ilabaca Cerda,301,178,123,63,0.826923
+1039,Pamela Jiles Moreno,331,195,136,33,0.909341
+1044,Raúl Leiva Carvajal,297,182,115,67,0.815934
+1054,Francesca Muñoz González,337,257,80,27,0.925824
+1056,Emilia Nuyado Ancapichun,353,207,146,11,0.969780
+1059,Ximena Ossandón Irarrázabal,339,248,91,25,0.931319
+1060,Luis Pardo Sáinz,345,251,94,19,0.947802
+1061,Andrea Parra Sauterel,330,226,104,34,0.906593
+1062,Joanna Pérez Olea,286,222,64,78,0.785714
+1065,Guillermo Ramírez Diez,305,215,90,59,0.837912
+1073,Juan Santana Castillo,313,172,141,51,0.859890
+1074,Marisela Santibáñez Novoa,303,164,139,61,0.832418
+1075,Diego Schalper Sepúlveda,320,234,86,44,0.879121
+1077,Raúl Soto Mardones,313,210,103,51,0.859890
+1082,Cristóbal Urruticoechea Ríos,292,198,94,72,0.802198
+1086,Gonzalo Winter Etcheberry,303,167,136,61,0.832418
+1087,Gael Yeomans Araya,325,185,140,39,0.892857
+1099,Jaime Araya Guerrero,301,195,106,63,0.826923
+1100,Cristián Araya Lerdo de Tejada,345,245,100,19,0.947802
+1102,Roberto Arroyo Muñoz,297,221,76,67,0.815934
+1104,Chiara Barchiesi Chávez,333,236,97,31,0.914835
+1105,Héctor Barría Angulo,315,226,89,49,0.865385
+1107,María Francisca Bello Campos,0,0,0,364,0.000000
+1108,Juan Carlos Beltrán Silva,334,255,79,30,0.917582
+1110,Carlos Bianchi Chelech,329,235,94,35,0.903846
+1114,Félix Bugueño Sotelo,325,203,122,39,0.892857
+1116,Felipe Camaño Cárdenas,329,246,83,35,0.903846
+1117,Nathalie Castillo Rojas,281,137,144,83,0.771978
+1119,Sara Concha Smith,344,258,86,20,0.945055
+1122,Luis Alberto Cuello Peña y Lillo,334,178,156,30,0.917582
+1127,Lorena Fries Monleón,326,179,147,38,0.895604
+1128,Ana María Gazmuri Vieira,302,173,129,62,0.829670
+1131,Mauro González Villarroel,295,208,87,69,0.810440
+1132,Jorge Guzmán Zepeda,347,255,92,17,0.953297
+1133,Juan Irarrázaval Rossel,350,250,100,14,0.961538
+1140,Daniel Lilayu Vivanco,347,250,97,17,0.953297
+1141,Luis Malla Valenzuela,322,238,84,42,0.884615
+1142,Daniel Manouchehri Lobos,309,201,108,55,0.848901
+1143,Cristóbal Martínez Ramírez,348,254,94,16,0.956044
+1146,José Carlos Meza Pereira,322,229,93,42,0.884615
+1148,Javiera Morales Alvarado,91,40,51,273,0.250000
+1150,Benjamín Moreno Bascur,355,254,101,9,0.975275
+1152,Gloria Naveillan Arriagada,297,202,95,67,0.815934
+1153,Coca Ericka Ñanco Vásquez,195,115,80,169,0.535714
+1157,Marlene Pérez Cartes,287,217,70,77,0.788462
+1159,Lorena Pizarro Sierra,323,174,149,41,0.887363
+1165,Agustín Romero Leiva,348,247,101,16,0.956044
+1166,Natalia Romero Talguia,351,275,76,13,0.964286
+1170,Luis Sánchez Ossa,340,244,96,24,0.934066
+1171,Emilia Schneider Videla,347,196,151,17,0.953297
+1172,Stephan Schubert Rubio,301,228,73,63,0.826923
+1173,Daniela Serrano Salazar,344,185,159,20,0.945055
+1174,Marco Antonio Sulantay Olivares,344,249,95,20,0.945055
+1175,Cristián Tapia Ramos,295,219,76,69,0.810440
+1176,Hotuiti Teao Drago,298,215,83,66,0.818681
+1177,Carolina Tello Rojas,346,201,145,18,0.950549
+1178,Héctor Ulloa Aguilera,316,224,92,48,0.868132
+1180,Consuelo Veloso Ávila,342,198,144,22,0.939560
+1181,Nelson Venegas Salazar,325,186,139,39,0.892857
+1182,Sebastián Videla Castillo,335,257,78,29,0.920330
+1183,Flor Weisse Novoa,275,210,65,89,0.755495
+1184,Roberto Celedón Fernández,349,204,145,15,0.958791
+1186,Ignacio Achurra Díaz,348,200,148,16,0.956044
+1187,Carlo Arqueros Pizarro,352,252,100,12,0.967033
+1188,Marcos Barraza Gómez,347,190,157,17,0.953297
+1189,Jaime Bassa Mercado,342,187,155,22,0.939560
+1190,Enrique Bassaletti Riess,354,253,101,10,0.972527
+1191,Valentina Becerra Peña,339,240,99,25,0.931319
+1192,Lilian Betancurt Delgado,210,157,53,154,0.576923
+1193,Patricio Briones Moller,350,259,91,14,0.961538
+1194,Daniel Bustos Leal,355,254,101,9,0.975275
+1195,Carlos Carvajal Gallardo,332,238,94,32,0.912088
+1196,Priscilla Castillo Gerli,352,262,90,12,0.967033
+1197,Carlos Chandía Alarcón,340,252,88,24,0.934066
+1198,Paz Charpentier Rajcevich,351,251,100,13,0.964286
+1199,Jaime Coloma Álamos,351,256,95,13,0.964286
+1200,Cristian Contreras Radovic,340,255,85,24,0.934066
+1201,Flor Contreras Vivallo,346,254,92,18,0.950549
+1202,Eduardo Cretton Rebolledo,351,251,100,13,0.964286
+1203,Sebastián Cristoffanini Jaraquemada,352,252,100,12,0.967033
+1204,Francisco Crisóstomo Llanos,347,212,135,17,0.953297
+1205,Carlos Cuadrado Prats,321,207,114,43,0.881868
+1206,Carolina Cucumides Calderón,352,214,138,12,0.967033
+1207,Valentina Cáceres Monsálvez,333,200,133,31,0.914835
+1208,Jorge Díaz Ibarra,336,259,77,28,0.923077
+1209,Matías Fernández Hartwig,349,201,148,15,0.958791
+1210,Gustavo Gatica Villarroel,337,183,154,27,0.925824
+1211,Sofía González Cortés,340,182,158,24,0.934066
+1212,Erich Grohs Marín,331,228,103,33,0.909341
+1213,Irací Hassler Jacob,347,190,157,17,0.953297
+1214,Constanza Hube Portus,346,245,101,18,0.950549
+1215,Álvaro Jofré Cáceres,357,249,108,7,0.980769
+1216,Stephanie Jéldrez Ortiz,348,249,99,16,0.956044
+1217,Pier Karlezi Hazleby,340,239,101,24,0.934066
+1218,José Antonio Kast Adriasola,354,254,100,10,0.972527
+1219,Tomás Kast Sommerhoff,334,242,92,30,0.917582
+1220,Leandro Kunstmann Collado,354,253,101,10,0.972527
+1221,Benjamín Lorca Inzunza,352,251,101,12,0.967033
+1222,Andrea Macías Palma,330,188,142,34,0.906593
+1223,Hans Marowski Cuevas,331,230,101,33,0.909341
+1224,Cristian Mella Andaur,345,264,81,19,0.947802
+1225,Cristian Menchaca Pinochet,341,245,96,23,0.936813
+1226,José Montalva Feuerhake,349,246,103,15,0.958791
+1227,Claudia Mora Vega,349,255,94,15,0.958791
+1228,Paulina Muñoz Minte,358,250,108,6,0.983516
+1229,Javier Muñoz Riquelme,336,257,79,28,0.923077
+1230,Alex Nahuelquin Nahuelquin,342,267,75,22,0.939560
+1231,Ximena Naranjo Pinto,346,260,86,18,0.950549
+1232,Cristian Neira Martínez,348,248,100,16,0.956044
+1233,Ricardo Neumann Bertín,343,248,95,21,0.942308
+1234,Mario Olavarría Rodríguez,288,201,87,76,0.791209
+1235,Javier Olivares Avendaño,355,263,92,9,0.975275
+1236,Paula Olmos Contreras,279,183,96,85,0.766484
+1237,Francisco Orrego Gutiérrez,347,257,90,17,0.953297
+1238,Álvaro Ortiz Vera,347,259,88,17,0.953297
+1239,Fabián Ossandón Briceño,327,213,114,37,0.898352
+1240,Zandra Parisi Fernández,277,210,67,87,0.760989
+1241,Patricio Pinilla Valencia,336,241,95,28,0.923077
+1242,Rodrigo Ramírez Parra,346,251,95,18,0.950549
+1243,Tamara Ramírez Ramírez,339,214,125,25,0.931319
+1244,Claudia Reyes Larenas,337,242,95,27,0.925824
+1245,Alejandro Riquelme Ducci,344,248,96,20,0.945055
+1246,José Antonio Rivas Villalobos,330,200,130,34,0.906593
+1247,Javiera Rodríguez Pascual,355,254,101,9,0.975275
+1248,Felipe Ross Correa,342,242,100,22,0.939560
+1249,Omar Sabat Guzmán,336,241,95,28,0.923077
+1250,Bernardo Salinas Maya,280,162,118,84,0.769231
+1251,Macarena Santelices Cañas,344,245,99,20,0.945055
+1252,Constanza Schonhaut Soto,336,186,150,28,0.923077
+1253,Fernando Ugarte Tejeda,354,253,101,10,0.972527
+1254,Ignacio Urcullú Clèment-Lund,355,254,101,9,0.975275
+1255,Eileen Urqueta Rojas,351,238,113,13,0.964286
+1256,Tatiana Urrutia Herrera,330,182,148,34,0.906593
+1257,Alejandra Valdebenito Torres,346,256,90,18,0.950549
+1258,Guillermo Valdés Carmona,350,253,97,14,0.961538
+1259,Juan Marcelo Valenzuela Henríquez,339,256,83,25,0.931319
+1260,César Valenzuela Maass,346,209,137,18,0.950549
+1261,Daniel Valenzuela Salazar,320,228,92,44,0.879121
+1262,Diego Vergara Rodríguez,351,251,100,13,0.964286
+1263,Sebastián Zamora Soto,339,244,95,25,0.931319
+1264,Fernando Zamorano Peralta,340,233,107,24,0.934066

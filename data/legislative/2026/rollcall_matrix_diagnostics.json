@@ -1,0 +1,23 @@
+{
+  "generated_for": "2026-09-02",
+  "source_member_vote_rows": 56420,
+  "members": 155,
+  "rollcalls": 364,
+  "matrix_cells": 56420,
+  "binary_cells": 50552,
+  "missing_cells_for_spatial_model": 5868,
+  "unanimous_binary_rollcalls": 64,
+  "sensitivity_rollcalls_by_minority_share": {
+    "minority_share_gte_0.000": 300,
+    "minority_share_gte_0.025": 276,
+    "minority_share_gte_0.050": 269,
+    "minority_share_gte_0.100": 258
+  },
+  "unknown_vote_options": {},
+  "coding": {
+    "1": "Afirmativo",
+    "0": "En Contra",
+    "missing": "Abstención / No Vota / Dispensado / otra categoría no binaria"
+  },
+  "method_note": "Esta salida prepara una matriz neutral. No selecciona aún un umbral de competitividad, no estima puntos ideales y no fija la orientación ideológica de futuras dimensiones."
+}
