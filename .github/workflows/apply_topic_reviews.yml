@@ -8,6 +8,7 @@ on:
     paths:
       - "scripts/apply_topic_reviews.py"
       - "data/legislative/2026/topics/topic_model_overrides.csv"
+      - "data/legislative/2026/topics/topic_model_overrides_remaining.csv"
       - ".github/workflows/apply_topic_reviews.yml"
 
 permissions:
@@ -51,5 +52,6 @@ jobs:
             echo "No reviewed-topic changes"
           else
             git commit -m "Actualiza capa temática revisada 2026"
+            git pull --rebase origin main
             git push origin main
           fi
