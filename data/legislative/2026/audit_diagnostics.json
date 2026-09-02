@@ -1,0 +1,57 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "pass",
+  "projects": {
+    "count": 493,
+    "events": 943,
+    "projects_with_events": 493,
+    "event_coverage_pct": 100.0,
+    "commission_events": 160,
+    "orphan_event_bills": []
+  },
+  "authorship": {
+    "parliamentary_bills": 449,
+    "author_relations": 2573,
+    "bills_with_authors": 449,
+    "unresolved_motions": [],
+    "multi_author_bills": 398,
+    "max_authors_on_bill": 10,
+    "author_count_distribution": {
+      "1": 52,
+      "2": 22,
+      "3": 23,
+      "4": 41,
+      "5": 122,
+      "6": 24,
+      "7": 32,
+      "8": 22,
+      "9": 30,
+      "10": 82
+    }
+  },
+  "floor_votes": {
+    "rollcalls": 364,
+    "member_vote_rows": 56420,
+    "min_member_rows_per_rollcall": 155,
+    "max_member_rows_per_rollcall": 155,
+    "incomplete_rollcalls": {},
+    "vote_option_counts": {
+      "Afirmativo": 34491,
+      "Abstención": 1979,
+      "No Vota": 3865,
+      "En Contra": 16061,
+      "Dispensado": 24
+    }
+  },
+  "duplicates": {
+    "projects_by_boletin": 0,
+    "project_events": 0,
+    "author_relations": 0,
+    "rollcalls_by_vote_id": 0,
+    "member_votes": 0
+  },
+  "warnings": [
+    "Hay 2123 órdenes de autor repetidos dentro de un mismo boletín"
+  ],
+  "failures": []
+}
