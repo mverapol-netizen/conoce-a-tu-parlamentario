@@ -19,6 +19,8 @@ SESSION.headers.update({
     "Accept-Language": "es-CL,es;q=0.9,en;q=0.7",
 })
 
+# Esta capa es editorial y fechada. Partido y bancada provienen de la Cámara;
+# la posición oficialismo/oposición/no alineado se revisa separadamente.
 OFFICIALISM = (
     "partido republicano",
     "renovacion nacional",
@@ -33,7 +35,9 @@ OFFICIALISM = (
 OPPOSITION = (
     "frente amplio",
     "partido comunista",
+    "comite comunista",
     "partido socialista",
+    "socialista liberal radical",
     "partido por la democracia",
     "partido liberal",
     "partido democrata cristiano",
@@ -169,6 +173,9 @@ def main() -> None:
             f"[{i:03d}/155] {name} — {profile['party']} — {profile['caucus']} — {alignment}"
         )
         time.sleep(0.03)
+
+    if sum(alignments.values()) != 155:
+        raise RuntimeError(f"La clasificación política no cierra en 155: {alignments}")
 
     save_profiles(profiles)
 
