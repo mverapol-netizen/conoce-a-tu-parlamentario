@@ -10,7 +10,10 @@ TOPICS = ROOT / "data" / "legislative" / "2026" / "topics"
 AUTO = TOPICS / "project_topic_classification.csv"
 AUTO_LONG = TOPICS / "project_topics.csv"
 AUTO_QUEUE = TOPICS / "topic_review_queue.csv"
-OVERRIDES = TOPICS / "topic_model_overrides.csv"
+OVERRIDE_FILES = [
+    TOPICS / "topic_model_overrides.csv",
+    TOPICS / "topic_model_overrides_remaining.csv",
+]
 
 
 def read_csv(path: Path) -> list[dict]:
@@ -27,7 +30,10 @@ def split_pipe(value: str) -> list[str]:
 def main() -> None:
     automatic = read_csv(AUTO)
     queue = read_csv(AUTO_QUEUE)
-    overrides = [x for x in read_csv(OVERRIDES) if (x.get("status") or "").lower() == "aprobado"]
+    override_rows = []
+    for path in OVERRIDE_FILES:
+        override_rows.extend(read_csv(path))
+    overrides = [x for x in override_rows if (x.get("status") or "").lower() == "aprobado"]
     by_override = {x["boletin"]: x for x in overrides if x.get("boletin")}
 
     if not automatic:
@@ -131,6 +137,9 @@ def main() -> None:
         json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
     print(json.dumps(diagnostics, ensure_ascii=False, indent=2))
+
+    if remaining_queue:
+        raise RuntimeError(f"Quedan {len(remaining_queue)} proyectos temáticos pendientes de revisión")
 
 
 if __name__ == "__main__":
