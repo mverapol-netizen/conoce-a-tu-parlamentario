@@ -1,0 +1,203 @@
+{
+  "rollcalls": 364,
+  "rollcalls_with_boletin": 364,
+  "rollcalls_without_boletin": 0,
+  "unique_rollcall_bills": 89,
+  "unique_rollcall_bills_with_topic": 26,
+  "unique_rollcall_bills_missing_topic": 63,
+  "rollcalls_with_topic": 224,
+  "rollcalls_missing_topic": 140,
+  "rollcall_topic_coverage_pct": 61.5385,
+  "bill_topic_coverage_pct": 29.2135,
+  "duplicate_principal_topics": {},
+  "rollcalls_by_covered_topic": {
+    "Economía y hacienda": 124,
+    "Educación": 35,
+    "Minería y energía": 28,
+    "Gobierno interior y descentralización": 8,
+    "Seguridad": 7,
+    "Relaciones exteriores": 6,
+    "Trabajo y seguridad social": 6,
+    "Desarrollo social": 6,
+    "Vivienda y territorio": 3,
+    "Agua y recursos hídricos": 1
+  },
+  "largest_missing_bills": [
+    {
+      "boletin": "16743-04",
+      "rollcalls": 11,
+      "first_vote_date": "2026-07-07",
+      "sample_description": "Boletín N°16743-04",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89302"
+    },
+    {
+      "boletin": "16857-07",
+      "rollcalls": 9,
+      "first_vote_date": "2026-06-16",
+      "sample_description": "Boletín N°16857-07",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89153"
+    },
+    {
+      "boletin": "16836-06",
+      "rollcalls": 8,
+      "first_vote_date": "2026-07-13",
+      "sample_description": "Boletín N°16836-06",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89384"
+    },
+    {
+      "boletin": "10634-29",
+      "rollcalls": 7,
+      "first_vote_date": "2026-03-25",
+      "sample_description": "Boletín N°10634-29",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88501"
+    },
+    {
+      "boletin": "15347-07",
+      "rollcalls": 7,
+      "first_vote_date": "2026-03-23",
+      "sample_description": "Boletín N°15347-07",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88450"
+    },
+    {
+      "boletin": "14767-03",
+      "rollcalls": 5,
+      "first_vote_date": "2026-07-07",
+      "sample_description": "Boletín N°14767-03",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89313"
+    },
+    {
+      "boletin": "15936-18",
+      "rollcalls": 5,
+      "first_vote_date": "2026-06-10",
+      "sample_description": "Boletín N°15936-18",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89109"
+    },
+    {
+      "boletin": "17012-14",
+      "rollcalls": 5,
+      "first_vote_date": "2026-07-14",
+      "sample_description": "Boletín N°17012-14",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89407"
+    },
+    {
+      "boletin": "14309-04",
+      "rollcalls": 4,
+      "first_vote_date": "2026-05-11",
+      "sample_description": "Boletín N°14309-04",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88810"
+    },
+    {
+      "boletin": "17818-24",
+      "rollcalls": 4,
+      "first_vote_date": "2026-09-01",
+      "sample_description": "Boletín N°17818-24",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89928"
+    },
+    {
+      "boletin": "16300-07",
+      "rollcalls": 3,
+      "first_vote_date": "2026-08-11",
+      "sample_description": "Boletín N°16300-07",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89693"
+    },
+    {
+      "boletin": "16851-14",
+      "rollcalls": 3,
+      "first_vote_date": "2026-05-04",
+      "sample_description": "Boletín N°16851-14",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88738"
+    },
+    {
+      "boletin": "17170-07",
+      "rollcalls": 3,
+      "first_vote_date": "2026-04-13",
+      "sample_description": "Boletín N°17170-07",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88612"
+    },
+    {
+      "boletin": "17662-07",
+      "rollcalls": 3,
+      "first_vote_date": "2026-09-01",
+      "sample_description": "Boletín N°17662-07",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89932"
+    },
+    {
+      "boletin": "17912-25",
+      "rollcalls": 3,
+      "first_vote_date": "2026-08-17",
+      "sample_description": "Boletín N°17912-25",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89779"
+    },
+    {
+      "boletin": "12786-12",
+      "rollcalls": 2,
+      "first_vote_date": "2026-08-18",
+      "sample_description": "Boletín N°12786-12",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89843"
+    },
+    {
+      "boletin": "15258-25",
+      "rollcalls": 2,
+      "first_vote_date": "2026-05-13",
+      "sample_description": "Boletín N°15258-25",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88872"
+    },
+    {
+      "boletin": "16569-25",
+      "rollcalls": 2,
+      "first_vote_date": "2026-04-06",
+      "sample_description": "Boletín N°16569-25",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88544"
+    },
+    {
+      "boletin": "16686-19",
+      "rollcalls": 2,
+      "first_vote_date": "2026-06-09",
+      "sample_description": "Boletín N°16686-19",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89085"
+    },
+    {
+      "boletin": "16725-06",
+      "rollcalls": 2,
+      "first_vote_date": "2026-06-10",
+      "sample_description": "Boletín N°16725-06",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89107"
+    },
+    {
+      "boletin": "16808-25",
+      "rollcalls": 2,
+      "first_vote_date": "2026-06-03",
+      "sample_description": "Boletín N°16808-25",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=89031"
+    },
+    {
+      "boletin": "17381-03",
+      "rollcalls": 2,
+      "first_vote_date": "2026-05-05",
+      "sample_description": "Boletín N°17381-03",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88756"
+    },
+    {
+      "boletin": "17474-06",
+      "rollcalls": 2,
+      "first_vote_date": "2026-03-24",
+      "sample_description": "Boletín N°17474-06",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88474"
+    },
+    {
+      "boletin": "17522-12",
+      "rollcalls": 2,
+      "first_vote_date": "2026-04-15",
+      "sample_description": "Boletín N°17522-12",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88647"
+    },
+    {
+      "boletin": "17872-33",
+      "rollcalls": 2,
+      "first_vote_date": "2026-05-05",
+      "sample_description": "Boletín N°17872-33",
+      "sample_verification_url": "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion=88759"
+    }
+  ],
+  "method_note": "Cobertura medida contra el tema principal final. No se calculan estadísticas diputado×tema hasta cubrir los boletines heredados votados durante la legislatura."
+}
