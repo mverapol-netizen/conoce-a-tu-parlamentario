@@ -1,0 +1,52 @@
+name: Build group roll-call behavior
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_group_rollcall_behavior.py"
+      - "data/legislative/2026/member_votes_enriched.csv"
+      - ".github/workflows/build_group_rollcall_behavior.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: group-rollcall-behavior
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build group roll-call primitives
+        run: python scripts/build_group_rollcall_behavior.py
+
+      - name: Persist group behavior primitives
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/group_rollcall_behavior.csv \
+                  data/legislative/2026/group_rollcall_behavior_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No group-behavior changes"
+          else
+            git commit -m "Actualiza primitivas de cohesión legislativa"
+            git pull --rebase origin main
+            git push origin main
+          fi
