@@ -19,23 +19,20 @@ DATA_FILE = ROOT / "assets/js/data.js"
 OUT_FILE = ROOT / "assets/js/profiles.js"
 PHOTO_DIR = ROOT / "assets/photos"
 
-OPEN_DATA_CURRENT = (
-    "https://opendata.camara.cl/camaradiputados/WServices/"
-    "WSDiputado.asmx/retornarDiputadosPeriodoActual"
-)
-OPEN_DATA_DETAIL = (
-    "https://opendata.camara.cl/camaradiputados/WServices/"
-    "WSDiputado.asmx/retornarDiputado?prmDiputadoId={}"
+# El portal de Datos Abiertos ha usado ambos hosts. Probamos primero el dominio
+# vigente y conservamos el anterior como respaldo.
+OPEN_DATA_HOSTS = (
+    "https://opendata.congreso.cl/camaradiputados/WServices",
+    "https://opendata.camara.cl/camaradiputados/WServices",
 )
 PROFILE_URL = "https://www.camara.cl/diputados/detalle/biografia.aspx?prmId={}"
-NS = {"c": "http://opendata.camara.cl/camaradiputados/v1"}
 
 SESSION = requests.Session()
 SESSION.headers.update(
     {
         "User-Agent": (
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-            "Chrome/130 Safari/537.36 conoce-a-tu-parlamentario/1.0"
+            "Chrome/130 Safari/537.36 conoce-a-tu-parlamentario/1.1"
         ),
         "Accept-Language": "es-CL,es;q=0.9,en;q=0.7",
     }
@@ -54,11 +51,37 @@ def slug(value: str) -> str:
     return normalize(value).replace(" ", "-")
 
 
+def local_name(tag: str) -> str:
+    """Devuelve el nombre XML sin depender del namespace usado por el servicio."""
+    return tag.rsplit("}", 1)[-1] if "}" in tag else tag
+
+
+def direct_child(node: ET.Element, wanted: str) -> ET.Element | None:
+    for child in list(node):
+        if local_name(child.tag) == wanted:
+            return child
+    return None
+
+
+def descendant(node: ET.Element, wanted: str) -> ET.Element | None:
+    for child in node.iter():
+        if child is not node and local_name(child.tag) == wanted:
+            return child
+    return None
+
+
+def child_text(node: ET.Element | None, wanted: str) -> str:
+    if node is None:
+        return ""
+    child = direct_child(node, wanted)
+    return (child.text or "").strip() if child is not None else ""
+
+
 def get(url: str, *, timeout: int = 30, tries: int = 3) -> requests.Response:
     last = None
     for attempt in range(tries):
         try:
-            response = SESSION.get(url, timeout=timeout)
+            response = SESSION.get(url, timeout=timeout, allow_redirects=True)
             if response.status_code == 200:
                 return response
             last = RuntimeError(f"HTTP {response.status_code} for {url}")
@@ -66,6 +89,22 @@ def get(url: str, *, timeout: int = 30, tries: int = 3) -> requests.Response:
             last = exc
         time.sleep(0.6 * (attempt + 1))
     raise RuntimeError(str(last) if last else f"No se pudo descargar {url}")
+
+
+def get_open_data(path: str) -> requests.Response:
+    errors = []
+    for host in OPEN_DATA_HOSTS:
+        url = f"{host}/{path}"
+        try:
+            response = get(url)
+            # Evita aceptar por error una página HTML de redirección/bloqueo.
+            sample = response.content.lstrip()[:100].lower()
+            if sample.startswith(b"<") and b"html" not in sample:
+                return response
+            errors.append(f"{url}: respuesta no XML")
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{url}: {exc}")
+    raise RuntimeError("; ".join(errors))
 
 
 def load_targets() -> list[dict]:
@@ -91,33 +130,50 @@ def load_targets() -> list[dict]:
 
 
 def open_data_current() -> list[dict]:
-    xml = get(OPEN_DATA_CURRENT).content
+    xml = get_open_data("WSDiputado.asmx/retornarDiputadosPeriodoActual").content
     root = ET.fromstring(xml)
     rows: list[dict] = []
-    for node in root.findall("c:DiputadoPeriodo", NS):
-        dep = node.find("c:Diputado", NS)
-        district = node.find("c:Distrito/c:Numero", NS)
-        if dep is None or district is None:
+
+    # El namespace y el nivel raíz del XML han variado históricamente. Por eso
+    # recorremos por nombre local en vez de fijar una URI concreta.
+    period_nodes = [node for node in root.iter() if local_name(node.tag) == "DiputadoPeriodo"]
+    print(f"Open Data: {len(period_nodes)} nodos DiputadoPeriodo detectados")
+
+    for node in period_nodes:
+        dep = direct_child(node, "Diputado") or descendant(node, "Diputado")
+        district_node = direct_child(node, "Distrito") or descendant(node, "Distrito")
+        if dep is None or district_node is None:
             continue
-        dep_id = dep.findtext("c:Id", default="", namespaces=NS)
+
+        dep_id = child_text(dep, "Id")
+        district_text = child_text(district_node, "Numero")
         pieces = [
-            dep.findtext("c:Nombre", default="", namespaces=NS),
-            dep.findtext("c:Nombre2", default="", namespaces=NS),
-            dep.findtext("c:ApellidoPaterno", default="", namespaces=NS),
-            dep.findtext("c:ApellidoMaterno", default="", namespaces=NS),
+            child_text(dep, "Nombre"),
+            child_text(dep, "Nombre2"),
+            child_text(dep, "ApellidoPaterno"),
+            child_text(dep, "ApellidoMaterno"),
         ]
-        name = " ".join(piece.strip() for piece in pieces if piece and piece.strip())
-        if dep_id and name:
-            rows.append(
-                {
-                    "id": int(dep_id),
-                    "name": name,
-                    "norm": normalize(name),
-                    "district": int(district.text or 0),
-                }
-            )
+        name = " ".join(piece for piece in pieces if piece)
+        if dep_id and name and district_text:
+            try:
+                rows.append(
+                    {
+                        "id": int(dep_id),
+                        "name": name,
+                        "norm": normalize(name),
+                        "district": int(district_text),
+                    }
+                )
+            except ValueError:
+                continue
+
     if len(rows) < 150:
-        raise RuntimeError(f"Open Data devolvió solo {len(rows)} diputados vigentes")
+        root_name = local_name(root.tag)
+        child_names = sorted({local_name(n.tag) for n in root.iter()})[:40]
+        raise RuntimeError(
+            f"Open Data devolvió solo {len(rows)} diputados vigentes. "
+            f"Raíz={root_name}; etiquetas detectadas={child_names}"
+        )
     return rows
 
 
@@ -167,17 +223,22 @@ def strings_after_label(soup: BeautifulSoup, label: str) -> str | None:
 
 def current_party_from_open_data(dep_id: int) -> str | None:
     try:
-        root = ET.fromstring(get(OPEN_DATA_DETAIL.format(dep_id)).content)
+        root = ET.fromstring(
+            get_open_data(f"WSDiputado.asmx/retornarDiputado?prmDiputadoId={dep_id}").content
+        )
     except Exception:
         return None
+
     memberships = []
-    for node in root.findall(".//c:Militancia", NS):
-        party = node.find("c:Partido", NS)
+    for node in root.iter():
+        if local_name(node.tag) != "Militancia":
+            continue
+        party = direct_child(node, "Partido") or descendant(node, "Partido")
         if party is None:
             continue
-        name = party.findtext("c:Nombre", default="", namespaces=NS).strip()
-        start = node.findtext("c:FechaInicio", default="", namespaces=NS)
-        end = node.findtext("c:FechaTermino", default="", namespaces=NS)
+        name = child_text(party, "Nombre")
+        start = child_text(node, "FechaInicio")
+        end = child_text(node, "FechaTermino")
         if name:
             memberships.append((not bool(end), start, name))
     if not memberships:
@@ -203,14 +264,14 @@ def candidate_photo(soup: BeautifulSoup, person_name: str, base_url: str) -> str
         if first and first in alt:
             score += 3
         score += sum(2 for token in last if token and token in alt)
-        if any(term in src_norm for term in ("diput", "parlament", "foto")):
+        if any(term in src_norm for term in ("diput", "parlament", "foto", "fotos")):
             score += 2
         if any(term in src_norm for term in ("logo", "icon", "banner", "redes", "flecha")):
             score -= 7
         absolute = urljoin(base_url, html.unescape(src))
         if best is None or score > best[0]:
             best = (score, absolute)
-    if best and best[0] >= 5:
+    if best and best[0] >= 4:
         return best[1]
     return None
 
@@ -225,7 +286,7 @@ def extract_profile(dep_id: int, fallback_name: str, target_district: int) -> di
     official_name = title_match.group(1).strip() if title_match else fallback_name
 
     party = strings_after_label(soup, "Partido:")
-    if not party or normalize(party) in {"contacto", "telefono", "email"}:
+    if not party or normalize(party) in {"contacto", "telefono", "email", "correo"}:
         party = current_party_from_open_data(dep_id)
     party = party or "Independiente / sin información partidaria"
 
@@ -236,7 +297,7 @@ def extract_profile(dep_id: int, fallback_name: str, target_district: int) -> di
     email_value = None
     mail_links = soup.select('a[href^="mailto:"]')
     if mail_links:
-        email_value = mail_links[0].get("href", "").replace("mailto:", "").strip()
+        email_value = mail_links[0].get("href", "").replace("mailto:", "").split("?", 1)[0].strip()
     if not email_value:
         emails = re.findall(r"[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}", response.text, re.I)
         emails = [e for e in emails if "example" not in e.lower()]
@@ -327,7 +388,7 @@ def main() -> None:
         profile["region"] = target["region"]
         profiles[name] = profile
         print(f"[{i:03d}/155] {name} — {profile['party']} — foto={'sí' if local_photo else 'no'}")
-        time.sleep(0.05)
+        time.sleep(0.04)
 
     OUT_FILE.write_text(
         "// Generado automáticamente desde fuentes oficiales de la Cámara.\n"
