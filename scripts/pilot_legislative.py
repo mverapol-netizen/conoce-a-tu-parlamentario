@@ -71,11 +71,7 @@ def initiatives(method: str, origin: str) -> list[dict]:
 def annual_votes() -> tuple[dict[str, object], dict]:
     root = get_xml("WSLegislativo", "retornarVotacionesXAnno", {"prmAnno": YEAR})
     nodes = descendants(root, "Votacion")
-    index = {
-        child_text(v, "Id"): v
-        for v in nodes
-        if child_text(v, "Id") and date_ok(child_text(v, "Fecha"))
-    }
+    index = {child_text(v, "Id"): v for v in nodes if child_text(v, "Id") and date_ok(child_text(v, "Fecha"))}
     diagnostic = {
         "root_tag": local_name(root.tag),
         "votes_returned": len(nodes),
@@ -85,6 +81,11 @@ def annual_votes() -> tuple[dict[str, object], dict]:
     if not index:
         raise RuntimeError(f"retornarVotacionesXAnno devolvió 0 votos desde el inicio: {diagnostic}")
     return index, diagnostic
+
+
+def official_matter_catalog_count() -> int:
+    root = get_xml("WSLegislativo", "retornarMaterias")
+    return len(descendants(root, "Materia"))
 
 
 def session_summary_index() -> dict[tuple[str, str], str]:
@@ -155,9 +156,7 @@ def verify_sala_page(vote_id: str, boletin: str, expected_date: str) -> dict:
     normalized_bill = boletin.replace(" ", "")
     if normalized_bill and normalized_bill not in text.replace(" ", ""):
         raise RuntimeError(f"ID {vote_id}: la página de Sala no contiene el boletín {boletin}")
-    session_match = re.search(r"Sesión\s*n[°º]?\s*(\d+)", text, re.I)
-    if not session_match:
-        session_match = re.search(r"Sesión\s+(\d+)", text, re.I)
+    session_match = re.search(r"Sesión\s*n[°º]?\s*(\d+)", text, re.I) or re.search(r"Sesión\s+(\d+)", text, re.I)
     date_match = re.search(r"Fecha:\s*(\d{1,2})\s+([A-Za-záéíóúñ]+)\s+(\d{4})", text, re.I)
     months = {"enero":"01","febrero":"02","marzo":"03","abril":"04","mayo":"05","junio":"06","julio":"07","agosto":"08","septiembre":"09","octubre":"10","noviembre":"11","diciembre":"12"}
     page_date = ""
@@ -174,6 +173,11 @@ def pick(primary, fallback, field: str) -> str:
     return child_text(primary, field) or child_text(fallback, field)
 
 
+def first_element(primary, fallback, field: str):
+    value = child(primary, field)
+    return value if value is not None else child(fallback, field)
+
+
 def individual_votes(node, vote_id: str) -> list[dict]:
     rows = []
     for vote in nested(node, "Votos", {"Voto"}):
@@ -187,9 +191,9 @@ def individual_votes(node, vote_id: str) -> list[dict]:
 def rollcall(project_vote, base_vote, boletin: str, page: dict, session_ids: dict) -> tuple[dict, list[dict]]:
     vote_id = pick(project_vote, base_vote, "Id")
     vote_date = iso_date(pick(project_vote, base_vote, "Fecha"))
-    t, tc = enum_value(child(project_vote, "Tipo") or child(base_vote, "Tipo"))
-    result, result_code = enum_value(child(project_vote, "Resultado") or child(base_vote, "Resultado"))
-    quorum, quorum_code = enum_value(child(project_vote, "Quorum") or child(base_vote, "Quorum"))
+    t, tc = enum_value(first_element(project_vote, base_vote, "Tipo"))
+    result, result_code = enum_value(first_element(project_vote, base_vote, "Resultado"))
+    quorum, quorum_code = enum_value(first_element(project_vote, base_vote, "Quorum"))
     ptype, ptype_code = enum_value(child(project_vote, "TipoVotacionProyectoLey"))
     constitutional, constitutional_code = enum_value(child(project_vote, "TramiteConstitucional"))
     regulatory, regulatory_code = enum_value(child(project_vote, "TramiteReglamentario"))
@@ -227,7 +231,8 @@ def main() -> None:
     print("[2/5] Universo central de votaciones 2026...")
     annual, annual_diag = annual_votes()
     session_ids = session_summary_index()
-    print(f"Votaciones API desde inicio={len(annual)} | sesiones resumen={len(session_ids)}")
+    matter_catalog_count = official_matter_catalog_count()
+    print(f"Votaciones API desde inicio={len(annual)} | sesiones resumen={len(session_ids)} | catálogo materias={matter_catalog_count}")
 
     print("[3/5] Selección de 10 proyectos...")
     selected = []
@@ -267,7 +272,6 @@ def main() -> None:
     author_rows=list({(x["boletin"],x["author_chamber"],x["author_id"],x["author_order"]):x for x in author_rows}.values())
     rollcalls=list({x["vote_id"]:x for x in rollcalls}.values())
     member_votes=list({(x["vote_id"],x["diputado_id"]):x for x in member_votes}.values())
-    if not subject_rows: raise RuntimeError("0 materias oficiales")
     if not rollcalls: raise RuntimeError("0 roll calls validados como Sala")
     if not member_votes: raise RuntimeError("0 votos individuales")
 
@@ -279,9 +283,10 @@ def main() -> None:
     write_csv("member_votes.csv",member_votes,["vote_id","diputado_id","diputado_nombre","opcion","opcion_codigo"])
     write_csv("project_events.csv",events,["boletin","fecha","evento_tipo","sesion_id","vote_id","tramite_constitucional","tramite_reglamentario","comision","fuente"])
 
-    diag={"generated_for":str(date.today()),"period_start":str(PERIOD_START),"universe":{"motions":len(motions),"messages":len(messages),"annual_votes":annual_diag,"session_summaries":len(session_ids)},"pilot":{"projects":len(projects),"origins":dict(Counter(x["origen_iniciativa"] for x in projects)),"subjects":len(subject_rows),"ministries":len(ministry_rows),"authors":len(author_rows),"verified_floor_rollcalls":len(rollcalls),"individual_votes":len(member_votes),"floor_events":len(events)},"selected_bills":[x["boletin"] for x in projects],"contract_findings":{"floor_verification":"Triple criterio: ID en retornarVotacionesXAnno + ID asociado al proyecto + página oficial camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx validada.","session_api_2026":"Los endpoints WSSala de 2026 omiten actualmente la colección Votaciones aunque el esquema publicado la declare; se conserva como hallazgo de compatibilidad.","themes":"Se conserva Materia oficial sin recodificar.","full_legislative_course":"Comisiones y cronología completa siguen pendientes de una capa específica."}}
+    subject_status = "populated" if subject_rows else "official_project_association_empty_in_pilot"
+    diag={"generated_for":str(date.today()),"period_start":str(PERIOD_START),"universe":{"motions":len(motions),"messages":len(messages),"annual_votes":annual_diag,"session_summaries":len(session_ids),"official_matter_catalog_count":matter_catalog_count},"pilot":{"projects":len(projects),"origins":dict(Counter(x["origen_iniciativa"] for x in projects)),"subjects":len(subject_rows),"subjects_status":subject_status,"ministries":len(ministry_rows),"authors":len(author_rows),"verified_floor_rollcalls":len(rollcalls),"individual_votes":len(member_votes),"floor_events":len(events)},"selected_bills":[x["boletin"] for x in projects],"contract_findings":{"floor_verification":"Triple criterio: ID en retornarVotacionesXAnno + ID asociado al proyecto + página oficial camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx validada.","session_api_2026":"Los endpoints WSSala de 2026 omiten actualmente la colección Votaciones aunque el esquema publicado la declare; se conserva como hallazgo de compatibilidad.","themes":"Existe catálogo oficial de Materias, pero la asociación ProyectoLey/Materias está vacía en los diez casos piloto. No se imputa una materia. La futura clasificación temática será una capa derivada separada, basada en título/texto y trazable.","full_legislative_course":"Comisiones y cronología completa siguen pendientes de una capa específica."}}
     (OUT/"diagnostics.json").write_text(json.dumps(diag,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    report=["# Piloto legislativo 2026","",f"Generado: {date.today()}","","## Resultado","",f"- 10 proyectos: {diag['pilot']['origins']}",f"- Materias oficiales: **{len(subject_rows)}**",f"- Autorías: **{len(author_rows)}**",f"- Votaciones de Sala triple-validadas: **{len(rollcalls)}**",f"- Votos individuales: **{len(member_votes)}**","","## Criterio de Sala","","Cada roll call debe aparecer en la API anual, estar asociado al proyecto y resolver a una página institucional `Sala de Sesiones > Detalle de Votación` del mismo boletín y fecha.","","## Hallazgo de compatibilidad","","Los endpoints WSSala 2026 devuelven resúmenes de sesión sin la colección Votaciones que figura en el esquema. No se usa ese campo ausente como condición de integridad.","","## Pendiente","","Reconstruir el curso comisión por comisión como capa separada.",""]+[f"- {x['boletin']} · {x['origen_iniciativa']} · {x['titulo']}" for x in projects]
+    report=["# Piloto legislativo 2026","",f"Generado: {date.today()}","","## Resultado","",f"- 10 proyectos: {diag['pilot']['origins']}",f"- Materias oficiales asociadas: **{len(subject_rows)}** (catálogo oficial disponible: {matter_catalog_count})",f"- Autorías: **{len(author_rows)}**",f"- Votaciones de Sala triple-validadas: **{len(rollcalls)}**",f"- Votos individuales: **{len(member_votes)}**","","## Criterio de Sala","","Cada roll call debe aparecer en la API anual, estar asociado al proyecto y resolver a una página institucional `Sala de Sesiones > Detalle de Votación` del mismo boletín y fecha.","","## Materias","",f"La Cámara expone un catálogo de {matter_catalog_count} materias, pero la asociación `ProyectoLey/Materias` vino vacía para los diez casos piloto. El CSV se conserva con su esquema y cero filas; no se fabrican materias. La clasificación temática futura será derivada y separada.","","## Hallazgo de compatibilidad","","Los endpoints WSSala 2026 devuelven resúmenes de sesión sin la colección Votaciones que figura en el esquema. No se usa ese campo ausente como condición de integridad.","","## Pendiente","","Reconstruir el curso comisión por comisión como capa separada.",""]+[f"- {x['boletin']} · {x['origen_iniciativa']} · {x['titulo']}" for x in projects]
     (OUT/"REPORT.md").write_text("\n".join(report)+"\n",encoding="utf-8")
     print("[5/5] PILOTO VALIDADO"); print(json.dumps(diag["pilot"],ensure_ascii=False,indent=2))
 
