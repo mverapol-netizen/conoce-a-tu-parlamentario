@@ -20,7 +20,7 @@ from legislative_common import (
 PROJECT_FIELDS = [
     "project_id", "boletin", "titulo", "fecha_ingreso", "origen_iniciativa",
     "tipo_iniciativa", "tipo_iniciativa_codigo", "camara_origen", "camara_origen_codigo",
-    "admisible", "estado_actual", "source_url", "updated_at",
+    "admisible", "materia_pagina", "estado_actual", "source_url", "updated_at",
 ]
 EVENT_FIELDS = ["boletin", "fecha", "sesion", "etapa", "subetapa", "documento_url", "fuente"]
 SUBJECT_FIELDS = ["boletin", "materia_id", "materia_oficial"]
@@ -77,9 +77,6 @@ def main() -> None:
         else:
             new_to_detail.append(seed)
 
-    # La parte costosa de una corrida incremental es la página de tramitación.
-    # Se consulta para TODOS los proyectos activos, pero con una concurrencia
-    # pequeña para reducir tiempo sin castigar el sitio de la Cámara.
     with ThreadPoolExecutor(max_workers=MAX_PAGE_WORKERS) as executor:
         futures = {
             executor.submit(refresh_existing, seed, previous): (seed, previous)
@@ -95,7 +92,6 @@ def main() -> None:
             except Exception as exc:  # noqa: BLE001
                 errors.append({"boletin": seed["boletin"], "error": str(exc)})
                 refreshed_projects.append(previous)
-                # Si falla el refresco, conservamos los eventos previos de ese boletín.
                 new_events.extend(x for x in events if x.get("boletin") == seed["boletin"])
             completed += 1
             if completed % 50 == 0:
@@ -104,9 +100,6 @@ def main() -> None:
                     f"· errores={len(errors)}"
                 )
 
-    # Los proyectos nuevos sí requieren la ficha XML completa una vez, porque
-    # allí obtenemos metadatos estructurales, materias (si la fuente las ofrece)
-    # y ministerios patrocinantes.
     for idx, seed in enumerate(new_to_detail, start=1):
         try:
             project, detail = project_detail(seed["boletin"], seed["origen_iniciativa"])
@@ -119,15 +112,13 @@ def main() -> None:
         except Exception as exc:  # noqa: BLE001
             errors.append({"boletin": seed["boletin"], "error": str(exc)})
             fallback = dict(seed)
-            fallback.update({"estado_actual": "", "source_url": "", "updated_at": ""})
+            fallback.update({"materia_pagina": "", "estado_actual": "", "source_url": "", "updated_at": ""})
             refreshed_projects.append(fallback)
         if idx % 25 == 0:
             print(f"Proyectos nuevos {idx}/{len(new_to_detail)} · errores={len(errors)}")
 
     projects = upsert(existing_projects, refreshed_projects, ("boletin",), ("fecha_ingreso", "boletin"))
 
-    # Materias y ministerios son metadatos de ingreso: solo sustituimos la capa
-    # de los boletines que acabamos de detallar por primera vez.
     detailed_bills = {x["boletin"] for x in new_to_detail}
     if detailed_bills:
         subjects = [x for x in subjects if x.get("boletin") not in detailed_bills]
@@ -135,9 +126,6 @@ def main() -> None:
     subjects = upsert(subjects, new_subjects, ("boletin", "materia_id", "materia_oficial"), ("boletin", "materia_id"))
     ministries = upsert(ministries, new_ministries, ("boletin", "ministerio_id", "ministerio"), ("boletin", "ministerio_id"))
 
-    # Para proyectos refrescados, reemplazamos la tramitación por la fotografía
-    # oficial actual. Así una corrección posterior de la Cámara no deja eventos
-    # obsoletos acumulados para siempre.
     refreshed_bills = {x["boletin"] for x in refreshed_projects if x.get("boletin")}
     retained_events = [x for x in events if x.get("boletin") not in refreshed_bills]
     events = upsert(
@@ -163,6 +151,7 @@ def main() -> None:
         "subjects": len(subjects),
         "ministries": len(ministries),
         "events": len(events),
+        "projects_with_public_matter": sum(bool(x.get("materia_pagina")) for x in projects),
         "errors": errors,
     }
     (OUT / "bills_diagnostics.json").write_text(
