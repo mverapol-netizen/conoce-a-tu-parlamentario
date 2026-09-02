@@ -1,0 +1,68 @@
+name: Build Servel election baseline
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_servel_election_baseline.py"
+      - ".github/workflows/build_servel_election_baseline.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: servel-election-baseline
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests openpyxl
+
+      - name: Build official electoral baseline
+        shell: bash
+        run: |
+          set +e
+          python scripts/build_servel_election_baseline.py
+          code=$?
+          echo "BASELINE_EXIT_CODE=$code" >> "$GITHUB_ENV"
+          exit 0
+
+      - name: Persist baseline and diagnostic
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/affiliations/election_baseline_2025.csv \
+                  data/legislative/2026/affiliations/election_baseline_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No Servel baseline changes"
+          else
+            git commit -m "Construye línea base electoral de diputados 2025"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Require complete baseline
+        shell: bash
+        run: |
+          if [ "${BASELINE_EXIT_CODE:-1}" != "0" ]; then
+            echo "La línea base quedó persistida pero requiere revisión; código ${BASELINE_EXIT_CODE}"
+            exit "${BASELINE_EXIT_CODE}"
+          fi
