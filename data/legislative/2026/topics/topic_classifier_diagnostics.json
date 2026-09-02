@@ -1,0 +1,43 @@
+{
+  "projects": 497,
+  "classified": 497,
+  "auto_accepted": 438,
+  "review_queue": 59,
+  "review_rate": 0.1187,
+  "mean_confidence": 0.9295,
+  "methods": {
+    "hibrido_institucional_texto": 145,
+    "institucional_destinacion": 336,
+    "institucional_trayectoria": 16
+  },
+  "primary_topics": {
+    "Constitución y justicia": 79,
+    "Gobierno interior y descentralización": 58,
+    "Seguridad": 55,
+    "Trabajo y seguridad social": 36,
+    "Salud": 29,
+    "Familia, infancia y adolescencia": 27,
+    "Educación": 26,
+    "Economía, comercio y consumidores": 25,
+    "Transportes y telecomunicaciones": 25,
+    "Defensa": 15,
+    "Relaciones exteriores": 15,
+    "Minería y energía": 14,
+    "Personas mayores y discapacidad": 12,
+    "Vivienda y territorio": 10,
+    "Agricultura y mundo rural": 8,
+    "Cultura y comunicaciones": 8,
+    "Ciencia y tecnología": 6,
+    "Cultura, patrimonio y deporte": 6,
+    "Deportes": 6,
+    "Economía y hacienda": 6,
+    "Pesca y acuicultura": 6,
+    "Derechos humanos": 5,
+    "Infraestructura y obras públicas": 5,
+    "Medio ambiente": 5,
+    "Agua y recursos hídricos": 3,
+    "Desarrollo social": 3,
+    "Administración parlamentaria": 2,
+    "Mujeres y género": 2
+  }
+}

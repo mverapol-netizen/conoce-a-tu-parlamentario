@@ -1,0 +1,647 @@
+﻿boletin,topic,role,method,confidence,needs_review,taxonomy_version
+18131-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18132-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18133-07,Defensa,principal,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18133-07,Seguridad,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18133-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18135-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18136-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18138-07,Salud,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18138-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18140-07,Constitución y justicia,principal,hibrido_institucional_texto,0.83,1,institutional-hybrid-v0.3
+18141-07,Constitución y justicia,principal,hibrido_institucional_texto,0.83,0,institutional-hybrid-v0.3
+18141-07,Educación,secundario,hibrido_institucional_texto,0.83,0,institutional-hybrid-v0.3
+18143-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18151-24,Cultura y comunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18151-24,Constitución y justicia,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18134-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18137-05,Minería y energía,principal,hibrido_institucional_texto,0.807,1,institutional-hybrid-v0.3
+18137-05,Economía y hacienda,secundario,hibrido_institucional_texto,0.807,1,institutional-hybrid-v0.3
+18139-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18142-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18144-07,Constitución y justicia,principal,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18144-07,Seguridad,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18145-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18146-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18147-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18148-07,Defensa,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18148-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18149-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18150-07,Constitución y justicia,principal,hibrido_institucional_texto,0.844,1,institutional-hybrid-v0.3
+18157-33,Agua y recursos hídricos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18158-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18152-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18152-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18153-24,Cultura y comunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18154-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18155-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18155-25,Constitución y justicia,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18156-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18159-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18160-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18161-07,Educación,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18161-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18213-07,Minería y energía,principal,hibrido_institucional_texto,0.843,0,institutional-hybrid-v0.3
+18213-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.843,0,institutional-hybrid-v0.3
+18162-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18162-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18163-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18164-17,Derechos humanos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18165-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18166-24,Cultura y comunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18167-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18168-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18172-21,Pesca y acuicultura,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18173-21,Pesca y acuicultura,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18169-07,Transportes y telecomunicaciones,principal,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18169-07,Salud,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18169-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18170-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18171-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18175-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18174-07,Constitución y justicia,principal,hibrido_institucional_texto,0.843,0,institutional-hybrid-v0.3
+18174-07,Educación,secundario,hibrido_institucional_texto,0.843,0,institutional-hybrid-v0.3
+18176-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18177-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18179-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18180-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18181-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18182-07,Constitución y justicia,principal,hibrido_institucional_texto,0.583,1,institutional-hybrid-v0.3
+18183-07,Infraestructura y obras públicas,principal,hibrido_institucional_texto,0.596,1,institutional-hybrid-v0.3
+18183-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.596,1,institutional-hybrid-v0.3
+18184-07,Constitución y justicia,principal,hibrido_institucional_texto,0.583,1,institutional-hybrid-v0.3
+18185-07,Infraestructura y obras públicas,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18185-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18186-07,Defensa,principal,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18186-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18187-07,Constitución y justicia,principal,hibrido_institucional_texto,0.583,1,institutional-hybrid-v0.3
+18188-07,Constitución y justicia,principal,hibrido_institucional_texto,0.583,1,institutional-hybrid-v0.3
+18178-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18189-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18190-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18191-37,"Cultura, patrimonio y deporte",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18192-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18193-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18194-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18195-07,Constitución y justicia,principal,hibrido_institucional_texto,0.871,1,institutional-hybrid-v0.3
+18196-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18197-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18197-04,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18198-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18198-15,Pesca y acuicultura,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18205-29,Deportes,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18214-07,Trabajo y seguridad social,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18214-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18206-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18243-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18199-12,Medio ambiente,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18200-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18201-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18202-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18203-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18204-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18207-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18208-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18209-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18221-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18210-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18212-07,Constitución y justicia,principal,hibrido_institucional_texto,0.888,0,institutional-hybrid-v0.3
+18220-07,Constitución y justicia,principal,hibrido_institucional_texto,0.889,0,institutional-hybrid-v0.3
+18211-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18215-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18216-05,Economía y hacienda,principal,hibrido_institucional_texto,0.789,1,institutional-hybrid-v0.3
+18216-05,Trabajo y seguridad social,secundario,hibrido_institucional_texto,0.789,1,institutional-hybrid-v0.3
+18217-07,Constitución y justicia,principal,hibrido_institucional_texto,0.78,1,institutional-hybrid-v0.3
+18217-07,Seguridad,secundario,hibrido_institucional_texto,0.78,1,institutional-hybrid-v0.3
+18218-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18219-07,Trabajo y seguridad social,principal,hibrido_institucional_texto,0.758,1,institutional-hybrid-v0.3
+18219-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.758,1,institutional-hybrid-v0.3
+18222-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18222-06,Mujeres y género,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18233-07,Constitución y justicia,principal,hibrido_institucional_texto,0.915,0,institutional-hybrid-v0.3
+18223-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18224-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18224-18,Ciencia y tecnología,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18225-07,Transportes y telecomunicaciones,principal,hibrido_institucional_texto,0.897,0,institutional-hybrid-v0.3
+18225-07,Personas mayores y discapacidad,secundario,hibrido_institucional_texto,0.897,0,institutional-hybrid-v0.3
+18225-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.897,0,institutional-hybrid-v0.3
+18226-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18227-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18228-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18228-04,Ciencia y tecnología,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18229-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18234-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18235-19,Ciencia y tecnología,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18230-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18230-13,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18231-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18232-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18236-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18236-18,Mujeres y género,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18237-33,Agua y recursos hídricos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18238-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18240-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18241-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18244-07,Seguridad,principal,hibrido_institucional_texto,0.83,1,institutional-hybrid-v0.3
+18244-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.83,1,institutional-hybrid-v0.3
+18245-12,Medio ambiente,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18239-36,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18242-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18246-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18246-18,Ciencia y tecnología,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18247-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18248-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18248-07,Mujeres y género,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18249-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18250-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18250-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18251-07,Vivienda y territorio,principal,hibrido_institucional_texto,0.736,1,institutional-hybrid-v0.3
+18251-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.736,1,institutional-hybrid-v0.3
+18252-07,Constitución y justicia,principal,hibrido_institucional_texto,0.803,0,institutional-hybrid-v0.3
+18252-07,Trabajo y seguridad social,secundario,hibrido_institucional_texto,0.803,0,institutional-hybrid-v0.3
+18262-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18263-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18264-07,Constitución y justicia,principal,hibrido_institucional_texto,0.817,1,institutional-hybrid-v0.3
+18265-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18265-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18266-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18463-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18253-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18254-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18267-24,Cultura y comunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18268-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18269-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18270-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18271-07,Relaciones exteriores,principal,hibrido_institucional_texto,0.763,0,institutional-hybrid-v0.3
+18271-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.763,0,institutional-hybrid-v0.3
+18281-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18282-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18282-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18283-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18283-35,Trabajo y seguridad social,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18284-29,Deportes,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18255-31,Desarrollo social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18256-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18257-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18258-07,Seguridad,principal,hibrido_institucional_texto,0.87,0,institutional-hybrid-v0.3
+18258-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.87,0,institutional-hybrid-v0.3
+18259-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18259-08,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18285-05,Economía y hacienda,principal,hibrido_institucional_texto,0.758,1,institutional-hybrid-v0.3
+18290-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18260-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18260-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18261-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18272-37,"Cultura, patrimonio y deporte",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18273-21,Pesca y acuicultura,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18274-07,Constitución y justicia,principal,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18275-12,Medio ambiente,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18276-07,Constitución y justicia,principal,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18276-07,Trabajo y seguridad social,secundario,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18277-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18278-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18289-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18288-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18287-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18291-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18291-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18292-07,Seguridad,principal,hibrido_institucional_texto,0.762,1,institutional-hybrid-v0.3
+18292-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.762,1,institutional-hybrid-v0.3
+18293-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18295-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18295-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18306-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18307-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18308-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18280-21,Pesca y acuicultura,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18309-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18310-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18311-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18312-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18279-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18286-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18297-07,Derechos humanos,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18297-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18298-07,"Economía, comercio y consumidores",principal,hibrido_institucional_texto,0.919,0,institutional-hybrid-v0.3
+18298-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.919,0,institutional-hybrid-v0.3
+18313-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18313-08,Constitución y justicia,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18316-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18317-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18318-19,Ciencia y tecnología,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18319-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18319-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18320-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18326-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18296-05,Economía y hacienda,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18299-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18300-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18302-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18303-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18304-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18305-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18321-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18322-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18301-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18324-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18324-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18325-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18325-06,Deportes,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18327-07,Constitución y justicia,principal,hibrido_institucional_texto,0.789,1,institutional-hybrid-v0.3
+18327-07,Trabajo y seguridad social,secundario,hibrido_institucional_texto,0.789,1,institutional-hybrid-v0.3
+18294-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18328-05,Gobierno interior y descentralización,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18328-05,Economía y hacienda,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18329-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18330-07,Constitución y justicia,principal,hibrido_institucional_texto,0.794,1,institutional-hybrid-v0.3
+18330-07,Cultura y comunicaciones,secundario,hibrido_institucional_texto,0.794,1,institutional-hybrid-v0.3
+18331-17,Derechos humanos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18314-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18315-07,Relaciones exteriores,principal,hibrido_institucional_texto,0.834,0,institutional-hybrid-v0.3
+18315-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.834,0,institutional-hybrid-v0.3
+18342-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18342-02,Gobierno interior y descentralización,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18343-16,Administración parlamentaria,principal,hibrido_institucional_texto,0.583,1,institutional-hybrid-v0.3
+18344-07,Salud,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18344-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18345-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18345-13,Educación,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18346-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18347-29,Deportes,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18323-07,Salud,principal,hibrido_institucional_texto,0.771,1,institutional-hybrid-v0.3
+18323-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.771,1,institutional-hybrid-v0.3
+18348-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18349-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18350-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18351-07,Seguridad,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18351-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18353-07,Constitución y justicia,principal,hibrido_institucional_texto,0.731,1,institutional-hybrid-v0.3
+18353-07,Salud,secundario,hibrido_institucional_texto,0.731,1,institutional-hybrid-v0.3
+18355-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18357-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18332-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18333-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.78,0,institutional-hybrid-v0.3
+18333-07,Cultura y comunicaciones,secundario,hibrido_institucional_texto,0.78,0,institutional-hybrid-v0.3
+18333-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.78,0,institutional-hybrid-v0.3
+18334-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18335-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18336-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18337-12,Medio ambiente,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18338-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18340-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18352-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18354-07,Trabajo y seguridad social,principal,hibrido_institucional_texto,0.888,0,institutional-hybrid-v0.3
+18354-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.888,0,institutional-hybrid-v0.3
+18358-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18359-07,Constitución y justicia,principal,hibrido_institucional_texto,0.762,1,institutional-hybrid-v0.3
+18359-07,Gobierno interior y descentralización,secundario,hibrido_institucional_texto,0.762,1,institutional-hybrid-v0.3
+18360-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18360-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18361-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18362-19,Ciencia y tecnología,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18363-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18467-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18341-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18364-07,Trabajo y seguridad social,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18364-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18365-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18366-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18367-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18373-07,Constitución y justicia,principal,hibrido_institucional_texto,0.691,1,institutional-hybrid-v0.3
+18374-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18375-29,Deportes,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18376-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18380-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18381-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18382-29,Deportes,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18339-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18356-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18369-07,Seguridad,principal,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18369-07,Economía y hacienda,secundario,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18369-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18370-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18371-21,Pesca y acuicultura,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18386-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18386-08,Salud,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18387-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18388-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18390-07,Economía y hacienda,principal,hibrido_institucional_texto,0.641,1,institutional-hybrid-v0.3
+18390-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.641,1,institutional-hybrid-v0.3
+18391-09,Infraestructura y obras públicas,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18392-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18393-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18394-16,Administración parlamentaria,principal,hibrido_institucional_texto,0.583,1,institutional-hybrid-v0.3
+18395-07,Constitución y justicia,principal,hibrido_institucional_texto,0.677,1,institutional-hybrid-v0.3
+18396-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18397-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18397-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18398-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18399-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18400-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18368-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18372-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18377-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18379-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18402-33,Agua y recursos hídricos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18403-24,Cultura y comunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18405-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18459-05,Economía y hacienda,principal,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18408-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18408-25,Defensa,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18409-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18378-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18410-07,Constitución y justicia,principal,hibrido_institucional_texto,0.889,0,institutional-hybrid-v0.3
+18411-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18383-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18384-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18412-07,Constitución y justicia,principal,hibrido_institucional_texto,0.79,1,institutional-hybrid-v0.3
+18412-07,Salud,secundario,hibrido_institucional_texto,0.79,1,institutional-hybrid-v0.3
+18413-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18414-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18414-18,Mujeres y género,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18385-07,Seguridad,principal,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18385-07,Defensa,secundario,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18385-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18389-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18389-04,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18406-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18415-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18415-18,Ciencia y tecnología,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18416-07,Constitución y justicia,principal,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18416-07,Cultura y comunicaciones,secundario,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18417-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18418-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18401-31,Desarrollo social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18401-31,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18404-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18407-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18420-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18422-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18424-07,Educación,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18424-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18425-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18430-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18443-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18443-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18419-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18432-07,Constitución y justicia,principal,hibrido_institucional_texto,0.817,1,institutional-hybrid-v0.3
+18433-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18444-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18434-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18434-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18435-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18421-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.807,0,institutional-hybrid-v0.3
+18421-07,Cultura y comunicaciones,secundario,hibrido_institucional_texto,0.807,0,institutional-hybrid-v0.3
+18421-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.807,0,institutional-hybrid-v0.3
+18423-07,Constitución y justicia,principal,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18423-07,Seguridad,secundario,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18426-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18447-07,Trabajo y seguridad social,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18447-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18448-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18448-25,Personas mayores y discapacidad,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18449-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18427-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18450-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18468-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18428-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18429-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18431-31,Desarrollo social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18453-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18454-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18455-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18455-07,Seguridad,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18455-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18456-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18457-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18458-07,Constitución y justicia,principal,hibrido_institucional_texto,0.781,1,institutional-hybrid-v0.3
+18458-07,Relaciones exteriores,secundario,hibrido_institucional_texto,0.781,1,institutional-hybrid-v0.3
+18460-07,Seguridad,principal,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18460-07,Defensa,secundario,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18460-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18437-37,"Cultura, patrimonio y deporte",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18438-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18439-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18440-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18441-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18442-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.802,1,institutional-hybrid-v0.3
+18442-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.802,1,institutional-hybrid-v0.3
+18461-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18469-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18471-07,Seguridad,principal,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18471-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18473-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18436-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18445-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18451-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18452-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18474-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18475-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18476-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18477-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18479-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18480-07,Constitución y justicia,principal,hibrido_institucional_texto,0.884,0,institutional-hybrid-v0.3
+18446-07,Constitución y justicia,principal,hibrido_institucional_texto,0.866,0,institutional-hybrid-v0.3
+18446-07,Seguridad,secundario,hibrido_institucional_texto,0.866,0,institutional-hybrid-v0.3
+18465-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18466-37,"Cultura, patrimonio y deporte",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18481-07,Cultura y comunicaciones,principal,hibrido_institucional_texto,0.668,1,institutional-hybrid-v0.3
+18481-07,"Economía, comercio y consumidores",secundario,hibrido_institucional_texto,0.668,1,institutional-hybrid-v0.3
+18481-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.668,1,institutional-hybrid-v0.3
+18482-07,Constitución y justicia,principal,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18482-07,Economía y hacienda,secundario,hibrido_institucional_texto,0.776,1,institutional-hybrid-v0.3
+18483-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18484-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18485-07,Constitución y justicia,principal,hibrido_institucional_texto,0.861,0,institutional-hybrid-v0.3
+18485-07,Seguridad,secundario,hibrido_institucional_texto,0.861,0,institutional-hybrid-v0.3
+18486-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18487-12,Medio ambiente,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18462-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18464-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18464-14,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18470-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18490-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18529-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18598-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18492-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18493-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18494-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18495-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18496-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18497-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18498-19,Ciencia y tecnología,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18499-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18500-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18472-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18478-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18488-07,Seguridad,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18488-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18489-07,Seguridad,principal,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18489-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18491-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18506-07,Seguridad,principal,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18506-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18507-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18507-04,Ciencia y tecnología,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18508-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18509-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18509-35,Infraestructura y obras públicas,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18509-35,Transportes y telecomunicaciones,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18502-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18503-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18504-09,Infraestructura y obras públicas,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18510-07,Trabajo y seguridad social,principal,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18510-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.848,0,institutional-hybrid-v0.3
+18511-07,Personas mayores y discapacidad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18511-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18512-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18538-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18513-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18514-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18514-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18515-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18516-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18517-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18501-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18518-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18519-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18520-07,Constitución y justicia,principal,hibrido_institucional_texto,0.875,0,institutional-hybrid-v0.3
+18520-07,Trabajo y seguridad social,secundario,hibrido_institucional_texto,0.875,0,institutional-hybrid-v0.3
+18531-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18531-03,Defensa,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18527-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18528-01,Agricultura y mundo rural,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18530-02,Defensa,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18532-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18533-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18533-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18622-24,Cultura y comunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18505-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18526-07,Constitución y justicia,principal,hibrido_institucional_texto,0.839,1,institutional-hybrid-v0.3
+18534-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18535-07,Constitución y justicia,principal,hibrido_institucional_texto,0.722,1,institutional-hybrid-v0.3
+18535-07,Transportes y telecomunicaciones,secundario,hibrido_institucional_texto,0.722,1,institutional-hybrid-v0.3
+18536-07,Constitución y justicia,principal,hibrido_institucional_texto,0.871,1,institutional-hybrid-v0.3
+18537-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18521-07,Constitución y justicia,principal,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18521-07,Gobierno interior y descentralización,secundario,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18522-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18540-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18523-16,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18523-16,Administración parlamentaria,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18524-05,Economía y hacienda,principal,hibrido_institucional_texto,0.91,0,institutional-hybrid-v0.3
+18525-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18539-21,Pesca y acuicultura,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18541-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18541-06,Seguridad,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18542-29,Deportes,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18543-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18544-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18545-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18546-34,Mujeres y género,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18547-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18548-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18549-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18550-36,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18552-07,Vivienda y territorio,principal,hibrido_institucional_texto,0.826,0,institutional-hybrid-v0.3
+18552-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.826,0,institutional-hybrid-v0.3
+18551-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18553-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18554-36,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18555-17,Derechos humanos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18556-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18557-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18562-07,Educación,principal,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18562-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.816,1,institutional-hybrid-v0.3
+18563-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18563-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18564-07,Constitución y justicia,principal,hibrido_institucional_texto,0.623,1,institutional-hybrid-v0.3
+18565-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18565-03,Constitución y justicia,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18566-07,Seguridad,principal,hibrido_institucional_texto,0.677,1,institutional-hybrid-v0.3
+18566-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.677,1,institutional-hybrid-v0.3
+18575-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18575-11,Educación,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18575-11,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18588-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18567-07,Constitución y justicia,principal,hibrido_institucional_texto,0.862,1,institutional-hybrid-v0.3
+18568-07,Salud,principal,hibrido_institucional_texto,0.83,1,institutional-hybrid-v0.3
+18568-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.83,1,institutional-hybrid-v0.3
+18569-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18570-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18576-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18599-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18599-06,Trabajo y seguridad social,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18573-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18574-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18583-14,Vivienda y territorio,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18558-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18559-37,"Cultura, patrimonio y deporte",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18561-36,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18586-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18587-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18589-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18589-08,Medio ambiente,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18590-07,"Familia, infancia y adolescencia",principal,hibrido_institucional_texto,0.839,0,institutional-hybrid-v0.3
+18590-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.839,0,institutional-hybrid-v0.3
+18601-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18560-35,Personas mayores y discapacidad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18571-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18572-07,Constitución y justicia,principal,hibrido_institucional_texto,0.74,1,institutional-hybrid-v0.3
+18572-07,Personas mayores y discapacidad,secundario,hibrido_institucional_texto,0.74,1,institutional-hybrid-v0.3
+18591-07,Cultura y comunicaciones,principal,hibrido_institucional_texto,0.596,1,institutional-hybrid-v0.3
+18591-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.596,1,institutional-hybrid-v0.3
+18592-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18593-07,Constitución y justicia,principal,hibrido_institucional_texto,0.839,0,institutional-hybrid-v0.3
+18593-07,Vivienda y territorio,secundario,hibrido_institucional_texto,0.839,0,institutional-hybrid-v0.3
+18594-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18595-07,Trabajo y seguridad social,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18595-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18596-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18602-07,Constitución y justicia,principal,hibrido_institucional_texto,0.758,1,institutional-hybrid-v0.3
+18603-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18603-13,Salud,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18604-07,Transportes y telecomunicaciones,principal,hibrido_institucional_texto,0.821,1,institutional-hybrid-v0.3
+18604-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.821,1,institutional-hybrid-v0.3
+18577-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18578-37,"Cultura, patrimonio y deporte",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18579-07,Constitución y justicia,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18580-07,Constitución y justicia,principal,hibrido_institucional_texto,0.736,1,institutional-hybrid-v0.3
+18580-07,Defensa,secundario,hibrido_institucional_texto,0.736,1,institutional-hybrid-v0.3
+18600-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18605-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18606-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18610-07,Constitución y justicia,principal,hibrido_institucional_texto,0.781,1,institutional-hybrid-v0.3
+18610-07,Educación,secundario,hibrido_institucional_texto,0.781,1,institutional-hybrid-v0.3
+18611-07,Minería y energía,principal,hibrido_institucional_texto,0.794,1,institutional-hybrid-v0.3
+18611-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.794,1,institutional-hybrid-v0.3
+18581-07,Constitución y justicia,principal,hibrido_institucional_texto,0.87,0,institutional-hybrid-v0.3
+18581-07,Gobierno interior y descentralización,secundario,hibrido_institucional_texto,0.87,0,institutional-hybrid-v0.3
+18582-07,Relaciones exteriores,principal,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18582-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.857,0,institutional-hybrid-v0.3
+18612-07,Seguridad,principal,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18612-07,Constitución y justicia,secundario,institucional_trayectoria,0.94,0,institutional-hybrid-v0.3
+18584-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18585-25,Seguridad,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18597-07,Seguridad,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18597-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18607-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18608-09,Infraestructura y obras públicas,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18609-07,Constitución y justicia,principal,hibrido_institucional_texto,0.636,1,institutional-hybrid-v0.3
+18613-07,Constitución y justicia,principal,hibrido_institucional_texto,0.852,0,institutional-hybrid-v0.3
+18613-07,Transportes y telecomunicaciones,secundario,hibrido_institucional_texto,0.852,0,institutional-hybrid-v0.3
+18614-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18615-07,Constitución y justicia,principal,hibrido_institucional_texto,0.677,1,institutional-hybrid-v0.3
+18616-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18617-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18619-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18618-19,Ciencia y tecnología,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18620-08,Minería y energía,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18621-34,Mujeres y género,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18623-07,Ciencia y tecnología,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18623-07,"Economía, comercio y consumidores",secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18623-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18624-36,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18625-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18626-17,Derechos humanos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18628-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
