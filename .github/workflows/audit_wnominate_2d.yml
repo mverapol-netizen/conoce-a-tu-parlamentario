@@ -1,0 +1,70 @@
+name: Audit diagnostic 2D W-NOMINATE
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/audit_wnominate_2d.R"
+      - "data/legislative/2026/wnominate/two_dimensional/member_coordinates_2d.csv"
+      - "data/legislative/2026/wnominate/two_dimensional/rollcall_coordinates_2d.csv"
+      - "data/legislative/2026/wnominate/two_dimensional/model_diagnostics_2d.csv"
+      - "data/legislative/2026/member_votes_enriched.csv"
+      - "data/legislative/2026/topics/rollcall_topic_map.csv"
+      - ".github/workflows/audit_wnominate_2d.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-diagnostic-2d-wnominate
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R dependency
+        shell: Rscript {0}
+        run: |
+          install.packages("jsonlite", repos = "https://cloud.r-project.org")
+
+      - name: Audit 2D stability and exploratory interpretation
+        run: Rscript scripts/audit_wnominate_2d.R
+
+      - name: Persist 2D audit outputs
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/legislative/2026/wnominate/two_dimensional/member_coordinates_2d_aligned.csv \
+            data/legislative/2026/wnominate/two_dimensional/procrustes_stability.csv \
+            data/legislative/2026/wnominate/two_dimensional/member_2d_stability.csv \
+            data/legislative/2026/wnominate/two_dimensional/group_association_2d.csv \
+            data/legislative/2026/wnominate/two_dimensional/group_centers_2d.csv \
+            data/legislative/2026/wnominate/two_dimensional/topic_dim2_summary.csv \
+            data/legislative/2026/wnominate/two_dimensional/top_dim2_rollcalls.csv \
+            data/legislative/2026/wnominate/two_dimensional/model_diagnostics_2d_audited.csv \
+            data/legislative/2026/wnominate/two_dimensional/audit_2d_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No 2D W-NOMINATE audit changes"
+          else
+            git commit -m "Actualiza auditoría W-NOMINATE 2D 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
