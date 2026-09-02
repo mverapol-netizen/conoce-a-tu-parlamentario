@@ -1,0 +1,348 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "PASS",
+  "completed_specs": ["early_raw", "late_raw", "early_cap20", "late_cap20"],
+  "failed_specs": [],
+  "split": {
+    "eligible_rollcalls": 276,
+    "early_rollcalls_raw": 138,
+    "late_rollcalls_raw": 138,
+    "early_start": "2026-03-23",
+    "early_end": "2026-05-20",
+    "late_start": "2026-05-20",
+    "late_end": "2026-09-01",
+    "split_rule": "Orden cronológico de los roll calls elegibles con lop >= 0.025; primera mitad vs segunda mitad por número de votaciones, evitando elegir una fecha de corte sustantiva ad hoc."
+  },
+  "raw_halves": {
+    "pearson": 0.9516,
+    "spearman": 0.9139
+  },
+  "cap20_halves": {
+    "pearson": 0.8826,
+    "spearman": 0.8955
+  },
+  "model_diagnostics": [
+    {
+      "spec_id": "early_raw",
+      "start_date": "2026-03-23",
+      "end_date": "2026-05-20",
+      "selected_rollcalls": 138,
+      "selected_bills": 23,
+      "largest_bill_rollcalls": 72,
+      "largest_bill_share": 0.5217,
+      "estimated_members": 154,
+      "anchor_id": "1012",
+      "anchor_name": "Boris Barrera Moreno",
+      "sign_flipped_to_full": false,
+      "correlation_raw_to_full_before_sign": 0.9908,
+      "correlation_aligned_to_full": 0.9908,
+      "correct_classification_1d": 95.6116,
+      "apre_1d": 0.8798,
+      "gmp_1d": 0.8966,
+      "eigenvalue_1": 24.1006
+    },
+    {
+      "spec_id": "late_raw",
+      "start_date": "2026-05-20",
+      "end_date": "2026-09-01",
+      "selected_rollcalls": 138,
+      "selected_bills": 34,
+      "largest_bill_rollcalls": 44,
+      "largest_bill_share": 0.3188,
+      "estimated_members": 153,
+      "anchor_id": "1209",
+      "anchor_name": "Matías Fernández Hartwig",
+      "sign_flipped_to_full": false,
+      "correlation_raw_to_full_before_sign": 0.9797,
+      "correlation_aligned_to_full": 0.9797,
+      "correct_classification_1d": 96.003,
+      "apre_1d": 0.8909,
+      "gmp_1d": 0.8974,
+      "eigenvalue_1": 24.715
+    },
+    {
+      "spec_id": "early_cap20",
+      "start_date": "2026-03-23",
+      "end_date": "2026-05-20",
+      "selected_rollcalls": 78,
+      "selected_bills": 23,
+      "largest_bill_rollcalls": 20,
+      "largest_bill_share": 0.2564,
+      "estimated_members": 154,
+      "anchor_id": "1177",
+      "anchor_name": "Carolina Tello Rojas",
+      "sign_flipped_to_full": false,
+      "correlation_raw_to_full_before_sign": 0.9475,
+      "correlation_aligned_to_full": 0.9475,
+      "correct_classification_1d": 96.8139,
+      "apre_1d": 0.9136,
+      "gmp_1d": 0.9241,
+      "eigenvalue_1": 24.5698
+    },
+    {
+      "spec_id": "late_cap20",
+      "start_date": "2026-05-20",
+      "end_date": "2026-09-01",
+      "selected_rollcalls": 114,
+      "selected_bills": 34,
+      "largest_bill_rollcalls": 20,
+      "largest_bill_share": 0.1754,
+      "estimated_members": 153,
+      "anchor_id": "1209",
+      "anchor_name": "Matías Fernández Hartwig",
+      "sign_flipped_to_full": false,
+      "correlation_raw_to_full_before_sign": 0.973,
+      "correlation_aligned_to_full": 0.973,
+      "correct_classification_1d": 95.9266,
+      "apre_1d": 0.888,
+      "gmp_1d": 0.8966,
+      "eigenvalue_1": 23.9676
+    }
+  ],
+  "most_shifted_raw": [
+    {
+      "diputado_id": "1234",
+      "diputado_nombre": "Mario Olavarría Rodríguez",
+      "delta_z_late_minus_early": 1.1129,
+      "abs_rank_change": 56
+    },
+    {
+      "diputado_id": "1082",
+      "diputado_nombre": "Cristóbal Urruticoechea Ríos",
+      "delta_z_late_minus_early": 0.599,
+      "abs_rank_change": 32
+    },
+    {
+      "diputado_id": "1212",
+      "diputado_nombre": "Erich Grohs Marín",
+      "delta_z_late_minus_early": 0.5941,
+      "abs_rank_change": 33
+    },
+    {
+      "diputado_id": "1215",
+      "diputado_nombre": "Álvaro Jofré Cáceres",
+      "delta_z_late_minus_early": 0.5823,
+      "abs_rank_change": 31
+    },
+    {
+      "diputado_id": "1228",
+      "diputado_nombre": "Paulina Muñoz Minte",
+      "delta_z_late_minus_early": 0.57,
+      "abs_rank_change": 28
+    },
+    {
+      "diputado_id": "1223",
+      "diputado_nombre": "Hans Marowski Cuevas",
+      "delta_z_late_minus_early": 0.5692,
+      "abs_rank_change": 28
+    },
+    {
+      "diputado_id": "1217",
+      "diputado_nombre": "Pier Karlezi Hazleby",
+      "delta_z_late_minus_early": 0.5477,
+      "abs_rank_change": 25
+    },
+    {
+      "diputado_id": "915",
+      "diputado_nombre": "Germán Verdugo Soto",
+      "delta_z_late_minus_early": 0.4981,
+      "abs_rank_change": 42
+    },
+    {
+      "diputado_id": "1202",
+      "diputado_nombre": "Eduardo Cretton Rebolledo",
+      "delta_z_late_minus_early": 0.4958,
+      "abs_rank_change": 35
+    },
+    {
+      "diputado_id": "1021",
+      "diputado_nombre": "Andrés Celis Montt",
+      "delta_z_late_minus_early": 0.4945,
+      "abs_rank_change": 57
+    },
+    {
+      "diputado_id": "1140",
+      "diputado_nombre": "Daniel Lilayu Vivanco",
+      "delta_z_late_minus_early": 0.4887,
+      "abs_rank_change": 33
+    },
+    {
+      "diputado_id": "1146",
+      "diputado_nombre": "José Carlos Meza Pereira",
+      "delta_z_late_minus_early": -0.4874,
+      "abs_rank_change": 48
+    },
+    {
+      "diputado_id": "1218",
+      "diputado_nombre": "José Antonio Kast Adriasola",
+      "delta_z_late_minus_early": -0.4646,
+      "abs_rank_change": 36
+    },
+    {
+      "diputado_id": "1214",
+      "diputado_nombre": "Constanza Hube Portus",
+      "delta_z_late_minus_early": 0.4629,
+      "abs_rank_change": 32
+    },
+    {
+      "diputado_id": "1220",
+      "diputado_nombre": "Leandro Kunstmann Collado",
+      "delta_z_late_minus_early": -0.4598,
+      "abs_rank_change": 33
+    },
+    {
+      "diputado_id": "1245",
+      "diputado_nombre": "Alejandro Riquelme Ducci",
+      "delta_z_late_minus_early": -0.4583,
+      "abs_rank_change": 31
+    },
+    {
+      "diputado_id": "1221",
+      "diputado_nombre": "Benjamín Lorca Inzunza",
+      "delta_z_late_minus_early": -0.4583,
+      "abs_rank_change": 31
+    },
+    {
+      "diputado_id": "1225",
+      "diputado_nombre": "Cristian Menchaca Pinochet",
+      "delta_z_late_minus_early": -0.4583,
+      "abs_rank_change": 31
+    },
+    {
+      "diputado_id": "1190",
+      "diputado_nombre": "Enrique Bassaletti Riess",
+      "delta_z_late_minus_early": -0.4583,
+      "abs_rank_change": 28
+    },
+    {
+      "diputado_id": "1191",
+      "diputado_nombre": "Valentina Becerra Peña",
+      "delta_z_late_minus_early": -0.4583,
+      "abs_rank_change": 28
+    }
+  ],
+  "most_shifted_cap20": [
+    {
+      "diputado_id": "1082",
+      "diputado_nombre": "Cristóbal Urruticoechea Ríos",
+      "delta_z_late_minus_early": 1.6958,
+      "abs_rank_change": 40
+    },
+    {
+      "diputado_id": "1212",
+      "diputado_nombre": "Erich Grohs Marín",
+      "delta_z_late_minus_early": 1.6679,
+      "abs_rank_change": 31
+    },
+    {
+      "diputado_id": "1215",
+      "diputado_nombre": "Álvaro Jofré Cáceres",
+      "delta_z_late_minus_early": 1.6455,
+      "abs_rank_change": 32
+    },
+    {
+      "diputado_id": "1223",
+      "diputado_nombre": "Hans Marowski Cuevas",
+      "delta_z_late_minus_early": 1.6432,
+      "abs_rank_change": 28
+    },
+    {
+      "diputado_id": "1228",
+      "diputado_nombre": "Paulina Muñoz Minte",
+      "delta_z_late_minus_early": 1.6323,
+      "abs_rank_change": 29
+    },
+    {
+      "diputado_id": "1217",
+      "diputado_nombre": "Pier Karlezi Hazleby",
+      "delta_z_late_minus_early": 1.6205,
+      "abs_rank_change": 30
+    },
+    {
+      "diputado_id": "1234",
+      "diputado_nombre": "Mario Olavarría Rodríguez",
+      "delta_z_late_minus_early": 1.0459,
+      "abs_rank_change": 52
+    },
+    {
+      "diputado_id": "1146",
+      "diputado_nombre": "José Carlos Meza Pereira",
+      "delta_z_late_minus_early": -0.7292,
+      "abs_rank_change": 57
+    },
+    {
+      "diputado_id": "1191",
+      "diputado_nombre": "Valentina Becerra Peña",
+      "delta_z_late_minus_early": -0.6982,
+      "abs_rank_change": 28
+    },
+    {
+      "diputado_id": "1225",
+      "diputado_nombre": "Cristian Menchaca Pinochet",
+      "delta_z_late_minus_early": -0.6934,
+      "abs_rank_change": 32
+    },
+    {
+      "diputado_id": "1100",
+      "diputado_nombre": "Cristián Araya Lerdo de Tejada",
+      "delta_z_late_minus_early": -0.688,
+      "abs_rank_change": 22
+    },
+    {
+      "diputado_id": "1218",
+      "diputado_nombre": "José Antonio Kast Adriasola",
+      "delta_z_late_minus_early": -0.6872,
+      "abs_rank_change": 40
+    },
+    {
+      "diputado_id": "1245",
+      "diputado_nombre": "Alejandro Riquelme Ducci",
+      "delta_z_late_minus_early": -0.677,
+      "abs_rank_change": 32
+    },
+    {
+      "diputado_id": "1220",
+      "diputado_nombre": "Leandro Kunstmann Collado",
+      "delta_z_late_minus_early": -0.6742,
+      "abs_rank_change": 36
+    },
+    {
+      "diputado_id": "1165",
+      "diputado_nombre": "Agustín Romero Leiva",
+      "delta_z_late_minus_early": -0.6727,
+      "abs_rank_change": 31
+    },
+    {
+      "diputado_id": "1190",
+      "diputado_nombre": "Enrique Bassaletti Riess",
+      "delta_z_late_minus_early": -0.6727,
+      "abs_rank_change": 23
+    },
+    {
+      "diputado_id": "1247",
+      "diputado_nombre": "Javiera Rodríguez Pascual",
+      "delta_z_late_minus_early": -0.6727,
+      "abs_rank_change": 30
+    },
+    {
+      "diputado_id": "1194",
+      "diputado_nombre": "Daniel Bustos Leal",
+      "delta_z_late_minus_early": -0.6727,
+      "abs_rank_change": 24
+    },
+    {
+      "diputado_id": "1150",
+      "diputado_nombre": "Benjamín Moreno Bascur",
+      "delta_z_late_minus_early": -0.6727,
+      "abs_rank_change": 17
+    },
+    {
+      "diputado_id": "1221",
+      "diputado_nombre": "Benjamín Lorca Inzunza",
+      "delta_z_late_minus_early": -0.6727,
+      "abs_rank_change": 20
+    }
+  ],
+  "methodological_conclusion_provisional": "Estabilidad temporal moderada: la estructura 1D persiste, pero existe variación suficiente para mantener las coordenadas como experimentales y evitar rankings públicos estáticos.",
+  "warnings": ["La estabilidad temporal agregada no implica estabilidad individual.", "Las submuestras temporales reducen el número de roll calls y pueden excluir miembros con baja participación binaria.", "El signo de cada corrida se alinea técnicamente contra la estimación completa; esta alineación no confiere significado político al signo.", "No integrar todavía resultados temporales ni coordenadas W-NOMINATE en fichas públicas."]
+}
