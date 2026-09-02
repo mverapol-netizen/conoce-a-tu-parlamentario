@@ -166,42 +166,57 @@ def fetch_sessions() -> tuple[dict[str, dict], dict]:
     unique_sessions = []
     seen_ids = set()
     for session in session_nodes:
-        marker = id(session)
-        if marker not in seen_ids:
-            seen_ids.add(marker)
+        sid = child_text(session, "Id") or child_text(session, "ID")
+        if sid and sid not in seen_ids:
+            seen_ids.add(sid)
             unique_sessions.append(session)
 
     vote_to_session: dict[str, dict] = {}
     kept_sessions = 0
-    for session in unique_sessions:
-        session_date = iso_date(child_text(session, "FechaInicio"))
+    detail_errors = []
+    for index, session in enumerate(unique_sessions, 1):
+        session_date = iso_date(child_text(session, "FechaInicio") or child_text(session, "Fecha"))
         if not date_ok(session_date):
             continue
         kept_sessions += 1
+        session_id = child_text(session, "Id") or child_text(session, "ID")
         info = {
-            "sesion_id": child_text(session, "Id"),
+            "sesion_id": session_id,
             "sesion_numero": child_text(session, "Numero"),
             "sesion_fecha": session_date,
         }
-        vote_container = child(session, "Votaciones")
-        if vote_container is None:
-            continue
-        for vote in vote_container.iter():
-            if local_name(vote.tag) not in {"Votacion", "VotacionProyectoLey"}:
-                continue
-            vote_id = child_text(vote, "Id")
-            if vote_id:
-                vote_to_session[vote_id] = info
+        try:
+            detail_root = get_xml("WSSala", "retornarSesionAsistencia", {"prmSesionId": session_id})
+            detail_nodes = []
+            if local_name(detail_root.tag) in {"Sesion", "SesionSala"}:
+                detail_nodes = [detail_root]
+            else:
+                detail_nodes = descendants(detail_root, "Sesion") + descendants(detail_root, "SesionSala")
+            detail = detail_nodes[0] if detail_nodes else detail_root
+            vote_container = child(detail, "Votaciones")
+            if vote_container is not None:
+                for vote in vote_container.iter():
+                    if local_name(vote.tag) not in {"Votacion", "VotacionProyectoLey"}:
+                        continue
+                    vote_id = child_text(vote, "Id") or child_text(vote, "ID")
+                    if vote_id:
+                        vote_to_session[vote_id] = info
+        except Exception as exc:  # noqa: BLE001
+            detail_errors.append({"sesion_id": session_id, "error": str(exc)})
+        if index % 15 == 0:
+            print(f"  Sesiones auditadas: {index}/{len(unique_sessions)} · votos Sala acumulados={len(vote_to_session)}")
 
     tags = Counter(local_name(node.tag) for node in root.iter())
     debug = {
         "root_tag": local_name(root.tag),
         "session_nodes_detected": len(unique_sessions),
         "sessions_since_start": kept_sessions,
+        "session_detail_errors": len(detail_errors),
+        "session_detail_error_sample": detail_errors[:3],
         "most_common_tags": tags.most_common(20),
     }
     if not vote_to_session:
-        raise RuntimeError(f"WSSala no produjo IDs de votación de Sala. Diagnóstico: {debug}")
+        raise RuntimeError(f"WSSala no produjo IDs de votación de Sala tras consultar detalle de sesiones. Diagnóstico: {debug}")
     return vote_to_session, debug
 
 
@@ -360,7 +375,7 @@ def main() -> None:
         },
         "selected_bills": [row["boletin"] for row in project_rows],
         "contract_findings": {
-            "floor_verification": "Solo se incluye una votación si su ID aparece dentro de Votaciones de una sesión de WSSala.",
+            "floor_verification": "Solo se incluye una votación si su ID aparece dentro de Votaciones del detalle de una sesión de WSSala.",
             "full_legislative_course": "ProyectoLey no contiene una secuencia completa comisión por comisión; project_events conserva por ahora los trámites asociados a votaciones de Sala.",
             "themes": "Se preserva Materia oficial sin macroclasificación editorial.",
             "authorship": "Formato largo proyecto × autor, conservando orden e identificación Cámara/Senado.",
@@ -377,7 +392,7 @@ def main() -> None:
         f"- Autorías: **{len(author_rows)}** relaciones proyecto–autor.",
         f"- Votaciones verificadas de Sala: **{len(rollcall_rows)}**.",
         f"- Votos individuales: **{len(member_vote_rows)}**.", "",
-        "## Criterio de Sala", "", "Una votación entra en `rollcalls.csv` únicamente si su ID aparece dentro de una sesión retornada por `WSSala.retornarSesionesXAnno`.", "",
+        "## Criterio de Sala", "", "Una votación entra en `rollcalls.csv` únicamente si su ID aparece dentro del detalle de una sesión retornada por `WSSala.retornarSesionAsistencia`.", "",
         "## Hallazgo sobre tramitación", "", "`ProyectoLey` entrega iniciativa, Cámara de origen, autores, ministerios, materias y votaciones. Las votaciones agregan trámite constitucional y reglamentario. La cronología completa comisión por comisión requiere una capa adicional.", "",
         "## Boletines del piloto", "",
     ]
