@@ -39,6 +39,7 @@ def duplicate_count(rows: list[dict], keys: tuple[str, ...]) -> int:
 def main() -> None:
     projects = read_csv("projects.csv")
     events = read_csv("project_events.csv")
+    subjects = read_csv("project_subjects.csv")
     authors = read_csv("bill_authors.csv")
     rollcalls = read_csv("rollcalls.csv")
     member_votes = read_csv("member_votes.csv")
@@ -66,16 +67,29 @@ def main() -> None:
     for row in authors:
         authors_by_bill[row.get("boletin", "")].append(row)
     authored_bills = {bill for bill, rows in authors_by_bill.items() if bill and rows}
+    orphan_author_bills = sorted(authored_bills - parliamentary_bills)
     unresolved_motions = sorted(parliamentary_bills - authored_bills)
-    author_counts = {bill: len(rows) for bill, rows in authors_by_bill.items() if bill}
-    multi_author_bills = {bill: n for bill, n in author_counts.items() if n > 1}
+
+    current_author_counts = {
+        bill: len(authors_by_bill.get(bill, []))
+        for bill in parliamentary_bills
+        if authors_by_bill.get(bill)
+    }
+    multi_author_bills = {bill: n for bill, n in current_author_counts.items() if n > 1}
     duplicate_authors_within_bill = 0
-    duplicate_orders_within_bill = 0
-    for bill, rows in authors_by_bill.items():
+    duplicate_meaningful_orders_within_bill = 0
+    for bill in parliamentary_bills:
+        rows = authors_by_bill.get(bill, [])
         ids = [row.get("author_id", "") for row in rows if row.get("author_id")]
-        orders = [row.get("author_order", "") for row in rows if row.get("author_order")]
+        # La fuente devuelve 0 para múltiples coautores; solo auditamos un orden
+        # cuando existe un valor distinto de 0.
+        orders = [
+            row.get("author_order", "")
+            for row in rows
+            if row.get("author_order", "") not in {"", "0"}
+        ]
         duplicate_authors_within_bill += len(ids) - len(set(ids))
-        duplicate_orders_within_bill += len(orders) - len(set(orders))
+        duplicate_meaningful_orders_within_bill += len(orders) - len(set(orders))
 
     member_counts = Counter(row.get("vote_id", "") for row in member_votes if row.get("vote_id"))
     rollcall_ids = {row.get("vote_id", "") for row in rollcalls if row.get("vote_id")}
@@ -108,18 +122,26 @@ def main() -> None:
         failures.append(f"Hay {len(orphan_event_bills)} boletines huérfanos en project_events.csv")
     if events and not commission_events:
         failures.append("No se detectó ninguna mención de comisión en la tramitación")
+    if not subjects:
+        warnings.append("La fuente no produjo materias oficiales: project_subjects.csv está vacío")
 
     unresolved_limit = max(5, int(len(parliamentary_bills) * 0.03))
     if len(unresolved_motions) > unresolved_limit:
         failures.append(
             f"Demasiadas mociones sin autoría: {len(unresolved_motions)}/{len(parliamentary_bills)}"
         )
+    if orphan_author_bills:
+        failures.append(
+            f"Hay {len(orphan_author_bills)} boletines con autorías fuera del snapshot parlamentario vigente"
+        )
     if len(parliamentary_bills) >= 10 and not multi_author_bills:
         failures.append("No aparece ninguna moción con múltiples autores; posible pérdida de coautorías")
     if duplicate_authors_within_bill:
         failures.append(f"Hay {duplicate_authors_within_bill} autores duplicados dentro de un mismo boletín")
-    if duplicate_orders_within_bill:
-        warnings.append(f"Hay {duplicate_orders_within_bill} órdenes de autor repetidos dentro de un mismo boletín")
+    if duplicate_meaningful_orders_within_bill:
+        warnings.append(
+            f"Hay {duplicate_meaningful_orders_within_bill} órdenes de autor no-cero repetidos dentro de un mismo boletín"
+        )
 
     if orphan_member_vote_ids:
         failures.append(f"Hay {len(orphan_member_vote_ids)} votaciones nominales sin roll call padre")
@@ -139,6 +161,7 @@ def main() -> None:
             "projects_with_events": len(event_bills & project_bills),
             "event_coverage_pct": round(event_coverage * 100, 2),
             "commission_events": len(commission_events),
+            "subject_rows": len(subjects),
             "orphan_event_bills": orphan_event_bills,
         },
         "authorship": {
@@ -146,9 +169,10 @@ def main() -> None:
             "author_relations": len(authors),
             "bills_with_authors": len(authored_bills & parliamentary_bills),
             "unresolved_motions": unresolved_motions,
+            "orphan_author_bills": orphan_author_bills,
             "multi_author_bills": len(multi_author_bills),
-            "max_authors_on_bill": max(author_counts.values(), default=0),
-            "author_count_distribution": dict(sorted(Counter(author_counts.values()).items())),
+            "max_authors_on_bill": max(current_author_counts.values(), default=0),
+            "author_count_distribution": dict(sorted(Counter(current_author_counts.values()).items())),
         },
         "floor_votes": {
             "rollcalls": len(rollcalls),
@@ -176,10 +200,11 @@ def main() -> None:
         f"- Proyectos: {len(projects)}",
         f"- Eventos de tramitación: {len(events)} ({event_coverage:.1%} de proyectos con eventos)",
         f"- Eventos que mencionan comisión: {len(commission_events)}",
+        f"- Filas de materias oficiales: {len(subjects)}",
         f"- Mociones parlamentarias: {len(parliamentary_bills)}",
         f"- Relaciones de autoría: {len(authors)}",
         f"- Mociones con múltiples autores: {len(multi_author_bills)}",
-        f"- Máximo de autores en una moción: {max(author_counts.values(), default=0)}",
+        f"- Máximo de autores en una moción: {max(current_author_counts.values(), default=0)}",
         f"- Roll calls de Sala: {len(rollcalls)}",
         f"- Votos nominales: {len(member_votes)}",
         "",
