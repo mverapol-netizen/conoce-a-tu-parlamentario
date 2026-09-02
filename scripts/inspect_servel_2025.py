@@ -26,7 +26,7 @@ def inspect_xlsx(raw: bytes) -> dict:
     sheets = []
     for sheet in workbook.worksheets[:3]:
         rows = []
-        for row in sheet.iter_rows(min_row=1, max_row=35, max_col=16, values_only=True):
+        for row in sheet.iter_rows(min_row=1, max_row=10, max_col=30, values_only=True):
             values = [cell_value(x) for x in row]
             if any(x != "" for x in values):
                 rows.append(values)
