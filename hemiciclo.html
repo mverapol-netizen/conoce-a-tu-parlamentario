@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hemiciclo de la Cámara de Diputadas y Diputados de Chile: partidos, bancadas y equilibrio de fuerzas.">
+  <meta name="theme-color" content="#0f2f53">
+  <title>Hemiciclo · Conoce a tu parlamentario</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/hemicycle.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Conoce a tu parlamentario, inicio">
+        <span class="brand-mark" aria-hidden="true">CP</span>
+        <span>Conoce a tu parlamentario</span>
+      </a>
+      <nav class="site-tabs" aria-label="Secciones principales">
+        <a class="site-tab" href="index.html">Tu distrito</a>
+        <a class="site-tab is-active" href="hemiciclo.html" aria-current="page">Hemiciclo</a>
+      </nav>
+      <span class="data-badge">Cámara 2026–2030</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hemicycle-hero">
+      <div class="container hemicycle-hero-grid">
+        <div>
+          <p class="eyebrow">La Cámara completa</p>
+          <h1>¿Cómo se distribuyen las fuerzas en el hemiciclo?</h1>
+          <p class="hemicycle-lead">Una vista de los 155 escaños según partido, bancada o comité parlamentario y relación política con el Gobierno. Toca cualquier escaño para identificar a la diputada o diputado.</p>
+        </div>
+        <aside class="hemicycle-note">
+          <strong>Cómo leer este gráfico</strong>
+          <p>Es un mapa de fuerzas, no una reproducción de la ubicación física exacta de los escaños. Los independientes se cuentan dentro de la bancada a la que están adscritos, pero permanecen señalados explícitamente como independientes.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="force-section">
+      <div class="container">
+        <div class="force-summary" aria-label="Resumen de fuerzas">
+          <div class="force-stat"><span>Total Cámara</span><strong id="total-seats">155</strong><small>escaños</small></div>
+          <div class="force-stat"><span>Mayoría absoluta</span><strong id="majority-seats">78</strong><small>escaños</small></div>
+          <button class="force-stat" type="button" data-block="oposicion" data-filter-block="oposicion"><span>Oposición</span><strong id="opposition-seats">—</strong><small>Toca para destacar</small></button>
+          <button class="force-stat" type="button" data-block="no_alineado" data-filter-block="no_alineado"><span>No alineados</span><strong id="autonomous-seats">—</strong><small>Toca para destacar</small></button>
+          <button class="force-stat" type="button" data-block="oficialismo" data-filter-block="oficialismo"><span>Oficialismo</span><strong id="government-seats">—</strong><small>Toca para destacar</small></button>
+        </div>
+
+        <div class="hemicycle-layout">
+          <article class="hemicycle-card">
+            <div class="hemicycle-card-head">
+              <div>
+                <p class="eyebrow">155 diputadas y diputados</p>
+                <h2>Distribución de fuerzas</h2>
+                <p>Los colores identifican partidos. En el caso de independientes, el color corresponde a la bancada o comité al que están adscritos y el borde discontinuo conserva su condición de independiente.</p>
+              </div>
+              <span class="majority-badge">Mayoría: 78</span>
+            </div>
+
+            <div class="hemicycle-stage">
+              <svg id="hemicycle-svg" class="hemicycle-svg" viewBox="0 0 800 440" role="img" aria-label="Hemiciclo con 155 escaños"></svg>
+              <div id="hemicycle-tooltip" class="hemicycle-tooltip" hidden></div>
+            </div>
+            <div class="hemicycle-axis" aria-hidden="true"><span>Oposición</span><span>No alineados</span><span>Oficialismo</span></div>
+            <div id="member-panel" class="member-panel" hidden></div>
+          </article>
+
+          <aside class="balance-card">
+            <h3>Partidos y adscripciones</h3>
+            <p>El número incluye independientes cuando están adscritos a esa bancada política.</p>
+            <div id="party-legend" class="party-legend"></div>
+            <div class="legend-independent"><span class="legend-independent-mark"></span><span>Borde discontinuo = independiente adscrito a una bancada.</span></div>
+          </aside>
+        </div>
+
+        <article class="caucus-card">
+          <div class="caucus-card-head">
+            <div><p class="eyebrow">Organización parlamentaria</p><h3>Bancadas y comités</h3></div>
+            <p>Ordenados por número de integrantes</p>
+          </div>
+          <table class="caucus-table">
+            <thead><tr><th>Bancada / comité</th><th>Bloque</th><th>Diputados</th></tr></thead>
+            <tbody id="caucus-body"></tbody>
+          </table>
+          <p class="method-note">Partido y bancada provienen de las fichas oficiales de la Cámara. La clasificación “oficialismo / oposición / no alineado” es una capa editorial separada, revisada al <strong id="political-reviewed">—</strong>. PDG y PNL se presentan como no alineados mientras mantengan una posición autónoma frente al Gobierno. Las adscripciones se actualizan automáticamente desde la Cámara.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Conoce a tu parlamentario</p>
+      <p>Fuentes: Cámara de Diputadas y Diputados de Chile y revisión pública de alineamientos políticos.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/profiles.js"></script>
+  <script src="assets/js/political_config.js"></script>
+  <script src="assets/js/hemicycle.js"></script>
+</body>
+</html>
