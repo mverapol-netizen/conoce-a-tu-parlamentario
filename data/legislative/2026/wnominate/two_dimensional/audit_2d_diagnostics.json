@@ -25,6 +25,76 @@
     },
     "warning": "Asociación descriptiva, no causal y no suficiente para nombrar dimensiones."
   },
+  "dim2_arch_diagnostic": {
+    "baseline_r_squared_quadratic": 0.0301,
+    "baseline_delta_r_squared_quadratic": 0.0199,
+    "baseline_quadratic_coefficient": 0.183,
+    "specifications": [
+      {
+        "spec_id": "raw_lop025_2d",
+        "n_members": 154,
+        "r_squared_linear": 0.0102,
+        "adjusted_r_squared_linear": 0.0036,
+        "r_squared_quadratic": 0.0301,
+        "adjusted_r_squared_quadratic": 0.0172,
+        "delta_r_squared_quadratic": 0.0199,
+        "quadratic_coefficient": 0.183,
+        "quadratic_term_p_value_auxiliary": 0.0803,
+        "nested_model_p_value_auxiliary": 0.0803,
+        "quadratic_rmse": 0.3682
+      },
+      {
+        "spec_id": "raw_lop050_2d",
+        "n_members": 154,
+        "r_squared_linear": 0.0133,
+        "adjusted_r_squared_linear": 0.0068,
+        "r_squared_quadratic": 0.0242,
+        "adjusted_r_squared_quadratic": 0.0113,
+        "delta_r_squared_quadratic": 0.0109,
+        "quadratic_coefficient": 0.1292,
+        "quadratic_term_p_value_auxiliary": 0.1963,
+        "nested_model_p_value_auxiliary": 0.1963,
+        "quadratic_rmse": 0.3664
+      },
+      {
+        "spec_id": "cap20_balanced_lop025_2d",
+        "n_members": 154,
+        "r_squared_linear": 0.0088,
+        "adjusted_r_squared_linear": 0.0023,
+        "r_squared_quadratic": 0.0151,
+        "adjusted_r_squared_quadratic": 0.002,
+        "delta_r_squared_quadratic": 0.0063,
+        "quadratic_coefficient": -0.1143,
+        "quadratic_term_p_value_auxiliary": 0.328,
+        "nested_model_p_value_auxiliary": 0.328,
+        "quadratic_rmse": 0.3565
+      }
+    ],
+    "residual_group_association": [
+      {
+        "group_type": "party",
+        "n_groups": 18,
+        "n_members": 154,
+        "eta_squared_dim2_residual": 0.8484,
+        "note": "Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión."
+      },
+      {
+        "group_type": "caucus",
+        "n_groups": 12,
+        "n_members": 154,
+        "eta_squared_dim2_residual": 0.9299,
+        "note": "Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión."
+      },
+      {
+        "group_type": "alignment",
+        "n_groups": 3,
+        "n_members": 154,
+        "eta_squared_dim2_residual": 0.2342,
+        "note": "Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión."
+      }
+    ],
+    "warning": "La relación cuadrática es un diagnóstico geométrico. Los p-valores son auxiliares y no propagan la incertidumbre de las coordenadas estimadas."
+  },
   "most_sensitive_members_after_procrustes": [
     {
       "diputado_id": "1021",

@@ -1,0 +1,4 @@
+"group_type","n_groups","n_members","eta_squared_dim2_residual","note"
+"party",18,154,0.848415350550262,"Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión."
+"caucus",12,154,0.929939920765306,"Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión."
+"alignment",3,154,0.234212884607759,"Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión."
