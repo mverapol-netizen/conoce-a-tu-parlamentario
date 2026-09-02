@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ficha legislativa de una diputada o diputado de la Cámara de Diputadas y Diputados de Chile.">
+  <meta name="theme-color" content="#0f2f53">
+  <title>Ficha legislativa · Conoce a tu parlamentario</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/hemicycle.css">
+  <link rel="stylesheet" href="assets/css/ficha.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Conoce a tu parlamentario, inicio">
+        <span class="brand-mark" aria-hidden="true">CP</span>
+        <span>Conoce a tu parlamentario</span>
+      </a>
+      <nav class="site-tabs" aria-label="Secciones principales">
+        <a class="site-tab" href="index.html">Tu distrito</a>
+        <a class="site-tab" href="hemiciclo.html">Hemiciclo</a>
+      </nav>
+      <span class="data-badge">Cámara 2026–2030</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="legislative-hero">
+      <div class="container">
+        <a class="back-link" href="index.html">← Volver</a>
+        <div id="legislative-profile" class="legislative-profile" aria-live="polite">
+          <p class="profile-loading">Cargando ficha…</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="legislative-body">
+      <div class="container">
+        <article id="legislative-shell" class="legislative-shell" hidden>
+          <p class="eyebrow">Ficha legislativa</p>
+          <h2>Espacio habilitado</h2>
+          <p>Esta página queda preparada para incorporar la ficha legislativa de cada diputada y diputado. Su contenido se definirá en la siguiente etapa del proyecto.</p>
+        </article>
+        <div id="profile-error" class="profile-error" hidden>
+          <h1>No encontramos esta ficha</h1>
+          <p>El enlace no corresponde a un integrante registrado actualmente en la base.</p>
+          <a href="index.html">Volver a buscar representantes</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Conoce a tu parlamentario</p>
+      <p>Información básica sincronizada desde la Cámara de Diputadas y Diputados de Chile.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/profiles.js"></script>
+  <script src="assets/js/ficha.js"></script>
+</body>
+</html>
