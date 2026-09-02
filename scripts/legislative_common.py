@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import html
 import re
+import time
 from datetime import date, datetime
 from pathlib import Path
 from typing import Iterable
@@ -29,6 +30,7 @@ MONTHS = {
 }
 
 TERMINAL_HINTS = ("publicado", "archivado", "retirado", "rechazado", "promulgado")
+RETRYABLE_HTTP = {429, 500, 502, 503, 504}
 
 
 def iso_date(value: str) -> str:
@@ -158,10 +160,38 @@ def spanish_date(value: str) -> str:
     return date(int(match.group(3)), month, int(match.group(1))).isoformat()
 
 
+def get_html(url: str, *, timeout: int = 45, tries: int = 4) -> requests.Response:
+    """Consulta HTML con backoff conservador para no castigar el portal público.
+
+    La Cámara puede responder 429/5xx después de ráfagas de solicitudes. Reintentar
+    unas pocas veces y respetar Retry-After hace la sincronización más estable sin
+    ocultar una caída persistente de la fuente.
+    """
+    last: Exception | None = None
+    for attempt in range(tries):
+        try:
+            response = HTTP.get(url, timeout=timeout, allow_redirects=True)
+            if response.status_code == 200:
+                return response
+            if response.status_code not in RETRYABLE_HTTP:
+                response.raise_for_status()
+            retry_after = response.headers.get("Retry-After", "").strip()
+            try:
+                delay = float(retry_after) if retry_after else 1.5 * (2 ** attempt)
+            except ValueError:
+                delay = 1.5 * (2 ** attempt)
+            last = RuntimeError(f"HTTP {response.status_code} para {url}")
+        except requests.RequestException as exc:
+            last = exc
+            delay = 1.5 * (2 ** attempt)
+        if attempt < tries - 1:
+            time.sleep(min(delay, 12.0))
+    raise RuntimeError(str(last) if last else f"No se pudo descargar {url}")
+
+
 def project_page(project_id: str, boletin: str) -> tuple[dict, list[dict]]:
     url = PROJECT_URL.format(project_id=project_id, boletin=boletin)
-    response = HTTP.get(url, timeout=45)
-    response.raise_for_status()
+    response = get_html(url)
     soup = BeautifulSoup(response.text, "html.parser")
     text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
     status_match = re.search(r"Estado\s+(.*?)\s+Numero de bolet[ií]n", text, re.I)
@@ -238,8 +268,7 @@ def individual_votes(node, vote_id: str) -> list[dict]:
 
 def verify_sala(vote_id: str, expected_date: str = "") -> dict:
     url = SALA_URL.format(vote_id=vote_id)
-    response = HTTP.get(url, timeout=45)
-    response.raise_for_status()
+    response = get_html(url)
     soup = BeautifulSoup(response.text, "html.parser")
     text = re.sub(r"\s+", " ", html.unescape(soup.get_text(" ", strip=True)))
     if "Detalle de Votación" not in text or "Sala de Sesiones" not in text:
