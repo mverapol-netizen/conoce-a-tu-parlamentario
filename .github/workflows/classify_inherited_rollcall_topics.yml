@@ -1,0 +1,63 @@
+name: Classify inherited roll-call topics
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/classify_inherited_rollcall_topics.py"
+      - "scripts/classify_topics_hybrid.py"
+      - "scripts/derive_topic_signals.py"
+      - "scripts/legislative_common.py"
+      - "scripts/sync_project_texts.py"
+      - "data/legislative/2026/topics/rollcall_topic_missing.csv"
+      - ".github/workflows/classify_inherited_rollcall_topics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inherited-rollcall-topics
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install system dependency
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq antiword
+
+      - name: Install Python dependencies
+        run: pip install requests beautifulsoup4 python-docx pypdf
+
+      - name: Classify inherited bills voted in Sala
+        run: python scripts/classify_inherited_rollcall_topics.py
+
+      - name: Persist inherited classifications
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/topics/rollcall_inherited_topic_classification.csv \
+                  data/legislative/2026/topics/rollcall_inherited_topic_review_queue.csv \
+                  data/legislative/2026/topics/rollcall_inherited_topic_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No inherited topic changes"
+          else
+            git commit -m "Clasifica proyectos heredados votados en Sala"
+            git pull --rebase origin main
+            git push origin main
+          fi
