@@ -1,0 +1,39 @@
+{
+  "rollcalls": 364,
+  "rollcall_topic_map_rows": 364,
+  "missing_rollcalls": 0,
+  "unique_rollcall_bills": 89,
+  "period_project_bills_used": 26,
+  "inherited_bills_used": 63,
+  "topics": {
+    "Economía y hacienda": 124,
+    "Educación": 50,
+    "Seguridad": 45,
+    "Minería y energía": 28,
+    "Gobierno interior y descentralización": 23,
+    "Vivienda y territorio": 13,
+    "Trabajo y seguridad social": 11,
+    "Relaciones exteriores": 10,
+    "Medio ambiente": 8,
+    "Deportes": 8,
+    "Economía, comercio y consumidores": 7,
+    "Desarrollo social": 6,
+    "Agua y recursos hídricos": 5,
+    "Familia, infancia y adolescencia": 5,
+    "Cultura y comunicaciones": 5,
+    "Transportes y telecomunicaciones": 4,
+    "Ciencia y tecnología": 4,
+    "Constitución y justicia": 3,
+    "Personas mayores y discapacidad": 1,
+    "Emergencias y desastres": 1,
+    "Cultura, patrimonio y deporte": 1,
+    "Mujeres y género": 1,
+    "Salud": 1
+  },
+  "topic_source_layers": {
+    "inherited_rollcall_project": 140,
+    "period_project": 224
+  },
+  "missing_examples": [],
+  "method_note": "Cada roll call hereda el tema principal del proyecto/boletín. Se conservan por separado proyectos ingresados en el período y proyectos heredados votados durante el período."
+}

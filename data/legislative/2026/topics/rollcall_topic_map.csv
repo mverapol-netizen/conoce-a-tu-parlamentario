@@ -1,0 +1,365 @@
+﻿vote_id,boletin,fecha,topic_primary,topic_secondary,topic_method,topic_confidence,topic_source_layer,taxonomy_version,tipo_votacion_proyecto,resultado
+88442,16944-25,2026-03-18,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88450,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88451,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88452,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88453,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88454,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88455,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88456,15347-07,2026-03-23,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88472,17737-14,2026-03-24,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88474,17474-06,2026-03-24,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88475,17474-06,2026-03-24,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88476,16985-06,2026-03-24,Gobierno interior y descentralización,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88477,16487-12,2026-03-24,Medio ambiente,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+88489,18137-05,2026-03-24,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,General,Aprobado
+88490,18137-05,2026-03-24,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88491,18137-05,2026-03-24,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88492,18137-05,2026-03-24,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88493,18137-05,2026-03-24,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88494,18137-05,2026-03-24,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88500,18003-35,2026-03-25,Personas mayores y discapacidad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88501,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88502,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88503,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88504,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88505,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88506,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88507,10634-29,2026-03-25,Deportes,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88517,18137-05,2026-03-25,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Única,Aprobado
+88518,18137-05,2026-03-25,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Única,Aprobado
+88519,18137-05,2026-03-25,Minería y energía,Economía y hacienda,revision_semantica,0.98,period_project,institutional-hybrid-v0.3,Única,Aprobado
+88544,16569-25,2026-04-06,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Unánime
+88545,17234-15,2026-04-06,Transportes y telecomunicaciones,Infraestructura y obras públicas,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88564,17504-22,2026-04-07,Emergencias y desastres,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88594,17246-15,2026-04-08,Transportes y telecomunicaciones,Seguridad | Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88611,17880-13,2026-04-13,Trabajo y seguridad social,Constitución y justicia | Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88612,17170-07,2026-04-13,Seguridad,Constitución y justicia | Agricultura y mundo rural,revision_semantica,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88613,17170-07,2026-04-13,Seguridad,Constitución y justicia | Agricultura y mundo rural,revision_semantica,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88614,17170-07,2026-04-13,Seguridad,Constitución y justicia | Agricultura y mundo rural,revision_semantica,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88633,17354-37,2026-04-14,"Cultura, patrimonio y deporte",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88634,17690-07,2026-04-14,Constitución y justicia,,hibrido_institucional_texto,0.866,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+88646,17757-29,2026-04-15,Deportes,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88647,17522-12,2026-04-15,Medio ambiente,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88648,17522-12,2026-04-15,Medio ambiente,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+88679,18043-06,2026-04-21,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88680,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+88681,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88682,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88683,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88684,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88685,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88686,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88687,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88688,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88689,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88690,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88691,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88692,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88693,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88694,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88695,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88696,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88697,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88698,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88699,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88700,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88701,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88702,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88703,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88704,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88705,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88706,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88707,18156-04,2026-04-21,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88718,17235-07,2026-04-22,Seguridad,Constitución y justicia,revision_semantica,0.98,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88738,16851-14,2026-05-04,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88754,17724-34,2026-05-05,Mujeres y género,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88755,18016-13,2026-05-05,Trabajo y seguridad social,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88756,17381-03,2026-05-05,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88757,17381-03,2026-05-05,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+88758,17471-07,2026-05-05,Agua y recursos hídricos,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+88759,17872-33,2026-05-05,Agua y recursos hídricos,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88760,17872-33,2026-05-05,Agua y recursos hídricos,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+88761,17405-07,2026-05-05,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88794,18107-07,2026-05-06,Constitución y justicia,,hibrido_institucional_texto,0.92,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+88810,14309-04,2026-05-11,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88811,14309-04,2026-05-11,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+88812,14309-04,2026-05-11,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Unánime
+88813,14309-04,2026-05-11,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Unánime
+88826,17112-19,2026-05-12,Ciencia y tecnología,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+88869,18215-10,2026-05-13,Relaciones exteriores,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+88870,18155-25,2026-05-13,Seguridad,Constitución y justicia,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+88871,18155-25,2026-05-13,Seguridad,Constitución y justicia,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88872,15258-25,2026-05-13,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+88881,18232-25,2026-05-18,Seguridad,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+88893,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,General,Aprobado
+88894,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,General,Aprobado
+88895,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88896,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88897,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88898,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88899,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88900,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88901,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88902,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88903,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88904,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88905,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88906,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88907,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88908,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88909,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88910,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88911,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88912,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88913,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88914,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88915,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88916,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88917,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88918,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88919,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88920,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88921,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88922,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88923,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88924,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88925,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88926,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88927,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88928,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88929,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88930,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88931,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88932,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88933,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88934,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88935,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88936,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88937,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88938,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88939,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88940,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88941,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88942,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88943,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88944,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88945,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88946,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88947,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88948,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88949,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88950,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88951,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88952,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88953,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88954,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88955,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88956,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88957,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88958,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88959,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88960,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88961,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88962,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88963,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88964,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88965,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88966,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88967,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88968,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88969,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88970,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88971,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88972,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88973,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88974,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88975,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88976,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88977,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88978,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88979,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88980,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+88981,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+88984,18216-05,2026-05-20,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89000,18156-04,2026-06-02,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89001,18156-04,2026-06-02,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89002,18156-04,2026-06-02,Educación,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89003,17287-14,2026-06-02,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89031,16808-25,2026-06-03,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89032,16808-25,2026-06-03,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89033,18230-13,2026-06-03,Trabajo y seguridad social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89034,18230-13,2026-06-03,Trabajo y seguridad social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89035,18230-13,2026-06-03,Trabajo y seguridad social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89036,18230-13,2026-06-03,Trabajo y seguridad social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89037,18230-13,2026-06-03,Trabajo y seguridad social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89038,18230-13,2026-06-03,Trabajo y seguridad social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89067,17956-10,2026-06-08,Relaciones exteriores,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89068,17957-10,2026-06-08,Relaciones exteriores,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89069,17958-10,2026-06-08,Relaciones exteriores,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89070,18178-10,2026-06-08,Relaciones exteriores,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89071,18030-12,2026-06-08,Medio ambiente,Agricultura y mundo rural,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89072,18157-33,2026-06-08,Agua y recursos hídricos,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89085,16686-19,2026-06-09,Ciencia y tecnología,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89086,16686-19,2026-06-09,Ciencia y tecnología,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89087,15258-25,2026-06-09,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89104,18048-06,2026-06-10,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89105,17630-10,2026-06-10,Relaciones exteriores,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89106,18256-10,2026-06-10,Relaciones exteriores,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89107,16725-06,2026-06-10,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89108,16725-06,2026-06-10,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89109,15936-18,2026-06-10,"Familia, infancia y adolescencia",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89110,15936-18,2026-06-10,"Familia, infancia y adolescencia",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89111,15936-18,2026-06-10,"Familia, infancia y adolescencia",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89112,15936-18,2026-06-10,"Familia, infancia y adolescencia",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89113,15936-18,2026-06-10,"Familia, infancia y adolescencia",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89153,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89154,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89155,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89156,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89157,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89158,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89159,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89160,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89161,16857-07,2026-06-16,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89162,17222-07,2026-06-16,Constitución y justicia,,hibrido_institucional_texto,0.898,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89178,18296-05,2026-06-17,Economía y hacienda,,hibrido_institucional_texto,0.92,period_project,institutional-hybrid-v0.3,General,Aprobado
+89179,18296-05,2026-06-17,Economía y hacienda,,hibrido_institucional_texto,0.92,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89180,18296-05,2026-06-17,Economía y hacienda,,hibrido_institucional_texto,0.92,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89210,10986-24,2026-06-22,Cultura y comunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89241,18257-10,2026-06-24,Relaciones exteriores,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89242,18211-25,2026-06-24,Seguridad,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89287,16851-14,2026-07-06,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89288,16851-14,2026-07-06,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89302,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89303,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89304,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89305,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89306,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89307,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89308,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89309,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89310,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89311,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89312,16743-04,2026-07-07,Educación,Economía y hacienda,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89313,14767-03,2026-07-07,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89314,14767-03,2026-07-07,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89315,14767-03,2026-07-07,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89316,14767-03,2026-07-07,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89317,14767-03,2026-07-07,"Economía, comercio y consumidores",,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89344,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89345,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89346,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89347,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89348,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89349,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89350,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89351,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89352,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89353,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89354,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89355,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89356,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89357,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89358,18384-08,2026-07-08,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89381,18399-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89382,18399-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89383,18399-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89384,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89385,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89386,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89387,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89388,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89389,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Unánime
+89390,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89391,16836-06,2026-07-13,Gobierno interior y descentralización,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89407,17012-14,2026-07-14,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89408,17012-14,2026-07-14,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89409,17012-14,2026-07-14,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89410,17012-14,2026-07-14,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89411,17012-14,2026-07-14,Vivienda y territorio,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89420,18401-31,2026-07-15,Desarrollo social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89421,18401-31,2026-07-15,Desarrollo social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89422,18401-31,2026-07-15,Desarrollo social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89423,18401-31,2026-07-15,Desarrollo social,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89470,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89471,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89472,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89473,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89474,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89475,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89476,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89477,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89478,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89479,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89480,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89481,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89482,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89483,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89484,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89485,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89486,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89487,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89488,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Unánime
+89489,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89490,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89491,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89492,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89493,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89494,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89495,18216-05,2026-07-21,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89521,18301-10,2026-07-22,Relaciones exteriores,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89522,18431-31,2026-07-22,Desarrollo social,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89523,18431-31,2026-07-22,Desarrollo social,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89524,17795-19,2026-07-22,Ciencia y tecnología,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89542,18216-05,2026-07-22,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89543,18384-08,2026-07-22,Minería y energía,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89544,18259-08,2026-07-22,Minería y energía,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89545,18259-08,2026-07-22,Minería y energía,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89546,18259-08,2026-07-22,Minería y energía,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89583,18258-07,2026-08-04,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.87,period_project,institutional-hybrid-v0.3,General,Aprobado
+89584,18258-07,2026-08-04,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.87,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89585,18258-07,2026-08-04,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.87,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89587,16569-25,2026-08-04,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89630,18524-05,2026-08-05,Economía y hacienda,,hibrido_institucional_texto,0.91,period_project,institutional-hybrid-v0.3,General,Aprobado
+89631,18389-04,2026-08-05,Educación,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89632,18389-04,2026-08-05,Educación,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89633,18389-04,2026-08-05,Educación,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89634,18389-04,2026-08-05,Educación,Economía y hacienda,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89668,18216-05,2026-08-10,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89669,18216-05,2026-08-10,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89670,18216-05,2026-08-10,Economía y hacienda,Trabajo y seguridad social | Desarrollo social | Infraestructura y obras públicas,revision_semantica,0.91,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89693,16300-07,2026-08-11,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89694,16300-07,2026-08-11,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89695,16300-07,2026-08-11,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89749,18210-06,2026-08-12,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89750,16777-07,2026-08-12,Salud,Constitución y justicia,hibrido_institucional_texto,0.848,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89751,18030-12,2026-08-12,Medio ambiente,Agricultura y mundo rural,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89779,17912-25,2026-08-17,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89780,17912-25,2026-08-17,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89781,17912-25,2026-08-17,Seguridad,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89783,17451-15,2026-08-17,Transportes y telecomunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Única,Aprobado
+89784,17837-13,2026-08-17,Trabajo y seguridad social,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89814,18525-06,2026-08-18,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89815,18525-06,2026-08-18,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89816,18525-06,2026-08-18,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89817,18525-06,2026-08-18,Gobierno interior y descentralización,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Unánime
+89842,15387-12,2026-08-18,Medio ambiente,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89843,12786-12,2026-08-18,Medio ambiente,Agricultura y mundo rural,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+89844,12786-12,2026-08-18,Medio ambiente,Agricultura y mundo rural,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Unánime
+89862,18429-10,2026-08-19,Relaciones exteriores,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Única,Aprobado
+89863,18189-14,2026-08-19,Vivienda y territorio,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,General,Aprobado
+89864,18189-14,2026-08-19,Vivienda y territorio,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89865,18189-14,2026-08-19,Vivienda y territorio,,institucional_destinacion,0.97,period_project,institutional-hybrid-v0.3,Particular,Aprobado
+89866,16397-15,2026-08-19,Transportes y telecomunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89867,17324-33,2026-08-19,Agua y recursos hídricos,Agricultura y mundo rural,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89928,17818-24,2026-09-01,Cultura y comunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89929,17818-24,2026-09-01,Cultura y comunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89930,17818-24,2026-09-01,Cultura y comunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89931,17818-24,2026-09-01,Cultura y comunicaciones,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89932,17662-07,2026-09-01,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89933,17662-07,2026-09-01,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89934,17662-07,2026-09-01,Seguridad,Constitución y justicia,institucional_trayectoria,0.94,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Unánime
+89935,17914-13,2026-09-01,Trabajo y seguridad social,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
+89936,17914-13,2026-09-01,Trabajo y seguridad social,,institucional_destinacion,0.97,inherited_rollcall_project,institutional-hybrid-v0.3,Particular,Aprobado
+89937,15295-07,2026-09-01,Seguridad,Constitución y justicia,hibrido_institucional_texto,0.749,inherited_rollcall_project,institutional-hybrid-v0.3,General,Aprobado
