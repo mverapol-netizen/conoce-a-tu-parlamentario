@@ -1,0 +1,45 @@
+name: Sync parliamentary profiles
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/sync_profiles.py"
+      - ".github/workflows/sync_profiles.yml"
+      - "assets/js/data.js"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Sync official profiles
+        run: python scripts/sync_profiles.py
+
+      - name: Commit generated profiles
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/profiles.js assets/photos
+          if git diff --cached --quiet; then
+            echo "No profile changes to commit"
+          else
+            git commit -m "Actualiza perfiles parlamentarios oficiales"
+            git push
+          fi
