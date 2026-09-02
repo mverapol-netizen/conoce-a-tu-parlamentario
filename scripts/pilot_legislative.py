@@ -20,7 +20,10 @@ CANDIDATES_PER_ORIGIN = 50
 TARGET_PER_ORIGIN = 5
 SALA_DETAIL = "https://www.camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx?prmIdVotacion={}"
 HTTP = requests.Session()
-HTTP.headers.update({"User-Agent": "Mozilla/5.0 conoce-a-tu-parlamentario/legislative-pilot", "Accept-Language": "es-CL,es;q=0.9"})
+HTTP.headers.update({
+    "User-Agent": "Mozilla/5.0 conoce-a-tu-parlamentario/legislative-pilot",
+    "Accept-Language": "es-CL,es;q=0.9",
+})
 
 
 def iso_date(value: str) -> str:
@@ -65,13 +68,20 @@ def parse_project(node, origin: str) -> dict:
 def initiatives(method: str, origin: str) -> list[dict]:
     root = get_xml("WSLegislativo", method, {"prmAnno": YEAR})
     rows = [parse_project(node, origin) for node in projects_in(root)]
-    return sorted([x for x in rows if x["boletin"] and date_ok(x["fecha_ingreso"])], key=lambda x: (x["fecha_ingreso"], x["boletin"]))
+    return sorted(
+        [x for x in rows if x["boletin"] and date_ok(x["fecha_ingreso"])],
+        key=lambda x: (x["fecha_ingreso"], x["boletin"]),
+    )
 
 
 def annual_votes() -> tuple[dict[str, object], dict]:
     root = get_xml("WSLegislativo", "retornarVotacionesXAnno", {"prmAnno": YEAR})
     nodes = descendants(root, "Votacion")
-    index = {child_text(v, "Id"): v for v in nodes if child_text(v, "Id") and date_ok(child_text(v, "Fecha"))}
+    index = {
+        child_text(v, "Id"): v
+        for v in nodes
+        if child_text(v, "Id") and date_ok(child_text(v, "Fecha"))
+    }
     diagnostic = {
         "root_tag": local_name(root.tag),
         "votes_returned": len(nodes),
@@ -83,6 +93,21 @@ def annual_votes() -> tuple[dict[str, object], dict]:
     return index, diagnostic
 
 
+def vote_detail(vote_id: str):
+    root = get_xml("WSLegislativo", "retornarVotacionDetalle", {"prmVotacionId": vote_id})
+    if local_name(root.tag) == "Votacion":
+        node = root
+    else:
+        nodes = descendants(root, "Votacion")
+        node = nodes[0] if nodes else root
+    returned_id = child_text(node, "Id")
+    if returned_id and returned_id != vote_id:
+        raise RuntimeError(f"Detalle de votación inconsistente: solicitado {vote_id}, recibido {returned_id}")
+    if not child(node, "Votos"):
+        raise RuntimeError(f"Detalle {vote_id} no contiene colección Votos")
+    return node
+
+
 def official_matter_catalog_count() -> int:
     root = get_xml("WSLegislativo", "retornarMaterias")
     return len(descendants(root, "Materia"))
@@ -91,7 +116,8 @@ def official_matter_catalog_count() -> int:
 def session_summary_index() -> dict[tuple[str, str], str]:
     root = get_xml("WSSala", "retornarSesionesXAnno", {"prmAnno": YEAR})
     result = {}
-    for session in descendants(root, "Sesion") + descendants(root, "SesionSala"):
+    sessions = descendants(root, "Sesion") + descendants(root, "SesionSala")
+    for session in sessions:
         day = iso_date(child_text(session, "FechaInicio"))
         number = child_text(session, "Numero")
         sid = child_text(session, "Id")
@@ -121,11 +147,27 @@ def project_votes(node) -> list:
 
 
 def parse_subjects(node, boletin: str) -> list[dict]:
-    return [{"boletin": boletin, "materia_id": child_text(x, "Id"), "materia_oficial": child_text(x, "Nombre")} for x in nested(node, "Materias", {"Materia"}) if child_text(x, "Id") or child_text(x, "Nombre")]
+    return [
+        {
+            "boletin": boletin,
+            "materia_id": child_text(x, "Id"),
+            "materia_oficial": child_text(x, "Nombre"),
+        }
+        for x in nested(node, "Materias", {"Materia"})
+        if child_text(x, "Id") or child_text(x, "Nombre")
+    ]
 
 
 def parse_ministries(node, boletin: str) -> list[dict]:
-    return [{"boletin": boletin, "ministerio_id": child_text(x, "Id"), "ministerio": child_text(x, "Nombre")} for x in nested(node, "MinisteriosPatrocinantes", {"Ministerio"}) if child_text(x, "Id") or child_text(x, "Nombre")]
+    return [
+        {
+            "boletin": boletin,
+            "ministerio_id": child_text(x, "Id"),
+            "ministerio": child_text(x, "Nombre"),
+        }
+        for x in nested(node, "MinisteriosPatrocinantes", {"Ministerio"})
+        if child_text(x, "Id") or child_text(x, "Nombre")
+    ]
 
 
 def parse_authors(node, boletin: str) -> list[dict]:
@@ -136,7 +178,13 @@ def parse_authors(node, boletin: str) -> list[dict]:
             target = child(wrapper, "Senador")
         p = person(target)
         if p["id"] or p["name"]:
-            rows.append({"boletin": boletin, "author_order": child_text(wrapper, "Orden"), "author_id": p["id"], "author_name": p["name"], "author_chamber": p["chamber"]})
+            rows.append({
+                "boletin": boletin,
+                "author_order": child_text(wrapper, "Orden"),
+                "author_id": p["id"],
+                "author_name": p["name"],
+                "author_chamber": p["chamber"],
+            })
     return rows
 
 
@@ -158,7 +206,11 @@ def verify_sala_page(vote_id: str, boletin: str, expected_date: str) -> dict:
         raise RuntimeError(f"ID {vote_id}: la página de Sala no contiene el boletín {boletin}")
     session_match = re.search(r"Sesión\s*n[°º]?\s*(\d+)", text, re.I) or re.search(r"Sesión\s+(\d+)", text, re.I)
     date_match = re.search(r"Fecha:\s*(\d{1,2})\s+([A-Za-záéíóúñ]+)\s+(\d{4})", text, re.I)
-    months = {"enero":"01","febrero":"02","marzo":"03","abril":"04","mayo":"05","junio":"06","julio":"07","agosto":"08","septiembre":"09","octubre":"10","noviembre":"11","diciembre":"12"}
+    months = {
+        "enero": "01", "febrero": "02", "marzo": "03", "abril": "04",
+        "mayo": "05", "junio": "06", "julio": "07", "agosto": "08",
+        "septiembre": "09", "octubre": "10", "noviembre": "11", "diciembre": "12",
+    }
     page_date = ""
     if date_match:
         month = months.get(date_match.group(2).lower())
@@ -166,7 +218,11 @@ def verify_sala_page(vote_id: str, boletin: str, expected_date: str) -> dict:
             page_date = f"{date_match.group(3)}-{month}-{int(date_match.group(1)):02d}"
     if page_date and expected_date and page_date != expected_date:
         raise RuntimeError(f"ID {vote_id}: fecha API {expected_date} != fecha página Sala {page_date}")
-    return {"url": url, "session_number": session_match.group(1) if session_match else "", "page_date": page_date}
+    return {
+        "url": url,
+        "session_number": session_match.group(1) if session_match else "",
+        "page_date": page_date,
+    }
 
 
 def pick(primary, fallback, field: str) -> str:
@@ -184,33 +240,57 @@ def individual_votes(node, vote_id: str) -> list[dict]:
         p = person(child(vote, "Diputado"))
         option, option_code = enum_value(child(vote, "OpcionVoto"))
         if p["id"] or p["name"]:
-            rows.append({"vote_id": vote_id, "diputado_id": p["id"], "diputado_nombre": p["name"], "opcion": option, "opcion_codigo": option_code})
+            rows.append({
+                "vote_id": vote_id,
+                "diputado_id": p["id"],
+                "diputado_nombre": p["name"],
+                "opcion": option,
+                "opcion_codigo": option_code,
+            })
     return rows
 
 
-def rollcall(project_vote, base_vote, boletin: str, page: dict, session_ids: dict) -> tuple[dict, list[dict]]:
-    vote_id = pick(project_vote, base_vote, "Id")
-    vote_date = iso_date(pick(project_vote, base_vote, "Fecha"))
-    t, tc = enum_value(first_element(project_vote, base_vote, "Tipo"))
-    result, result_code = enum_value(first_element(project_vote, base_vote, "Resultado"))
-    quorum, quorum_code = enum_value(first_element(project_vote, base_vote, "Quorum"))
+def rollcall(project_vote, detail_vote, boletin: str, page: dict, session_ids: dict) -> tuple[dict, list[dict]]:
+    vote_id = pick(project_vote, detail_vote, "Id")
+    vote_date = iso_date(pick(detail_vote, project_vote, "Fecha"))
+    t, tc = enum_value(first_element(detail_vote, project_vote, "Tipo"))
+    result, result_code = enum_value(first_element(detail_vote, project_vote, "Resultado"))
+    quorum, quorum_code = enum_value(first_element(detail_vote, project_vote, "Quorum"))
     ptype, ptype_code = enum_value(child(project_vote, "TipoVotacionProyectoLey"))
     constitutional, constitutional_code = enum_value(child(project_vote, "TramiteConstitucional"))
     regulatory, regulatory_code = enum_value(child(project_vote, "TramiteReglamentario"))
     session_number = page["session_number"]
     session_id = session_ids.get((page["page_date"] or vote_date, session_number), "") if session_number else ""
     row = {
-        "vote_id": vote_id, "boletin": boletin, "fecha": vote_date, "sesion_id": session_id, "sesion_numero": session_number,
-        "descripcion": pick(project_vote, base_vote, "Descripcion"), "articulo": child_text(project_vote, "Articulo"),
-        "total_si": pick(project_vote, base_vote, "TotalSi"), "total_no": pick(project_vote, base_vote, "TotalNo"),
-        "total_abstencion": pick(project_vote, base_vote, "TotalAbstencion"), "total_dispensado": pick(project_vote, base_vote, "TotalDispensado"),
-        "tipo_votacion": t, "tipo_votacion_codigo": tc, "resultado": result, "resultado_codigo": result_code,
-        "quorum": quorum, "quorum_codigo": quorum_code, "tipo_votacion_proyecto": ptype, "tipo_votacion_proyecto_codigo": ptype_code,
-        "tramite_constitucional": constitutional, "tramite_constitucional_codigo": constitutional_code,
-        "tramite_reglamentario": regulatory, "tramite_reglamentario_codigo": regulatory_code,
-        "verificado_sala": "1", "verification_url": page["url"],
+        "vote_id": vote_id,
+        "boletin": boletin,
+        "fecha": vote_date,
+        "sesion_id": session_id,
+        "sesion_numero": session_number,
+        "descripcion": pick(detail_vote, project_vote, "Descripcion"),
+        "articulo": child_text(project_vote, "Articulo"),
+        "total_si": pick(detail_vote, project_vote, "TotalSi"),
+        "total_no": pick(detail_vote, project_vote, "TotalNo"),
+        "total_abstencion": pick(detail_vote, project_vote, "TotalAbstencion"),
+        "total_dispensado": pick(detail_vote, project_vote, "TotalDispensado"),
+        "tipo_votacion": t,
+        "tipo_votacion_codigo": tc,
+        "resultado": result,
+        "resultado_codigo": result_code,
+        "quorum": quorum,
+        "quorum_codigo": quorum_code,
+        "tipo_votacion_proyecto": ptype,
+        "tipo_votacion_proyecto_codigo": ptype_code,
+        "tramite_constitucional": constitutional,
+        "tramite_constitucional_codigo": constitutional_code,
+        "tramite_reglamentario": regulatory,
+        "tramite_reglamentario_codigo": regulatory_code,
+        "verificado_sala": "1",
+        "verification_url": page["url"],
     }
-    votes = individual_votes(base_vote, vote_id) or individual_votes(project_vote, vote_id)
+    votes = individual_votes(detail_vote, vote_id)
+    if not votes:
+        raise RuntimeError(f"Votación {vote_id} validada como Sala pero sin votos individuales en retornarVotacionDetalle")
     return row, votes
 
 
@@ -218,11 +298,33 @@ def write_csv(name: str, rows: list[dict], fields: list[str]) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     with (OUT / name).open("w", encoding="utf-8-sig", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
-        writer.writeheader(); writer.writerows(rows)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def choose_pilot(candidates: list[dict], annual: dict[str, object], cache: dict[str, object]) -> list[tuple[int, dict]]:
+    ranked = []
+    for candidate in candidates[:CANDIDATES_PER_ORIGIN]:
+        try:
+            node = project_vote_object(candidate["boletin"])
+            ids = {
+                child_text(v, "Id")
+                for v in project_votes(node)
+                if child_text(v, "Id") in annual and date_ok(child_text(v, "Fecha"))
+            }
+            ranked.append((len(ids), candidate))
+            cache[candidate["boletin"]] = node
+        except Exception as exc:
+            print(f"  ERROR {candidate['boletin']}: {exc}")
+    # El piloto prioriza proyectos con alguna votación, pero dentro de ellos prefiere
+    # tamaños moderados. No necesitamos descargar 120 roll calls para validar el contrato.
+    ranked.sort(key=lambda x: (x[0] == 0, x[0] if x[0] > 0 else 999999, x[1]["fecha_ingreso"], x[1]["boletin"]))
+    return ranked[:TARGET_PER_ORIGIN]
 
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
+
     print("[1/5] Universo de iniciativas...")
     motions = initiatives("retornarMocionesXAnno", "parlamentario")
     messages = initiatives("retornarMensajesXAnno", "ejecutivo")
@@ -232,63 +334,174 @@ def main() -> None:
     annual, annual_diag = annual_votes()
     session_ids = session_summary_index()
     matter_catalog_count = official_matter_catalog_count()
-    print(f"Votaciones API desde inicio={len(annual)} | sesiones resumen={len(session_ids)} | catálogo materias={matter_catalog_count}")
+    print(
+        f"Votaciones API desde inicio={len(annual)} | sesiones resumen={len(session_ids)} "
+        f"| catálogo materias={matter_catalog_count}"
+    )
 
     print("[3/5] Selección de 10 proyectos...")
-    selected = []
-    project_vote_cache = {}
-    for origin, candidates in (("parlamentario", motions[:CANDIDATES_PER_ORIGIN]), ("ejecutivo", messages[:CANDIDATES_PER_ORIGIN])):
-        ranked = []
-        for candidate in candidates:
-            try:
-                node = project_vote_object(candidate["boletin"])
-                ids = {child_text(v, "Id") for v in project_votes(node) if child_text(v, "Id") in annual and date_ok(child_text(v, "Fecha"))}
-                ranked.append((len(ids), candidate)); project_vote_cache[candidate["boletin"]] = node
-            except Exception as exc:
-                print(f"  ERROR {candidate['boletin']}: {exc}")
-        ranked.sort(key=lambda x: (-x[0], x[1]["fecha_ingreso"], x[1]["boletin"]))
-        chosen = ranked[:TARGET_PER_ORIGIN]
-        selected.extend([x[1] for x in chosen])
-        print(f"  {origin}: " + ", ".join(f"{x[1]['boletin']}({x[0]})" for x in chosen))
+    project_vote_cache: dict[str, object] = {}
+    motion_chosen = choose_pilot(motions, annual, project_vote_cache)
+    message_chosen = choose_pilot(messages, annual, project_vote_cache)
+    selected = [x[1] for x in motion_chosen + message_chosen]
+    print("  parlamentario: " + ", ".join(f"{row['boletin']}({count})" for count, row in motion_chosen))
+    print("  ejecutivo: " + ", ".join(f"{row['boletin']}({count})" for count, row in message_chosen))
     if len(selected) != 10:
         raise RuntimeError(f"Solo {len(selected)} proyectos seleccionados")
 
-    projects=[]; subject_rows=[]; ministry_rows=[]; author_rows=[]; rollcalls=[]; member_votes=[]; events=[]
-    print("[4/5] Contrato y triple validación de roll calls...")
-    for seed in sorted(selected, key=lambda x:(x["fecha_ingreso"],x["boletin"])):
-        boletin=seed["boletin"]
-        prow, detail=project_detail(boletin, seed["origen_iniciativa"])
-        projects.append(prow); subject_rows.extend(parse_subjects(detail,boletin)); ministry_rows.extend(parse_ministries(detail,boletin)); author_rows.extend(parse_authors(detail,boletin))
+    projects = []
+    subject_rows = []
+    ministry_rows = []
+    author_rows = []
+    rollcalls = []
+    member_votes = []
+    events = []
+    rollcalls_by_bill: Counter[str] = Counter()
+
+    print("[4/5] Contrato y validación de roll calls + votos individuales...")
+    for seed in sorted(selected, key=lambda x: (x["fecha_ingreso"], x["boletin"])):
+        boletin = seed["boletin"]
+        prow, detail = project_detail(boletin, seed["origen_iniciativa"])
+        projects.append(prow)
+        subject_rows.extend(parse_subjects(detail, boletin))
+        ministry_rows.extend(parse_ministries(detail, boletin))
+        author_rows.extend(parse_authors(detail, boletin))
+
         for pv in project_votes(project_vote_cache[boletin]):
-            vid=child_text(pv,"Id"); base=annual.get(vid)
-            if base is None or not date_ok(pick(pv,base,"Fecha")): continue
-            page=verify_sala_page(vid,boletin,iso_date(pick(pv,base,"Fecha")))
-            rc, indiv=rollcall(pv,base,boletin,page,session_ids)
-            rollcalls.append(rc); member_votes.extend(indiv)
-            events.append({"boletin":boletin,"fecha":rc["fecha"],"evento_tipo":"votacion_sala","sesion_id":rc["sesion_id"],"vote_id":vid,"tramite_constitucional":rc["tramite_constitucional"],"tramite_reglamentario":rc["tramite_reglamentario"],"comision":"","fuente":rc["verification_url"]})
+            vote_id = child_text(pv, "Id")
+            annual_vote = annual.get(vote_id)
+            if annual_vote is None:
+                continue
+            expected_date = iso_date(pick(pv, annual_vote, "Fecha"))
+            if not date_ok(expected_date):
+                continue
 
-    subject_rows=list({(x["boletin"],x["materia_id"],x["materia_oficial"]):x for x in subject_rows}.values())
-    ministry_rows=list({(x["boletin"],x["ministerio_id"],x["ministerio"]):x for x in ministry_rows}.values())
-    author_rows=list({(x["boletin"],x["author_chamber"],x["author_id"],x["author_order"]):x for x in author_rows}.values())
-    rollcalls=list({x["vote_id"]:x for x in rollcalls}.values())
-    member_votes=list({(x["vote_id"],x["diputado_id"]):x for x in member_votes}.values())
-    if not rollcalls: raise RuntimeError("0 roll calls validados como Sala")
-    if not member_votes: raise RuntimeError("0 votos individuales")
+            page = verify_sala_page(vote_id, boletin, expected_date)
+            detailed_vote = vote_detail(vote_id)
+            rc, indiv = rollcall(pv, detailed_vote, boletin, page, session_ids)
+            rollcalls.append(rc)
+            member_votes.extend(indiv)
+            rollcalls_by_bill[boletin] += 1
+            events.append({
+                "boletin": boletin,
+                "fecha": rc["fecha"],
+                "evento_tipo": "votacion_sala",
+                "sesion_id": rc["sesion_id"],
+                "vote_id": vote_id,
+                "tramite_constitucional": rc["tramite_constitucional"],
+                "tramite_reglamentario": rc["tramite_reglamentario"],
+                "comision": "",
+                "fuente": rc["verification_url"],
+            })
 
-    write_csv("projects.csv",projects,["project_id","boletin","titulo","fecha_ingreso","origen_iniciativa","tipo_iniciativa","tipo_iniciativa_codigo","camara_origen","camara_origen_codigo","admisible"])
-    write_csv("project_subjects.csv",subject_rows,["boletin","materia_id","materia_oficial"])
-    write_csv("project_ministries.csv",ministry_rows,["boletin","ministerio_id","ministerio"])
-    write_csv("bill_authors.csv",author_rows,["boletin","author_order","author_id","author_name","author_chamber"])
-    write_csv("rollcalls.csv",rollcalls,["vote_id","boletin","fecha","sesion_id","sesion_numero","descripcion","articulo","total_si","total_no","total_abstencion","total_dispensado","tipo_votacion","tipo_votacion_codigo","resultado","resultado_codigo","quorum","quorum_codigo","tipo_votacion_proyecto","tipo_votacion_proyecto_codigo","tramite_constitucional","tramite_constitucional_codigo","tramite_reglamentario","tramite_reglamentario_codigo","verificado_sala","verification_url"])
-    write_csv("member_votes.csv",member_votes,["vote_id","diputado_id","diputado_nombre","opcion","opcion_codigo"])
-    write_csv("project_events.csv",events,["boletin","fecha","evento_tipo","sesion_id","vote_id","tramite_constitucional","tramite_reglamentario","comision","fuente"])
+    subject_rows = list({(x["boletin"], x["materia_id"], x["materia_oficial"]): x for x in subject_rows}.values())
+    ministry_rows = list({(x["boletin"], x["ministerio_id"], x["ministerio"]): x for x in ministry_rows}.values())
+    author_rows = list({(x["boletin"], x["author_chamber"], x["author_id"], x["author_order"]): x for x in author_rows}.values())
+    rollcalls = list({x["vote_id"]: x for x in rollcalls}.values())
+    member_votes = list({(x["vote_id"], x["diputado_id"] or x["diputado_nombre"]): x for x in member_votes}.values())
+
+    if not rollcalls:
+        raise RuntimeError("0 roll calls validados como Sala")
+    if not member_votes:
+        raise RuntimeError("0 votos individuales")
+    valid_vote_ids = {x["vote_id"] for x in rollcalls}
+    if any(x["vote_id"] not in valid_vote_ids for x in member_votes):
+        raise RuntimeError("member_votes contiene votos sin rollcall correspondiente")
+    if any(x["verificado_sala"] != "1" for x in rollcalls):
+        raise RuntimeError("rollcalls contiene una votación no verificada como Sala")
+
+    parliamentary_bills = {x["boletin"] for x in projects if x["origen_iniciativa"] == "parlamentario"}
+    bills_with_authors = {x["boletin"] for x in author_rows}
+    missing_authors = sorted(parliamentary_bills - bills_with_authors)
+    if missing_authors:
+        raise RuntimeError(f"Mociones sin autoría recuperada: {missing_authors}")
+
+    write_csv(
+        "projects.csv", projects,
+        ["project_id", "boletin", "titulo", "fecha_ingreso", "origen_iniciativa", "tipo_iniciativa", "tipo_iniciativa_codigo", "camara_origen", "camara_origen_codigo", "admisible"],
+    )
+    write_csv("project_subjects.csv", subject_rows, ["boletin", "materia_id", "materia_oficial"])
+    write_csv("project_ministries.csv", ministry_rows, ["boletin", "ministerio_id", "ministerio"])
+    write_csv("bill_authors.csv", author_rows, ["boletin", "author_order", "author_id", "author_name", "author_chamber"])
+    write_csv(
+        "rollcalls.csv", rollcalls,
+        ["vote_id", "boletin", "fecha", "sesion_id", "sesion_numero", "descripcion", "articulo", "total_si", "total_no", "total_abstencion", "total_dispensado", "tipo_votacion", "tipo_votacion_codigo", "resultado", "resultado_codigo", "quorum", "quorum_codigo", "tipo_votacion_proyecto", "tipo_votacion_proyecto_codigo", "tramite_constitucional", "tramite_constitucional_codigo", "tramite_reglamentario", "tramite_reglamentario_codigo", "verificado_sala", "verification_url"],
+    )
+    write_csv("member_votes.csv", member_votes, ["vote_id", "diputado_id", "diputado_nombre", "opcion", "opcion_codigo"])
+    write_csv(
+        "project_events.csv", events,
+        ["boletin", "fecha", "evento_tipo", "sesion_id", "vote_id", "tramite_constitucional", "tramite_reglamentario", "comision", "fuente"],
+    )
 
     subject_status = "populated" if subject_rows else "official_project_association_empty_in_pilot"
-    diag={"generated_for":str(date.today()),"period_start":str(PERIOD_START),"universe":{"motions":len(motions),"messages":len(messages),"annual_votes":annual_diag,"session_summaries":len(session_ids),"official_matter_catalog_count":matter_catalog_count},"pilot":{"projects":len(projects),"origins":dict(Counter(x["origen_iniciativa"] for x in projects)),"subjects":len(subject_rows),"subjects_status":subject_status,"ministries":len(ministry_rows),"authors":len(author_rows),"verified_floor_rollcalls":len(rollcalls),"individual_votes":len(member_votes),"floor_events":len(events)},"selected_bills":[x["boletin"] for x in projects],"contract_findings":{"floor_verification":"Triple criterio: ID en retornarVotacionesXAnno + ID asociado al proyecto + página oficial camara.cl/legislacion/sala_sesiones/votacion_detalle.aspx validada.","session_api_2026":"Los endpoints WSSala de 2026 omiten actualmente la colección Votaciones aunque el esquema publicado la declare; se conserva como hallazgo de compatibilidad.","themes":"Existe catálogo oficial de Materias, pero la asociación ProyectoLey/Materias está vacía en los diez casos piloto. No se imputa una materia. La futura clasificación temática será una capa derivada separada, basada en título/texto y trazable.","full_legislative_course":"Comisiones y cronología completa siguen pendientes de una capa específica."}}
-    (OUT/"diagnostics.json").write_text(json.dumps(diag,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    report=["# Piloto legislativo 2026","",f"Generado: {date.today()}","","## Resultado","",f"- 10 proyectos: {diag['pilot']['origins']}",f"- Materias oficiales asociadas: **{len(subject_rows)}** (catálogo oficial disponible: {matter_catalog_count})",f"- Autorías: **{len(author_rows)}**",f"- Votaciones de Sala triple-validadas: **{len(rollcalls)}**",f"- Votos individuales: **{len(member_votes)}**","","## Criterio de Sala","","Cada roll call debe aparecer en la API anual, estar asociado al proyecto y resolver a una página institucional `Sala de Sesiones > Detalle de Votación` del mismo boletín y fecha.","","## Materias","",f"La Cámara expone un catálogo de {matter_catalog_count} materias, pero la asociación `ProyectoLey/Materias` vino vacía para los diez casos piloto. El CSV se conserva con su esquema y cero filas; no se fabrican materias. La clasificación temática futura será derivada y separada.","","## Hallazgo de compatibilidad","","Los endpoints WSSala 2026 devuelven resúmenes de sesión sin la colección Votaciones que figura en el esquema. No se usa ese campo ausente como condición de integridad.","","## Pendiente","","Reconstruir el curso comisión por comisión como capa separada.",""]+[f"- {x['boletin']} · {x['origen_iniciativa']} · {x['titulo']}" for x in projects]
-    (OUT/"REPORT.md").write_text("\n".join(report)+"\n",encoding="utf-8")
-    print("[5/5] PILOTO VALIDADO"); print(json.dumps(diag["pilot"],ensure_ascii=False,indent=2))
+    diag = {
+        "generated_for": str(date.today()),
+        "period_start": str(PERIOD_START),
+        "universe": {
+            "motions": len(motions),
+            "messages": len(messages),
+            "annual_votes": annual_diag,
+            "session_summaries": len(session_ids),
+            "official_matter_catalog_count": matter_catalog_count,
+        },
+        "pilot": {
+            "projects": len(projects),
+            "origins": dict(Counter(x["origen_iniciativa"] for x in projects)),
+            "subjects": len(subject_rows),
+            "subjects_status": subject_status,
+            "ministries": len(ministry_rows),
+            "authors": len(author_rows),
+            "verified_floor_rollcalls": len(rollcalls),
+            "individual_votes": len(member_votes),
+            "floor_events": len(events),
+            "rollcalls_by_bill": dict(sorted(rollcalls_by_bill.items())),
+        },
+        "selected_bills": [x["boletin"] for x in projects],
+        "contract_findings": {
+            "floor_verification": "ID en retornarVotacionesXAnno + ID asociado al proyecto + página oficial Sala de Sesiones/Detalle de Votación del mismo boletín y fecha.",
+            "individual_votes": "Los votos nominales se recuperan con retornarVotacionDetalle(prmVotacionId), que entrega Votos/Voto con Diputado y OpcionVoto.",
+            "session_api_2026": "Los endpoints WSSala de 2026 omiten actualmente la colección Votaciones aunque el esquema publicado la declare; se conserva como hallazgo de compatibilidad.",
+            "themes": "Existe catálogo oficial de Materias, pero la asociación ProyectoLey/Materias está vacía en los diez casos piloto. No se imputa una materia. La futura clasificación temática será una capa derivada separada, basada en título/texto y trazable.",
+            "full_legislative_course": "Comisiones y cronología completa siguen pendientes de una capa específica sobre el historial público de cada boletín.",
+        },
+    }
+    (OUT / "diagnostics.json").write_text(json.dumps(diag, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    report = [
+        "# Piloto legislativo 2026",
+        "",
+        f"Generado: {date.today()}",
+        "",
+        "## Resultado",
+        "",
+        f"- 10 proyectos: {diag['pilot']['origins']}",
+        f"- Materias oficiales asociadas: **{len(subject_rows)}** (catálogo oficial disponible: {matter_catalog_count})",
+        f"- Autorías: **{len(author_rows)}**",
+        f"- Votaciones de Sala verificadas: **{len(rollcalls)}**",
+        f"- Votos individuales: **{len(member_votes)}**",
+        "",
+        "## Criterio de Sala",
+        "",
+        "Cada roll call debe aparecer en la API anual, estar asociado al proyecto y resolver a una página institucional `Sala de Sesiones > Detalle de Votación` del mismo boletín y fecha.",
+        "",
+        "## Votos individuales",
+        "",
+        "Cada roll call validado consulta `retornarVotacionDetalle`, que entrega la colección nominal de diputados y su opción de voto.",
+        "",
+        "## Materias",
+        "",
+        f"La Cámara expone un catálogo de {matter_catalog_count} materias, pero la asociación `ProyectoLey/Materias` vino vacía para los diez casos piloto. El CSV conserva el esquema y cero filas; no se fabrican materias.",
+        "",
+        "## Pendiente",
+        "",
+        "Reconstruir el curso comisión por comisión como capa separada desde el historial público del boletín.",
+        "",
+    ] + [f"- {x['boletin']} · {x['origen_iniciativa']} · {x['titulo']}" for x in projects]
+    (OUT / "REPORT.md").write_text("\n".join(report) + "\n", encoding="utf-8")
+
+    print("[5/5] PILOTO VALIDADO")
+    print(json.dumps(diag["pilot"], ensure_ascii=False, indent=2))
 
 
-if __name__ == "__main__": main()
+if __name__ == "__main__":
+    main()
