@@ -1,0 +1,56 @@
+name: Build neutral roll-call matrix
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_rollcall_matrix.py"
+      - "data/legislative/2026/member_votes_enriched.csv"
+      - "data/legislative/2026/rollcalls.csv"
+      - ".github/workflows/build_rollcall_matrix.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: neutral-rollcall-matrix
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build neutral roll-call matrix
+        run: python scripts/build_rollcall_matrix.py
+
+      - name: Persist neutral matrix
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/legislative/2026/rollcall_matrix_binary.csv \
+            data/legislative/2026/rollcall_matrix_metadata.csv \
+            data/legislative/2026/rollcall_member_metadata.csv \
+            data/legislative/2026/rollcall_matrix_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No roll-call matrix changes to commit"
+          else
+            git commit -m "Actualiza matriz neutral de votaciones 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
