@@ -3,38 +3,50 @@
   "deputies": 155,
   "history_intervals": 159,
   "documented_manual_events": 4,
-  "basis_counts": {
-    "current_snapshot_assumed_stable": 151,
-    "documented_event_chain": 8
+  "detected_weekly_snapshot_events": 0,
+  "party_term_start_high_confidence": 26,
+  "party_term_start_medium_confidence": 129,
+  "party_term_start_provisional": 0,
+  "caucus_term_start_high_confidence": 4,
+  "caucus_term_start_medium_confidence": 0,
+  "caucus_term_start_provisional": 151,
+  "party_interval_confidence_counts": {
+    "high": 30,
+    "medium": 129
   },
-  "confidence_counts": {
+  "caucus_interval_confidence_counts": {
     "provisional": 151,
     "high": 8
+  },
+  "overall_interval_confidence_counts": {
+    "provisional": 151,
+    "medium": 3,
+    "high": 5
   },
   "official_snapshot_conflicts": [
     {
       "deputy_id": "1054",
       "deputy_name": "Francesca Muñoz González",
-      "detail": "party: Cámara=Partido Social Cristiano / evidencia=Partido Cristiano de Chile"
+      "detail": "party: Cámara=Partido Social Cristiano / historial=Partido Cristiano de Chile"
     },
     {
       "deputy_id": "1102",
       "deputy_name": "Roberto Arroyo Muñoz",
-      "detail": "party: Cámara=Independientes / evidencia=Partido de la Gente"
+      "detail": "party: Cámara=Independientes / historial=Partido de la Gente"
     },
     {
       "deputy_id": "1119",
       "deputy_name": "Sara Concha Smith",
-      "detail": "party: Cámara=Partido Social Cristiano / evidencia=Partido Cristiano de Chile"
+      "detail": "party: Cámara=Partido Social Cristiano / historial=Partido Cristiano de Chile"
     },
     {
       "deputy_id": "1200",
       "deputy_name": "Cristian Contreras Radovic",
-      "detail": "caucus: Cámara=Comité Partido de la Gente / evidencia=Fuera del Comité Partido de la Gente"
+      "detail": "caucus: Cámara=Comité Partido de la Gente / historial=Fuera del Comité Partido de la Gente"
     }
   ],
-  "provisional_deputies": 151,
-  "verified_event_chain_deputies": 4,
   "term_start": "2026-03-11",
-  "warning": "Los diputados sin cambio documentado usan provisionalmente el snapshot actual hacia atrás hasta validar la afiliación electoral 2025. No usar esos intervalos como historia definitiva sin considerar confidence/basis."
+  "party_history_coverage": 155,
+  "caucus_history_coverage": 155,
+  "warning": "La afiliación partidaria de inicio ya está congelada para 155 diputados (26 verificación directa; 129 concordancia Servel-Cámara). La bancada inicial sigue siendo provisional salvo donde existe un cambio documentado que permite reconstruir el estado previo. Los cambios detectados solo entre snapshots semanales conservan una ventana de incertidumbre en affiliation_detected_events.csv."
 }
