@@ -1,12 +1,13 @@
 {
   "generated_for": "2026-09-02",
-  "status": "pass",
+  "status": "fail",
   "projects": {
     "count": 493,
     "events": 943,
     "projects_with_events": 493,
     "event_coverage_pct": 100.0,
     "commission_events": 160,
+    "subject_rows": 0,
     "orphan_event_bills": []
   },
   "authorship": {
@@ -14,11 +15,14 @@
     "author_relations": 2573,
     "bills_with_authors": 449,
     "unresolved_motions": [],
-    "multi_author_bills": 398,
+    "orphan_author_bills": [
+      "18624-36"
+    ],
+    "multi_author_bills": 397,
     "max_authors_on_bill": 10,
     "author_count_distribution": {
       "1": 52,
-      "2": 22,
+      "2": 21,
       "3": 23,
       "4": 41,
       "5": 122,
@@ -51,7 +55,9 @@
     "member_votes": 0
   },
   "warnings": [
-    "Hay 2123 órdenes de autor repetidos dentro de un mismo boletín"
+    "La fuente no produjo materias oficiales: project_subjects.csv está vacío"
   ],
-  "failures": []
+  "failures": [
+    "Hay 1 boletines con autorías fuera del snapshot parlamentario vigente"
+  ]
 }
