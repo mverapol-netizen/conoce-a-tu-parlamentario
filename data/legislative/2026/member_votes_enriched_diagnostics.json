@@ -1,0 +1,39 @@
+{
+  "member_vote_rows_input": 56420,
+  "member_vote_rows_enriched": 56420,
+  "rollcalls": 364,
+  "rollcalls_with_155_input_rows": 364,
+  "rollcalls_with_155_enriched_rows": 364,
+  "deputies_in_history": 155,
+  "missing_rollcall_rows": 0,
+  "missing_history_rows": 0,
+  "ambiguous_history_rows": 0,
+  "provisional_affiliation_rows": 0,
+  "uncertain_affiliation_rows": 0,
+  "party_confidence_counts": {
+    "high": 10136,
+    "medium": 46284
+  },
+  "caucus_confidence_counts": {
+    "medium": 9100,
+    "high": 47320
+  },
+  "overall_affiliation_confidence_counts": {
+    "medium": 55020,
+    "high": 1400
+  },
+  "vote_option_counts": {
+    "Afirmativo": 34491,
+    "No Vota": 3865,
+    "Abstención": 1979,
+    "En Contra": 16061,
+    "Dispensado": 24
+  },
+  "errors": {
+    "bad_input_rollcalls": {},
+    "bad_enriched_rollcalls": {},
+    "missing_rollcall_examples": [],
+    "missing_history_examples": [],
+    "ambiguous_history_examples": []
+  }
+}
