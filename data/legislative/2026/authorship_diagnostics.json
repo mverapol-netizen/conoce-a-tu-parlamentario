@@ -1,7 +1,11 @@
 {
   "generated_for": "2026-09-02",
   "parliamentary_initiatives": 452,
+  "recent_recheck_days": 35,
+  "recent_recheck_cutoff": "2026-07-29",
+  "recent_motions_considered_for_recheck": 93,
   "new_bills_checked": 0,
+  "existing_bills_revalidated": 93,
   "author_relations": 2579,
   "bills_with_authors": 452,
   "pruned_stale_author_relations": 0,
