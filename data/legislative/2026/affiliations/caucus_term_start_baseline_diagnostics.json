@@ -1,0 +1,36 @@
+{
+  "term_start": "2026-03-11",
+  "deputies": 155,
+  "high_confidence": 130,
+  "medium_confidence": 25,
+  "unresolved": [],
+  "caucus_counts": {
+    "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes": 10,
+    "Unión Demócrata Independiente": 18,
+    "Renovación Nacional, Evopoli e Independientes": 16,
+    "Comité Partido Nacional Libertarios": 8,
+    "Socialista, Liberal, Radical e Independientes": 15,
+    "Comité Comunista e Independientes": 12,
+    "Frente Amplio": 18,
+    "Comité Partido Republicano": 31,
+    "Comité Partido de la Gente": 14,
+    "Por definir": 3,
+    "Partido Por la Democracia e Independientes": 10
+  },
+  "expected_counts": {
+    "Comité Partido Republicano": 31,
+    "Frente Amplio": 18,
+    "Unión Demócrata Independiente": 18,
+    "Renovación Nacional, Evopoli e Independientes": 16,
+    "Socialista, Liberal, Radical e Independientes": 15,
+    "Comité Partido de la Gente": 14,
+    "Comité Comunista e Independientes": 12,
+    "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes": 10,
+    "Partido Por la Democracia e Independientes": 10,
+    "Comité Partido Nacional Libertarios": 8,
+    "Por definir": 3
+  },
+  "count_mismatches": {},
+  "unexpected_caucuses": {},
+  "method": "Reconstrucción por partido/cupo electoral, estados previos documentados y cierre con tamaños oficiales de comités de marzo de 2026. Los tres PSC se conservan como 'Por definir': no se fuerza una pertenencia a un comité que no integraban."
+}
