@@ -1,0 +1,7 @@
+"spec_id","lop","deduplicate_within_bill","bill_cap","selected_rollcalls","selected_bills","largest_bill_rollcalls","largest_bill_share"
+"raw_lop025",0.025,FALSE,NA,276,55,116,0.420289855072464
+"raw_lop050",0.05,FALSE,NA,269,54,114,0.423791821561338
+"raw_lop100",0.1,FALSE,NA,258,53,109,0.422480620155039
+"dedup_lop025",0.025,TRUE,NA,269,55,110,0.408921933085502
+"cap20_balanced_lop025",0.025,FALSE,20,169,55,20,0.118343195266272
+"cap10_balanced_lop025",0.025,FALSE,10,145,55,10,0.0689655172413793

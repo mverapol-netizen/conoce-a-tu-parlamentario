@@ -1,0 +1,23 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "PASS",
+  "package_versions": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "pscl": "1.5.9",
+    "wnominate": "1.5",
+    "jsonlite": "2.0.0"
+  },
+  "source": {
+    "members": 155,
+    "rollcalls": 364,
+    "binary_observations": 50552
+  },
+  "baseline_technical_anchor": {
+    "diputado_id": "1012",
+    "diputado_nombre": "Boris Barrera Moreno",
+    "selection_rule": "Mayor valor absoluto del primer vector singular de la matriz base centrada, con missing imputado a la media de cada roll call y minvotes >= 20. El signo no tiene interpretación política."
+  },
+  "completed_specs": ["raw_lop025", "raw_lop050", "raw_lop100", "dedup_lop025", "cap20_balanced_lop025", "cap10_balanced_lop025"],
+  "failed_specs": [],
+  "methodological_warnings": ["Resultados experimentales: no integrar todavía en la ficha pública.", "El signo de la dimensión es arbitrario y la alineación entre especificaciones es técnica.", "La concentración de múltiples roll calls en un mismo boletín se evalúa mediante deduplicación y caps de sensibilidad; los caps no constituyen una especificación sustantivamente preferida.", "No denominar la dimensión izquierda/derecha, oficialismo/oposición o ideología sin validación sustantiva posterior."]
+}
