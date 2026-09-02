@@ -1,0 +1,43 @@
+name: Build topic gold sample
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Sync project texts"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build stratified human-reference sample
+        run: python scripts/build_topic_gold_sample.py
+
+      - name: Persist gold-sample scaffold
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/topics/topic_gold_sample.csv data/legislative/2026/topics/topic_gold_sample_manifest.json
+          if git diff --cached --quiet; then
+            echo "No gold-sample changes to commit"
+          else
+            git commit -m "Prepara muestra humana de clasificación temática"
+            git pull --rebase origin main
+            git push origin main
+          fi
