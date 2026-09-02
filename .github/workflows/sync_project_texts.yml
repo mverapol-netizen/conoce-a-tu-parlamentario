@@ -1,0 +1,52 @@
+name: Sync project texts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 14 * * 5"
+  push:
+    paths:
+      - "scripts/sync_project_texts.py"
+      - ".github/workflows/sync_project_texts.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: project-text-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 pypdf python-docx
+
+      - name: Sync project texts
+        run: python scripts/sync_project_texts.py
+
+      - name: Persist text corpus
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/topics
+          if git diff --cached --quiet; then
+            echo "No project-text changes to commit"
+          else
+            git commit -m "Actualiza corpus textual legislativo 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
