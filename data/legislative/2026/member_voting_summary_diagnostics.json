@@ -1,0 +1,61 @@
+{
+  "input_vote_rows": 56420,
+  "deputies": 155,
+  "participation_rows": 155,
+  "modal_agreement_rows": 1240,
+  "lookup_missing": 0,
+  "scope_diagnostics": {
+    "party:all": {
+      "members_with_comparisons": 125,
+      "comparisons": 42183,
+      "matches": 41026,
+      "weighted_agreement_pct": 97.2572
+    },
+    "party:minority_ge_05": {
+      "members_with_comparisons": 125,
+      "comparisons": 31488,
+      "matches": 30445,
+      "weighted_agreement_pct": 96.6876
+    },
+    "party:minority_ge_10": {
+      "members_with_comparisons": 125,
+      "comparisons": 30210,
+      "matches": 29211,
+      "weighted_agreement_pct": 96.6931
+    },
+    "party:minority_ge_20": {
+      "members_with_comparisons": 125,
+      "comparisons": 28023,
+      "matches": 27142,
+      "weighted_agreement_pct": 96.8562
+    },
+    "caucus:all": {
+      "members_with_comparisons": 152,
+      "comparisons": 51042,
+      "matches": 49144,
+      "weighted_agreement_pct": 96.2815
+    },
+    "caucus:minority_ge_05": {
+      "members_with_comparisons": 152,
+      "comparisons": 38127,
+      "matches": 36407,
+      "weighted_agreement_pct": 95.4888
+    },
+    "caucus:minority_ge_10": {
+      "members_with_comparisons": 152,
+      "comparisons": 36585,
+      "matches": 34929,
+      "weighted_agreement_pct": 95.4736
+    },
+    "caucus:minority_ge_20": {
+      "members_with_comparisons": 152,
+      "comparisons": 33933,
+      "matches": 32441,
+      "weighted_agreement_pct": 95.6031
+    }
+  },
+  "method_note": "Coincidencia modal es descriptiva, no una medida causal de disciplina. Solo compara Afirmativo/En Contra/Abstención cuando el grupo formal tiene al menos dos votos sustantivos y una moda única. No Vota y Dispensado no cuentan como divergencia. Los scopes 5/10/20% permiten sensibilidad a cuán dividida estaba la Cámara.",
+  "errors": {
+    "lookup_missing_examples": []
+  }
+}

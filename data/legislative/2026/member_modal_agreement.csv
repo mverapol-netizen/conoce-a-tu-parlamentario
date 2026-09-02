@@ -1,0 +1,1241 @@
+﻿diputado_id,diputado_nombre,group_type,scope,min_chamber_binary_minority_share,comparisons,matches,divergences,agreement_pct,group_names_observed
+803,René Alinco Bustos,caucus,all,0.00,307,232,75,75.5700,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+803,René Alinco Bustos,caucus,minority_ge_05,0.05,238,174,64,73.1092,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+803,René Alinco Bustos,caucus,minority_ge_10,0.10,230,166,64,72.1739,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+803,René Alinco Bustos,caucus,minority_ge_20,0.20,217,154,63,70.9677,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+803,René Alinco Bustos,party,all,0.00,0,0,0,,Independientes
+803,René Alinco Bustos,party,minority_ge_05,0.05,0,0,0,,Independientes
+803,René Alinco Bustos,party,minority_ge_10,0.10,0,0,0,,Independientes
+803,René Alinco Bustos,party,minority_ge_20,0.20,0,0,0,,Independientes
+815,Sergio Bobadilla Muñoz,caucus,all,0.00,348,341,7,97.9885,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,caucus,minority_ge_05,0.05,260,253,7,97.3077,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,caucus,minority_ge_10,0.10,249,242,7,97.1888,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,caucus,minority_ge_20,0.20,230,223,7,96.9565,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,party,all,0.00,346,340,6,98.2659,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,party,minority_ge_05,0.05,258,252,6,97.6744,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,party,minority_ge_10,0.10,248,242,6,97.5806,Unión Demócrata Independiente
+815,Sergio Bobadilla Muñoz,party,minority_ge_20,0.20,229,223,6,97.3799,Unión Demócrata Independiente
+843,René Manuel García García,caucus,all,0.00,310,290,20,93.5484,"Renovación Nacional, Evopoli e Independientes"
+843,René Manuel García García,caucus,minority_ge_05,0.05,223,205,18,91.9283,"Renovación Nacional, Evopoli e Independientes"
+843,René Manuel García García,caucus,minority_ge_10,0.10,215,198,17,92.0930,"Renovación Nacional, Evopoli e Independientes"
+843,René Manuel García García,caucus,minority_ge_20,0.20,199,183,16,91.9598,"Renovación Nacional, Evopoli e Independientes"
+843,René Manuel García García,party,all,0.00,309,289,20,93.5275,Renovación Nacional
+843,René Manuel García García,party,minority_ge_05,0.05,222,204,18,91.8919,Renovación Nacional
+843,René Manuel García García,party,minority_ge_10,0.10,214,197,17,92.0561,Renovación Nacional
+843,René Manuel García García,party,minority_ge_20,0.20,198,182,16,91.9192,Renovación Nacional
+872,Jaime Mulet Martínez,caucus,all,0.00,332,292,40,87.9518,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+872,Jaime Mulet Martínez,caucus,minority_ge_05,0.05,251,213,38,84.8606,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+872,Jaime Mulet Martínez,caucus,minority_ge_10,0.10,240,202,38,84.1667,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+872,Jaime Mulet Martínez,caucus,minority_ge_20,0.20,221,184,37,83.2579,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+872,Jaime Mulet Martínez,party,all,0.00,0,0,0,,Federación Regionalista Verde Social
+872,Jaime Mulet Martínez,party,minority_ge_05,0.05,0,0,0,,Federación Regionalista Verde Social
+872,Jaime Mulet Martínez,party,minority_ge_10,0.10,0,0,0,,Federación Regionalista Verde Social
+872,Jaime Mulet Martínez,party,minority_ge_20,0.20,0,0,0,,Federación Regionalista Verde Social
+915,Germán Verdugo Soto,caucus,all,0.00,345,330,15,95.6522,Comité Partido Nacional Libertarios
+915,Germán Verdugo Soto,caucus,minority_ge_05,0.05,256,245,11,95.7031,Comité Partido Nacional Libertarios
+915,Germán Verdugo Soto,caucus,minority_ge_10,0.10,245,236,9,96.3265,Comité Partido Nacional Libertarios
+915,Germán Verdugo Soto,caucus,minority_ge_20,0.20,226,220,6,97.3451,Comité Partido Nacional Libertarios
+915,Germán Verdugo Soto,party,all,0.00,345,330,15,95.6522,Partido Nacional Libertario
+915,Germán Verdugo Soto,party,minority_ge_05,0.05,256,245,11,95.7031,Partido Nacional Libertario
+915,Germán Verdugo Soto,party,minority_ge_10,0.10,245,236,9,96.3265,Partido Nacional Libertario
+915,Germán Verdugo Soto,party,minority_ge_20,0.20,226,220,6,97.3451,Partido Nacional Libertario
+986,Marcela Hernando Pérez,caucus,all,0.00,318,256,62,80.5031,"Socialista, Liberal, Radical e Independientes"
+986,Marcela Hernando Pérez,caucus,minority_ge_05,0.05,235,177,58,75.3191,"Socialista, Liberal, Radical e Independientes"
+986,Marcela Hernando Pérez,caucus,minority_ge_10,0.10,227,171,56,75.3304,"Socialista, Liberal, Radical e Independientes"
+986,Marcela Hernando Pérez,caucus,minority_ge_20,0.20,208,154,54,74.0385,"Socialista, Liberal, Radical e Independientes"
+986,Marcela Hernando Pérez,party,all,0.00,0,0,0,,Partido Radical de Chile
+986,Marcela Hernando Pérez,party,minority_ge_05,0.05,0,0,0,,Partido Radical de Chile
+986,Marcela Hernando Pérez,party,minority_ge_10,0.10,0,0,0,,Partido Radical de Chile
+986,Marcela Hernando Pérez,party,minority_ge_20,0.20,0,0,0,,Partido Radical de Chile
+1009,Jorge Alessandri Vergara,caucus,all,0.00,327,321,6,98.1651,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,caucus,minority_ge_05,0.05,249,243,6,97.5904,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,caucus,minority_ge_10,0.10,239,233,6,97.4895,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,caucus,minority_ge_20,0.20,227,221,6,97.3568,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,party,all,0.00,325,319,6,98.1538,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,party,minority_ge_05,0.05,247,241,6,97.5709,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,party,minority_ge_10,0.10,238,232,6,97.4790,Unión Demócrata Independiente
+1009,Jorge Alessandri Vergara,party,minority_ge_20,0.20,226,220,6,97.3451,Unión Demócrata Independiente
+1012,Boris Barrera Moreno,caucus,all,0.00,364,363,1,99.7253,Comité Comunista e Independientes
+1012,Boris Barrera Moreno,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Comunista e Independientes
+1012,Boris Barrera Moreno,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Comunista e Independientes
+1012,Boris Barrera Moreno,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Comunista e Independientes
+1012,Boris Barrera Moreno,party,all,0.00,363,363,0,100.0000,Partido Comunista
+1012,Boris Barrera Moreno,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Comunista
+1012,Boris Barrera Moreno,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Comunista
+1012,Boris Barrera Moreno,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Comunista
+1013,Alejandro Bernales Maldonado,caucus,all,0.00,340,258,82,75.8824,"Socialista, Liberal, Radical e Independientes"
+1013,Alejandro Bernales Maldonado,caucus,minority_ge_05,0.05,260,183,77,70.3846,"Socialista, Liberal, Radical e Independientes"
+1013,Alejandro Bernales Maldonado,caucus,minority_ge_10,0.10,251,175,76,69.7211,"Socialista, Liberal, Radical e Independientes"
+1013,Alejandro Bernales Maldonado,caucus,minority_ge_20,0.20,232,157,75,67.6724,"Socialista, Liberal, Radical e Independientes"
+1013,Alejandro Bernales Maldonado,party,all,0.00,298,298,0,100.0000,Partido Liberal de Chile
+1013,Alejandro Bernales Maldonado,party,minority_ge_05,0.05,223,223,0,100.0000,Partido Liberal de Chile
+1013,Alejandro Bernales Maldonado,party,minority_ge_10,0.10,215,215,0,100.0000,Partido Liberal de Chile
+1013,Alejandro Bernales Maldonado,party,minority_ge_20,0.20,197,197,0,100.0000,Partido Liberal de Chile
+1015,Jorge Brito Hasbún,caucus,all,0.00,317,311,6,98.1073,Frente Amplio
+1015,Jorge Brito Hasbún,caucus,minority_ge_05,0.05,237,232,5,97.8903,Frente Amplio
+1015,Jorge Brito Hasbún,caucus,minority_ge_10,0.10,226,221,5,97.7876,Frente Amplio
+1015,Jorge Brito Hasbún,caucus,minority_ge_20,0.20,211,209,2,99.0521,Frente Amplio
+1015,Jorge Brito Hasbún,party,all,0.00,317,311,6,98.1073,Frente Amplio
+1015,Jorge Brito Hasbún,party,minority_ge_05,0.05,237,232,5,97.8903,Frente Amplio
+1015,Jorge Brito Hasbún,party,minority_ge_10,0.10,226,221,5,97.7876,Frente Amplio
+1015,Jorge Brito Hasbún,party,minority_ge_20,0.20,211,209,2,99.0521,Frente Amplio
+1017,Álvaro Carter Fernández,caucus,all,0.00,344,344,0,100.0000,Comité Partido Republicano
+1017,Álvaro Carter Fernández,caucus,minority_ge_05,0.05,253,253,0,100.0000,Comité Partido Republicano
+1017,Álvaro Carter Fernández,caucus,minority_ge_10,0.10,242,242,0,100.0000,Comité Partido Republicano
+1017,Álvaro Carter Fernández,caucus,minority_ge_20,0.20,223,223,0,100.0000,Comité Partido Republicano
+1017,Álvaro Carter Fernández,party,all,0.00,344,344,0,100.0000,Partido Republicano
+1017,Álvaro Carter Fernández,party,minority_ge_05,0.05,253,253,0,100.0000,Partido Republicano
+1017,Álvaro Carter Fernández,party,minority_ge_10,0.10,242,242,0,100.0000,Partido Republicano
+1017,Álvaro Carter Fernández,party,minority_ge_20,0.20,223,223,0,100.0000,Partido Republicano
+1021,Andrés Celis Montt,caucus,all,0.00,320,312,8,97.5000,"Renovación Nacional, Evopoli e Independientes"
+1021,Andrés Celis Montt,caucus,minority_ge_05,0.05,241,233,8,96.6805,"Renovación Nacional, Evopoli e Independientes"
+1021,Andrés Celis Montt,caucus,minority_ge_10,0.10,232,224,8,96.5517,"Renovación Nacional, Evopoli e Independientes"
+1021,Andrés Celis Montt,caucus,minority_ge_20,0.20,217,211,6,97.2350,"Renovación Nacional, Evopoli e Independientes"
+1021,Andrés Celis Montt,party,all,0.00,318,311,7,97.7987,Renovación Nacional
+1021,Andrés Celis Montt,party,minority_ge_05,0.05,239,232,7,97.0711,Renovación Nacional
+1021,Andrés Celis Montt,party,minority_ge_10,0.10,230,223,7,96.9565,Renovación Nacional
+1021,Andrés Celis Montt,party,minority_ge_20,0.20,215,210,5,97.6744,Renovación Nacional
+1025,Catalina Del Real Mihovilovic,caucus,all,0.00,305,305,0,100.0000,Comité Partido Republicano
+1025,Catalina Del Real Mihovilovic,caucus,minority_ge_05,0.05,224,224,0,100.0000,Comité Partido Republicano
+1025,Catalina Del Real Mihovilovic,caucus,minority_ge_10,0.10,213,213,0,100.0000,Comité Partido Republicano
+1025,Catalina Del Real Mihovilovic,caucus,minority_ge_20,0.20,194,194,0,100.0000,Comité Partido Republicano
+1025,Catalina Del Real Mihovilovic,party,all,0.00,305,305,0,100.0000,Partido Republicano
+1025,Catalina Del Real Mihovilovic,party,minority_ge_05,0.05,224,224,0,100.0000,Partido Republicano
+1025,Catalina Del Real Mihovilovic,party,minority_ge_10,0.10,213,213,0,100.0000,Partido Republicano
+1025,Catalina Del Real Mihovilovic,party,minority_ge_20,0.20,194,194,0,100.0000,Partido Republicano
+1028,Eduardo Durán Salinas,caucus,all,0.00,346,341,5,98.5549,"Renovación Nacional, Evopoli e Independientes"
+1028,Eduardo Durán Salinas,caucus,minority_ge_05,0.05,259,254,5,98.0695,"Renovación Nacional, Evopoli e Independientes"
+1028,Eduardo Durán Salinas,caucus,minority_ge_10,0.10,250,245,5,98.0000,"Renovación Nacional, Evopoli e Independientes"
+1028,Eduardo Durán Salinas,caucus,minority_ge_20,0.20,232,230,2,99.1379,"Renovación Nacional, Evopoli e Independientes"
+1028,Eduardo Durán Salinas,party,all,0.00,345,341,4,98.8406,Renovación Nacional
+1028,Eduardo Durán Salinas,party,minority_ge_05,0.05,258,254,4,98.4496,Renovación Nacional
+1028,Eduardo Durán Salinas,party,minority_ge_10,0.10,249,245,4,98.3936,Renovación Nacional
+1028,Eduardo Durán Salinas,party,minority_ge_20,0.20,231,230,1,99.5671,Renovación Nacional
+1038,Marcos Ilabaca Cerda,caucus,all,0.00,310,303,7,97.7419,"Socialista, Liberal, Radical e Independientes"
+1038,Marcos Ilabaca Cerda,caucus,minority_ge_05,0.05,227,220,7,96.9163,"Socialista, Liberal, Radical e Independientes"
+1038,Marcos Ilabaca Cerda,caucus,minority_ge_10,0.10,218,211,7,96.7890,"Socialista, Liberal, Radical e Independientes"
+1038,Marcos Ilabaca Cerda,caucus,minority_ge_20,0.20,200,195,5,97.5000,"Socialista, Liberal, Radical e Independientes"
+1038,Marcos Ilabaca Cerda,party,all,0.00,307,297,10,96.7427,Partido Socialista
+1038,Marcos Ilabaca Cerda,party,minority_ge_05,0.05,224,214,10,95.5357,Partido Socialista
+1038,Marcos Ilabaca Cerda,party,minority_ge_10,0.10,215,205,10,95.3488,Partido Socialista
+1038,Marcos Ilabaca Cerda,party,minority_ge_20,0.20,198,191,7,96.4646,Partido Socialista
+1039,Pamela Jiles Moreno,caucus,all,0.00,343,296,47,86.2974,Comité Partido de la Gente
+1039,Pamela Jiles Moreno,caucus,minority_ge_05,0.05,262,215,47,82.0611,Comité Partido de la Gente
+1039,Pamela Jiles Moreno,caucus,minority_ge_10,0.10,251,205,46,81.6733,Comité Partido de la Gente
+1039,Pamela Jiles Moreno,caucus,minority_ge_20,0.20,232,187,45,80.6034,Comité Partido de la Gente
+1039,Pamela Jiles Moreno,party,all,0.00,337,290,47,86.0534,Partido de la Gente
+1039,Pamela Jiles Moreno,party,minority_ge_05,0.05,256,209,47,81.6406,Partido de la Gente
+1039,Pamela Jiles Moreno,party,minority_ge_10,0.10,245,199,46,81.2245,Partido de la Gente
+1039,Pamela Jiles Moreno,party,minority_ge_20,0.20,226,181,45,80.0885,Partido de la Gente
+1044,Raúl Leiva Carvajal,caucus,all,0.00,311,301,10,96.7846,"Socialista, Liberal, Radical e Independientes"
+1044,Raúl Leiva Carvajal,caucus,minority_ge_05,0.05,236,227,9,96.1864,"Socialista, Liberal, Radical e Independientes"
+1044,Raúl Leiva Carvajal,caucus,minority_ge_10,0.10,226,218,8,96.4602,"Socialista, Liberal, Radical e Independientes"
+1044,Raúl Leiva Carvajal,caucus,minority_ge_20,0.20,208,201,7,96.6346,"Socialista, Liberal, Radical e Independientes"
+1044,Raúl Leiva Carvajal,party,all,0.00,309,296,13,95.7929,Partido Socialista
+1044,Raúl Leiva Carvajal,party,minority_ge_05,0.05,234,222,12,94.8718,Partido Socialista
+1044,Raúl Leiva Carvajal,party,minority_ge_10,0.10,223,212,11,95.0673,Partido Socialista
+1044,Raúl Leiva Carvajal,party,minority_ge_20,0.20,206,197,9,95.6311,Partido Socialista
+1054,Francesca Muñoz González,caucus,all,0.00,0,0,0,,Por definir
+1054,Francesca Muñoz González,caucus,minority_ge_05,0.05,0,0,0,,Por definir
+1054,Francesca Muñoz González,caucus,minority_ge_10,0.10,0,0,0,,Por definir
+1054,Francesca Muñoz González,caucus,minority_ge_20,0.20,0,0,0,,Por definir
+1054,Francesca Muñoz González,party,all,0.00,348,346,2,99.4253,Partido Cristiano de Chile;Partido Social Cristiano
+1054,Francesca Muñoz González,party,minority_ge_05,0.05,258,256,2,99.2248,Partido Cristiano de Chile;Partido Social Cristiano
+1054,Francesca Muñoz González,party,minority_ge_10,0.10,247,245,2,99.1903,Partido Cristiano de Chile;Partido Social Cristiano
+1054,Francesca Muñoz González,party,minority_ge_20,0.20,230,229,1,99.5652,Partido Cristiano de Chile;Partido Social Cristiano
+1056,Emilia Nuyado Ancapichun,caucus,all,0.00,361,345,16,95.5679,"Socialista, Liberal, Radical e Independientes"
+1056,Emilia Nuyado Ancapichun,caucus,minority_ge_05,0.05,266,253,13,95.1128,"Socialista, Liberal, Radical e Independientes"
+1056,Emilia Nuyado Ancapichun,caucus,minority_ge_10,0.10,256,244,12,95.3125,"Socialista, Liberal, Radical e Independientes"
+1056,Emilia Nuyado Ancapichun,caucus,minority_ge_20,0.20,237,229,8,96.6245,"Socialista, Liberal, Radical e Independientes"
+1056,Emilia Nuyado Ancapichun,party,all,0.00,359,345,14,96.1003,Partido Socialista
+1056,Emilia Nuyado Ancapichun,party,minority_ge_05,0.05,264,253,11,95.8333,Partido Socialista
+1056,Emilia Nuyado Ancapichun,party,minority_ge_10,0.10,253,244,9,96.4427,Partido Socialista
+1056,Emilia Nuyado Ancapichun,party,minority_ge_20,0.20,235,231,4,98.2979,Partido Socialista
+1059,Ximena Ossandón Irarrázabal,caucus,all,0.00,351,335,16,95.4416,"Renovación Nacional, Evopoli e Independientes"
+1059,Ximena Ossandón Irarrázabal,caucus,minority_ge_05,0.05,258,243,15,94.1860,"Renovación Nacional, Evopoli e Independientes"
+1059,Ximena Ossandón Irarrázabal,caucus,minority_ge_10,0.10,248,233,15,93.9516,"Renovación Nacional, Evopoli e Independientes"
+1059,Ximena Ossandón Irarrázabal,caucus,minority_ge_20,0.20,232,218,14,93.9655,"Renovación Nacional, Evopoli e Independientes"
+1059,Ximena Ossandón Irarrázabal,party,all,0.00,350,335,15,95.7143,Renovación Nacional
+1059,Ximena Ossandón Irarrázabal,party,minority_ge_05,0.05,257,243,14,94.5525,Renovación Nacional
+1059,Ximena Ossandón Irarrázabal,party,minority_ge_10,0.10,247,233,14,94.3320,Renovación Nacional
+1059,Ximena Ossandón Irarrázabal,party,minority_ge_20,0.20,231,218,13,94.3723,Renovación Nacional
+1060,Luis Pardo Sáinz,caucus,all,0.00,350,344,6,98.2857,"Renovación Nacional, Evopoli e Independientes"
+1060,Luis Pardo Sáinz,caucus,minority_ge_05,0.05,259,253,6,97.6834,"Renovación Nacional, Evopoli e Independientes"
+1060,Luis Pardo Sáinz,caucus,minority_ge_10,0.10,249,243,6,97.5904,"Renovación Nacional, Evopoli e Independientes"
+1060,Luis Pardo Sáinz,caucus,minority_ge_20,0.20,232,226,6,97.4138,"Renovación Nacional, Evopoli e Independientes"
+1060,Luis Pardo Sáinz,party,all,0.00,349,344,5,98.5673,Renovación Nacional
+1060,Luis Pardo Sáinz,party,minority_ge_05,0.05,258,253,5,98.0620,Renovación Nacional
+1060,Luis Pardo Sáinz,party,minority_ge_10,0.10,248,243,5,97.9839,Renovación Nacional
+1060,Luis Pardo Sáinz,party,minority_ge_20,0.20,231,226,5,97.8355,Renovación Nacional
+1061,Andrea Parra Sauterel,caucus,all,0.00,349,330,19,94.5559,Partido Por la Democracia e Independientes
+1061,Andrea Parra Sauterel,caucus,minority_ge_05,0.05,263,245,18,93.1559,Partido Por la Democracia e Independientes
+1061,Andrea Parra Sauterel,caucus,minority_ge_10,0.10,252,234,18,92.8571,Partido Por la Democracia e Independientes
+1061,Andrea Parra Sauterel,caucus,minority_ge_20,0.20,234,220,14,94.0171,Partido Por la Democracia e Independientes
+1061,Andrea Parra Sauterel,party,all,0.00,347,338,9,97.4063,Partido Por la Democracia
+1061,Andrea Parra Sauterel,party,minority_ge_05,0.05,261,253,8,96.9349,Partido Por la Democracia
+1061,Andrea Parra Sauterel,party,minority_ge_10,0.10,250,242,8,96.8000,Partido Por la Democracia
+1061,Andrea Parra Sauterel,party,minority_ge_20,0.20,232,227,5,97.8448,Partido Por la Democracia
+1062,Joanna Pérez Olea,caucus,all,0.00,309,283,26,91.5858,"Renovación Nacional, Evopoli e Independientes"
+1062,Joanna Pérez Olea,caucus,minority_ge_05,0.05,241,215,26,89.2116,"Renovación Nacional, Evopoli e Independientes"
+1062,Joanna Pérez Olea,caucus,minority_ge_10,0.10,233,208,25,89.2704,"Renovación Nacional, Evopoli e Independientes"
+1062,Joanna Pérez Olea,caucus,minority_ge_20,0.20,216,193,23,89.3519,"Renovación Nacional, Evopoli e Independientes"
+1062,Joanna Pérez Olea,party,all,0.00,0,0,0,,Partido Demócratas Chile
+1062,Joanna Pérez Olea,party,minority_ge_05,0.05,0,0,0,,Partido Demócratas Chile
+1062,Joanna Pérez Olea,party,minority_ge_10,0.10,0,0,0,,Partido Demócratas Chile
+1062,Joanna Pérez Olea,party,minority_ge_20,0.20,0,0,0,,Partido Demócratas Chile
+1065,Guillermo Ramírez Diez,caucus,all,0.00,317,308,9,97.1609,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,caucus,minority_ge_05,0.05,255,246,9,96.4706,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,caucus,minority_ge_10,0.10,244,236,8,96.7213,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,caucus,minority_ge_20,0.20,226,221,5,97.7876,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,party,all,0.00,315,308,7,97.7778,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,party,minority_ge_05,0.05,253,246,7,97.2332,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,party,minority_ge_10,0.10,243,236,7,97.1193,Unión Demócrata Independiente
+1065,Guillermo Ramírez Diez,party,minority_ge_20,0.20,225,221,4,98.2222,Unión Demócrata Independiente
+1073,Juan Santana Castillo,caucus,all,0.00,321,305,16,95.0156,"Socialista, Liberal, Radical e Independientes"
+1073,Juan Santana Castillo,caucus,minority_ge_05,0.05,248,236,12,95.1613,"Socialista, Liberal, Radical e Independientes"
+1073,Juan Santana Castillo,caucus,minority_ge_10,0.10,240,229,11,95.4167,"Socialista, Liberal, Radical e Independientes"
+1073,Juan Santana Castillo,caucus,minority_ge_20,0.20,226,221,5,97.7876,"Socialista, Liberal, Radical e Independientes"
+1073,Juan Santana Castillo,party,all,0.00,318,308,10,96.8553,Partido Socialista
+1073,Juan Santana Castillo,party,minority_ge_05,0.05,245,239,6,97.5510,Partido Socialista
+1073,Juan Santana Castillo,party,minority_ge_10,0.10,237,232,5,97.8903,Partido Socialista
+1073,Juan Santana Castillo,party,minority_ge_20,0.20,224,223,1,99.5536,Partido Socialista
+1074,Marisela Santibáñez Novoa,caucus,all,0.00,320,310,10,96.8750,Comité Comunista e Independientes
+1074,Marisela Santibáñez Novoa,caucus,minority_ge_05,0.05,241,235,6,97.5104,Comité Comunista e Independientes
+1074,Marisela Santibáñez Novoa,caucus,minority_ge_10,0.10,231,226,5,97.8355,Comité Comunista e Independientes
+1074,Marisela Santibáñez Novoa,caucus,minority_ge_20,0.20,217,213,4,98.1567,Comité Comunista e Independientes
+1074,Marisela Santibáñez Novoa,party,all,0.00,0,0,0,,Independientes
+1074,Marisela Santibáñez Novoa,party,minority_ge_05,0.05,0,0,0,,Independientes
+1074,Marisela Santibáñez Novoa,party,minority_ge_10,0.10,0,0,0,,Independientes
+1074,Marisela Santibáñez Novoa,party,minority_ge_20,0.20,0,0,0,,Independientes
+1075,Diego Schalper Sepúlveda,caucus,all,0.00,327,323,4,98.7768,"Renovación Nacional, Evopoli e Independientes"
+1075,Diego Schalper Sepúlveda,caucus,minority_ge_05,0.05,248,244,4,98.3871,"Renovación Nacional, Evopoli e Independientes"
+1075,Diego Schalper Sepúlveda,caucus,minority_ge_10,0.10,238,234,4,98.3193,"Renovación Nacional, Evopoli e Independientes"
+1075,Diego Schalper Sepúlveda,caucus,minority_ge_20,0.20,222,219,3,98.6486,"Renovación Nacional, Evopoli e Independientes"
+1075,Diego Schalper Sepúlveda,party,all,0.00,328,324,4,98.7805,Renovación Nacional
+1075,Diego Schalper Sepúlveda,party,minority_ge_05,0.05,249,245,4,98.3936,Renovación Nacional
+1075,Diego Schalper Sepúlveda,party,minority_ge_10,0.10,239,235,4,98.3264,Renovación Nacional
+1075,Diego Schalper Sepúlveda,party,minority_ge_20,0.20,223,220,3,98.6547,Renovación Nacional
+1077,Raúl Soto Mardones,caucus,all,0.00,330,325,5,98.4848,Partido Por la Democracia e Independientes
+1077,Raúl Soto Mardones,caucus,minority_ge_05,0.05,246,241,5,97.9675,Partido Por la Democracia e Independientes
+1077,Raúl Soto Mardones,caucus,minority_ge_10,0.10,235,230,5,97.8723,Partido Por la Democracia e Independientes
+1077,Raúl Soto Mardones,caucus,minority_ge_20,0.20,218,214,4,98.1651,Partido Por la Democracia e Independientes
+1077,Raúl Soto Mardones,party,all,0.00,330,316,14,95.7576,Partido Por la Democracia
+1077,Raúl Soto Mardones,party,minority_ge_05,0.05,246,232,14,94.3089,Partido Por la Democracia
+1077,Raúl Soto Mardones,party,minority_ge_10,0.10,235,221,14,94.0426,Partido Por la Democracia
+1077,Raúl Soto Mardones,party,minority_ge_20,0.20,218,206,12,94.4954,Partido Por la Democracia
+1082,Cristóbal Urruticoechea Ríos,caucus,all,0.00,295,292,3,98.9831,Comité Partido Nacional Libertarios
+1082,Cristóbal Urruticoechea Ríos,caucus,minority_ge_05,0.05,234,231,3,98.7179,Comité Partido Nacional Libertarios
+1082,Cristóbal Urruticoechea Ríos,caucus,minority_ge_10,0.10,226,223,3,98.6726,Comité Partido Nacional Libertarios
+1082,Cristóbal Urruticoechea Ríos,caucus,minority_ge_20,0.20,213,210,3,98.5915,Comité Partido Nacional Libertarios
+1082,Cristóbal Urruticoechea Ríos,party,all,0.00,295,292,3,98.9831,Partido Nacional Libertario
+1082,Cristóbal Urruticoechea Ríos,party,minority_ge_05,0.05,234,231,3,98.7179,Partido Nacional Libertario
+1082,Cristóbal Urruticoechea Ríos,party,minority_ge_10,0.10,226,223,3,98.6726,Partido Nacional Libertario
+1082,Cristóbal Urruticoechea Ríos,party,minority_ge_20,0.20,213,210,3,98.5915,Partido Nacional Libertario
+1086,Gonzalo Winter Etcheberry,caucus,all,0.00,316,307,9,97.1519,Frente Amplio
+1086,Gonzalo Winter Etcheberry,caucus,minority_ge_05,0.05,231,223,8,96.5368,Frente Amplio
+1086,Gonzalo Winter Etcheberry,caucus,minority_ge_10,0.10,222,214,8,96.3964,Frente Amplio
+1086,Gonzalo Winter Etcheberry,caucus,minority_ge_20,0.20,204,198,6,97.0588,Frente Amplio
+1086,Gonzalo Winter Etcheberry,party,all,0.00,316,307,9,97.1519,Frente Amplio
+1086,Gonzalo Winter Etcheberry,party,minority_ge_05,0.05,231,223,8,96.5368,Frente Amplio
+1086,Gonzalo Winter Etcheberry,party,minority_ge_10,0.10,222,214,8,96.3964,Frente Amplio
+1086,Gonzalo Winter Etcheberry,party,minority_ge_20,0.20,204,198,6,97.0588,Frente Amplio
+1087,Gael Yeomans Araya,caucus,all,0.00,339,335,4,98.8201,Frente Amplio
+1087,Gael Yeomans Araya,caucus,minority_ge_05,0.05,254,252,2,99.2126,Frente Amplio
+1087,Gael Yeomans Araya,caucus,minority_ge_10,0.10,244,243,1,99.5902,Frente Amplio
+1087,Gael Yeomans Araya,caucus,minority_ge_20,0.20,230,229,1,99.5652,Frente Amplio
+1087,Gael Yeomans Araya,party,all,0.00,339,335,4,98.8201,Frente Amplio
+1087,Gael Yeomans Araya,party,minority_ge_05,0.05,254,252,2,99.2126,Frente Amplio
+1087,Gael Yeomans Araya,party,minority_ge_10,0.10,244,243,1,99.5902,Frente Amplio
+1087,Gael Yeomans Araya,party,minority_ge_20,0.20,230,229,1,99.5652,Frente Amplio
+1099,Jaime Araya Guerrero,caucus,all,0.00,315,306,9,97.1429,Partido Por la Democracia e Independientes
+1099,Jaime Araya Guerrero,caucus,minority_ge_05,0.05,236,229,7,97.0339,Partido Por la Democracia e Independientes
+1099,Jaime Araya Guerrero,caucus,minority_ge_10,0.10,226,219,7,96.9027,Partido Por la Democracia e Independientes
+1099,Jaime Araya Guerrero,caucus,minority_ge_20,0.20,211,204,7,96.6825,Partido Por la Democracia e Independientes
+1099,Jaime Araya Guerrero,party,all,0.00,0,0,0,,Independientes
+1099,Jaime Araya Guerrero,party,minority_ge_05,0.05,0,0,0,,Independientes
+1099,Jaime Araya Guerrero,party,minority_ge_10,0.10,0,0,0,,Independientes
+1099,Jaime Araya Guerrero,party,minority_ge_20,0.20,0,0,0,,Independientes
+1100,Cristián Araya Lerdo de Tejada,caucus,all,0.00,354,354,0,100.0000,Comité Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,caucus,minority_ge_05,0.05,267,267,0,100.0000,Comité Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,caucus,minority_ge_10,0.10,256,256,0,100.0000,Comité Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,caucus,minority_ge_20,0.20,237,237,0,100.0000,Comité Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,party,all,0.00,354,354,0,100.0000,Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,party,minority_ge_05,0.05,267,267,0,100.0000,Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,party,minority_ge_10,0.10,256,256,0,100.0000,Partido Republicano
+1100,Cristián Araya Lerdo de Tejada,party,minority_ge_20,0.20,237,237,0,100.0000,Partido Republicano
+1102,Roberto Arroyo Muñoz,caucus,all,0.00,25,23,2,92.0000,Comité Partido de la Gente;Por definir
+1102,Roberto Arroyo Muñoz,caucus,minority_ge_05,0.05,16,14,2,87.5000,Comité Partido de la Gente;Por definir
+1102,Roberto Arroyo Muñoz,caucus,minority_ge_10,0.10,16,14,2,87.5000,Comité Partido de la Gente;Por definir
+1102,Roberto Arroyo Muñoz,caucus,minority_ge_20,0.20,13,12,1,92.3077,Comité Partido de la Gente;Por definir
+1102,Roberto Arroyo Muñoz,party,all,0.00,201,195,6,97.0149,Partido Social Cristiano;Partido de la Gente
+1102,Roberto Arroyo Muñoz,party,minority_ge_05,0.05,159,153,6,96.2264,Partido Social Cristiano;Partido de la Gente
+1102,Roberto Arroyo Muñoz,party,minority_ge_10,0.10,150,144,6,96.0000,Partido Social Cristiano;Partido de la Gente
+1102,Roberto Arroyo Muñoz,party,minority_ge_20,0.20,134,130,4,97.0149,Partido Social Cristiano;Partido de la Gente
+1104,Chiara Barchiesi Chávez,caucus,all,0.00,342,341,1,99.7076,Comité Partido Republicano
+1104,Chiara Barchiesi Chávez,caucus,minority_ge_05,0.05,257,256,1,99.6109,Comité Partido Republicano
+1104,Chiara Barchiesi Chávez,caucus,minority_ge_10,0.10,246,245,1,99.5935,Comité Partido Republicano
+1104,Chiara Barchiesi Chávez,caucus,minority_ge_20,0.20,228,227,1,99.5614,Comité Partido Republicano
+1104,Chiara Barchiesi Chávez,party,all,0.00,342,341,1,99.7076,Partido Republicano
+1104,Chiara Barchiesi Chávez,party,minority_ge_05,0.05,257,256,1,99.6109,Partido Republicano
+1104,Chiara Barchiesi Chávez,party,minority_ge_10,0.10,246,245,1,99.5935,Partido Republicano
+1104,Chiara Barchiesi Chávez,party,minority_ge_20,0.20,228,227,1,99.5614,Partido Republicano
+1105,Héctor Barría Angulo,caucus,all,0.00,319,307,12,96.2382,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1105,Héctor Barría Angulo,caucus,minority_ge_05,0.05,244,235,9,96.3115,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1105,Héctor Barría Angulo,caucus,minority_ge_10,0.10,234,226,8,96.5812,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1105,Héctor Barría Angulo,caucus,minority_ge_20,0.20,220,212,8,96.3636,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1105,Héctor Barría Angulo,party,all,0.00,319,307,12,96.2382,Partido Demócrata Cristiano
+1105,Héctor Barría Angulo,party,minority_ge_05,0.05,244,235,9,96.3115,Partido Demócrata Cristiano
+1105,Héctor Barría Angulo,party,minority_ge_10,0.10,234,226,8,96.5812,Partido Demócrata Cristiano
+1105,Héctor Barría Angulo,party,minority_ge_20,0.20,220,212,8,96.3636,Partido Demócrata Cristiano
+1107,María Francisca Bello Campos,caucus,all,0.00,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,caucus,minority_ge_05,0.05,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,caucus,minority_ge_10,0.10,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,caucus,minority_ge_20,0.20,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,party,all,0.00,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,party,minority_ge_05,0.05,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,party,minority_ge_10,0.10,0,0,0,,Frente Amplio
+1107,María Francisca Bello Campos,party,minority_ge_20,0.20,0,0,0,,Frente Amplio
+1108,Juan Carlos Beltrán Silva,caucus,all,0.00,341,326,15,95.6012,"Renovación Nacional, Evopoli e Independientes"
+1108,Juan Carlos Beltrán Silva,caucus,minority_ge_05,0.05,251,236,15,94.0239,"Renovación Nacional, Evopoli e Independientes"
+1108,Juan Carlos Beltrán Silva,caucus,minority_ge_10,0.10,242,228,14,94.2149,"Renovación Nacional, Evopoli e Independientes"
+1108,Juan Carlos Beltrán Silva,caucus,minority_ge_20,0.20,229,217,12,94.7598,"Renovación Nacional, Evopoli e Independientes"
+1108,Juan Carlos Beltrán Silva,party,all,0.00,340,324,16,95.2941,Renovación Nacional
+1108,Juan Carlos Beltrán Silva,party,minority_ge_05,0.05,250,234,16,93.6000,Renovación Nacional
+1108,Juan Carlos Beltrán Silva,party,minority_ge_10,0.10,241,226,15,93.7759,Renovación Nacional
+1108,Juan Carlos Beltrán Silva,party,minority_ge_20,0.20,228,215,13,94.2982,Renovación Nacional
+1110,Carlos Bianchi Chelech,caucus,all,0.00,350,333,17,95.1429,Partido Por la Democracia e Independientes
+1110,Carlos Bianchi Chelech,caucus,minority_ge_05,0.05,263,248,15,94.2966,Partido Por la Democracia e Independientes
+1110,Carlos Bianchi Chelech,caucus,minority_ge_10,0.10,252,237,15,94.0476,Partido Por la Democracia e Independientes
+1110,Carlos Bianchi Chelech,caucus,minority_ge_20,0.20,234,220,14,94.0171,Partido Por la Democracia e Independientes
+1110,Carlos Bianchi Chelech,party,all,0.00,0,0,0,,Independientes
+1110,Carlos Bianchi Chelech,party,minority_ge_05,0.05,0,0,0,,Independientes
+1110,Carlos Bianchi Chelech,party,minority_ge_10,0.10,0,0,0,,Independientes
+1110,Carlos Bianchi Chelech,party,minority_ge_20,0.20,0,0,0,,Independientes
+1114,Félix Bugueño Sotelo,caucus,all,0.00,353,326,27,92.3513,Frente Amplio
+1114,Félix Bugueño Sotelo,caucus,minority_ge_05,0.05,264,239,25,90.5303,Frente Amplio
+1114,Félix Bugueño Sotelo,caucus,minority_ge_10,0.10,253,229,24,90.5138,Frente Amplio
+1114,Félix Bugueño Sotelo,caucus,minority_ge_20,0.20,234,215,19,91.8803,Frente Amplio
+1114,Félix Bugueño Sotelo,party,all,0.00,353,326,27,92.3513,Frente Amplio
+1114,Félix Bugueño Sotelo,party,minority_ge_05,0.05,264,239,25,90.5303,Frente Amplio
+1114,Félix Bugueño Sotelo,party,minority_ge_10,0.10,253,229,24,90.5138,Frente Amplio
+1114,Félix Bugueño Sotelo,party,minority_ge_20,0.20,234,215,19,91.8803,Frente Amplio
+1116,Felipe Camaño Cárdenas,caucus,all,0.00,339,317,22,93.5103,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1116,Felipe Camaño Cárdenas,caucus,minority_ge_05,0.05,255,235,20,92.1569,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1116,Felipe Camaño Cárdenas,caucus,minority_ge_10,0.10,244,224,20,91.8033,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1116,Felipe Camaño Cárdenas,caucus,minority_ge_20,0.20,226,206,20,91.1504,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1116,Felipe Camaño Cárdenas,party,all,0.00,0,0,0,,Independientes
+1116,Felipe Camaño Cárdenas,party,minority_ge_05,0.05,0,0,0,,Independientes
+1116,Felipe Camaño Cárdenas,party,minority_ge_10,0.10,0,0,0,,Independientes
+1116,Felipe Camaño Cárdenas,party,minority_ge_20,0.20,0,0,0,,Independientes
+1117,Nathalie Castillo Rojas,caucus,all,0.00,289,283,6,97.9239,Comité Comunista e Independientes
+1117,Nathalie Castillo Rojas,caucus,minority_ge_05,0.05,228,227,1,99.5614,Comité Comunista e Independientes
+1117,Nathalie Castillo Rojas,caucus,minority_ge_10,0.10,222,221,1,99.5495,Comité Comunista e Independientes
+1117,Nathalie Castillo Rojas,caucus,minority_ge_20,0.20,208,207,1,99.5192,Comité Comunista e Independientes
+1117,Nathalie Castillo Rojas,party,all,0.00,288,282,6,97.9167,Partido Comunista
+1117,Nathalie Castillo Rojas,party,minority_ge_05,0.05,228,227,1,99.5614,Partido Comunista
+1117,Nathalie Castillo Rojas,party,minority_ge_10,0.10,222,221,1,99.5495,Partido Comunista
+1117,Nathalie Castillo Rojas,party,minority_ge_20,0.20,208,207,1,99.5192,Partido Comunista
+1119,Sara Concha Smith,caucus,all,0.00,0,0,0,,Por definir
+1119,Sara Concha Smith,caucus,minority_ge_05,0.05,0,0,0,,Por definir
+1119,Sara Concha Smith,caucus,minority_ge_10,0.10,0,0,0,,Por definir
+1119,Sara Concha Smith,caucus,minority_ge_20,0.20,0,0,0,,Por definir
+1119,Sara Concha Smith,party,all,0.00,353,353,0,100.0000,Partido Cristiano de Chile;Partido Social Cristiano
+1119,Sara Concha Smith,party,minority_ge_05,0.05,262,262,0,100.0000,Partido Cristiano de Chile;Partido Social Cristiano
+1119,Sara Concha Smith,party,minority_ge_10,0.10,251,251,0,100.0000,Partido Cristiano de Chile;Partido Social Cristiano
+1119,Sara Concha Smith,party,minority_ge_20,0.20,232,232,0,100.0000,Partido Cristiano de Chile;Partido Social Cristiano
+1122,Luis Alberto Cuello Peña y Lillo,caucus,all,0.00,352,350,2,99.4318,Comité Comunista e Independientes
+1122,Luis Alberto Cuello Peña y Lillo,caucus,minority_ge_05,0.05,266,265,1,99.6241,Comité Comunista e Independientes
+1122,Luis Alberto Cuello Peña y Lillo,caucus,minority_ge_10,0.10,255,255,0,100.0000,Comité Comunista e Independientes
+1122,Luis Alberto Cuello Peña y Lillo,caucus,minority_ge_20,0.20,236,236,0,100.0000,Comité Comunista e Independientes
+1122,Luis Alberto Cuello Peña y Lillo,party,all,0.00,351,350,1,99.7151,Partido Comunista
+1122,Luis Alberto Cuello Peña y Lillo,party,minority_ge_05,0.05,266,265,1,99.6241,Partido Comunista
+1122,Luis Alberto Cuello Peña y Lillo,party,minority_ge_10,0.10,255,255,0,100.0000,Partido Comunista
+1122,Luis Alberto Cuello Peña y Lillo,party,minority_ge_20,0.20,236,236,0,100.0000,Partido Comunista
+1127,Lorena Fries Monleón,caucus,all,0.00,344,336,8,97.6744,Frente Amplio
+1127,Lorena Fries Monleón,caucus,minority_ge_05,0.05,259,253,6,97.6834,Frente Amplio
+1127,Lorena Fries Monleón,caucus,minority_ge_10,0.10,248,243,5,97.9839,Frente Amplio
+1127,Lorena Fries Monleón,caucus,minority_ge_20,0.20,230,226,4,98.2609,Frente Amplio
+1127,Lorena Fries Monleón,party,all,0.00,344,336,8,97.6744,Frente Amplio
+1127,Lorena Fries Monleón,party,minority_ge_05,0.05,259,253,6,97.6834,Frente Amplio
+1127,Lorena Fries Monleón,party,minority_ge_10,0.10,248,243,5,97.9839,Frente Amplio
+1127,Lorena Fries Monleón,party,minority_ge_20,0.20,230,226,4,98.2609,Frente Amplio
+1128,Ana María Gazmuri Vieira,caucus,all,0.00,316,314,2,99.3671,Comité Comunista e Independientes
+1128,Ana María Gazmuri Vieira,caucus,minority_ge_05,0.05,235,234,1,99.5745,Comité Comunista e Independientes
+1128,Ana María Gazmuri Vieira,caucus,minority_ge_10,0.10,226,225,1,99.5575,Comité Comunista e Independientes
+1128,Ana María Gazmuri Vieira,caucus,minority_ge_20,0.20,208,207,1,99.5192,Comité Comunista e Independientes
+1128,Ana María Gazmuri Vieira,party,all,0.00,0,0,0,,Partido Acción Humanista
+1128,Ana María Gazmuri Vieira,party,minority_ge_05,0.05,0,0,0,,Partido Acción Humanista
+1128,Ana María Gazmuri Vieira,party,minority_ge_10,0.10,0,0,0,,Partido Acción Humanista
+1128,Ana María Gazmuri Vieira,party,minority_ge_20,0.20,0,0,0,,Partido Acción Humanista
+1131,Mauro González Villarroel,caucus,all,0.00,305,301,4,98.6885,"Renovación Nacional, Evopoli e Independientes"
+1131,Mauro González Villarroel,caucus,minority_ge_05,0.05,248,245,3,98.7903,"Renovación Nacional, Evopoli e Independientes"
+1131,Mauro González Villarroel,caucus,minority_ge_10,0.10,239,236,3,98.7448,"Renovación Nacional, Evopoli e Independientes"
+1131,Mauro González Villarroel,caucus,minority_ge_20,0.20,224,221,3,98.6607,"Renovación Nacional, Evopoli e Independientes"
+1131,Mauro González Villarroel,party,all,0.00,304,302,2,99.3421,Renovación Nacional
+1131,Mauro González Villarroel,party,minority_ge_05,0.05,247,246,1,99.5951,Renovación Nacional
+1131,Mauro González Villarroel,party,minority_ge_10,0.10,238,237,1,99.5798,Renovación Nacional
+1131,Mauro González Villarroel,party,minority_ge_20,0.20,223,222,1,99.5516,Renovación Nacional
+1132,Jorge Guzmán Zepeda,caucus,all,0.00,358,342,16,95.5307,"Renovación Nacional, Evopoli e Independientes"
+1132,Jorge Guzmán Zepeda,caucus,minority_ge_05,0.05,264,248,16,93.9394,"Renovación Nacional, Evopoli e Independientes"
+1132,Jorge Guzmán Zepeda,caucus,minority_ge_10,0.10,254,239,15,94.0945,"Renovación Nacional, Evopoli e Independientes"
+1132,Jorge Guzmán Zepeda,caucus,minority_ge_20,0.20,236,223,13,94.4915,"Renovación Nacional, Evopoli e Independientes"
+1132,Jorge Guzmán Zepeda,party,all,0.00,319,319,0,100.0000,Evolución Política
+1132,Jorge Guzmán Zepeda,party,minority_ge_05,0.05,240,240,0,100.0000,Evolución Política
+1132,Jorge Guzmán Zepeda,party,minority_ge_10,0.10,230,230,0,100.0000,Evolución Política
+1132,Jorge Guzmán Zepeda,party,minority_ge_20,0.20,214,214,0,100.0000,Evolución Política
+1133,Juan Irarrázaval Rossel,caucus,all,0.00,359,359,0,100.0000,Comité Partido Republicano
+1133,Juan Irarrázaval Rossel,caucus,minority_ge_05,0.05,265,265,0,100.0000,Comité Partido Republicano
+1133,Juan Irarrázaval Rossel,caucus,minority_ge_10,0.10,254,254,0,100.0000,Comité Partido Republicano
+1133,Juan Irarrázaval Rossel,caucus,minority_ge_20,0.20,235,235,0,100.0000,Comité Partido Republicano
+1133,Juan Irarrázaval Rossel,party,all,0.00,359,359,0,100.0000,Partido Republicano
+1133,Juan Irarrázaval Rossel,party,minority_ge_05,0.05,265,265,0,100.0000,Partido Republicano
+1133,Juan Irarrázaval Rossel,party,minority_ge_10,0.10,254,254,0,100.0000,Partido Republicano
+1133,Juan Irarrázaval Rossel,party,minority_ge_20,0.20,235,235,0,100.0000,Partido Republicano
+1140,Daniel Lilayu Vivanco,caucus,all,0.00,359,347,12,96.6574,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,caucus,minority_ge_05,0.05,268,257,11,95.8955,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,caucus,minority_ge_10,0.10,257,248,9,96.4981,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,caucus,minority_ge_20,0.20,238,232,6,97.4790,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,party,all,0.00,357,347,10,97.1989,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,party,minority_ge_05,0.05,266,257,9,96.6165,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,party,minority_ge_10,0.10,256,248,8,96.8750,Unión Demócrata Independiente
+1140,Daniel Lilayu Vivanco,party,minority_ge_20,0.20,237,232,5,97.8903,Unión Demócrata Independiente
+1141,Luis Malla Valenzuela,caucus,all,0.00,352,291,61,82.6705,"Socialista, Liberal, Radical e Independientes"
+1141,Luis Malla Valenzuela,caucus,minority_ge_05,0.05,262,204,58,77.8626,"Socialista, Liberal, Radical e Independientes"
+1141,Luis Malla Valenzuela,caucus,minority_ge_10,0.10,252,196,56,77.7778,"Socialista, Liberal, Radical e Independientes"
+1141,Luis Malla Valenzuela,caucus,minority_ge_20,0.20,233,179,54,76.8240,"Socialista, Liberal, Radical e Independientes"
+1141,Luis Malla Valenzuela,party,all,0.00,298,298,0,100.0000,Partido Liberal de Chile
+1141,Luis Malla Valenzuela,party,minority_ge_05,0.05,223,223,0,100.0000,Partido Liberal de Chile
+1141,Luis Malla Valenzuela,party,minority_ge_10,0.10,215,215,0,100.0000,Partido Liberal de Chile
+1141,Luis Malla Valenzuela,party,minority_ge_20,0.20,197,197,0,100.0000,Partido Liberal de Chile
+1142,Daniel Manouchehri Lobos,caucus,all,0.00,341,310,31,90.9091,"Socialista, Liberal, Radical e Independientes"
+1142,Daniel Manouchehri Lobos,caucus,minority_ge_05,0.05,258,228,30,88.3721,"Socialista, Liberal, Radical e Independientes"
+1142,Daniel Manouchehri Lobos,caucus,minority_ge_10,0.10,248,219,29,88.3065,"Socialista, Liberal, Radical e Independientes"
+1142,Daniel Manouchehri Lobos,caucus,minority_ge_20,0.20,230,205,25,89.1304,"Socialista, Liberal, Radical e Independientes"
+1142,Daniel Manouchehri Lobos,party,all,0.00,339,310,29,91.4454,Partido Socialista
+1142,Daniel Manouchehri Lobos,party,minority_ge_05,0.05,256,228,28,89.0625,Partido Socialista
+1142,Daniel Manouchehri Lobos,party,minority_ge_10,0.10,245,219,26,89.3878,Partido Socialista
+1142,Daniel Manouchehri Lobos,party,minority_ge_20,0.20,228,205,23,89.9123,Partido Socialista
+1143,Cristóbal Martínez Ramírez,caucus,all,0.00,354,343,11,96.8927,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,caucus,minority_ge_05,0.05,265,257,8,96.9811,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,caucus,minority_ge_10,0.10,254,246,8,96.8504,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,caucus,minority_ge_20,0.20,235,228,7,97.0213,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,party,all,0.00,352,341,11,96.8750,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,party,minority_ge_05,0.05,263,255,8,96.9582,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,party,minority_ge_10,0.10,253,245,8,96.8379,Unión Demócrata Independiente
+1143,Cristóbal Martínez Ramírez,party,minority_ge_20,0.20,234,227,7,97.0085,Unión Demócrata Independiente
+1146,José Carlos Meza Pereira,caucus,all,0.00,331,330,1,99.6979,Comité Partido Republicano
+1146,José Carlos Meza Pereira,caucus,minority_ge_05,0.05,247,246,1,99.5951,Comité Partido Republicano
+1146,José Carlos Meza Pereira,caucus,minority_ge_10,0.10,236,235,1,99.5763,Comité Partido Republicano
+1146,José Carlos Meza Pereira,caucus,minority_ge_20,0.20,221,220,1,99.5475,Comité Partido Republicano
+1146,José Carlos Meza Pereira,party,all,0.00,331,330,1,99.6979,Partido Republicano
+1146,José Carlos Meza Pereira,party,minority_ge_05,0.05,247,246,1,99.5951,Partido Republicano
+1146,José Carlos Meza Pereira,party,minority_ge_10,0.10,236,235,1,99.5763,Partido Republicano
+1146,José Carlos Meza Pereira,party,minority_ge_20,0.20,221,220,1,99.5475,Partido Republicano
+1148,Javiera Morales Alvarado,caucus,all,0.00,93,92,1,98.9247,Frente Amplio
+1148,Javiera Morales Alvarado,caucus,minority_ge_05,0.05,87,86,1,98.8506,Frente Amplio
+1148,Javiera Morales Alvarado,caucus,minority_ge_10,0.10,83,82,1,98.7952,Frente Amplio
+1148,Javiera Morales Alvarado,caucus,minority_ge_20,0.20,82,82,0,100.0000,Frente Amplio
+1148,Javiera Morales Alvarado,party,all,0.00,93,92,1,98.9247,Frente Amplio
+1148,Javiera Morales Alvarado,party,minority_ge_05,0.05,87,86,1,98.8506,Frente Amplio
+1148,Javiera Morales Alvarado,party,minority_ge_10,0.10,83,82,1,98.7952,Frente Amplio
+1148,Javiera Morales Alvarado,party,minority_ge_20,0.20,82,82,0,100.0000,Frente Amplio
+1150,Benjamín Moreno Bascur,caucus,all,0.00,364,364,0,100.0000,Comité Partido Republicano
+1150,Benjamín Moreno Bascur,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Partido Republicano
+1150,Benjamín Moreno Bascur,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Partido Republicano
+1150,Benjamín Moreno Bascur,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Republicano
+1150,Benjamín Moreno Bascur,party,all,0.00,364,364,0,100.0000,Partido Republicano
+1150,Benjamín Moreno Bascur,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Republicano
+1150,Benjamín Moreno Bascur,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Republicano
+1150,Benjamín Moreno Bascur,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Republicano
+1152,Gloria Naveillan Arriagada,caucus,all,0.00,304,295,9,97.0395,Comité Partido Nacional Libertarios
+1152,Gloria Naveillan Arriagada,caucus,minority_ge_05,0.05,243,235,8,96.7078,Comité Partido Nacional Libertarios
+1152,Gloria Naveillan Arriagada,caucus,minority_ge_10,0.10,235,227,8,96.5957,Comité Partido Nacional Libertarios
+1152,Gloria Naveillan Arriagada,caucus,minority_ge_20,0.20,219,211,8,96.3470,Comité Partido Nacional Libertarios
+1152,Gloria Naveillan Arriagada,party,all,0.00,304,295,9,97.0395,Partido Nacional Libertario
+1152,Gloria Naveillan Arriagada,party,minority_ge_05,0.05,243,235,8,96.7078,Partido Nacional Libertario
+1152,Gloria Naveillan Arriagada,party,minority_ge_10,0.10,235,227,8,96.5957,Partido Nacional Libertario
+1152,Gloria Naveillan Arriagada,party,minority_ge_20,0.20,219,211,8,96.3470,Partido Nacional Libertario
+1153,Coca Ericka Ñanco Vásquez,caucus,all,0.00,201,196,5,97.5124,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,caucus,minority_ge_05,0.05,165,162,3,98.1818,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,caucus,minority_ge_10,0.10,156,154,2,98.7179,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,caucus,minority_ge_20,0.20,143,142,1,99.3007,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,party,all,0.00,201,196,5,97.5124,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,party,minority_ge_05,0.05,165,162,3,98.1818,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,party,minority_ge_10,0.10,156,154,2,98.7179,Frente Amplio
+1153,Coca Ericka Ñanco Vásquez,party,minority_ge_20,0.20,143,142,1,99.3007,Frente Amplio
+1157,Marlene Pérez Cartes,caucus,all,0.00,305,284,21,93.1148,Unión Demócrata Independiente
+1157,Marlene Pérez Cartes,caucus,minority_ge_05,0.05,230,209,21,90.8696,Unión Demócrata Independiente
+1157,Marlene Pérez Cartes,caucus,minority_ge_10,0.10,219,198,21,90.4110,Unión Demócrata Independiente
+1157,Marlene Pérez Cartes,caucus,minority_ge_20,0.20,205,186,19,90.7317,Unión Demócrata Independiente
+1157,Marlene Pérez Cartes,party,all,0.00,0,0,0,,Independientes
+1157,Marlene Pérez Cartes,party,minority_ge_05,0.05,0,0,0,,Independientes
+1157,Marlene Pérez Cartes,party,minority_ge_10,0.10,0,0,0,,Independientes
+1157,Marlene Pérez Cartes,party,minority_ge_20,0.20,0,0,0,,Independientes
+1159,Lorena Pizarro Sierra,caucus,all,0.00,339,336,3,99.1150,Comité Comunista e Independientes
+1159,Lorena Pizarro Sierra,caucus,minority_ge_05,0.05,259,258,1,99.6139,Comité Comunista e Independientes
+1159,Lorena Pizarro Sierra,caucus,minority_ge_10,0.10,248,247,1,99.5968,Comité Comunista e Independientes
+1159,Lorena Pizarro Sierra,caucus,minority_ge_20,0.20,230,229,1,99.5652,Comité Comunista e Independientes
+1159,Lorena Pizarro Sierra,party,all,0.00,338,335,3,99.1124,Partido Comunista
+1159,Lorena Pizarro Sierra,party,minority_ge_05,0.05,259,258,1,99.6139,Partido Comunista
+1159,Lorena Pizarro Sierra,party,minority_ge_10,0.10,248,247,1,99.5968,Partido Comunista
+1159,Lorena Pizarro Sierra,party,minority_ge_20,0.20,230,229,1,99.5652,Partido Comunista
+1165,Agustín Romero Leiva,caucus,all,0.00,357,357,0,100.0000,Comité Partido Republicano
+1165,Agustín Romero Leiva,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Partido Republicano
+1165,Agustín Romero Leiva,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Partido Republicano
+1165,Agustín Romero Leiva,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Partido Republicano
+1165,Agustín Romero Leiva,party,all,0.00,357,357,0,100.0000,Partido Republicano
+1165,Agustín Romero Leiva,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Republicano
+1165,Agustín Romero Leiva,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Republicano
+1165,Agustín Romero Leiva,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Republicano
+1166,Natalia Romero Talguia,caucus,all,0.00,361,325,36,90.0277,Unión Demócrata Independiente
+1166,Natalia Romero Talguia,caucus,minority_ge_05,0.05,268,232,36,86.5672,Unión Demócrata Independiente
+1166,Natalia Romero Talguia,caucus,minority_ge_10,0.10,257,221,36,85.9922,Unión Demócrata Independiente
+1166,Natalia Romero Talguia,caucus,minority_ge_20,0.20,238,204,34,85.7143,Unión Demócrata Independiente
+1166,Natalia Romero Talguia,party,all,0.00,0,0,0,,Independientes
+1166,Natalia Romero Talguia,party,minority_ge_05,0.05,0,0,0,,Independientes
+1166,Natalia Romero Talguia,party,minority_ge_10,0.10,0,0,0,,Independientes
+1166,Natalia Romero Talguia,party,minority_ge_20,0.20,0,0,0,,Independientes
+1170,Luis Sánchez Ossa,caucus,all,0.00,349,349,0,100.0000,Comité Partido Republicano
+1170,Luis Sánchez Ossa,caucus,minority_ge_05,0.05,257,257,0,100.0000,Comité Partido Republicano
+1170,Luis Sánchez Ossa,caucus,minority_ge_10,0.10,246,246,0,100.0000,Comité Partido Republicano
+1170,Luis Sánchez Ossa,caucus,minority_ge_20,0.20,227,227,0,100.0000,Comité Partido Republicano
+1170,Luis Sánchez Ossa,party,all,0.00,349,349,0,100.0000,Partido Republicano
+1170,Luis Sánchez Ossa,party,minority_ge_05,0.05,257,257,0,100.0000,Partido Republicano
+1170,Luis Sánchez Ossa,party,minority_ge_10,0.10,246,246,0,100.0000,Partido Republicano
+1170,Luis Sánchez Ossa,party,minority_ge_20,0.20,227,227,0,100.0000,Partido Republicano
+1171,Emilia Schneider Videla,caucus,all,0.00,360,357,3,99.1667,Frente Amplio
+1171,Emilia Schneider Videla,caucus,minority_ge_05,0.05,268,266,2,99.2537,Frente Amplio
+1171,Emilia Schneider Videla,caucus,minority_ge_10,0.10,257,256,1,99.6109,Frente Amplio
+1171,Emilia Schneider Videla,caucus,minority_ge_20,0.20,238,238,0,100.0000,Frente Amplio
+1171,Emilia Schneider Videla,party,all,0.00,360,357,3,99.1667,Frente Amplio
+1171,Emilia Schneider Videla,party,minority_ge_05,0.05,268,266,2,99.2537,Frente Amplio
+1171,Emilia Schneider Videla,party,minority_ge_10,0.10,257,256,1,99.6109,Frente Amplio
+1171,Emilia Schneider Videla,party,minority_ge_20,0.20,238,238,0,100.0000,Frente Amplio
+1172,Stephan Schubert Rubio,caucus,all,0.00,310,310,0,100.0000,Comité Partido Republicano
+1172,Stephan Schubert Rubio,caucus,minority_ge_05,0.05,222,222,0,100.0000,Comité Partido Republicano
+1172,Stephan Schubert Rubio,caucus,minority_ge_10,0.10,213,213,0,100.0000,Comité Partido Republicano
+1172,Stephan Schubert Rubio,caucus,minority_ge_20,0.20,195,195,0,100.0000,Comité Partido Republicano
+1172,Stephan Schubert Rubio,party,all,0.00,310,310,0,100.0000,Partido Republicano
+1172,Stephan Schubert Rubio,party,minority_ge_05,0.05,222,222,0,100.0000,Partido Republicano
+1172,Stephan Schubert Rubio,party,minority_ge_10,0.10,213,213,0,100.0000,Partido Republicano
+1172,Stephan Schubert Rubio,party,minority_ge_20,0.20,195,195,0,100.0000,Partido Republicano
+1173,Daniela Serrano Salazar,caucus,all,0.00,359,357,2,99.4429,Comité Comunista e Independientes
+1173,Daniela Serrano Salazar,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Comunista e Independientes
+1173,Daniela Serrano Salazar,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Comunista e Independientes
+1173,Daniela Serrano Salazar,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Comunista e Independientes
+1173,Daniela Serrano Salazar,party,all,0.00,358,357,1,99.7207,Partido Comunista
+1173,Daniela Serrano Salazar,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Comunista
+1173,Daniela Serrano Salazar,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Comunista
+1173,Daniela Serrano Salazar,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Comunista
+1174,Marco Antonio Sulantay Olivares,caucus,all,0.00,352,344,8,97.7273,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,caucus,minority_ge_05,0.05,262,255,7,97.3282,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,caucus,minority_ge_10,0.10,251,244,7,97.2112,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,caucus,minority_ge_20,0.20,236,229,7,97.0339,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,party,all,0.00,350,343,7,98.0000,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,party,minority_ge_05,0.05,260,254,6,97.6923,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,party,minority_ge_10,0.10,250,244,6,97.6000,Unión Demócrata Independiente
+1174,Marco Antonio Sulantay Olivares,party,minority_ge_20,0.20,235,229,6,97.4468,Unión Demócrata Independiente
+1175,Cristián Tapia Ramos,caucus,all,0.00,311,298,13,95.8199,Partido Por la Democracia e Independientes
+1175,Cristián Tapia Ramos,caucus,minority_ge_05,0.05,234,222,12,94.8718,Partido Por la Democracia e Independientes
+1175,Cristián Tapia Ramos,caucus,minority_ge_10,0.10,224,212,12,94.6429,Partido Por la Democracia e Independientes
+1175,Cristián Tapia Ramos,caucus,minority_ge_20,0.20,207,196,11,94.6860,Partido Por la Democracia e Independientes
+1175,Cristián Tapia Ramos,party,all,0.00,0,0,0,,Independientes
+1175,Cristián Tapia Ramos,party,minority_ge_05,0.05,0,0,0,,Independientes
+1175,Cristián Tapia Ramos,party,minority_ge_10,0.10,0,0,0,,Independientes
+1175,Cristián Tapia Ramos,party,minority_ge_20,0.20,0,0,0,,Independientes
+1176,Hotuiti Teao Drago,caucus,all,0.00,306,297,9,97.0588,Unión Demócrata Independiente
+1176,Hotuiti Teao Drago,caucus,minority_ge_05,0.05,221,213,8,96.3801,Unión Demócrata Independiente
+1176,Hotuiti Teao Drago,caucus,minority_ge_10,0.10,211,203,8,96.2085,Unión Demócrata Independiente
+1176,Hotuiti Teao Drago,caucus,minority_ge_20,0.20,196,188,8,95.9184,Unión Demócrata Independiente
+1176,Hotuiti Teao Drago,party,all,0.00,0,0,0,,Independientes
+1176,Hotuiti Teao Drago,party,minority_ge_05,0.05,0,0,0,,Independientes
+1176,Hotuiti Teao Drago,party,minority_ge_10,0.10,0,0,0,,Independientes
+1176,Hotuiti Teao Drago,party,minority_ge_20,0.20,0,0,0,,Independientes
+1177,Carolina Tello Rojas,caucus,all,0.00,356,348,8,97.7528,Frente Amplio
+1177,Carolina Tello Rojas,caucus,minority_ge_05,0.05,265,259,6,97.7358,Frente Amplio
+1177,Carolina Tello Rojas,caucus,minority_ge_10,0.10,254,248,6,97.6378,Frente Amplio
+1177,Carolina Tello Rojas,caucus,minority_ge_20,0.20,235,231,4,98.2979,Frente Amplio
+1177,Carolina Tello Rojas,party,all,0.00,356,348,8,97.7528,Frente Amplio
+1177,Carolina Tello Rojas,party,minority_ge_05,0.05,265,259,6,97.7358,Frente Amplio
+1177,Carolina Tello Rojas,party,minority_ge_10,0.10,254,248,6,97.6378,Frente Amplio
+1177,Carolina Tello Rojas,party,minority_ge_20,0.20,235,231,4,98.2979,Frente Amplio
+1178,Héctor Ulloa Aguilera,caucus,all,0.00,338,322,16,95.2663,Partido Por la Democracia e Independientes
+1178,Héctor Ulloa Aguilera,caucus,minority_ge_05,0.05,254,239,15,94.0945,Partido Por la Democracia e Independientes
+1178,Héctor Ulloa Aguilera,caucus,minority_ge_10,0.10,244,229,15,93.8525,Partido Por la Democracia e Independientes
+1178,Héctor Ulloa Aguilera,caucus,minority_ge_20,0.20,227,213,14,93.8326,Partido Por la Democracia e Independientes
+1178,Héctor Ulloa Aguilera,party,all,0.00,0,0,0,,Independientes
+1178,Héctor Ulloa Aguilera,party,minority_ge_05,0.05,0,0,0,,Independientes
+1178,Héctor Ulloa Aguilera,party,minority_ge_10,0.10,0,0,0,,Independientes
+1178,Héctor Ulloa Aguilera,party,minority_ge_20,0.20,0,0,0,,Independientes
+1180,Consuelo Veloso Ávila,caucus,all,0.00,359,350,9,97.4930,Frente Amplio
+1180,Consuelo Veloso Ávila,caucus,minority_ge_05,0.05,266,259,7,97.3684,Frente Amplio
+1180,Consuelo Veloso Ávila,caucus,minority_ge_10,0.10,255,249,6,97.6471,Frente Amplio
+1180,Consuelo Veloso Ávila,caucus,minority_ge_20,0.20,236,233,3,98.7288,Frente Amplio
+1180,Consuelo Veloso Ávila,party,all,0.00,359,350,9,97.4930,Frente Amplio
+1180,Consuelo Veloso Ávila,party,minority_ge_05,0.05,266,259,7,97.3684,Frente Amplio
+1180,Consuelo Veloso Ávila,party,minority_ge_10,0.10,255,249,6,97.6471,Frente Amplio
+1180,Consuelo Veloso Ávila,party,minority_ge_20,0.20,236,233,3,98.7288,Frente Amplio
+1181,Nelson Venegas Salazar,caucus,all,0.00,335,320,15,95.5224,"Socialista, Liberal, Radical e Independientes"
+1181,Nelson Venegas Salazar,caucus,minority_ge_05,0.05,257,248,9,96.4981,"Socialista, Liberal, Radical e Independientes"
+1181,Nelson Venegas Salazar,caucus,minority_ge_10,0.10,248,240,8,96.7742,"Socialista, Liberal, Radical e Independientes"
+1181,Nelson Venegas Salazar,caucus,minority_ge_20,0.20,230,224,6,97.3913,"Socialista, Liberal, Radical e Independientes"
+1181,Nelson Venegas Salazar,party,all,0.00,332,319,13,96.0843,Partido Socialista
+1181,Nelson Venegas Salazar,party,minority_ge_05,0.05,254,247,7,97.2441,Partido Socialista
+1181,Nelson Venegas Salazar,party,minority_ge_10,0.10,245,239,6,97.5510,Partido Socialista
+1181,Nelson Venegas Salazar,party,minority_ge_20,0.20,228,223,5,97.8070,Partido Socialista
+1182,Sebastián Videla Castillo,caucus,all,0.00,352,282,70,80.1136,"Socialista, Liberal, Radical e Independientes"
+1182,Sebastián Videla Castillo,caucus,minority_ge_05,0.05,264,198,66,75.0000,"Socialista, Liberal, Radical e Independientes"
+1182,Sebastián Videla Castillo,caucus,minority_ge_10,0.10,254,189,65,74.4094,"Socialista, Liberal, Radical e Independientes"
+1182,Sebastián Videla Castillo,caucus,minority_ge_20,0.20,235,171,64,72.7660,"Socialista, Liberal, Radical e Independientes"
+1182,Sebastián Videla Castillo,party,all,0.00,0,0,0,,Independientes
+1182,Sebastián Videla Castillo,party,minority_ge_05,0.05,0,0,0,,Independientes
+1182,Sebastián Videla Castillo,party,minority_ge_10,0.10,0,0,0,,Independientes
+1182,Sebastián Videla Castillo,party,minority_ge_20,0.20,0,0,0,,Independientes
+1183,Flor Weisse Novoa,caucus,all,0.00,284,273,11,96.1268,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,caucus,minority_ge_05,0.05,196,187,9,95.4082,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,caucus,minority_ge_10,0.10,191,182,9,95.2880,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,caucus,minority_ge_20,0.20,174,167,7,95.9770,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,party,all,0.00,282,271,11,96.0993,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,party,minority_ge_05,0.05,194,185,9,95.3608,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,party,minority_ge_10,0.10,190,181,9,95.2632,Unión Demócrata Independiente
+1183,Flor Weisse Novoa,party,minority_ge_20,0.20,173,166,7,95.9538,Unión Demócrata Independiente
+1184,Roberto Celedón Fernández,caucus,all,0.00,364,346,18,95.0549,Frente Amplio
+1184,Roberto Celedón Fernández,caucus,minority_ge_05,0.05,269,258,11,95.9108,Frente Amplio
+1184,Roberto Celedón Fernández,caucus,minority_ge_10,0.10,258,249,9,96.5116,Frente Amplio
+1184,Roberto Celedón Fernández,caucus,minority_ge_20,0.20,239,235,4,98.3264,Frente Amplio
+1184,Roberto Celedón Fernández,party,all,0.00,0,0,0,,Independientes
+1184,Roberto Celedón Fernández,party,minority_ge_05,0.05,0,0,0,,Independientes
+1184,Roberto Celedón Fernández,party,minority_ge_10,0.10,0,0,0,,Independientes
+1184,Roberto Celedón Fernández,party,minority_ge_20,0.20,0,0,0,,Independientes
+1186,Ignacio Achurra Díaz,caucus,all,0.00,363,359,4,98.8981,Frente Amplio
+1186,Ignacio Achurra Díaz,caucus,minority_ge_05,0.05,269,265,4,98.5130,Frente Amplio
+1186,Ignacio Achurra Díaz,caucus,minority_ge_10,0.10,258,255,3,98.8372,Frente Amplio
+1186,Ignacio Achurra Díaz,caucus,minority_ge_20,0.20,239,237,2,99.1632,Frente Amplio
+1186,Ignacio Achurra Díaz,party,all,0.00,363,359,4,98.8981,Frente Amplio
+1186,Ignacio Achurra Díaz,party,minority_ge_05,0.05,269,265,4,98.5130,Frente Amplio
+1186,Ignacio Achurra Díaz,party,minority_ge_10,0.10,258,255,3,98.8372,Frente Amplio
+1186,Ignacio Achurra Díaz,party,minority_ge_20,0.20,239,237,2,99.1632,Frente Amplio
+1187,Carlo Arqueros Pizarro,caucus,all,0.00,361,361,0,100.0000,Comité Partido Republicano
+1187,Carlo Arqueros Pizarro,caucus,minority_ge_05,0.05,266,266,0,100.0000,Comité Partido Republicano
+1187,Carlo Arqueros Pizarro,caucus,minority_ge_10,0.10,255,255,0,100.0000,Comité Partido Republicano
+1187,Carlo Arqueros Pizarro,caucus,minority_ge_20,0.20,236,236,0,100.0000,Comité Partido Republicano
+1187,Carlo Arqueros Pizarro,party,all,0.00,361,361,0,100.0000,Partido Republicano
+1187,Carlo Arqueros Pizarro,party,minority_ge_05,0.05,266,266,0,100.0000,Partido Republicano
+1187,Carlo Arqueros Pizarro,party,minority_ge_10,0.10,255,255,0,100.0000,Partido Republicano
+1187,Carlo Arqueros Pizarro,party,minority_ge_20,0.20,236,236,0,100.0000,Partido Republicano
+1188,Marcos Barraza Gómez,caucus,all,0.00,364,364,0,100.0000,Comité Comunista e Independientes
+1188,Marcos Barraza Gómez,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Comunista e Independientes
+1188,Marcos Barraza Gómez,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Comunista e Independientes
+1188,Marcos Barraza Gómez,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Comunista e Independientes
+1188,Marcos Barraza Gómez,party,all,0.00,363,363,0,100.0000,Partido Comunista
+1188,Marcos Barraza Gómez,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Comunista
+1188,Marcos Barraza Gómez,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Comunista
+1188,Marcos Barraza Gómez,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Comunista
+1189,Jaime Bassa Mercado,caucus,all,0.00,350,337,13,96.2857,Frente Amplio
+1189,Jaime Bassa Mercado,caucus,minority_ge_05,0.05,261,253,8,96.9349,Frente Amplio
+1189,Jaime Bassa Mercado,caucus,minority_ge_10,0.10,250,243,7,97.2000,Frente Amplio
+1189,Jaime Bassa Mercado,caucus,minority_ge_20,0.20,232,227,5,97.8448,Frente Amplio
+1189,Jaime Bassa Mercado,party,all,0.00,350,337,13,96.2857,Frente Amplio
+1189,Jaime Bassa Mercado,party,minority_ge_05,0.05,261,253,8,96.9349,Frente Amplio
+1189,Jaime Bassa Mercado,party,minority_ge_10,0.10,250,243,7,97.2000,Frente Amplio
+1189,Jaime Bassa Mercado,party,minority_ge_20,0.20,232,227,5,97.8448,Frente Amplio
+1190,Enrique Bassaletti Riess,caucus,all,0.00,363,363,0,100.0000,Comité Partido Republicano
+1190,Enrique Bassaletti Riess,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Partido Republicano
+1190,Enrique Bassaletti Riess,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Partido Republicano
+1190,Enrique Bassaletti Riess,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Republicano
+1190,Enrique Bassaletti Riess,party,all,0.00,0,0,0,,Independientes
+1190,Enrique Bassaletti Riess,party,minority_ge_05,0.05,0,0,0,,Independientes
+1190,Enrique Bassaletti Riess,party,minority_ge_10,0.10,0,0,0,,Independientes
+1190,Enrique Bassaletti Riess,party,minority_ge_20,0.20,0,0,0,,Independientes
+1191,Valentina Becerra Peña,caucus,all,0.00,348,348,0,100.0000,Comité Partido Republicano
+1191,Valentina Becerra Peña,caucus,minority_ge_05,0.05,263,263,0,100.0000,Comité Partido Republicano
+1191,Valentina Becerra Peña,caucus,minority_ge_10,0.10,252,252,0,100.0000,Comité Partido Republicano
+1191,Valentina Becerra Peña,caucus,minority_ge_20,0.20,233,233,0,100.0000,Comité Partido Republicano
+1191,Valentina Becerra Peña,party,all,0.00,348,348,0,100.0000,Partido Republicano
+1191,Valentina Becerra Peña,party,minority_ge_05,0.05,263,263,0,100.0000,Partido Republicano
+1191,Valentina Becerra Peña,party,minority_ge_10,0.10,252,252,0,100.0000,Partido Republicano
+1191,Valentina Becerra Peña,party,minority_ge_20,0.20,233,233,0,100.0000,Partido Republicano
+1192,Lilian Betancurt Delgado,caucus,all,0.00,213,192,21,90.1408,Comité Partido de la Gente
+1192,Lilian Betancurt Delgado,caucus,minority_ge_05,0.05,159,138,21,86.7925,Comité Partido de la Gente
+1192,Lilian Betancurt Delgado,caucus,minority_ge_10,0.10,150,129,21,86.0000,Comité Partido de la Gente
+1192,Lilian Betancurt Delgado,caucus,minority_ge_20,0.20,138,118,20,85.5072,Comité Partido de la Gente
+1192,Lilian Betancurt Delgado,party,all,0.00,207,191,16,92.2705,Partido de la Gente
+1192,Lilian Betancurt Delgado,party,minority_ge_05,0.05,153,137,16,89.5425,Partido de la Gente
+1192,Lilian Betancurt Delgado,party,minority_ge_10,0.10,144,128,16,88.8889,Partido de la Gente
+1192,Lilian Betancurt Delgado,party,minority_ge_20,0.20,132,117,15,88.6364,Partido de la Gente
+1193,Patricio Briones Moller,caucus,all,0.00,360,346,14,96.1111,Comité Partido de la Gente
+1193,Patricio Briones Moller,caucus,minority_ge_05,0.05,265,251,14,94.7170,Comité Partido de la Gente
+1193,Patricio Briones Moller,caucus,minority_ge_10,0.10,254,240,14,94.4882,Comité Partido de la Gente
+1193,Patricio Briones Moller,caucus,minority_ge_20,0.20,235,222,13,94.4681,Comité Partido de la Gente
+1193,Patricio Briones Moller,party,all,0.00,354,344,10,97.1751,Partido de la Gente
+1193,Patricio Briones Moller,party,minority_ge_05,0.05,259,249,10,96.1390,Partido de la Gente
+1193,Patricio Briones Moller,party,minority_ge_10,0.10,248,238,10,95.9677,Partido de la Gente
+1193,Patricio Briones Moller,party,minority_ge_20,0.20,229,220,9,96.0699,Partido de la Gente
+1194,Daniel Bustos Leal,caucus,all,0.00,364,364,0,100.0000,Comité Partido Republicano
+1194,Daniel Bustos Leal,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Partido Republicano
+1194,Daniel Bustos Leal,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Partido Republicano
+1194,Daniel Bustos Leal,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Republicano
+1194,Daniel Bustos Leal,party,all,0.00,364,364,0,100.0000,Partido Republicano
+1194,Daniel Bustos Leal,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Republicano
+1194,Daniel Bustos Leal,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Republicano
+1194,Daniel Bustos Leal,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Republicano
+1195,Carlos Carvajal Gallardo,caucus,all,0.00,351,339,12,96.5812,Partido Por la Democracia e Independientes
+1195,Carlos Carvajal Gallardo,caucus,minority_ge_05,0.05,259,248,11,95.7529,Partido Por la Democracia e Independientes
+1195,Carlos Carvajal Gallardo,caucus,minority_ge_10,0.10,248,237,11,95.5645,Partido Por la Democracia e Independientes
+1195,Carlos Carvajal Gallardo,caucus,minority_ge_20,0.20,230,219,11,95.2174,Partido Por la Democracia e Independientes
+1195,Carlos Carvajal Gallardo,party,all,0.00,0,0,0,,Independientes
+1195,Carlos Carvajal Gallardo,party,minority_ge_05,0.05,0,0,0,,Independientes
+1195,Carlos Carvajal Gallardo,party,minority_ge_10,0.10,0,0,0,,Independientes
+1195,Carlos Carvajal Gallardo,party,minority_ge_20,0.20,0,0,0,,Independientes
+1196,Priscilla Castillo Gerli,caucus,all,0.00,362,337,25,93.0939,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1196,Priscilla Castillo Gerli,caucus,minority_ge_05,0.05,267,243,24,91.0112,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1196,Priscilla Castillo Gerli,caucus,minority_ge_10,0.10,256,232,24,90.6250,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1196,Priscilla Castillo Gerli,caucus,minority_ge_20,0.20,237,213,24,89.8734,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1196,Priscilla Castillo Gerli,party,all,0.00,362,340,22,93.9227,Partido Demócrata Cristiano
+1196,Priscilla Castillo Gerli,party,minority_ge_05,0.05,267,246,21,92.1348,Partido Demócrata Cristiano
+1196,Priscilla Castillo Gerli,party,minority_ge_10,0.10,256,235,21,91.7969,Partido Demócrata Cristiano
+1196,Priscilla Castillo Gerli,party,minority_ge_20,0.20,237,216,21,91.1392,Partido Demócrata Cristiano
+1197,Carlos Chandía Alarcón,caucus,all,0.00,353,332,21,94.0510,"Renovación Nacional, Evopoli e Independientes"
+1197,Carlos Chandía Alarcón,caucus,minority_ge_05,0.05,259,239,20,92.2780,"Renovación Nacional, Evopoli e Independientes"
+1197,Carlos Chandía Alarcón,caucus,minority_ge_10,0.10,251,232,19,92.4303,"Renovación Nacional, Evopoli e Independientes"
+1197,Carlos Chandía Alarcón,caucus,minority_ge_20,0.20,235,218,17,92.7660,"Renovación Nacional, Evopoli e Independientes"
+1197,Carlos Chandía Alarcón,party,all,0.00,352,331,21,94.0341,Renovación Nacional
+1197,Carlos Chandía Alarcón,party,minority_ge_05,0.05,258,238,20,92.2481,Renovación Nacional
+1197,Carlos Chandía Alarcón,party,minority_ge_10,0.10,250,231,19,92.4000,Renovación Nacional
+1197,Carlos Chandía Alarcón,party,minority_ge_20,0.20,234,217,17,92.7350,Renovación Nacional
+1198,Paz Charpentier Rajcevich,caucus,all,0.00,360,360,0,100.0000,Comité Partido Republicano
+1198,Paz Charpentier Rajcevich,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Partido Republicano
+1198,Paz Charpentier Rajcevich,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Partido Republicano
+1198,Paz Charpentier Rajcevich,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Partido Republicano
+1198,Paz Charpentier Rajcevich,party,all,0.00,360,360,0,100.0000,Partido Republicano
+1198,Paz Charpentier Rajcevich,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Republicano
+1198,Paz Charpentier Rajcevich,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Republicano
+1198,Paz Charpentier Rajcevich,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Republicano
+1199,Jaime Coloma Álamos,caucus,all,0.00,364,354,10,97.2527,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,caucus,minority_ge_05,0.05,269,260,9,96.6543,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,caucus,minority_ge_10,0.10,258,251,7,97.2868,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,caucus,minority_ge_20,0.20,239,235,4,98.3264,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,party,all,0.00,362,353,9,97.5138,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,party,minority_ge_05,0.05,267,259,8,97.0037,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,party,minority_ge_10,0.10,257,250,7,97.2763,Unión Demócrata Independiente
+1199,Jaime Coloma Álamos,party,minority_ge_20,0.20,238,234,4,98.3193,Unión Demócrata Independiente
+1200,Cristian Contreras Radovic,caucus,all,0.00,20,20,0,100.0000,Comité Partido de la Gente;Fuera del Comité Partido de la Gente
+1200,Cristian Contreras Radovic,caucus,minority_ge_05,0.05,13,13,0,100.0000,Comité Partido de la Gente;Fuera del Comité Partido de la Gente
+1200,Cristian Contreras Radovic,caucus,minority_ge_10,0.10,10,10,0,100.0000,Comité Partido de la Gente;Fuera del Comité Partido de la Gente
+1200,Cristian Contreras Radovic,caucus,minority_ge_20,0.20,3,3,0,100.0000,Comité Partido de la Gente;Fuera del Comité Partido de la Gente
+1200,Cristian Contreras Radovic,party,all,0.00,344,256,88,74.4186,Partido de la Gente
+1200,Cristian Contreras Radovic,party,minority_ge_05,0.05,258,170,88,65.8915,Partido de la Gente
+1200,Cristian Contreras Radovic,party,minority_ge_10,0.10,247,161,86,65.1822,Partido de la Gente
+1200,Cristian Contreras Radovic,party,minority_ge_20,0.20,229,145,84,63.3188,Partido de la Gente
+1201,Flor Contreras Vivallo,caucus,all,0.00,358,338,20,94.4134,Comité Partido de la Gente
+1201,Flor Contreras Vivallo,caucus,minority_ge_05,0.05,266,246,20,92.4812,Comité Partido de la Gente
+1201,Flor Contreras Vivallo,caucus,minority_ge_10,0.10,255,235,20,92.1569,Comité Partido de la Gente
+1201,Flor Contreras Vivallo,caucus,minority_ge_20,0.20,236,216,20,91.5254,Comité Partido de la Gente
+1201,Flor Contreras Vivallo,party,all,0.00,352,335,17,95.1705,Partido de la Gente
+1201,Flor Contreras Vivallo,party,minority_ge_05,0.05,260,243,17,93.4615,Partido de la Gente
+1201,Flor Contreras Vivallo,party,minority_ge_10,0.10,249,232,17,93.1727,Partido de la Gente
+1201,Flor Contreras Vivallo,party,minority_ge_20,0.20,230,213,17,92.6087,Partido de la Gente
+1202,Eduardo Cretton Rebolledo,caucus,all,0.00,364,352,12,96.7033,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,caucus,minority_ge_05,0.05,269,260,9,96.6543,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,caucus,minority_ge_10,0.10,258,251,7,97.2868,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,caucus,minority_ge_20,0.20,239,235,4,98.3264,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,party,all,0.00,362,351,11,96.9613,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,party,minority_ge_05,0.05,267,259,8,97.0037,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,party,minority_ge_10,0.10,257,250,7,97.2763,Unión Demócrata Independiente
+1202,Eduardo Cretton Rebolledo,party,minority_ge_20,0.20,238,234,4,98.3193,Unión Demócrata Independiente
+1203,Sebastián Cristoffanini Jaraquemada,caucus,all,0.00,360,360,0,100.0000,Comité Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,caucus,minority_ge_05,0.05,266,266,0,100.0000,Comité Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,caucus,minority_ge_10,0.10,255,255,0,100.0000,Comité Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,caucus,minority_ge_20,0.20,236,236,0,100.0000,Comité Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,party,all,0.00,360,360,0,100.0000,Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,party,minority_ge_05,0.05,266,266,0,100.0000,Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,party,minority_ge_10,0.10,255,255,0,100.0000,Partido Republicano
+1203,Sebastián Cristoffanini Jaraquemada,party,minority_ge_20,0.20,236,236,0,100.0000,Partido Republicano
+1204,Francisco Crisóstomo Llanos,caucus,all,0.00,362,351,11,96.9613,"Socialista, Liberal, Radical e Independientes"
+1204,Francisco Crisóstomo Llanos,caucus,minority_ge_05,0.05,267,256,11,95.8801,"Socialista, Liberal, Radical e Independientes"
+1204,Francisco Crisóstomo Llanos,caucus,minority_ge_10,0.10,257,247,10,96.1089,"Socialista, Liberal, Radical e Independientes"
+1204,Francisco Crisóstomo Llanos,caucus,minority_ge_20,0.20,238,231,7,97.0588,"Socialista, Liberal, Radical e Independientes"
+1204,Francisco Crisóstomo Llanos,party,all,0.00,360,351,9,97.5000,Partido Socialista
+1204,Francisco Crisóstomo Llanos,party,minority_ge_05,0.05,265,256,9,96.6038,Partido Socialista
+1204,Francisco Crisóstomo Llanos,party,minority_ge_10,0.10,254,247,7,97.2441,Partido Socialista
+1204,Francisco Crisóstomo Llanos,party,minority_ge_20,0.20,236,231,5,97.8814,Partido Socialista
+1205,Carlos Cuadrado Prats,caucus,all,0.00,333,313,20,93.9940,Partido Por la Democracia e Independientes
+1205,Carlos Cuadrado Prats,caucus,minority_ge_05,0.05,247,230,17,93.1174,Partido Por la Democracia e Independientes
+1205,Carlos Cuadrado Prats,caucus,minority_ge_10,0.10,236,219,17,92.7966,Partido Por la Democracia e Independientes
+1205,Carlos Cuadrado Prats,caucus,minority_ge_20,0.20,218,202,16,92.6606,Partido Por la Democracia e Independientes
+1205,Carlos Cuadrado Prats,party,all,0.00,333,324,9,97.2973,Partido Por la Democracia
+1205,Carlos Cuadrado Prats,party,minority_ge_05,0.05,247,241,6,97.5709,Partido Por la Democracia
+1205,Carlos Cuadrado Prats,party,minority_ge_10,0.10,236,230,6,97.4576,Partido Por la Democracia
+1205,Carlos Cuadrado Prats,party,minority_ge_20,0.20,218,212,6,97.2477,Partido Por la Democracia
+1206,Carolina Cucumides Calderón,caucus,all,0.00,362,352,10,97.2376,"Socialista, Liberal, Radical e Independientes"
+1206,Carolina Cucumides Calderón,caucus,minority_ge_05,0.05,267,258,9,96.6292,"Socialista, Liberal, Radical e Independientes"
+1206,Carolina Cucumides Calderón,caucus,minority_ge_10,0.10,257,249,8,96.8872,"Socialista, Liberal, Radical e Independientes"
+1206,Carolina Cucumides Calderón,caucus,minority_ge_20,0.20,238,233,5,97.8992,"Socialista, Liberal, Radical e Independientes"
+1206,Carolina Cucumides Calderón,party,all,0.00,0,0,0,,Independientes
+1206,Carolina Cucumides Calderón,party,minority_ge_05,0.05,0,0,0,,Independientes
+1206,Carolina Cucumides Calderón,party,minority_ge_10,0.10,0,0,0,,Independientes
+1206,Carolina Cucumides Calderón,party,minority_ge_20,0.20,0,0,0,,Independientes
+1207,Valentina Cáceres Monsálvez,caucus,all,0.00,349,333,16,95.4155,Frente Amplio
+1207,Valentina Cáceres Monsálvez,caucus,minority_ge_05,0.05,257,244,13,94.9416,Frente Amplio
+1207,Valentina Cáceres Monsálvez,caucus,minority_ge_10,0.10,246,235,11,95.5285,Frente Amplio
+1207,Valentina Cáceres Monsálvez,caucus,minority_ge_20,0.20,229,222,7,96.9432,Frente Amplio
+1207,Valentina Cáceres Monsálvez,party,all,0.00,0,0,0,,Independientes
+1207,Valentina Cáceres Monsálvez,party,minority_ge_05,0.05,0,0,0,,Independientes
+1207,Valentina Cáceres Monsálvez,party,minority_ge_10,0.10,0,0,0,,Independientes
+1207,Valentina Cáceres Monsálvez,party,minority_ge_20,0.20,0,0,0,,Independientes
+1208,Jorge Díaz Ibarra,caucus,all,0.00,346,336,10,97.1098,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1208,Jorge Díaz Ibarra,caucus,minority_ge_05,0.05,255,247,8,96.8627,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1208,Jorge Díaz Ibarra,caucus,minority_ge_10,0.10,244,236,8,96.7213,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1208,Jorge Díaz Ibarra,caucus,minority_ge_20,0.20,225,217,8,96.4444,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1208,Jorge Díaz Ibarra,party,all,0.00,346,339,7,97.9769,Partido Demócrata Cristiano
+1208,Jorge Díaz Ibarra,party,minority_ge_05,0.05,255,250,5,98.0392,Partido Demócrata Cristiano
+1208,Jorge Díaz Ibarra,party,minority_ge_10,0.10,244,239,5,97.9508,Partido Demócrata Cristiano
+1208,Jorge Díaz Ibarra,party,minority_ge_20,0.20,225,220,5,97.7778,Partido Demócrata Cristiano
+1209,Matías Fernández Hartwig,caucus,all,0.00,364,359,5,98.6264,Frente Amplio
+1209,Matías Fernández Hartwig,caucus,minority_ge_05,0.05,269,265,4,98.5130,Frente Amplio
+1209,Matías Fernández Hartwig,caucus,minority_ge_10,0.10,258,255,3,98.8372,Frente Amplio
+1209,Matías Fernández Hartwig,caucus,minority_ge_20,0.20,239,238,1,99.5816,Frente Amplio
+1209,Matías Fernández Hartwig,party,all,0.00,364,359,5,98.6264,Frente Amplio
+1209,Matías Fernández Hartwig,party,minority_ge_05,0.05,269,265,4,98.5130,Frente Amplio
+1209,Matías Fernández Hartwig,party,minority_ge_10,0.10,258,255,3,98.8372,Frente Amplio
+1209,Matías Fernández Hartwig,party,minority_ge_20,0.20,239,238,1,99.5816,Frente Amplio
+1210,Gustavo Gatica Villarroel,caucus,all,0.00,354,352,2,99.4350,Comité Comunista e Independientes
+1210,Gustavo Gatica Villarroel,caucus,minority_ge_05,0.05,266,265,1,99.6241,Comité Comunista e Independientes
+1210,Gustavo Gatica Villarroel,caucus,minority_ge_10,0.10,255,255,0,100.0000,Comité Comunista e Independientes
+1210,Gustavo Gatica Villarroel,caucus,minority_ge_20,0.20,236,236,0,100.0000,Comité Comunista e Independientes
+1210,Gustavo Gatica Villarroel,party,all,0.00,0,0,0,,Independientes
+1210,Gustavo Gatica Villarroel,party,minority_ge_05,0.05,0,0,0,,Independientes
+1210,Gustavo Gatica Villarroel,party,minority_ge_10,0.10,0,0,0,,Independientes
+1210,Gustavo Gatica Villarroel,party,minority_ge_20,0.20,0,0,0,,Independientes
+1211,Sofía González Cortés,caucus,all,0.00,355,353,2,99.4366,Comité Comunista e Independientes
+1211,Sofía González Cortés,caucus,minority_ge_05,0.05,267,266,1,99.6255,Comité Comunista e Independientes
+1211,Sofía González Cortés,caucus,minority_ge_10,0.10,256,255,1,99.6094,Comité Comunista e Independientes
+1211,Sofía González Cortés,caucus,minority_ge_20,0.20,237,236,1,99.5781,Comité Comunista e Independientes
+1211,Sofía González Cortés,party,all,0.00,354,353,1,99.7175,Partido Comunista
+1211,Sofía González Cortés,party,minority_ge_05,0.05,267,266,1,99.6255,Partido Comunista
+1211,Sofía González Cortés,party,minority_ge_10,0.10,256,255,1,99.6094,Partido Comunista
+1211,Sofía González Cortés,party,minority_ge_20,0.20,237,236,1,99.5781,Partido Comunista
+1212,Erich Grohs Marín,caucus,all,0.00,336,334,2,99.4048,Comité Partido Nacional Libertarios
+1212,Erich Grohs Marín,caucus,minority_ge_05,0.05,262,260,2,99.2366,Comité Partido Nacional Libertarios
+1212,Erich Grohs Marín,caucus,minority_ge_10,0.10,251,249,2,99.2032,Comité Partido Nacional Libertarios
+1212,Erich Grohs Marín,caucus,minority_ge_20,0.20,232,230,2,99.1379,Comité Partido Nacional Libertarios
+1212,Erich Grohs Marín,party,all,0.00,336,334,2,99.4048,Partido Nacional Libertario
+1212,Erich Grohs Marín,party,minority_ge_05,0.05,262,260,2,99.2366,Partido Nacional Libertario
+1212,Erich Grohs Marín,party,minority_ge_10,0.10,251,249,2,99.2032,Partido Nacional Libertario
+1212,Erich Grohs Marín,party,minority_ge_20,0.20,232,230,2,99.1379,Partido Nacional Libertario
+1213,Irací Hassler Jacob,caucus,all,0.00,364,364,0,100.0000,Comité Comunista e Independientes
+1213,Irací Hassler Jacob,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Comunista e Independientes
+1213,Irací Hassler Jacob,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Comunista e Independientes
+1213,Irací Hassler Jacob,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Comunista e Independientes
+1213,Irací Hassler Jacob,party,all,0.00,363,363,0,100.0000,Partido Comunista
+1213,Irací Hassler Jacob,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Comunista
+1213,Irací Hassler Jacob,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Comunista
+1213,Irací Hassler Jacob,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Comunista
+1214,Constanza Hube Portus,caucus,all,0.00,364,343,21,94.2308,Unión Demócrata Independiente
+1214,Constanza Hube Portus,caucus,minority_ge_05,0.05,269,254,15,94.4238,Unión Demócrata Independiente
+1214,Constanza Hube Portus,caucus,minority_ge_10,0.10,258,245,13,94.9612,Unión Demócrata Independiente
+1214,Constanza Hube Portus,caucus,minority_ge_20,0.20,239,229,10,95.8159,Unión Demócrata Independiente
+1214,Constanza Hube Portus,party,all,0.00,362,343,19,94.7514,Unión Demócrata Independiente
+1214,Constanza Hube Portus,party,minority_ge_05,0.05,267,254,13,95.1311,Unión Demócrata Independiente
+1214,Constanza Hube Portus,party,minority_ge_10,0.10,257,245,12,95.3307,Unión Demócrata Independiente
+1214,Constanza Hube Portus,party,minority_ge_20,0.20,238,229,9,96.2185,Unión Demócrata Independiente
+1215,Álvaro Jofré Cáceres,caucus,all,0.00,364,362,2,99.4505,Comité Partido Nacional Libertarios
+1215,Álvaro Jofré Cáceres,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Partido Nacional Libertarios
+1215,Álvaro Jofré Cáceres,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Partido Nacional Libertarios
+1215,Álvaro Jofré Cáceres,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Nacional Libertarios
+1215,Álvaro Jofré Cáceres,party,all,0.00,364,362,2,99.4505,Partido Nacional Libertario
+1215,Álvaro Jofré Cáceres,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Nacional Libertario
+1215,Álvaro Jofré Cáceres,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Nacional Libertario
+1215,Álvaro Jofré Cáceres,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Nacional Libertario
+1216,Stephanie Jéldrez Ortiz,caucus,all,0.00,356,356,0,100.0000,Comité Partido Republicano
+1216,Stephanie Jéldrez Ortiz,caucus,minority_ge_05,0.05,267,267,0,100.0000,Comité Partido Republicano
+1216,Stephanie Jéldrez Ortiz,caucus,minority_ge_10,0.10,256,256,0,100.0000,Comité Partido Republicano
+1216,Stephanie Jéldrez Ortiz,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Partido Republicano
+1216,Stephanie Jéldrez Ortiz,party,all,0.00,356,356,0,100.0000,Partido Republicano
+1216,Stephanie Jéldrez Ortiz,party,minority_ge_05,0.05,267,267,0,100.0000,Partido Republicano
+1216,Stephanie Jéldrez Ortiz,party,minority_ge_10,0.10,256,256,0,100.0000,Partido Republicano
+1216,Stephanie Jéldrez Ortiz,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Republicano
+1217,Pier Karlezi Hazleby,caucus,all,0.00,346,341,5,98.5549,Comité Partido Nacional Libertarios
+1217,Pier Karlezi Hazleby,caucus,minority_ge_05,0.05,254,252,2,99.2126,Comité Partido Nacional Libertarios
+1217,Pier Karlezi Hazleby,caucus,minority_ge_10,0.10,243,241,2,99.1770,Comité Partido Nacional Libertarios
+1217,Pier Karlezi Hazleby,caucus,minority_ge_20,0.20,227,225,2,99.1189,Comité Partido Nacional Libertarios
+1217,Pier Karlezi Hazleby,party,all,0.00,346,341,5,98.5549,Partido Nacional Libertario
+1217,Pier Karlezi Hazleby,party,minority_ge_05,0.05,254,252,2,99.2126,Partido Nacional Libertario
+1217,Pier Karlezi Hazleby,party,minority_ge_10,0.10,243,241,2,99.1770,Partido Nacional Libertario
+1217,Pier Karlezi Hazleby,party,minority_ge_20,0.20,227,225,2,99.1189,Partido Nacional Libertario
+1218,José Antonio Kast Adriasola,caucus,all,0.00,363,363,0,100.0000,Comité Partido Republicano
+1218,José Antonio Kast Adriasola,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Partido Republicano
+1218,José Antonio Kast Adriasola,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Partido Republicano
+1218,José Antonio Kast Adriasola,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Partido Republicano
+1218,José Antonio Kast Adriasola,party,all,0.00,363,363,0,100.0000,Partido Republicano
+1218,José Antonio Kast Adriasola,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Republicano
+1218,José Antonio Kast Adriasola,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Republicano
+1218,José Antonio Kast Adriasola,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Republicano
+1219,Tomás Kast Sommerhoff,caucus,all,0.00,334,325,9,97.3054,"Renovación Nacional, Evopoli e Independientes"
+1219,Tomás Kast Sommerhoff,caucus,minority_ge_05,0.05,254,245,9,96.4567,"Renovación Nacional, Evopoli e Independientes"
+1219,Tomás Kast Sommerhoff,caucus,minority_ge_10,0.10,244,236,8,96.7213,"Renovación Nacional, Evopoli e Independientes"
+1219,Tomás Kast Sommerhoff,caucus,minority_ge_20,0.20,226,220,6,97.3451,"Renovación Nacional, Evopoli e Independientes"
+1219,Tomás Kast Sommerhoff,party,all,0.00,319,319,0,100.0000,Evolución Política
+1219,Tomás Kast Sommerhoff,party,minority_ge_05,0.05,240,240,0,100.0000,Evolución Política
+1219,Tomás Kast Sommerhoff,party,minority_ge_10,0.10,230,230,0,100.0000,Evolución Política
+1219,Tomás Kast Sommerhoff,party,minority_ge_20,0.20,214,214,0,100.0000,Evolución Política
+1220,Leandro Kunstmann Collado,caucus,all,0.00,363,362,1,99.7245,Comité Partido Republicano
+1220,Leandro Kunstmann Collado,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Partido Republicano
+1220,Leandro Kunstmann Collado,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Partido Republicano
+1220,Leandro Kunstmann Collado,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Partido Republicano
+1220,Leandro Kunstmann Collado,party,all,0.00,363,362,1,99.7245,Partido Republicano
+1220,Leandro Kunstmann Collado,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Republicano
+1220,Leandro Kunstmann Collado,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Republicano
+1220,Leandro Kunstmann Collado,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Republicano
+1221,Benjamín Lorca Inzunza,caucus,all,0.00,361,361,0,100.0000,Comité Partido Republicano
+1221,Benjamín Lorca Inzunza,caucus,minority_ge_05,0.05,266,266,0,100.0000,Comité Partido Republicano
+1221,Benjamín Lorca Inzunza,caucus,minority_ge_10,0.10,256,256,0,100.0000,Comité Partido Republicano
+1221,Benjamín Lorca Inzunza,caucus,minority_ge_20,0.20,237,237,0,100.0000,Comité Partido Republicano
+1221,Benjamín Lorca Inzunza,party,all,0.00,361,361,0,100.0000,Partido Republicano
+1221,Benjamín Lorca Inzunza,party,minority_ge_05,0.05,266,266,0,100.0000,Partido Republicano
+1221,Benjamín Lorca Inzunza,party,minority_ge_10,0.10,256,256,0,100.0000,Partido Republicano
+1221,Benjamín Lorca Inzunza,party,minority_ge_20,0.20,237,237,0,100.0000,Partido Republicano
+1222,Andrea Macías Palma,caucus,all,0.00,348,326,22,93.6782,"Socialista, Liberal, Radical e Independientes"
+1222,Andrea Macías Palma,caucus,minority_ge_05,0.05,263,244,19,92.7757,"Socialista, Liberal, Radical e Independientes"
+1222,Andrea Macías Palma,caucus,minority_ge_10,0.10,254,237,17,93.3071,"Socialista, Liberal, Radical e Independientes"
+1222,Andrea Macías Palma,caucus,minority_ge_20,0.20,235,227,8,96.5957,"Socialista, Liberal, Radical e Independientes"
+1222,Andrea Macías Palma,party,all,0.00,347,328,19,94.5245,Partido Socialista
+1222,Andrea Macías Palma,party,minority_ge_05,0.05,262,246,16,93.8931,Partido Socialista
+1222,Andrea Macías Palma,party,minority_ge_10,0.10,252,238,14,94.4444,Partido Socialista
+1222,Andrea Macías Palma,party,minority_ge_20,0.20,234,228,6,97.4359,Partido Socialista
+1223,Hans Marowski Cuevas,caucus,all,0.00,337,334,3,99.1098,Comité Partido Nacional Libertarios
+1223,Hans Marowski Cuevas,caucus,minority_ge_05,0.05,252,251,1,99.6032,Comité Partido Nacional Libertarios
+1223,Hans Marowski Cuevas,caucus,minority_ge_10,0.10,241,240,1,99.5851,Comité Partido Nacional Libertarios
+1223,Hans Marowski Cuevas,caucus,minority_ge_20,0.20,222,221,1,99.5495,Comité Partido Nacional Libertarios
+1223,Hans Marowski Cuevas,party,all,0.00,337,334,3,99.1098,Partido Nacional Libertario
+1223,Hans Marowski Cuevas,party,minority_ge_05,0.05,252,251,1,99.6032,Partido Nacional Libertario
+1223,Hans Marowski Cuevas,party,minority_ge_10,0.10,241,240,1,99.5851,Partido Nacional Libertario
+1223,Hans Marowski Cuevas,party,minority_ge_20,0.20,222,221,1,99.5495,Partido Nacional Libertario
+1224,Cristian Mella Andaur,caucus,all,0.00,358,347,11,96.9274,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1224,Cristian Mella Andaur,caucus,minority_ge_05,0.05,264,253,11,95.8333,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1224,Cristian Mella Andaur,caucus,minority_ge_10,0.10,253,242,11,95.6522,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1224,Cristian Mella Andaur,caucus,minority_ge_20,0.20,236,225,11,95.3390,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1224,Cristian Mella Andaur,party,all,0.00,358,347,11,96.9274,Partido Demócrata Cristiano
+1224,Cristian Mella Andaur,party,minority_ge_05,0.05,264,253,11,95.8333,Partido Demócrata Cristiano
+1224,Cristian Mella Andaur,party,minority_ge_10,0.10,253,242,11,95.6522,Partido Demócrata Cristiano
+1224,Cristian Mella Andaur,party,minority_ge_20,0.20,236,225,11,95.3390,Partido Demócrata Cristiano
+1225,Cristian Menchaca Pinochet,caucus,all,0.00,349,348,1,99.7135,Comité Partido Republicano
+1225,Cristian Menchaca Pinochet,caucus,minority_ge_05,0.05,259,259,0,100.0000,Comité Partido Republicano
+1225,Cristian Menchaca Pinochet,caucus,minority_ge_10,0.10,248,248,0,100.0000,Comité Partido Republicano
+1225,Cristian Menchaca Pinochet,caucus,minority_ge_20,0.20,231,231,0,100.0000,Comité Partido Republicano
+1225,Cristian Menchaca Pinochet,party,all,0.00,0,0,0,,Independientes
+1225,Cristian Menchaca Pinochet,party,minority_ge_05,0.05,0,0,0,,Independientes
+1225,Cristian Menchaca Pinochet,party,minority_ge_10,0.10,0,0,0,,Independientes
+1225,Cristian Menchaca Pinochet,party,minority_ge_20,0.20,0,0,0,,Independientes
+1226,José Montalva Feuerhake,caucus,all,0.00,358,330,28,92.1788,Partido Por la Democracia e Independientes
+1226,José Montalva Feuerhake,caucus,minority_ge_05,0.05,265,239,26,90.1887,Partido Por la Democracia e Independientes
+1226,José Montalva Feuerhake,caucus,minority_ge_10,0.10,254,229,25,90.1575,Partido Por la Democracia e Independientes
+1226,José Montalva Feuerhake,caucus,minority_ge_20,0.20,236,213,23,90.2542,Partido Por la Democracia e Independientes
+1226,José Montalva Feuerhake,party,all,0.00,0,0,0,,Independientes
+1226,José Montalva Feuerhake,party,minority_ge_05,0.05,0,0,0,,Independientes
+1226,José Montalva Feuerhake,party,minority_ge_10,0.10,0,0,0,,Independientes
+1226,José Montalva Feuerhake,party,minority_ge_20,0.20,0,0,0,,Independientes
+1227,Claudia Mora Vega,caucus,all,0.00,359,352,7,98.0501,"Renovación Nacional, Evopoli e Independientes"
+1227,Claudia Mora Vega,caucus,minority_ge_05,0.05,266,259,7,97.3684,"Renovación Nacional, Evopoli e Independientes"
+1227,Claudia Mora Vega,caucus,minority_ge_10,0.10,256,249,7,97.2656,"Renovación Nacional, Evopoli e Independientes"
+1227,Claudia Mora Vega,caucus,minority_ge_20,0.20,238,232,6,97.4790,"Renovación Nacional, Evopoli e Independientes"
+1227,Claudia Mora Vega,party,all,0.00,358,352,6,98.3240,Renovación Nacional
+1227,Claudia Mora Vega,party,minority_ge_05,0.05,265,259,6,97.7358,Renovación Nacional
+1227,Claudia Mora Vega,party,minority_ge_10,0.10,255,249,6,97.6471,Renovación Nacional
+1227,Claudia Mora Vega,party,minority_ge_20,0.20,237,232,5,97.8903,Renovación Nacional
+1228,Paulina Muñoz Minte,caucus,all,0.00,364,363,1,99.7253,Comité Partido Nacional Libertarios
+1228,Paulina Muñoz Minte,caucus,minority_ge_05,0.05,269,268,1,99.6283,Comité Partido Nacional Libertarios
+1228,Paulina Muñoz Minte,caucus,minority_ge_10,0.10,258,257,1,99.6124,Comité Partido Nacional Libertarios
+1228,Paulina Muñoz Minte,caucus,minority_ge_20,0.20,239,238,1,99.5816,Comité Partido Nacional Libertarios
+1228,Paulina Muñoz Minte,party,all,0.00,364,363,1,99.7253,Partido Nacional Libertario
+1228,Paulina Muñoz Minte,party,minority_ge_05,0.05,269,268,1,99.6283,Partido Nacional Libertario
+1228,Paulina Muñoz Minte,party,minority_ge_10,0.10,258,257,1,99.6124,Partido Nacional Libertario
+1228,Paulina Muñoz Minte,party,minority_ge_20,0.20,239,238,1,99.5816,Partido Nacional Libertario
+1229,Javier Muñoz Riquelme,caucus,all,0.00,349,337,12,96.5616,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1229,Javier Muñoz Riquelme,caucus,minority_ge_05,0.05,255,243,12,95.2941,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1229,Javier Muñoz Riquelme,caucus,minority_ge_10,0.10,244,232,12,95.0820,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1229,Javier Muñoz Riquelme,caucus,minority_ge_20,0.20,225,213,12,94.6667,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1229,Javier Muñoz Riquelme,party,all,0.00,349,338,11,96.8481,Partido Demócrata Cristiano
+1229,Javier Muñoz Riquelme,party,minority_ge_05,0.05,255,244,11,95.6863,Partido Demócrata Cristiano
+1229,Javier Muñoz Riquelme,party,minority_ge_10,0.10,244,233,11,95.4918,Partido Demócrata Cristiano
+1229,Javier Muñoz Riquelme,party,minority_ge_20,0.20,225,214,11,95.1111,Partido Demócrata Cristiano
+1230,Alex Nahuelquin Nahuelquin,caucus,all,0.00,357,334,23,93.5574,Comité Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,caucus,minority_ge_05,0.05,265,242,23,91.3208,Comité Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,caucus,minority_ge_10,0.10,254,231,23,90.9449,Comité Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,caucus,minority_ge_20,0.20,235,212,23,90.2128,Comité Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,party,all,0.00,351,331,20,94.3020,Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,party,minority_ge_05,0.05,259,239,20,92.2780,Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,party,minority_ge_10,0.10,248,228,20,91.9355,Partido de la Gente
+1230,Alex Nahuelquin Nahuelquin,party,minority_ge_20,0.20,229,209,20,91.2664,Partido de la Gente
+1231,Ximena Naranjo Pinto,caucus,all,0.00,364,346,18,95.0549,Unión Demócrata Independiente
+1231,Ximena Naranjo Pinto,caucus,minority_ge_05,0.05,269,251,18,93.3086,Unión Demócrata Independiente
+1231,Ximena Naranjo Pinto,caucus,minority_ge_10,0.10,258,240,18,93.0233,Unión Demócrata Independiente
+1231,Ximena Naranjo Pinto,caucus,minority_ge_20,0.20,239,222,17,92.8870,Unión Demócrata Independiente
+1231,Ximena Naranjo Pinto,party,all,0.00,0,0,0,,Independientes
+1231,Ximena Naranjo Pinto,party,minority_ge_05,0.05,0,0,0,,Independientes
+1231,Ximena Naranjo Pinto,party,minority_ge_10,0.10,0,0,0,,Independientes
+1231,Ximena Naranjo Pinto,party,minority_ge_20,0.20,0,0,0,,Independientes
+1232,Cristian Neira Martínez,caucus,all,0.00,360,357,3,99.1667,Comité Partido Republicano
+1232,Cristian Neira Martínez,caucus,minority_ge_05,0.05,267,264,3,98.8764,Comité Partido Republicano
+1232,Cristian Neira Martínez,caucus,minority_ge_10,0.10,256,253,3,98.8281,Comité Partido Republicano
+1232,Cristian Neira Martínez,caucus,minority_ge_20,0.20,237,234,3,98.7342,Comité Partido Republicano
+1232,Cristian Neira Martínez,party,all,0.00,360,357,3,99.1667,Partido Republicano
+1232,Cristian Neira Martínez,party,minority_ge_05,0.05,267,264,3,98.8764,Partido Republicano
+1232,Cristian Neira Martínez,party,minority_ge_10,0.10,256,253,3,98.8281,Partido Republicano
+1232,Cristian Neira Martínez,party,minority_ge_20,0.20,237,234,3,98.7342,Partido Republicano
+1233,Ricardo Neumann Bertín,caucus,all,0.00,357,347,10,97.1989,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,caucus,minority_ge_05,0.05,268,259,9,96.6418,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,caucus,minority_ge_10,0.10,257,250,7,97.2763,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,caucus,minority_ge_20,0.20,238,234,4,98.3193,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,party,all,0.00,355,346,9,97.4648,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,party,minority_ge_05,0.05,266,258,8,96.9925,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,party,minority_ge_10,0.10,256,249,7,97.2656,Unión Demócrata Independiente
+1233,Ricardo Neumann Bertín,party,minority_ge_20,0.20,237,233,4,98.3122,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,caucus,all,0.00,293,286,7,97.6109,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,caucus,minority_ge_05,0.05,223,216,7,96.8610,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,caucus,minority_ge_10,0.10,215,208,7,96.7442,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,caucus,minority_ge_20,0.20,204,197,7,96.5686,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,party,all,0.00,292,286,6,97.9452,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,party,minority_ge_05,0.05,222,216,6,97.2973,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,party,minority_ge_10,0.10,214,208,6,97.1963,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,party,minority_ge_20,0.20,203,197,6,97.0443,Unión Demócrata Independiente
+1235,Javier Olivares Avendaño,caucus,all,0.00,361,301,60,83.3795,Comité Partido de la Gente
+1235,Javier Olivares Avendaño,caucus,minority_ge_05,0.05,266,207,59,77.8195,Comité Partido de la Gente
+1235,Javier Olivares Avendaño,caucus,minority_ge_10,0.10,255,196,59,76.8627,Comité Partido de la Gente
+1235,Javier Olivares Avendaño,caucus,minority_ge_20,0.20,236,178,58,75.4237,Comité Partido de la Gente
+1235,Javier Olivares Avendaño,party,all,0.00,355,300,55,84.5070,Partido de la Gente
+1235,Javier Olivares Avendaño,party,minority_ge_05,0.05,260,206,54,79.2308,Partido de la Gente
+1235,Javier Olivares Avendaño,party,minority_ge_10,0.10,249,195,54,78.3133,Partido de la Gente
+1235,Javier Olivares Avendaño,party,minority_ge_20,0.20,230,177,53,76.9565,Partido de la Gente
+1236,Paula Olmos Contreras,caucus,all,0.00,288,272,16,94.4444,Comité Partido de la Gente
+1236,Paula Olmos Contreras,caucus,minority_ge_05,0.05,215,199,16,92.5581,Comité Partido de la Gente
+1236,Paula Olmos Contreras,caucus,minority_ge_10,0.10,207,192,15,92.7536,Comité Partido de la Gente
+1236,Paula Olmos Contreras,caucus,minority_ge_20,0.20,192,177,15,92.1875,Comité Partido de la Gente
+1236,Paula Olmos Contreras,party,all,0.00,282,267,15,94.6809,Partido de la Gente
+1236,Paula Olmos Contreras,party,minority_ge_05,0.05,209,194,15,92.8230,Partido de la Gente
+1236,Paula Olmos Contreras,party,minority_ge_10,0.10,201,187,14,93.0348,Partido de la Gente
+1236,Paula Olmos Contreras,party,minority_ge_20,0.20,186,172,14,92.4731,Partido de la Gente
+1237,Francisco Orrego Gutiérrez,caucus,all,0.00,360,341,19,94.7222,"Renovación Nacional, Evopoli e Independientes"
+1237,Francisco Orrego Gutiérrez,caucus,minority_ge_05,0.05,266,249,17,93.6090,"Renovación Nacional, Evopoli e Independientes"
+1237,Francisco Orrego Gutiérrez,caucus,minority_ge_10,0.10,256,240,16,93.7500,"Renovación Nacional, Evopoli e Independientes"
+1237,Francisco Orrego Gutiérrez,caucus,minority_ge_20,0.20,238,223,15,93.6975,"Renovación Nacional, Evopoli e Independientes"
+1237,Francisco Orrego Gutiérrez,party,all,0.00,359,341,18,94.9861,Renovación Nacional
+1237,Francisco Orrego Gutiérrez,party,minority_ge_05,0.05,265,249,16,93.9623,Renovación Nacional
+1237,Francisco Orrego Gutiérrez,party,minority_ge_10,0.10,255,240,15,94.1176,Renovación Nacional
+1237,Francisco Orrego Gutiérrez,party,minority_ge_20,0.20,237,223,14,94.0928,Renovación Nacional
+1238,Álvaro Ortiz Vera,caucus,all,0.00,362,352,10,97.2376,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1238,Álvaro Ortiz Vera,caucus,minority_ge_05,0.05,267,260,7,97.3783,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1238,Álvaro Ortiz Vera,caucus,minority_ge_10,0.10,256,249,7,97.2656,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1238,Álvaro Ortiz Vera,caucus,minority_ge_20,0.20,237,230,7,97.0464,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1238,Álvaro Ortiz Vera,party,all,0.00,362,352,10,97.2376,Partido Demócrata Cristiano
+1238,Álvaro Ortiz Vera,party,minority_ge_05,0.05,267,260,7,97.3783,Partido Demócrata Cristiano
+1238,Álvaro Ortiz Vera,party,minority_ge_10,0.10,256,249,7,97.2656,Partido Demócrata Cristiano
+1238,Álvaro Ortiz Vera,party,minority_ge_20,0.20,237,230,7,97.0464,Partido Demócrata Cristiano
+1239,Fabián Ossandón Briceño,caucus,all,0.00,343,295,48,86.0058,Comité Partido de la Gente
+1239,Fabián Ossandón Briceño,caucus,minority_ge_05,0.05,256,209,47,81.6406,Comité Partido de la Gente
+1239,Fabián Ossandón Briceño,caucus,minority_ge_10,0.10,245,199,46,81.2245,Comité Partido de la Gente
+1239,Fabián Ossandón Briceño,caucus,minority_ge_20,0.20,227,181,46,79.7357,Comité Partido de la Gente
+1239,Fabián Ossandón Briceño,party,all,0.00,337,289,48,85.7567,Partido de la Gente
+1239,Fabián Ossandón Briceño,party,minority_ge_05,0.05,250,203,47,81.2000,Partido de la Gente
+1239,Fabián Ossandón Briceño,party,minority_ge_10,0.10,239,193,46,80.7531,Partido de la Gente
+1239,Fabián Ossandón Briceño,party,minority_ge_20,0.20,221,175,46,79.1855,Partido de la Gente
+1240,Zandra Parisi Fernández,caucus,all,0.00,291,267,24,91.7526,Comité Partido de la Gente
+1240,Zandra Parisi Fernández,caucus,minority_ge_05,0.05,218,194,24,88.9908,Comité Partido de la Gente
+1240,Zandra Parisi Fernández,caucus,minority_ge_10,0.10,207,183,24,88.4058,Comité Partido de la Gente
+1240,Zandra Parisi Fernández,caucus,minority_ge_20,0.20,191,168,23,87.9581,Comité Partido de la Gente
+1240,Zandra Parisi Fernández,party,all,0.00,285,265,20,92.9825,Partido de la Gente
+1240,Zandra Parisi Fernández,party,minority_ge_05,0.05,212,192,20,90.5660,Partido de la Gente
+1240,Zandra Parisi Fernández,party,minority_ge_10,0.10,201,181,20,90.0498,Partido de la Gente
+1240,Zandra Parisi Fernández,party,minority_ge_20,0.20,185,166,19,89.7297,Partido de la Gente
+1241,Patricio Pinilla Valencia,caucus,all,0.00,357,331,26,92.7171,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1241,Patricio Pinilla Valencia,caucus,minority_ge_05,0.05,265,242,23,91.3208,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1241,Patricio Pinilla Valencia,caucus,minority_ge_10,0.10,254,231,23,90.9449,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1241,Patricio Pinilla Valencia,caucus,minority_ge_20,0.20,235,212,23,90.2128,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1241,Patricio Pinilla Valencia,party,all,0.00,357,329,28,92.1569,Partido Demócrata Cristiano
+1241,Patricio Pinilla Valencia,party,minority_ge_05,0.05,265,240,25,90.5660,Partido Demócrata Cristiano
+1241,Patricio Pinilla Valencia,party,minority_ge_10,0.10,254,229,25,90.1575,Partido Demócrata Cristiano
+1241,Patricio Pinilla Valencia,party,minority_ge_20,0.20,235,210,25,89.3617,Partido Demócrata Cristiano
+1242,Rodrigo Ramírez Parra,caucus,all,0.00,352,348,4,98.8636,"Renovación Nacional, Evopoli e Independientes"
+1242,Rodrigo Ramírez Parra,caucus,minority_ge_05,0.05,262,258,4,98.4733,"Renovación Nacional, Evopoli e Independientes"
+1242,Rodrigo Ramírez Parra,caucus,minority_ge_10,0.10,253,249,4,98.4190,"Renovación Nacional, Evopoli e Independientes"
+1242,Rodrigo Ramírez Parra,caucus,minority_ge_20,0.20,235,232,3,98.7234,"Renovación Nacional, Evopoli e Independientes"
+1242,Rodrigo Ramírez Parra,party,all,0.00,0,0,0,,Independientes
+1242,Rodrigo Ramírez Parra,party,minority_ge_05,0.05,0,0,0,,Independientes
+1242,Rodrigo Ramírez Parra,party,minority_ge_10,0.10,0,0,0,,Independientes
+1242,Rodrigo Ramírez Parra,party,minority_ge_20,0.20,0,0,0,,Independientes
+1243,Tamara Ramírez Ramírez,caucus,all,0.00,352,308,44,87.5000,Comité Partido de la Gente
+1243,Tamara Ramírez Ramírez,caucus,minority_ge_05,0.05,263,220,43,83.6502,Comité Partido de la Gente
+1243,Tamara Ramírez Ramírez,caucus,minority_ge_10,0.10,252,210,42,83.3333,Comité Partido de la Gente
+1243,Tamara Ramírez Ramírez,caucus,minority_ge_20,0.20,233,192,41,82.4034,Comité Partido de la Gente
+1243,Tamara Ramírez Ramírez,party,all,0.00,346,302,44,87.2832,Partido de la Gente
+1243,Tamara Ramírez Ramírez,party,minority_ge_05,0.05,257,214,43,83.2685,Partido de la Gente
+1243,Tamara Ramírez Ramírez,party,minority_ge_10,0.10,246,204,42,82.9268,Partido de la Gente
+1243,Tamara Ramírez Ramírez,party,minority_ge_20,0.20,227,186,41,81.9383,Partido de la Gente
+1244,Claudia Reyes Larenas,caucus,all,0.00,346,344,2,99.4220,Comité Partido Republicano
+1244,Claudia Reyes Larenas,caucus,minority_ge_05,0.05,259,257,2,99.2278,Comité Partido Republicano
+1244,Claudia Reyes Larenas,caucus,minority_ge_10,0.10,248,246,2,99.1935,Comité Partido Republicano
+1244,Claudia Reyes Larenas,caucus,minority_ge_20,0.20,230,228,2,99.1304,Comité Partido Republicano
+1244,Claudia Reyes Larenas,party,all,0.00,346,344,2,99.4220,Partido Republicano
+1244,Claudia Reyes Larenas,party,minority_ge_05,0.05,259,257,2,99.2278,Partido Republicano
+1244,Claudia Reyes Larenas,party,minority_ge_10,0.10,248,246,2,99.1935,Partido Republicano
+1244,Claudia Reyes Larenas,party,minority_ge_20,0.20,230,228,2,99.1304,Partido Republicano
+1245,Alejandro Riquelme Ducci,caucus,all,0.00,354,353,1,99.7175,Comité Partido Republicano
+1245,Alejandro Riquelme Ducci,caucus,minority_ge_05,0.05,260,260,0,100.0000,Comité Partido Republicano
+1245,Alejandro Riquelme Ducci,caucus,minority_ge_10,0.10,249,249,0,100.0000,Comité Partido Republicano
+1245,Alejandro Riquelme Ducci,caucus,minority_ge_20,0.20,232,232,0,100.0000,Comité Partido Republicano
+1245,Alejandro Riquelme Ducci,party,all,0.00,354,353,1,99.7175,Partido Republicano
+1245,Alejandro Riquelme Ducci,party,minority_ge_05,0.05,260,260,0,100.0000,Partido Republicano
+1245,Alejandro Riquelme Ducci,party,minority_ge_10,0.10,249,249,0,100.0000,Partido Republicano
+1245,Alejandro Riquelme Ducci,party,minority_ge_20,0.20,232,232,0,100.0000,Partido Republicano
+1246,José Antonio Rivas Villalobos,caucus,all,0.00,340,326,14,95.8824,"Socialista, Liberal, Radical e Independientes"
+1246,José Antonio Rivas Villalobos,caucus,minority_ge_05,0.05,253,241,12,95.2569,"Socialista, Liberal, Radical e Independientes"
+1246,José Antonio Rivas Villalobos,caucus,minority_ge_10,0.10,246,234,12,95.1220,"Socialista, Liberal, Radical e Independientes"
+1246,José Antonio Rivas Villalobos,caucus,minority_ge_20,0.20,230,221,9,96.0870,"Socialista, Liberal, Radical e Independientes"
+1246,José Antonio Rivas Villalobos,party,all,0.00,339,328,11,96.7552,Partido Socialista
+1246,José Antonio Rivas Villalobos,party,minority_ge_05,0.05,252,243,9,96.4286,Partido Socialista
+1246,José Antonio Rivas Villalobos,party,minority_ge_10,0.10,244,235,9,96.3115,Partido Socialista
+1246,José Antonio Rivas Villalobos,party,minority_ge_20,0.20,228,221,7,96.9298,Partido Socialista
+1247,Javiera Rodríguez Pascual,caucus,all,0.00,364,364,0,100.0000,Comité Partido Republicano
+1247,Javiera Rodríguez Pascual,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Partido Republicano
+1247,Javiera Rodríguez Pascual,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Partido Republicano
+1247,Javiera Rodríguez Pascual,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Republicano
+1247,Javiera Rodríguez Pascual,party,all,0.00,364,364,0,100.0000,Partido Republicano
+1247,Javiera Rodríguez Pascual,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Republicano
+1247,Javiera Rodríguez Pascual,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Republicano
+1247,Javiera Rodríguez Pascual,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Republicano
+1248,Felipe Ross Correa,caucus,all,0.00,351,349,2,99.4302,Comité Partido Republicano
+1248,Felipe Ross Correa,caucus,minority_ge_05,0.05,263,262,1,99.6198,Comité Partido Republicano
+1248,Felipe Ross Correa,caucus,minority_ge_10,0.10,254,253,1,99.6063,Comité Partido Republicano
+1248,Felipe Ross Correa,caucus,minority_ge_20,0.20,239,238,1,99.5816,Comité Partido Republicano
+1248,Felipe Ross Correa,party,all,0.00,351,349,2,99.4302,Partido Republicano
+1248,Felipe Ross Correa,party,minority_ge_05,0.05,263,262,1,99.6198,Partido Republicano
+1248,Felipe Ross Correa,party,minority_ge_10,0.10,254,253,1,99.6063,Partido Republicano
+1248,Felipe Ross Correa,party,minority_ge_20,0.20,239,238,1,99.5816,Partido Republicano
+1249,Omar Sabat Guzmán,caucus,all,0.00,352,335,17,95.1705,Unión Demócrata Independiente
+1249,Omar Sabat Guzmán,caucus,minority_ge_05,0.05,267,251,16,94.0075,Unión Demócrata Independiente
+1249,Omar Sabat Guzmán,caucus,minority_ge_10,0.10,256,242,14,94.5312,Unión Demócrata Independiente
+1249,Omar Sabat Guzmán,caucus,minority_ge_20,0.20,237,226,11,95.3586,Unión Demócrata Independiente
+1249,Omar Sabat Guzmán,party,all,0.00,0,0,0,,Independientes
+1249,Omar Sabat Guzmán,party,minority_ge_05,0.05,0,0,0,,Independientes
+1249,Omar Sabat Guzmán,party,minority_ge_10,0.10,0,0,0,,Independientes
+1249,Omar Sabat Guzmán,party,minority_ge_20,0.20,0,0,0,,Independientes
+1250,Bernardo Salinas Maya,caucus,all,0.00,292,291,1,99.6575,Comité Comunista e Independientes
+1250,Bernardo Salinas Maya,caucus,minority_ge_05,0.05,213,212,1,99.5305,Comité Comunista e Independientes
+1250,Bernardo Salinas Maya,caucus,minority_ge_10,0.10,203,202,1,99.5074,Comité Comunista e Independientes
+1250,Bernardo Salinas Maya,caucus,minority_ge_20,0.20,184,183,1,99.4565,Comité Comunista e Independientes
+1250,Bernardo Salinas Maya,party,all,0.00,0,0,0,,Independientes
+1250,Bernardo Salinas Maya,party,minority_ge_05,0.05,0,0,0,,Independientes
+1250,Bernardo Salinas Maya,party,minority_ge_10,0.10,0,0,0,,Independientes
+1250,Bernardo Salinas Maya,party,minority_ge_20,0.20,0,0,0,,Independientes
+1251,Macarena Santelices Cañas,caucus,all,0.00,352,352,0,100.0000,Comité Partido Republicano
+1251,Macarena Santelices Cañas,caucus,minority_ge_05,0.05,262,262,0,100.0000,Comité Partido Republicano
+1251,Macarena Santelices Cañas,caucus,minority_ge_10,0.10,251,251,0,100.0000,Comité Partido Republicano
+1251,Macarena Santelices Cañas,caucus,minority_ge_20,0.20,232,232,0,100.0000,Comité Partido Republicano
+1251,Macarena Santelices Cañas,party,all,0.00,352,352,0,100.0000,Partido Republicano
+1251,Macarena Santelices Cañas,party,minority_ge_05,0.05,262,262,0,100.0000,Partido Republicano
+1251,Macarena Santelices Cañas,party,minority_ge_10,0.10,251,251,0,100.0000,Partido Republicano
+1251,Macarena Santelices Cañas,party,minority_ge_20,0.20,232,232,0,100.0000,Partido Republicano
+1252,Constanza Schonhaut Soto,caucus,all,0.00,349,344,5,98.5673,Frente Amplio
+1252,Constanza Schonhaut Soto,caucus,minority_ge_05,0.05,262,258,4,98.4733,Frente Amplio
+1252,Constanza Schonhaut Soto,caucus,minority_ge_10,0.10,251,248,3,98.8048,Frente Amplio
+1252,Constanza Schonhaut Soto,caucus,minority_ge_20,0.20,233,232,1,99.5708,Frente Amplio
+1252,Constanza Schonhaut Soto,party,all,0.00,349,344,5,98.5673,Frente Amplio
+1252,Constanza Schonhaut Soto,party,minority_ge_05,0.05,262,258,4,98.4733,Frente Amplio
+1252,Constanza Schonhaut Soto,party,minority_ge_10,0.10,251,248,3,98.8048,Frente Amplio
+1252,Constanza Schonhaut Soto,party,minority_ge_20,0.20,233,232,1,99.5708,Frente Amplio
+1253,Fernando Ugarte Tejeda,caucus,all,0.00,363,363,0,100.0000,Comité Partido Republicano
+1253,Fernando Ugarte Tejeda,caucus,minority_ge_05,0.05,269,269,0,100.0000,Comité Partido Republicano
+1253,Fernando Ugarte Tejeda,caucus,minority_ge_10,0.10,258,258,0,100.0000,Comité Partido Republicano
+1253,Fernando Ugarte Tejeda,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Republicano
+1253,Fernando Ugarte Tejeda,party,all,0.00,363,363,0,100.0000,Partido Republicano
+1253,Fernando Ugarte Tejeda,party,minority_ge_05,0.05,269,269,0,100.0000,Partido Republicano
+1253,Fernando Ugarte Tejeda,party,minority_ge_10,0.10,258,258,0,100.0000,Partido Republicano
+1253,Fernando Ugarte Tejeda,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,caucus,all,0.00,361,361,0,100.0000,Comité Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,caucus,minority_ge_20,0.20,239,239,0,100.0000,Comité Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,party,all,0.00,361,361,0,100.0000,Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,party,minority_ge_20,0.20,239,239,0,100.0000,Partido Republicano
+1255,Eileen Urqueta Rojas,caucus,all,0.00,361,327,34,90.5817,Comité Partido de la Gente
+1255,Eileen Urqueta Rojas,caucus,minority_ge_05,0.05,266,232,34,87.2180,Comité Partido de la Gente
+1255,Eileen Urqueta Rojas,caucus,minority_ge_10,0.10,255,221,34,86.6667,Comité Partido de la Gente
+1255,Eileen Urqueta Rojas,caucus,minority_ge_20,0.20,236,204,32,86.4407,Comité Partido de la Gente
+1255,Eileen Urqueta Rojas,party,all,0.00,355,321,34,90.4225,Partido de la Gente
+1255,Eileen Urqueta Rojas,party,minority_ge_05,0.05,260,226,34,86.9231,Partido de la Gente
+1255,Eileen Urqueta Rojas,party,minority_ge_10,0.10,249,215,34,86.3454,Partido de la Gente
+1255,Eileen Urqueta Rojas,party,minority_ge_20,0.20,230,198,32,86.0870,Partido de la Gente
+1256,Tatiana Urrutia Herrera,caucus,all,0.00,341,336,5,98.5337,Frente Amplio
+1256,Tatiana Urrutia Herrera,caucus,minority_ge_05,0.05,258,254,4,98.4496,Frente Amplio
+1256,Tatiana Urrutia Herrera,caucus,minority_ge_10,0.10,247,244,3,98.7854,Frente Amplio
+1256,Tatiana Urrutia Herrera,caucus,minority_ge_20,0.20,229,228,1,99.5633,Frente Amplio
+1256,Tatiana Urrutia Herrera,party,all,0.00,341,336,5,98.5337,Frente Amplio
+1256,Tatiana Urrutia Herrera,party,minority_ge_05,0.05,258,254,4,98.4496,Frente Amplio
+1256,Tatiana Urrutia Herrera,party,minority_ge_10,0.10,247,244,3,98.7854,Frente Amplio
+1256,Tatiana Urrutia Herrera,party,minority_ge_20,0.20,229,228,1,99.5633,Frente Amplio
+1257,Alejandra Valdebenito Torres,caucus,all,0.00,355,339,16,95.4930,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,caucus,minority_ge_05,0.05,268,253,15,94.4030,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,caucus,minority_ge_10,0.10,257,242,15,94.1634,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,caucus,minority_ge_20,0.20,238,223,15,93.6975,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,party,all,0.00,353,338,15,95.7507,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,party,minority_ge_05,0.05,266,252,14,94.7368,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,party,minority_ge_10,0.10,256,242,14,94.5312,Unión Demócrata Independiente
+1257,Alejandra Valdebenito Torres,party,minority_ge_20,0.20,237,223,14,94.0928,Unión Demócrata Independiente
+1258,Guillermo Valdés Carmona,caucus,all,0.00,361,342,19,94.7368,Comité Partido de la Gente
+1258,Guillermo Valdés Carmona,caucus,minority_ge_05,0.05,266,247,19,92.8571,Comité Partido de la Gente
+1258,Guillermo Valdés Carmona,caucus,minority_ge_10,0.10,255,237,18,92.9412,Comité Partido de la Gente
+1258,Guillermo Valdés Carmona,caucus,minority_ge_20,0.20,236,220,16,93.2203,Comité Partido de la Gente
+1258,Guillermo Valdés Carmona,party,all,0.00,355,339,16,95.4930,Partido de la Gente
+1258,Guillermo Valdés Carmona,party,minority_ge_05,0.05,260,244,16,93.8462,Partido de la Gente
+1258,Guillermo Valdés Carmona,party,minority_ge_10,0.10,249,234,15,93.9759,Partido de la Gente
+1258,Guillermo Valdés Carmona,party,minority_ge_20,0.20,230,217,13,94.3478,Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,caucus,all,0.00,350,323,27,92.2857,Comité Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,caucus,minority_ge_05,0.05,260,233,27,89.6154,Comité Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,caucus,minority_ge_10,0.10,249,222,27,89.1566,Comité Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,caucus,minority_ge_20,0.20,231,205,26,88.7446,Comité Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,party,all,0.00,344,323,21,93.8953,Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,party,minority_ge_05,0.05,254,233,21,91.7323,Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,party,minority_ge_10,0.10,243,222,21,91.3580,Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,party,minority_ge_20,0.20,225,205,20,91.1111,Partido de la Gente
+1260,César Valenzuela Maass,caucus,all,0.00,361,349,12,96.6759,"Socialista, Liberal, Radical e Independientes"
+1260,César Valenzuela Maass,caucus,minority_ge_05,0.05,266,255,11,95.8647,"Socialista, Liberal, Radical e Independientes"
+1260,César Valenzuela Maass,caucus,minority_ge_10,0.10,256,247,9,96.4844,"Socialista, Liberal, Radical e Independientes"
+1260,César Valenzuela Maass,caucus,minority_ge_20,0.20,237,231,6,97.4684,"Socialista, Liberal, Radical e Independientes"
+1260,César Valenzuela Maass,party,all,0.00,359,352,7,98.0501,Partido Socialista
+1260,César Valenzuela Maass,party,minority_ge_05,0.05,264,258,6,97.7273,Partido Socialista
+1260,César Valenzuela Maass,party,minority_ge_10,0.10,253,249,4,98.4190,Partido Socialista
+1260,César Valenzuela Maass,party,minority_ge_20,0.20,235,232,3,98.7234,Partido Socialista
+1261,Daniel Valenzuela Salazar,caucus,all,0.00,327,316,11,96.6361,"Renovación Nacional, Evopoli e Independientes"
+1261,Daniel Valenzuela Salazar,caucus,minority_ge_05,0.05,251,240,11,95.6175,"Renovación Nacional, Evopoli e Independientes"
+1261,Daniel Valenzuela Salazar,caucus,minority_ge_10,0.10,243,232,11,95.4733,"Renovación Nacional, Evopoli e Independientes"
+1261,Daniel Valenzuela Salazar,caucus,minority_ge_20,0.20,225,215,10,95.5556,"Renovación Nacional, Evopoli e Independientes"
+1261,Daniel Valenzuela Salazar,party,all,0.00,0,0,0,,Independientes
+1261,Daniel Valenzuela Salazar,party,minority_ge_05,0.05,0,0,0,,Independientes
+1261,Daniel Valenzuela Salazar,party,minority_ge_10,0.10,0,0,0,,Independientes
+1261,Daniel Valenzuela Salazar,party,minority_ge_20,0.20,0,0,0,,Independientes
+1262,Diego Vergara Rodríguez,caucus,all,0.00,360,360,0,100.0000,Comité Partido Republicano
+1262,Diego Vergara Rodríguez,caucus,minority_ge_05,0.05,268,268,0,100.0000,Comité Partido Republicano
+1262,Diego Vergara Rodríguez,caucus,minority_ge_10,0.10,257,257,0,100.0000,Comité Partido Republicano
+1262,Diego Vergara Rodríguez,caucus,minority_ge_20,0.20,238,238,0,100.0000,Comité Partido Republicano
+1262,Diego Vergara Rodríguez,party,all,0.00,360,360,0,100.0000,Partido Republicano
+1262,Diego Vergara Rodríguez,party,minority_ge_05,0.05,268,268,0,100.0000,Partido Republicano
+1262,Diego Vergara Rodríguez,party,minority_ge_10,0.10,257,257,0,100.0000,Partido Republicano
+1262,Diego Vergara Rodríguez,party,minority_ge_20,0.20,238,238,0,100.0000,Partido Republicano
+1263,Sebastián Zamora Soto,caucus,all,0.00,349,348,1,99.7135,Comité Partido Republicano
+1263,Sebastián Zamora Soto,caucus,minority_ge_05,0.05,257,256,1,99.6109,Comité Partido Republicano
+1263,Sebastián Zamora Soto,caucus,minority_ge_10,0.10,246,245,1,99.5935,Comité Partido Republicano
+1263,Sebastián Zamora Soto,caucus,minority_ge_20,0.20,227,226,1,99.5595,Comité Partido Republicano
+1263,Sebastián Zamora Soto,party,all,0.00,0,0,0,,Independientes
+1263,Sebastián Zamora Soto,party,minority_ge_05,0.05,0,0,0,,Independientes
+1263,Sebastián Zamora Soto,party,minority_ge_10,0.10,0,0,0,,Independientes
+1263,Sebastián Zamora Soto,party,minority_ge_20,0.20,0,0,0,,Independientes
+1264,Fernando Zamorano Peralta,caucus,all,0.00,351,335,16,95.4416,Partido Por la Democracia e Independientes
+1264,Fernando Zamorano Peralta,caucus,minority_ge_05,0.05,258,244,14,94.5736,Partido Por la Democracia e Independientes
+1264,Fernando Zamorano Peralta,caucus,minority_ge_10,0.10,248,234,14,94.3548,Partido Por la Democracia e Independientes
+1264,Fernando Zamorano Peralta,caucus,minority_ge_20,0.20,231,218,13,94.3723,Partido Por la Democracia e Independientes
+1264,Fernando Zamorano Peralta,party,all,0.00,350,340,10,97.1429,Partido Por la Democracia
+1264,Fernando Zamorano Peralta,party,minority_ge_05,0.05,257,249,8,96.8872,Partido Por la Democracia
+1264,Fernando Zamorano Peralta,party,minority_ge_10,0.10,247,239,8,96.7611,Partido Por la Democracia
+1264,Fernando Zamorano Peralta,party,minority_ge_20,0.20,230,222,8,96.5217,Partido Por la Democracia

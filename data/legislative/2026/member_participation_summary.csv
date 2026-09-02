@@ -1,0 +1,156 @@
+﻿diputado_id,diputado_nombre,rollcalls_total,n_affirmative,n_against,n_abstention,n_no_vote,n_excused,n_substantive,substantive_participation_pct,n_binary,binary_participation_pct,party_names_observed,caucus_names_observed
+803,René Alinco Bustos,364,169,107,33,55,0,309,84.8901,276,75.8242,Independientes,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+815,Sergio Bobadilla Muñoz,364,253,95,0,16,0,348,95.6044,348,95.6044,Unión Demócrata Independiente,Unión Demócrata Independiente
+843,René Manuel García García,364,233,72,8,50,1,313,85.9890,305,83.7912,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+872,Jaime Mulet Martínez,364,229,91,14,30,0,334,91.7582,320,87.9121,Federación Regionalista Verde Social,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+915,Germán Verdugo Soto,364,243,95,7,19,0,345,94.7802,338,92.8571,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+986,Marcela Hernando Pérez,364,223,64,33,44,0,320,87.9121,287,78.8462,Partido Radical de Chile,"Socialista, Liberal, Radical e Independientes"
+1009,Jorge Alessandri Vergara,364,229,93,5,37,0,327,89.8352,322,88.4615,Unión Demócrata Independiente,Unión Demócrata Independiente
+1012,Boris Barrera Moreno,364,189,158,17,0,0,364,100.0000,347,95.3297,Partido Comunista,Comité Comunista e Independientes
+1013,Alejandro Bernales Maldonado,364,245,70,27,22,0,342,93.9560,315,86.5385,Partido Liberal de Chile,"Socialista, Liberal, Radical e Independientes"
+1015,Jorge Brito Hasbún,364,173,133,11,47,0,317,87.0879,306,84.0659,Frente Amplio,Frente Amplio
+1017,Álvaro Carter Fernández,364,240,95,9,20,0,344,94.5055,335,92.0330,Partido Republicano,Comité Partido Republicano
+1021,Andrés Celis Montt,364,227,87,8,42,0,322,88.4615,314,86.2637,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1025,Catalina Del Real Mihovilovic,364,221,77,7,59,0,305,83.7912,298,81.8681,Partido Republicano,Comité Partido Republicano
+1028,Eduardo Durán Salinas,364,246,89,14,15,0,349,95.8791,335,92.0330,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1038,Marcos Ilabaca Cerda,364,178,123,10,53,0,311,85.4396,301,82.6923,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1039,Pamela Jiles Moreno,364,195,136,15,18,0,346,95.0549,331,90.9341,Partido de la Gente,Comité Partido de la Gente
+1044,Raúl Leiva Carvajal,364,182,115,15,52,0,312,85.7143,297,81.5934,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1054,Francesca Muñoz González,364,257,80,20,7,0,357,98.0769,337,92.5824,Partido Cristiano de Chile;Partido Social Cristiano,Por definir
+1056,Emilia Nuyado Ancapichun,364,207,146,10,1,0,363,99.7253,353,96.9780,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1059,Ximena Ossandón Irarrázabal,364,248,91,15,4,6,354,97.2527,339,93.1319,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1060,Luis Pardo Sáinz,364,251,94,8,11,0,353,96.9780,345,94.7802,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1061,Andrea Parra Sauterel,364,226,104,21,13,0,351,96.4286,330,90.6593,Partido Por la Democracia,Partido Por la Democracia e Independientes
+1062,Joanna Pérez Olea,364,222,64,25,53,0,311,85.4396,286,78.5714,Partido Demócratas Chile,"Renovación Nacional, Evopoli e Independientes"
+1065,Guillermo Ramírez Diez,364,215,90,12,47,0,317,87.0879,305,83.7912,Unión Demócrata Independiente,Unión Demócrata Independiente
+1073,Juan Santana Castillo,364,172,141,9,42,0,322,88.4615,313,85.9890,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1074,Marisela Santibáñez Novoa,364,164,139,17,44,0,320,87.9121,303,83.2418,Independientes,Comité Comunista e Independientes
+1075,Diego Schalper Sepúlveda,364,234,86,10,34,0,330,90.6593,320,87.9121,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1077,Raúl Soto Mardones,364,210,103,20,31,0,333,91.4835,313,85.9890,Partido Por la Democracia,Partido Por la Democracia e Independientes
+1082,Cristóbal Urruticoechea Ríos,364,198,94,3,69,0,295,81.0440,292,80.2198,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1086,Gonzalo Winter Etcheberry,364,167,136,13,48,0,316,86.8132,303,83.2418,Frente Amplio,Frente Amplio
+1087,Gael Yeomans Araya,364,185,140,14,25,0,339,93.1319,325,89.2857,Frente Amplio,Frente Amplio
+1099,Jaime Araya Guerrero,364,195,106,16,47,0,317,87.0879,301,82.6923,Independientes,Partido Por la Democracia e Independientes
+1100,Cristián Araya Lerdo de Tejada,364,245,100,9,10,0,354,97.2527,345,94.7802,Partido Republicano,Comité Partido Republicano
+1102,Roberto Arroyo Muñoz,364,221,76,12,55,0,309,84.8901,297,81.5934,Partido Social Cristiano;Partido de la Gente,Comité Partido de la Gente;Por definir
+1104,Chiara Barchiesi Chávez,364,236,97,9,22,0,342,93.9560,333,91.4835,Partido Republicano,Comité Partido Republicano
+1105,Héctor Barría Angulo,364,226,89,6,43,0,321,88.1868,315,86.5385,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1107,María Francisca Bello Campos,364,0,0,0,364,0,0,0.0000,0,0.0000,Frente Amplio,Frente Amplio
+1108,Juan Carlos Beltrán Silva,364,255,79,10,20,0,344,94.5055,334,91.7582,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1110,Carlos Bianchi Chelech,364,235,94,24,11,0,353,96.9780,329,90.3846,Independientes,Partido Por la Democracia e Independientes
+1114,Félix Bugueño Sotelo,364,203,122,28,11,0,353,96.9780,325,89.2857,Frente Amplio,Frente Amplio
+1116,Felipe Camaño Cárdenas,364,246,83,12,23,0,341,93.6813,329,90.3846,Independientes,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1117,Nathalie Castillo Rojas,364,137,144,8,75,0,289,79.3956,281,77.1978,Partido Comunista,Comité Comunista e Independientes
+1119,Sara Concha Smith,364,258,86,16,4,0,360,98.9011,344,94.5055,Partido Cristiano de Chile;Partido Social Cristiano,Por definir
+1122,Luis Alberto Cuello Peña y Lillo,364,178,156,18,12,0,352,96.7033,334,91.7582,Partido Comunista,Comité Comunista e Independientes
+1127,Lorena Fries Monleón,364,179,147,18,20,0,344,94.5055,326,89.5604,Frente Amplio,Frente Amplio
+1128,Ana María Gazmuri Vieira,364,173,129,14,48,0,316,86.8132,302,82.9670,Partido Acción Humanista,Comité Comunista e Independientes
+1131,Mauro González Villarroel,364,208,87,11,58,0,306,84.0659,295,81.0440,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1132,Jorge Guzmán Zepeda,364,255,92,14,3,0,361,99.1758,347,95.3297,Evolución Política,"Renovación Nacional, Evopoli e Independientes"
+1133,Juan Irarrázaval Rossel,364,250,100,9,5,0,359,98.6264,350,96.1538,Partido Republicano,Comité Partido Republicano
+1140,Daniel Lilayu Vivanco,364,250,97,12,5,0,359,98.6264,347,95.3297,Unión Demócrata Independiente,Unión Demócrata Independiente
+1141,Luis Malla Valenzuela,364,238,84,32,10,0,354,97.2527,322,88.4615,Partido Liberal de Chile,"Socialista, Liberal, Radical e Independientes"
+1142,Daniel Manouchehri Lobos,364,201,108,34,21,0,343,94.2308,309,84.8901,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1143,Cristóbal Martínez Ramírez,364,254,94,6,10,0,354,97.2527,348,95.6044,Unión Demócrata Independiente,Unión Demócrata Independiente
+1146,José Carlos Meza Pereira,364,229,93,9,33,0,331,90.9341,322,88.4615,Partido Republicano,Comité Partido Republicano
+1148,Javiera Morales Alvarado,364,40,51,2,271,0,93,25.5495,91,25.0000,Frente Amplio,Frente Amplio
+1150,Benjamín Moreno Bascur,364,254,101,9,0,0,364,100.0000,355,97.5275,Partido Republicano,Comité Partido Republicano
+1152,Gloria Naveillan Arriagada,364,202,95,7,60,0,304,83.5165,297,81.5934,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1153,Coca Ericka Ñanco Vásquez,364,115,80,6,163,0,201,55.2198,195,53.5714,Frente Amplio,Frente Amplio
+1157,Marlene Pérez Cartes,364,217,70,18,59,0,305,83.7912,287,78.8462,Independientes,Unión Demócrata Independiente
+1159,Lorena Pizarro Sierra,364,174,149,16,25,0,339,93.1319,323,88.7363,Partido Comunista,Comité Comunista e Independientes
+1165,Agustín Romero Leiva,364,247,101,9,7,0,357,98.0769,348,95.6044,Partido Republicano,Comité Partido Republicano
+1166,Natalia Romero Talguia,364,275,76,10,3,0,361,99.1758,351,96.4286,Independientes,Unión Demócrata Independiente
+1170,Luis Sánchez Ossa,364,244,96,9,15,0,349,95.8791,340,93.4066,Partido Republicano,Comité Partido Republicano
+1171,Emilia Schneider Videla,364,196,151,13,4,0,360,98.9011,347,95.3297,Frente Amplio,Frente Amplio
+1172,Stephan Schubert Rubio,364,228,73,9,54,0,310,85.1648,301,82.6923,Partido Republicano,Comité Partido Republicano
+1173,Daniela Serrano Salazar,364,185,159,15,5,0,359,98.6264,344,94.5055,Partido Comunista,Comité Comunista e Independientes
+1174,Marco Antonio Sulantay Olivares,364,249,95,8,12,0,352,96.7033,344,94.5055,Unión Demócrata Independiente,Unión Demócrata Independiente
+1175,Cristián Tapia Ramos,364,219,76,18,51,0,313,85.9890,295,81.0440,Independientes,Partido Por la Democracia e Independientes
+1176,Hotuiti Teao Drago,364,215,83,8,58,0,306,84.0659,298,81.8681,Independientes,Unión Demócrata Independiente
+1177,Carolina Tello Rojas,364,201,145,10,8,0,356,97.8022,346,95.0549,Frente Amplio,Frente Amplio
+1178,Héctor Ulloa Aguilera,364,224,92,24,24,0,340,93.4066,316,86.8132,Independientes,Partido Por la Democracia e Independientes
+1180,Consuelo Veloso Ávila,364,198,144,17,5,0,359,98.6264,342,93.9560,Frente Amplio,Frente Amplio
+1181,Nelson Venegas Salazar,364,186,139,11,28,0,336,92.3077,325,89.2857,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1182,Sebastián Videla Castillo,364,257,78,19,10,0,354,97.2527,335,92.0330,Independientes,"Socialista, Liberal, Radical e Independientes"
+1183,Flor Weisse Novoa,364,210,65,9,80,0,284,78.0220,275,75.5495,Unión Demócrata Independiente,Unión Demócrata Independiente
+1184,Roberto Celedón Fernández,364,204,145,15,0,0,364,100.0000,349,95.8791,Independientes,Frente Amplio
+1186,Ignacio Achurra Díaz,364,200,148,15,1,0,363,99.7253,348,95.6044,Frente Amplio,Frente Amplio
+1187,Carlo Arqueros Pizarro,364,252,100,9,3,0,361,99.1758,352,96.7033,Partido Republicano,Comité Partido Republicano
+1188,Marcos Barraza Gómez,364,190,157,17,0,0,364,100.0000,347,95.3297,Partido Comunista,Comité Comunista e Independientes
+1189,Jaime Bassa Mercado,364,187,155,8,14,0,350,96.1538,342,93.9560,Frente Amplio,Frente Amplio
+1190,Enrique Bassaletti Riess,364,253,101,9,1,0,363,99.7253,354,97.2527,Independientes,Comité Partido Republicano
+1191,Valentina Becerra Peña,364,240,99,9,16,0,348,95.6044,339,93.1319,Partido Republicano,Comité Partido Republicano
+1192,Lilian Betancurt Delgado,364,157,53,6,148,0,216,59.3407,210,57.6923,Partido de la Gente,Comité Partido de la Gente
+1193,Patricio Briones Moller,364,259,91,13,1,0,363,99.7253,350,96.1538,Partido de la Gente,Comité Partido de la Gente
+1194,Daniel Bustos Leal,364,254,101,9,0,0,364,100.0000,355,97.5275,Partido Republicano,Comité Partido Republicano
+1195,Carlos Carvajal Gallardo,364,238,94,22,10,0,354,97.2527,332,91.2088,Independientes,Partido Por la Democracia e Independientes
+1196,Priscilla Castillo Gerli,364,262,90,12,0,0,364,100.0000,352,96.7033,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1197,Carlos Chandía Alarcón,364,252,88,16,8,0,356,97.8022,340,93.4066,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1198,Paz Charpentier Rajcevich,364,251,100,9,4,0,360,98.9011,351,96.4286,Partido Republicano,Comité Partido Republicano
+1199,Jaime Coloma Álamos,364,256,95,13,0,0,364,100.0000,351,96.4286,Unión Demócrata Independiente,Unión Demócrata Independiente
+1200,Cristian Contreras Radovic,364,255,85,13,11,0,353,96.9780,340,93.4066,Partido de la Gente,Comité Partido de la Gente;Fuera del Comité Partido de la Gente
+1201,Flor Contreras Vivallo,364,254,92,15,3,0,361,99.1758,346,95.0549,Partido de la Gente,Comité Partido de la Gente
+1202,Eduardo Cretton Rebolledo,364,251,100,13,0,0,364,100.0000,351,96.4286,Unión Demócrata Independiente,Unión Demócrata Independiente
+1203,Sebastián Cristoffanini Jaraquemada,364,252,100,8,4,0,360,98.9011,352,96.7033,Partido Republicano,Comité Partido Republicano
+1204,Francisco Crisóstomo Llanos,364,212,135,17,0,0,364,100.0000,347,95.3297,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1205,Carlos Cuadrado Prats,364,207,114,15,28,0,336,92.3077,321,88.1868,Partido Por la Democracia,Partido Por la Democracia e Independientes
+1206,Carolina Cucumides Calderón,364,214,138,12,0,0,364,100.0000,352,96.7033,Independientes,"Socialista, Liberal, Radical e Independientes"
+1207,Valentina Cáceres Monsálvez,364,200,133,16,15,0,349,95.8791,333,91.4835,Independientes,Frente Amplio
+1208,Jorge Díaz Ibarra,364,259,77,12,16,0,348,95.6044,336,92.3077,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1209,Matías Fernández Hartwig,364,201,148,15,0,0,364,100.0000,349,95.8791,Frente Amplio,Frente Amplio
+1210,Gustavo Gatica Villarroel,364,183,154,17,10,0,354,97.2527,337,92.5824,Independientes,Comité Comunista e Independientes
+1211,Sofía González Cortés,364,182,158,15,9,0,355,97.5275,340,93.4066,Partido Comunista,Comité Comunista e Independientes
+1212,Erich Grohs Marín,364,228,103,5,28,0,336,92.3077,331,90.9341,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1213,Irací Hassler Jacob,364,190,157,17,0,0,364,100.0000,347,95.3297,Partido Comunista,Comité Comunista e Independientes
+1214,Constanza Hube Portus,364,245,101,18,0,0,364,100.0000,346,95.0549,Unión Demócrata Independiente,Unión Demócrata Independiente
+1215,Álvaro Jofré Cáceres,364,249,108,7,0,0,364,100.0000,357,98.0769,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1216,Stephanie Jéldrez Ortiz,364,249,99,8,8,0,356,97.8022,348,95.6044,Partido Republicano,Comité Partido Republicano
+1217,Pier Karlezi Hazleby,364,239,101,6,18,0,346,95.0549,340,93.4066,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1218,José Antonio Kast Adriasola,364,254,100,9,1,0,363,99.7253,354,97.2527,Partido Republicano,Comité Partido Republicano
+1219,Tomás Kast Sommerhoff,364,242,92,3,21,6,337,92.5824,334,91.7582,Evolución Política,"Renovación Nacional, Evopoli e Independientes"
+1220,Leandro Kunstmann Collado,364,253,101,9,1,0,363,99.7253,354,97.2527,Partido Republicano,Comité Partido Republicano
+1221,Benjamín Lorca Inzunza,364,251,101,9,3,0,361,99.1758,352,96.7033,Partido Republicano,Comité Partido Republicano
+1222,Andrea Macías Palma,364,188,142,20,14,0,350,96.1538,330,90.6593,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1223,Hans Marowski Cuevas,364,230,101,6,27,0,337,92.5824,331,90.9341,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1224,Cristian Mella Andaur,364,264,81,15,4,0,360,98.9011,345,94.7802,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1225,Cristian Menchaca Pinochet,364,245,96,8,15,0,349,95.8791,341,93.6813,Independientes,Comité Partido Republicano
+1226,José Montalva Feuerhake,364,246,103,12,3,0,361,99.1758,349,95.8791,Independientes,Partido Por la Democracia e Independientes
+1227,Claudia Mora Vega,364,255,94,13,2,0,362,99.4505,349,95.8791,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1228,Paulina Muñoz Minte,364,250,108,6,0,0,364,100.0000,358,98.3516,Partido Nacional Libertario,Comité Partido Nacional Libertarios
+1229,Javier Muñoz Riquelme,364,257,79,15,2,11,351,96.4286,336,92.3077,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1230,Alex Nahuelquin Nahuelquin,364,267,75,18,4,0,360,98.9011,342,93.9560,Partido de la Gente,Comité Partido de la Gente
+1231,Ximena Naranjo Pinto,364,260,86,18,0,0,364,100.0000,346,95.0549,Independientes,Unión Demócrata Independiente
+1232,Cristian Neira Martínez,364,248,100,12,4,0,360,98.9011,348,95.6044,Partido Republicano,Comité Partido Republicano
+1233,Ricardo Neumann Bertín,364,248,95,14,7,0,357,98.0769,343,94.2308,Unión Demócrata Independiente,Unión Demócrata Independiente
+1234,Mario Olavarría Rodríguez,364,201,87,5,71,0,293,80.4945,288,79.1209,Unión Demócrata Independiente,Unión Demócrata Independiente
+1235,Javier Olivares Avendaño,364,263,92,9,0,0,364,100.0000,355,97.5275,Partido de la Gente,Comité Partido de la Gente
+1236,Paula Olmos Contreras,364,183,96,12,73,0,291,79.9451,279,76.6484,Partido de la Gente,Comité Partido de la Gente
+1237,Francisco Orrego Gutiérrez,364,257,90,16,1,0,363,99.7253,347,95.3297,Renovación Nacional,"Renovación Nacional, Evopoli e Independientes"
+1238,Álvaro Ortiz Vera,364,259,88,17,0,0,364,100.0000,347,95.3297,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1239,Fabián Ossandón Briceño,364,213,114,19,18,0,346,95.0549,327,89.8352,Partido de la Gente,Comité Partido de la Gente
+1240,Zandra Parisi Fernández,364,210,67,17,70,0,294,80.7692,277,76.0989,Partido de la Gente,Comité Partido de la Gente
+1241,Patricio Pinilla Valencia,364,241,95,23,5,0,359,98.6264,336,92.3077,Partido Demócrata Cristiano,"Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes"
+1242,Rodrigo Ramírez Parra,364,251,95,9,9,0,355,97.5275,346,95.0549,Independientes,"Renovación Nacional, Evopoli e Independientes"
+1243,Tamara Ramírez Ramírez,364,214,125,16,9,0,355,97.5275,339,93.1319,Partido de la Gente,Comité Partido de la Gente
+1244,Claudia Reyes Larenas,364,242,95,9,18,0,346,95.0549,337,92.5824,Partido Republicano,Comité Partido Republicano
+1245,Alejandro Riquelme Ducci,364,248,96,10,10,0,354,97.2527,344,94.5055,Partido Republicano,Comité Partido Republicano
+1246,José Antonio Rivas Villalobos,364,200,130,12,22,0,342,93.9560,330,90.6593,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1247,Javiera Rodríguez Pascual,364,254,101,9,0,0,364,100.0000,355,97.5275,Partido Republicano,Comité Partido Republicano
+1248,Felipe Ross Correa,364,242,100,9,13,0,351,96.4286,342,93.9560,Partido Republicano,Comité Partido Republicano
+1249,Omar Sabat Guzmán,364,241,95,16,12,0,352,96.7033,336,92.3077,Independientes,Unión Demócrata Independiente
+1250,Bernardo Salinas Maya,364,162,118,12,72,0,292,80.2198,280,76.9231,Independientes,Comité Comunista e Independientes
+1251,Macarena Santelices Cañas,364,245,99,8,12,0,352,96.7033,344,94.5055,Partido Republicano,Comité Partido Republicano
+1252,Constanza Schonhaut Soto,364,186,150,13,15,0,349,95.8791,336,92.3077,Frente Amplio,Frente Amplio
+1253,Fernando Ugarte Tejeda,364,253,101,9,1,0,363,99.7253,354,97.2527,Partido Republicano,Comité Partido Republicano
+1254,Ignacio Urcullú Clèment-Lund,364,254,101,6,3,0,361,99.1758,355,97.5275,Partido Republicano,Comité Partido Republicano
+1255,Eileen Urqueta Rojas,364,238,113,13,0,0,364,100.0000,351,96.4286,Partido de la Gente,Comité Partido de la Gente
+1256,Tatiana Urrutia Herrera,364,182,148,11,23,0,341,93.6813,330,90.6593,Frente Amplio,Frente Amplio
+1257,Alejandra Valdebenito Torres,364,256,90,9,9,0,355,97.5275,346,95.0549,Unión Demócrata Independiente,Unión Demócrata Independiente
+1258,Guillermo Valdés Carmona,364,253,97,14,0,0,364,100.0000,350,96.1538,Partido de la Gente,Comité Partido de la Gente
+1259,Juan Marcelo Valenzuela Henríquez,364,256,83,14,11,0,353,96.9780,339,93.1319,Partido de la Gente,Comité Partido de la Gente
+1260,César Valenzuela Maass,364,209,137,17,1,0,363,99.7253,346,95.0549,Partido Socialista,"Socialista, Liberal, Radical e Independientes"
+1261,Daniel Valenzuela Salazar,364,228,92,10,34,0,330,90.6593,320,87.9121,Independientes,"Renovación Nacional, Evopoli e Independientes"
+1262,Diego Vergara Rodríguez,364,251,100,9,4,0,360,98.9011,351,96.4286,Partido Republicano,Comité Partido Republicano
+1263,Sebastián Zamora Soto,364,244,95,10,15,0,349,95.8791,339,93.1319,Independientes,Comité Partido Republicano
+1264,Fernando Zamorano Peralta,364,233,107,14,10,0,354,97.2527,340,93.4066,Partido Por la Democracia,Partido Por la Democracia e Independientes
