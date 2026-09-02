@@ -106,7 +106,9 @@ def parse_ministries(node, boletin: str) -> list[dict]:
 def parse_authors(node, boletin: str) -> list[dict]:
     rows = []
     for wrapper in nested(node, "Autores", {"ParlamentarioAutor"}):
-        target = child(wrapper, "Diputado") or child(wrapper, "Senador")
+        target = child(wrapper, "Diputado")
+        if target is None:
+            target = child(wrapper, "Senador")
         p = person(target)
         if p["id"] or p["name"]:
             rows.append({
