@@ -38,6 +38,8 @@
 - [x] Generar controles de integridad y un reporte de auditoría por ejecución.
 - [x] Conciliar todas las capas de una corrida con un mismo snapshot de proyectos.
 - [x] Mantener separadas las capas de datos primarios, clasificación temática, indicadores derivados y modelos como W-NOMINATE/redes.
+- [x] Revalidar semanalmente una **ventana móvil de 35 días** de autorías y votaciones para absorber correcciones retroactivas de la fuente oficial sin repetir el backfill completo.
+- [x] Escalonar la revisión de historiales de proyectos: actividad reciente cada semana y proyectos antiguos no terminales en cuatro grupos rotativos, con concurrencia reducida y backoff ante saturación del portal.
 
 ## Clasificación temática de proyectos
 
