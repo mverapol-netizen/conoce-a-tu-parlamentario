@@ -1,0 +1,230 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "PASS",
+  "baseline_spec": "raw_lop025_2d",
+  "specifications": ["raw_lop025_2d", "raw_lop050_2d", "cap20_balanced_lop025_2d"],
+  "mean_delta_correct_classification_percentage_points": 1.5578,
+  "mean_delta_apre": 0.0427,
+  "mean_eigenvalue_ratio_2_to_1": 0.0269,
+  "procrustes": {
+    "min_pearson_dim1_after_alignment_nonbaseline": 0.9944,
+    "min_pearson_dim2_after_alignment_nonbaseline": 0.7229,
+    "max_disparity_nonbaseline": 0.1238,
+    "interpretation": "Similarity Procrustes elimina traslación, rotación/reflexión y escala isotrópica antes de evaluar estabilidad entre espacios 2D."
+  },
+  "baseline_group_eta_squared": {
+    "dim1": {
+      "party": 0.8458,
+      "caucus": 0.989,
+      "alignment": 0.892
+    },
+    "dim2": {
+      "party": 0.822,
+      "caucus": 0.9262,
+      "alignment": 0.1527
+    },
+    "warning": "Asociación descriptiva, no causal y no suficiente para nombrar dimensiones."
+  },
+  "most_sensitive_members_after_procrustes": [
+    {
+      "diputado_id": "1021",
+      "diputado_nombre": "Andrés Celis Montt",
+      "max_euclidean_shift": 0.7992,
+      "modal_party": "Renovación Nacional",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1075",
+      "diputado_nombre": "Diego Schalper Sepúlveda",
+      "max_euclidean_shift": 0.769,
+      "modal_party": "Renovación Nacional",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1227",
+      "diputado_nombre": "Claudia Mora Vega",
+      "max_euclidean_shift": 0.7684,
+      "modal_party": "Renovación Nacional",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1152",
+      "diputado_nombre": "Gloria Naveillan Arriagada",
+      "max_euclidean_shift": 0.7424,
+      "modal_party": "Partido Nacional Libertario",
+      "modal_caucus": "Comité Partido Nacional Libertarios"
+    },
+    {
+      "diputado_id": "1059",
+      "diputado_nombre": "Ximena Ossandón Irarrázabal",
+      "max_euclidean_shift": 0.7084,
+      "modal_party": "Renovación Nacional",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1242",
+      "diputado_nombre": "Rodrigo Ramírez Parra",
+      "max_euclidean_shift": 0.6838,
+      "modal_party": "Independientes",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1132",
+      "diputado_nombre": "Jorge Guzmán Zepeda",
+      "max_euclidean_shift": 0.6655,
+      "modal_party": "Evolución Política",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1202",
+      "diputado_nombre": "Eduardo Cretton Rebolledo",
+      "max_euclidean_shift": 0.5577,
+      "modal_party": "Unión Demócrata Independiente",
+      "modal_caucus": "Unión Demócrata Independiente"
+    },
+    {
+      "diputado_id": "1140",
+      "diputado_nombre": "Daniel Lilayu Vivanco",
+      "max_euclidean_shift": 0.539,
+      "modal_party": "Unión Demócrata Independiente",
+      "modal_caucus": "Unión Demócrata Independiente"
+    },
+    {
+      "diputado_id": "1214",
+      "diputado_nombre": "Constanza Hube Portus",
+      "max_euclidean_shift": 0.5179,
+      "modal_party": "Unión Demócrata Independiente",
+      "modal_caucus": "Unión Demócrata Independiente"
+    },
+    {
+      "diputado_id": "1212",
+      "diputado_nombre": "Erich Grohs Marín",
+      "max_euclidean_shift": 0.4443,
+      "modal_party": "Partido Nacional Libertario",
+      "modal_caucus": "Comité Partido Nacional Libertarios"
+    },
+    {
+      "diputado_id": "1025",
+      "diputado_nombre": "Catalina Del Real Mihovilovic",
+      "max_euclidean_shift": 0.4431,
+      "modal_party": "Partido Republicano",
+      "modal_caucus": "Comité Partido Republicano"
+    },
+    {
+      "diputado_id": "1060",
+      "diputado_nombre": "Luis Pardo Sáinz",
+      "max_euclidean_shift": 0.4307,
+      "modal_party": "Renovación Nacional",
+      "modal_caucus": "Renovación Nacional, Evopoli e Independientes"
+    },
+    {
+      "diputado_id": "1172",
+      "diputado_nombre": "Stephan Schubert Rubio",
+      "max_euclidean_shift": 0.4251,
+      "modal_party": "Partido Republicano",
+      "modal_caucus": "Comité Partido Republicano"
+    },
+    {
+      "diputado_id": "1228",
+      "diputado_nombre": "Paulina Muñoz Minte",
+      "max_euclidean_shift": 0.4245,
+      "modal_party": "Partido Nacional Libertario",
+      "modal_caucus": "Comité Partido Nacional Libertarios"
+    }
+  ],
+  "leading_topics_by_relative_dim2_loading": [
+    {
+      "topic_primary": "Ciencia y tecnología",
+      "n_rollcalls": 1,
+      "mean_relative_dim2_loading": 0.9929,
+      "median_relative_dim2_loading": 0.9929,
+      "q75_relative_dim2_loading": 0.9929,
+      "share_rollcalls_dim2_loading_gt_0_50": 1,
+      "mean_topic_confidence": 0.97
+    },
+    {
+      "topic_primary": "Deportes",
+      "n_rollcalls": 6,
+      "mean_relative_dim2_loading": 0.7656,
+      "median_relative_dim2_loading": 0.8737,
+      "q75_relative_dim2_loading": 0.881,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.8333,
+      "mean_topic_confidence": 0.97
+    },
+    {
+      "topic_primary": "Agua y recursos hídricos",
+      "n_rollcalls": 4,
+      "mean_relative_dim2_loading": 0.4994,
+      "median_relative_dim2_loading": 0.3925,
+      "q75_relative_dim2_loading": 0.6239,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.5,
+      "mean_topic_confidence": 0.9625
+    },
+    {
+      "topic_primary": "Cultura y comunicaciones",
+      "n_rollcalls": 3,
+      "mean_relative_dim2_loading": 0.4943,
+      "median_relative_dim2_loading": 0.4978,
+      "q75_relative_dim2_loading": 0.6379,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.3333,
+      "mean_topic_confidence": 0.97
+    },
+    {
+      "topic_primary": "Vivienda y territorio",
+      "n_rollcalls": 7,
+      "mean_relative_dim2_loading": 0.4855,
+      "median_relative_dim2_loading": 0.4058,
+      "q75_relative_dim2_loading": 0.8439,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.4286,
+      "mean_topic_confidence": 0.97
+    },
+    {
+      "topic_primary": "Familia, infancia y adolescencia",
+      "n_rollcalls": 1,
+      "mean_relative_dim2_loading": 0.4595,
+      "median_relative_dim2_loading": 0.4595,
+      "q75_relative_dim2_loading": 0.4595,
+      "share_rollcalls_dim2_loading_gt_0_50": 0,
+      "mean_topic_confidence": 0.97
+    },
+    {
+      "topic_primary": "Economía, comercio y consumidores",
+      "n_rollcalls": 6,
+      "mean_relative_dim2_loading": 0.4418,
+      "median_relative_dim2_loading": 0.4516,
+      "q75_relative_dim2_loading": 0.5985,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.5,
+      "mean_topic_confidence": 0.97
+    },
+    {
+      "topic_primary": "Minería y energía",
+      "n_rollcalls": 15,
+      "mean_relative_dim2_loading": 0.4313,
+      "median_relative_dim2_loading": 0.3787,
+      "q75_relative_dim2_loading": 0.44,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.2,
+      "mean_topic_confidence": 0.9713
+    },
+    {
+      "topic_primary": "Constitución y justicia",
+      "n_rollcalls": 2,
+      "mean_relative_dim2_loading": 0.4258,
+      "median_relative_dim2_loading": 0.4258,
+      "q75_relative_dim2_loading": 0.4625,
+      "share_rollcalls_dim2_loading_gt_0_50": 0,
+      "mean_topic_confidence": 0.893
+    },
+    {
+      "topic_primary": "Educación",
+      "n_rollcalls": 48,
+      "mean_relative_dim2_loading": 0.3666,
+      "median_relative_dim2_loading": 0.3232,
+      "q75_relative_dim2_loading": 0.5507,
+      "share_rollcalls_dim2_loading_gt_0_50": 0.3333,
+      "mean_topic_confidence": 0.97
+    }
+  ],
+  "topic_warning": "La lectura temática es exploratoria: la taxonomía legislativa mantiene pendiente una validación externa/formal de precisión por macroárea.",
+  "methodological_conclusion_provisional": "Mantener 1D como modelo principal parsimonioso y conservar 2D como diagnóstico exploratorio secundario. D2 es reproducible tras alineación, pero su importancia espectral es mucho menor que D1 y requiere interpretación sustantiva adicional.",
+  "public_use": "NO: no integrar todavía coordenadas 1D/2D ni etiquetas ideológicas a las fichas públicas."
+}

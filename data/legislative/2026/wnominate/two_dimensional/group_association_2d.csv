@@ -1,0 +1,4 @@
+"group_type","n_groups","n_members","eta_squared_dim1","eta_squared_dim2","note"
+"party",18,154,0.845772231713299,0.82203230333518,"Eta² descriptivo: asociación entre coordenada y diferencias entre grupos; no causal ni suficiente para nombrar una dimensión."
+"caucus",12,154,0.988963835919006,0.926154003317765,"Eta² descriptivo: asociación entre coordenada y diferencias entre grupos; no causal ni suficiente para nombrar una dimensión."
+"alignment",3,154,0.892034830571033,0.152741357857748,"Eta² descriptivo: asociación entre coordenada y diferencias entre grupos; no causal ni suficiente para nombrar una dimensión."
