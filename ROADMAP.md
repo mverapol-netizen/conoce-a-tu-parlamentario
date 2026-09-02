@@ -8,7 +8,15 @@
 
 ## Hemiciclo
 
+- [ ] Revisar la primera versión completa del Hemiciclo después de probarla en escritorio y celular: legibilidad, colores, orden, tamaño de escaños, leyendas y experiencia de selección.
 - [ ] Mantener la distinción explícita entre militancia partidaria y pertenencia a bancada/comité parlamentario.
 - [ ] Para independientes, mostrar la fórmula: **“Independiente en [bancada/comité]”**.
 - [ ] Revisar mensualmente la clasificación editorial de fuerzas como oficialismo, oposición o no alineadas.
 - [ ] Dejar claro que el gráfico representa **distribución de fuerzas**, no ubicación física exacta de cada escaño en la Sala.
+
+## Fichas legislativas
+
+- [x] Habilitar una página interna y una URL estable para cada integrante de la Cámara.
+- [x] Conectar la selección por distrito y el Hemiciclo con esa ficha interna.
+- [ ] Definir posteriormente qué dimensiones, indicadores y documentos deberá contener la ficha legislativa.
+- [ ] Auditar el diseño definitivo de la ficha una vez que se defina su contenido.
