@@ -7,6 +7,10 @@ on:
       - "Sync legislative data"
     types:
       - completed
+  push:
+    paths:
+      - "scripts/build_coauthorship_network.py"
+      - ".github/workflows/build_coauthorship_network.yml"
 
 permissions:
   contents: write
@@ -17,7 +21,7 @@ concurrency:
 
 jobs:
   build:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
