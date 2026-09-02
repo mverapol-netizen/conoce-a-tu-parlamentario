@@ -2,13 +2,13 @@
 
 **Estado:** PASS
 
-- Proyectos: 493
-- Eventos de tramitación: 943 (100.0% de proyectos con eventos)
+- Proyectos: 496
+- Eventos de tramitación: 946 (100.0% de proyectos con eventos)
 - Eventos que mencionan comisión: 160
 - Filas de materias oficiales: 0
-- Mociones parlamentarias: 449
-- Relaciones de autoría: 2571
-- Mociones con múltiples autores: 397
+- Mociones parlamentarias: 452
+- Relaciones de autoría: 2579
+- Mociones con múltiples autores: 399
 - Máximo de autores en una moción: 10
 - Roll calls de Sala: 364
 - Votos nominales: 56420
