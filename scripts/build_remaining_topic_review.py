@@ -20,7 +20,7 @@ def main() -> None:
     ]
     compact = []
     for row in rows:
-        excerpt = " ".join((row.get("text_excerpt") or "").split())[:900]
+        excerpt = " ".join((row.get("text_excerpt") or "").split())[:250]
         compact.append({
             "boletin": row.get("boletin", ""),
             "titulo": row.get("titulo", ""),
