@@ -1,0 +1,45 @@
+name: Sync parliamentary contacts
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/sync_contacts.py"
+      - ".github/workflows/sync_contacts_only.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  contacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Sync official contacts
+        run: python scripts/sync_contacts.py
+
+      - name: Commit contacts
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/profiles.js
+          if git diff --cached --quiet; then
+            echo "No contact changes to commit"
+          else
+            git commit -m "Actualiza contactos parlamentarios oficiales"
+            git pull --rebase origin main
+            git push
+          fi
