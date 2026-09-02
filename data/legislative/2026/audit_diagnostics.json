@@ -1,6 +1,6 @@
 {
   "generated_for": "2026-09-02",
-  "status": "fail",
+  "status": "pass",
   "projects": {
     "count": 493,
     "events": 943,
@@ -12,12 +12,10 @@
   },
   "authorship": {
     "parliamentary_bills": 449,
-    "author_relations": 2573,
+    "author_relations": 2571,
     "bills_with_authors": 449,
     "unresolved_motions": [],
-    "orphan_author_bills": [
-      "18624-36"
-    ],
+    "orphan_author_bills": [],
     "multi_author_bills": 397,
     "max_authors_on_bill": 10,
     "author_count_distribution": {
@@ -57,7 +55,5 @@
   "warnings": [
     "La fuente no produjo materias oficiales: project_subjects.csv está vacío"
   ],
-  "failures": [
-    "Hay 1 boletines con autorías fuera del snapshot parlamentario vigente"
-  ]
+  "failures": []
 }
