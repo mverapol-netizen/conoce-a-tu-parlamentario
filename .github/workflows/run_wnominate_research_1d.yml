@@ -1,0 +1,59 @@
+name: Run W-NOMINATE 1D research
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/run_wnominate_research_1d.R"
+      - "data/legislative/2026/rollcall_matrix_binary.csv"
+      - "data/legislative/2026/rollcall_matrix_metadata.csv"
+      - "docs/CONTRATO_MODELOS_ROLLCALL_V0_2.md"
+      - ".github/workflows/run_wnominate_research_1d.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wnominate-research-1d
+  cancel-in-progress: true
+
+jobs:
+  estimate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R dependencies
+        shell: Rscript {0}
+        run: |
+          install.packages(c("pscl", "wnominate", "jsonlite"), repos = "https://cloud.r-project.org")
+
+      - name: Run W-NOMINATE 1D research
+        run: Rscript scripts/run_wnominate_research_1d.R
+
+      - name: Persist research outputs
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/wnominate/research_1d
+          if git diff --cached --quiet; then
+            echo "No research W-NOMINATE changes to commit"
+          else
+            git commit -m "Actualiza W-NOMINATE 1D research 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
