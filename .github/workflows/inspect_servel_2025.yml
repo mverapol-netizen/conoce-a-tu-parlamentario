@@ -1,0 +1,49 @@
+name: Inspect Servel 2025 baseline
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/inspect_servel_2025.py"
+      - ".github/workflows/inspect_servel_2025.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependency
+        run: pip install requests
+
+      - name: Inspect official Servel ZIP
+        run: python scripts/inspect_servel_2025.py
+
+      - name: Persist diagnostic
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/affiliations/servel_2025_zip_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No Servel diagnostic changes"
+          else
+            git commit -m "Inspecciona estructura de resultados Servel 2025"
+            git pull --rebase origin main
+            git push origin main
+          fi
