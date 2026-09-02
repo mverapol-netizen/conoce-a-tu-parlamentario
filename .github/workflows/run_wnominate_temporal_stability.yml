@@ -31,9 +31,10 @@ jobs:
       - name: Align with latest main
         run: git pull --ff-only origin main
 
-      - name: Verify system R
+      - name: Install R from Ubuntu
         run: |
-          Rscript --version
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends r-base r-base-dev
           Rscript -e 'cat(R.version.string, "\n")'
 
       - name: Install R dependencies
