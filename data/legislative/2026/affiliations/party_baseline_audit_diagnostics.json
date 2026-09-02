@@ -1,0 +1,222 @@
+{
+  "deputies": 155,
+  "status_counts": {
+    "actual_independiente_en_cupo_partidario": 25,
+    "cambio_de_etiqueta_o_partido": 1,
+    "slot_coincide_partido_actual": 129
+  },
+  "priority_counts": {
+    "alta": 26,
+    "baja": 129
+  },
+  "high_priority_cases": [
+    {
+      "deputy_id": "803",
+      "deputy_name": "René Alinco Bustos",
+      "district": "27",
+      "electoral_party_slot": "FEDERACION REGIONALISTA VERDE SOCIAL",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1074",
+      "deputy_name": "Marisela Santibáñez Novoa",
+      "district": "14",
+      "electoral_party_slot": "PARTIDO COMUNISTA DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1099",
+      "deputy_name": "Jaime Araya Guerrero",
+      "district": "3",
+      "electoral_party_slot": "PARTIDO POR LA DEMOCRACIA",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1102",
+      "deputy_name": "Roberto Arroyo Muñoz",
+      "district": "20",
+      "electoral_party_slot": "PARTIDO SOCIAL CRISTIANO",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "1"
+    },
+    {
+      "deputy_id": "1116",
+      "deputy_name": "Felipe Camaño Cárdenas",
+      "district": "19",
+      "electoral_party_slot": "PARTIDO DEMOCRATA CRISTIANO",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1157",
+      "deputy_name": "Marlene Pérez Cartes",
+      "district": "20",
+      "electoral_party_slot": "UNION DEMOCRATA INDEPENDIENTE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1166",
+      "deputy_name": "Natalia Romero Talguia",
+      "district": "15",
+      "electoral_party_slot": "UNION DEMOCRATA INDEPENDIENTE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1175",
+      "deputy_name": "Cristián Tapia Ramos",
+      "district": "4",
+      "electoral_party_slot": "PARTIDO POR LA DEMOCRACIA",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1176",
+      "deputy_name": "Hotuiti Teao Drago",
+      "district": "7",
+      "electoral_party_slot": "UNION DEMOCRATA INDEPENDIENTE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1178",
+      "deputy_name": "Héctor Ulloa Aguilera",
+      "district": "26",
+      "electoral_party_slot": "PARTIDO POR LA DEMOCRACIA",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1180",
+      "deputy_name": "Consuelo Veloso Ávila",
+      "district": "18",
+      "electoral_party_slot": "PARTIDO RADICAL DE CHILE",
+      "current_party_camara": "Frente Amplio",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1182",
+      "deputy_name": "Sebastián Videla Castillo",
+      "district": "3",
+      "electoral_party_slot": "PARTIDO LIBERAL DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1184",
+      "deputy_name": "Roberto Celedón Fernández",
+      "district": "17",
+      "electoral_party_slot": "FRENTE AMPLIO",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1190",
+      "deputy_name": "Enrique Bassaletti Riess",
+      "district": "8",
+      "electoral_party_slot": "PARTIDO REPUBLICANO DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1195",
+      "deputy_name": "Carlos Carvajal Gallardo",
+      "district": "2",
+      "electoral_party_slot": "PARTIDO POR LA DEMOCRACIA",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1206",
+      "deputy_name": "Carolina Cucumides Calderón",
+      "district": "16",
+      "electoral_party_slot": "PARTIDO SOCIALISTA DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1207",
+      "deputy_name": "Valentina Cáceres Monsálvez",
+      "district": "15",
+      "electoral_party_slot": "FRENTE AMPLIO",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1210",
+      "deputy_name": "Gustavo Gatica Villarroel",
+      "district": "8",
+      "electoral_party_slot": "PARTIDO COMUNISTA DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1225",
+      "deputy_name": "Cristian Menchaca Pinochet",
+      "district": "18",
+      "electoral_party_slot": "PARTIDO REPUBLICANO DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1226",
+      "deputy_name": "José Montalva Feuerhake",
+      "district": "23",
+      "electoral_party_slot": "PARTIDO POR LA DEMOCRACIA",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1231",
+      "deputy_name": "Ximena Naranjo Pinto",
+      "district": "2",
+      "electoral_party_slot": "UNION DEMOCRATA INDEPENDIENTE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1242",
+      "deputy_name": "Rodrigo Ramírez Parra",
+      "district": "18",
+      "electoral_party_slot": "RENOVACION NACIONAL",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1249",
+      "deputy_name": "Omar Sabat Guzmán",
+      "district": "24",
+      "electoral_party_slot": "UNION DEMOCRATA INDEPENDIENTE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1250",
+      "deputy_name": "Bernardo Salinas Maya",
+      "district": "5",
+      "electoral_party_slot": "PARTIDO COMUNISTA DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1261",
+      "deputy_name": "Daniel Valenzuela Salazar",
+      "district": "24",
+      "electoral_party_slot": "RENOVACION NACIONAL",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    },
+    {
+      "deputy_id": "1263",
+      "deputy_name": "Sebastián Zamora Soto",
+      "district": "7",
+      "electoral_party_slot": "PARTIDO REPUBLICANO DE CHILE",
+      "current_party_camara": "Independientes",
+      "has_documented_2026_event": "0"
+    }
+  ]
+}
