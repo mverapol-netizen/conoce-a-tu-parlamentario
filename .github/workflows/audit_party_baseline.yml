@@ -1,0 +1,45 @@
+name: Audit party baseline
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/audit_party_baseline.py"
+      - "data/legislative/2026/affiliations/election_baseline_2025.csv"
+      - "data/legislative/2026/affiliations/affiliation_manual_events.csv"
+      - ".github/workflows/audit_party_baseline.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Audit electoral slot versus current party
+        run: python scripts/audit_party_baseline.py
+      - name: Persist audit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/affiliations/party_baseline_audit.csv \
+                  data/legislative/2026/affiliations/party_baseline_audit_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No party-baseline audit changes"
+          else
+            git commit -m "Audita línea base partidaria 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
