@@ -31,7 +31,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y antiword
+
+      - name: Install Python dependencies
         run: pip install requests beautifulsoup4 pypdf python-docx
 
       - name: Sync project texts
