@@ -1,36 +1,35 @@
 {
   "projects": 496,
-  "corpus_rows": 495,
-  "refreshed_this_run": 495,
-  "reused_this_run": 0,
+  "corpus_rows": 496,
+  "refreshed_this_run": 2,
+  "reused_this_run": 493,
   "no_candidate_documents": [],
   "quality": {
-    "utilizable": 8,
-    "rica": 485,
-    "escasa": 1,
+    "utilizable": 9,
+    "rica": 486,
     "sin_texto": 1
   },
   "formats": {
     "application/pdf": 459,
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 35,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 36,
     "application/msword": 1
   },
   "by_origin": {
     "parlamentario": {
       "projects": 452,
-      "texts": 451,
-      "rich_or_usable": 450
+      "texts": 452,
+      "rich_or_usable": 451
     },
     "ejecutivo": {
       "projects": 44,
       "texts": 44,
-      "rich_or_usable": 43
+      "rich_or_usable": 44
     }
   },
   "errors": [
     {
-      "boletin": "18131-06",
-      "error": "525 Server Error: <none> for url: https://www.camara.cl/verDoc.aspx?prmID=18360&prmTIPO=INICIATIVA"
+      "boletin": "18459-05",
+      "error": "[Errno 2] No such file or directory: 'antiword'"
     }
   ]
 }
