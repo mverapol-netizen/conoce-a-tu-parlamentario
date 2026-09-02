@@ -1,0 +1,31 @@
+{
+  "source_url": "https://www.servel.cl/wp-content/uploads/2025/11/PRELIMINARES_DIPUTADOS.zip",
+  "servel_elected_unique": 155,
+  "current_profiles": 155,
+  "matched": 155,
+  "high_confidence_matches": 137,
+  "medium_confidence_matches": 18,
+  "ambiguous": [],
+  "unmatched_profiles": [],
+  "unused_servel_elected": [],
+  "electoral_party_counts": {
+    "EVOLUCION POLITICA": 2,
+    "FEDERACION REGIONALISTA VERDE SOCIAL": 2,
+    "FRENTE AMPLIO": 17,
+    "INDEPENDIENTES": 1,
+    "PARTIDO ACCIÓN HUMANISTA": 1,
+    "PARTIDO COMUNISTA DE CHILE": 11,
+    "PARTIDO DE LA GENTE": 14,
+    "PARTIDO DEMOCRATA CRISTIANO": 8,
+    "PARTIDO DEMOCRATAS CHILE": 1,
+    "PARTIDO LIBERAL DE CHILE": 3,
+    "PARTIDO NACIONAL LIBERTARIO": 8,
+    "PARTIDO POR LA DEMOCRACIA": 9,
+    "PARTIDO RADICAL DE CHILE": 2,
+    "PARTIDO REPUBLICANO DE CHILE": 31,
+    "PARTIDO SOCIAL CRISTIANO": 3,
+    "PARTIDO SOCIALISTA DE CHILE": 11,
+    "RENOVACION NACIONAL": 13,
+    "UNION DEMOCRATA INDEPENDIENTE": 18
+  }
+}
