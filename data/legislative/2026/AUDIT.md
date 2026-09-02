@@ -2,8 +2,8 @@
 
 **Estado:** PASS
 
-- Proyectos: 496
-- Eventos de tramitación: 946 (100.0% de proyectos con eventos)
+- Proyectos: 497
+- Eventos de tramitación: 947 (100.0% de proyectos con eventos)
 - Eventos que mencionan comisión: 160
 - Filas de materias oficiales: 0
 - Mociones parlamentarias: 452
