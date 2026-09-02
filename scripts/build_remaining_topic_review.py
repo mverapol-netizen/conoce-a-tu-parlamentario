@@ -8,7 +8,7 @@ TOPICS = ROOT / "data" / "legislative" / "2026" / "topics"
 SRC = TOPICS / "topic_review_queue_remaining.csv"
 OUT = TOPICS / "topic_review_remaining_compact.csv"
 
-
+# Cola compacta para revisión semántica humana/modelo de los casos pendientes.
 def main() -> None:
     with SRC.open("r", encoding="utf-8-sig", newline="") as handle:
         rows = list(csv.DictReader(handle))
