@@ -113,6 +113,10 @@
     };
   };
 
+  const legislativeUrl = (name, profile) => profile.id
+    ? `ficha.html?id=${encodeURIComponent(profile.id)}`
+    : `ficha.html?nombre=${encodeURIComponent(name)}`;
+
   const renderPortrait = (name, profile) => {
     const fallback = `<div class="avatar representative-fallback" aria-hidden="true">${escapeHtml(initials(name))}</div>`;
     if (!profile.photo) return fallback;
@@ -126,6 +130,7 @@
 
   const renderContact = (name, profile, commune) => {
     const actions = [];
+    actions.push(`<a class="profile-contact-link is-primary" href="${escapeHtml(legislativeUrl(name, profile))}">Ver ficha legislativa</a>`);
     if (profile.email) {
       actions.push(`<a class="profile-contact-link" href="mailto:${escapeHtml(profile.email)}">Correo electrónico</a>`);
     }
@@ -133,7 +138,7 @@
       actions.push(`<a class="profile-contact-link" href="tel:${escapeHtml(profile.phone)}">${escapeHtml(profile.phone)}</a>`);
     }
     if (profile.contactUrl || profile.profileUrl) {
-      actions.push(`<a class="profile-contact-link is-primary" href="${escapeHtml(profile.contactUrl || profile.profileUrl)}" target="_blank" rel="noopener">Ver ficha oficial</a>`);
+      actions.push(`<a class="profile-contact-link" href="${escapeHtml(profile.contactUrl || profile.profileUrl)}" target="_blank" rel="noopener">Ver ficha oficial</a>`);
     }
 
     const contactText = actions.length
