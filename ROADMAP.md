@@ -79,7 +79,14 @@
 - [x] Alinear espacios 2D mediante Procrustes y comprobar que D2 es estable al cambiar `lop`, pero bastante más sensible al balanceo por boletín.
 - [x] Adoptar provisionalmente **1D como modelo espacial principal parsimonioso** y mantener D2 únicamente como diagnóstico exploratorio secundario.
 - [x] Documentar resultados experimentales en `docs/RESULTADOS_WNOMINATE_V0_1.md` y mantenerlos fuera de la ficha pública.
-- [ ] Auditar **estabilidad temporal** de D1 en subperíodos comparables antes de cualquier uso público.
+- [x] Ejecutar una primera prueba exploratoria de mitades temporales; conservarla como evidencia descriptiva porque usa `trials = 1` y las agendas no están balanceadas.
+- [x] Auditar literatura y experiencia previa y fijar el contrato prospectivo multimétodo en `docs/CONTRATO_MODELOS_ROLLCALL_V0_2.md`.
+- [ ] Reestimar W-NOMINATE 1D con incertidumbre válida, participación relativa y remuestreo agrupado por boletín.
+- [ ] Estimar IRT bayesiano 2PL 1D como modelo inferencial principal y comprobar convergencia de cadenas.
+- [ ] Estimar Optimal Classification como robustez no paramétrica.
+- [ ] Implementar B-Call como diagnóstico separado de posición y variabilidad, sin denominar D2 disciplina partidaria.
+- [ ] Auditar efecto arco de D2 mediante la relación cuadrática entre D1 y D2 y estudiar los residuos.
+- [ ] Separar fiabilidad por partición, ventanas cronológicas balanceadas y un modelo dinámico conjunto para cerrar la **estabilidad temporal** de D1.
 - [ ] Validar sustantivamente la orientación e interpretación de D1; no denominar automáticamente el signo izquierda/derecha, gobierno/oposición o ideología.
 - [ ] Decidir la forma pública eventual de la posición espacial: coordenada, percentil, banda robusta, visualización sin ranking o ninguna.
 - [x] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria y actualizarlas semanalmente después del sync legislativo.
