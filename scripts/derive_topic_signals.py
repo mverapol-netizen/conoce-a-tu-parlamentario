@@ -25,8 +25,10 @@ def norm(value: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
-# El sufijo de los boletines corresponde al código institucional de DESTINACIÓN.
-# Se conserva como señal separada de las remisiones observadas en la tramitación.
+# El sufijo de los boletines corresponde a un código institucional de
+# destinación. La nomenclatura no es idéntica entre ambas cámaras, por lo que
+# conservamos nombres canónicos orientados al análisis y registramos siempre
+# la cámara de origen en la tabla de señales.
 DESTINATION_CODE_TO_COMMISSION = {
     "01": "Agricultura, Silvicultura y Desarrollo Rural",
     "02": "Defensa Nacional",
@@ -58,6 +60,9 @@ DESTINATION_CODE_TO_COMMISSION = {
     "33": "Recursos Hídricos y Desertificación",
     "34": "Mujeres y Equidad de Género",
     "35": "Personas Mayores y Discapacidad",
+    # Códigos observados en proyectos originados en el Senado.
+    "36": "Familia, Infancia y Adolescencia",
+    "37": "Cultura, Patrimonio, Artes, Deportes y Recreación",
 }
 
 COMMISSION_ALIASES = {
@@ -113,6 +118,10 @@ COMMISSION_ALIASES = {
         "emergencia, desastres y bomberos",
     ],
     "Cultura, Artes y Comunicaciones": ["cultura, artes y comunicaciones"],
+    "Cultura, Patrimonio, Artes, Deportes y Recreación": [
+        "cultura, patrimonio, artes, deportes y recreacion",
+        "cultura, patrimonio, artes, deporte y recreacion",
+    ],
     "Seguridad Ciudadana": ["seguridad ciudadana"],
     "Zonas Extremas y Antártica Chilena": ["zonas extremas y antartica chilena"],
     "Deportes y Recreación": ["deportes y recreacion"],
@@ -149,6 +158,7 @@ COMMISSION_TOPIC = {
     "Pesca, Acuicultura e Intereses Marítimos": "Pesca y acuicultura",
     "Emergencias, Desastres y Bomberos": "Emergencias y desastres",
     "Cultura, Artes y Comunicaciones": "Cultura y comunicaciones",
+    "Cultura, Patrimonio, Artes, Deportes y Recreación": "Cultura, patrimonio y deporte",
     "Seguridad Ciudadana": "Seguridad",
     "Zonas Extremas y Antártica Chilena": "Territorio y zonas extremas",
     "Deportes y Recreación": "Deportes",
@@ -194,6 +204,11 @@ def clean_raw_commission(value: str) -> str:
 
 
 def origin_commission_from_event(substage: str) -> str:
+    # Solo una Cuenta de proyecto constituye evidencia de comisión inicial.
+    # Frases como "Primer informe de comisión. Pasa a Comisión de Hacienda"
+    # representan una remisión posterior y pertenecen a la trayectoria.
+    if not re.search(r"\bcuenta\s+de\s+proyecto\b", substage or "", re.I):
+        return ""
     match = re.search(r"pasa\s+a\s+comisi[oó]n\s+de\s+(.+)$", substage or "", re.I)
     if not match:
         return ""
@@ -291,6 +306,7 @@ def main() -> None:
             mismatches.append({
                 "boletin": bill,
                 "destination_code": destination_code,
+                "camara_origen": project.get("camara_origen", ""),
                 "suffix_commission": suffix_origin,
                 "explicit_event_commission": explicit_origin,
                 "event": origin_evidence,
@@ -372,6 +388,7 @@ def main() -> None:
             "boletin": bill,
             "titulo": project.get("titulo", ""),
             "origen_iniciativa": project.get("origen_iniciativa", ""),
+            "camara_origen": project.get("camara_origen", ""),
             "codigo_destinacion": destination_code,
             "comision_destino_sufijo": suffix_origin,
             "comision_origen_evento": explicit_origin,
@@ -402,7 +419,7 @@ def main() -> None:
         writer.writerows(commission_rows)
 
     signal_fields = [
-        "boletin", "titulo", "origen_iniciativa", "codigo_destinacion",
+        "boletin", "titulo", "origen_iniciativa", "camara_origen", "codigo_destinacion",
         "comision_destino_sufijo", "comision_origen_evento", "comision_origen_proxy",
         "origin_proxy_source", "origin_proxy_mismatch", "tema_proxy_origen",
         "materia_pagina", "materias_oficiales", "comisiones_tramitacion",
