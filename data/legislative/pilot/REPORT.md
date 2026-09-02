@@ -1,34 +1,38 @@
 # Piloto legislativo 2026
 
 Generado: 2026-09-02
-Período observado: desde 2026-03-11.
 
 ## Resultado
 
-- Proyectos piloto: **10**.
-- Mociones: **5**; mensajes: **5**.
-- Materias oficiales: **0** relaciones proyecto–materia.
-- Autorías: **5** relaciones proyecto–autor.
-- Votaciones verificadas de Sala: **0**.
-- Votos individuales: **0**.
+- 10 proyectos: {'parlamentario': 5, 'ejecutivo': 5}
+- Materias oficiales asociadas: **0** (catálogo oficial disponible: 8494)
+- Autorías: **5**
+- Votaciones de Sala verificadas: **6**
+- Votos individuales: **930**
 
 ## Criterio de Sala
 
-No se infiere por descripción. Una votación entra en `rollcalls.csv` únicamente si su ID aparece dentro de una sesión retornada por `WSSala.retornarSesionesXAnno`.
+Cada roll call debe aparecer en la API anual, estar asociado al proyecto y resolver a una página institucional `Sala de Sesiones > Detalle de Votación` del mismo boletín y fecha.
 
-## Hallazgo sobre tramitación
+## Votos individuales
 
-El contrato abierto `ProyectoLey` entrega iniciativa, Cámara de origen, autores, ministerios, materias y votaciones; las votaciones agregan trámite constitucional y reglamentario. No expone por sí solo una cronología completa comisión por comisión. Esa reconstrucción se resolverá como una capa adicional sin contaminar las tablas primarias.
+Cada roll call validado consulta `retornarVotacionDetalle`, que entrega la colección nominal de diputados y su opción de voto.
 
-## Boletines del piloto
+## Materias
+
+La Cámara expone un catálogo de 8494 materias, pero la asociación `ProyectoLey/Materias` vino vacía para los diez casos piloto. El CSV conserva el esquema y cero filas; no se fabrican materias.
+
+## Pendiente
+
+Reconstruir el curso comisión por comisión como capa separada desde el historial público del boletín.
 
 - 18131-06 · parlamentario · Modifica la ley Nº 18.575, orgánica constitucional de Bases Generales de la Administración del Estado, para incorporar una nueva infracción al principio de probidad administrativa, relacionada con la contratación o nombramiento de personas inhabilitadas para trabajar con niños, niñas o adolescentes
 - 18132-04 · parlamentario · Modifica la ley Nº 20.370, General de Educación, para sancionar a padres y apoderados cuyos hijos o pupilos participen en hechos constitutivos de acoso escolar
 - 18133-07 · parlamentario · Modifica la Carta Fundamental para asignar a las Fuerzas Armadas un rol coadyuvante en el resguardo del orden público y la seguridad interior del país
 - 18135-06 · parlamentario · Modifica la ley N° 18.575, orgánica constitucional de Bases Generales de la Administración del Estado, para resguardar la soberanía nacional en la ejecución de políticas públicas
-- 18136-11 · parlamentario · Modifica el Código Sanitario para exigir que el etiquetado de medicamentos y vacunas contenga información sobre precauciones y efectos adversos
-- 18137-05 · ejecutivo · Adopta medidas transitorias para contener el precio del kerosene doméstico en el contexto de la emergencia energética internacional, y otras medidas que indica
-- 18155-25 · ejecutivo · Modifica el Código Penal para establecer nuevas agravantes por delitos cometidos contra la comunidad educativa y en recintos educacionales
-- 18156-04 · ejecutivo · Establece medidas de seguridad, orden y respeto para la comunidad educativa
+- 18157-33 · parlamentario · Prorroga el plazo para la regularización e inscripción de derechos de aprovechamiento de aguas hasta el año 2030
 - 18178-10 · ejecutivo · Aprueba el Acuerdo entre el Gobierno de la República de Chile y el Gobierno de la República de Tayikistán sobre la exención mutua del requisito de visa para titulares de pasaportes diplomáticos oficiales y de servicio, suscrito en Dushanbe, República de Tayikistán, el 9 de marzo de 2023
-- 18208-25 · ejecutivo · Modifica el Código Procesal Penal, para regular la continuidad del juicio oral y permitir la dictación de sentencia definitiva ante la incomparecencia injustificada del acusado
+- 18215-10 · ejecutivo · Acuerdo de mutua exención del requisito de visa para los titulares de pasaportes diplomáticos, especiales y oficiales entre el Gobierno de la República de Chile y el Gobierno del Estado de Catar
+- 18232-25 · ejecutivo · Modifica la ley N° 21.659, sobre seguridad privada, para aumentar el plazo de presentación y pronunciamiento sobre los estudios de seguridad que dispone, y extiende la prórroga de vigencia de la última autorización del personal de seguridad privada que indica
+- 18256-10 · ejecutivo · Aprueba el Acuerdo entre la República de Chile y la República Helénica sobre el empleo remunerado de dependientes de miembros de una misión diplomática o representación consular, suscrito en Santiago, el 24 de abril de 2024
+- 18257-10 · ejecutivo · Aprueba el Acuerdo general sobre los privilegios e inmunidades de la Organización Internacional de Policía Criminal-INTERPOL, aprobado en Marrakech, Marruecos, el 24 de noviembre de 2025

@@ -1,1 +1,931 @@
 ﻿vote_id,diputado_id,diputado_nombre,opcion,opcion_codigo
+89072,803,René Alinco Bustos,No Vota,4
+89072,815,Sergio Bobadilla Muñoz,Afirmativo,1
+89072,843,René Manuel García García,Dispensado,3
+89072,872,Jaime Mulet Martínez,No Vota,4
+89072,915,Germán Verdugo Soto,Afirmativo,1
+89072,986,Marcela Hernando Pérez,Afirmativo,1
+89072,1009,Jorge Alessandri Vergara,No Vota,4
+89072,1012,Boris Barrera Moreno,Afirmativo,1
+89072,1013,Alejandro Bernales Maldonado,No Vota,4
+89072,1015,Jorge Brito Hasbún,Afirmativo,1
+89072,1017,Álvaro Carter Fernández,Afirmativo,1
+89072,1021,Andrés Celis Montt,No Vota,4
+89072,1025,Catalina Del Real Mihovilovic,Afirmativo,1
+89072,1028,Eduardo Durán Salinas,Afirmativo,1
+89072,1038,Marcos Ilabaca Cerda,No Vota,4
+89072,1039,Pamela Jiles Moreno,No Vota,4
+89072,1044,Raúl Leiva Carvajal,No Vota,4
+89072,1054,Francesca Muñoz González,Afirmativo,1
+89072,1056,Emilia Nuyado Ancapichun,Afirmativo,1
+89072,1059,Ximena Ossandón Irarrázabal,Dispensado,3
+89072,1060,Luis Pardo Sáinz,Afirmativo,1
+89072,1061,Andrea Parra Sauterel,Afirmativo,1
+89072,1062,Joanna Pérez Olea,Afirmativo,1
+89072,1065,Guillermo Ramírez Diez,No Vota,4
+89072,1073,Juan Santana Castillo,Afirmativo,1
+89072,1074,Marisela Santibáñez Novoa,Afirmativo,1
+89072,1075,Diego Schalper Sepúlveda,No Vota,4
+89072,1077,Raúl Soto Mardones,Afirmativo,1
+89072,1082,Cristóbal Urruticoechea Ríos,No Vota,4
+89072,1086,Gonzalo Winter Etcheberry,Afirmativo,1
+89072,1087,Gael Yeomans Araya,Afirmativo,1
+89072,1099,Jaime Araya Guerrero,Afirmativo,1
+89072,1100,Cristián Araya Lerdo de Tejada,Afirmativo,1
+89072,1102,Roberto Arroyo Muñoz,Afirmativo,1
+89072,1104,Chiara Barchiesi Chávez,Afirmativo,1
+89072,1105,Héctor Barría Angulo,No Vota,4
+89072,1107,María Francisca Bello Campos,No Vota,4
+89072,1108,Juan Carlos Beltrán Silva,Afirmativo,1
+89072,1110,Carlos Bianchi Chelech,No Vota,4
+89072,1114,Félix Bugueño Sotelo,Afirmativo,1
+89072,1116,Felipe Camaño Cárdenas,Afirmativo,1
+89072,1117,Nathalie Castillo Rojas,No Vota,4
+89072,1119,Sara Concha Smith,Afirmativo,1
+89072,1122,Luis Alberto Cuello Peña y Lillo,No Vota,4
+89072,1127,Lorena Fries Monleón,Afirmativo,1
+89072,1128,Ana María Gazmuri Vieira,Afirmativo,1
+89072,1131,Mauro González Villarroel,No Vota,4
+89072,1132,Jorge Guzmán Zepeda,Afirmativo,1
+89072,1133,Juan Irarrázaval Rossel,Afirmativo,1
+89072,1140,Daniel Lilayu Vivanco,Afirmativo,1
+89072,1141,Luis Malla Valenzuela,Afirmativo,1
+89072,1142,Daniel Manouchehri Lobos,Afirmativo,1
+89072,1143,Cristóbal Martínez Ramírez,Afirmativo,1
+89072,1146,José Carlos Meza Pereira,Afirmativo,1
+89072,1148,Javiera Morales Alvarado,No Vota,4
+89072,1150,Benjamín Moreno Bascur,Afirmativo,1
+89072,1152,Gloria Naveillan Arriagada,Afirmativo,1
+89072,1153,Coca Ericka Ñanco Vásquez,No Vota,4
+89072,1157,Marlene Pérez Cartes,Afirmativo,1
+89072,1159,Lorena Pizarro Sierra,Afirmativo,1
+89072,1165,Agustín Romero Leiva,No Vota,4
+89072,1166,Natalia Romero Talguia,Afirmativo,1
+89072,1170,Luis Sánchez Ossa,Afirmativo,1
+89072,1171,Emilia Schneider Videla,Afirmativo,1
+89072,1172,Stephan Schubert Rubio,Afirmativo,1
+89072,1173,Daniela Serrano Salazar,Afirmativo,1
+89072,1174,Marco Antonio Sulantay Olivares,Afirmativo,1
+89072,1175,Cristián Tapia Ramos,Afirmativo,1
+89072,1176,Hotuiti Teao Drago,Afirmativo,1
+89072,1177,Carolina Tello Rojas,Afirmativo,1
+89072,1178,Héctor Ulloa Aguilera,Afirmativo,1
+89072,1180,Consuelo Veloso Ávila,Afirmativo,1
+89072,1181,Nelson Venegas Salazar,No Vota,4
+89072,1182,Sebastián Videla Castillo,Afirmativo,1
+89072,1183,Flor Weisse Novoa,Afirmativo,1
+89072,1184,Roberto Celedón Fernández,Afirmativo,1
+89072,1186,Ignacio Achurra Díaz,Afirmativo,1
+89072,1187,Carlo Arqueros Pizarro,Afirmativo,1
+89072,1188,Marcos Barraza Gómez,Afirmativo,1
+89072,1189,Jaime Bassa Mercado,Afirmativo,1
+89072,1190,Enrique Bassaletti Riess,Afirmativo,1
+89072,1191,Valentina Becerra Peña,Afirmativo,1
+89072,1192,Lilian Betancurt Delgado,Afirmativo,1
+89072,1193,Patricio Briones Moller,Afirmativo,1
+89072,1194,Daniel Bustos Leal,Afirmativo,1
+89072,1195,Carlos Carvajal Gallardo,Afirmativo,1
+89072,1196,Priscilla Castillo Gerli,Afirmativo,1
+89072,1197,Carlos Chandía Alarcón,Afirmativo,1
+89072,1198,Paz Charpentier Rajcevich,Afirmativo,1
+89072,1199,Jaime Coloma Álamos,Afirmativo,1
+89072,1200,Cristian Contreras Radovic,Afirmativo,1
+89072,1201,Flor Contreras Vivallo,Afirmativo,1
+89072,1202,Eduardo Cretton Rebolledo,Afirmativo,1
+89072,1203,Sebastián Cristoffanini Jaraquemada,Afirmativo,1
+89072,1204,Francisco Crisóstomo Llanos,Afirmativo,1
+89072,1205,Carlos Cuadrado Prats,Afirmativo,1
+89072,1206,Carolina Cucumides Calderón,Afirmativo,1
+89072,1207,Valentina Cáceres Monsálvez,Afirmativo,1
+89072,1208,Jorge Díaz Ibarra,Afirmativo,1
+89072,1209,Matías Fernández Hartwig,Afirmativo,1
+89072,1210,Gustavo Gatica Villarroel,No Vota,4
+89072,1211,Sofía González Cortés,Afirmativo,1
+89072,1212,Erich Grohs Marín,Afirmativo,1
+89072,1213,Irací Hassler Jacob,Afirmativo,1
+89072,1214,Constanza Hube Portus,Afirmativo,1
+89072,1215,Álvaro Jofré Cáceres,Afirmativo,1
+89072,1216,Stephanie Jéldrez Ortiz,Afirmativo,1
+89072,1217,Pier Karlezi Hazleby,Afirmativo,1
+89072,1218,José Antonio Kast Adriasola,Afirmativo,1
+89072,1219,Tomás Kast Sommerhoff,Dispensado,3
+89072,1220,Leandro Kunstmann Collado,Afirmativo,1
+89072,1221,Benjamín Lorca Inzunza,Afirmativo,1
+89072,1222,Andrea Macías Palma,No Vota,4
+89072,1223,Hans Marowski Cuevas,Afirmativo,1
+89072,1224,Cristian Mella Andaur,Afirmativo,1
+89072,1225,Cristian Menchaca Pinochet,Afirmativo,1
+89072,1226,José Montalva Feuerhake,Afirmativo,1
+89072,1227,Claudia Mora Vega,Afirmativo,1
+89072,1228,Paulina Muñoz Minte,Afirmativo,1
+89072,1229,Javier Muñoz Riquelme,Afirmativo,1
+89072,1230,Alex Nahuelquin Nahuelquin,Afirmativo,1
+89072,1231,Ximena Naranjo Pinto,Afirmativo,1
+89072,1232,Cristian Neira Martínez,Afirmativo,1
+89072,1233,Ricardo Neumann Bertín,Afirmativo,1
+89072,1234,Mario Olavarría Rodríguez,Afirmativo,1
+89072,1235,Javier Olivares Avendaño,Afirmativo,1
+89072,1236,Paula Olmos Contreras,Afirmativo,1
+89072,1237,Francisco Orrego Gutiérrez,Afirmativo,1
+89072,1238,Álvaro Ortiz Vera,Afirmativo,1
+89072,1239,Fabián Ossandón Briceño,Afirmativo,1
+89072,1240,Zandra Parisi Fernández,Afirmativo,1
+89072,1241,Patricio Pinilla Valencia,Afirmativo,1
+89072,1242,Rodrigo Ramírez Parra,Afirmativo,1
+89072,1243,Tamara Ramírez Ramírez,Afirmativo,1
+89072,1244,Claudia Reyes Larenas,Afirmativo,1
+89072,1245,Alejandro Riquelme Ducci,Afirmativo,1
+89072,1246,José Antonio Rivas Villalobos,No Vota,4
+89072,1247,Javiera Rodríguez Pascual,Afirmativo,1
+89072,1248,Felipe Ross Correa,Afirmativo,1
+89072,1249,Omar Sabat Guzmán,Afirmativo,1
+89072,1250,Bernardo Salinas Maya,Afirmativo,1
+89072,1251,Macarena Santelices Cañas,Afirmativo,1
+89072,1252,Constanza Schonhaut Soto,Afirmativo,1
+89072,1253,Fernando Ugarte Tejeda,Afirmativo,1
+89072,1254,Ignacio Urcullú Clèment-Lund,Afirmativo,1
+89072,1255,Eileen Urqueta Rojas,Afirmativo,1
+89072,1256,Tatiana Urrutia Herrera,Afirmativo,1
+89072,1257,Alejandra Valdebenito Torres,No Vota,4
+89072,1258,Guillermo Valdés Carmona,Afirmativo,1
+89072,1259,Juan Marcelo Valenzuela Henríquez,Afirmativo,1
+89072,1260,César Valenzuela Maass,Afirmativo,1
+89072,1261,Daniel Valenzuela Salazar,Afirmativo,1
+89072,1262,Diego Vergara Rodríguez,Afirmativo,1
+89072,1263,Sebastián Zamora Soto,Afirmativo,1
+89072,1264,Fernando Zamorano Peralta,Afirmativo,1
+89070,803,René Alinco Bustos,No Vota,4
+89070,815,Sergio Bobadilla Muñoz,Afirmativo,1
+89070,843,René Manuel García García,Afirmativo,1
+89070,872,Jaime Mulet Martínez,No Vota,4
+89070,915,Germán Verdugo Soto,Afirmativo,1
+89070,986,Marcela Hernando Pérez,Afirmativo,1
+89070,1009,Jorge Alessandri Vergara,No Vota,4
+89070,1012,Boris Barrera Moreno,Afirmativo,1
+89070,1013,Alejandro Bernales Maldonado,No Vota,4
+89070,1015,Jorge Brito Hasbún,Afirmativo,1
+89070,1017,Álvaro Carter Fernández,Afirmativo,1
+89070,1021,Andrés Celis Montt,No Vota,4
+89070,1025,Catalina Del Real Mihovilovic,Afirmativo,1
+89070,1028,Eduardo Durán Salinas,Afirmativo,1
+89070,1038,Marcos Ilabaca Cerda,No Vota,4
+89070,1039,Pamela Jiles Moreno,No Vota,4
+89070,1044,Raúl Leiva Carvajal,No Vota,4
+89070,1054,Francesca Muñoz González,Afirmativo,1
+89070,1056,Emilia Nuyado Ancapichun,Afirmativo,1
+89070,1059,Ximena Ossandón Irarrázabal,Afirmativo,1
+89070,1060,Luis Pardo Sáinz,Afirmativo,1
+89070,1061,Andrea Parra Sauterel,Afirmativo,1
+89070,1062,Joanna Pérez Olea,Afirmativo,1
+89070,1065,Guillermo Ramírez Diez,No Vota,4
+89070,1073,Juan Santana Castillo,Afirmativo,1
+89070,1074,Marisela Santibáñez Novoa,Afirmativo,1
+89070,1075,Diego Schalper Sepúlveda,No Vota,4
+89070,1077,Raúl Soto Mardones,Afirmativo,1
+89070,1082,Cristóbal Urruticoechea Ríos,No Vota,4
+89070,1086,Gonzalo Winter Etcheberry,Afirmativo,1
+89070,1087,Gael Yeomans Araya,Afirmativo,1
+89070,1099,Jaime Araya Guerrero,Afirmativo,1
+89070,1100,Cristián Araya Lerdo de Tejada,Afirmativo,1
+89070,1102,Roberto Arroyo Muñoz,Afirmativo,1
+89070,1104,Chiara Barchiesi Chávez,Afirmativo,1
+89070,1105,Héctor Barría Angulo,No Vota,4
+89070,1107,María Francisca Bello Campos,No Vota,4
+89070,1108,Juan Carlos Beltrán Silva,Afirmativo,1
+89070,1110,Carlos Bianchi Chelech,No Vota,4
+89070,1114,Félix Bugueño Sotelo,Afirmativo,1
+89070,1116,Felipe Camaño Cárdenas,Afirmativo,1
+89070,1117,Nathalie Castillo Rojas,No Vota,4
+89070,1119,Sara Concha Smith,Afirmativo,1
+89070,1122,Luis Alberto Cuello Peña y Lillo,No Vota,4
+89070,1127,Lorena Fries Monleón,Afirmativo,1
+89070,1128,Ana María Gazmuri Vieira,Afirmativo,1
+89070,1131,Mauro González Villarroel,No Vota,4
+89070,1132,Jorge Guzmán Zepeda,Afirmativo,1
+89070,1133,Juan Irarrázaval Rossel,Afirmativo,1
+89070,1140,Daniel Lilayu Vivanco,Afirmativo,1
+89070,1141,Luis Malla Valenzuela,Afirmativo,1
+89070,1142,Daniel Manouchehri Lobos,Afirmativo,1
+89070,1143,Cristóbal Martínez Ramírez,Afirmativo,1
+89070,1146,José Carlos Meza Pereira,Afirmativo,1
+89070,1148,Javiera Morales Alvarado,No Vota,4
+89070,1150,Benjamín Moreno Bascur,Afirmativo,1
+89070,1152,Gloria Naveillan Arriagada,Afirmativo,1
+89070,1153,Coca Ericka Ñanco Vásquez,No Vota,4
+89070,1157,Marlene Pérez Cartes,Afirmativo,1
+89070,1159,Lorena Pizarro Sierra,Afirmativo,1
+89070,1165,Agustín Romero Leiva,No Vota,4
+89070,1166,Natalia Romero Talguia,Afirmativo,1
+89070,1170,Luis Sánchez Ossa,Afirmativo,1
+89070,1171,Emilia Schneider Videla,Afirmativo,1
+89070,1172,Stephan Schubert Rubio,Afirmativo,1
+89070,1173,Daniela Serrano Salazar,Afirmativo,1
+89070,1174,Marco Antonio Sulantay Olivares,Afirmativo,1
+89070,1175,Cristián Tapia Ramos,Afirmativo,1
+89070,1176,Hotuiti Teao Drago,Afirmativo,1
+89070,1177,Carolina Tello Rojas,Afirmativo,1
+89070,1178,Héctor Ulloa Aguilera,Afirmativo,1
+89070,1180,Consuelo Veloso Ávila,Afirmativo,1
+89070,1181,Nelson Venegas Salazar,No Vota,4
+89070,1182,Sebastián Videla Castillo,Afirmativo,1
+89070,1183,Flor Weisse Novoa,Afirmativo,1
+89070,1184,Roberto Celedón Fernández,Afirmativo,1
+89070,1186,Ignacio Achurra Díaz,Afirmativo,1
+89070,1187,Carlo Arqueros Pizarro,Afirmativo,1
+89070,1188,Marcos Barraza Gómez,Afirmativo,1
+89070,1189,Jaime Bassa Mercado,Afirmativo,1
+89070,1190,Enrique Bassaletti Riess,Afirmativo,1
+89070,1191,Valentina Becerra Peña,No Vota,4
+89070,1192,Lilian Betancurt Delgado,Afirmativo,1
+89070,1193,Patricio Briones Moller,Afirmativo,1
+89070,1194,Daniel Bustos Leal,Afirmativo,1
+89070,1195,Carlos Carvajal Gallardo,Afirmativo,1
+89070,1196,Priscilla Castillo Gerli,Afirmativo,1
+89070,1197,Carlos Chandía Alarcón,Afirmativo,1
+89070,1198,Paz Charpentier Rajcevich,Afirmativo,1
+89070,1199,Jaime Coloma Álamos,Afirmativo,1
+89070,1200,Cristian Contreras Radovic,Afirmativo,1
+89070,1201,Flor Contreras Vivallo,Afirmativo,1
+89070,1202,Eduardo Cretton Rebolledo,Afirmativo,1
+89070,1203,Sebastián Cristoffanini Jaraquemada,Afirmativo,1
+89070,1204,Francisco Crisóstomo Llanos,Afirmativo,1
+89070,1205,Carlos Cuadrado Prats,Afirmativo,1
+89070,1206,Carolina Cucumides Calderón,Afirmativo,1
+89070,1207,Valentina Cáceres Monsálvez,Afirmativo,1
+89070,1208,Jorge Díaz Ibarra,Afirmativo,1
+89070,1209,Matías Fernández Hartwig,Afirmativo,1
+89070,1210,Gustavo Gatica Villarroel,No Vota,4
+89070,1211,Sofía González Cortés,Afirmativo,1
+89070,1212,Erich Grohs Marín,Afirmativo,1
+89070,1213,Irací Hassler Jacob,Afirmativo,1
+89070,1214,Constanza Hube Portus,Afirmativo,1
+89070,1215,Álvaro Jofré Cáceres,Afirmativo,1
+89070,1216,Stephanie Jéldrez Ortiz,Afirmativo,1
+89070,1217,Pier Karlezi Hazleby,Afirmativo,1
+89070,1218,José Antonio Kast Adriasola,Afirmativo,1
+89070,1219,Tomás Kast Sommerhoff,Afirmativo,1
+89070,1220,Leandro Kunstmann Collado,Afirmativo,1
+89070,1221,Benjamín Lorca Inzunza,Afirmativo,1
+89070,1222,Andrea Macías Palma,No Vota,4
+89070,1223,Hans Marowski Cuevas,Afirmativo,1
+89070,1224,Cristian Mella Andaur,Afirmativo,1
+89070,1225,Cristian Menchaca Pinochet,Afirmativo,1
+89070,1226,José Montalva Feuerhake,Afirmativo,1
+89070,1227,Claudia Mora Vega,Afirmativo,1
+89070,1228,Paulina Muñoz Minte,Afirmativo,1
+89070,1229,Javier Muñoz Riquelme,Afirmativo,1
+89070,1230,Alex Nahuelquin Nahuelquin,Afirmativo,1
+89070,1231,Ximena Naranjo Pinto,Afirmativo,1
+89070,1232,Cristian Neira Martínez,Afirmativo,1
+89070,1233,Ricardo Neumann Bertín,Afirmativo,1
+89070,1234,Mario Olavarría Rodríguez,Afirmativo,1
+89070,1235,Javier Olivares Avendaño,Afirmativo,1
+89070,1236,Paula Olmos Contreras,Afirmativo,1
+89070,1237,Francisco Orrego Gutiérrez,Afirmativo,1
+89070,1238,Álvaro Ortiz Vera,Afirmativo,1
+89070,1239,Fabián Ossandón Briceño,Afirmativo,1
+89070,1240,Zandra Parisi Fernández,Afirmativo,1
+89070,1241,Patricio Pinilla Valencia,Afirmativo,1
+89070,1242,Rodrigo Ramírez Parra,Afirmativo,1
+89070,1243,Tamara Ramírez Ramírez,Afirmativo,1
+89070,1244,Claudia Reyes Larenas,Afirmativo,1
+89070,1245,Alejandro Riquelme Ducci,Afirmativo,1
+89070,1246,José Antonio Rivas Villalobos,No Vota,4
+89070,1247,Javiera Rodríguez Pascual,Afirmativo,1
+89070,1248,Felipe Ross Correa,Afirmativo,1
+89070,1249,Omar Sabat Guzmán,Afirmativo,1
+89070,1250,Bernardo Salinas Maya,Afirmativo,1
+89070,1251,Macarena Santelices Cañas,Afirmativo,1
+89070,1252,Constanza Schonhaut Soto,Afirmativo,1
+89070,1253,Fernando Ugarte Tejeda,Afirmativo,1
+89070,1254,Ignacio Urcullú Clèment-Lund,Afirmativo,1
+89070,1255,Eileen Urqueta Rojas,Afirmativo,1
+89070,1256,Tatiana Urrutia Herrera,Afirmativo,1
+89070,1257,Alejandra Valdebenito Torres,No Vota,4
+89070,1258,Guillermo Valdés Carmona,Afirmativo,1
+89070,1259,Juan Marcelo Valenzuela Henríquez,Afirmativo,1
+89070,1260,César Valenzuela Maass,Afirmativo,1
+89070,1261,Daniel Valenzuela Salazar,Afirmativo,1
+89070,1262,Diego Vergara Rodríguez,Afirmativo,1
+89070,1263,Sebastián Zamora Soto,Afirmativo,1
+89070,1264,Fernando Zamorano Peralta,Afirmativo,1
+88869,803,René Alinco Bustos,Abstención,2
+88869,815,Sergio Bobadilla Muñoz,Afirmativo,1
+88869,843,René Manuel García García,Afirmativo,1
+88869,872,Jaime Mulet Martínez,Afirmativo,1
+88869,915,Germán Verdugo Soto,Afirmativo,1
+88869,986,Marcela Hernando Pérez,Afirmativo,1
+88869,1009,Jorge Alessandri Vergara,No Vota,4
+88869,1012,Boris Barrera Moreno,Afirmativo,1
+88869,1013,Alejandro Bernales Maldonado,Afirmativo,1
+88869,1015,Jorge Brito Hasbún,Afirmativo,1
+88869,1017,Álvaro Carter Fernández,Afirmativo,1
+88869,1021,Andrés Celis Montt,Afirmativo,1
+88869,1025,Catalina Del Real Mihovilovic,Afirmativo,1
+88869,1028,Eduardo Durán Salinas,Afirmativo,1
+88869,1038,Marcos Ilabaca Cerda,Afirmativo,1
+88869,1039,Pamela Jiles Moreno,Afirmativo,1
+88869,1044,Raúl Leiva Carvajal,Afirmativo,1
+88869,1054,Francesca Muñoz González,No Vota,4
+88869,1056,Emilia Nuyado Ancapichun,Afirmativo,1
+88869,1059,Ximena Ossandón Irarrázabal,No Vota,4
+88869,1060,Luis Pardo Sáinz,Afirmativo,1
+88869,1061,Andrea Parra Sauterel,Afirmativo,1
+88869,1062,Joanna Pérez Olea,Afirmativo,1
+88869,1065,Guillermo Ramírez Diez,Afirmativo,1
+88869,1073,Juan Santana Castillo,Afirmativo,1
+88869,1074,Marisela Santibáñez Novoa,Afirmativo,1
+88869,1075,Diego Schalper Sepúlveda,Afirmativo,1
+88869,1077,Raúl Soto Mardones,Afirmativo,1
+88869,1082,Cristóbal Urruticoechea Ríos,Afirmativo,1
+88869,1086,Gonzalo Winter Etcheberry,Afirmativo,1
+88869,1087,Gael Yeomans Araya,Afirmativo,1
+88869,1099,Jaime Araya Guerrero,No Vota,4
+88869,1100,Cristián Araya Lerdo de Tejada,Afirmativo,1
+88869,1102,Roberto Arroyo Muñoz,Afirmativo,1
+88869,1104,Chiara Barchiesi Chávez,Afirmativo,1
+88869,1105,Héctor Barría Angulo,En Contra,0
+88869,1107,María Francisca Bello Campos,No Vota,4
+88869,1108,Juan Carlos Beltrán Silva,Afirmativo,1
+88869,1110,Carlos Bianchi Chelech,Afirmativo,1
+88869,1114,Félix Bugueño Sotelo,Afirmativo,1
+88869,1116,Felipe Camaño Cárdenas,Afirmativo,1
+88869,1117,Nathalie Castillo Rojas,Afirmativo,1
+88869,1119,Sara Concha Smith,Afirmativo,1
+88869,1122,Luis Alberto Cuello Peña y Lillo,Afirmativo,1
+88869,1127,Lorena Fries Monleón,Afirmativo,1
+88869,1128,Ana María Gazmuri Vieira,Afirmativo,1
+88869,1131,Mauro González Villarroel,Afirmativo,1
+88869,1132,Jorge Guzmán Zepeda,Afirmativo,1
+88869,1133,Juan Irarrázaval Rossel,Afirmativo,1
+88869,1140,Daniel Lilayu Vivanco,Afirmativo,1
+88869,1141,Luis Malla Valenzuela,Afirmativo,1
+88869,1142,Daniel Manouchehri Lobos,Afirmativo,1
+88869,1143,Cristóbal Martínez Ramírez,Afirmativo,1
+88869,1146,José Carlos Meza Pereira,Afirmativo,1
+88869,1148,Javiera Morales Alvarado,No Vota,4
+88869,1150,Benjamín Moreno Bascur,Afirmativo,1
+88869,1152,Gloria Naveillan Arriagada,Afirmativo,1
+88869,1153,Coca Ericka Ñanco Vásquez,Afirmativo,1
+88869,1157,Marlene Pérez Cartes,Afirmativo,1
+88869,1159,Lorena Pizarro Sierra,Afirmativo,1
+88869,1165,Agustín Romero Leiva,Afirmativo,1
+88869,1166,Natalia Romero Talguia,Afirmativo,1
+88869,1170,Luis Sánchez Ossa,Afirmativo,1
+88869,1171,Emilia Schneider Videla,Afirmativo,1
+88869,1172,Stephan Schubert Rubio,Afirmativo,1
+88869,1173,Daniela Serrano Salazar,Afirmativo,1
+88869,1174,Marco Antonio Sulantay Olivares,No Vota,4
+88869,1175,Cristián Tapia Ramos,Afirmativo,1
+88869,1176,Hotuiti Teao Drago,No Vota,4
+88869,1177,Carolina Tello Rojas,Afirmativo,1
+88869,1178,Héctor Ulloa Aguilera,Afirmativo,1
+88869,1180,Consuelo Veloso Ávila,Afirmativo,1
+88869,1181,Nelson Venegas Salazar,Afirmativo,1
+88869,1182,Sebastián Videla Castillo,Afirmativo,1
+88869,1183,Flor Weisse Novoa,Afirmativo,1
+88869,1184,Roberto Celedón Fernández,Afirmativo,1
+88869,1186,Ignacio Achurra Díaz,Afirmativo,1
+88869,1187,Carlo Arqueros Pizarro,Afirmativo,1
+88869,1188,Marcos Barraza Gómez,Afirmativo,1
+88869,1189,Jaime Bassa Mercado,Afirmativo,1
+88869,1190,Enrique Bassaletti Riess,Afirmativo,1
+88869,1191,Valentina Becerra Peña,Afirmativo,1
+88869,1192,Lilian Betancurt Delgado,No Vota,4
+88869,1193,Patricio Briones Moller,Afirmativo,1
+88869,1194,Daniel Bustos Leal,Afirmativo,1
+88869,1195,Carlos Carvajal Gallardo,Afirmativo,1
+88869,1196,Priscilla Castillo Gerli,Afirmativo,1
+88869,1197,Carlos Chandía Alarcón,No Vota,4
+88869,1198,Paz Charpentier Rajcevich,Afirmativo,1
+88869,1199,Jaime Coloma Álamos,Afirmativo,1
+88869,1200,Cristian Contreras Radovic,Afirmativo,1
+88869,1201,Flor Contreras Vivallo,Afirmativo,1
+88869,1202,Eduardo Cretton Rebolledo,Afirmativo,1
+88869,1203,Sebastián Cristoffanini Jaraquemada,Afirmativo,1
+88869,1204,Francisco Crisóstomo Llanos,Afirmativo,1
+88869,1205,Carlos Cuadrado Prats,En Contra,0
+88869,1206,Carolina Cucumides Calderón,Afirmativo,1
+88869,1207,Valentina Cáceres Monsálvez,Afirmativo,1
+88869,1208,Jorge Díaz Ibarra,Afirmativo,1
+88869,1209,Matías Fernández Hartwig,Afirmativo,1
+88869,1210,Gustavo Gatica Villarroel,Afirmativo,1
+88869,1211,Sofía González Cortés,Afirmativo,1
+88869,1212,Erich Grohs Marín,Afirmativo,1
+88869,1213,Irací Hassler Jacob,Afirmativo,1
+88869,1214,Constanza Hube Portus,Afirmativo,1
+88869,1215,Álvaro Jofré Cáceres,Afirmativo,1
+88869,1216,Stephanie Jéldrez Ortiz,Afirmativo,1
+88869,1217,Pier Karlezi Hazleby,Afirmativo,1
+88869,1218,José Antonio Kast Adriasola,Afirmativo,1
+88869,1219,Tomás Kast Sommerhoff,Afirmativo,1
+88869,1220,Leandro Kunstmann Collado,Afirmativo,1
+88869,1221,Benjamín Lorca Inzunza,Afirmativo,1
+88869,1222,Andrea Macías Palma,Afirmativo,1
+88869,1223,Hans Marowski Cuevas,Afirmativo,1
+88869,1224,Cristian Mella Andaur,No Vota,4
+88869,1225,Cristian Menchaca Pinochet,Afirmativo,1
+88869,1226,José Montalva Feuerhake,Afirmativo,1
+88869,1227,Claudia Mora Vega,Afirmativo,1
+88869,1228,Paulina Muñoz Minte,Afirmativo,1
+88869,1229,Javier Muñoz Riquelme,Afirmativo,1
+88869,1230,Alex Nahuelquin Nahuelquin,Afirmativo,1
+88869,1231,Ximena Naranjo Pinto,Afirmativo,1
+88869,1232,Cristian Neira Martínez,Afirmativo,1
+88869,1233,Ricardo Neumann Bertín,Afirmativo,1
+88869,1234,Mario Olavarría Rodríguez,Afirmativo,1
+88869,1235,Javier Olivares Avendaño,Afirmativo,1
+88869,1236,Paula Olmos Contreras,No Vota,4
+88869,1237,Francisco Orrego Gutiérrez,Afirmativo,1
+88869,1238,Álvaro Ortiz Vera,Afirmativo,1
+88869,1239,Fabián Ossandón Briceño,Afirmativo,1
+88869,1240,Zandra Parisi Fernández,No Vota,4
+88869,1241,Patricio Pinilla Valencia,Afirmativo,1
+88869,1242,Rodrigo Ramírez Parra,Afirmativo,1
+88869,1243,Tamara Ramírez Ramírez,Afirmativo,1
+88869,1244,Claudia Reyes Larenas,Afirmativo,1
+88869,1245,Alejandro Riquelme Ducci,Afirmativo,1
+88869,1246,José Antonio Rivas Villalobos,Afirmativo,1
+88869,1247,Javiera Rodríguez Pascual,Afirmativo,1
+88869,1248,Felipe Ross Correa,Afirmativo,1
+88869,1249,Omar Sabat Guzmán,Afirmativo,1
+88869,1250,Bernardo Salinas Maya,Afirmativo,1
+88869,1251,Macarena Santelices Cañas,Afirmativo,1
+88869,1252,Constanza Schonhaut Soto,Afirmativo,1
+88869,1253,Fernando Ugarte Tejeda,Afirmativo,1
+88869,1254,Ignacio Urcullú Clèment-Lund,Afirmativo,1
+88869,1255,Eileen Urqueta Rojas,Afirmativo,1
+88869,1256,Tatiana Urrutia Herrera,Afirmativo,1
+88869,1257,Alejandra Valdebenito Torres,Afirmativo,1
+88869,1258,Guillermo Valdés Carmona,Afirmativo,1
+88869,1259,Juan Marcelo Valenzuela Henríquez,Afirmativo,1
+88869,1260,César Valenzuela Maass,Afirmativo,1
+88869,1261,Daniel Valenzuela Salazar,Afirmativo,1
+88869,1262,Diego Vergara Rodríguez,Afirmativo,1
+88869,1263,Sebastián Zamora Soto,Afirmativo,1
+88869,1264,Fernando Zamorano Peralta,Afirmativo,1
+88881,803,René Alinco Bustos,No Vota,4
+88881,815,Sergio Bobadilla Muñoz,Afirmativo,1
+88881,843,René Manuel García García,Afirmativo,1
+88881,872,Jaime Mulet Martínez,Afirmativo,1
+88881,915,Germán Verdugo Soto,Afirmativo,1
+88881,986,Marcela Hernando Pérez,Afirmativo,1
+88881,1009,Jorge Alessandri Vergara,No Vota,4
+88881,1012,Boris Barrera Moreno,Afirmativo,1
+88881,1013,Alejandro Bernales Maldonado,Afirmativo,1
+88881,1015,Jorge Brito Hasbún,Afirmativo,1
+88881,1017,Álvaro Carter Fernández,Afirmativo,1
+88881,1021,Andrés Celis Montt,Afirmativo,1
+88881,1025,Catalina Del Real Mihovilovic,Afirmativo,1
+88881,1028,Eduardo Durán Salinas,Afirmativo,1
+88881,1038,Marcos Ilabaca Cerda,Afirmativo,1
+88881,1039,Pamela Jiles Moreno,No Vota,4
+88881,1044,Raúl Leiva Carvajal,No Vota,4
+88881,1054,Francesca Muñoz González,Afirmativo,1
+88881,1056,Emilia Nuyado Ancapichun,Afirmativo,1
+88881,1059,Ximena Ossandón Irarrázabal,Afirmativo,1
+88881,1060,Luis Pardo Sáinz,Afirmativo,1
+88881,1061,Andrea Parra Sauterel,Afirmativo,1
+88881,1062,Joanna Pérez Olea,Afirmativo,1
+88881,1065,Guillermo Ramírez Diez,No Vota,4
+88881,1073,Juan Santana Castillo,No Vota,4
+88881,1074,Marisela Santibáñez Novoa,Afirmativo,1
+88881,1075,Diego Schalper Sepúlveda,Afirmativo,1
+88881,1077,Raúl Soto Mardones,No Vota,4
+88881,1082,Cristóbal Urruticoechea Ríos,Afirmativo,1
+88881,1086,Gonzalo Winter Etcheberry,Afirmativo,1
+88881,1087,Gael Yeomans Araya,Afirmativo,1
+88881,1099,Jaime Araya Guerrero,Afirmativo,1
+88881,1100,Cristián Araya Lerdo de Tejada,Afirmativo,1
+88881,1102,Roberto Arroyo Muñoz,Afirmativo,1
+88881,1104,Chiara Barchiesi Chávez,Afirmativo,1
+88881,1105,Héctor Barría Angulo,Afirmativo,1
+88881,1107,María Francisca Bello Campos,No Vota,4
+88881,1108,Juan Carlos Beltrán Silva,Afirmativo,1
+88881,1110,Carlos Bianchi Chelech,Afirmativo,1
+88881,1114,Félix Bugueño Sotelo,No Vota,4
+88881,1116,Felipe Camaño Cárdenas,Afirmativo,1
+88881,1117,Nathalie Castillo Rojas,Afirmativo,1
+88881,1119,Sara Concha Smith,Afirmativo,1
+88881,1122,Luis Alberto Cuello Peña y Lillo,Afirmativo,1
+88881,1127,Lorena Fries Monleón,Afirmativo,1
+88881,1128,Ana María Gazmuri Vieira,Afirmativo,1
+88881,1131,Mauro González Villarroel,Afirmativo,1
+88881,1132,Jorge Guzmán Zepeda,Afirmativo,1
+88881,1133,Juan Irarrázaval Rossel,Afirmativo,1
+88881,1140,Daniel Lilayu Vivanco,Afirmativo,1
+88881,1141,Luis Malla Valenzuela,Afirmativo,1
+88881,1142,Daniel Manouchehri Lobos,Afirmativo,1
+88881,1143,Cristóbal Martínez Ramírez,Afirmativo,1
+88881,1146,José Carlos Meza Pereira,Afirmativo,1
+88881,1148,Javiera Morales Alvarado,No Vota,4
+88881,1150,Benjamín Moreno Bascur,Afirmativo,1
+88881,1152,Gloria Naveillan Arriagada,Afirmativo,1
+88881,1153,Coca Ericka Ñanco Vásquez,Afirmativo,1
+88881,1157,Marlene Pérez Cartes,Afirmativo,1
+88881,1159,Lorena Pizarro Sierra,No Vota,4
+88881,1165,Agustín Romero Leiva,Afirmativo,1
+88881,1166,Natalia Romero Talguia,Afirmativo,1
+88881,1170,Luis Sánchez Ossa,Afirmativo,1
+88881,1171,Emilia Schneider Videla,Afirmativo,1
+88881,1172,Stephan Schubert Rubio,Afirmativo,1
+88881,1173,Daniela Serrano Salazar,Afirmativo,1
+88881,1174,Marco Antonio Sulantay Olivares,Afirmativo,1
+88881,1175,Cristián Tapia Ramos,Afirmativo,1
+88881,1176,Hotuiti Teao Drago,Afirmativo,1
+88881,1177,Carolina Tello Rojas,Afirmativo,1
+88881,1178,Héctor Ulloa Aguilera,Afirmativo,1
+88881,1180,Consuelo Veloso Ávila,Afirmativo,1
+88881,1181,Nelson Venegas Salazar,Afirmativo,1
+88881,1182,Sebastián Videla Castillo,Afirmativo,1
+88881,1183,Flor Weisse Novoa,Afirmativo,1
+88881,1184,Roberto Celedón Fernández,Afirmativo,1
+88881,1186,Ignacio Achurra Díaz,Afirmativo,1
+88881,1187,Carlo Arqueros Pizarro,Afirmativo,1
+88881,1188,Marcos Barraza Gómez,Afirmativo,1
+88881,1189,Jaime Bassa Mercado,Afirmativo,1
+88881,1190,Enrique Bassaletti Riess,Afirmativo,1
+88881,1191,Valentina Becerra Peña,Afirmativo,1
+88881,1192,Lilian Betancurt Delgado,Afirmativo,1
+88881,1193,Patricio Briones Moller,Afirmativo,1
+88881,1194,Daniel Bustos Leal,Afirmativo,1
+88881,1195,Carlos Carvajal Gallardo,Afirmativo,1
+88881,1196,Priscilla Castillo Gerli,Afirmativo,1
+88881,1197,Carlos Chandía Alarcón,Afirmativo,1
+88881,1198,Paz Charpentier Rajcevich,Afirmativo,1
+88881,1199,Jaime Coloma Álamos,Afirmativo,1
+88881,1200,Cristian Contreras Radovic,Afirmativo,1
+88881,1201,Flor Contreras Vivallo,Afirmativo,1
+88881,1202,Eduardo Cretton Rebolledo,Afirmativo,1
+88881,1203,Sebastián Cristoffanini Jaraquemada,Afirmativo,1
+88881,1204,Francisco Crisóstomo Llanos,Afirmativo,1
+88881,1205,Carlos Cuadrado Prats,Afirmativo,1
+88881,1206,Carolina Cucumides Calderón,Afirmativo,1
+88881,1207,Valentina Cáceres Monsálvez,Afirmativo,1
+88881,1208,Jorge Díaz Ibarra,Afirmativo,1
+88881,1209,Matías Fernández Hartwig,Afirmativo,1
+88881,1210,Gustavo Gatica Villarroel,Afirmativo,1
+88881,1211,Sofía González Cortés,Afirmativo,1
+88881,1212,Erich Grohs Marín,Afirmativo,1
+88881,1213,Irací Hassler Jacob,Afirmativo,1
+88881,1214,Constanza Hube Portus,Afirmativo,1
+88881,1215,Álvaro Jofré Cáceres,Afirmativo,1
+88881,1216,Stephanie Jéldrez Ortiz,Afirmativo,1
+88881,1217,Pier Karlezi Hazleby,Afirmativo,1
+88881,1218,José Antonio Kast Adriasola,Afirmativo,1
+88881,1219,Tomás Kast Sommerhoff,Afirmativo,1
+88881,1220,Leandro Kunstmann Collado,Afirmativo,1
+88881,1221,Benjamín Lorca Inzunza,Afirmativo,1
+88881,1222,Andrea Macías Palma,Afirmativo,1
+88881,1223,Hans Marowski Cuevas,Afirmativo,1
+88881,1224,Cristian Mella Andaur,Afirmativo,1
+88881,1225,Cristian Menchaca Pinochet,Afirmativo,1
+88881,1226,José Montalva Feuerhake,Afirmativo,1
+88881,1227,Claudia Mora Vega,Afirmativo,1
+88881,1228,Paulina Muñoz Minte,Afirmativo,1
+88881,1229,Javier Muñoz Riquelme,Afirmativo,1
+88881,1230,Alex Nahuelquin Nahuelquin,Afirmativo,1
+88881,1231,Ximena Naranjo Pinto,Afirmativo,1
+88881,1232,Cristian Neira Martínez,Afirmativo,1
+88881,1233,Ricardo Neumann Bertín,Afirmativo,1
+88881,1234,Mario Olavarría Rodríguez,Afirmativo,1
+88881,1235,Javier Olivares Avendaño,Afirmativo,1
+88881,1236,Paula Olmos Contreras,Afirmativo,1
+88881,1237,Francisco Orrego Gutiérrez,Afirmativo,1
+88881,1238,Álvaro Ortiz Vera,Afirmativo,1
+88881,1239,Fabián Ossandón Briceño,Afirmativo,1
+88881,1240,Zandra Parisi Fernández,Afirmativo,1
+88881,1241,Patricio Pinilla Valencia,Afirmativo,1
+88881,1242,Rodrigo Ramírez Parra,Afirmativo,1
+88881,1243,Tamara Ramírez Ramírez,Afirmativo,1
+88881,1244,Claudia Reyes Larenas,Afirmativo,1
+88881,1245,Alejandro Riquelme Ducci,Afirmativo,1
+88881,1246,José Antonio Rivas Villalobos,Afirmativo,1
+88881,1247,Javiera Rodríguez Pascual,Afirmativo,1
+88881,1248,Felipe Ross Correa,Afirmativo,1
+88881,1249,Omar Sabat Guzmán,No Vota,4
+88881,1250,Bernardo Salinas Maya,Afirmativo,1
+88881,1251,Macarena Santelices Cañas,Afirmativo,1
+88881,1252,Constanza Schonhaut Soto,Afirmativo,1
+88881,1253,Fernando Ugarte Tejeda,Afirmativo,1
+88881,1254,Ignacio Urcullú Clèment-Lund,Afirmativo,1
+88881,1255,Eileen Urqueta Rojas,Afirmativo,1
+88881,1256,Tatiana Urrutia Herrera,Afirmativo,1
+88881,1257,Alejandra Valdebenito Torres,Afirmativo,1
+88881,1258,Guillermo Valdés Carmona,Afirmativo,1
+88881,1259,Juan Marcelo Valenzuela Henríquez,Afirmativo,1
+88881,1260,César Valenzuela Maass,Afirmativo,1
+88881,1261,Daniel Valenzuela Salazar,Afirmativo,1
+88881,1262,Diego Vergara Rodríguez,Afirmativo,1
+88881,1263,Sebastián Zamora Soto,Afirmativo,1
+88881,1264,Fernando Zamorano Peralta,Afirmativo,1
+89106,803,René Alinco Bustos,Afirmativo,1
+89106,815,Sergio Bobadilla Muñoz,Afirmativo,1
+89106,843,René Manuel García García,Afirmativo,1
+89106,872,Jaime Mulet Martínez,Afirmativo,1
+89106,915,Germán Verdugo Soto,Afirmativo,1
+89106,986,Marcela Hernando Pérez,Afirmativo,1
+89106,1009,Jorge Alessandri Vergara,Afirmativo,1
+89106,1012,Boris Barrera Moreno,Afirmativo,1
+89106,1013,Alejandro Bernales Maldonado,Afirmativo,1
+89106,1015,Jorge Brito Hasbún,Afirmativo,1
+89106,1017,Álvaro Carter Fernández,Afirmativo,1
+89106,1021,Andrés Celis Montt,Afirmativo,1
+89106,1025,Catalina Del Real Mihovilovic,Afirmativo,1
+89106,1028,Eduardo Durán Salinas,Afirmativo,1
+89106,1038,Marcos Ilabaca Cerda,Afirmativo,1
+89106,1039,Pamela Jiles Moreno,Afirmativo,1
+89106,1044,Raúl Leiva Carvajal,Afirmativo,1
+89106,1054,Francesca Muñoz González,Afirmativo,1
+89106,1056,Emilia Nuyado Ancapichun,Afirmativo,1
+89106,1059,Ximena Ossandón Irarrázabal,Afirmativo,1
+89106,1060,Luis Pardo Sáinz,Afirmativo,1
+89106,1061,Andrea Parra Sauterel,No Vota,4
+89106,1062,Joanna Pérez Olea,No Vota,4
+89106,1065,Guillermo Ramírez Diez,No Vota,4
+89106,1073,Juan Santana Castillo,Afirmativo,1
+89106,1074,Marisela Santibáñez Novoa,Afirmativo,1
+89106,1075,Diego Schalper Sepúlveda,Afirmativo,1
+89106,1077,Raúl Soto Mardones,Afirmativo,1
+89106,1082,Cristóbal Urruticoechea Ríos,Afirmativo,1
+89106,1086,Gonzalo Winter Etcheberry,Afirmativo,1
+89106,1087,Gael Yeomans Araya,Afirmativo,1
+89106,1099,Jaime Araya Guerrero,Afirmativo,1
+89106,1100,Cristián Araya Lerdo de Tejada,Afirmativo,1
+89106,1102,Roberto Arroyo Muñoz,Afirmativo,1
+89106,1104,Chiara Barchiesi Chávez,Afirmativo,1
+89106,1105,Héctor Barría Angulo,Afirmativo,1
+89106,1107,María Francisca Bello Campos,No Vota,4
+89106,1108,Juan Carlos Beltrán Silva,Afirmativo,1
+89106,1110,Carlos Bianchi Chelech,Afirmativo,1
+89106,1114,Félix Bugueño Sotelo,Afirmativo,1
+89106,1116,Felipe Camaño Cárdenas,Afirmativo,1
+89106,1117,Nathalie Castillo Rojas,Afirmativo,1
+89106,1119,Sara Concha Smith,Afirmativo,1
+89106,1122,Luis Alberto Cuello Peña y Lillo,Afirmativo,1
+89106,1127,Lorena Fries Monleón,Afirmativo,1
+89106,1128,Ana María Gazmuri Vieira,Afirmativo,1
+89106,1131,Mauro González Villarroel,No Vota,4
+89106,1132,Jorge Guzmán Zepeda,Afirmativo,1
+89106,1133,Juan Irarrázaval Rossel,Afirmativo,1
+89106,1140,Daniel Lilayu Vivanco,Afirmativo,1
+89106,1141,Luis Malla Valenzuela,Afirmativo,1
+89106,1142,Daniel Manouchehri Lobos,Afirmativo,1
+89106,1143,Cristóbal Martínez Ramírez,Afirmativo,1
+89106,1146,José Carlos Meza Pereira,Afirmativo,1
+89106,1148,Javiera Morales Alvarado,No Vota,4
+89106,1150,Benjamín Moreno Bascur,Afirmativo,1
+89106,1152,Gloria Naveillan Arriagada,No Vota,4
+89106,1153,Coca Ericka Ñanco Vásquez,No Vota,4
+89106,1157,Marlene Pérez Cartes,Afirmativo,1
+89106,1159,Lorena Pizarro Sierra,Afirmativo,1
+89106,1165,Agustín Romero Leiva,Afirmativo,1
+89106,1166,Natalia Romero Talguia,Afirmativo,1
+89106,1170,Luis Sánchez Ossa,Afirmativo,1
+89106,1171,Emilia Schneider Videla,Afirmativo,1
+89106,1172,Stephan Schubert Rubio,Afirmativo,1
+89106,1173,Daniela Serrano Salazar,Afirmativo,1
+89106,1174,Marco Antonio Sulantay Olivares,Afirmativo,1
+89106,1175,Cristián Tapia Ramos,No Vota,4
+89106,1176,Hotuiti Teao Drago,Afirmativo,1
+89106,1177,Carolina Tello Rojas,Afirmativo,1
+89106,1178,Héctor Ulloa Aguilera,Afirmativo,1
+89106,1180,Consuelo Veloso Ávila,Afirmativo,1
+89106,1181,Nelson Venegas Salazar,Afirmativo,1
+89106,1182,Sebastián Videla Castillo,Afirmativo,1
+89106,1183,Flor Weisse Novoa,Afirmativo,1
+89106,1184,Roberto Celedón Fernández,Afirmativo,1
+89106,1186,Ignacio Achurra Díaz,Afirmativo,1
+89106,1187,Carlo Arqueros Pizarro,Afirmativo,1
+89106,1188,Marcos Barraza Gómez,Afirmativo,1
+89106,1189,Jaime Bassa Mercado,Afirmativo,1
+89106,1190,Enrique Bassaletti Riess,Afirmativo,1
+89106,1191,Valentina Becerra Peña,Afirmativo,1
+89106,1192,Lilian Betancurt Delgado,Afirmativo,1
+89106,1193,Patricio Briones Moller,Afirmativo,1
+89106,1194,Daniel Bustos Leal,Afirmativo,1
+89106,1195,Carlos Carvajal Gallardo,Afirmativo,1
+89106,1196,Priscilla Castillo Gerli,Afirmativo,1
+89106,1197,Carlos Chandía Alarcón,Afirmativo,1
+89106,1198,Paz Charpentier Rajcevich,Afirmativo,1
+89106,1199,Jaime Coloma Álamos,Afirmativo,1
+89106,1200,Cristian Contreras Radovic,Afirmativo,1
+89106,1201,Flor Contreras Vivallo,Afirmativo,1
+89106,1202,Eduardo Cretton Rebolledo,Afirmativo,1
+89106,1203,Sebastián Cristoffanini Jaraquemada,Afirmativo,1
+89106,1204,Francisco Crisóstomo Llanos,Afirmativo,1
+89106,1205,Carlos Cuadrado Prats,Afirmativo,1
+89106,1206,Carolina Cucumides Calderón,Afirmativo,1
+89106,1207,Valentina Cáceres Monsálvez,Afirmativo,1
+89106,1208,Jorge Díaz Ibarra,Afirmativo,1
+89106,1209,Matías Fernández Hartwig,Afirmativo,1
+89106,1210,Gustavo Gatica Villarroel,Afirmativo,1
+89106,1211,Sofía González Cortés,Afirmativo,1
+89106,1212,Erich Grohs Marín,No Vota,4
+89106,1213,Irací Hassler Jacob,Afirmativo,1
+89106,1214,Constanza Hube Portus,Afirmativo,1
+89106,1215,Álvaro Jofré Cáceres,Afirmativo,1
+89106,1216,Stephanie Jéldrez Ortiz,Afirmativo,1
+89106,1217,Pier Karlezi Hazleby,Afirmativo,1
+89106,1218,José Antonio Kast Adriasola,Afirmativo,1
+89106,1219,Tomás Kast Sommerhoff,No Vota,4
+89106,1220,Leandro Kunstmann Collado,Afirmativo,1
+89106,1221,Benjamín Lorca Inzunza,Afirmativo,1
+89106,1222,Andrea Macías Palma,Afirmativo,1
+89106,1223,Hans Marowski Cuevas,Afirmativo,1
+89106,1224,Cristian Mella Andaur,Afirmativo,1
+89106,1225,Cristian Menchaca Pinochet,Afirmativo,1
+89106,1226,José Montalva Feuerhake,Afirmativo,1
+89106,1227,Claudia Mora Vega,Afirmativo,1
+89106,1228,Paulina Muñoz Minte,Afirmativo,1
+89106,1229,Javier Muñoz Riquelme,Afirmativo,1
+89106,1230,Alex Nahuelquin Nahuelquin,Afirmativo,1
+89106,1231,Ximena Naranjo Pinto,Afirmativo,1
+89106,1232,Cristian Neira Martínez,Afirmativo,1
+89106,1233,Ricardo Neumann Bertín,Afirmativo,1
+89106,1234,Mario Olavarría Rodríguez,Afirmativo,1
+89106,1235,Javier Olivares Avendaño,Afirmativo,1
+89106,1236,Paula Olmos Contreras,Afirmativo,1
+89106,1237,Francisco Orrego Gutiérrez,Afirmativo,1
+89106,1238,Álvaro Ortiz Vera,Afirmativo,1
+89106,1239,Fabián Ossandón Briceño,Afirmativo,1
+89106,1240,Zandra Parisi Fernández,Afirmativo,1
+89106,1241,Patricio Pinilla Valencia,Afirmativo,1
+89106,1242,Rodrigo Ramírez Parra,Afirmativo,1
+89106,1243,Tamara Ramírez Ramírez,Afirmativo,1
+89106,1244,Claudia Reyes Larenas,Afirmativo,1
+89106,1245,Alejandro Riquelme Ducci,Afirmativo,1
+89106,1246,José Antonio Rivas Villalobos,Afirmativo,1
+89106,1247,Javiera Rodríguez Pascual,Afirmativo,1
+89106,1248,Felipe Ross Correa,Afirmativo,1
+89106,1249,Omar Sabat Guzmán,Afirmativo,1
+89106,1250,Bernardo Salinas Maya,Afirmativo,1
+89106,1251,Macarena Santelices Cañas,Afirmativo,1
+89106,1252,Constanza Schonhaut Soto,Afirmativo,1
+89106,1253,Fernando Ugarte Tejeda,Afirmativo,1
+89106,1254,Ignacio Urcullú Clèment-Lund,Afirmativo,1
+89106,1255,Eileen Urqueta Rojas,Afirmativo,1
+89106,1256,Tatiana Urrutia Herrera,Afirmativo,1
+89106,1257,Alejandra Valdebenito Torres,Afirmativo,1
+89106,1258,Guillermo Valdés Carmona,Afirmativo,1
+89106,1259,Juan Marcelo Valenzuela Henríquez,Afirmativo,1
+89106,1260,César Valenzuela Maass,Afirmativo,1
+89106,1261,Daniel Valenzuela Salazar,No Vota,4
+89106,1262,Diego Vergara Rodríguez,Afirmativo,1
+89106,1263,Sebastián Zamora Soto,Afirmativo,1
+89106,1264,Fernando Zamorano Peralta,Afirmativo,1
+89241,803,René Alinco Bustos,Afirmativo,1
+89241,815,Sergio Bobadilla Muñoz,Afirmativo,1
+89241,843,René Manuel García García,Afirmativo,1
+89241,872,Jaime Mulet Martínez,Afirmativo,1
+89241,915,Germán Verdugo Soto,Afirmativo,1
+89241,986,Marcela Hernando Pérez,Afirmativo,1
+89241,1009,Jorge Alessandri Vergara,Afirmativo,1
+89241,1012,Boris Barrera Moreno,Afirmativo,1
+89241,1013,Alejandro Bernales Maldonado,Afirmativo,1
+89241,1015,Jorge Brito Hasbún,Afirmativo,1
+89241,1017,Álvaro Carter Fernández,Afirmativo,1
+89241,1021,Andrés Celis Montt,Afirmativo,1
+89241,1025,Catalina Del Real Mihovilovic,Afirmativo,1
+89241,1028,Eduardo Durán Salinas,Afirmativo,1
+89241,1038,Marcos Ilabaca Cerda,Afirmativo,1
+89241,1039,Pamela Jiles Moreno,No Vota,4
+89241,1044,Raúl Leiva Carvajal,Afirmativo,1
+89241,1054,Francesca Muñoz González,Afirmativo,1
+89241,1056,Emilia Nuyado Ancapichun,Afirmativo,1
+89241,1059,Ximena Ossandón Irarrázabal,Afirmativo,1
+89241,1060,Luis Pardo Sáinz,Afirmativo,1
+89241,1061,Andrea Parra Sauterel,Afirmativo,1
+89241,1062,Joanna Pérez Olea,Afirmativo,1
+89241,1065,Guillermo Ramírez Diez,Afirmativo,1
+89241,1073,Juan Santana Castillo,Afirmativo,1
+89241,1074,Marisela Santibáñez Novoa,Afirmativo,1
+89241,1075,Diego Schalper Sepúlveda,Afirmativo,1
+89241,1077,Raúl Soto Mardones,Afirmativo,1
+89241,1082,Cristóbal Urruticoechea Ríos,Afirmativo,1
+89241,1086,Gonzalo Winter Etcheberry,Afirmativo,1
+89241,1087,Gael Yeomans Araya,Afirmativo,1
+89241,1099,Jaime Araya Guerrero,Afirmativo,1
+89241,1100,Cristián Araya Lerdo de Tejada,Afirmativo,1
+89241,1102,Roberto Arroyo Muñoz,Afirmativo,1
+89241,1104,Chiara Barchiesi Chávez,Afirmativo,1
+89241,1105,Héctor Barría Angulo,Afirmativo,1
+89241,1107,María Francisca Bello Campos,No Vota,4
+89241,1108,Juan Carlos Beltrán Silva,No Vota,4
+89241,1110,Carlos Bianchi Chelech,Afirmativo,1
+89241,1114,Félix Bugueño Sotelo,Afirmativo,1
+89241,1116,Felipe Camaño Cárdenas,Afirmativo,1
+89241,1117,Nathalie Castillo Rojas,Afirmativo,1
+89241,1119,Sara Concha Smith,Afirmativo,1
+89241,1122,Luis Alberto Cuello Peña y Lillo,Afirmativo,1
+89241,1127,Lorena Fries Monleón,Afirmativo,1
+89241,1128,Ana María Gazmuri Vieira,Afirmativo,1
+89241,1131,Mauro González Villarroel,No Vota,4
+89241,1132,Jorge Guzmán Zepeda,Afirmativo,1
+89241,1133,Juan Irarrázaval Rossel,Afirmativo,1
+89241,1140,Daniel Lilayu Vivanco,No Vota,4
+89241,1141,Luis Malla Valenzuela,Afirmativo,1
+89241,1142,Daniel Manouchehri Lobos,No Vota,4
+89241,1143,Cristóbal Martínez Ramírez,No Vota,4
+89241,1146,José Carlos Meza Pereira,No Vota,4
+89241,1148,Javiera Morales Alvarado,No Vota,4
+89241,1150,Benjamín Moreno Bascur,Afirmativo,1
+89241,1152,Gloria Naveillan Arriagada,Afirmativo,1
+89241,1153,Coca Ericka Ñanco Vásquez,No Vota,4
+89241,1157,Marlene Pérez Cartes,Afirmativo,1
+89241,1159,Lorena Pizarro Sierra,No Vota,4
+89241,1165,Agustín Romero Leiva,Afirmativo,1
+89241,1166,Natalia Romero Talguia,Afirmativo,1
+89241,1170,Luis Sánchez Ossa,Afirmativo,1
+89241,1171,Emilia Schneider Videla,Afirmativo,1
+89241,1172,Stephan Schubert Rubio,Afirmativo,1
+89241,1173,Daniela Serrano Salazar,Afirmativo,1
+89241,1174,Marco Antonio Sulantay Olivares,Afirmativo,1
+89241,1175,Cristián Tapia Ramos,Afirmativo,1
+89241,1176,Hotuiti Teao Drago,Afirmativo,1
+89241,1177,Carolina Tello Rojas,Afirmativo,1
+89241,1178,Héctor Ulloa Aguilera,Afirmativo,1
+89241,1180,Consuelo Veloso Ávila,Afirmativo,1
+89241,1181,Nelson Venegas Salazar,Afirmativo,1
+89241,1182,Sebastián Videla Castillo,Afirmativo,1
+89241,1183,Flor Weisse Novoa,Afirmativo,1
+89241,1184,Roberto Celedón Fernández,Afirmativo,1
+89241,1186,Ignacio Achurra Díaz,Afirmativo,1
+89241,1187,Carlo Arqueros Pizarro,Afirmativo,1
+89241,1188,Marcos Barraza Gómez,Afirmativo,1
+89241,1189,Jaime Bassa Mercado,Afirmativo,1
+89241,1190,Enrique Bassaletti Riess,Afirmativo,1
+89241,1191,Valentina Becerra Peña,Afirmativo,1
+89241,1192,Lilian Betancurt Delgado,No Vota,4
+89241,1193,Patricio Briones Moller,Afirmativo,1
+89241,1194,Daniel Bustos Leal,Afirmativo,1
+89241,1195,Carlos Carvajal Gallardo,Afirmativo,1
+89241,1196,Priscilla Castillo Gerli,Afirmativo,1
+89241,1197,Carlos Chandía Alarcón,Afirmativo,1
+89241,1198,Paz Charpentier Rajcevich,Afirmativo,1
+89241,1199,Jaime Coloma Álamos,Afirmativo,1
+89241,1200,Cristian Contreras Radovic,Afirmativo,1
+89241,1201,Flor Contreras Vivallo,Afirmativo,1
+89241,1202,Eduardo Cretton Rebolledo,Afirmativo,1
+89241,1203,Sebastián Cristoffanini Jaraquemada,Afirmativo,1
+89241,1204,Francisco Crisóstomo Llanos,Afirmativo,1
+89241,1205,Carlos Cuadrado Prats,No Vota,4
+89241,1206,Carolina Cucumides Calderón,Afirmativo,1
+89241,1207,Valentina Cáceres Monsálvez,Afirmativo,1
+89241,1208,Jorge Díaz Ibarra,Afirmativo,1
+89241,1209,Matías Fernández Hartwig,Afirmativo,1
+89241,1210,Gustavo Gatica Villarroel,Afirmativo,1
+89241,1211,Sofía González Cortés,Afirmativo,1
+89241,1212,Erich Grohs Marín,No Vota,4
+89241,1213,Irací Hassler Jacob,Afirmativo,1
+89241,1214,Constanza Hube Portus,Afirmativo,1
+89241,1215,Álvaro Jofré Cáceres,Afirmativo,1
+89241,1216,Stephanie Jéldrez Ortiz,Afirmativo,1
+89241,1217,Pier Karlezi Hazleby,Afirmativo,1
+89241,1218,José Antonio Kast Adriasola,Afirmativo,1
+89241,1219,Tomás Kast Sommerhoff,Afirmativo,1
+89241,1220,Leandro Kunstmann Collado,Afirmativo,1
+89241,1221,Benjamín Lorca Inzunza,Afirmativo,1
+89241,1222,Andrea Macías Palma,Afirmativo,1
+89241,1223,Hans Marowski Cuevas,Afirmativo,1
+89241,1224,Cristian Mella Andaur,Afirmativo,1
+89241,1225,Cristian Menchaca Pinochet,Afirmativo,1
+89241,1226,José Montalva Feuerhake,No Vota,4
+89241,1227,Claudia Mora Vega,Afirmativo,1
+89241,1228,Paulina Muñoz Minte,Afirmativo,1
+89241,1229,Javier Muñoz Riquelme,Afirmativo,1
+89241,1230,Alex Nahuelquin Nahuelquin,Afirmativo,1
+89241,1231,Ximena Naranjo Pinto,Afirmativo,1
+89241,1232,Cristian Neira Martínez,Afirmativo,1
+89241,1233,Ricardo Neumann Bertín,Afirmativo,1
+89241,1234,Mario Olavarría Rodríguez,Afirmativo,1
+89241,1235,Javier Olivares Avendaño,Afirmativo,1
+89241,1236,Paula Olmos Contreras,Afirmativo,1
+89241,1237,Francisco Orrego Gutiérrez,Afirmativo,1
+89241,1238,Álvaro Ortiz Vera,Afirmativo,1
+89241,1239,Fabián Ossandón Briceño,Afirmativo,1
+89241,1240,Zandra Parisi Fernández,Afirmativo,1
+89241,1241,Patricio Pinilla Valencia,Afirmativo,1
+89241,1242,Rodrigo Ramírez Parra,Afirmativo,1
+89241,1243,Tamara Ramírez Ramírez,No Vota,4
+89241,1244,Claudia Reyes Larenas,Afirmativo,1
+89241,1245,Alejandro Riquelme Ducci,Afirmativo,1
+89241,1246,José Antonio Rivas Villalobos,Afirmativo,1
+89241,1247,Javiera Rodríguez Pascual,Afirmativo,1
+89241,1248,Felipe Ross Correa,Afirmativo,1
+89241,1249,Omar Sabat Guzmán,Afirmativo,1
+89241,1250,Bernardo Salinas Maya,Afirmativo,1
+89241,1251,Macarena Santelices Cañas,No Vota,4
+89241,1252,Constanza Schonhaut Soto,Afirmativo,1
+89241,1253,Fernando Ugarte Tejeda,Afirmativo,1
+89241,1254,Ignacio Urcullú Clèment-Lund,Afirmativo,1
+89241,1255,Eileen Urqueta Rojas,Afirmativo,1
+89241,1256,Tatiana Urrutia Herrera,Afirmativo,1
+89241,1257,Alejandra Valdebenito Torres,Afirmativo,1
+89241,1258,Guillermo Valdés Carmona,Afirmativo,1
+89241,1259,Juan Marcelo Valenzuela Henríquez,Afirmativo,1
+89241,1260,César Valenzuela Maass,Afirmativo,1
+89241,1261,Daniel Valenzuela Salazar,Afirmativo,1
+89241,1262,Diego Vergara Rodríguez,Afirmativo,1
+89241,1263,Sebastián Zamora Soto,Afirmativo,1
+89241,1264,Fernando Zamorano Peralta,Afirmativo,1

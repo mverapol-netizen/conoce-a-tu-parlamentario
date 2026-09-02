@@ -1,11 +1,66 @@
 {
   "generated_for": "2026-09-02",
   "period_start": "2026-03-11",
-  "year": 2026,
   "universe": {
-    "motions_since_period_start": 449,
-    "messages_since_period_start": 44,
-    "verified_floor_vote_ids_since_period_start": 0
+    "motions": 449,
+    "messages": 44,
+    "annual_votes": {
+      "root_tag": "VotacionesColeccion",
+      "votes_returned": 911,
+      "votes_since_period_start": 599,
+      "tags": [
+        [
+          "Votacion",
+          911
+        ],
+        [
+          "Id",
+          911
+        ],
+        [
+          "Descripcion",
+          911
+        ],
+        [
+          "Fecha",
+          911
+        ],
+        [
+          "TotalSi",
+          911
+        ],
+        [
+          "TotalNo",
+          911
+        ],
+        [
+          "TotalAbstencion",
+          911
+        ],
+        [
+          "TotalDispensado",
+          911
+        ],
+        [
+          "Quorum",
+          911
+        ],
+        [
+          "Resultado",
+          911
+        ],
+        [
+          "Tipo",
+          911
+        ],
+        [
+          "VotacionesColeccion",
+          1
+        ]
+      ]
+    },
+    "session_summaries": 84,
+    "official_matter_catalog_count": 8494
   },
   "pilot": {
     "projects": 10,
@@ -14,28 +69,38 @@
       "ejecutivo": 5
     },
     "subjects": 0,
-    "ministries": 9,
+    "subjects_status": "official_project_association_empty_in_pilot",
+    "ministries": 5,
     "authors": 5,
-    "verified_floor_rollcalls": 0,
-    "individual_votes": 0,
-    "floor_events": 0
+    "verified_floor_rollcalls": 6,
+    "individual_votes": 930,
+    "floor_events": 6,
+    "rollcalls_by_bill": {
+      "18157-33": 1,
+      "18178-10": 1,
+      "18215-10": 1,
+      "18232-25": 1,
+      "18256-10": 1,
+      "18257-10": 1
+    }
   },
   "selected_bills": [
     "18131-06",
     "18132-04",
     "18133-07",
     "18135-06",
-    "18136-11",
-    "18137-05",
-    "18155-25",
-    "18156-04",
+    "18157-33",
     "18178-10",
-    "18208-25"
+    "18215-10",
+    "18232-25",
+    "18256-10",
+    "18257-10"
   ],
   "contract_findings": {
-    "floor_verification": "Votación incluida solo si su ID aparece dentro de Votaciones de una Sesion de Sala de WSSala.",
-    "full_legislative_course": "El objeto ProyectoLey no contiene una secuencia completa de eventos/comisiones; el piloto conserva los trámites asociados a votaciones de Sala y marca la reconstrucción completa como una fuente adicional pendiente.",
-    "themes": "Se preserva Materia oficial sin macroclasificación editorial.",
-    "authorship": "Autores se almacenan en formato largo proyecto × autor, conservando orden e identificación Cámara/Senado."
+    "floor_verification": "ID en retornarVotacionesXAnno + ID asociado al proyecto + página oficial Sala de Sesiones/Detalle de Votación del mismo boletín y fecha.",
+    "individual_votes": "Los votos nominales se recuperan con retornarVotacionDetalle(prmVotacionId), que entrega Votos/Voto con Diputado y OpcionVoto.",
+    "session_api_2026": "Los endpoints WSSala de 2026 omiten actualmente la colección Votaciones aunque el esquema publicado la declare; se conserva como hallazgo de compatibilidad.",
+    "themes": "Existe catálogo oficial de Materias, pero la asociación ProyectoLey/Materias está vacía en los diez casos piloto. No se imputa una materia. La futura clasificación temática será una capa derivada separada, basada en título/texto y trazable.",
+    "full_legislative_course": "Comisiones y cronología completa siguen pendientes de una capa específica sobre el historial público de cada boletín."
   }
 }
