@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 
 from congress_api import child, child_text, enum_value, get_xml
 from legislative_common import (
@@ -29,6 +29,7 @@ ROLLCALL_FIELDS = [
 ]
 MEMBER_FIELDS = ["vote_id", "diputado_id", "diputado_nombre", "opcion", "opcion_codigo"]
 STATE_PATH = OUT / "floor_vote_state.json"
+RECENT_RECHECK_DAYS = 35
 
 
 def project_vote_map(boletin: str) -> dict[str, object]:
@@ -109,16 +110,34 @@ def load_state() -> dict:
         return {"skipped_non_project": []}
 
 
+def vote_is_recent(node, cutoff: date) -> bool:
+    raw = iso_date(child_text(node, "Fecha"))
+    try:
+        return date.fromisoformat(raw) >= cutoff
+    except Exception:
+        return False
+
+
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     annual = annual_votes()
     existing_rollcalls = read_csv("rollcalls.csv")
     existing_members = read_csv("member_votes.csv")
+    existing_ids_before = {x["vote_id"] for x in existing_rollcalls if x.get("vote_id")}
     member_counts = Counter(x["vote_id"] for x in existing_members)
     complete_ids = {x["vote_id"] for x in existing_rollcalls if member_counts[x["vote_id"]] >= 150}
+
+    cutoff = date.today() - timedelta(days=RECENT_RECHECK_DAYS)
+    recent_ids = {vid for vid, node in annual.items() if vote_is_recent(node, cutoff)}
+
     state = load_state()
     skipped = set(state.get("skipped_non_project", []))
-    pending = [vid for vid in annual if vid not in complete_ids and vid not in skipped]
+    pending = [
+        vid
+        for vid in annual
+        if (vid not in complete_ids or vid in recent_ids)
+        and (vid not in skipped or vid in recent_ids)
+    ]
     pending.sort(key=lambda vid: (iso_date(child_text(annual[vid], "Fecha")), int(vid) if vid.isdigit() else vid))
 
     sessions = session_index()
@@ -127,6 +146,7 @@ def main() -> None:
     incoming_members = []
     errors = []
     newly_skipped = []
+    validated_ids: set[str] = set()
 
     for idx, vote_id in enumerate(pending, start=1):
         base = annual[vote_id]
@@ -150,30 +170,45 @@ def main() -> None:
                 raise RuntimeError(f"{vote_id}: solo {len(members)} registros nominales")
             incoming_rollcalls.append(rollcall_row(project_vote, base, sala, sessions))
             incoming_members.extend(members)
+            validated_ids.add(vote_id)
         except Exception as exc:  # noqa: BLE001
             errors.append({"vote_id": vote_id, "error": str(exc)})
         if idx % 50 == 0:
-            print(f"Votaciones {idx}/{len(pending)} · nuevas={len(incoming_rollcalls)} · omitidas={len(newly_skipped)} · errores={len(errors)}")
+            print(f"Votaciones {idx}/{len(pending)} · validadas={len(incoming_rollcalls)} · omitidas={len(newly_skipped)} · errores={len(errors)}")
 
-    rollcalls = upsert(existing_rollcalls, incoming_rollcalls, ("vote_id",), ("fecha", "vote_id"))
-    members = upsert(existing_members, incoming_members, ("vote_id", "diputado_id"), ("vote_id", "diputado_id"))
+    # Para cada votación revalidada reemplazamos su snapshot completo. Así una
+    # corrección oficial puede modificar tanto metadatos como votos nominales,
+    # sin dejar filas antiguas residuales. Si una revalidación falla, conservamos
+    # el snapshot previo y la auditoría registra el error.
+    retained_rollcalls = [x for x in existing_rollcalls if x.get("vote_id") not in validated_ids]
+    retained_members = [x for x in existing_members if x.get("vote_id") not in validated_ids]
+    rollcalls = upsert(retained_rollcalls, incoming_rollcalls, ("vote_id",), ("fecha", "vote_id"))
+    members = upsert(retained_members, incoming_members, ("vote_id", "diputado_id"), ("vote_id", "diputado_id"))
     write_csv("rollcalls.csv", rollcalls, ROLLCALL_FIELDS)
     write_csv("member_votes.csv", members, MEMBER_FIELDS)
 
+    skipped.difference_update(validated_ids)
     skipped.update(newly_skipped)
     state = {
         "updated_for": str(date.today()),
         "annual_votes_since_period_start": len(annual),
+        "recent_recheck_days": RECENT_RECHECK_DAYS,
+        "recent_recheck_cutoff": str(cutoff),
         "skipped_non_project": sorted(skipped, key=lambda x: int(x) if str(x).isdigit() else str(x)),
     }
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
+    new_ids = validated_ids - existing_ids_before
+    revalidated_ids = validated_ids & existing_ids_before
     diagnostics = {
         "generated_for": str(date.today()),
         "annual_votes_since_period_start": len(annual),
         "pending_this_run": len(pending),
-        "new_project_floor_rollcalls": len(incoming_rollcalls),
-        "new_member_vote_rows": len(incoming_members),
+        "recent_recheck_days": RECENT_RECHECK_DAYS,
+        "recent_votes_considered_for_recheck": len(recent_ids),
+        "new_project_floor_rollcalls": len(new_ids),
+        "revalidated_project_floor_rollcalls": len(revalidated_ids),
+        "validated_member_vote_rows_this_run": len(incoming_members),
         "rollcalls_in_database": len(rollcalls),
         "member_vote_rows_in_database": len(members),
         "non_project_floor_votes_skipped": len(skipped),
