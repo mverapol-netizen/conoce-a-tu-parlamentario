@@ -43,9 +43,8 @@ def main() -> None:
     archive = zipfile.ZipFile(io.BytesIO(response.content))
 
     names = [x for x in archive.namelist() if x.lower().endswith(".xlsx")]
-    # Para conocer el contrato basta revisar distritos separados geográficamente.
     sample_names = []
-    for target in ("DISTRITO_1.xlsx", "DISTRITO_8.xlsx", "DISTRITO_20.xlsx", "DISTRITO_28.xlsx"):
+    for target in ("DISTRITO_1.XLSX", "DISTRITO_8.XLSX", "DISTRITO_20.XLSX", "DISTRITO_28.XLSX"):
         hit = next((x for x in names if x.upper().endswith(target)), None)
         if hit:
             sample_names.append(hit)
@@ -53,11 +52,7 @@ def main() -> None:
     samples = []
     for name in sample_names:
         raw = archive.read(name)
-        samples.append({
-            "name": name,
-            "size": len(raw),
-            **inspect_xlsx(raw),
-        })
+        samples.append({"name": name, "size": len(raw), **inspect_xlsx(raw)})
 
     diagnostics = {
         "source_url": URL,
