@@ -1,0 +1,61 @@
+name: Repair authorship and audit
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/repair_authorship_audit.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Reconcile authorship with project snapshot
+        run: python scripts/sync_authorship.py
+
+      - name: Persist authorship repair
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/bill_authors.csv data/legislative/2026/authorship_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No authorship changes to commit"
+          else
+            git commit -m "Reconcilia autorías con snapshot legislativo 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Audit legislative database
+        run: python scripts/audit_legislative_data.py
+
+      - name: Persist audit report
+        shell: bash
+        if: always()
+        run: |
+          git add data/legislative/2026/AUDIT.md data/legislative/2026/audit_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No audit changes to commit"
+          else
+            git commit -m "Actualiza auditoría legislativa 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
