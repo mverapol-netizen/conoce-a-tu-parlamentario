@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scripts/sync_profiles.py"
+      - "scripts/sync_contacts.py"
       - ".github/workflows/sync_profiles.yml"
       - "assets/js/data.js"
   schedule:
@@ -32,6 +33,9 @@ jobs:
 
       - name: Sync official profiles
         run: python scripts/sync_profiles.py
+
+      - name: Sync official contacts
+        run: python scripts/sync_contacts.py
 
       - name: Commit generated profiles
         shell: bash
