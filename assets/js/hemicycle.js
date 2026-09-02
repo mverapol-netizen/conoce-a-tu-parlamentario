@@ -22,6 +22,10 @@
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;');
 
+  const legislativeUrl = (member) => member.id
+    ? `ficha.html?id=${encodeURIComponent(member.id)}`
+    : `ficha.html?nombre=${encodeURIComponent(member.name)}`;
+
   const isIndependent = (profile) => normalize(profile.party).startsWith('independ');
 
   const partyFromCaucus = (caucus) => {
@@ -151,7 +155,7 @@
           <p>${escapeHtml(member.affiliation || member.party)}</p>
           <p>${escapeHtml(member.caucus || 'Bancada por confirmar')} · Distrito ${escapeHtml(member.district)} · ${escapeHtml(blockLabel)}</p>
         </div>
-        <a href="${escapeHtml(member.profileUrl || '#')}" target="_blank" rel="noopener">Ficha oficial</a>
+        <a href="${escapeHtml(legislativeUrl(member))}">Ficha legislativa</a>
       </div>
     `;
     panel.hidden = false;
