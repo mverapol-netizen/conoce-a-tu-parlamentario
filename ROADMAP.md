@@ -45,19 +45,27 @@
 - [x] Confirmar recuperación de iniciativas en **PDF y DOCX** desde enlaces oficiales de la Cámara.
 - [x] Crear una taxonomía temática v0.1 versionada y explícitamente separada de las categorías oficiales.
 - [x] Detectar el boilerplate administrativo de algunas mociones para evitar contaminar la clasificación.
-- [ ] Construir el corpus textual incremental de todos los proyectos del período.
-- [ ] Auditar cobertura y calidad del corpus completo por origen y formato.
-- [ ] Crear una muestra de referencia humana (gold standard) estratificada.
-- [ ] Revisar fronteras y solapamientos de la taxonomía v0.1 con el gold standard.
-- [ ] Definir método de clasificación: reglas, modelo, enfoque híbrido y umbrales de confianza.
-- [ ] Evaluar precisión por macroárea antes de clasificar masivamente.
-- [ ] Generar `project_topics.csv` en formato largo con tema principal/secundarios, método, confianza y versión de taxonomía.
+- [x] Construir el corpus textual incremental de todos los proyectos del período.
+- [x] Auditar cobertura y calidad del corpus completo por origen y formato.
+- [x] Crear una muestra de referencia humana estratificada.
+- [x] Revisar fronteras y solapamientos de la taxonomía con casos ambiguos.
+- [x] Definir un método híbrido: señal institucional de comisión/destinación + trayectoria + texto + revisión semántica.
+- [x] Completar la primera clasificación temática de todos los proyectos disponibles, con trazabilidad de revisiones y cero casos pendientes.
+- [ ] Realizar una validación externa/formal de precisión por macroárea antes de presentar la clasificación como métrica validada de investigación.
 - [ ] Mantener la clasificación temática fuera de los datos primarios y permitir reclasificación sin repetir la recolección legislativa.
 
 ## Historia política y análisis derivados
 
-- [ ] Construir historia temporal de partido y bancada por diputado (`fecha_desde` / `fecha_hasta`).
-- [ ] Definir indicadores de disciplina, cohesión, participación y apoyo al Ejecutivo.
+- [x] Construir historia temporal de partido por diputado desde el 11 de marzo de 2026.
+- [x] Reconstruir y congelar la bancada/comité al inicio del período para los 155 integrantes.
+- [x] Mantener snapshots semanales de partido y bancada y registrar cambios con fecha exacta o ventana de observación según la evidencia disponible.
+- [x] Enriquecer los votos nominales con `party_at_vote` y `caucus_at_vote`, conservando confianza, procedencia y banderas de incertidumbre.
+- [x] Auditar una unión temporal 1:1 para las 56.420 observaciones nominales y 364 roll calls, sin afiliaciones provisionales.
+- [x] Generar primitivas por grupo y votación: participación, Rice, posición modal, abstenciones y elegibilidad metodológica.
+- [x] Generar resúmenes individuales de participación y coincidencia modal con partido/bancada, con análisis de sensibilidad según competitividad de la votación.
+- [ ] Decidir qué umbral o conjunto de umbrales de competitividad usar para los indicadores públicos, evitando confundir votaciones casi unánimes con disciplina.
+- [ ] Definir cuándo corresponde hablar de **cohesión**, **coincidencia modal** o **disciplina**; no etiquetar automáticamente toda divergencia como rebelión.
+- [ ] Diseñar un indicador de apoyo al Ejecutivo que incorpore posición gubernamental en cada votación y no asuma que votar “Sí” a todo proyecto de origen Ejecutivo equivale a apoyar al Gobierno.
 - [ ] Definir contrato metodológico para matrices roll-call y W-NOMINATE.
 - [ ] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria.
 - [ ] Decidir qué indicadores finalmente se publicarán en las fichas legislativas del sitio.
