@@ -4,7 +4,11 @@ import csv
 import hashlib
 import io
 import json
+import os
 import re
+import subprocess
+import tempfile
+import time
 import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -42,26 +46,33 @@ def norm(value: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def is_message_text(label: str) -> bool:
+    value = norm(label)
+    return "texto del mensaje" in value or "texto de mensaje" in value
+
+
 def document_priority(event: dict) -> int:
-    label = norm(event.get("subetapa", ""))
+    label = event.get("subetapa", "")
+    value = norm(label)
     if not (event.get("documento_url") or "").strip():
         return 99
-    if "texto del mensaje" in label:
+    if is_message_text(label):
         return 0
-    if "texto del proyecto" in label:
+    if "texto del proyecto" in value:
         return 1
-    if "ingreso de proyecto" in label:
+    if "ingreso de proyecto" in value:
         return 2
     return 50
 
 
 def classify_document(event: dict) -> str:
-    label = norm(event.get("subetapa", ""))
-    if "texto del mensaje" in label:
+    label = event.get("subetapa", "")
+    value = norm(label)
+    if is_message_text(label):
         return "texto_mensaje"
-    if "texto del proyecto" in label:
+    if "texto del proyecto" in value:
         return "texto_proyecto"
-    if "ingreso de proyecto" in label:
+    if "ingreso de proyecto" in value:
         return "ingreso_proyecto"
     return "otro"
 
@@ -88,6 +99,29 @@ def extract_docx(content: bytes) -> tuple[str, int]:
     return "\n".join(pieces), len(document.paragraphs)
 
 
+def extract_legacy_doc(content: bytes) -> str:
+    """Extrae texto de Word 97-2003 con antiword, sin convertir el original."""
+    with tempfile.NamedTemporaryFile(suffix=".doc", delete=False) as handle:
+        handle.write(content)
+        temp_path = handle.name
+    try:
+        env = dict(os.environ)
+        env.setdefault("LC_ALL", "C.UTF-8")
+        result = subprocess.run(
+            ["antiword", temp_path],
+            capture_output=True,
+            timeout=45,
+            check=True,
+            env=env,
+        )
+        return result.stdout.decode("utf-8", errors="replace")
+    finally:
+        try:
+            os.remove(temp_path)
+        except OSError:
+            pass
+
+
 def extract_html(content: bytes, encoding: str | None) -> str:
     text = content.decode(encoding or "utf-8", errors="replace")
     soup = BeautifulSoup(text, "html.parser")
@@ -101,9 +135,9 @@ def clean_text(text: str) -> str:
     raw = re.sub(r" +", " ", raw)
     raw = re.sub(r"\n{3,}", "\n\n", raw).strip()
 
-    # Varias mociones de la Cámara comienzan con una ficha administrativa que
-    # enumera todas las comisiones posibles. Solo recortamos el prefijo cuando
-    # hay señales claras de esa plantilla y encontramos un marcador sustantivo.
+    # Varias mociones comienzan con una ficha administrativa que enumera todas
+    # las comisiones posibles. La eliminamos solo cuando hay señales fuertes de
+    # plantilla y un marcador sustantivo posterior.
     upper = raw.upper()
     boilerplate_clues = sum(
         clue in upper
@@ -130,8 +164,6 @@ def clean_text(text: str) -> str:
             if 0 < cut < min(len(raw), 12_000):
                 raw = raw[cut:]
 
-    # Si quedó una enumeración completa de comisiones antes del contenido,
-    # la reducimos de forma conservadora hasta un marcador sustantivo.
     raw = re.sub(
         r"01\.-\s*AGRICULTURA.*?(?=(?:FUNDAMENTOS|ANTECEDENTES|EXPOSICI[ÓO]N DE MOTIVOS|IDEA MATRIZ))",
         "",
@@ -152,9 +184,25 @@ def quality(chars: int) -> str:
     return "sin_texto"
 
 
+def get_with_retry(url: str, tries: int = 4) -> requests.Response:
+    last_error: Exception | None = None
+    for attempt in range(1, tries + 1):
+        try:
+            response = HTTP.get(url, timeout=60, allow_redirects=True)
+            if response.status_code >= 500:
+                raise requests.HTTPError(f"{response.status_code} Server Error for url: {response.url}", response=response)
+            response.raise_for_status()
+            return response
+        except Exception as exc:  # noqa: BLE001
+            last_error = exc
+            if attempt < tries:
+                time.sleep(1.5 * attempt)
+    assert last_error is not None
+    raise last_error
+
+
 def fetch_document(url: str) -> dict:
-    response = HTTP.get(url, timeout=60, allow_redirects=True)
-    response.raise_for_status()
+    response = get_with_retry(url)
     content = response.content
     ctype = (response.headers.get("Content-Type") or "").lower()
     method = ""
@@ -168,6 +216,9 @@ def fetch_document(url: str) -> dict:
     elif "officedocument.wordprocessingml.document" in ctype:
         method = "docx_text"
         raw_text, examined = extract_docx(content)
+    elif "application/msword" in ctype:
+        method = "legacy_doc_text"
+        raw_text = extract_legacy_doc(content)
     elif "html" in ctype or content.lstrip().startswith(b"<"):
         method = "html_text"
         raw_text = extract_html(content, response.encoding)
