@@ -258,6 +258,75 @@ group_centers <- do.call(rbind, lapply(names(group_fields), function(group_type)
   }))
 }))
 
+# Efecto arco/herradura: una segunda coordenada puede recoger la curvatura de
+# un espacio esencialmente unidimensional. Comparamos una relación lineal con
+# una cuadrática para cada especificación ya alineada por Procrustes. El p-valor
+# se conserva como diagnóstico auxiliar; no convierte por sí solo D2 en una
+# dimensión sustantiva ni incorpora la incertidumbre de las coordenadas.
+arch_rows <- list()
+arch_member_rows <- list()
+for (spec in specs) {
+  d <- aligned_members[aligned_members$spec_id == spec, , drop = FALSE]
+  keep <- is.finite(d$dimension_1_aligned) & is.finite(d$dimension_2_aligned)
+  d <- d[keep, , drop = FALSE]
+  if (nrow(d) < 20) next
+
+  linear_fit <- lm(dimension_2_aligned ~ dimension_1_aligned, data = d)
+  quadratic_fit <- lm(dimension_2_aligned ~ dimension_1_aligned + I(dimension_1_aligned^2), data = d)
+  linear_summary <- summary(linear_fit)
+  quadratic_summary <- summary(quadratic_fit)
+  comparison <- anova(linear_fit, quadratic_fit)
+  quadratic_term <- coef(quadratic_summary)["I(dimension_1_aligned^2)", , drop = FALSE]
+
+  arch_rows[[spec]] <- data.frame(
+    spec_id = spec,
+    n_members = nrow(d),
+    r_squared_linear = linear_summary$r.squared,
+    adjusted_r_squared_linear = linear_summary$adj.r.squared,
+    r_squared_quadratic = quadratic_summary$r.squared,
+    adjusted_r_squared_quadratic = quadratic_summary$adj.r.squared,
+    delta_r_squared_quadratic = quadratic_summary$r.squared - linear_summary$r.squared,
+    quadratic_coefficient = unname(quadratic_term[1, "Estimate"]),
+    quadratic_term_p_value_auxiliary = unname(quadratic_term[1, "Pr(>|t|)"]),
+    nested_model_p_value_auxiliary = comparison$`Pr(>F)`[2],
+    quadratic_rmse = sqrt(mean(residuals(quadratic_fit)^2)),
+    stringsAsFactors = FALSE
+  )
+
+  arch_member_rows[[spec]] <- data.frame(
+    spec_id = spec,
+    diputado_id = d$diputado_id,
+    diputado_nombre = d$diputado_nombre,
+    dimension_1_aligned = d$dimension_1_aligned,
+    dimension_2_aligned = d$dimension_2_aligned,
+    dimension_2_predicted_by_quadratic = as.numeric(fitted(quadratic_fit)),
+    dimension_2_residual_after_quadratic = as.numeric(residuals(quadratic_fit)),
+    modal_party = d$modal_party,
+    modal_caucus = d$modal_caucus,
+    modal_alignment = d$modal_alignment,
+    stringsAsFactors = FALSE
+  )
+}
+
+arch_diagnostics <- do.call(rbind, arch_rows)
+rownames(arch_diagnostics) <- NULL
+arch_members <- do.call(rbind, arch_member_rows)
+rownames(arch_members) <- NULL
+
+base_arch_members <- arch_members[arch_members$spec_id == baseline_spec, , drop = FALSE]
+arch_residual_group_association <- do.call(rbind, lapply(names(group_fields), function(group_type) {
+  field <- group_fields[[group_type]]
+  group_present <- !is.na(base_arch_members[[field]]) & nzchar(base_arch_members[[field]])
+  data.frame(
+    group_type = group_type,
+    n_groups = length(unique(base_arch_members[[field]][group_present])),
+    n_members = sum(is.finite(base_arch_members$dimension_2_residual_after_quadratic) & group_present),
+    eta_squared_dim2_residual = eta_squared(base_arch_members$dimension_2_residual_after_quadratic, base_arch_members[[field]]),
+    note = "Asociación descriptiva de los residuos de D2 tras retirar D1 y D1^2; no causal ni suficiente para nombrar una dimensión.",
+    stringsAsFactors = FALSE
+  )
+}))
+
 # Carga relativa de D2 por roll call en la corrida base. La documentación de wnominate
 # define spread1D/spread2D como spreads por dimensión. Usamos los pesos estimados para
 # calcular una medida puramente geométrica del aporte relativo de D2 al vector de spread.
@@ -306,6 +375,9 @@ write.csv(procrustes_df, file.path(dir2, "procrustes_stability.csv"), row.names 
 write.csv(stability, file.path(dir2, "member_2d_stability.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 write.csv(group_assoc, file.path(dir2, "group_association_2d.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 write.csv(group_centers, file.path(dir2, "group_centers_2d.csv"), row.names = FALSE, fileEncoding = "UTF-8")
+write.csv(arch_diagnostics, file.path(dir2, "dim2_arch_diagnostics.csv"), row.names = FALSE, fileEncoding = "UTF-8")
+write.csv(arch_members, file.path(dir2, "dim2_arch_member_residuals.csv"), row.names = FALSE, fileEncoding = "UTF-8")
+write.csv(arch_residual_group_association, file.path(dir2, "dim2_arch_group_association.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 write.csv(topic_summary, file.path(dir2, "topic_dim2_summary.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 write.csv(top_rollcalls, file.path(dir2, "top_dim2_rollcalls.csv"), row.names = FALSE, fileEncoding = "UTF-8")
 write.csv(models, file.path(dir2, "model_diagnostics_2d_audited.csv"), row.names = FALSE, fileEncoding = "UTF-8")
@@ -313,6 +385,7 @@ write.csv(models, file.path(dir2, "model_diagnostics_2d_audited.csv"), row.names
 nonbase_proc <- procrustes_df[procrustes_df$spec_id != baseline_spec, , drop = FALSE]
 second_eta <- setNames(group_assoc$eta_squared_dim2, group_assoc$group_type)
 first_eta <- setNames(group_assoc$eta_squared_dim1, group_assoc$group_type)
+base_arch <- arch_diagnostics[arch_diagnostics$spec_id == baseline_spec, , drop = FALSE]
 
 # Conclusión metodológica provisional basada en parsimonia: D2 mejora el ajuste, pero
 # su eigenvalor es muy pequeño respecto de D1. La estabilidad Procrustes decide si
@@ -350,6 +423,14 @@ diagnostics <- list(
     dim2 = as.list(second_eta),
     warning = "Asociación descriptiva, no causal y no suficiente para nombrar dimensiones."
   ),
+  dim2_arch_diagnostic = list(
+    baseline_r_squared_quadratic = if (nrow(base_arch)) base_arch$r_squared_quadratic[1] else NA,
+    baseline_delta_r_squared_quadratic = if (nrow(base_arch)) base_arch$delta_r_squared_quadratic[1] else NA,
+    baseline_quadratic_coefficient = if (nrow(base_arch)) base_arch$quadratic_coefficient[1] else NA,
+    specifications = arch_diagnostics,
+    residual_group_association = arch_residual_group_association,
+    warning = "La relación cuadrática es un diagnóstico geométrico. Los p-valores son auxiliares y no propagan la incertidumbre de las coordenadas estimadas."
+  ),
   most_sensitive_members_after_procrustes = most_sensitive,
   leading_topics_by_relative_dim2_loading = leading_topics,
   topic_warning = "La lectura temática es exploratoria: la taxonomía legislativa mantiene pendiente una validación externa/formal de precisión por macroárea.",
@@ -361,11 +442,14 @@ write_json(diagnostics, file.path(dir2, "audit_2d_diagnostics.json"), pretty = T
 if (nrow(procrustes_df) != length(specs)) stop("Faltan especificaciones en auditoría Procrustes")
 if (!all(is.finite(models$eigenvalue_ratio_2_to_1))) stop("Eigenvalue ratios inválidos")
 if (mean_eigen_ratio >= 0.20) warning("D2 tiene un eigenvalor relativamente grande; revisar conclusión de parsimonia")
+if (nrow(base_arch) != 1) stop("No se produjo el diagnóstico de arco para la especificación base")
 
 cat(jsonlite::toJSON(list(
   mean_delta_cc_pp = mean_delta_cc,
   mean_delta_apre = mean_delta_apre,
   mean_eigen_ratio = mean_eigen_ratio,
   min_d2_corr_after_procrustes = min_d2_corr,
+  baseline_dim2_quadratic_r_squared = base_arch$r_squared_quadratic[1],
+  baseline_dim2_quadratic_delta_r_squared = base_arch$delta_r_squared_quadratic[1],
   conclusion = provisional
 ), pretty = TRUE, auto_unbox = TRUE), "\n")
