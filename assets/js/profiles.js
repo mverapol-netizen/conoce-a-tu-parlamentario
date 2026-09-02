@@ -10,7 +10,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jorge-diaz-ibarra.jpg",
     "id": 1208,
-    "region": "Arica y Parinacota"
+    "region": "Arica y Parinacota",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Luis Malla Valenzuela": {
     "officialName": "Luis Malla Valenzuela",
@@ -22,7 +26,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/luis-malla-valenzuela.jpg",
     "id": 1141,
-    "region": "Arica y Parinacota"
+    "region": "Arica y Parinacota",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Liberal de Chile",
+    "politicalUpdated": "2026-09-02"
   },
   "Stephanie Jéldrez Ortíz": {
     "officialName": "Stephanie Jéldrez Ortiz",
@@ -34,7 +42,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/stephanie-jeldrez-ortiz.jpg",
     "id": 1216,
-    "region": "Arica y Parinacota"
+    "region": "Arica y Parinacota",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Álvaro Jofré Cáceres": {
     "officialName": "Álvaro Jofré Cáceres",
@@ -46,7 +58,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alvaro-jofre-caceres.jpg",
     "id": 1215,
-    "region": "Tarapacá"
+    "region": "Tarapacá",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Carlos Carvajal Gallardo": {
     "officialName": "Carlos Carvajal Gallardo",
@@ -58,7 +74,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carlos-carvajal-gallardo.jpg",
     "id": 1195,
-    "region": "Tarapacá"
+    "region": "Tarapacá",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Ximena Naranjo Pinto": {
     "officialName": "Ximena Naranjo Pinto",
@@ -70,7 +90,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ximena-naranjo-pinto.jpg",
     "id": 1231,
-    "region": "Tarapacá"
+    "region": "Tarapacá",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Carlo Arqueros Pizarro": {
     "officialName": "Carlo Arqueros Pizarro",
@@ -82,7 +106,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carlo-arqueros-pizarro.jpg",
     "id": 1187,
-    "region": "Antofagasta"
+    "region": "Antofagasta",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Fabián Ossandón Briceño": {
     "officialName": "Fabián Ossandón Briceño",
@@ -94,7 +122,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/fabian-ossandon-briceno.jpg",
     "id": 1239,
-    "region": "Antofagasta"
+    "region": "Antofagasta",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Jaime Araya Guerrero": {
     "officialName": "Jaime Araya Guerrero",
@@ -106,7 +138,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jaime-araya-guerrero.jpg",
     "id": 1099,
-    "region": "Antofagasta"
+    "region": "Antofagasta",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Marcela Hernando Pérez": {
     "officialName": "Marcela Hernando Pérez",
@@ -118,7 +154,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/marcela-hernando-perez.jpg",
     "id": 986,
-    "region": "Antofagasta"
+    "region": "Antofagasta",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Radical de Chile",
+    "politicalUpdated": "2026-09-02"
   },
   "Sebastián Videla Castillo": {
     "officialName": "Sebastián Videla Castillo",
@@ -130,7 +170,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/sebastian-videla-castillo.jpg",
     "id": 1182,
-    "region": "Antofagasta"
+    "region": "Antofagasta",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Socialista, Liberal, Radical e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristián Tapia Ramos": {
     "officialName": "Cristián Tapia Ramos",
@@ -142,7 +186,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristian-tapia-ramos.jpg",
     "id": 1175,
-    "region": "Atacama"
+    "region": "Atacama",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Ignacio Urcullú Clement-Lund": {
     "officialName": "Ignacio Urcullú Clèment-Lund",
@@ -154,7 +202,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ignacio-urcullu-clement-lund.jpg",
     "id": 1254,
-    "region": "Atacama"
+    "region": "Atacama",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Jaime Mulet Martínez": {
     "officialName": "Jaime Mulet Martínez",
@@ -166,7 +218,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jaime-mulet-martinez.jpg",
     "id": 872,
-    "region": "Atacama"
+    "region": "Atacama",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Federación Regionalista Verde Social",
+    "politicalUpdated": "2026-09-02"
   },
   "Juan Santana Castillo": {
     "officialName": "Juan Santana Castillo",
@@ -178,7 +234,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/juan-santana-castillo.jpg",
     "id": 1073,
-    "region": "Atacama"
+    "region": "Atacama",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Paula Olmos Contreras": {
     "officialName": "Paula Olmos Contreras",
@@ -190,7 +250,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/paula-olmos-contreras.jpg",
     "id": 1236,
-    "region": "Atacama"
+    "region": "Atacama",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Bernardo Salinas Maya": {
     "officialName": "Bernardo Salinas Maya",
@@ -202,7 +266,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/bernardo-salinas-maya.jpg",
     "id": 1250,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Comité Comunista e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Carolina Tello Rojas": {
     "officialName": "Carolina Tello Rojas",
@@ -214,7 +282,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carolina-tello-rojas.jpg",
     "id": 1177,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Daniel Manouchehri Lobos": {
     "officialName": "Daniel Manouchehri Lobos",
@@ -226,7 +298,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/daniel-manouchehri-lobos.jpg",
     "id": 1142,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Eileen Urqueta Rojas": {
     "officialName": "Eileen Urqueta Rojas",
@@ -238,7 +314,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/eileen-urqueta-rojas.jpg",
     "id": 1255,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Erich Grohs Marín": {
     "officialName": "Erich Grohs Marín",
@@ -250,7 +330,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/erich-grohs-marin.jpg",
     "id": 1212,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Marco Sulantay Olivares": {
     "officialName": "Marco Antonio Sulantay Olivares",
@@ -262,7 +346,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/marco-sulantay-olivares.jpg",
     "id": 1174,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Nathalie Castillo Rojas": {
     "officialName": "Nathalie Castillo Rojas",
@@ -274,7 +362,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/nathalie-castillo-rojas.jpg",
     "id": 1117,
-    "region": "Coquimbo"
+    "region": "Coquimbo",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Benjamín Lorca Inzunza": {
     "officialName": "Benjamín Lorca Inzunza",
@@ -286,7 +378,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/benjamin-lorca-inzunza.jpg",
     "id": 1221,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Chiara Barchiesi Chávez": {
     "officialName": "Chiara Barchiesi Chávez",
@@ -298,7 +394,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/chiara-barchiesi-chavez.jpg",
     "id": 1104,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristian Mella Andaur": {
     "officialName": "Cristian Mella Andaur",
@@ -310,7 +410,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristian-mella-andaur.jpg",
     "id": 1224,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Javier Olivares Avendaño": {
     "officialName": "Javier Olivares Avendaño",
@@ -322,7 +426,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/javier-olivares-avendano.jpg",
     "id": 1235,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Luis Pardo Sáinz": {
     "officialName": "Luis Pardo Sáinz",
@@ -334,7 +442,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/luis-pardo-sainz.jpg",
     "id": 1060,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "María Francisca Bello Campos": {
     "officialName": "María Francisca Bello Campos",
@@ -346,7 +458,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/maria-francisca-bello-campos.jpg",
     "id": 1107,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Nelson Venegas Salazar": {
     "officialName": "Nelson Venegas Salazar",
@@ -358,7 +474,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/nelson-venegas-salazar.jpg",
     "id": 1181,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Sofía González Cortés": {
     "officialName": "Sofía González Cortés",
@@ -370,7 +490,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/sofia-gonzalez-cortes.jpg",
     "id": 1211,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Andrés Celis Montt": {
     "officialName": "Andrés Celis Montt",
@@ -382,7 +506,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/andres-celis-montt.jpg",
     "id": 1021,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Hotuiti Teao Drago": {
     "officialName": "Hotuiti Teao Drago",
@@ -394,7 +522,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/hotuiti-teao-drago.jpg",
     "id": 1176,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Jaime Bassa Mercado": {
     "officialName": "Jaime Bassa Mercado",
@@ -406,7 +538,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jaime-bassa-mercado.jpg",
     "id": 1189,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Jorge Brito Hasbún": {
     "officialName": "Jorge Brito Hasbún",
@@ -418,7 +554,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jorge-brito-hasbun.jpg",
     "id": 1015,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Juan Marcelo Valenzuela Henríquez": {
     "officialName": "Juan Marcelo Valenzuela Henríquez",
@@ -430,7 +570,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/juan-marcelo-valenzuela-henriquez.jpg",
     "id": 1259,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Luis Alberto Cuello Peña y Lillo": {
     "officialName": "Luis Alberto Cuello Peña y Lillo",
@@ -442,7 +586,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/luis-alberto-cuello-pena-y-lillo.jpg",
     "id": 1122,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Luis Fernando Sánchez Ossa": {
     "officialName": "Luis Sánchez Ossa",
@@ -454,7 +602,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/luis-fernando-sanchez-ossa.jpg",
     "id": 1170,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Sebastián Zamora Soto": {
     "officialName": "Sebastián Zamora Soto",
@@ -466,7 +618,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/sebastian-zamora-soto.jpg",
     "id": 1263,
-    "region": "Valparaíso"
+    "region": "Valparaíso",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Comité Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Agustín Matías Romero Leiva": {
     "officialName": "Agustín Romero Leiva",
@@ -478,7 +634,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/agustin-matias-romero-leiva.jpg",
     "id": 1165,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristián Contreras Radovic": {
     "officialName": "Cristian Contreras Radovic",
@@ -490,7 +650,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristian-contreras-radovic.jpg",
     "id": 1200,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Enrique Bassaletti Riess": {
     "officialName": "Enrique Bassaletti Riess",
@@ -502,7 +666,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/enrique-bassaletti-riess.jpg",
     "id": 1190,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Comité Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Gustavo Gatica Villarroel": {
     "officialName": "Gustavo Gatica Villarroel",
@@ -514,7 +682,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/gustavo-gatica-villarroel.jpg",
     "id": 1210,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Comité Comunista e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Marcos Barraza Gómez": {
     "officialName": "Marcos Barraza Gómez",
@@ -526,7 +698,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/marcos-barraza-gomez.jpg",
     "id": 1188,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Mario Olavarría Rodríguez": {
     "officialName": "Mario Olavarría Rodríguez",
@@ -538,7 +714,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/mario-olavarria-rodriguez.jpg",
     "id": 1234,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Pier Karlezi Hazleby": {
     "officialName": "Pier Karlezi Hazleby",
@@ -550,7 +730,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/pier-karlezi-hazleby.jpg",
     "id": 1217,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Tatiana Urrutia Herrera": {
     "officialName": "Tatiana Urrutia Herrera",
@@ -562,7 +746,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/tatiana-urrutia-herrera.jpg",
     "id": 1256,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Boris Barrera Moreno": {
     "officialName": "Boris Barrera Moreno",
@@ -574,7 +762,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/boris-barrera-moreno.jpg",
     "id": 1012,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Carlos Cuadrado Prats": {
     "officialName": "Carlos Cuadrado Prats",
@@ -586,7 +778,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carlos-cuadrado-prats.jpg",
     "id": 1205,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Por la Democracia",
+    "politicalUpdated": "2026-09-02"
   },
   "César Valenzuela Maass": {
     "officialName": "César Valenzuela Maass",
@@ -598,7 +794,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cesar-valenzuela-maass.jpg",
     "id": 1260,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Guillermo Ramírez Diez": {
     "officialName": "Guillermo Ramírez Diez",
@@ -610,7 +810,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/guillermo-ramirez-diez.jpg",
     "id": 1065,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Javiera Rodríguez Pascual": {
     "officialName": "Javiera Rodríguez Pascual",
@@ -622,7 +826,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/javiera-rodriguez-pascual.jpg",
     "id": 1247,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "José Carlos Meza Pereira": {
     "officialName": "José Carlos Meza Pereira",
@@ -634,7 +842,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jose-carlos-meza-pereira.jpg",
     "id": 1146,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Tamara Ramírez Ramírez": {
     "officialName": "Tamara Ramírez Ramírez",
@@ -646,7 +858,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/tamara-ramirez-ramirez.jpg",
     "id": 1243,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Emilia Schneider Videla": {
     "officialName": "Emilia Schneider Videla",
@@ -658,7 +874,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/emilia-schneider-videla.jpg",
     "id": 1171,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Francisco Orrego Gutiérrez": {
     "officialName": "Francisco Orrego Gutiérrez",
@@ -670,7 +890,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/francisco-orrego-gutierrez.jpg",
     "id": 1237,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Gonzalo Winter Etcheberry": {
     "officialName": "Gonzalo Winter Etcheberry",
@@ -682,7 +906,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/gonzalo-winter-etcheberry.jpg",
     "id": 1086,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Hans Marowski Cuevas": {
     "officialName": "Hans Marowski Cuevas",
@@ -694,7 +922,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/hans-marowski-cuevas.jpg",
     "id": 1223,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Irací Hassler Jacob": {
     "officialName": "Irací Hassler Jacob",
@@ -706,7 +938,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/iraci-hassler-jacob.jpg",
     "id": 1213,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Jorge Alessandri Vergara": {
     "officialName": "Jorge Alessandri Vergara",
@@ -718,7 +954,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jorge-alessandri-vergara.jpg",
     "id": 1009,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "José Antonio Kast Adriasola": {
     "officialName": "José Antonio Kast Adriasola",
@@ -730,7 +970,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jose-antonio-kast-adriasola.jpg",
     "id": 1218,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Lorena Fries Monleón": {
     "officialName": "Lorena Fries Monleón",
@@ -742,7 +986,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/lorena-fries-monleon.jpg",
     "id": 1127,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Catalina Del Real Mihovilovic": {
     "officialName": "Catalina Del Real Mihovilovic",
@@ -754,7 +1002,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/catalina-del-real-mihovilovic.jpg",
     "id": 1025,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Claudia Mora Vega": {
     "officialName": "Claudia Mora Vega",
@@ -766,7 +1018,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/claudia-mora-vega.jpg",
     "id": 1227,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Constanza Hube Portus": {
     "officialName": "Constanza Hube Portus",
@@ -778,7 +1034,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/constanza-hube-portus.jpg",
     "id": 1214,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Constanza Schonhaut Soto": {
     "officialName": "Constanza Schonhaut Soto",
@@ -790,7 +1050,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/constanza-schonhaut-soto.jpg",
     "id": 1252,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristián Araya Lerdo de Tejada": {
     "officialName": "Cristián Araya Lerdo de Tejada",
@@ -802,7 +1066,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristian-araya-lerdo-de-tejada.jpg",
     "id": 1100,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Diego Schalper Sepúlveda": {
     "officialName": "Diego Schalper Sepúlveda",
@@ -814,7 +1082,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/diego-schalper-sepulveda.jpg",
     "id": 1075,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Álvaro Carter Fernández": {
     "officialName": "Álvaro Carter Fernández",
@@ -826,7 +1098,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alvaro-carter-fernandez.jpg",
     "id": 1017,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Ana María Gazmuri Vieira": {
     "officialName": "Ana María Gazmuri Vieira",
@@ -838,7 +1114,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ana-maria-gazmuri-vieira.jpg",
     "id": 1128,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Acción Humanista",
+    "politicalUpdated": "2026-09-02"
   },
   "Daniela Serrano Salazar": {
     "officialName": "Daniela Serrano Salazar",
@@ -850,7 +1130,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/daniela-serrano-salazar.jpg",
     "id": 1173,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Macarena Santelices Cañas": {
     "officialName": "Macarena Santelices Cañas",
@@ -862,7 +1146,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/macarena-santelices-canas.jpg",
     "id": 1251,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Pamela Jiles Moreno": {
     "officialName": "Pamela Jiles Moreno",
@@ -874,7 +1162,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/pamela-jiles-moreno.jpg",
     "id": 1039,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Ximena Ossandón Irarrázabal": {
     "officialName": "Ximena Ossandón Irarrázabal",
@@ -886,7 +1178,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ximena-ossandon-irarrazabal.jpg",
     "id": 1059,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Zandra Parisi Fernández": {
     "officialName": "Zandra Parisi Fernández",
@@ -898,7 +1194,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/zandra-parisi-fernandez.jpg",
     "id": 1240,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Eduardo Durán Salinas": {
     "officialName": "Eduardo Durán Salinas",
@@ -910,7 +1210,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/eduardo-duran-salinas.jpg",
     "id": 1028,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Felipe Ross Correa": {
     "officialName": "Felipe Ross Correa",
@@ -922,7 +1226,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/felipe-ross-correa.jpg",
     "id": 1248,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Gael Yeomans Araya": {
     "officialName": "Gael Yeomans Araya",
@@ -934,7 +1242,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/gael-yeomans-araya.jpg",
     "id": 1087,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Lorena Pizarro Sierra": {
     "officialName": "Lorena Pizarro Sierra",
@@ -946,7 +1258,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/lorena-pizarro-sierra.jpg",
     "id": 1159,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Comunista",
+    "politicalUpdated": "2026-09-02"
   },
   "Valentina Becerra Peña": {
     "officialName": "Valentina Becerra Peña",
@@ -958,7 +1274,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/valentina-becerra-pena.jpg",
     "id": 1191,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Diego Vergara Rodríguez": {
     "officialName": "Diego Vergara Rodríguez",
@@ -970,7 +1290,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/diego-vergara-rodriguez.jpg",
     "id": 1262,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Ignacio Achurra Díaz": {
     "officialName": "Ignacio Achurra Díaz",
@@ -982,7 +1306,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ignacio-achurra-diaz.jpg",
     "id": 1186,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Jaime Coloma Álamos": {
     "officialName": "Jaime Coloma Álamos",
@@ -994,7 +1322,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jaime-coloma-alamos.jpg",
     "id": 1199,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Juan Irarrázaval Rossel": {
     "officialName": "Juan Irarrázaval Rossel",
@@ -1006,7 +1338,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/juan-irarrazaval-rossel.jpg",
     "id": 1133,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Marisela Santibáñez Novoa": {
     "officialName": "Marisela Santibáñez Novoa",
@@ -1018,7 +1354,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/marisela-santibanez-novoa.jpg",
     "id": 1074,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Comité Comunista e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Comité Comunista e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Raúl Leiva Carvajal": {
     "officialName": "Raúl Leiva Carvajal",
@@ -1030,7 +1370,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/raul-leiva-carvajal.jpg",
     "id": 1044,
-    "region": "Metropolitana de Santiago"
+    "region": "Metropolitana de Santiago",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Fernando Ugarte Tejeda": {
     "officialName": "Fernando Ugarte Tejeda",
@@ -1042,7 +1386,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/fernando-ugarte-tejeda.jpg",
     "id": 1253,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Fernando Zamorano Peralta": {
     "officialName": "Fernando Zamorano Peralta",
@@ -1054,7 +1402,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/fernando-zamorano-peralta.jpg",
     "id": 1264,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Por la Democracia",
+    "politicalUpdated": "2026-09-02"
   },
   "Natalia Romero Talguia": {
     "officialName": "Natalia Romero Talguia",
@@ -1066,7 +1418,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/natalia-romero-talguia.jpg",
     "id": 1166,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Raúl Soto Mardones": {
     "officialName": "Raúl Soto Mardones",
@@ -1078,7 +1434,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/raul-soto-mardones.jpg",
     "id": 1077,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Por la Democracia",
+    "politicalUpdated": "2026-09-02"
   },
   "Valentina Cáceres Monsalve": {
     "officialName": "Valentina Cáceres Monsálvez",
@@ -1090,7 +1450,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/valentina-caceres-monsalve.jpg",
     "id": 1207,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Carolina Cucumides Calderón": {
     "officialName": "Carolina Cucumides Calderón",
@@ -1102,7 +1466,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carolina-cucumides-calderon.jpg",
     "id": 1206,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Socialista, Liberal, Radical e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Félix Bugueño Sotelo": {
     "officialName": "Félix Bugueño Sotelo",
@@ -1114,7 +1482,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/felix-bugueno-sotelo.jpg",
     "id": 1114,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Ricardo Neumann Bertin": {
     "officialName": "Ricardo Neumann Bertín",
@@ -1126,7 +1498,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ricardo-neumann-bertin.jpg",
     "id": 1233,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Sebastián Cristoffanini Jaraquemada": {
     "officialName": "Sebastián Cristoffanini Jaraquemada",
@@ -1138,7 +1514,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/sebastian-cristoffanini-jaraquemada.jpg",
     "id": 1203,
-    "region": "O'Higgins"
+    "region": "O'Higgins",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Benjamín Moreno Bascur": {
     "officialName": "Benjamín Moreno Bascur",
@@ -1150,7 +1530,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/benjamin-moreno-bascur.jpg",
     "id": 1150,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Germán Verdugo Soto": {
     "officialName": "Germán Verdugo Soto",
@@ -1162,7 +1546,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/german-verdugo-soto.jpg",
     "id": 915,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Guillermo Valdés Carmona": {
     "officialName": "Guillermo Valdés Carmona",
@@ -1174,7 +1562,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/guillermo-valdes-carmona.jpg",
     "id": 1258,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Javier Muñoz Riquelme": {
     "officialName": "Javier Muñoz Riquelme",
@@ -1186,7 +1578,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/javier-munoz-riquelme.jpg",
     "id": 1229,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Jorge Guzmán Zepeda": {
     "officialName": "Jorge Guzmán Zepeda",
@@ -1198,7 +1594,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jorge-guzman-zepeda.jpg",
     "id": 1132,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Evolución Política",
+    "politicalUpdated": "2026-09-02"
   },
   "Priscilla Castillo Gerli": {
     "officialName": "Priscilla Castillo Gerli",
@@ -1210,7 +1610,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/priscilla-castillo-gerli.jpg",
     "id": 1196,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Roberto Celedón Fernández": {
     "officialName": "Roberto Celedón Fernández",
@@ -1222,7 +1626,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/roberto-celedon-fernandez.jpg",
     "id": 1184,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Consuelo Veloso Ávila": {
     "officialName": "Consuelo Veloso Ávila",
@@ -1234,7 +1642,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/consuelo-veloso-avila.jpg",
     "id": 1180,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristian Menchaca Pinochet": {
     "officialName": "Cristian Menchaca Pinochet",
@@ -1246,7 +1658,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristian-menchaca-pinochet.jpg",
     "id": 1225,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Comité Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Daniel Bustos Leal": {
     "officialName": "Daniel Bustos Leal",
@@ -1258,7 +1674,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/daniel-bustos-leal.jpg",
     "id": 1194,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Rodrigo Ramírez Parra": {
     "officialName": "Rodrigo Ramírez Parra",
@@ -1270,7 +1690,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/rodrigo-ramirez-parra.jpg",
     "id": 1242,
-    "region": "Maule"
+    "region": "Maule",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Renovación Nacional, Evopoli e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Carlos Chandía Alarcón": {
     "officialName": "Carlos Chandía Alarcón",
@@ -1282,7 +1706,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carlos-chandia-alarcon.jpg",
     "id": 1197,
-    "region": "Ñuble"
+    "region": "Ñuble",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristóbal Martínez Ramírez": {
     "officialName": "Cristóbal Martínez Ramírez",
@@ -1294,7 +1722,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristobal-martinez-ramirez.jpg",
     "id": 1143,
-    "region": "Ñuble"
+    "region": "Ñuble",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Felipe Camaño Cárdenas": {
     "officialName": "Felipe Camaño Cárdenas",
@@ -1306,7 +1738,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/felipe-camano-cardenas.jpg",
     "id": 1116,
-    "region": "Ñuble"
+    "region": "Ñuble",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Francisco Crisóstomo Llanos": {
     "officialName": "Francisco Crisóstomo Llanos",
@@ -1318,7 +1754,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/francisco-crisostomo-llanos.jpg",
     "id": 1204,
-    "region": "Ñuble"
+    "region": "Ñuble",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Sara Concha Smith": {
     "officialName": "Sara Concha Smith",
@@ -1330,7 +1770,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/sara-concha-smith.jpg",
     "id": 1119,
-    "region": "Ñuble"
+    "region": "Ñuble",
+    "caucus": "Por definir",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Social Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Álvaro Andrés Ortiz Vera": {
     "officialName": "Álvaro Ortiz Vera",
@@ -1342,7 +1786,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alvaro-andres-ortiz-vera.jpg",
     "id": 1238,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Francesca Muñoz González": {
     "officialName": "Francesca Muñoz González",
@@ -1354,7 +1802,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/francesca-munoz-gonzalez.jpg",
     "id": 1054,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Por definir",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Social Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "José Antonio Rivas Villalobos": {
     "officialName": "José Antonio Rivas Villalobos",
@@ -1366,7 +1818,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jose-antonio-rivas-villalobos.jpg",
     "id": 1246,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Marlene Pérez Cartes": {
     "officialName": "Marlene Pérez Cartes",
@@ -1378,7 +1834,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/marlene-perez-cartes.jpg",
     "id": 1157,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Patricio Briones Moller": {
     "officialName": "Patricio Briones Moller",
@@ -1390,7 +1850,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/patricio-briones-moller.jpg",
     "id": 1193,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Paz Charpentier Rajcevich": {
     "officialName": "Paz Charpentier Rajcevich",
@@ -1402,7 +1866,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/paz-charpentier-rajcevich.jpg",
     "id": 1198,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Roberto Arroyo Muñoz": {
     "officialName": "Roberto Arroyo Muñoz",
@@ -1414,7 +1882,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/roberto-arroyo-munoz.jpg",
     "id": 1102,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Independiente en Comité Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Sergio Bobadilla Muñoz": {
     "officialName": "Sergio Bobadilla Muñoz",
@@ -1426,7 +1898,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/sergio-bobadilla-munoz.jpg",
     "id": 815,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristóbal Urruticoechea Ríos": {
     "officialName": "Cristóbal Urruticoechea Ríos",
@@ -1438,7 +1914,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristobal-urruticoechea-rios.jpg",
     "id": 1082,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Flor Weisse Novoa": {
     "officialName": "Flor Weisse Novoa",
@@ -1450,7 +1930,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/flor-weisse-novoa.jpg",
     "id": 1183,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Joanna Pérez Olea": {
     "officialName": "Joanna Pérez Olea",
@@ -1462,7 +1946,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/joanna-perez-olea.jpg",
     "id": 1062,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Demócratas Chile",
+    "politicalUpdated": "2026-09-02"
   },
   "Lilian Betancurt Delgado": {
     "officialName": "Lilian Betancurt Delgado",
@@ -1474,7 +1962,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/lilian-betancurt-delgado.jpg",
     "id": 1192,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Patricio Pinilla Valencia": {
     "officialName": "Patricio Pinilla Valencia",
@@ -1486,7 +1978,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/patricio-pinilla-valencia.jpg",
     "id": 1241,
-    "region": "Biobío"
+    "region": "Biobío",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Andrea Parra Sauterel": {
     "officialName": "Andrea Parra Sauterel",
@@ -1498,7 +1994,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/andrea-parra-sauterel.jpg",
     "id": 1061,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Por la Democracia",
+    "politicalUpdated": "2026-09-02"
   },
   "Eduardo Cretton Rebolledo": {
     "officialName": "Eduardo Cretton Rebolledo",
@@ -1510,7 +2010,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/eduardo-cretton-rebolledo.jpg",
     "id": 1202,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Gloria Naveillan Arriagada": {
     "officialName": "Gloria Naveillan Arriagada",
@@ -1522,7 +2026,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/gloria-naveillan-arriagada.jpg",
     "id": 1152,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Juan Beltrán Silva": {
     "officialName": "Juan Carlos Beltrán Silva",
@@ -1534,7 +2042,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/juan-beltran-silva.jpg",
     "id": 1108,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Cristian Neira Martínez": {
     "officialName": "Cristian Neira Martínez",
@@ -1546,7 +2058,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/cristian-neira-martinez.jpg",
     "id": 1232,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Ericka Ñanco Vásquez": {
     "officialName": "Coca Ericka Ñanco Vásquez",
@@ -1558,7 +2074,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/ericka-nanco-vasquez.jpg",
     "id": 1153,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Flor Contreras Vivallo": {
     "officialName": "Flor Contreras Vivallo",
@@ -1570,7 +2090,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/flor-contreras-vivallo.jpg",
     "id": 1201,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "José Montalva Feuerhake": {
     "officialName": "José Montalva Feuerhake",
@@ -1582,7 +2106,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/jose-montalva-feuerhake.jpg",
     "id": 1226,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Stephan Schubert Rubio": {
     "officialName": "Stephan Schubert Rubio",
@@ -1594,7 +2122,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/stephan-schubert-rubio.jpg",
     "id": 1172,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Tomás Kast Sommerhoff": {
     "officialName": "Tomás Kast Sommerhoff",
@@ -1606,7 +2138,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/tomas-kast-sommerhoff.jpg",
     "id": 1219,
-    "region": "La Araucanía"
+    "region": "La Araucanía",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Evolución Política",
+    "politicalUpdated": "2026-09-02"
   },
   "Daniel Valenzuela Salazar": {
     "officialName": "Daniel Valenzuela Salazar",
@@ -1618,7 +2154,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/daniel-valenzuela-salazar.jpg",
     "id": 1261,
-    "region": "Los Ríos"
+    "region": "Los Ríos",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Renovación Nacional, Evopoli e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Leandro Kunstmann Collado": {
     "officialName": "Leandro Kunstmann Collado",
@@ -1630,7 +2170,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/leandro-kunstmann-collado.jpg",
     "id": 1220,
-    "region": "Los Ríos"
+    "region": "Los Ríos",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Marcos Ilabaca Cerda": {
     "officialName": "Marcos Ilabaca Cerda",
@@ -1642,7 +2186,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/marcos-ilabaca-cerda.jpg",
     "id": 1038,
-    "region": "Los Ríos"
+    "region": "Los Ríos",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Matías Fernández Hartwig": {
     "officialName": "Matías Fernández Hartwig",
@@ -1654,7 +2202,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/matias-fernandez-hartwig.jpg",
     "id": 1209,
-    "region": "Los Ríos"
+    "region": "Los Ríos",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   },
   "Omar Sabat Guzmán": {
     "officialName": "Omar Sabat Guzmán",
@@ -1666,7 +2218,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/omar-sabat-guzman.jpg",
     "id": 1249,
-    "region": "Los Ríos"
+    "region": "Los Ríos",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Independiente en Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "René Manuel García García": {
     "officialName": "René Manuel García García",
@@ -1678,7 +2234,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/rene-manuel-garcia-garcia.jpg",
     "id": 843,
-    "region": "Los Ríos"
+    "region": "Los Ríos",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Daniel Lilayu Vivanco": {
     "officialName": "Daniel Lilayu Vivanco",
@@ -1690,7 +2250,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/daniel-lilayu-vivanco.jpg",
     "id": 1140,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Emilia Nuyado Ancapichún": {
     "officialName": "Emilia Nuyado Ancapichun",
@@ -1702,7 +2266,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/emilia-nuyado-ancapichun.jpg",
     "id": 1056,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "Héctor Barría Angulo": {
     "officialName": "Héctor Barría Angulo",
@@ -1714,7 +2282,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/hector-barria-angulo.jpg",
     "id": 1105,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Demócrata Cristiano",
+    "politicalUpdated": "2026-09-02"
   },
   "Paulina Muñoz Minte": {
     "officialName": "Paulina Muñoz Minte",
@@ -1726,7 +2298,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/paulina-munoz-minte.jpg",
     "id": 1228,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Comité Partido Nacional Libertarios",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido Nacional Libertario",
+    "politicalUpdated": "2026-09-02"
   },
   "Alejandro Bernales Maldonado": {
     "officialName": "Alejandro Bernales Maldonado",
@@ -1738,7 +2314,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alejandro-bernales-maldonado.jpg",
     "id": 1013,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Liberal de Chile",
+    "politicalUpdated": "2026-09-02"
   },
   "Alex Nahuelquín Nahuelquín": {
     "officialName": "Alex Nahuelquin Nahuelquin",
@@ -1750,7 +2330,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alex-nahuelquin-nahuelquin.jpg",
     "id": 1230,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Comité Partido de la Gente",
+    "alignment": "no_alineado",
+    "affiliationLabel": "Partido de la Gente",
+    "politicalUpdated": "2026-09-02"
   },
   "Claudia Reyes Larenas": {
     "officialName": "Claudia Reyes Larenas",
@@ -1762,7 +2346,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/claudia-reyes-larenas.jpg",
     "id": 1244,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Héctor Ulloa Aguilera": {
     "officialName": "Héctor Ulloa Aguilera",
@@ -1774,7 +2362,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/hector-ulloa-aguilera.jpg",
     "id": 1178,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Mauro González Villaroel": {
     "officialName": "Mauro González Villarroel",
@@ -1786,7 +2378,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/mauro-gonzalez-villaroel.jpg",
     "id": 1131,
-    "region": "Los Lagos"
+    "region": "Los Lagos",
+    "caucus": "Renovación Nacional, Evopoli e Independientes",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Renovación Nacional",
+    "politicalUpdated": "2026-09-02"
   },
   "Alejandra Valdebenito Torres": {
     "officialName": "Alejandra Valdebenito Torres",
@@ -1798,7 +2394,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alejandra-valdebenito-torres.jpg",
     "id": 1257,
-    "region": "Aysén"
+    "region": "Aysén",
+    "caucus": "Unión Demócrata Independiente",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Unión Demócrata Independiente",
+    "politicalUpdated": "2026-09-02"
   },
   "Andrea Jacqueline Macías Palma": {
     "officialName": "Andrea Macías Palma",
@@ -1810,7 +2410,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/andrea-jacqueline-macias-palma.jpg",
     "id": 1222,
-    "region": "Aysén"
+    "region": "Aysén",
+    "caucus": "Socialista, Liberal, Radical e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Partido Socialista",
+    "politicalUpdated": "2026-09-02"
   },
   "René Alinco Bustos": {
     "officialName": "René Alinco Bustos",
@@ -1822,7 +2426,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/rene-alinco-bustos.jpg",
     "id": 803,
-    "region": "Aysén"
+    "region": "Aysén",
+    "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Alejandro Riquelme Ducci": {
     "officialName": "Alejandro Riquelme Ducci",
@@ -1834,7 +2442,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/alejandro-riquelme-ducci.jpg",
     "id": 1245,
-    "region": "Magallanes y de la Antártica Chilena"
+    "region": "Magallanes y de la Antártica Chilena",
+    "caucus": "Comité Partido Republicano",
+    "alignment": "oficialismo",
+    "affiliationLabel": "Partido Republicano",
+    "politicalUpdated": "2026-09-02"
   },
   "Carlos Bianchi Chelech": {
     "officialName": "Carlos Bianchi Chelech",
@@ -1846,7 +2458,11 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/carlos-bianchi-chelech.jpg",
     "id": 1110,
-    "region": "Magallanes y de la Antártica Chilena"
+    "region": "Magallanes y de la Antártica Chilena",
+    "caucus": "Partido Por la Democracia e Independientes",
+    "alignment": "oposicion",
+    "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
+    "politicalUpdated": "2026-09-02"
   },
   "Javiera Morales Alvarado": {
     "officialName": "Javiera Morales Alvarado",
@@ -1858,6 +2474,10 @@ window.PROFILES = {
     "phone": null,
     "photo": "assets/photos/javiera-morales-alvarado.jpg",
     "id": 1148,
-    "region": "Magallanes y de la Antártica Chilena"
+    "region": "Magallanes y de la Antártica Chilena",
+    "caucus": "Frente Amplio",
+    "alignment": "oposicion",
+    "affiliationLabel": "Frente Amplio",
+    "politicalUpdated": "2026-09-02"
   }
 };
