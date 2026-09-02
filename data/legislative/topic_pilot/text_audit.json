@@ -12,12 +12,11 @@
   },
   "extraction_methods": {
     "pdf_text": 15,
-    "unsupported": 9
+    "docx_text": 9
   },
   "quality": {
     "utilizable": 1,
-    "rica": 14,
-    "sin_texto": 9
+    "rica": 23
   },
   "by_origin": {
     "parlamentario": {
@@ -29,8 +28,8 @@
     "ejecutivo": {
       "sample": 12,
       "with_candidate_document": 12,
-      "with_any_text": 3,
-      "usable_or_rich": 3
+      "with_any_text": 12,
+      "usable_or_rich": 12
     }
   },
   "errors": []
