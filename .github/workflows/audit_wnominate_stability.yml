@@ -1,0 +1,58 @@
+name: Audit experimental W-NOMINATE stability
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/audit_wnominate_stability.py"
+      - "data/legislative/2026/wnominate/member_coordinates.csv"
+      - "data/legislative/2026/member_votes_enriched.csv"
+      - ".github/workflows/audit_wnominate_stability.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-experimental-wnominate-stability
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit individual and group stability
+        run: python scripts/audit_wnominate_stability.py
+
+      - name: Persist stability audit
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/legislative/2026/wnominate/member_stability_audit.csv \
+            data/legislative/2026/wnominate/member_exclusions.csv \
+            data/legislative/2026/wnominate/group_position_summary.csv \
+            data/legislative/2026/wnominate/group_association_diagnostics.csv \
+            data/legislative/2026/wnominate/stability_audit_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No W-NOMINATE stability-audit changes"
+          else
+            git commit -m "Actualiza auditoría de estabilidad W-NOMINATE 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
