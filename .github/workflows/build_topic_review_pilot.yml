@@ -1,0 +1,45 @@
+name: Build topic review pilot
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_topic_review_pilot.py"
+      - ".github/workflows/build_topic_review_pilot.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build compact review pilot
+        run: python scripts/build_topic_review_pilot.py
+
+      - name: Persist review pilot
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/topics/topic_review_pilot_20.csv
+          if git diff --cached --quiet; then
+            echo "No review-pilot changes"
+          else
+            git commit -m "Actualiza muestra de revisión temática"
+            git push origin main
+          fi
