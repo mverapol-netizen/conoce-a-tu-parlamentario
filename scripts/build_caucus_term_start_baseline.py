@@ -27,7 +27,8 @@ FIELDS = [
 # Composición reconstruida para el inicio de la 374a legislatura. Los tamaños de los
 # comités que aparecen en Incidentes se obtienen de la distribución proporcional de
 # minutos de Sala: 12:00=31, 6:58=18, 6:12=16, 5:48=15, 5:25=14,
-# 4:39=12, 3:52=10 y 3:06=8. Los tres PSC no integraban comité parlamentario.
+# 4:39=12, 3:52=10 y 3:06=8. Los tres PSC no integraban comité parlamentario y
+# se conservan bajo la misma etiqueta operacional que usa la Cámara: "Por definir".
 EXPECTED_COUNTS = {
     "Comité Partido Republicano": 31,
     "Frente Amplio": 18,
@@ -39,7 +40,7 @@ EXPECTED_COUNTS = {
     "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes": 10,
     "Partido Por la Democracia e Independientes": 10,
     "Comité Partido Nacional Libertarios": 8,
-    "Sin comité parlamentario / por definir": 3,
+    "Por definir": 3,
 }
 
 PARTY_TO_CAUCUS = {
@@ -59,7 +60,7 @@ PARTY_TO_CAUCUS = {
     "Partido Acción Humanista": "Comité Comunista e Independientes",
     "Partido de la Gente": "Comité Partido de la Gente",
     "Partido Nacional Libertario": "Comité Partido Nacional Libertarios",
-    "Partido Social Cristiano": "Sin comité parlamentario / por definir",
+    "Partido Social Cristiano": "Por definir",
 }
 
 SLOT_TO_CAUCUS = {
@@ -79,13 +80,7 @@ SLOT_TO_CAUCUS = {
     "PARTIDO ACCIÓN HUMANISTA": "Comité Comunista e Independientes",
     "PARTIDO DE LA GENTE": "Comité Partido de la Gente",
     "PARTIDO NACIONAL LIBERTARIO": "Comité Partido Nacional Libertarios",
-    "PARTIDO SOCIAL CRISTIANO": "Sin comité parlamentario / por definir",
-}
-
-# Único electo estrictamente como independiente en Servel. Su pertenencia actual al
-# comité PPD+Ind y el cierre exacto de tamaños institucionales permiten reconstruirlo.
-SPECIAL_CAUCUS = {
-    "1172": "Partido Por la Democracia e Independientes",  # se reemplaza dinámicamente si el ID no corresponde
+    "PARTIDO SOCIAL CRISTIANO": "Por definir",
 }
 
 
@@ -149,14 +144,14 @@ def main() -> None:
             confidence = "medium"
             note = "Independiente: cupo electoral, bancada actual y cierre exacto de tamaños institucionales apuntan al mismo comité inicial."
         elif slot == "INDEPENDIENTES":
-            # Carlos Bianchi: el único electo sin cupo partidario. En el snapshot oficial actual integra PPD+Ind;
-            # esa asignación es además necesaria para reproducir el tamaño oficial de 10 integrantes en marzo.
+            # Carlos Bianchi: único electo sin cupo partidario. El snapshot oficial lo ubica
+            # en PPD+Ind y esa asignación reproduce el tamaño institucional de 10 en marzo.
             if cur.get("caucus_reported") == "Partido Por la Democracia e Independientes":
                 caucus = "Partido Por la Democracia e Independientes"
                 basis = "current_caucus_plus_official_size_closure"
                 confidence = "medium"
                 note = "Electo independiente sin cupo partidario; bancada actual y tamaño oficial de marzo reproducen PPD+Ind=10."
-        
+
         if not caucus:
             unresolved.append({"deputy_id": deputy_id, "deputy_name": name, "party": party_start, "slot": slot})
             continue
@@ -198,7 +193,7 @@ def main() -> None:
         "expected_counts": EXPECTED_COUNTS,
         "count_mismatches": mismatches,
         "unexpected_caucuses": extras,
-        "method": "Reconstrucción por partido/cupo electoral, estados previos documentados y cierre con tamaños oficiales de comités de marzo de 2026. PSC se conserva como sin comité/por definir, no se fuerza a una bancada inexistente.",
+        "method": "Reconstrucción por partido/cupo electoral, estados previos documentados y cierre con tamaños oficiales de comités de marzo de 2026. Los tres PSC se conservan como 'Por definir': no se fuerza una pertenencia a un comité que no integraban.",
     }
     DIAGNOSTICS.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(diagnostics, ensure_ascii=False, indent=2))
