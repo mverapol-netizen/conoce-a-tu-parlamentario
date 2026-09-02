@@ -29,11 +29,35 @@
 - [x] Confirmar `retornarVotacionDetalle` como fuente de votos individuales.
 - [x] Registrar que `WSSala` no serializa en 2026 la colección de votaciones declarada en su esquema.
 - [x] Tratar la ausencia de materias oficiales asociadas como missingness de la fuente, no como error del extractor.
-- [ ] Convertir el piloto en un recolector incremental de proyectos y tramitación.
-- [ ] Crear el recolector incremental de votaciones exclusivamente de Sala.
-- [ ] Crear el recolector incremental de autorías/coautorías de mociones.
-- [ ] Reconstruir el historial completo por boletín: ingreso, cuenta, comisiones, informes, Hacienda, indicaciones, urgencias, oficios y demás eventos.
-- [ ] Realizar el backfill inicial desde el **11 de marzo de 2026**.
-- [ ] Configurar actualización automática semanal los **viernes**.
-- [ ] Generar controles de integridad y un reporte de cambios por ejecución.
-- [ ] Mantener separadas las capas de datos primarios, clasificación temática, indicadores derivados y modelos como W-NOMINATE/redes.
+- [x] Convertir el piloto en un recolector incremental de proyectos y tramitación.
+- [x] Crear el recolector incremental de votaciones exclusivamente de Sala.
+- [x] Crear el recolector incremental de autorías/coautorías de mociones.
+- [x] Reconstruir el historial completo por boletín: ingreso, cuenta, comisiones, informes, Hacienda, indicaciones, urgencias, oficios y demás eventos.
+- [x] Realizar el backfill inicial desde el **11 de marzo de 2026**.
+- [x] Configurar actualización automática semanal los **viernes**.
+- [x] Generar controles de integridad y un reporte de auditoría por ejecución.
+- [x] Conciliar todas las capas de una corrida con un mismo snapshot de proyectos.
+- [x] Mantener separadas las capas de datos primarios, clasificación temática, indicadores derivados y modelos como W-NOMINATE/redes.
+
+## Clasificación temática de proyectos
+
+- [x] Auditar una muestra estratificada de mensajes y mociones para comprobar disponibilidad de texto fuente.
+- [x] Confirmar recuperación de iniciativas en **PDF y DOCX** desde enlaces oficiales de la Cámara.
+- [x] Crear una taxonomía temática v0.1 versionada y explícitamente separada de las categorías oficiales.
+- [x] Detectar el boilerplate administrativo de algunas mociones para evitar contaminar la clasificación.
+- [ ] Construir el corpus textual incremental de todos los proyectos del período.
+- [ ] Auditar cobertura y calidad del corpus completo por origen y formato.
+- [ ] Crear una muestra de referencia humana (gold standard) estratificada.
+- [ ] Revisar fronteras y solapamientos de la taxonomía v0.1 con el gold standard.
+- [ ] Definir método de clasificación: reglas, modelo, enfoque híbrido y umbrales de confianza.
+- [ ] Evaluar precisión por macroárea antes de clasificar masivamente.
+- [ ] Generar `project_topics.csv` en formato largo con tema principal/secundarios, método, confianza y versión de taxonomía.
+- [ ] Mantener la clasificación temática fuera de los datos primarios y permitir reclasificación sin repetir la recolección legislativa.
+
+## Historia política y análisis derivados
+
+- [ ] Construir historia temporal de partido y bancada por diputado (`fecha_desde` / `fecha_hasta`).
+- [ ] Definir indicadores de disciplina, cohesión, participación y apoyo al Ejecutivo.
+- [ ] Definir contrato metodológico para matrices roll-call y W-NOMINATE.
+- [ ] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria.
+- [ ] Decidir qué indicadores finalmente se publicarán en las fichas legislativas del sitio.
