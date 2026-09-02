@@ -68,6 +68,19 @@
 - [ ] Decidir qué umbral o conjunto de umbrales de competitividad usar para los indicadores públicos, evitando confundir votaciones casi unánimes con disciplina.
 - [ ] Definir cuándo corresponde hablar de **cohesión**, **coincidencia modal** o **disciplina**; no etiquetar automáticamente toda divergencia como rebelión.
 - [ ] Diseñar un indicador de apoyo al Ejecutivo que incorpore posición gubernamental en cada votación y no asuma que votar “Sí” a todo proyecto de origen Ejecutivo equivale a apoyar al Gobierno.
-- [ ] Definir contrato metodológico para matrices roll-call y W-NOMINATE.
+- [x] Definir y documentar el contrato metodológico para la matriz roll-call y W-NOMINATE.
+- [x] Construir la matriz neutral 155 × 364 preservando abstención, no voto y dispensado como missing para estimación espacial.
+- [x] Auditar elegibilidad bajo distintos umbrales de minoría y participación sin fijar prematuramente un único filtro público.
+- [x] Auditar concentración por boletín y redundancia exacta de patrones de voto.
+- [x] Estimar W-NOMINATE 1D bajo seis especificaciones de sensibilidad (`lop`, deduplicación y límites por boletín).
+- [x] Comprobar alta estabilidad global de la dimensión 1 frente a cambios de umbral y balanceo por proyecto.
+- [x] Auditar estabilidad individual, exclusiones y asociación descriptiva de D1 con partido, bancada y bloques históricos.
+- [x] Estimar un diagnóstico W-NOMINATE 2D y comparar su ganancia de ajuste frente a 1D.
+- [x] Alinear espacios 2D mediante Procrustes y comprobar que D2 es estable al cambiar `lop`, pero bastante más sensible al balanceo por boletín.
+- [x] Adoptar provisionalmente **1D como modelo espacial principal parsimonioso** y mantener D2 únicamente como diagnóstico exploratorio secundario.
+- [x] Documentar resultados experimentales en `docs/RESULTADOS_WNOMINATE_V0_1.md` y mantenerlos fuera de la ficha pública.
+- [ ] Auditar **estabilidad temporal** de D1 en subperíodos comparables antes de cualquier uso público.
+- [ ] Validar sustantivamente la orientación e interpretación de D1; no denominar automáticamente el signo izquierda/derecha, gobierno/oposición o ideología.
+- [ ] Decidir la forma pública eventual de la posición espacial: coordenada, percentil, banda robusta, visualización sin ranking o ninguna.
 - [x] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria y actualizarlas semanalmente después del sync legislativo.
 - [ ] Decidir qué indicadores finalmente se publicarán en las fichas legislativas del sitio.
