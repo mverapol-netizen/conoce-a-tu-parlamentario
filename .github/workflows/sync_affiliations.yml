@@ -11,6 +11,7 @@ on:
       - "scripts/sync_affiliation_history.py"
       - "data/legislative/2026/affiliations/affiliation_manual_events.csv"
       - "data/legislative/2026/affiliations/party_term_start_baseline.csv"
+      - "data/legislative/2026/affiliations/caucus_term_start_baseline.csv"
       - ".github/workflows/sync_affiliations.yml"
 
 permissions:
