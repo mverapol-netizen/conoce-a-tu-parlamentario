@@ -20,3 +20,20 @@
 - [x] Conectar la selección por distrito y el Hemiciclo con esa ficha interna.
 - [ ] Definir posteriormente qué dimensiones, indicadores y documentos deberá contener la ficha legislativa.
 - [ ] Auditar el diseño definitivo de la ficha una vez que se defina su contenido.
+
+## Base legislativa 2026–2030
+
+- [x] Diseñar el contrato de datos primarios.
+- [x] Ejecutar un piloto real con 10 proyectos (5 mociones y 5 mensajes).
+- [x] Validar el enlace **proyecto → votación de Sala → voto nominal de cada diputado**.
+- [x] Confirmar `retornarVotacionDetalle` como fuente de votos individuales.
+- [x] Registrar que `WSSala` no serializa en 2026 la colección de votaciones declarada en su esquema.
+- [x] Tratar la ausencia de materias oficiales asociadas como missingness de la fuente, no como error del extractor.
+- [ ] Convertir el piloto en un recolector incremental de proyectos y tramitación.
+- [ ] Crear el recolector incremental de votaciones exclusivamente de Sala.
+- [ ] Crear el recolector incremental de autorías/coautorías de mociones.
+- [ ] Reconstruir el historial completo por boletín: ingreso, cuenta, comisiones, informes, Hacienda, indicaciones, urgencias, oficios y demás eventos.
+- [ ] Realizar el backfill inicial desde el **11 de marzo de 2026**.
+- [ ] Configurar actualización automática semanal los **viernes**.
+- [ ] Generar controles de integridad y un reporte de cambios por ejecución.
+- [ ] Mantener separadas las capas de datos primarios, clasificación temática, indicadores derivados y modelos como W-NOMINATE/redes.
