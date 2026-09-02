@@ -10,6 +10,7 @@ from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
+from docx import Document
 from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -84,6 +85,15 @@ def extract_pdf(content: bytes) -> tuple[str, int, int]:
     return "\n".join(parts), total, examined
 
 
+def extract_docx(content: bytes) -> tuple[str, int]:
+    document = Document(io.BytesIO(content))
+    pieces = [p.text for p in document.paragraphs if p.text and p.text.strip()]
+    for table in document.tables:
+        for row in table.rows:
+            pieces.append(" | ".join(cell.text.strip() for cell in row.cells if cell.text.strip()))
+    return "\n".join(pieces), len(document.paragraphs)
+
+
 def extract_html(content: bytes, encoding: str | None) -> str:
     text = content.decode(encoding or "utf-8", errors="replace")
     soup = BeautifulSoup(text, "html.parser")
@@ -117,6 +127,11 @@ def fetch_document(url: str) -> dict:
     if content.lstrip().startswith(b"%PDF") or "application/pdf" in ctype:
         method = "pdf_text"
         text, pages_total, pages_examined = extract_pdf(content)
+    elif "officedocument.wordprocessingml.document" in ctype:
+        method = "docx_text"
+        text, paragraphs = extract_docx(content)
+        pages_total = 0
+        pages_examined = paragraphs
     elif "html" in ctype or content.lstrip().startswith(b"<"):
         method = "html_text"
         text = extract_html(content, response.encoding)
