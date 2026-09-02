@@ -1,0 +1,46 @@
+name: Test W-NOMINATE R environment
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/test_wnominate_r_environment.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-wnominate-r-environment
+  cancel-in-progress: true
+
+jobs:
+  test-environment:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install R from Ubuntu
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends r-base r-base-dev
+          Rscript -e 'cat(R.version.string, "\n")'
+
+      - name: Configure writable R library
+        shell: bash
+        run: |
+          mkdir -p "$HOME/R/library"
+          echo "R_LIBS_USER=$HOME/R/library" >> "$GITHUB_ENV"
+          test -w "$HOME/R/library"
+
+      - name: Install only required packages
+        shell: bash
+        run: |
+          Rscript -e 'dir.create(Sys.getenv("R_LIBS_USER"), recursive=TRUE, showWarnings=FALSE); install.packages(c("pscl", "wnominate", "jsonlite"), lib=Sys.getenv("R_LIBS_USER"), repos="https://cloud.r-project.org")'
+
+      - name: Verify packages load
+        shell: bash
+        run: |
+          Rscript -e 'library(pscl, lib.loc=Sys.getenv("R_LIBS_USER")); library(wnominate, lib.loc=Sys.getenv("R_LIBS_USER")); library(jsonlite, lib.loc=Sys.getenv("R_LIBS_USER")); cat("R_ENV_OK\n")'
