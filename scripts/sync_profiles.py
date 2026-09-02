@@ -32,7 +32,7 @@ SESSION.headers.update(
     {
         "User-Agent": (
             "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
-            "Chrome/130 Safari/537.36 conoce-a-tu-parlamentario/1.1"
+            "Chrome/130 Safari/537.36 conoce-a-tu-parlamentario/1.2"
         ),
         "Accept-Language": "es-CL,es;q=0.9,en;q=0.7",
     }
@@ -97,7 +97,6 @@ def get_open_data(path: str) -> requests.Response:
         url = f"{host}/{path}"
         try:
             response = get(url)
-            # Evita aceptar por error una página HTML de redirección/bloqueo.
             sample = response.content.lstrip()[:100].lower()
             if sample.startswith(b"<") and b"html" not in sample:
                 return response
@@ -134,19 +133,20 @@ def open_data_current() -> list[dict]:
     root = ET.fromstring(xml)
     rows: list[dict] = []
 
-    # El namespace y el nivel raíz del XML han variado históricamente. Por eso
-    # recorremos por nombre local en vez de fijar una URI concreta.
+    # La respuesta vigente contiene los 155 DiputadoPeriodo, pero ya no incluye
+    # Distrito/Numero. El distrito se conserva desde nuestra base territorial
+    # verificada; aquí necesitamos el ID oficial y el nombre de cada integrante.
     period_nodes = [node for node in root.iter() if local_name(node.tag) == "DiputadoPeriodo"]
     print(f"Open Data: {len(period_nodes)} nodos DiputadoPeriodo detectados")
 
     for node in period_nodes:
-        dep = direct_child(node, "Diputado") or descendant(node, "Diputado")
-        district_node = direct_child(node, "Distrito") or descendant(node, "Distrito")
-        if dep is None or district_node is None:
+        dep = direct_child(node, "Diputado")
+        if dep is None:
+            dep = descendant(node, "Diputado")
+        if dep is None:
             continue
 
         dep_id = child_text(dep, "Id")
-        district_text = child_text(district_node, "Numero")
         pieces = [
             child_text(dep, "Nombre"),
             child_text(dep, "Nombre2"),
@@ -154,14 +154,13 @@ def open_data_current() -> list[dict]:
             child_text(dep, "ApellidoMaterno"),
         ]
         name = " ".join(piece for piece in pieces if piece)
-        if dep_id and name and district_text:
+        if dep_id and name:
             try:
                 rows.append(
                     {
                         "id": int(dep_id),
                         "name": name,
                         "norm": normalize(name),
-                        "district": int(district_text),
                     }
                 )
             except ValueError:
@@ -178,8 +177,6 @@ def open_data_current() -> list[dict]:
 
 
 def score_name(target: dict, candidate: dict) -> float:
-    if target["district"] != candidate["district"]:
-        return -1
     a, b = target["norm"], candidate["norm"]
     if a == b:
         return 10
@@ -187,7 +184,14 @@ def score_name(target: dict, candidate: dict) -> float:
     overlap = len(a_tokens & b_tokens) / max(1, len(a_tokens | b_tokens))
     seq = difflib.SequenceMatcher(None, a, b).ratio()
     containment = 0.25 if a in b or b in a else 0
-    return overlap * 0.65 + seq * 0.35 + containment
+    # Los apellidos pesan especialmente para absorber segundos nombres omitidos.
+    surname_bonus = 0.0
+    a_parts = a.split()
+    if a_parts:
+        surname_bonus += 0.08 if a_parts[-1] in b_tokens else 0
+        if len(a_parts) > 1:
+            surname_bonus += 0.08 if a_parts[-2] in b_tokens else 0
+    return overlap * 0.62 + seq * 0.38 + containment + surname_bonus
 
 
 def match_targets(targets: list[dict], current: list[dict]) -> dict[str, dict]:
@@ -197,10 +201,13 @@ def match_targets(targets: list[dict], current: list[dict]) -> dict[str, dict]:
         candidates = [row for row in current if row["id"] not in used]
         ranked = sorted(candidates, key=lambda row: score_name(target, row), reverse=True)
         if not ranked or score_name(target, ranked[0]) < 0.47:
-            raise RuntimeError(f"No se pudo emparejar: {target['name']}")
+            top = ranked[0]["name"] if ranked else "ninguno"
+            raise RuntimeError(f"No se pudo emparejar: {target['name']} (mejor candidato: {top})")
         chosen = ranked[0]
         used.add(chosen["id"])
         result[target["name"]] = chosen
+    if len(result) != 155 or len(used) != 155:
+        raise RuntimeError(f"Emparejamiento incompleto: {len(result)} perfiles / {len(used)} IDs únicos")
     return result
 
 
@@ -233,7 +240,9 @@ def current_party_from_open_data(dep_id: int) -> str | None:
     for node in root.iter():
         if local_name(node.tag) != "Militancia":
             continue
-        party = direct_child(node, "Partido") or descendant(node, "Partido")
+        party = direct_child(node, "Partido")
+        if party is None:
+            party = descendant(node, "Partido")
         if party is None:
             continue
         name = child_text(party, "Nombre")
@@ -352,6 +361,7 @@ def main() -> None:
     targets = load_targets()
     current = open_data_current()
     matches = match_targets(targets, current)
+    print(f"Emparejados: {len(matches)} de {len(targets)}")
 
     if PHOTO_DIR.exists():
         shutil.rmtree(PHOTO_DIR)
