@@ -1,0 +1,54 @@
+name: Build vote affiliation context
+
+on:
+  push:
+    paths:
+      - "scripts/enrich_member_votes.py"
+      - "data/legislative/2026/member_votes.csv"
+      - "data/legislative/2026/rollcalls.csv"
+      - "data/legislative/2026/affiliations/affiliation_history.csv"
+      - "data/legislative/2026/affiliations/affiliation_detected_events.csv"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vote-affiliation-context
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Enrich nominal votes with historical affiliation
+        run: python scripts/enrich_member_votes.py
+
+      - name: Persist enriched vote context
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/member_votes_enriched.csv \
+                  data/legislative/2026/member_votes_enriched_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No enriched vote-context changes"
+          else
+            git commit -m "Actualiza contexto histórico de votos nominales"
+            git pull --rebase origin main
+            git push origin main
+          fi
