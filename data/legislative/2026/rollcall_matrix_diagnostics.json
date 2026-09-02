@@ -13,11 +13,17 @@
     "minority_share_gte_0.050": 269,
     "minority_share_gte_0.100": 258
   },
+  "eligible_members_after_rollcall_filter": {
+    "lop_0025_minvotes20": 154,
+    "lop_0050_minvotes20": 154,
+    "lop_0100_minvotes20": 154
+  },
+  "minimum_binary_votes_per_legislator": 20,
   "unknown_vote_options": {},
   "coding": {
     "1": "Afirmativo",
     "0": "En Contra",
     "missing": "Abstención / No Vota / Dispensado / otra categoría no binaria"
   },
-  "method_note": "Esta salida prepara una matriz neutral. No selecciona aún un umbral de competitividad, no estima puntos ideales y no fija la orientación ideológica de futuras dimensiones."
+  "method_note": "Esta salida prepara una matriz neutral y marca filtros transparentes de elegibilidad. No estima puntos ideales, no fija polaridad y no atribuye significado ideológico a las dimensiones."
 }
