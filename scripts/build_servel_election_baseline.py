@@ -30,7 +30,7 @@ FIELDS = [
 def norm(value: str) -> str:
     value = unicodedata.normalize("NFD", str(value or ""))
     value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
-    value = value.lower().replace("ñ", "n")
+    value = value.lower()
     value = re.sub(r"[^a-z0-9 ]+", " ", value)
     return re.sub(r"\s+", " ", value).strip()
 
@@ -81,18 +81,31 @@ def read_elected(archive: zipfile.ZipFile) -> list[dict]:
             continue
         columns = {norm(str(value or "")): idx for idx, value in enumerate(header)}
         required = {
-            "distrito", "partido", "pacto", "subpacto", "cod candidato",
+            "distrito", "cod mesa", "partido", "pacto", "subpacto", "cod candidato",
             "nombre candidato", "electo nominado",
         }
-        # Los encabezados originales usan guion bajo; norm() lo convierte en espacios.
         missing = required - set(columns)
         if missing:
             raise RuntimeError(f"{filename}: faltan columnas {sorted(missing)}")
 
+        first_table = None
+        rows_first_table = 0
         for row in iterator:
             def get(field: str):
                 idx = columns[field]
                 return row[idx] if idx < len(row) else None
+
+            table = str(get("cod mesa") or "").strip()
+            if not table:
+                continue
+            if first_table is None:
+                first_table = table
+            elif table != first_table:
+                # El archivo repite la nómina completa para cada mesa. La primera
+                # mesa contiene incluso candidaturas con cero votos, por lo que
+                # basta para recuperar partido, pacto, código y condición de electo.
+                break
+            rows_first_table += 1
 
             elected_raw = get("electo nominado")
             try:
@@ -121,6 +134,10 @@ def read_elected(archive: zipfile.ZipFile) -> list[dict]:
                 raise RuntimeError(f"Datos inconsistentes para candidato {code}: {previous} vs {record}")
             candidates[code] = record
 
+        if rows_first_table < 5:
+            raise RuntimeError(f"{filename}: primera mesa anormalmente pequeña ({rows_first_table} filas)")
+        print(f"{filename}: mesa {first_table} · {rows_first_table} filas de candidatura")
+
     result = sorted(candidates.values(), key=lambda x: (x["district"], x["servel_candidate_name"]))
     if len(result) != 155:
         raise RuntimeError(f"Servel no produjo 155 electos únicos; produjo {len(result)}")
@@ -145,7 +162,6 @@ def match_profiles(profiles: list[dict], elected: list[dict]) -> tuple[list[dict
     used_codes: set[str] = set()
     matches = []
     ambiguous = []
-    unmatched = []
 
     for profile in sorted(profiles, key=lambda x: (x["district"], x["deputy_name"])):
         pool = [x for x in elected_by_district[profile["district"]] if x["servel_candidate_code"] not in used_codes]
@@ -167,7 +183,6 @@ def match_profiles(profiles: list[dict], elected: list[dict]) -> tuple[list[dict
                 best_score, best = ranked[0]
                 second_score = ranked[1][0] if len(ranked) > 1 else 0.0
                 margin = best_score - second_score
-                # Conservador: nombres deben ser muy parecidos y separarse claramente del segundo candidato del distrito.
                 if best_score >= 0.78 and margin >= 0.08:
                     chosen = best
                     method = "district_fuzzy_name"
@@ -182,7 +197,6 @@ def match_profiles(profiles: list[dict], elected: list[dict]) -> tuple[list[dict
                     })
 
         if chosen is None:
-            unmatched.append(profile)
             continue
 
         used_codes.add(chosen["servel_candidate_code"])
@@ -213,6 +227,10 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(matches)
 
+    matched_ids = {m["deputy_id"] for m in matches}
+    party_counts = defaultdict(int)
+    for row in matches:
+        party_counts[row["electoral_party"]] += 1
     diagnostics = {
         "source_url": SOURCE_URL,
         "servel_elected_unique": len(elected),
@@ -221,16 +239,16 @@ def main() -> None:
         "high_confidence_matches": sum(x["match_confidence"] == "high" for x in matches),
         "medium_confidence_matches": sum(x["match_confidence"] == "medium" for x in matches),
         "ambiguous": ambiguous,
-        "unmatched_profiles": [x for x in profiles if x["deputy_id"] not in {m["deputy_id"] for m in matches}],
+        "unmatched_profiles": [x for x in profiles if x["deputy_id"] not in matched_ids],
         "unused_servel_elected": unused,
-        "electoral_party_counts": dict(sorted(defaultdict(int, {k: sum(1 for x in matches if x["electoral_party"] == k) for k in {x["electoral_party"] for x in matches}}).items())),
+        "electoral_party_counts": dict(sorted(party_counts.items())),
     }
     DIAGNOSTICS.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({k: v for k, v in diagnostics.items() if k not in {"ambiguous", "unmatched_profiles", "unused_servel_elected"}}, ensure_ascii=False, indent=2))
 
     if len(matches) < 150:
         raise RuntimeError(f"Solo {len(matches)}/155 electos empataron con perfiles actuales")
-    if ambiguous or unused:
+    if ambiguous or unused or len(matches) != 155:
         raise RuntimeError(
             f"La línea base requiere revisión: matched={len(matches)}, ambiguous={len(ambiguous)}, unused={len(unused)}"
         )
