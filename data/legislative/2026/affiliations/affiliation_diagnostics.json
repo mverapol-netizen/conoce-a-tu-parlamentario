@@ -7,21 +7,20 @@
   "party_term_start_high_confidence": 26,
   "party_term_start_medium_confidence": 129,
   "party_term_start_provisional": 0,
-  "caucus_term_start_high_confidence": 4,
-  "caucus_term_start_medium_confidence": 0,
-  "caucus_term_start_provisional": 151,
+  "caucus_term_start_high_confidence": 130,
+  "caucus_term_start_medium_confidence": 25,
+  "caucus_term_start_provisional": 0,
   "party_interval_confidence_counts": {
     "high": 30,
     "medium": 129
   },
   "caucus_interval_confidence_counts": {
-    "provisional": 151,
-    "high": 8
+    "medium": 25,
+    "high": 134
   },
   "overall_interval_confidence_counts": {
-    "provisional": 151,
-    "medium": 3,
-    "high": 5
+    "medium": 153,
+    "high": 6
   },
   "official_snapshot_conflicts": [
     {
@@ -48,5 +47,5 @@
   "term_start": "2026-03-11",
   "party_history_coverage": 155,
   "caucus_history_coverage": 155,
-  "warning": "La afiliación partidaria de inicio ya está congelada para 155 diputados (26 verificación directa; 129 concordancia Servel-Cámara). La bancada inicial sigue siendo provisional salvo donde existe un cambio documentado que permite reconstruir el estado previo. Los cambios detectados solo entre snapshots semanales conservan una ventana de incertidumbre en affiliation_detected_events.csv."
+  "warning": "Las líneas base de partido y bancada cubren 155/155 sin valores provisionales. Los cambios detectados solo entre snapshots semanales conservan una ventana de incertidumbre en affiliation_detected_events.csv y deben tratarse como fecha aproximada hasta su corroboración documental."
 }
