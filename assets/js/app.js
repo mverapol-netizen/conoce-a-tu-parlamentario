@@ -44,6 +44,19 @@
     { code: 'XVI', name: 'Ñuble' }
   ];
 
+  // Fotografías oficiales de las reseñas biográficas de la BCN.
+  // Si una imagen externa falla, la tarjeta vuelve automáticamente a las iniciales.
+  const PHOTO_URLS = {
+    'Agustín Matías Romero Leiva': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/1/1a/Agust%C3%ADn_Romero_Leiva.jpg',
+    'Cristián Contreras Radovic': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/4/46/Cristi%C3%A1n_Alejandro_Contreras_Radovic.jpg',
+    'Enrique Bassaletti Riess': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/4/48/Enrique_Alejandro_Bassaletti_Riess.jpg',
+    'Gustavo Gatica Villarroel': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/7/7f/Gustavo_Adolfo_Gatica_Villarroel.jpg',
+    'Marcos Barraza Gómez': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/d/de/Marcos_Patricio_Barraza_G%C3%B3mez.jpg',
+    'Mario Olavarría Rodríguez': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/e/e2/Mario_Antonio_Olavarr%C3%ADa_Rodr%C3%ADguez.jpg',
+    'Pier Karlezi Hazleby': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/3/39/Pier_Giuseppe_Karlezi_Hazleby.jpg',
+    'Tatiana Urrutia Herrera': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/5/5c/Tatiana_Karina_Urrutia_Herrera.jpg'
+  };
+
   const availableRegions = new Set(districts.map((district) => district.region));
   const regions = REGION_ORDER
     .filter((region) => availableRegions.has(region.name))
@@ -95,6 +108,18 @@
     return `${words[0]?.[0] || ''}${words[1]?.[0] || ''}`.toUpperCase();
   };
 
+  const renderPortrait = (name) => {
+    const photo = PHOTO_URLS[name];
+    const fallback = `<div class="avatar representative-fallback" aria-hidden="true">${initials(name)}</div>`;
+    if (!photo) return fallback;
+    return `
+      <div class="representative-photo-wrap">
+        <img class="representative-photo" src="${photo}" alt="Fotografía de ${name}" loading="lazy" referrerpolicy="no-referrer">
+        <div class="avatar representative-photo-fallback" aria-hidden="true">${initials(name)}</div>
+      </div>
+    `;
+  };
+
   const renderDistrict = (district, commune) => {
     const plural = district.parlamentarios.length === 1 ? 'representante' : 'representantes';
     districtSummary.innerHTML = `
@@ -119,11 +144,20 @@
       card.className = 'representative-card';
       card.dataset.name = name;
       card.innerHTML = `
-        <div class="avatar" aria-hidden="true">${initials(name)}</div>
+        ${renderPortrait(name)}
         <h3>${name}</h3>
         <p class="role">Diputada/o · Distrito ${district.id}</p>
         <button class="choose-btn" type="button">Elegir</button>
       `;
+
+      const image = card.querySelector('.representative-photo');
+      if (image) {
+        image.addEventListener('load', () => card.classList.add('photo-loaded'));
+        image.addEventListener('error', () => {
+          image.remove();
+          card.classList.remove('photo-loaded');
+        });
+      }
 
       card.querySelector('button').addEventListener('click', () => {
         grid.querySelectorAll('.representative-card').forEach((item) => item.classList.remove('is-selected'));
