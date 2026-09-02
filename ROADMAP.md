@@ -67,5 +67,5 @@
 - [ ] Definir cuándo corresponde hablar de **cohesión**, **coincidencia modal** o **disciplina**; no etiquetar automáticamente toda divergencia como rebelión.
 - [ ] Diseñar un indicador de apoyo al Ejecutivo que incorpore posición gubernamental en cada votación y no asuma que votar “Sí” a todo proyecto de origen Ejecutivo equivale a apoyar al Gobierno.
 - [ ] Definir contrato metodológico para matrices roll-call y W-NOMINATE.
-- [ ] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria.
+- [x] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria y actualizarlas semanalmente después del sync legislativo.
 - [ ] Decidir qué indicadores finalmente se publicarán en las fichas legislativas del sitio.
