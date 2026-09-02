@@ -4,22 +4,38 @@ La clasificación temática de **Conoce a tu parlamentario** se apoyará primero
 
 ## Jerarquía de señales
 
-1. **Comisión de origen del proyecto.** Se identifica cuando la página oficial registra una subetapa del tipo `Cuenta de proyecto. Pasa a Comisión de ...`. Es el proxy temático institucional de mayor peso.
-2. **Trayectoria de comisiones.** Se conservan, en orden, las comisiones por las que el proyecto ha pasado o a las que ha sido remitido. Esta señal permite reconocer proyectos multidimensionales y distinguir una comisión inicial transversal de una comisión sustantiva posterior.
-3. **Materia oficial.** Se conservan tanto las materias estructuradas del servicio legislativo como el campo `Materia:` de la página pública, cuando la Cámara lo completa.
-4. **Ministerios patrocinantes.** Se usan como señal adicional en mensajes del Ejecutivo, nunca como sustituto automático del tema.
-5. **Título y texto de la iniciativa.** Funcionan como evidencia semántica para resolver ambigüedades, no como primera fuente cuando existen señales institucionales más directas.
+1. **Código de destinación del boletín.** El sufijo numérico del boletín se conserva como señal institucional de la comisión o destinación inicial. Por ejemplo, códigos como `04`, `11` o `25` remiten respectivamente a Educación, Salud y Seguridad Ciudadana. Esta señal ofrece una cobertura mucho mayor que depender únicamente de eventos textuales de tramitación.
+2. **Comisión de origen explícita.** Cuando la página oficial registra una subetapa del tipo `Cuenta de proyecto. Pasa a Comisión de ...`, se conserva esa comisión por separado y se contrasta con el código de destinación. Si ambas fuentes discrepan, el sistema no oculta la diferencia: marca el proyecto para revisión.
+3. **Trayectoria de comisiones.** Se conservan, en orden, las comisiones por las que el proyecto ha pasado o a las que ha sido remitido. Esta señal permite reconocer proyectos multidimensionales y distinguir una comisión inicial transversal de una comisión sustantiva posterior.
+4. **Materia oficial.** Se conservan tanto las materias estructuradas del servicio legislativo como el campo `Materia:` de la página pública, cuando la Cámara lo completa.
+5. **Ministerios patrocinantes.** Se usan como señal adicional en mensajes del Ejecutivo, nunca como sustituto automático del tema.
+6. **Título y texto de la iniciativa.** Funcionan como evidencia semántica para resolver ambigüedades, no como primera fuente cuando existen señales institucionales más directas.
 
 Partido, bancada, autor y bloque político quedan excluidos como señales temáticas.
 
+## Destinación no es clasificación final
+
+El código de destinación es un **proxy institucional**, no una verdad semántica infalible. Se conserva como dato independiente de la clasificación final. Esto es especialmente importante en proyectos originados o revisados por comisiones transversales y en proyectos que luego son remitidos a una comisión sectorial distinta.
+
+La base distingue al menos:
+
+- `codigo_destinacion`: sufijo institucional del boletín;
+- `comision_destino_sufijo`: comisión asociada al código;
+- `comision_origen_evento`: comisión observada explícitamente en una cuenta de proyecto, cuando existe;
+- `comision_origen_proxy`: mejor proxy disponible para la comisión inicial;
+- `origin_proxy_source`: procedencia de ese proxy;
+- `origin_proxy_mismatch`: indicador de discrepancia entre las dos señales anteriores;
+- `comisiones_tramitacion`: conjunto ordenado de comisiones observadas o inferidas institucionalmente durante la trayectoria.
+
 ## Por qué no basta una sola comisión
 
-Las comisiones son un proxy fuerte, pero no equivalen automáticamente a una etiqueta temática final. Hay comisiones que cumplen frecuentemente funciones transversales. Dos casos importantes son:
+Las comisiones son un proxy fuerte, pero no equivalen automáticamente a una etiqueta temática final. Hay comisiones que cumplen frecuentemente funciones transversales. Tres casos importantes son:
 
 - **Hacienda:** muchos proyectos pasan por ella debido a efectos fiscales aunque su objeto principal sea salud, educación, vivienda u otra política sectorial.
 - **Constitución, Legislación, Justicia y Reglamento:** puede ser la materia sustantiva de una reforma institucional, pero también puede actuar como primera revisión jurídica de un proyecto cuyo objeto principal es seguridad, derechos, migración u otra área.
+- **Régimen Interno y Administración:** su presencia puede responder a la organización interna de la Cámara y no a una política pública sustantiva.
 
-Por eso el sistema guarda dos variables distintas: `comision_origen_proxy` y `comisiones_tramitacion`.
+Por eso el sistema guarda por separado la destinación, la comisión de origen observada y toda la trayectoria.
 
 ## Unidad de clasificación
 
@@ -40,7 +56,8 @@ La correspondencia comisión → familia es un proxy y se almacena separada de l
 
 Un modelo de lenguaje no deberá clasificar un proyecto partiendo de cero. Recibirá una ficha estructurada con:
 
-- comisión de origen;
+- código de destinación y comisión asociada;
+- comisión de origen explícita, si existe;
 - secuencia de comisiones;
 - materia oficial, si existe;
 - ministerios patrocinantes, si existen;
@@ -51,11 +68,11 @@ Su tarea será seleccionar una familia temática sencilla, justificar brevemente
 
 ## Datos derivados
 
-`project_commissions.csv` contiene una fila por proyecto × comisión detectada, con secuencia, fecha, evidencia institucional y marca de comisión de origen.
+`project_commissions.csv` contiene una fila por proyecto × comisión detectada, con secuencia, fecha, tipo de fuente, evidencia institucional y marca de comisión de origen.
 
-`project_topic_signals.csv` resume por proyecto las señales que recibirá posteriormente el clasificador: comisión de origen, trayectoria, materias, ministerios y calidad del texto.
+`project_topic_signals.csv` resume por proyecto las señales que recibirá posteriormente el clasificador: destinación, comisión de origen, trayectoria, materias, ministerios y calidad del texto.
 
-`topic_signal_diagnostics.json` audita la cobertura de estas señales.
+`topic_signal_diagnostics.json` audita cobertura, códigos de destinación no mapeados y discrepancias entre fuentes.
 
 ## Regla metodológica
 
