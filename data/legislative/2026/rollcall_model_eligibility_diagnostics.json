@@ -1,0 +1,30 @@
+{
+  "generated_for": "2026-09-02",
+  "rollcalls": 364,
+  "nonunanimous_rollcalls": 300,
+  "members": 155,
+  "topics": 23,
+  "origins": {
+    "parlamentario": 123,
+    "ejecutivo": 241
+  },
+  "minority_share_thresholds": [
+    0.0,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "rollcall_binary_participation_floors": [
+    0.5,
+    0.75,
+    0.9
+  ],
+  "member_participation_reporting_floors": [
+    0.5,
+    0.75,
+    0.9
+  ],
+  "specifications_tested": 12,
+  "recommended_spec": null,
+  "method_note": "Auditoría de sensibilidad previa a cualquier estimación espacial. Cada especificación exige una minoría binaria no nula, un piso de proporción minoritaria y un piso de participación binaria de la Cámara. Se reporta retención por tema/origen y participación de legisladores. No se selecciona una especificación, no se estiman puntos ideales y no se orienta ningún eje ideológico."
+}

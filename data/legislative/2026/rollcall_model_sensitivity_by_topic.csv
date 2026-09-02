@@ -1,0 +1,277 @@
+﻿spec_id,minority_share_floor,rollcall_binary_participation_floor,dimension_value,all_rollcalls,nonunanimous_rollcalls,eligible_rollcalls,retention_vs_all,retention_vs_nonunanimous
+m000_p050,0.000,0.50,Agua y recursos hídricos,5,4,4,0.800000,1.000000
+m000_p050,0.000,0.50,Ciencia y tecnología,4,3,3,0.750000,1.000000
+m000_p050,0.000,0.50,Constitución y justicia,3,3,3,1.000000,1.000000
+m000_p050,0.000,0.50,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m000_p050,0.000,0.50,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m000_p050,0.000,0.50,Deportes,8,6,6,0.750000,1.000000
+m000_p050,0.000,0.50,Desarrollo social,6,4,4,0.666667,1.000000
+m000_p050,0.000,0.50,Economía y hacienda,124,120,120,0.967742,1.000000
+m000_p050,0.000,0.50,"Economía, comercio y consumidores",7,6,6,0.857143,1.000000
+m000_p050,0.000,0.50,Educación,50,48,48,0.960000,1.000000
+m000_p050,0.000,0.50,Emergencias y desastres,1,0,0,0.000000,
+m000_p050,0.000,0.50,"Familia, infancia y adolescencia",5,2,2,0.400000,1.000000
+m000_p050,0.000,0.50,Gobierno interior y descentralización,23,16,16,0.695652,1.000000
+m000_p050,0.000,0.50,Medio ambiente,8,8,8,1.000000,1.000000
+m000_p050,0.000,0.50,Minería y energía,28,22,22,0.785714,1.000000
+m000_p050,0.000,0.50,Mujeres y género,1,0,0,0.000000,
+m000_p050,0.000,0.50,Personas mayores y discapacidad,1,0,0,0.000000,
+m000_p050,0.000,0.50,Relaciones exteriores,10,2,2,0.200000,1.000000
+m000_p050,0.000,0.50,Salud,1,0,0,0.000000,
+m000_p050,0.000,0.50,Seguridad,45,35,35,0.777778,1.000000
+m000_p050,0.000,0.50,Trabajo y seguridad social,11,10,10,0.909091,1.000000
+m000_p050,0.000,0.50,Transportes y telecomunicaciones,4,0,0,0.000000,
+m000_p050,0.000,0.50,Vivienda y territorio,13,7,7,0.538462,1.000000
+m000_p075,0.000,0.75,Agua y recursos hídricos,5,4,3,0.600000,0.750000
+m000_p075,0.000,0.75,Ciencia y tecnología,4,3,2,0.500000,0.666667
+m000_p075,0.000,0.75,Constitución y justicia,3,3,3,1.000000,1.000000
+m000_p075,0.000,0.75,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m000_p075,0.000,0.75,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m000_p075,0.000,0.75,Deportes,8,6,6,0.750000,1.000000
+m000_p075,0.000,0.75,Desarrollo social,6,4,2,0.333333,0.500000
+m000_p075,0.000,0.75,Economía y hacienda,124,120,120,0.967742,1.000000
+m000_p075,0.000,0.75,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m000_p075,0.000,0.75,Educación,50,48,48,0.960000,1.000000
+m000_p075,0.000,0.75,Emergencias y desastres,1,0,0,0.000000,
+m000_p075,0.000,0.75,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m000_p075,0.000,0.75,Gobierno interior y descentralización,23,16,15,0.652174,0.937500
+m000_p075,0.000,0.75,Medio ambiente,8,8,8,1.000000,1.000000
+m000_p075,0.000,0.75,Minería y energía,28,22,18,0.642857,0.818182
+m000_p075,0.000,0.75,Mujeres y género,1,0,0,0.000000,
+m000_p075,0.000,0.75,Personas mayores y discapacidad,1,0,0,0.000000,
+m000_p075,0.000,0.75,Relaciones exteriores,10,2,2,0.200000,1.000000
+m000_p075,0.000,0.75,Salud,1,0,0,0.000000,
+m000_p075,0.000,0.75,Seguridad,45,35,30,0.666667,0.857143
+m000_p075,0.000,0.75,Trabajo y seguridad social,11,10,10,0.909091,1.000000
+m000_p075,0.000,0.75,Transportes y telecomunicaciones,4,0,0,0.000000,
+m000_p075,0.000,0.75,Vivienda y territorio,13,7,6,0.461538,0.857143
+m000_p090,0.000,0.90,Agua y recursos hídricos,5,4,1,0.200000,0.250000
+m000_p090,0.000,0.90,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m000_p090,0.000,0.90,Constitución y justicia,3,3,2,0.666667,0.666667
+m000_p090,0.000,0.90,Cultura y comunicaciones,5,3,1,0.200000,0.333333
+m000_p090,0.000,0.90,"Cultura, patrimonio y deporte",1,1,0,0.000000,0.000000
+m000_p090,0.000,0.90,Deportes,8,6,3,0.375000,0.500000
+m000_p090,0.000,0.90,Desarrollo social,6,4,0,0.000000,0.000000
+m000_p090,0.000,0.90,Economía y hacienda,124,120,112,0.903226,0.933333
+m000_p090,0.000,0.90,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m000_p090,0.000,0.90,Educación,50,48,31,0.620000,0.645833
+m000_p090,0.000,0.90,Emergencias y desastres,1,0,0,0.000000,
+m000_p090,0.000,0.90,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m000_p090,0.000,0.90,Gobierno interior y descentralización,23,16,2,0.086957,0.125000
+m000_p090,0.000,0.90,Medio ambiente,8,8,1,0.125000,0.125000
+m000_p090,0.000,0.90,Minería y energía,28,22,2,0.071429,0.090909
+m000_p090,0.000,0.90,Mujeres y género,1,0,0,0.000000,
+m000_p090,0.000,0.90,Personas mayores y discapacidad,1,0,0,0.000000,
+m000_p090,0.000,0.90,Relaciones exteriores,10,2,1,0.100000,0.500000
+m000_p090,0.000,0.90,Salud,1,0,0,0.000000,
+m000_p090,0.000,0.90,Seguridad,45,35,15,0.333333,0.428571
+m000_p090,0.000,0.90,Trabajo y seguridad social,11,10,2,0.181818,0.200000
+m000_p090,0.000,0.90,Transportes y telecomunicaciones,4,0,0,0.000000,
+m000_p090,0.000,0.90,Vivienda y territorio,13,7,1,0.076923,0.142857
+m025_p050,0.025,0.50,Agua y recursos hídricos,5,4,4,0.800000,1.000000
+m025_p050,0.025,0.50,Ciencia y tecnología,4,3,1,0.250000,0.333333
+m025_p050,0.025,0.50,Constitución y justicia,3,3,2,0.666667,0.666667
+m025_p050,0.025,0.50,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m025_p050,0.025,0.50,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m025_p050,0.025,0.50,Deportes,8,6,6,0.750000,1.000000
+m025_p050,0.025,0.50,Desarrollo social,6,4,2,0.333333,0.500000
+m025_p050,0.025,0.50,Economía y hacienda,124,120,119,0.959677,0.991667
+m025_p050,0.025,0.50,"Economía, comercio y consumidores",7,6,6,0.857143,1.000000
+m025_p050,0.025,0.50,Educación,50,48,48,0.960000,1.000000
+m025_p050,0.025,0.50,Emergencias y desastres,1,0,0,0.000000,
+m025_p050,0.025,0.50,"Familia, infancia y adolescencia",5,2,1,0.200000,0.500000
+m025_p050,0.025,0.50,Gobierno interior y descentralización,23,16,12,0.521739,0.750000
+m025_p050,0.025,0.50,Medio ambiente,8,8,8,1.000000,1.000000
+m025_p050,0.025,0.50,Minería y energía,28,22,15,0.535714,0.681818
+m025_p050,0.025,0.50,Mujeres y género,1,0,0,0.000000,
+m025_p050,0.025,0.50,Personas mayores y discapacidad,1,0,0,0.000000,
+m025_p050,0.025,0.50,Relaciones exteriores,10,2,0,0.000000,0.000000
+m025_p050,0.025,0.50,Salud,1,0,0,0.000000,
+m025_p050,0.025,0.50,Seguridad,45,35,32,0.711111,0.914286
+m025_p050,0.025,0.50,Trabajo y seguridad social,11,10,9,0.818182,0.900000
+m025_p050,0.025,0.50,Transportes y telecomunicaciones,4,0,0,0.000000,
+m025_p050,0.025,0.50,Vivienda y territorio,13,7,7,0.538462,1.000000
+m025_p075,0.025,0.75,Agua y recursos hídricos,5,4,3,0.600000,0.750000
+m025_p075,0.025,0.75,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m025_p075,0.025,0.75,Constitución y justicia,3,3,2,0.666667,0.666667
+m025_p075,0.025,0.75,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m025_p075,0.025,0.75,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m025_p075,0.025,0.75,Deportes,8,6,6,0.750000,1.000000
+m025_p075,0.025,0.75,Desarrollo social,6,4,1,0.166667,0.250000
+m025_p075,0.025,0.75,Economía y hacienda,124,120,119,0.959677,0.991667
+m025_p075,0.025,0.75,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m025_p075,0.025,0.75,Educación,50,48,48,0.960000,1.000000
+m025_p075,0.025,0.75,Emergencias y desastres,1,0,0,0.000000,
+m025_p075,0.025,0.75,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m025_p075,0.025,0.75,Gobierno interior y descentralización,23,16,11,0.478261,0.687500
+m025_p075,0.025,0.75,Medio ambiente,8,8,8,1.000000,1.000000
+m025_p075,0.025,0.75,Minería y energía,28,22,12,0.428571,0.545455
+m025_p075,0.025,0.75,Mujeres y género,1,0,0,0.000000,
+m025_p075,0.025,0.75,Personas mayores y discapacidad,1,0,0,0.000000,
+m025_p075,0.025,0.75,Relaciones exteriores,10,2,0,0.000000,0.000000
+m025_p075,0.025,0.75,Salud,1,0,0,0.000000,
+m025_p075,0.025,0.75,Seguridad,45,35,27,0.600000,0.771429
+m025_p075,0.025,0.75,Trabajo y seguridad social,11,10,9,0.818182,0.900000
+m025_p075,0.025,0.75,Transportes y telecomunicaciones,4,0,0,0.000000,
+m025_p075,0.025,0.75,Vivienda y territorio,13,7,6,0.461538,0.857143
+m025_p090,0.025,0.90,Agua y recursos hídricos,5,4,1,0.200000,0.250000
+m025_p090,0.025,0.90,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m025_p090,0.025,0.90,Constitución y justicia,3,3,1,0.333333,0.333333
+m025_p090,0.025,0.90,Cultura y comunicaciones,5,3,1,0.200000,0.333333
+m025_p090,0.025,0.90,"Cultura, patrimonio y deporte",1,1,0,0.000000,0.000000
+m025_p090,0.025,0.90,Deportes,8,6,3,0.375000,0.500000
+m025_p090,0.025,0.90,Desarrollo social,6,4,0,0.000000,0.000000
+m025_p090,0.025,0.90,Economía y hacienda,124,120,111,0.895161,0.925000
+m025_p090,0.025,0.90,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m025_p090,0.025,0.90,Educación,50,48,31,0.620000,0.645833
+m025_p090,0.025,0.90,Emergencias y desastres,1,0,0,0.000000,
+m025_p090,0.025,0.90,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m025_p090,0.025,0.90,Gobierno interior y descentralización,23,16,2,0.086957,0.125000
+m025_p090,0.025,0.90,Medio ambiente,8,8,1,0.125000,0.125000
+m025_p090,0.025,0.90,Minería y energía,28,22,1,0.035714,0.045455
+m025_p090,0.025,0.90,Mujeres y género,1,0,0,0.000000,
+m025_p090,0.025,0.90,Personas mayores y discapacidad,1,0,0,0.000000,
+m025_p090,0.025,0.90,Relaciones exteriores,10,2,0,0.000000,0.000000
+m025_p090,0.025,0.90,Salud,1,0,0,0.000000,
+m025_p090,0.025,0.90,Seguridad,45,35,14,0.311111,0.400000
+m025_p090,0.025,0.90,Trabajo y seguridad social,11,10,2,0.181818,0.200000
+m025_p090,0.025,0.90,Transportes y telecomunicaciones,4,0,0,0.000000,
+m025_p090,0.025,0.90,Vivienda y territorio,13,7,1,0.076923,0.142857
+m050_p050,0.050,0.50,Agua y recursos hídricos,5,4,4,0.800000,1.000000
+m050_p050,0.050,0.50,Ciencia y tecnología,4,3,1,0.250000,0.333333
+m050_p050,0.050,0.50,Constitución y justicia,3,3,2,0.666667,0.666667
+m050_p050,0.050,0.50,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m050_p050,0.050,0.50,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m050_p050,0.050,0.50,Deportes,8,6,6,0.750000,1.000000
+m050_p050,0.050,0.50,Desarrollo social,6,4,2,0.333333,0.500000
+m050_p050,0.050,0.50,Economía y hacienda,124,120,117,0.943548,0.975000
+m050_p050,0.050,0.50,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m050_p050,0.050,0.50,Educación,50,48,48,0.960000,1.000000
+m050_p050,0.050,0.50,Emergencias y desastres,1,0,0,0.000000,
+m050_p050,0.050,0.50,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m050_p050,0.050,0.50,Gobierno interior y descentralización,23,16,12,0.521739,0.750000
+m050_p050,0.050,0.50,Medio ambiente,8,8,8,1.000000,1.000000
+m050_p050,0.050,0.50,Minería y energía,28,22,13,0.464286,0.590909
+m050_p050,0.050,0.50,Mujeres y género,1,0,0,0.000000,
+m050_p050,0.050,0.50,Personas mayores y discapacidad,1,0,0,0.000000,
+m050_p050,0.050,0.50,Relaciones exteriores,10,2,0,0.000000,0.000000
+m050_p050,0.050,0.50,Salud,1,0,0,0.000000,
+m050_p050,0.050,0.50,Seguridad,45,35,32,0.711111,0.914286
+m050_p050,0.050,0.50,Trabajo y seguridad social,11,10,8,0.727273,0.800000
+m050_p050,0.050,0.50,Transportes y telecomunicaciones,4,0,0,0.000000,
+m050_p050,0.050,0.50,Vivienda y territorio,13,7,7,0.538462,1.000000
+m050_p075,0.050,0.75,Agua y recursos hídricos,5,4,3,0.600000,0.750000
+m050_p075,0.050,0.75,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m050_p075,0.050,0.75,Constitución y justicia,3,3,2,0.666667,0.666667
+m050_p075,0.050,0.75,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m050_p075,0.050,0.75,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m050_p075,0.050,0.75,Deportes,8,6,6,0.750000,1.000000
+m050_p075,0.050,0.75,Desarrollo social,6,4,1,0.166667,0.250000
+m050_p075,0.050,0.75,Economía y hacienda,124,120,117,0.943548,0.975000
+m050_p075,0.050,0.75,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m050_p075,0.050,0.75,Educación,50,48,48,0.960000,1.000000
+m050_p075,0.050,0.75,Emergencias y desastres,1,0,0,0.000000,
+m050_p075,0.050,0.75,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m050_p075,0.050,0.75,Gobierno interior y descentralización,23,16,11,0.478261,0.687500
+m050_p075,0.050,0.75,Medio ambiente,8,8,8,1.000000,1.000000
+m050_p075,0.050,0.75,Minería y energía,28,22,11,0.392857,0.500000
+m050_p075,0.050,0.75,Mujeres y género,1,0,0,0.000000,
+m050_p075,0.050,0.75,Personas mayores y discapacidad,1,0,0,0.000000,
+m050_p075,0.050,0.75,Relaciones exteriores,10,2,0,0.000000,0.000000
+m050_p075,0.050,0.75,Salud,1,0,0,0.000000,
+m050_p075,0.050,0.75,Seguridad,45,35,27,0.600000,0.771429
+m050_p075,0.050,0.75,Trabajo y seguridad social,11,10,8,0.727273,0.800000
+m050_p075,0.050,0.75,Transportes y telecomunicaciones,4,0,0,0.000000,
+m050_p075,0.050,0.75,Vivienda y territorio,13,7,6,0.461538,0.857143
+m050_p090,0.050,0.90,Agua y recursos hídricos,5,4,1,0.200000,0.250000
+m050_p090,0.050,0.90,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m050_p090,0.050,0.90,Constitución y justicia,3,3,1,0.333333,0.333333
+m050_p090,0.050,0.90,Cultura y comunicaciones,5,3,1,0.200000,0.333333
+m050_p090,0.050,0.90,"Cultura, patrimonio y deporte",1,1,0,0.000000,0.000000
+m050_p090,0.050,0.90,Deportes,8,6,3,0.375000,0.500000
+m050_p090,0.050,0.90,Desarrollo social,6,4,0,0.000000,0.000000
+m050_p090,0.050,0.90,Economía y hacienda,124,120,110,0.887097,0.916667
+m050_p090,0.050,0.90,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m050_p090,0.050,0.90,Educación,50,48,31,0.620000,0.645833
+m050_p090,0.050,0.90,Emergencias y desastres,1,0,0,0.000000,
+m050_p090,0.050,0.90,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m050_p090,0.050,0.90,Gobierno interior y descentralización,23,16,2,0.086957,0.125000
+m050_p090,0.050,0.90,Medio ambiente,8,8,1,0.125000,0.125000
+m050_p090,0.050,0.90,Minería y energía,28,22,1,0.035714,0.045455
+m050_p090,0.050,0.90,Mujeres y género,1,0,0,0.000000,
+m050_p090,0.050,0.90,Personas mayores y discapacidad,1,0,0,0.000000,
+m050_p090,0.050,0.90,Relaciones exteriores,10,2,0,0.000000,0.000000
+m050_p090,0.050,0.90,Salud,1,0,0,0.000000,
+m050_p090,0.050,0.90,Seguridad,45,35,14,0.311111,0.400000
+m050_p090,0.050,0.90,Trabajo y seguridad social,11,10,2,0.181818,0.200000
+m050_p090,0.050,0.90,Transportes y telecomunicaciones,4,0,0,0.000000,
+m050_p090,0.050,0.90,Vivienda y territorio,13,7,1,0.076923,0.142857
+m100_p050,0.100,0.50,Agua y recursos hídricos,5,4,4,0.800000,1.000000
+m100_p050,0.100,0.50,Ciencia y tecnología,4,3,1,0.250000,0.333333
+m100_p050,0.100,0.50,Constitución y justicia,3,3,2,0.666667,0.666667
+m100_p050,0.100,0.50,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m100_p050,0.100,0.50,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m100_p050,0.100,0.50,Deportes,8,6,4,0.500000,0.666667
+m100_p050,0.100,0.50,Desarrollo social,6,4,2,0.333333,0.500000
+m100_p050,0.100,0.50,Economía y hacienda,124,120,112,0.903226,0.933333
+m100_p050,0.100,0.50,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m100_p050,0.100,0.50,Educación,50,48,48,0.960000,1.000000
+m100_p050,0.100,0.50,Emergencias y desastres,1,0,0,0.000000,
+m100_p050,0.100,0.50,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m100_p050,0.100,0.50,Gobierno interior y descentralización,23,16,12,0.521739,0.750000
+m100_p050,0.100,0.50,Medio ambiente,8,8,8,1.000000,1.000000
+m100_p050,0.100,0.50,Minería y energía,28,22,13,0.464286,0.590909
+m100_p050,0.100,0.50,Mujeres y género,1,0,0,0.000000,
+m100_p050,0.100,0.50,Personas mayores y discapacidad,1,0,0,0.000000,
+m100_p050,0.100,0.50,Relaciones exteriores,10,2,0,0.000000,0.000000
+m100_p050,0.100,0.50,Salud,1,0,0,0.000000,
+m100_p050,0.100,0.50,Seguridad,45,35,29,0.644444,0.828571
+m100_p050,0.100,0.50,Trabajo y seguridad social,11,10,8,0.727273,0.800000
+m100_p050,0.100,0.50,Transportes y telecomunicaciones,4,0,0,0.000000,
+m100_p050,0.100,0.50,Vivienda y territorio,13,7,6,0.461538,0.857143
+m100_p075,0.100,0.75,Agua y recursos hídricos,5,4,3,0.600000,0.750000
+m100_p075,0.100,0.75,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m100_p075,0.100,0.75,Constitución y justicia,3,3,2,0.666667,0.666667
+m100_p075,0.100,0.75,Cultura y comunicaciones,5,3,3,0.600000,1.000000
+m100_p075,0.100,0.75,"Cultura, patrimonio y deporte",1,1,1,1.000000,1.000000
+m100_p075,0.100,0.75,Deportes,8,6,4,0.500000,0.666667
+m100_p075,0.100,0.75,Desarrollo social,6,4,1,0.166667,0.250000
+m100_p075,0.100,0.75,Economía y hacienda,124,120,112,0.903226,0.933333
+m100_p075,0.100,0.75,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m100_p075,0.100,0.75,Educación,50,48,48,0.960000,1.000000
+m100_p075,0.100,0.75,Emergencias y desastres,1,0,0,0.000000,
+m100_p075,0.100,0.75,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m100_p075,0.100,0.75,Gobierno interior y descentralización,23,16,11,0.478261,0.687500
+m100_p075,0.100,0.75,Medio ambiente,8,8,8,1.000000,1.000000
+m100_p075,0.100,0.75,Minería y energía,28,22,11,0.392857,0.500000
+m100_p075,0.100,0.75,Mujeres y género,1,0,0,0.000000,
+m100_p075,0.100,0.75,Personas mayores y discapacidad,1,0,0,0.000000,
+m100_p075,0.100,0.75,Relaciones exteriores,10,2,0,0.000000,0.000000
+m100_p075,0.100,0.75,Salud,1,0,0,0.000000,
+m100_p075,0.100,0.75,Seguridad,45,35,25,0.555556,0.714286
+m100_p075,0.100,0.75,Trabajo y seguridad social,11,10,8,0.727273,0.800000
+m100_p075,0.100,0.75,Transportes y telecomunicaciones,4,0,0,0.000000,
+m100_p075,0.100,0.75,Vivienda y territorio,13,7,5,0.384615,0.714286
+m100_p090,0.100,0.90,Agua y recursos hídricos,5,4,1,0.200000,0.250000
+m100_p090,0.100,0.90,Ciencia y tecnología,4,3,0,0.000000,0.000000
+m100_p090,0.100,0.90,Constitución y justicia,3,3,1,0.333333,0.333333
+m100_p090,0.100,0.90,Cultura y comunicaciones,5,3,1,0.200000,0.333333
+m100_p090,0.100,0.90,"Cultura, patrimonio y deporte",1,1,0,0.000000,0.000000
+m100_p090,0.100,0.90,Deportes,8,6,3,0.375000,0.500000
+m100_p090,0.100,0.90,Desarrollo social,6,4,0,0.000000,0.000000
+m100_p090,0.100,0.90,Economía y hacienda,124,120,105,0.846774,0.875000
+m100_p090,0.100,0.90,"Economía, comercio y consumidores",7,6,5,0.714286,0.833333
+m100_p090,0.100,0.90,Educación,50,48,31,0.620000,0.645833
+m100_p090,0.100,0.90,Emergencias y desastres,1,0,0,0.000000,
+m100_p090,0.100,0.90,"Familia, infancia y adolescencia",5,2,0,0.000000,0.000000
+m100_p090,0.100,0.90,Gobierno interior y descentralización,23,16,2,0.086957,0.125000
+m100_p090,0.100,0.90,Medio ambiente,8,8,1,0.125000,0.125000
+m100_p090,0.100,0.90,Minería y energía,28,22,1,0.035714,0.045455
+m100_p090,0.100,0.90,Mujeres y género,1,0,0,0.000000,
+m100_p090,0.100,0.90,Personas mayores y discapacidad,1,0,0,0.000000,
+m100_p090,0.100,0.90,Relaciones exteriores,10,2,0,0.000000,0.000000
+m100_p090,0.100,0.90,Salud,1,0,0,0.000000,
+m100_p090,0.100,0.90,Seguridad,45,35,13,0.288889,0.371429
+m100_p090,0.100,0.90,Trabajo y seguridad social,11,10,2,0.181818,0.200000
+m100_p090,0.100,0.90,Transportes y telecomunicaciones,4,0,0,0.000000,
+m100_p090,0.100,0.90,Vivienda y territorio,13,7,1,0.076923,0.142857
