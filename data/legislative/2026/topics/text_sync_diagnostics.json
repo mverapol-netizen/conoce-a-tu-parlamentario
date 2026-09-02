@@ -1,8 +1,8 @@
 {
   "projects": 496,
   "corpus_rows": 496,
-  "refreshed_this_run": 2,
-  "reused_this_run": 493,
+  "refreshed_this_run": 0,
+  "reused_this_run": 495,
   "no_candidate_documents": [],
   "quality": {
     "utilizable": 9,
@@ -29,7 +29,7 @@
   "errors": [
     {
       "boletin": "18459-05",
-      "error": "[Errno 2] No such file or directory: 'antiword'"
+      "error": "Command '['antiword', '/tmp/tmpalbqg1gv.doc']' returned non-zero exit status 1."
     }
   ]
 }
