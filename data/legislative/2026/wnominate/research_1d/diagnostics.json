@@ -1,0 +1,49 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "PASS",
+  "mode": "research",
+  "git_sha": "2652a97061eb3b9c01111ed3858f4729818dc377",
+  "package_versions": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "pscl": "1.5.9",
+    "wnominate": "1.5",
+    "jsonlite": "2.0.0"
+  },
+  "input_md5": {
+    "rollcall_matrix_binary": "5c810b3ef6f39c6a215e0fd5c708e12a",
+    "rollcall_matrix_metadata": "d1bc663644bc19f3b004475ddb001a02"
+  },
+  "universe": {
+    "members_total": 155,
+    "rollcalls_total": 364,
+    "base_lop": 0.025,
+    "rollcalls_selected": 276,
+    "clusters_selected": 55
+  },
+  "participation_rule": {
+    "reference_relative_rate": 0.1,
+    "absolute_minimum": 20,
+    "members_eligible_reference": 154,
+    "sensitivities": [0.1, 0.2, 0.3],
+    "note": "En este snapshot cada roll call tiene una observación para los 155 integrantes; oportunidad = roll calls elegibles. Futuras altas/bajas requieren intervalos explícitos de pertenencia."
+  },
+  "baseline": {
+    "wnominate_trials": 501,
+    "seed": 20260902,
+    "anchor_diputado_id": "1012",
+    "anchor_diputado_nombre": "Boris Barrera Moreno",
+    "correct_classification_1d": 95.6944,
+    "apre_1d": 0.8823,
+    "gmp_1d": 0.8901
+  },
+  "cluster_bootstrap": {
+    "grouping": "boletin/proyecto; roll calls sin boletin como cluster unitario",
+    "requested_replicates": 200,
+    "successful_replicates": 200,
+    "seed": 20260903,
+    "median_correlation_to_baseline": 0.9889,
+    "minimum_successful_replicates_for_any_member": 128,
+    "interpretation": "Intervalos de sensibilidad a composición/dependencia por proyecto; no sustituyen el bootstrap paramétrico interno de W-NOMINATE."
+  },
+  "methodological_warnings": ["Resultado interno de investigación; no publicar todavía en fichas.", "El signo de D1 es arbitrario; el bootstrap solo se alinea por reflexión respecto de la corrida base.", "Los errores estándar se obtienen con 501 trials en la corrida base; las 200 réplicas agrupadas por boletín estiman sensibilidad adicional a dependencia/composición por proyecto.", "No denominar D1 izquierda/derecha, oficialismo/oposición o ideología sin validación sustantiva posterior."]
+}
