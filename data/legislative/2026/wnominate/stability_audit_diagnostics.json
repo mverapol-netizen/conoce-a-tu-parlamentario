@@ -1,0 +1,214 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "PASS",
+  "specifications": [
+    "raw_lop025",
+    "raw_lop050",
+    "raw_lop100",
+    "dedup_lop025",
+    "cap20_balanced_lop025",
+    "cap10_balanced_lop025"
+  ],
+  "members": 155,
+  "members_estimated_baseline": 154,
+  "exclusion_rows_across_specs": 7,
+  "baseline_excluded_members": [
+    {
+      "diputado_id": "1107",
+      "diputado_nombre": "María Francisca Bello Campos",
+      "binary_votes_selected": 0
+    }
+  ],
+  "most_sensitive_by_standardized_coordinate": [
+    {
+      "diputado_id": "1152",
+      "diputado_nombre": "Gloria Naveillan Arriagada",
+      "max_abs_z_shift": 0.39129,
+      "rank_range": 54
+    },
+    {
+      "diputado_id": "1148",
+      "diputado_nombre": "Javiera Morales Alvarado",
+      "max_abs_z_shift": 0.376345,
+      "rank_range": 24
+    },
+    {
+      "diputado_id": "1259",
+      "diputado_nombre": "Juan Marcelo Valenzuela Henríquez",
+      "max_abs_z_shift": 0.276516,
+      "rank_range": 0
+    },
+    {
+      "diputado_id": "1015",
+      "diputado_nombre": "Jorge Brito Hasbún",
+      "max_abs_z_shift": 0.272495,
+      "rank_range": 4
+    },
+    {
+      "diputado_id": "1235",
+      "diputado_nombre": "Javier Olivares Avendaño",
+      "max_abs_z_shift": 0.266629,
+      "rank_range": 0
+    },
+    {
+      "diputado_id": "1192",
+      "diputado_nombre": "Lilian Betancurt Delgado",
+      "max_abs_z_shift": 0.234982,
+      "rank_range": 9
+    },
+    {
+      "diputado_id": "1075",
+      "diputado_nombre": "Diego Schalper Sepúlveda",
+      "max_abs_z_shift": 0.207967,
+      "rank_range": 46
+    },
+    {
+      "diputado_id": "1195",
+      "diputado_nombre": "Carlos Carvajal Gallardo",
+      "max_abs_z_shift": 0.207207,
+      "rank_range": 15
+    },
+    {
+      "diputado_id": "1215",
+      "diputado_nombre": "Álvaro Jofré Cáceres",
+      "max_abs_z_shift": 0.206805,
+      "rank_range": 36
+    },
+    {
+      "diputado_id": "1212",
+      "diputado_nombre": "Erich Grohs Marín",
+      "max_abs_z_shift": 0.204522,
+      "rank_range": 34
+    },
+    {
+      "diputado_id": "1082",
+      "diputado_nombre": "Cristóbal Urruticoechea Ríos",
+      "max_abs_z_shift": 0.199881,
+      "rank_range": 36
+    },
+    {
+      "diputado_id": "1248",
+      "diputado_nombre": "Felipe Ross Correa",
+      "max_abs_z_shift": 0.198983,
+      "rank_range": 3
+    },
+    {
+      "diputado_id": "1223",
+      "diputado_nombre": "Hans Marowski Cuevas",
+      "max_abs_z_shift": 0.198983,
+      "rank_range": 32
+    },
+    {
+      "diputado_id": "1228",
+      "diputado_nombre": "Paulina Muñoz Minte",
+      "max_abs_z_shift": 0.198983,
+      "rank_range": 35
+    },
+    {
+      "diputado_id": "1240",
+      "diputado_nombre": "Zandra Parisi Fernández",
+      "max_abs_z_shift": 0.198531,
+      "rank_range": 4
+    }
+  ],
+  "largest_rank_ranges": [
+    {
+      "diputado_id": "1152",
+      "diputado_nombre": "Gloria Naveillan Arriagada",
+      "rank_range": 54,
+      "max_abs_z_shift": 0.39129
+    },
+    {
+      "diputado_id": "1075",
+      "diputado_nombre": "Diego Schalper Sepúlveda",
+      "rank_range": 46,
+      "max_abs_z_shift": 0.207967
+    },
+    {
+      "diputado_id": "1082",
+      "diputado_nombre": "Cristóbal Urruticoechea Ríos",
+      "rank_range": 36,
+      "max_abs_z_shift": 0.199881
+    },
+    {
+      "diputado_id": "1215",
+      "diputado_nombre": "Álvaro Jofré Cáceres",
+      "rank_range": 36,
+      "max_abs_z_shift": 0.206805
+    },
+    {
+      "diputado_id": "1228",
+      "diputado_nombre": "Paulina Muñoz Minte",
+      "rank_range": 35,
+      "max_abs_z_shift": 0.198983
+    },
+    {
+      "diputado_id": "1212",
+      "diputado_nombre": "Erich Grohs Marín",
+      "rank_range": 34,
+      "max_abs_z_shift": 0.204522
+    },
+    {
+      "diputado_id": "1223",
+      "diputado_nombre": "Hans Marowski Cuevas",
+      "rank_range": 32,
+      "max_abs_z_shift": 0.198983
+    },
+    {
+      "diputado_id": "1217",
+      "diputado_nombre": "Pier Karlezi Hazleby",
+      "rank_range": 31,
+      "max_abs_z_shift": 0.192421
+    },
+    {
+      "diputado_id": "1214",
+      "diputado_nombre": "Constanza Hube Portus",
+      "rank_range": 29,
+      "max_abs_z_shift": 0.07799
+    },
+    {
+      "diputado_id": "1140",
+      "diputado_nombre": "Daniel Lilayu Vivanco",
+      "rank_range": 29,
+      "max_abs_z_shift": 0.08403
+    },
+    {
+      "diputado_id": "1202",
+      "diputado_nombre": "Eduardo Cretton Rebolledo",
+      "rank_range": 29,
+      "max_abs_z_shift": 0.081827
+    },
+    {
+      "diputado_id": "1148",
+      "diputado_nombre": "Javiera Morales Alvarado",
+      "rank_range": 24,
+      "max_abs_z_shift": 0.376345
+    },
+    {
+      "diputado_id": "1059",
+      "diputado_nombre": "Ximena Ossandón Irarrázabal",
+      "rank_range": 19,
+      "max_abs_z_shift": 0.125363
+    },
+    {
+      "diputado_id": "1021",
+      "diputado_nombre": "Andrés Celis Montt",
+      "rank_range": 18,
+      "max_abs_z_shift": 0.140012
+    },
+    {
+      "diputado_id": "1194",
+      "diputado_nombre": "Daniel Bustos Leal",
+      "rank_range": 17,
+      "max_abs_z_shift": 0.107427
+    }
+  ],
+  "members_with_party_variation_over_rollcalls": 3,
+  "members_with_caucus_variation_over_rollcalls": 2,
+  "baseline_eta_squared_descriptive": {
+    "party": 0.8471476829985416,
+    "caucus": 0.989036067848369,
+    "alignment": 0.8872914390984172
+  },
+  "method_note": "La auditoría estandariza cada especificación antes de medir desplazamientos individuales, porque la escala absoluta de W-NOMINATE puede cambiar entre corridas. Partido, bancada y alineamiento son modales históricos por roll call; sus shares permiten detectar cambios. Eta² se usa solo como asociación descriptiva, no como interpretación causal ni etiqueta del eje."
+}

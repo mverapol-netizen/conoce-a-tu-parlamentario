@@ -1,0 +1,19 @@
+﻿spec_id,group_type,n_members,n_groups,eta_squared_descriptive,interpretation
+raw_lop025,party,154,18,0.8471476829985416,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop025,caucus,154,12,0.989036067848369,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop025,alignment,154,3,0.8872914390984172,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop050,party,154,18,0.8471613837147978,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop050,caucus,154,12,0.9888577732217043,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop050,alignment,154,3,0.8828423022204426,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop100,party,154,18,0.8466743789671963,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop100,caucus,154,12,0.9880144268946419,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+raw_lop100,alignment,154,3,0.8736005472234729,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+dedup_lop025,party,154,18,0.8477320801352369,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+dedup_lop025,caucus,154,12,0.9888898404082697,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+dedup_lop025,alignment,154,3,0.8847412477803513,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+cap20_balanced_lop025,party,154,18,0.8550528228718666,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+cap20_balanced_lop025,caucus,154,12,0.9897275700779599,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+cap20_balanced_lop025,alignment,154,3,0.8692961444908123,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+cap10_balanced_lop025,party,153,18,0.8548855738333058,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+cap10_balanced_lop025,caucus,153,12,0.9887075468355682,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.
+cap10_balanced_lop025,alignment,153,3,0.8512898699433836,Fracción descriptiva de varianza de la coordenada 1D asociada a diferencias entre grupos; no implica causalidad ni valida por sí sola una etiqueta ideológica.

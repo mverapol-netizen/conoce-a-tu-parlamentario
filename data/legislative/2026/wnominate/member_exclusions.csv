@@ -1,0 +1,8 @@
+﻿spec_id,diputado_id,diputado_nombre,binary_votes_selected,reason
+raw_lop025,1107,María Francisca Bello Campos,0,Menos de minvotes=20 votos binarios en la especificación
+raw_lop050,1107,María Francisca Bello Campos,0,Menos de minvotes=20 votos binarios en la especificación
+raw_lop100,1107,María Francisca Bello Campos,0,Menos de minvotes=20 votos binarios en la especificación
+dedup_lop025,1107,María Francisca Bello Campos,0,Menos de minvotes=20 votos binarios en la especificación
+cap20_balanced_lop025,1107,María Francisca Bello Campos,0,Menos de minvotes=20 votos binarios en la especificación
+cap10_balanced_lop025,1107,María Francisca Bello Campos,0,Menos de minvotes=20 votos binarios en la especificación
+cap10_balanced_lop025,1148,Javiera Morales Alvarado,12,Menos de minvotes=20 votos binarios en la especificación
