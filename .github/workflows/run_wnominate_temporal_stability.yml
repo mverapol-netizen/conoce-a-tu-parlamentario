@@ -5,8 +5,8 @@ on:
   push:
     paths:
       - "scripts/run_wnominate_temporal_stability.R"
-      - "data/legislative/2026/rollcall_matrix_binary.csv"
-      - "data/legislative/2026/rollcall_matrix_metadata.csv"
+      # La prueba temporal depende de la estimación 1D completa. No se dispara
+      # directamente con la matriz para evitar leer coordenadas todavía antiguas.
       - "data/legislative/2026/wnominate/member_coordinates.csv"
       - ".github/workflows/run_wnominate_temporal_stability.yml"
 
