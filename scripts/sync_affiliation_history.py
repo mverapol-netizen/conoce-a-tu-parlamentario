@@ -16,6 +16,7 @@ SNAPSHOTS = OUT / "affiliation_snapshots.csv"
 MANUAL_EVENTS = OUT / "affiliation_manual_events.csv"
 DETECTED_EVENTS = OUT / "affiliation_detected_events.csv"
 PARTY_BASELINE = OUT / "party_term_start_baseline.csv"
+CAUCUS_BASELINE = OUT / "caucus_term_start_baseline.csv"
 HISTORY = OUT / "affiliation_history.csv"
 DIAGNOSTICS = OUT / "affiliation_diagnostics.json"
 TERM_START = date(2026, 3, 11)
@@ -254,36 +255,44 @@ def make_interval(deputy_id: str, name: str, start: date, end: date | None, stat
     }
 
 
-def initial_state(deputy_id: str, snap: dict, baseline: dict, first_event: dict | None) -> dict:
-    party = baseline.get("party_at_term_start", "")
+def initial_state(deputy_id: str, party_baseline: dict, caucus_baseline: dict,
+                  first_event: dict | None) -> dict:
+    party = party_baseline.get("party_at_term_start", "")
+    caucus = caucus_baseline.get("caucus_at_term_start", "")
     if not party:
         raise RuntimeError(f"Falta partido de inicio para diputado {deputy_id}")
+    if not caucus:
+        raise RuntimeError(f"Falta bancada de inicio para diputado {deputy_id}")
 
     state = {
         "party": party,
-        "party_basis": baseline.get("basis", "party_term_start_baseline"),
-        "party_confidence": baseline.get("confidence", "medium"),
-        "party_source_url": baseline.get("source_url_primary", ""),
-        "party_note": baseline.get("source_note", ""),
-        "caucus": snap.get("caucus_reported") or "Bancada por confirmar",
-        "caucus_basis": "current_snapshot_backward_assumption",
-        "caucus_confidence": "provisional",
-        "caucus_source_url": snap.get("profile_url", ""),
-        "caucus_note": "Bancada actual proyectada provisionalmente hacia el 11-03-2026; pendiente de validación histórica específica.",
+        "party_basis": party_baseline.get("basis", "party_term_start_baseline"),
+        "party_confidence": party_baseline.get("confidence", "medium"),
+        "party_source_url": party_baseline.get("source_url_primary", ""),
+        "party_note": party_baseline.get("source_note", ""),
+        "caucus": caucus,
+        "caucus_basis": caucus_baseline.get("basis", "caucus_term_start_baseline"),
+        "caucus_confidence": caucus_baseline.get("confidence", "medium"),
+        "caucus_source_url": caucus_baseline.get("source_url_primary", ""),
+        "caucus_note": caucus_baseline.get("source_note", ""),
         "date_precision": "term_start",
     }
 
+    # Un primer evento documentado puede aportar evidencia directa del estado previo.
     if first_event:
-        if first_event.get("party_before"):
-            before = first_event["party_before"]
-            if before != state["party"]:
-                state["party_note"] += f" | Primer evento documenta partido previo {before}; revisar discrepancia con línea base."
+        if first_event.get("party_before") and first_event["party_before"] != state["party"]:
+            state["party_note"] += (
+                f" | Primer evento documenta partido previo {first_event['party_before']}; "
+                "revisar discrepancia con línea base."
+            )
         if first_event.get("caucus_before"):
-            state["caucus"] = first_event["caucus_before"]
-            state["caucus_basis"] = "documented_pre_event_state"
-            state["caucus_confidence"] = first_event.get("confidence") or "high"
-            state["caucus_source_url"] = first_event.get("source_url", "")
-            state["caucus_note"] = "Estado de bancada anterior reconstruido a partir del primer cambio documentado del período."
+            event_conf = first_event.get("confidence") or "high"
+            if CONFIDENCE_ORDER.get(event_conf, 0) >= CONFIDENCE_ORDER.get(state["caucus_confidence"], 0):
+                state["caucus"] = first_event["caucus_before"]
+                state["caucus_basis"] = "documented_pre_event_state"
+                state["caucus_confidence"] = event_conf
+                state["caucus_source_url"] = first_event.get("source_url", "")
+                state["caucus_note"] = "Estado de bancada anterior reconstruido a partir del primer cambio documentado del período."
     return state
 
 
@@ -309,11 +318,17 @@ def apply_event_to_state(state: dict, event: dict) -> None:
     state["date_precision"] = precision
 
 
-def build_history(snapshots: list[dict], events: list[dict], baselines: list[dict]) -> tuple[list[dict], list[dict]]:
+def build_history(snapshots: list[dict], events: list[dict], party_baselines: list[dict],
+                  caucus_baselines: list[dict]) -> tuple[list[dict], list[dict]]:
     latest_date, latest_by_id = latest_snapshot(snapshots)
-    baseline_by_id = {x["deputy_id"]: x for x in baselines}
-    if len(baseline_by_id) != 155:
-        raise RuntimeError(f"La línea base partidaria debe contener 155 diputados; contiene {len(baseline_by_id)}")
+    party_by_id = {x["deputy_id"]: x for x in party_baselines}
+    caucus_by_id = {x["deputy_id"]: x for x in caucus_baselines}
+    if len(party_by_id) != 155:
+        raise RuntimeError(f"La línea base partidaria debe contener 155 diputados; contiene {len(party_by_id)}")
+    if len(caucus_by_id) != 155:
+        raise RuntimeError(f"La línea base de bancadas debe contener 155 diputados; contiene {len(caucus_by_id)}")
+    if set(party_by_id) != set(caucus_by_id):
+        raise RuntimeError("Las líneas base de partido y bancada no cubren exactamente los mismos diputados")
 
     events_by_id: dict[str, list[dict]] = defaultdict(list)
     for event in events:
@@ -329,11 +344,12 @@ def build_history(snapshots: list[dict], events: list[dict], baselines: list[dic
 
     for deputy_id, snap in sorted(latest_by_id.items(), key=lambda kv: int(kv[0])):
         name = snap["deputy_name"]
-        baseline = baseline_by_id[deputy_id]
-        electoral = baseline
+        party_baseline = party_by_id[deputy_id]
+        caucus_baseline = caucus_by_id[deputy_id]
+        electoral = party_baseline
         deputy_events = events_by_id.get(deputy_id, [])
         first_event = deputy_events[0] if deputy_events else None
-        state = initial_state(deputy_id, snap, baseline, first_event)
+        state = initial_state(deputy_id, party_baseline, caucus_baseline, first_event)
         start = TERM_START
 
         for event in deputy_events:
@@ -356,9 +372,8 @@ def build_history(snapshots: list[dict], events: list[dict], baselines: list[dic
         conflict = "1" if mismatch else "0"
         if mismatch:
             conflicts.append({"deputy_id": deputy_id, "deputy_name": name, "detail": " | ".join(mismatch)})
-
-        if mismatch:
             state["party_note"] += (" | " if state.get("party_note") else "") + "Conflicto con snapshot oficial vigente registrado por auditoría."
+
         history.append(make_interval(deputy_id, name, start, None, state, electoral, conflict))
 
     history.sort(key=lambda x: (int(x["deputy_id"]), x["valid_from"]))
@@ -387,20 +402,26 @@ def audit_history(history: list[dict], snapshot_count: int, conflicts: list[dict
     if bad_starts or overlaps:
         raise RuntimeError(f"Historial temporal inconsistente: bad_starts={bad_starts}, overlaps={overlaps}")
 
-    party_start = [sorted(rows, key=lambda x: x["valid_from"])[0] for rows in by_id.values()]
-    caucus_start = party_start
+    term_start_rows = [sorted(rows, key=lambda x: x["valid_from"])[0] for rows in by_id.values()]
+    party_provisional = sum(x["party_confidence"] == "provisional" for x in term_start_rows)
+    caucus_provisional = sum(x["caucus_confidence"] == "provisional" for x in term_start_rows)
+    if party_provisional or caucus_provisional:
+        raise RuntimeError(
+            f"La línea de base aún contiene valores provisionales: party={party_provisional}, caucus={caucus_provisional}"
+        )
+
     return {
         "generated_for": date.today().isoformat(),
         "deputies": len(by_id),
         "history_intervals": len(history),
         "documented_manual_events": len(read_csv(MANUAL_EVENTS)),
         "detected_weekly_snapshot_events": len(detected),
-        "party_term_start_high_confidence": sum(x["party_confidence"] == "high" for x in party_start),
-        "party_term_start_medium_confidence": sum(x["party_confidence"] == "medium" for x in party_start),
-        "party_term_start_provisional": sum(x["party_confidence"] == "provisional" for x in party_start),
-        "caucus_term_start_high_confidence": sum(x["caucus_confidence"] == "high" for x in caucus_start),
-        "caucus_term_start_medium_confidence": sum(x["caucus_confidence"] == "medium" for x in caucus_start),
-        "caucus_term_start_provisional": sum(x["caucus_confidence"] == "provisional" for x in caucus_start),
+        "party_term_start_high_confidence": sum(x["party_confidence"] == "high" for x in term_start_rows),
+        "party_term_start_medium_confidence": sum(x["party_confidence"] == "medium" for x in term_start_rows),
+        "party_term_start_provisional": party_provisional,
+        "caucus_term_start_high_confidence": sum(x["caucus_confidence"] == "high" for x in term_start_rows),
+        "caucus_term_start_medium_confidence": sum(x["caucus_confidence"] == "medium" for x in term_start_rows),
+        "caucus_term_start_provisional": caucus_provisional,
         "party_interval_confidence_counts": dict(Counter(x["party_confidence"] for x in history)),
         "caucus_interval_confidence_counts": dict(Counter(x["caucus_confidence"] for x in history)),
         "overall_interval_confidence_counts": dict(Counter(x["confidence"] for x in history)),
@@ -408,7 +429,7 @@ def audit_history(history: list[dict], snapshot_count: int, conflicts: list[dict
         "term_start": TERM_START.isoformat(),
         "party_history_coverage": 155,
         "caucus_history_coverage": 155,
-        "warning": "La afiliación partidaria de inicio ya está congelada para 155 diputados (26 verificación directa; 129 concordancia Servel-Cámara). La bancada inicial sigue siendo provisional salvo donde existe un cambio documentado que permite reconstruir el estado previo. Los cambios detectados solo entre snapshots semanales conservan una ventana de incertidumbre en affiliation_detected_events.csv.",
+        "warning": "Las líneas base de partido y bancada cubren 155/155 sin valores provisionales. Los cambios detectados solo entre snapshots semanales conservan una ventana de incertidumbre en affiliation_detected_events.csv y deben tratarse como fecha aproximada hasta su corroboración documental.",
     }
 
 
@@ -418,9 +439,12 @@ def main() -> None:
     if len(profiles) != 155:
         raise RuntimeError(f"Se esperaban 155 perfiles; hay {len(profiles)}")
 
-    baselines = read_csv(PARTY_BASELINE)
-    if len(baselines) != 155:
-        raise RuntimeError(f"Falta línea base partidaria completa: {len(baselines)}/155")
+    party_baselines = read_csv(PARTY_BASELINE)
+    caucus_baselines = read_csv(CAUCUS_BASELINE)
+    if len(party_baselines) != 155:
+        raise RuntimeError(f"Falta línea base partidaria completa: {len(party_baselines)}/155")
+    if len(caucus_baselines) != 155:
+        raise RuntimeError(f"Falta línea base de bancadas completa: {len(caucus_baselines)}/155")
 
     observed = snapshot_date(profiles)
     current = current_snapshot_rows(profiles, observed)
@@ -428,7 +452,7 @@ def main() -> None:
     manual = read_csv(MANUAL_EVENTS)
     detected = derive_detected_events(snapshots, manual)
     combined = event_rows(manual, detected)
-    history, conflicts = build_history(snapshots, combined, baselines)
+    history, conflicts = build_history(snapshots, combined, party_baselines, caucus_baselines)
     write_csv(HISTORY, history, HISTORY_FIELDS)
 
     diagnostics = audit_history(history, len(current), conflicts, detected)
