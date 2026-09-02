@@ -1,0 +1,14 @@
+{
+  "generated_for": "2026-09-02",
+  "status": "PASS",
+  "completed_specs": ["raw_lop025_2d", "raw_lop050_2d", "cap20_balanced_lop025_2d"],
+  "failed_specs": [],
+  "package_versions": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "pscl": "1.5.9",
+    "wnominate": "1.5"
+  },
+  "anchor_rule": "Dos anclas técnicas elegidas como extremos absolutos de los dos primeros vectores singulares de la matriz centrada de cada especificación. No tienen significado político sustantivo.",
+  "interpretation_rule": "La segunda dimensión solo se considerará sustantivamente útil si mejora el ajuste de forma relevante y muestra estructura estable e interpretable. Su mera estimabilidad no justifica publicarla.",
+  "warnings": ["Diagnóstico experimental, no público.", "La orientación y rotación de un espacio multidimensional dependen de restricciones de identificación.", "No denominar las dimensiones izquierda/derecha u otra categoría sustantiva sin validación posterior."]
+}
