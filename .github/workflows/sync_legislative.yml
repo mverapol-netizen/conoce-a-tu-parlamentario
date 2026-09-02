@@ -11,6 +11,7 @@ on:
       - "scripts/sync_bills.py"
       - "scripts/sync_authorship.py"
       - "scripts/sync_floor_votes.py"
+      - "scripts/audit_legislative_data.py"
       - ".github/workflows/sync_legislative.yml"
 
 permissions:
@@ -23,7 +24,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 180
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,22 +42,61 @@ jobs:
       - name: Sync projects and legislative course
         run: python scripts/sync_bills.py
 
-      - name: Sync parliamentary authorship
-        run: python scripts/sync_authorship.py
-
-      - name: Sync floor roll calls
-        run: python scripts/sync_floor_votes.py
-
-      - name: Commit legislative data
+      - name: Persist projects
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/legislative/2026
           if git diff --cached --quiet; then
-            echo "No legislative changes to commit"
+            echo "No project changes to commit"
           else
-            git commit -m "Actualiza datos legislativos 2026"
+            git commit -m "Actualiza proyectos legislativos 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Sync parliamentary authorship
+        run: python scripts/sync_authorship.py
+
+      - name: Persist authorship
+        shell: bash
+        run: |
+          git add data/legislative/2026
+          if git diff --cached --quiet; then
+            echo "No authorship changes to commit"
+          else
+            git commit -m "Actualiza autorías legislativas 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Sync floor roll calls
+        run: python scripts/sync_floor_votes.py
+
+      - name: Persist floor votes
+        shell: bash
+        run: |
+          git add data/legislative/2026
+          if git diff --cached --quiet; then
+            echo "No floor-vote changes to commit"
+          else
+            git commit -m "Actualiza votaciones de Sala 2026"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
+      - name: Audit legislative database
+        run: python scripts/audit_legislative_data.py
+
+      - name: Persist audit report
+        shell: bash
+        run: |
+          git add data/legislative/2026/AUDIT.md data/legislative/2026/audit_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No audit changes to commit"
+          else
+            git commit -m "Actualiza auditoría legislativa 2026"
             git pull --rebase origin main
             git push origin main
           fi
