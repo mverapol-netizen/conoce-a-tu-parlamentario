@@ -1,0 +1,85 @@
+{
+  "generated_for": "2026-09-02",
+  "lop": 0.025,
+  "eligible_rollcalls": 276,
+  "eligible_bills": 55,
+  "unique_patterns_within_bill_total": 269,
+  "exact_duplicates_within_bill": 7,
+  "duplicate_share_within_bill": 0.025362,
+  "globally_unique_binary_patterns": 269,
+  "globally_repeated_rollcalls": 7,
+  "patterns_occurring_in_multiple_bills": 0,
+  "top_bills": [
+    {
+      "boletin": "18216-05",
+      "eligible_rollcalls": 116,
+      "unique_binary_patterns": 110,
+      "duplicate_rollcalls": 6,
+      "largest_pattern_multiplicity": 4
+    },
+    {
+      "boletin": "18156-04",
+      "eligible_rollcalls": 31,
+      "unique_binary_patterns": 30,
+      "duplicate_rollcalls": 1,
+      "largest_pattern_multiplicity": 2
+    },
+    {
+      "boletin": "18384-08",
+      "eligible_rollcalls": 13,
+      "unique_binary_patterns": 13,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "16743-04",
+      "eligible_rollcalls": 11,
+      "unique_binary_patterns": 11,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "15347-07",
+      "eligible_rollcalls": 6,
+      "unique_binary_patterns": 6,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "16836-06",
+      "eligible_rollcalls": 6,
+      "unique_binary_patterns": 6,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "16857-07",
+      "eligible_rollcalls": 6,
+      "unique_binary_patterns": 6,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "10634-29",
+      "eligible_rollcalls": 5,
+      "unique_binary_patterns": 5,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "18230-13",
+      "eligible_rollcalls": 5,
+      "unique_binary_patterns": 5,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    },
+    {
+      "boletin": "14767-03",
+      "eligible_rollcalls": 4,
+      "unique_binary_patterns": 4,
+      "duplicate_rollcalls": 0,
+      "largest_pattern_multiplicity": 1
+    }
+  ],
+  "method_note": "Dos roll calls se consideran redundantes dentro de un boletín solo cuando la matriz usada por el modelo es exactamente idéntica para los 155 diputados después de codificar Afirmativo=1, En Contra=0 y las demás opciones como missing. Este diagnóstico no elimina observaciones."
+}
