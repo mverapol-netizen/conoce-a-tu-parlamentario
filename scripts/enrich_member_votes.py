@@ -15,6 +15,7 @@ HISTORY = AFF / "affiliation_history.csv"
 DETECTED_EVENTS = AFF / "affiliation_detected_events.csv"
 OUTPUT = OUT / "member_votes_enriched.csv"
 DIAGNOSTICS = OUT / "member_votes_enriched_diagnostics.json"
+EXPECTED_MEMBERS_PER_ROLLCALL = 155
 
 FIELDS = [
     "vote_id", "fecha", "boletin", "diputado_id", "diputado_nombre", "opcion", "opcion_codigo",
@@ -85,11 +86,22 @@ def main() -> None:
     if len(rollcall_by_id) != len(rollcalls):
         raise RuntimeError("rollcalls.csv contiene vote_id duplicados")
 
+    input_keys = [(x["vote_id"], x["diputado_id"]) for x in member_votes]
+    if len(set(input_keys)) != len(input_keys):
+        raise RuntimeError("member_votes.csv contiene pares vote_id × diputado_id duplicados")
+
+    input_counts = Counter(x["vote_id"] for x in member_votes)
+    bad_input_rollcalls = {vote_id: n for vote_id, n in input_counts.items() if n != EXPECTED_MEMBERS_PER_ROLLCALL}
+    if bad_input_rollcalls:
+        raise RuntimeError(f"La matriz nominal de entrada no tiene 155 filas en todos los roll calls: {bad_input_rollcalls}")
+
     history_by_id: dict[str, list[dict]] = defaultdict(list)
     for row in history:
         history_by_id[row["deputy_id"]].append(row)
     for rows in history_by_id.values():
         rows.sort(key=lambda x: x["valid_from"])
+    if len(history_by_id) != 155:
+        raise RuntimeError(f"El historial temporal no cubre 155 diputados: {len(history_by_id)}")
 
     detected_by_id: dict[str, list[dict]] = defaultdict(list)
     for row in detected:
@@ -144,26 +156,44 @@ def main() -> None:
             **uncertain,
         })
 
-    enriched.sort(key=lambda x: (x["fecha"], int(x["vote_id"]) if x["vote_id"].isdigit() else x["vote_id"], int(x["diputado_id"])))
+    enriched.sort(key=lambda x: (
+        x["fecha"],
+        int(x["vote_id"]) if x["vote_id"].isdigit() else x["vote_id"],
+        int(x["diputado_id"]),
+    ))
     with OUTPUT.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=FIELDS, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(enriched)
 
+    enriched_counts = Counter(x["vote_id"] for x in enriched)
+    bad_enriched_rollcalls = {
+        vote_id: n for vote_id, n in enriched_counts.items() if n != EXPECTED_MEMBERS_PER_ROLLCALL
+    }
+    provisional_rows = sum(
+        x["party_confidence"] == "provisional" or x["caucus_confidence"] == "provisional"
+        for x in enriched
+    )
+
     diagnostics = {
         "member_vote_rows_input": len(member_votes),
         "member_vote_rows_enriched": len(enriched),
         "rollcalls": len(rollcalls),
+        "rollcalls_with_155_input_rows": sum(n == EXPECTED_MEMBERS_PER_ROLLCALL for n in input_counts.values()),
+        "rollcalls_with_155_enriched_rows": sum(n == EXPECTED_MEMBERS_PER_ROLLCALL for n in enriched_counts.values()),
         "deputies_in_history": len(history_by_id),
         "missing_rollcall_rows": len(missing_rollcalls),
         "missing_history_rows": len(missing_history),
         "ambiguous_history_rows": len(ambiguous_history),
+        "provisional_affiliation_rows": provisional_rows,
         "uncertain_affiliation_rows": sum(x["affiliation_uncertain"] == "1" for x in enriched),
         "party_confidence_counts": dict(Counter(x["party_confidence"] for x in enriched)),
         "caucus_confidence_counts": dict(Counter(x["caucus_confidence"] for x in enriched)),
         "overall_affiliation_confidence_counts": dict(Counter(x["affiliation_confidence"] for x in enriched)),
         "vote_option_counts": dict(Counter(x["opcion"] for x in enriched)),
         "errors": {
+            "bad_input_rollcalls": bad_input_rollcalls,
+            "bad_enriched_rollcalls": bad_enriched_rollcalls,
             "missing_rollcall_examples": missing_rollcalls[:20],
             "missing_history_examples": missing_history[:20],
             "ambiguous_history_examples": ambiguous_history[:20],
@@ -180,6 +210,10 @@ def main() -> None:
         )
     if len(enriched) != len(member_votes):
         raise RuntimeError(f"Cobertura incompleta: {len(enriched)}/{len(member_votes)}")
+    if bad_enriched_rollcalls:
+        raise RuntimeError(f"La matriz enriquecida no conserva 155 filas por roll call: {bad_enriched_rollcalls}")
+    if provisional_rows:
+        raise RuntimeError(f"La matriz enriquecida contiene {provisional_rows} filas con afiliación provisional")
 
 
 if __name__ == "__main__":
