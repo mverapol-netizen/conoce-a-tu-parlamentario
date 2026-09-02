@@ -1,5 +1,6 @@
 (() => {
   const districts = window.DISTRICTS || [];
+  const profiles = window.PROFILES || {};
 
   const form = document.getElementById('location-form');
   const regionTrigger = document.getElementById('region-trigger');
@@ -25,6 +26,13 @@
     .replace(/\s+/g, ' ')
     .trim();
 
+  const escapeHtml = (value) => String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
   const REGION_ORDER = [
     { code: 'I', name: 'Tarapacá' },
     { code: 'II', name: 'Antofagasta' },
@@ -43,19 +51,6 @@
     { code: 'XV', name: 'Arica y Parinacota' },
     { code: 'XVI', name: 'Ñuble' }
   ];
-
-  // Fotografías oficiales de las reseñas biográficas de la BCN.
-  // Si una imagen externa falla, la tarjeta vuelve automáticamente a las iniciales.
-  const PHOTO_URLS = {
-    'Agustín Matías Romero Leiva': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/1/1a/Agust%C3%ADn_Romero_Leiva.jpg',
-    'Cristián Contreras Radovic': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/4/46/Cristi%C3%A1n_Alejandro_Contreras_Radovic.jpg',
-    'Enrique Bassaletti Riess': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/4/48/Enrique_Alejandro_Bassaletti_Riess.jpg',
-    'Gustavo Gatica Villarroel': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/7/7f/Gustavo_Adolfo_Gatica_Villarroel.jpg',
-    'Marcos Barraza Gómez': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/d/de/Marcos_Patricio_Barraza_G%C3%B3mez.jpg',
-    'Mario Olavarría Rodríguez': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/e/e2/Mario_Antonio_Olavarr%C3%ADa_Rodr%C3%ADguez.jpg',
-    'Pier Karlezi Hazleby': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/3/39/Pier_Giuseppe_Karlezi_Hazleby.jpg',
-    'Tatiana Urrutia Herrera': 'https://www.bcn.cl/historiapolitica/getimagenbiografia/5/5c/Tatiana_Karina_Urrutia_Herrera.jpg'
-  };
 
   const availableRegions = new Set(districts.map((district) => district.region));
   const regions = REGION_ORDER
@@ -108,14 +103,60 @@
     return `${words[0]?.[0] || ''}${words[1]?.[0] || ''}`.toUpperCase();
   };
 
-  const renderPortrait = (name) => {
-    const photo = PHOTO_URLS[name];
-    const fallback = `<div class="avatar representative-fallback" aria-hidden="true">${initials(name)}</div>`;
-    if (!photo) return fallback;
+  const profileFor = (name, district) => {
+    const profile = profiles[name] || {};
+    return {
+      ...profile,
+      district: profile.district || district.id,
+      region: profile.region || district.region,
+      party: profile.party || 'Información partidaria en actualización'
+    };
+  };
+
+  const renderPortrait = (name, profile) => {
+    const fallback = `<div class="avatar representative-fallback" aria-hidden="true">${escapeHtml(initials(name))}</div>`;
+    if (!profile.photo) return fallback;
     return `
       <div class="representative-photo-wrap">
-        <img class="representative-photo" src="${photo}" alt="Fotografía de ${name}" loading="lazy" referrerpolicy="no-referrer">
-        <div class="avatar representative-photo-fallback" aria-hidden="true">${initials(name)}</div>
+        <img class="representative-photo" src="${escapeHtml(profile.photo)}" alt="Fotografía de ${escapeHtml(name)}" loading="lazy">
+        <div class="avatar representative-photo-fallback" aria-hidden="true">${escapeHtml(initials(name))}</div>
+      </div>
+    `;
+  };
+
+  const renderContact = (name, profile, commune) => {
+    const actions = [];
+    if (profile.email) {
+      actions.push(`<a class="profile-contact-link" href="mailto:${escapeHtml(profile.email)}">Correo electrónico</a>`);
+    }
+    if (profile.phone) {
+      actions.push(`<a class="profile-contact-link" href="tel:${escapeHtml(profile.phone)}">${escapeHtml(profile.phone)}</a>`);
+    }
+    if (profile.contactUrl || profile.profileUrl) {
+      actions.push(`<a class="profile-contact-link is-primary" href="${escapeHtml(profile.contactUrl || profile.profileUrl)}" target="_blank" rel="noopener">Ver ficha oficial</a>`);
+    }
+
+    const contactText = actions.length
+      ? `<div class="profile-contact-actions">${actions.join('')}</div>`
+      : '<p class="profile-contact-note">El contacto oficial está siendo sincronizado desde la Cámara.</p>';
+
+    return `
+      <div class="selected-profile-head">
+        ${renderPortrait(name, profile)}
+        <div>
+          <p class="eyebrow">Representante seleccionado</p>
+          <strong>${escapeHtml(name)}</strong>
+          <div class="selected-profile-meta">
+            <span>Distrito ${escapeHtml(profile.district)}</span>
+            <span>${escapeHtml(profile.region)}</span>
+            <span>${escapeHtml(profile.party)}</span>
+          </div>
+        </div>
+      </div>
+      <div class="selected-profile-contact">
+        <h3>Contacto oficial</h3>
+        ${contactText}
+        <p class="source-note">${escapeHtml(commune)} · Datos oficiales de la Cámara de Diputadas y Diputados.</p>
       </div>
     `;
   };
@@ -124,13 +165,13 @@
     const plural = district.parlamentarios.length === 1 ? 'representante' : 'representantes';
     districtSummary.innerHTML = `
       <div>
-        <p class="eyebrow">Resultado para ${commune}</p>
-        <h2>Tu comuna pertenece al Distrito ${district.id}</h2>
-        <p>Región ${district.region}. En este distrito hay ${district.parlamentarios.length} ${plural} en la Cámara.</p>
+        <p class="eyebrow">Resultado para ${escapeHtml(commune)}</p>
+        <h2>Tu comuna pertenece al Distrito ${escapeHtml(district.id)}</h2>
+        <p>Región ${escapeHtml(district.region)}. En este distrito hay ${district.parlamentarios.length} ${plural} en la Cámara.</p>
       </div>
-      <div class="district-number" aria-label="Distrito ${district.id}">
+      <div class="district-number" aria-label="Distrito ${escapeHtml(district.id)}">
         <span>Distrito</span>
-        <strong>${district.id}</strong>
+        <strong>${escapeHtml(district.id)}</strong>
       </div>
     `;
 
@@ -140,14 +181,20 @@
     selectionPanel.innerHTML = '';
 
     district.parlamentarios.forEach((name) => {
+      const profile = profileFor(name, district);
       const card = document.createElement('article');
       card.className = 'representative-card';
       card.dataset.name = name;
       card.innerHTML = `
-        ${renderPortrait(name)}
-        <h3>${name}</h3>
-        <p class="role">Diputada/o · Distrito ${district.id}</p>
-        <button class="choose-btn" type="button">Elegir</button>
+        ${renderPortrait(name, profile)}
+        <div class="representative-card-body">
+          <h3>${escapeHtml(name)}</h3>
+          <div class="representative-meta">
+            <span class="district-tag">Distrito ${escapeHtml(profile.district)}</span>
+            <span class="party-badge">${escapeHtml(profile.party)}</span>
+          </div>
+          <button class="choose-btn" type="button">Elegir</button>
+        </div>
       `;
 
       const image = card.querySelector('.representative-photo');
@@ -159,14 +206,11 @@
         });
       }
 
-      card.querySelector('button').addEventListener('click', () => {
+      card.querySelector('.choose-btn').addEventListener('click', () => {
         grid.querySelectorAll('.representative-card').forEach((item) => item.classList.remove('is-selected'));
         card.classList.add('is-selected');
         localStorage.setItem('cap-selected', JSON.stringify({ name, district: district.id, commune }));
-        selectionPanel.innerHTML = `
-          <strong>Elegiste a ${name}</strong>
-          <p>Distrito ${district.id} · ${commune}. La siguiente etapa del proyecto puede abrir aquí su ficha parlamentaria completa.</p>
-        `;
+        selectionPanel.innerHTML = renderContact(name, profile, commune);
         selectionPanel.hidden = false;
         selectionPanel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       });
@@ -186,7 +230,7 @@
       option.className = `selector-option${selectedRegion?.name === region.name ? ' is-selected' : ''}`;
       option.setAttribute('role', 'option');
       option.setAttribute('aria-selected', selectedRegion?.name === region.name ? 'true' : 'false');
-      option.innerHTML = `<span class="region-code">${region.code}</span><span>${region.name}</span>`;
+      option.innerHTML = `<span class="region-code">${escapeHtml(region.code)}</span><span>${escapeHtml(region.name)}</span>`;
       option.addEventListener('click', () => selectRegion(region));
       regionMenu.appendChild(option);
     });
@@ -195,7 +239,6 @@
   const renderCommuneMenu = () => {
     communeMenu.innerHTML = '';
     if (!selectedRegion) return;
-
     selectedRegion.communes.forEach((commune) => {
       const option = document.createElement('button');
       option.type = 'button';
@@ -211,15 +254,12 @@
   const selectRegion = (region) => {
     selectedRegion = region;
     selectedCommune = null;
-
     regionValue.textContent = `${region.code} · ${region.name}`;
     regionValue.classList.remove('is-placeholder');
-
     communeTrigger.disabled = false;
     communeValue.textContent = 'Selecciona tu comuna';
     communeValue.classList.add('is-placeholder');
     communeHelp.textContent = `${region.communes.length} comunas disponibles en ${region.name}.`;
-
     message.textContent = '';
     resetResults();
     updateSearchButton();
@@ -261,7 +301,6 @@
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.selector-wrap')) closeAllMenus();
   });
-
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeAllMenus();
   });
@@ -269,34 +308,29 @@
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     message.textContent = '';
-
     if (!selectedRegion) {
       message.textContent = 'Selecciona primero tu región.';
       renderRegionMenu();
       openMenu(regionTrigger, regionMenu);
       return;
     }
-
     if (!selectedCommune) {
       message.textContent = 'Selecciona tu comuna.';
       renderCommuneMenu();
       openMenu(communeTrigger, communeMenu);
       return;
     }
-
     const match = communeIndex.get(normalize(selectedCommune));
     if (!match || match.district.region !== selectedRegion.name) {
       message.textContent = 'No pudimos asociar esa comuna a un distrito.';
       return;
     }
-
     renderDistrict(match.district, match.commune);
   });
 
   const params = new URLSearchParams(window.location.search);
   const presetCommune = params.get('comuna');
   const presetRegion = params.get('region');
-
   if (presetCommune) {
     const match = communeIndex.get(normalize(presetCommune));
     if (match) {
