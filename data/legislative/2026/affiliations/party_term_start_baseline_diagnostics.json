@@ -1,0 +1,12 @@
+{
+  "generated_for": "2026-09-02",
+  "deputies": 155,
+  "high_confidence": 26,
+  "medium_confidence": 129,
+  "direct_verified": 26,
+  "servel_camara_concordance": 129,
+  "newly_frozen_this_run": 129,
+  "upgraded_to_direct_verification": 0,
+  "term_start": "2026-03-11",
+  "warning": "electoral_party_slot es cupo electoral y no se interpreta como militancia. party_at_term_start es la variable analítica de afiliación partidaria."
+}
