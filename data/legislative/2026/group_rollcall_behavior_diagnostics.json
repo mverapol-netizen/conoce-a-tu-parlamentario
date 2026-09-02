@@ -1,0 +1,15 @@
+{
+  "input_member_rows": 56420,
+  "rollcalls": 364,
+  "output_group_rollcall_rows": 11031,
+  "party_group_rollcall_rows": 6693,
+  "caucus_group_rollcall_rows": 4338,
+  "formal_group_rows": 8372,
+  "rice_eligible_rows": 8108,
+  "modal_eligible_rows": 8211,
+  "mean_rice_eligible": 0.953591,
+  "mean_modal_agreement_pct_eligible": 96.7558,
+  "bad_rollcalls": {},
+  "unknown_vote_options": {},
+  "method_note": "Rice usa solo Afirmativo/En Contra. Abstenciones se conservan en modal_position. No Vota y Dispensado se excluyen de ambas medidas. Independientes como pseudo-partido, Por definir y Fuera de comité no son grupos formales para cohesión."
+}
