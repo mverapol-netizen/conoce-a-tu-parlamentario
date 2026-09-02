@@ -13,7 +13,9 @@ ROOT = Path(__file__).resolve().parents[1]
 PROFILES = ROOT / "assets" / "js" / "profiles.js"
 OUT = ROOT / "data" / "legislative" / "2026" / "affiliations"
 SNAPSHOTS = OUT / "affiliation_snapshots.csv"
-EVENTS = OUT / "affiliation_manual_events.csv"
+MANUAL_EVENTS = OUT / "affiliation_manual_events.csv"
+DETECTED_EVENTS = OUT / "affiliation_detected_events.csv"
+PARTY_BASELINE = OUT / "party_term_start_baseline.csv"
 HISTORY = OUT / "affiliation_history.csv"
 DIAGNOSTICS = OUT / "affiliation_diagnostics.json"
 TERM_START = date(2026, 3, 11)
@@ -23,17 +25,22 @@ SNAPSHOT_FIELDS = [
     "alignment_reported", "profile_url", "source_type",
 ]
 
-EVENT_FIELDS = [
-    "effective_date", "deputy_id", "deputy_name", "party_before", "party_after",
-    "caucus_before", "caucus_after", "source_url", "source_type", "confidence",
-    "date_precision", "note",
+DETECTED_FIELDS = [
+    "effective_date", "window_start", "window_end", "deputy_id", "deputy_name",
+    "party_before", "party_after", "caucus_before", "caucus_after", "source_url",
+    "source_type", "confidence", "date_precision", "note",
 ]
 
 HISTORY_FIELDS = [
-    "deputy_id", "deputy_name", "valid_from", "valid_to", "party", "caucus",
-    "alignment", "basis", "confidence", "date_precision", "source_url", "source_note",
+    "deputy_id", "deputy_name", "valid_from", "valid_to", "party", "caucus", "alignment",
+    "party_basis", "party_confidence", "party_source_url", "party_source_note",
+    "caucus_basis", "caucus_confidence", "caucus_source_url", "caucus_source_note",
+    "electoral_party_slot", "electoral_pact",
+    "basis", "confidence", "date_precision", "source_url", "source_note",
     "official_snapshot_conflict",
 ]
+
+CONFIDENCE_ORDER = {"provisional": 0, "low": 1, "medium": 2, "high": 3}
 
 
 def read_csv(path: Path) -> list[dict]:
@@ -97,7 +104,6 @@ def current_snapshot_rows(profiles: dict, observed: date) -> list[dict]:
 
 def persist_snapshot(rows: list[dict], observed: date) -> list[dict]:
     old = read_csv(SNAPSHOTS)
-    # Una reejecución del mismo día reemplaza el snapshot de ese día, no lo duplica.
     kept = [row for row in old if row.get("observed_date") != observed.isoformat()]
     merged = kept + rows
     merged.sort(key=lambda x: (x["observed_date"], int(x["deputy_id"])))
@@ -105,16 +111,122 @@ def persist_snapshot(rows: list[dict], observed: date) -> list[dict]:
     return merged
 
 
-def state_from_snapshot(row: dict) -> dict:
-    return {
-        "party": row.get("party_reported") or "Sin información",
-        "caucus": row.get("caucus_reported") or "Bancada por confirmar",
+def manual_event_covers_change(manual: list[dict], deputy_id: str, start: date, end: date,
+                               field: str, before: str, after: str) -> bool:
+    before_key = f"{field}_before"
+    after_key = f"{field}_after"
+    for event in manual:
+        if event.get("deputy_id") != deputy_id or not event.get("effective_date"):
+            continue
+        day = parse_day(event["effective_date"])
+        if not (start < day <= end):
+            continue
+        event_after = event.get(after_key, "")
+        event_before = event.get(before_key, "")
+        if event_after == after and (not event_before or event_before == before):
+            return True
+    return False
+
+
+def derive_detected_events(snapshots: list[dict], manual: list[dict]) -> list[dict]:
+    by_id: dict[str, list[dict]] = defaultdict(list)
+    for row in snapshots:
+        by_id[row["deputy_id"]].append(row)
+
+    detected = []
+    for deputy_id, rows in by_id.items():
+        rows.sort(key=lambda x: x["observed_date"])
+        for previous, current in zip(rows, rows[1:]):
+            previous_day = parse_day(previous["observed_date"])
+            current_day = parse_day(current["observed_date"])
+            party_changed = previous.get("party_reported", "") != current.get("party_reported", "")
+            caucus_changed = previous.get("caucus_reported", "") != current.get("caucus_reported", "")
+
+            party_unexplained = party_changed and not manual_event_covers_change(
+                manual, deputy_id, previous_day, current_day, "party",
+                previous.get("party_reported", ""), current.get("party_reported", ""),
+            )
+            caucus_unexplained = caucus_changed and not manual_event_covers_change(
+                manual, deputy_id, previous_day, current_day, "caucus",
+                previous.get("caucus_reported", ""), current.get("caucus_reported", ""),
+            )
+            if not party_unexplained and not caucus_unexplained:
+                continue
+
+            window_start = previous_day + timedelta(days=1)
+            note_bits = [
+                f"Cambio detectado entre snapshots de Cámara {previous_day.isoformat()} y {current_day.isoformat()}; fecha exacta pendiente de corroboración."
+            ]
+            if party_unexplained:
+                note_bits.append(
+                    f"Partido: {previous.get('party_reported', '')} → {current.get('party_reported', '')}."
+                )
+            if caucus_unexplained:
+                note_bits.append(
+                    f"Bancada: {previous.get('caucus_reported', '')} → {current.get('caucus_reported', '')}."
+                )
+            detected.append({
+                "effective_date": current_day.isoformat(),
+                "window_start": window_start.isoformat(),
+                "window_end": current_day.isoformat(),
+                "deputy_id": deputy_id,
+                "deputy_name": current.get("deputy_name", ""),
+                "party_before": previous.get("party_reported", "") if party_unexplained else "",
+                "party_after": current.get("party_reported", "") if party_unexplained else "",
+                "caucus_before": previous.get("caucus_reported", "") if caucus_unexplained else "",
+                "caucus_after": current.get("caucus_reported", "") if caucus_unexplained else "",
+                "source_url": current.get("profile_url", ""),
+                "source_type": "camara_weekly_snapshot_change",
+                "confidence": "medium",
+                "date_precision": "observation_window",
+                "note": " ".join(note_bits),
+            })
+
+    detected.sort(key=lambda x: (x["effective_date"], int(x["deputy_id"])))
+    write_csv(DETECTED_EVENTS, detected, DETECTED_FIELDS)
+    return detected
+
+
+def event_rows(manual: list[dict], detected: list[dict]) -> list[dict]:
+    combined = []
+    for row in manual:
+        out = dict(row)
+        out.setdefault("window_start", row.get("effective_date", ""))
+        out.setdefault("window_end", row.get("effective_date", ""))
+        combined.append(out)
+    combined.extend(detected)
+    combined.sort(key=lambda x: (x.get("effective_date", ""), 0 if x.get("source_type") != "camara_weekly_snapshot_change" else 1))
+    return combined
+
+
+def latest_snapshot(snapshots: list[dict]) -> tuple[date, dict[str, dict]]:
+    latest_date = max(parse_day(x["observed_date"]) for x in snapshots)
+    latest_by_id = {
+        row["deputy_id"]: row
+        for row in snapshots
+        if parse_day(row["observed_date"]) == latest_date
     }
+    return latest_date, latest_by_id
+
+
+def weakest_confidence(party_conf: str, caucus_conf: str) -> str:
+    return min((party_conf or "provisional", caucus_conf or "provisional"), key=lambda x: CONFIDENCE_ORDER.get(x, -1))
+
+
+def state_note(state: dict) -> str:
+    return f"Partido: {state.get('party_note', '')} | Bancada: {state.get('caucus_note', '')}".strip()
 
 
 def make_interval(deputy_id: str, name: str, start: date, end: date | None, state: dict,
-                  basis: str, confidence: str, precision: str, source_url: str, note: str,
-                  conflict: str = "0") -> dict:
+                  electoral: dict, conflict: str = "0") -> dict:
+    party_basis = state.get("party_basis", "")
+    caucus_basis = state.get("caucus_basis", "")
+    party_conf = state.get("party_confidence", "provisional")
+    caucus_conf = state.get("caucus_confidence", "provisional")
+    basis = party_basis if party_basis == caucus_basis else f"party:{party_basis}|caucus:{caucus_basis}"
+    confidence = weakest_confidence(party_conf, caucus_conf)
+    precision = state.get("date_precision", "")
+    source_url = state.get("party_source_url") or state.get("caucus_source_url") or ""
     return {
         "deputy_id": deputy_id,
         "deputy_name": name,
@@ -123,96 +235,137 @@ def make_interval(deputy_id: str, name: str, start: date, end: date | None, stat
         "party": state.get("party") or "Sin información",
         "caucus": state.get("caucus") or "Bancada por confirmar",
         "alignment": classify(state.get("party"), state.get("caucus")),
+        "party_basis": party_basis,
+        "party_confidence": party_conf,
+        "party_source_url": state.get("party_source_url", ""),
+        "party_source_note": state.get("party_note", ""),
+        "caucus_basis": caucus_basis,
+        "caucus_confidence": caucus_conf,
+        "caucus_source_url": state.get("caucus_source_url", ""),
+        "caucus_source_note": state.get("caucus_note", ""),
+        "electoral_party_slot": electoral.get("electoral_party_slot", ""),
+        "electoral_pact": electoral.get("electoral_pact", ""),
         "basis": basis,
         "confidence": confidence,
         "date_precision": precision,
         "source_url": source_url,
-        "source_note": note,
+        "source_note": state_note(state),
         "official_snapshot_conflict": conflict,
     }
 
 
-def build_history(snapshots: list[dict], events: list[dict]) -> tuple[list[dict], list[dict]]:
-    latest_date = max(parse_day(x["observed_date"]) for x in snapshots)
-    latest_by_id: dict[str, dict] = {}
-    for row in snapshots:
-        if parse_day(row["observed_date"]) == latest_date:
-            latest_by_id[row["deputy_id"]] = row
+def initial_state(deputy_id: str, snap: dict, baseline: dict, first_event: dict | None) -> dict:
+    party = baseline.get("party_at_term_start", "")
+    if not party:
+        raise RuntimeError(f"Falta partido de inicio para diputado {deputy_id}")
+
+    state = {
+        "party": party,
+        "party_basis": baseline.get("basis", "party_term_start_baseline"),
+        "party_confidence": baseline.get("confidence", "medium"),
+        "party_source_url": baseline.get("source_url_primary", ""),
+        "party_note": baseline.get("source_note", ""),
+        "caucus": snap.get("caucus_reported") or "Bancada por confirmar",
+        "caucus_basis": "current_snapshot_backward_assumption",
+        "caucus_confidence": "provisional",
+        "caucus_source_url": snap.get("profile_url", ""),
+        "caucus_note": "Bancada actual proyectada provisionalmente hacia el 11-03-2026; pendiente de validación histórica específica.",
+        "date_precision": "term_start",
+    }
+
+    if first_event:
+        if first_event.get("party_before"):
+            before = first_event["party_before"]
+            if before != state["party"]:
+                state["party_note"] += f" | Primer evento documenta partido previo {before}; revisar discrepancia con línea base."
+        if first_event.get("caucus_before"):
+            state["caucus"] = first_event["caucus_before"]
+            state["caucus_basis"] = "documented_pre_event_state"
+            state["caucus_confidence"] = first_event.get("confidence") or "high"
+            state["caucus_source_url"] = first_event.get("source_url", "")
+            state["caucus_note"] = "Estado de bancada anterior reconstruido a partir del primer cambio documentado del período."
+    return state
+
+
+def apply_event_to_state(state: dict, event: dict) -> None:
+    confidence = event.get("confidence") or "medium"
+    source = event.get("source_url", "")
+    note = event.get("note", "")
+    source_type = event.get("source_type") or "documented_event"
+    precision = event.get("date_precision") or "day"
+
+    if event.get("party_after"):
+        state["party"] = event["party_after"]
+        state["party_basis"] = source_type
+        state["party_confidence"] = confidence
+        state["party_source_url"] = source
+        state["party_note"] = note
+    if event.get("caucus_after"):
+        state["caucus"] = event["caucus_after"]
+        state["caucus_basis"] = source_type
+        state["caucus_confidence"] = confidence
+        state["caucus_source_url"] = source
+        state["caucus_note"] = note
+    state["date_precision"] = precision
+
+
+def build_history(snapshots: list[dict], events: list[dict], baselines: list[dict]) -> tuple[list[dict], list[dict]]:
+    latest_date, latest_by_id = latest_snapshot(snapshots)
+    baseline_by_id = {x["deputy_id"]: x for x in baselines}
+    if len(baseline_by_id) != 155:
+        raise RuntimeError(f"La línea base partidaria debe contener 155 diputados; contiene {len(baseline_by_id)}")
 
     events_by_id: dict[str, list[dict]] = defaultdict(list)
     for event in events:
         if not event.get("deputy_id") or not event.get("effective_date"):
             continue
-        events_by_id[event["deputy_id"]].append(event)
+        if parse_day(event["effective_date"]) <= latest_date:
+            events_by_id[event["deputy_id"]].append(event)
     for rows in events_by_id.values():
-        rows.sort(key=lambda x: x["effective_date"])
+        rows.sort(key=lambda x: (x["effective_date"], 0 if x.get("source_type") != "camara_weekly_snapshot_change" else 1))
 
     history: list[dict] = []
     conflicts: list[dict] = []
 
     for deputy_id, snap in sorted(latest_by_id.items(), key=lambda kv: int(kv[0])):
         name = snap["deputy_name"]
-        official = state_from_snapshot(snap)
-        deputy_events = [e for e in events_by_id.get(deputy_id, []) if parse_day(e["effective_date"]) <= latest_date]
-
-        if not deputy_events:
-            history.append(make_interval(
-                deputy_id, name, TERM_START, None, official,
-                "current_snapshot_assumed_stable", "provisional", "term_assumption",
-                snap.get("profile_url", ""),
-                "Sin cambio 2026 documentado todavía; se validará contra afiliación electoral de 2025.",
-            ))
-            continue
-
-        first = deputy_events[0]
-        state = {
-            "party": first.get("party_before") or official["party"],
-            "caucus": first.get("caucus_before") or official["caucus"],
-        }
+        baseline = baseline_by_id[deputy_id]
+        electoral = baseline
+        deputy_events = events_by_id.get(deputy_id, [])
+        first_event = deputy_events[0] if deputy_events else None
+        state = initial_state(deputy_id, snap, baseline, first_event)
         start = TERM_START
-        previous_source = first.get("source_url", "")
-        previous_note = "Estado anterior reconstruido a partir del primer cambio documentado."
 
         for event in deputy_events:
             event_day = parse_day(event["effective_date"])
             if event_day < TERM_START:
+                apply_event_to_state(state, event)
                 continue
             if event_day > start:
-                history.append(make_interval(
-                    deputy_id, name, start, event_day - timedelta(days=1), state,
-                    "documented_event_chain", event.get("confidence") or "high",
-                    event.get("date_precision") or "day", previous_source, previous_note,
-                ))
-            if event.get("party_after"):
-                state["party"] = event["party_after"]
-            if event.get("caucus_after"):
-                state["caucus"] = event["caucus_after"]
-            start = event_day
-            previous_source = event.get("source_url", "")
-            previous_note = event.get("note", "")
+                history.append(make_interval(deputy_id, name, start, event_day - timedelta(days=1), state, electoral))
+            apply_event_to_state(state, event)
+            start = max(event_day, TERM_START)
 
         mismatch = []
-        if official["party"] != state["party"]:
-            mismatch.append(f"party: Cámara={official['party']} / evidencia={state['party']}")
-        if official["caucus"] != state["caucus"]:
-            mismatch.append(f"caucus: Cámara={official['caucus']} / evidencia={state['caucus']}")
+        official_party = snap.get("party_reported") or "Sin información"
+        official_caucus = snap.get("caucus_reported") or "Bancada por confirmar"
+        if official_party != state["party"]:
+            mismatch.append(f"party: Cámara={official_party} / historial={state['party']}")
+        if official_caucus != state["caucus"]:
+            mismatch.append(f"caucus: Cámara={official_caucus} / historial={state['caucus']}")
         conflict = "1" if mismatch else "0"
         if mismatch:
             conflicts.append({"deputy_id": deputy_id, "deputy_name": name, "detail": " | ".join(mismatch)})
 
-        history.append(make_interval(
-            deputy_id, name, start, None, state,
-            "documented_event_chain", deputy_events[-1].get("confidence") or "high",
-            deputy_events[-1].get("date_precision") or "day", previous_source,
-            previous_note + ((" | Conflicto con snapshot oficial: " + " | ".join(mismatch)) if mismatch else ""),
-            conflict,
-        ))
+        if mismatch:
+            state["party_note"] += (" | " if state.get("party_note") else "") + "Conflicto con snapshot oficial vigente registrado por auditoría."
+        history.append(make_interval(deputy_id, name, start, None, state, electoral, conflict))
 
     history.sort(key=lambda x: (int(x["deputy_id"]), x["valid_from"]))
     return history, conflicts
 
 
-def audit_history(history: list[dict], snapshot_count: int, conflicts: list[dict]) -> dict:
+def audit_history(history: list[dict], snapshot_count: int, conflicts: list[dict], detected: list[dict]) -> dict:
     by_id: dict[str, list[dict]] = defaultdict(list)
     for row in history:
         by_id[row["deputy_id"]].append(row)
@@ -234,20 +387,28 @@ def audit_history(history: list[dict], snapshot_count: int, conflicts: list[dict
     if bad_starts or overlaps:
         raise RuntimeError(f"Historial temporal inconsistente: bad_starts={bad_starts}, overlaps={overlaps}")
 
-    basis_counts = Counter(x["basis"] for x in history)
-    confidence_counts = Counter(x["confidence"] for x in history)
+    party_start = [sorted(rows, key=lambda x: x["valid_from"])[0] for rows in by_id.values()]
+    caucus_start = party_start
     return {
         "generated_for": date.today().isoformat(),
         "deputies": len(by_id),
         "history_intervals": len(history),
-        "documented_manual_events": len(read_csv(EVENTS)),
-        "basis_counts": dict(basis_counts),
-        "confidence_counts": dict(confidence_counts),
+        "documented_manual_events": len(read_csv(MANUAL_EVENTS)),
+        "detected_weekly_snapshot_events": len(detected),
+        "party_term_start_high_confidence": sum(x["party_confidence"] == "high" for x in party_start),
+        "party_term_start_medium_confidence": sum(x["party_confidence"] == "medium" for x in party_start),
+        "party_term_start_provisional": sum(x["party_confidence"] == "provisional" for x in party_start),
+        "caucus_term_start_high_confidence": sum(x["caucus_confidence"] == "high" for x in caucus_start),
+        "caucus_term_start_medium_confidence": sum(x["caucus_confidence"] == "medium" for x in caucus_start),
+        "caucus_term_start_provisional": sum(x["caucus_confidence"] == "provisional" for x in caucus_start),
+        "party_interval_confidence_counts": dict(Counter(x["party_confidence"] for x in history)),
+        "caucus_interval_confidence_counts": dict(Counter(x["caucus_confidence"] for x in history)),
+        "overall_interval_confidence_counts": dict(Counter(x["confidence"] for x in history)),
         "official_snapshot_conflicts": conflicts,
-        "provisional_deputies": sum(1 for rows in by_id.values() if all(x["basis"] == "current_snapshot_assumed_stable" for x in rows)),
-        "verified_event_chain_deputies": sum(1 for rows in by_id.values() if any(x["basis"] == "documented_event_chain" for x in rows)),
         "term_start": TERM_START.isoformat(),
-        "warning": "Los diputados sin cambio documentado usan provisionalmente el snapshot actual hacia atrás hasta validar la afiliación electoral 2025. No usar esos intervalos como historia definitiva sin considerar confidence/basis.",
+        "party_history_coverage": 155,
+        "caucus_history_coverage": 155,
+        "warning": "La afiliación partidaria de inicio ya está congelada para 155 diputados (26 verificación directa; 129 concordancia Servel-Cámara). La bancada inicial sigue siendo provisional salvo donde existe un cambio documentado que permite reconstruir el estado previo. Los cambios detectados solo entre snapshots semanales conservan una ventana de incertidumbre en affiliation_detected_events.csv.",
     }
 
 
@@ -257,14 +418,20 @@ def main() -> None:
     if len(profiles) != 155:
         raise RuntimeError(f"Se esperaban 155 perfiles; hay {len(profiles)}")
 
+    baselines = read_csv(PARTY_BASELINE)
+    if len(baselines) != 155:
+        raise RuntimeError(f"Falta línea base partidaria completa: {len(baselines)}/155")
+
     observed = snapshot_date(profiles)
     current = current_snapshot_rows(profiles, observed)
     snapshots = persist_snapshot(current, observed)
-    events = read_csv(EVENTS)
-    history, conflicts = build_history(snapshots, events)
+    manual = read_csv(MANUAL_EVENTS)
+    detected = derive_detected_events(snapshots, manual)
+    combined = event_rows(manual, detected)
+    history, conflicts = build_history(snapshots, combined, baselines)
     write_csv(HISTORY, history, HISTORY_FIELDS)
 
-    diagnostics = audit_history(history, len(current), conflicts)
+    diagnostics = audit_history(history, len(current), conflicts, detected)
     DIAGNOSTICS.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(diagnostics, ensure_ascii=False, indent=2))
 
