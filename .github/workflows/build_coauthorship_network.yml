@@ -2,13 +2,11 @@ name: Build coauthorship network
 
 on:
   workflow_dispatch:
-  schedule:
-    # Corre después del sync legislativo de los viernes (11:15 UTC).
-    - cron: "45 14 * * 5"
-  push:
-    paths:
-      - "scripts/build_coauthorship_network.py"
-      - ".github/workflows/build_coauthorship_network.yml"
+  workflow_run:
+    workflows:
+      - "Sync legislative data"
+    types:
+      - completed
 
 permissions:
   contents: write
@@ -19,13 +17,18 @@ concurrency:
 
 jobs:
   build:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Checkout
+      - name: Checkout latest main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
 
       - name: Set up Python
         uses: actions/setup-python@v5
