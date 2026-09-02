@@ -166,6 +166,10 @@ def project_page(project_id: str, boletin: str) -> tuple[dict, list[dict]]:
     text = re.sub(r"\s+", " ", soup.get_text(" ", strip=True))
     status_match = re.search(r"Estado\s+(.*?)\s+Numero de bolet[ií]n", text, re.I)
     status = status_match.group(1).strip() if status_match else ""
+    matter_match = re.search(r"Materia:\s*(.*?)\s+Iniciativa:", text, re.I)
+    matter = matter_match.group(1).strip() if matter_match else ""
+    if matter in {"-", "—", "–"}:
+        matter = ""
     events = []
     for table in soup.find_all("table"):
         headers = [re.sub(r"\s+", " ", th.get_text(" ", strip=True)) for th in table.find_all("th")]
@@ -191,7 +195,12 @@ def project_page(project_id: str, boletin: str) -> tuple[dict, list[dict]]:
                 "fuente": url,
             })
         break
-    return {"estado_actual": status, "source_url": url, "updated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z"}, events
+    return {
+        "estado_actual": status,
+        "materia_pagina": matter,
+        "source_url": url,
+        "updated_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+    }, events
 
 
 def is_terminal(status: str) -> bool:
