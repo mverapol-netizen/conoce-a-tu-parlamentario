@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: parliamentary-profile-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -51,5 +55,6 @@ jobs:
             echo "No profile changes to commit"
           else
             git commit -m "Actualiza perfiles, bancadas y contexto político"
-            git push
+            git pull --rebase origin main
+            git push origin main
           fi
