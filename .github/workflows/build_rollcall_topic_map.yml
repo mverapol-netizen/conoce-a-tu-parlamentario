@@ -1,0 +1,56 @@
+name: Build roll-call topic map
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/apply_inherited_rollcall_topic_reviews.py"
+      - "data/legislative/2026/topics/rollcall_inherited_topic_classification.csv"
+      - "data/legislative/2026/topics/rollcall_inherited_topic_reviews.csv"
+      - "data/legislative/2026/topics/project_topic_final.csv"
+      - "data/legislative/2026/rollcalls.csv"
+      - ".github/workflows/build_rollcall_topic_map.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rollcall-topic-map
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build complete roll-call topic map
+        run: python scripts/apply_inherited_rollcall_topic_reviews.py
+
+      - name: Persist topic map
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/topics/rollcall_inherited_topic_final.csv \
+                  data/legislative/2026/topics/rollcall_topic_map.csv \
+                  data/legislative/2026/topics/rollcall_topic_map_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No roll-call topic changes"
+          else
+            git commit -m "Construye mapa temático completo de votaciones"
+            git pull --rebase origin main
+            git push origin main
+          fi
