@@ -1,55 +1,16 @@
 {
   "projects": 497,
-  "projects_with_suffix_destination_proxy": 486,
-  "projects_with_explicit_origin_event": 8,
-  "projects_with_origin_commission_proxy": 487,
-  "projects_with_any_commission": 487,
+  "projects_with_suffix_destination_proxy": 497,
+  "projects_with_explicit_origin_event": 0,
+  "projects_with_origin_commission_proxy": 497,
+  "projects_with_any_commission": 497,
   "projects_with_public_matter": 0,
   "projects_with_xml_subject": 0,
-  "commission_relations": 539,
-  "origin_proxy_mismatches": 5,
-  "unknown_destination_codes": {
-    "36": 5,
-    "37": 6
-  },
-  "high_signal": 320,
-  "medium_signal": 167,
-  "low_signal": 10,
-  "mismatch_examples": [
-    {
-      "boletin": "18230-13",
-      "destination_code": "13",
-      "suffix_commission": "Trabajo y Seguridad Social",
-      "explicit_event_commission": "Hacienda",
-      "event": "Primer informe de comisión. Pasa a Comisión de Hacienda"
-    },
-    {
-      "boletin": "18259-08",
-      "destination_code": "08",
-      "suffix_commission": "Minería y Energía",
-      "explicit_event_commission": "Hacienda",
-      "event": "Primer informe de comisión. Pasa a Comisión de Hacienda"
-    },
-    {
-      "boletin": "18389-04",
-      "destination_code": "04",
-      "suffix_commission": "Educación",
-      "explicit_event_commission": "Hacienda",
-      "event": "Primer informe de comisión. Pasa a Comisión de Hacienda"
-    },
-    {
-      "boletin": "18401-31",
-      "destination_code": "31",
-      "suffix_commission": "Desarrollo Social",
-      "explicit_event_commission": "Hacienda",
-      "event": "Primer informe de comisión. Pasa a Comisión de Hacienda"
-    },
-    {
-      "boletin": "18464-14",
-      "destination_code": "14",
-      "suffix_commission": "Vivienda, Desarrollo Urbano",
-      "explicit_event_commission": "Hacienda",
-      "event": "Primer informe de comisión. Pasa a Comisión de Hacienda"
-    }
-  ]
+  "commission_relations": 549,
+  "origin_proxy_mismatches": 0,
+  "unknown_destination_codes": {},
+  "high_signal": 336,
+  "medium_signal": 161,
+  "low_signal": 0,
+  "mismatch_examples": []
 }
