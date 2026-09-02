@@ -1,0 +1,143 @@
+{
+  "generated_for": "2026-09-02",
+  "all": {
+    "bills": 89,
+    "rollcalls": 364,
+    "max_rollcalls_one_bill": 120,
+    "median_rollcalls_per_bill": 1,
+    "top1_share": 0.32967,
+    "top5_share": 0.513736,
+    "top10_share": 0.615385,
+    "hhi_bill_share": 0.124125
+  },
+  "nonunanimous": {
+    "bills": 62,
+    "rollcalls": 300,
+    "max_rollcalls_one_bill": 117,
+    "median_rollcalls_per_bill": 2.0,
+    "top1_share": 0.39,
+    "top5_share": 0.606667,
+    "top10_share": 0.7,
+    "hhi_bill_share": 0.171533
+  },
+  "lop": {
+    "0.025": {
+      "bills": 55,
+      "rollcalls": 276,
+      "max_rollcalls_one_bill": 116,
+      "median_rollcalls_per_bill": 2,
+      "top1_share": 0.42029,
+      "top5_share": 0.641304,
+      "top10_share": 0.735507,
+      "hhi_bill_share": 0.19728
+    },
+    "0.050": {
+      "bills": 54,
+      "rollcalls": 269,
+      "max_rollcalls_one_bill": 114,
+      "median_rollcalls_per_bill": 2.0,
+      "top1_share": 0.423792,
+      "top5_share": 0.64684,
+      "top10_share": 0.739777,
+      "hhi_bill_share": 0.200702
+    },
+    "0.100": {
+      "bills": 53,
+      "rollcalls": 258,
+      "max_rollcalls_one_bill": 109,
+      "median_rollcalls_per_bill": 2,
+      "top1_share": 0.422481,
+      "top5_share": 0.655039,
+      "top10_share": 0.74031,
+      "hhi_bill_share": 0.200889
+    }
+  },
+  "stage_counts_all": {
+    "general": 73,
+    "particular": 211,
+    "other": 80
+  },
+  "top_bills_lop_0025": [
+    {
+      "boletin": "18216-05",
+      "titulo": "Para la reconstrucción nacional y el desarrollo económico y social",
+      "topic_primary": "Economía y hacienda",
+      "origin_initiative": "ejecutivo",
+      "eligible_rollcalls": 116,
+      "share": 0.42029
+    },
+    {
+      "boletin": "18156-04",
+      "titulo": "Establece medidas de seguridad, orden y respeto para la comunidad educativa",
+      "topic_primary": "Educación",
+      "origin_initiative": "ejecutivo",
+      "eligible_rollcalls": 31,
+      "share": 0.112319
+    },
+    {
+      "boletin": "18384-08",
+      "titulo": "Ley de protección tarifaria eléctrica",
+      "topic_primary": "Minería y energía",
+      "origin_initiative": "ejecutivo",
+      "eligible_rollcalls": 13,
+      "share": 0.047101
+    },
+    {
+      "boletin": "16743-04",
+      "titulo": "Modifica diversos cuerpos legales, con el objeto de facilitar la creación de nuevos establecimientos educacionales",
+      "topic_primary": "Educación",
+      "origin_initiative": "parlamentario",
+      "eligible_rollcalls": 11,
+      "share": 0.039855
+    },
+    {
+      "boletin": "16857-07",
+      "titulo": "Modifica el Código Penal para autorizar el uso de agentes encubiertos en Internet para la persecución de delitos sexuales contra niños, niñas y adolescentes",
+      "topic_primary": "Seguridad",
+      "origin_initiative": "parlamentario",
+      "eligible_rollcalls": 6,
+      "share": 0.021739
+    },
+    {
+      "boletin": "16836-06",
+      "titulo": "Modifica la ley N° 21.325 para perfeccionar el procedimiento de expulsión administrativa",
+      "topic_primary": "Gobierno interior y descentralización",
+      "origin_initiative": "ejecutivo",
+      "eligible_rollcalls": 6,
+      "share": 0.021739
+    },
+    {
+      "boletin": "15347-07",
+      "titulo": "Modifica la ley N° 20.000, que sustituye la ley Nº 19.366, que sanciona el tráfico ilícito de estupefacientes y sustancias sicotrópicas, con el objeto de incorporar las circunstancias agravantes que se indican.",
+      "topic_primary": "Seguridad",
+      "origin_initiative": "parlamentario",
+      "eligible_rollcalls": 6,
+      "share": 0.021739
+    },
+    {
+      "boletin": "10634-29",
+      "titulo": "Modifica la ley N° 20.019, que Regula las Sociedades Anónimas Deportivas Profesionales, en materia de fiscalización, de conflictos de interés, y de fomento de la participación de los hinchas en la propiedad de las mismas",
+      "topic_primary": "Deportes",
+      "origin_initiative": "parlamentario",
+      "eligible_rollcalls": 5,
+      "share": 0.018116
+    },
+    {
+      "boletin": "18230-13",
+      "titulo": "Reajusta el monto del ingreso mínimo mensual, así como de la asignación familiar y maternal y del subsidio familiar",
+      "topic_primary": "Trabajo y seguridad social",
+      "origin_initiative": "ejecutivo",
+      "eligible_rollcalls": 5,
+      "share": 0.018116
+    },
+    {
+      "boletin": "14767-03",
+      "titulo": "Modifica la ley N°17.336, sobre Propiedad Intelectual, con el objeto de regular las medidas tecnológicas de protección",
+      "topic_primary": "Economía, comercio y consumidores",
+      "origin_initiative": "ejecutivo",
+      "eligible_rollcalls": 4,
+      "share": 0.014493
+    }
+  ],
+  "method_note": "Diagnóstico de dependencia potencial por repetición de roll calls dentro de un mismo boletín. No descarta ni pondera votaciones. Sirve para decidir pruebas de robustez posteriores a la estimación base."
+}
