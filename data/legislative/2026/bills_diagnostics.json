@@ -1,11 +1,13 @@
 {
   "generated_for": "2026-09-02",
-  "initiatives_since_period_start": 493,
-  "projects_in_database": 493,
-  "refreshed_this_run": 493,
+  "initiatives_since_period_start": 496,
+  "projects_in_database": 496,
+  "existing_active_pages_refreshed": 493,
+  "new_projects_detailed": 3,
   "skipped_terminal": 0,
+  "page_workers": 6,
   "subjects": 0,
   "ministries": 93,
-  "events": 943,
+  "events": 946,
   "errors": []
 }
