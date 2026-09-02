@@ -22,7 +22,14 @@ ABSTAIN_OPTIONS = {"abstencion", "abstención"}
 NO_VOTE_OPTIONS = {"no vota"}
 DISPENSED_OPTIONS = {"dispensado"}
 EXPECTED_MEMBERS = 155
+MIN_LEGISLATOR_VOTES = 20
 SENSITIVITY_THRESHOLDS = (0.0, 0.025, 0.05, 0.10)
+MODEL_THRESHOLDS = (0.025, 0.05, 0.10)
+
+
+def threshold_suffix(value: float) -> str:
+    return f"{int(round(value * 1000)):04d}"
+
 
 ROLLCALL_META_FIELDS = [
     "vote_id",
@@ -41,6 +48,7 @@ ROLLCALL_META_FIELDS = [
     "minority_share_binary",
     "binary_participation_share",
     "unanimous_binary",
+    *[f"eligible_lop_{threshold_suffix(t)}" for t in MODEL_THRESHOLDS],
 ]
 
 MEMBER_META_FIELDS = [
@@ -51,6 +59,14 @@ MEMBER_META_FIELDS = [
     "against",
     "missing_for_spatial_model",
     "binary_participation_share",
+    *[
+        field
+        for t in MODEL_THRESHOLDS
+        for field in (
+            f"binary_votes_lop_{threshold_suffix(t)}",
+            f"eligible_minvotes20_lop_{threshold_suffix(t)}",
+        )
+    ],
 ]
 
 
@@ -97,6 +113,10 @@ def member_sort_key(member_id: str):
     return (0, int(member_id)) if member_id.isdigit() else (1, member_id)
 
 
+def rollcall_eligible(binary: int, minority: int, minority_share: float, threshold: float) -> bool:
+    return binary > 0 and minority > 0 and minority_share >= threshold
+
+
 def main() -> None:
     votes = read_csv(VOTES_FILE)
     rollcalls = read_csv(ROLLCALLS_FILE)
@@ -130,10 +150,10 @@ def main() -> None:
     if bad_rollcall_sizes:
         raise RuntimeError(f"Roll calls sin {EXPECTED_MEMBERS} observaciones: {bad_rollcall_sizes}")
 
-    ordered_vote_ids = sorted(rollcall_by_id, key=lambda vid: (
-        rollcall_by_id[vid].get("fecha", ""),
-        vote_sort_key(vid),
-    ))
+    ordered_vote_ids = sorted(
+        rollcall_by_id,
+        key=lambda vid: (rollcall_by_id[vid].get("fecha", ""), vote_sort_key(vid)),
+    )
     ordered_member_ids = sorted(by_member, key=member_sort_key)
 
     # Matriz puramente binaria. Las categorías no binarias quedan vacías para que
@@ -162,7 +182,7 @@ def main() -> None:
         minority_share = minority / binary if binary else 0.0
         participation = binary / EXPECTED_MEMBERS
         rc = rollcall_by_id[vote_id]
-        rollcall_meta.append({
+        metadata = {
             "vote_id": vote_id,
             "fecha": rc.get("fecha", ""),
             "boletin": rc.get("boletin", ""),
@@ -179,17 +199,19 @@ def main() -> None:
             "minority_share_binary": f"{minority_share:.6f}",
             "binary_participation_share": f"{participation:.6f}",
             "unanimous_binary": "1" if binary > 0 and minority == 0 else "0",
-        })
+        }
+        for threshold in MODEL_THRESHOLDS:
+            metadata[f"eligible_lop_{threshold_suffix(threshold)}"] = (
+                "1" if rollcall_eligible(binary, minority, minority_share, threshold) else "0"
+            )
+        rollcall_meta.append(metadata)
 
     with MATRIX_FILE.open("w", encoding="utf-8-sig", newline="") as handle:
         fields = ["diputado_id", "diputado_nombre", *ordered_vote_ids]
         writer = csv.DictWriter(handle, fieldnames=fields)
         writer.writeheader()
         for member_id in ordered_member_ids:
-            row = {
-                "diputado_id": member_id,
-                "diputado_nombre": member_names[member_id],
-            }
+            row = {"diputado_id": member_id, "diputado_nombre": member_names[member_id]}
             for vote_id in ordered_vote_ids:
                 row[vote_id] = cell.get((member_id, vote_id), "")
             writer.writerow(row)
@@ -199,12 +221,21 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(rollcall_meta)
 
+    eligible_vote_ids = {
+        threshold: {
+            row["vote_id"]
+            for row in rollcall_meta
+            if row[f"eligible_lop_{threshold_suffix(threshold)}"] == "1"
+        }
+        for threshold in MODEL_THRESHOLDS
+    }
+
     member_meta = []
     total_rollcalls = len(ordered_vote_ids)
     for member_id in ordered_member_ids:
         counts = Counter(option_bucket(row.get("opcion", "")) for row in by_member[member_id])
         binary = counts["affirmative"] + counts["against"]
-        member_meta.append({
+        metadata = {
             "diputado_id": member_id,
             "diputado_nombre": member_names[member_id],
             "binary_votes": binary,
@@ -212,7 +243,18 @@ def main() -> None:
             "against": counts["against"],
             "missing_for_spatial_model": total_rollcalls - binary,
             "binary_participation_share": f"{(binary / total_rollcalls if total_rollcalls else 0):.6f}",
-        })
+        }
+        for threshold in MODEL_THRESHOLDS:
+            retained_binary = sum(
+                cell.get((member_id, vote_id), "") in {"0", "1"}
+                for vote_id in eligible_vote_ids[threshold]
+            )
+            suffix = threshold_suffix(threshold)
+            metadata[f"binary_votes_lop_{suffix}"] = retained_binary
+            metadata[f"eligible_minvotes20_lop_{suffix}"] = (
+                "1" if retained_binary >= MIN_LEGISLATOR_VOTES else "0"
+            )
+        member_meta.append(metadata)
 
     with MEMBER_META_FILE.open("w", encoding="utf-8-sig", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=MEMBER_META_FIELDS, extrasaction="ignore")
@@ -222,12 +264,21 @@ def main() -> None:
     sensitivity = {}
     for threshold in SENSITIVITY_THRESHOLDS:
         eligible = [
-            row for row in rollcall_meta
+            row
+            for row in rollcall_meta
             if int(row["binary_votes"]) > 0
             and float(row["minority_share_binary"]) >= threshold
             and int(row["minority_count"]) > 0
         ]
         sensitivity[f"minority_share_gte_{threshold:.3f}"] = len(eligible)
+
+    member_eligibility = {
+        f"lop_{threshold_suffix(threshold)}_minvotes20": sum(
+            row[f"eligible_minvotes20_lop_{threshold_suffix(threshold)}"] == "1"
+            for row in member_meta
+        )
+        for threshold in MODEL_THRESHOLDS
+    }
 
     diagnostics = {
         "generated_for": str(date.today()),
@@ -239,6 +290,8 @@ def main() -> None:
         "missing_cells_for_spatial_model": sum(1 for value in cell.values() if value == ""),
         "unanimous_binary_rollcalls": sum(row["unanimous_binary"] == "1" for row in rollcall_meta),
         "sensitivity_rollcalls_by_minority_share": sensitivity,
+        "eligible_members_after_rollcall_filter": member_eligibility,
+        "minimum_binary_votes_per_legislator": MIN_LEGISLATOR_VOTES,
         "unknown_vote_options": dict(unknown_options),
         "coding": {
             "1": "Afirmativo",
@@ -246,8 +299,8 @@ def main() -> None:
             "missing": "Abstención / No Vota / Dispensado / otra categoría no binaria",
         },
         "method_note": (
-            "Esta salida prepara una matriz neutral. No selecciona aún un umbral de competitividad, "
-            "no estima puntos ideales y no fija la orientación ideológica de futuras dimensiones."
+            "Esta salida prepara una matriz neutral y marca filtros transparentes de elegibilidad. "
+            "No estima puntos ideales, no fija polaridad y no atribuye significado ideológico a las dimensiones."
         ),
     }
     DIAGNOSTICS_FILE.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
