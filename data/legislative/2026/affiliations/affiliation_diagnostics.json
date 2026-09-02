@@ -1,0 +1,40 @@
+{
+  "generated_for": "2026-09-02",
+  "deputies": 155,
+  "history_intervals": 159,
+  "documented_manual_events": 4,
+  "basis_counts": {
+    "current_snapshot_assumed_stable": 151,
+    "documented_event_chain": 8
+  },
+  "confidence_counts": {
+    "provisional": 151,
+    "high": 8
+  },
+  "official_snapshot_conflicts": [
+    {
+      "deputy_id": "1054",
+      "deputy_name": "Francesca Muñoz González",
+      "detail": "party: Cámara=Partido Social Cristiano / evidencia=Partido Cristiano de Chile"
+    },
+    {
+      "deputy_id": "1102",
+      "deputy_name": "Roberto Arroyo Muñoz",
+      "detail": "party: Cámara=Independientes / evidencia=Partido de la Gente"
+    },
+    {
+      "deputy_id": "1119",
+      "deputy_name": "Sara Concha Smith",
+      "detail": "party: Cámara=Partido Social Cristiano / evidencia=Partido Cristiano de Chile"
+    },
+    {
+      "deputy_id": "1200",
+      "deputy_name": "Cristian Contreras Radovic",
+      "detail": "caucus: Cámara=Comité Partido de la Gente / evidencia=Fuera del Comité Partido de la Gente"
+    }
+  ],
+  "provisional_deputies": 151,
+  "verified_event_chain_deputies": 4,
+  "term_start": "2026-03-11",
+  "warning": "Los diputados sin cambio documentado usan provisionalmente el snapshot actual hacia atrás hasta validar la afiliación electoral 2025. No usar esos intervalos como historia definitiva sin considerar confidence/basis."
+}
