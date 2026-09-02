@@ -1,11 +1,11 @@
 {
   "generated_for": "2026-09-02",
-  "annual_votes_since_period_start": 599,
-  "pending_this_run": 599,
-  "new_project_floor_rollcalls": 364,
-  "new_member_vote_rows": 56420,
+  "annual_votes_since_period_start": 601,
+  "pending_this_run": 2,
+  "new_project_floor_rollcalls": 0,
+  "new_member_vote_rows": 0,
   "rollcalls_in_database": 364,
   "member_vote_rows_in_database": 56420,
-  "non_project_floor_votes_skipped": 235,
+  "non_project_floor_votes_skipped": 237,
   "errors": []
 }

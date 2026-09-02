@@ -1,6 +1,6 @@
 {
   "updated_for": "2026-09-02",
-  "annual_votes_since_period_start": 599,
+  "annual_votes_since_period_start": 601,
   "skipped_non_project": [
     "88294",
     "88295",
@@ -236,6 +236,8 @@
     "89926",
     "89927",
     "89938",
-    "89939"
+    "89939",
+    "89946",
+    "89947"
   ]
 }
