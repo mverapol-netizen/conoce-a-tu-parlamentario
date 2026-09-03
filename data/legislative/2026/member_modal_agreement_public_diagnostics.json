@@ -1,0 +1,27 @@
+{
+  "public_scope": "minority_ge_10",
+  "public_threshold": 0.1,
+  "min_public_comparisons": 20,
+  "members": 155,
+  "summary_status_counts": {
+    "party": {
+      "unavailable": 34,
+      "available": 121
+    },
+    "caucus": {
+      "available": 150,
+      "unavailable": 3,
+      "insufficient": 2
+    }
+  },
+  "expected_detail_rows": {
+    "party": 29147,
+    "caucus": 36440
+  },
+  "generated_detail_rows": {
+    "party": 29147,
+    "caucus": 36440
+  },
+  "lookup_missing": 0,
+  "method_note": "Activo público del corte 10%; los porcentajes solo se muestran si hay al menos 20 comparaciones. Las filas de detalle conservan vote_id, grupo vigente, opción individual, moda leave-one-out y coincidencia/divergencia."
+}
