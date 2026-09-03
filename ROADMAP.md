@@ -27,9 +27,30 @@
 - [x] Cerrar, implementar y desplegar el **Módulo D: Red de coautoría**, con definición relacional explícita, síntesis de vínculos más repetidos, lista completa y evidencia por boletín. Contrato de cierre: `docs/MODULO_D_COAUTORIA_V0_1.md`.
 - [x] Publicar una pestaña separada **Patrones de voto** como **laboratorio W-NOMINATE experimental**, sin convertir todavía la coordenada espacial en indicador cerrado de las fichas.
 - [x] Añadir al laboratorio advertencia de estatus experimental, cobertura 154/155, concentración del omnibus, límites de agenda, contexto temático provisional, versionado visible y D2 como laboratorio exploratorio.
+- [x] Incorporar a la ficha individual un bloque descriptivo de **Comisiones actuales**, enlazado por identificador institucional y sin convertir número de membresías en indicador de desempeño.
 - [ ] Cerrar el módulo de materias antes de integrarlo a las fichas individuales.
 - [ ] Cerrar los gates multimétodo/temporales antes de decidir si la posición espacial se incorpora como módulo individual definitivo.
 - [ ] Auditar el diseño definitivo de la ficha una vez que se cierre el contenido de todos los módulos publicables.
+
+## Educación ciudadana y actividad de comisiones
+
+- [x] Construir la arquitectura interna **Entiende el Congreso** con explicación institucional progresiva, herramientas cívicas y glosario.
+- [x] Implementar **Hoy en la Cámara** con snapshot diario de sesiones de Sala y bloqueo explícito ante datos desactualizados.
+- [x] Implementar **Sigue un proyecto** y **¿Qué se votó realmente?**, conectando proyecto, tramitación, objeto exacto de votación y fuente nominal oficial.
+- [x] Construir un directorio actual de comisiones desde la página institucional de la Cámara, después de descartar el endpoint Open Data que devolvía un universo implausible.
+- [x] Validar `commissions-web-v0.4`: 34 instancias del directorio, 34 fichas con integrantes y extracción de membresía desde la tabla pertinente.
+- [x] Separar las 27 comisiones legislativas permanentes de otras comisiones permanentes y subcomisiones para no atribuirles funciones idénticas.
+- [x] Incorporar **Sesiones**, **Citaciones** y **Resultados** como capas distintas, evitando convertir agenda prevista en decisión adoptada.
+- [x] Incorporar **Proyectos de ley asociados** por comisión y enlazar cada boletín con `proyecto.html?boletin=...`.
+- [x] Incorporar **Oficios enviados** con número, sesión, destino y referencia, preservando enlaces oficiales de documento y respuesta cuando existen.
+- [x] Documentar el contrato del módulo en `docs/MODULO_COMISIONES_V0_1.md` y mantener un gate mínimo de 80% de cobertura por capa antes de aceptar un snapshot.
+- [ ] Evaluar **Actas** como fuente documental y no como simple contador.
+- [ ] Diseñar un contrato específico para **Audiencias Públicas**, invitados y comparecencias.
+- [ ] Reconstruir **asistencia a sesiones de comisión** con membresía al momento, reemplazos y denominadores temporales correctos.
+- [ ] Identificar **presidencias y otros roles de comisión** con historia temporal fiable.
+- [ ] Evaluar **Informes de comisión** y su unión con `project_events.csv` evitando duplicar eventos.
+- [ ] Incorporar comisiones investigadoras, unidas, mixtas u otras familias solo mediante capas metodológicas separadas.
+- [ ] Auditar escritorio/móvil y decidir cuándo promover las páginas de comisión desde vista interna a navegación pública principal.
 
 ## Base legislativa 2026–2030
 
