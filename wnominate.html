@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/hemicycle.css">
   <link rel="stylesheet" href="assets/css/wnominate.css">
+  <link rel="stylesheet" href="assets/css/wnominate_v3.css">
 </head>
 <body>
   <header class="site-header">
@@ -54,7 +55,7 @@
             <div class="wn-toolbar-actions">
               <button id="wn-uncertainty" class="wn-secondary-button" type="button" aria-pressed="false">Mostrar rango de incertidumbre</button>
               <button id="wn-context" class="wn-secondary-button" type="button" aria-pressed="false">Mostrar el resto</button>
-              <button id="wn-show-all" class="wn-secondary-button" type="button">Ver los 155</button>
+              <button id="wn-show-all" class="wn-secondary-button" type="button">Ver los 154 estimados</button>
               <button id="wn-download" class="wn-primary-button" type="button">Descargar PNG</button>
             </div>
           </div>
@@ -117,7 +118,7 @@
                   <div>
                     <p id="wn-chart-eyebrow" class="eyebrow">W-NOMINATE · una dimensión</p>
                     <h2 id="wn-chart-title">Principal patrón de votación</h2>
-                    <p id="wn-chart-description">Las posiciones se estiman a partir de votos Afirmativo/En Contra en votaciones nominales de Sala con suficiente desacuerdo.</p>
+                    <p id="wn-chart-description">Cada parlamentario se muestra en una fila propia y se ordena según su posición en la Dimensión 1.</p>
                   </div>
                   <div class="wn-chart-stats">
                     <span><strong id="wn-visible-count">—</strong> visibles</span>
@@ -128,18 +129,18 @@
                 <div id="wn-topic-banner" class="wn-topic-banner" hidden></div>
 
                 <div id="wn-chart-wrap" class="wn-chart-wrap">
-                  <svg id="wn-chart" class="wn-chart" viewBox="0 0 1000 590" role="img" aria-label="Gráfico interactivo W-NOMINATE"></svg>
+                  <svg id="wn-chart" class="wn-chart" viewBox="0 0 1100 590" role="img" aria-label="Gráfico interactivo W-NOMINATE"></svg>
                   <div id="wn-tooltip" class="wn-tooltip" hidden></div>
                 </div>
 
                 <div class="wn-axis-caption" id="wn-axis-caption">
-                  <span>Valores negativos</span>
+                  <span>Izquierda</span>
                   <span>Dimensión 1</span>
-                  <span>Valores positivos</span>
+                  <span>Derecha</span>
                 </div>
 
                 <div class="wn-chart-foot">
-                  <p id="wn-chart-footnote">El signo del eje es una orientación matemática del modelo. Una posición más cercana a cero no equivale automáticamente a mayor moderación.</p>
+                  <p id="wn-chart-footnote">La orientación pública invierte el signo técnico de la estimación para mantener izquierda → derecha. Una posición más cercana a cero no equivale automáticamente a mayor moderación.</p>
                   <button id="wn-reset-zoom" class="wn-secondary-button" type="button" hidden>Restablecer zoom</button>
                 </div>
               </article>
@@ -162,11 +163,11 @@
             <div class="wn-method-grid">
               <div>
                 <h3>1D: patrón principal</h3>
-                <p>La estimación base utiliza votaciones nominales de Sala, codifica Afirmativo/En Contra y excluye del cálculo espacial abstenciones, no votos y dispensas. La especificación base usa <code>lop=2,5%</code> y <code>minvotes=20</code>: 276 votaciones son elegibles y 154 integrantes reciben una coordenada.</p>
+                <p>La estimación base utiliza votaciones nominales de Sala, codifica Afirmativo/En Contra y excluye del cálculo espacial abstenciones, no votos y dispensas. La especificación base usa <code>lop=2,5%</code> y <code>minvotes=20</code>: 276 votaciones son elegibles y 154 integrantes reciben una coordenada. Para la visualización pública usamos <code>D1 visual = −D1 del modelo</code>, de modo que el eje quede orientado de izquierda a derecha.</p>
               </div>
               <div>
                 <h3>2D: diagnóstico exploratorio</h3>
-                <p>La segunda dimensión mejora modestamente el ajuste, pero es más sensible a qué proyectos componen la muestra. Por eso la mostramos para explorar, no como una segunda escala política ya nombrada.</p>
+                <p>La segunda dimensión mejora modestamente el ajuste, pero es más sensible a qué proyectos componen la muestra. En la visualización 2D invertimos solo D1 para mantener la misma orientación; D2 se conserva sin transformación y sin una etiqueta política sustantiva.</p>
               </div>
               <div>
                 <h3>Filtros temáticos</h3>
@@ -174,7 +175,7 @@
               </div>
               <div>
                 <h3>Incertidumbre</h3>
-                <p>En 1D puedes mostrar un rango obtenido mediante bootstrap por proyectos. La franja recuerda que la ubicación puntual depende de qué proyectos legislativos integran la muestra; no debe leerse como una esencia fija del parlamentario.</p>
+                <p>En 1D puedes mostrar un rango obtenido mediante bootstrap por proyectos. Los extremos del intervalo se invierten junto con D1, por lo que la incertidumbre mantiene exactamente la misma orientación pública del punto estimado.</p>
               </div>
             </div>
             <div class="wn-method-warning">
@@ -196,6 +197,6 @@
   <script src="assets/js/data.js"></script>
   <script src="assets/js/profiles.js"></script>
   <script src="assets/js/political_config.js"></script>
-  <script src="assets/js/wnominate_explorer_v2.js"></script>
+  <script src="assets/js/wnominate_explorer_v3.js"></script>
 </body>
 </html>
