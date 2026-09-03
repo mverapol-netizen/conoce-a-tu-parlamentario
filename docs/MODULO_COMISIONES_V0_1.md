@@ -66,6 +66,8 @@ La membresía no demuestra por sí sola:
 
 Archivo: `data/legislative/2026/commissions/commission_activity_snapshot.json`.
 
+Contrato vigente: `commission-activity-web-v0.6`.
+
 Las capas se mantienen separadas porque responden preguntas diferentes.
 
 ### A. Sesiones
@@ -101,9 +103,15 @@ Cada boletín se enlaza con `proyecto.html?boletin=...`, que reconstruye la tram
 
 ### E. Oficios enviados
 
-Capa en validación al momento de abrir este contrato. La página institucional expone, cuando existen filas, número, sesión, destino, referencia, documento y respuestas.
+La capa está activa desde `commission-activity-web-v0.6`. La página institucional expone, cuando existen filas, número de oficio, sesión, destino, referencia, documento y respuestas.
 
-Un oficio debe interpretarse como **una comunicación institucional emitida por la comisión**. No demuestra por sí solo fiscalización efectiva, influencia, cumplimiento del destinatario, suficiencia de la respuesta o éxito político.
+Un oficio se interpreta como **una comunicación institucional emitida por la comisión**. Puede servir, por ejemplo, para solicitar antecedentes o comunicar acuerdos, pero no demuestra por sí solo fiscalización efectiva, influencia, cumplimiento del destinatario, suficiencia de la respuesta o éxito político.
+
+El extractor conserva por separado `documento_url` y `respuestas_url` cuando la página institucional contiene enlaces reales. La interfaz solo muestra los botones documentales si esas URL existen.
+
+La presencia de `respuestas_url` significa exclusivamente que la Cámara publicó un vínculo en la columna correspondiente. No se interpreta como evidencia de que la respuesta haya sido completa, oportuna, satisfactoria o causalmente relevante.
+
+La corrida de cierre de esta capa recuperó 34/34 páginas de oficios y 240 filas principales, dentro del límite de filas recientes retenidas por comisión.
 
 ## 5. Unidad de análisis y tablas anidadas
 
@@ -153,10 +161,8 @@ Este bloque es descriptivo y no se agrega a Participación, Coincidencia, Inicia
 
 ## 9. Pendientes
 
-Antes de considerar cerrado el módulo de actividad en comisión quedan, al menos:
+Antes de considerar cerrado el módulo completo de actividad en comisión quedan, al menos:
 
-- validar y activar Oficios enviados;
-- estudiar recuperación de enlaces directos a documentos y respuestas;
 - evaluar Actas como fuente documental y no como simple contador;
 - evaluar Audiencias Públicas e invitados con un contrato específico;
 - reconstruir asistencia a sesiones con denominadores temporales correctos, membresía al momento y reemplazos;
