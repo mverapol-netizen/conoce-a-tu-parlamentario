@@ -1,6 +1,6 @@
 {
-  "schema_version": "commission-activity-web-v0.4",
-  "generated_at": "2026-09-03T10:45:16.008203-04:00",
+  "schema_version": "commission-activity-web-v0.5",
+  "generated_at": "2026-09-03T10:53:52.137597-04:00",
   "timezone": "America/Santiago",
   "directory_schema": "commissions-web-v0.4",
   "source": {
@@ -9,7 +9,8 @@
       "Sesiones",
       "Citaciones",
       "Resultados",
-      "Proyectos de ley"
+      "Proyectos de ley",
+      "Oficios enviados"
     ],
     "method": "HTML institucional de cada prmID; solo tablas principales, excluyendo subtablas anidadas"
   },
@@ -17,19 +18,22 @@
     "commissions": 34,
     "sessions_pages_retrieved": 34,
     "citations_pages_retrieved": 34,
-    "results_pages_retrieved": 34,
-    "projects_pages_retrieved": 34,
+    "results_pages_retrieved": 33,
+    "projects_pages_retrieved": 33,
+    "offices_pages_retrieved": 34,
     "session_rows_retained": 33,
     "citation_rows_retained": 33,
-    "result_rows_retained": 23,
-    "project_rows_retained": 154
+    "result_rows_retained": 22,
+    "project_rows_retained": 150,
+    "office_rows_retained": 240
   },
   "quality_gate": {
     "minimum_page_coverage": 0.8,
     "sessions_coverage": 1.0,
     "citations_coverage": 1.0,
-    "results_coverage": 1.0,
-    "projects_coverage": 1.0,
+    "results_coverage": 0.9705882352941176,
+    "projects_coverage": 0.9705882352941176,
+    "offices_coverage": 1.0,
     "passed": true,
     "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas no se convierten en eventos independientes."
   },
@@ -216,6 +220,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4897",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "374/1/2026",
+            "sesión": "N° 20 18 ago. 2026",
+            "destino": "Alcalde",
+            "referencia": "acordó oficiar a Ud.,",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "373/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE ZAPALLAR",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "372/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE YUNGAY",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "371/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE YUMBEL",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "370/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE YERBAS BUENAS",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "369/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE VITACURA",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "368/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE VIÑA DEL MAR",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "367/1/2026",
+            "sesión": "N° 18 11 ago. 2026",
+            "destino": "A LA MUNICIPALIDAD DE VILLARRICA",
+            "referencia": "Oficio a municipalidades",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -355,6 +452,99 @@
             "materia": "Aprueba el Acuerdo que modifica el Convenio entre la República de Chile y el Gobierno de la República de Hungría con el Objeto de Autorizar el Ejercicio de Actividades Remuneradas en el Estado Receptor por los Familiares Dependientes del Personal Diplomático, Consular, Administrativo y Técnico de las Misiones Diplomáticas y Consulares Acreditadas ante los respectivos Gobiernos, y por los Familiares Dependientes de Nacionales Chilenos o Húngaros Acreditados ante Organizaciones Internacionales con Sede en Cualquiera de los Dos Países, adoptado por intercambio de Notas, fechadas en Santiago y Budapest, el 15 de julio de 2024.",
             "estado": "En tramitación",
             "boletín": "18279-10"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4889",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "27/2/2026",
+            "sesión": "N° 14 18 ago. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Oficiar al Ministerio de Relaciones Exteriores, a fin de que informe acerca del estatus de Chile respecto de la iniciativa denominada “Escudo de las Américas”.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "26/2/2026",
+            "sesión": "N° 13 11 ago. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Oficiar al Ministerio de Relaciones Exteriores, a fin de que informe si tomó conocimiento de las denuncias relativas a conductas ofensivas hacia funcionarios chilenos en el complejo fronterizo situado en territorio argentino y, en caso afirmativo, las medidas adoptadas al respecto.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "25/2/2026",
+            "sesión": "N° 13 11 ago. 2026",
+            "destino": "A la Superintendenta del Cuerpo de Bomberos de Lonquimay",
+            "referencia": "Remitir oficios de felicitación y agradecimiento a Bomberos, Carabineros de Chile, los hospitales de Lonquimay y Curacautín, las municipalidades de ambas comunas y los funcionarios del complejo fronterizo Pino Hachado, por la labor desplegada en atención de las personas afectadas por el cierre del paso fronterizo producto de las condiciones climáticas.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "24/2/2026",
+            "sesión": "N° 13 11 ago. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Oficiar al Ministerio de Relaciones Exteriores, a fin de que informe si ha efectuado algún pronunciamiento o gestión diplomática respecto de las recientes medidas y declaraciones internacionales que involucren o afecten a la República Federativa del Brasil, especialmente aquellas de carácter arancelario adoptadas por los Estados Unidos de América; y, en caso afirmativo, remita los antecedentes correspondientes, con el objeto de que, una vez recibida la respuesta, la Comisión evalúe la eventual adopción de otras medidas.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "23/2/2026",
+            "sesión": "N° 13 11 ago. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Oficiar al Ministerio de Relaciones Exteriores, a fin de que informe las razones y fundamentos que motivaron la decisión de retirar a Chile del Movimiento de Países No Alineados.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "22/2/2026",
+            "sesión": "N° 13 11 ago. 2026",
+            "destino": "AL ABOGADO DIRECCIÓN DE ASUNTOS INTERNACIONALES",
+            "referencia": "Autorizar la creación de los grupos interparlamentarios Chileno-Emiratí y Chileno-Tailandés, solicitada por la Dirección de Asuntos Internacionales mediante oficio N° 017-2026, de 6 de agosto de 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "21/2/2026",
+            "sesión": "N° 12 04 ago. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Oficiar al Ministerio de Relaciones Exteriores, a fin de que informe acerca de las circunstancias y elementos que se tuvieron a la vista para el restablecimiento de las relaciones diplomáticas entre Chile y la República Bolivariana de Venezuela.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "20/2/2026",
+            "sesión": "N° 11 21 jul. 2026",
+            "destino": "AL ABOGADO DIRECCIÓN DE ASUNTOS INTERNACIONALES",
+            "referencia": "Autorizar la creación de los grupos interparlamentarios Chileno-Ucraniano, Chileno-Austriaco y Chileno-Saudí, solicitados por la Dirección de Asuntos Internacionales mediante oficios N°s 15 y 16, ambos de 20 de julio de 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -583,6 +773,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4884",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "37/3/2026",
+            "sesión": "N° 37 01 sep. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Oficio",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "36/3/2026",
+            "sesión": "N° 35 18 ago. 2026",
+            "destino": "MINISTRO DE JUSTICIA Y DERECHOS HUMANOS",
+            "referencia": "Oficio requerimiento.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "35/3/2026",
+            "sesión": "N° 35 18 ago. 2026",
+            "destino": "SECRETARIO GENERAL DE LA H. CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Oficio",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "34/3/2026",
+            "sesión": "N° 32 11 ago. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Se solicita autorización para fusionar proyectos",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "33/3/2026",
+            "sesión": "N° 30 04 ago. 2026",
+            "destino": "MINISTRO SECRETARIO GENERAL DE LA PRESIDENCIA",
+            "referencia": "requerimiento información.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "32/3/2026",
+            "sesión": "N° 30 04 ago. 2026",
+            "destino": "AL DIRECTOR DEL SERVICIO DE IMPUESTOS INTERNOS",
+            "referencia": "Oficio requerimiento.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "31/3/2026",
+            "sesión": "N° 29 22 jul. 2026",
+            "destino": "AL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Recabar autorización de los Comités Parlamentarios, para citar y atender vía telemática a académicos convocados por la Comisión.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "30/3/2026",
+            "sesión": "N° 29 22 jul. 2026",
+            "destino": "AL DIRECTOR NACIONAL DEL SERVICIO NACIONAL DE MIGRACIONES",
+            "referencia": "Se solicita informe por escrito en el marco de la tramitación, boletín N° 18314-07.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -767,6 +1050,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4895",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "50/4/2026",
+            "sesión": "N° 30 18 ago. 2026",
+            "destino": "A la Ministra de Educación",
+            "referencia": "Solicita a Junaeb que informe respecto de materias relativas al Programa de Alimentación Escolar (PAE) y al Programa de Alimentación Parvularia (PAP)",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "49/4/2026",
+            "sesión": "N° 30 18 ago. 2026",
+            "destino": "A la Ministra de Educación",
+            "referencia": "Solicita informe acerca del oficio remitido por el Ministerio de Hacienda, que estaría dirigido a todos los ministerios del país, instruyendo la formulación de la “Ley de Presupuestos 2027”, en el marco de un “Plan de Ajuste Fiscal\", conforme al cual se instruiría descontinuar al menos quince programas dependientes de la cartera ministerial que dirige, con particular enfoque en el \"Programa de Alimentación Escolar (PAE)\".",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "48/4/2026",
+            "sesión": "N° 30 18 ago. 2026",
+            "destino": "A la Ministra de Educación",
+            "referencia": "Remite exposición presentada por la Rectora de la Escuela Libre Educa Montealto, en representación de la Agrupación de Colegios Libres, a fin de solicitar se sirva emitir un pronunciamiento respecto de la propuesta de una norma que reconozca expresamente la posibilidad de que un establecimiento con reconocimiento oficial del Estado suscriba un convenio de patrocinio o tutela académica con este tipo de proyectos educativos, para efectos de regularizar la situación escolar de sus alumnos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "47/4/2026",
+            "sesión": "N° 29 11 ago. 2026",
+            "destino": "A la Ministra de Educación",
+            "referencia": "Solicita un pronunciamiento formal acerca del vacío interpretativo del artículo 44 de la ley N° 21.796",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "46/4/2026",
+            "sesión": "N° 29 11 ago. 2026",
+            "destino": "Al Presidente de la Corporación Municipal de Desarrollo Social de Ñuñoa",
+            "referencia": "Solicita información respecto del estado de la infraestructura del Liceo Augusto D’Halmar y de los demás liceos públicos bajo la administración de la Corporaci{on Municipal de Ñuñoa; las medidas adoptadas frente a las demandas planteadas desde julio por los estudiantes movilizados; las instancias de diálogo dispuestas con sus comunidades educativas, y la elaboración de un plan de fortalecimiento que permita abordar sus actuales necesidades de infraestructura, equipamiento y condiciones para el adecuado desarrollo del proceso educativo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "45/4/2026",
+            "sesión": "N° 29 11 ago. 2026",
+            "destino": "Al Ministro de Hacienda",
+            "referencia": "Solicita información acerca de la fuente utilizada para determinar la renta considerada para disponer los embargos respecto de los deudores del Crédito con Aval del Estado (CAE); las medidas adoptadas respecto de aquellos deudores cuya renta no se encuentra informada, y el número de personas que, encontrándose en dicha situación, podrían verse afectadas.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "44/4/2026",
+            "sesión": "N° 28 04 ago. 2026",
+            "destino": "A la Ministra de Educación",
+            "referencia": "Solicita la siguiente información: -Las medidas de reconstrucción que se implementarán respecto del Jardín Infantil y Sala Cuna Semillita, de la comuna de Osorno, gravemente afectado por el incendio que destruyó dicho establecimiento y -El estado de avance de la entrega de recursos, del financiamiento comprometido y de las gestiones destinadas a la instalación del Centro Educativo Cultural de la Infancia (CECI) en Puerto Octay Alto, de conformidad al compromiso asumido por la Junta Nacional de Jardines Infantiles y la Ilustre Municipalidad de Puerto Octay.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "43/4/2026",
+            "sesión": "N° 28 04 ago. 2026",
+            "destino": "A LA MINISTRA DE EDUCACION",
+            "referencia": "Solicita informe acerca de las medidas que se adoptarán respecto de los establecimientos educacionales que incumplieron la suspensión de clases durante el reciente sistema frontal, considerando el eventual riesgo que aquello conllevó para los integrantes de la comunidad educativa.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -876,6 +1252,99 @@
             "materia": "Modifica la ley N° 20.027, en materia de cobro de créditos de educación superior, para fortalecer las garantías del debido proceso",
             "estado": "En tramitación",
             "boletín": "18197-04"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4890",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "43/5/2026",
+            "sesión": "N° 43 18 ago. 2026",
+            "destino": "Presidente Ejecutivo de la Corporación Nacional del Cobre (CODELCO)",
+            "referencia": "Oficio a CODELCO",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "42/5/2026",
+            "sesión": "N° 43 18 ago. 2026",
+            "destino": "Ministro de Minería",
+            "referencia": "Oficio al Ministerio de Minería",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "41/5/2026",
+            "sesión": "N° 43 18 ago. 2026",
+            "destino": "Ministro de Hacienda",
+            "referencia": "oficio al Ministerio de Hacienda",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "40/5/2026",
+            "sesión": "N° 43 18 ago. 2026",
+            "destino": "Director de Presupuestos",
+            "referencia": "oficio a Dirección de Presupuestos",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "39/5/2026",
+            "sesión": "N° 37 22 jul. 2026",
+            "destino": "Subsecretaria de Telecomunicaciones",
+            "referencia": "oficio a SUBTEL",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "38/5/2026",
+            "sesión": "N° 37 22 jul. 2026",
+            "destino": "Directora Nacional del Servicio Nacional de Aduanas",
+            "referencia": "oficio Servicio Nacional de Aduanas",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "37/5/2026",
+            "sesión": "N° 37 22 jul. 2026",
+            "destino": "Director NAcional del Servicio Agrícola y Ganadero (SAG)",
+            "referencia": "oficio SAG",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "36/5/2026",
+            "sesión": "N° 36 21 jul. 2026",
+            "destino": "Director Nacional del Servicio de Impuestos Internos",
+            "referencia": "oficio al SII",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -1077,6 +1546,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4896",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "35/6/2026",
+            "sesión": "N° 16 01 sep. 2026",
+            "destino": "Ministro de Defensa Nacional",
+            "referencia": "Por intermedio del Ministro, hacer presente al Presidente de la República y Comandantes en Jefes Fuerzas Armadas resguardo de la soberanía nacional se invita a participar a la Comisión.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "34/6/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Mayor de Ejército(R)",
+            "referencia": "Roberto Vaché. [email protected]",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "33/6/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
+            "referencia": "Oficiar a la BCN para que emita informe de legislación comparada acerca del uso de la tecnología 3D para la fabricación armas de fuego.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "32/6/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Secretario General",
+            "referencia": "con el objeto",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "31/6/2026",
+            "sesión": "N° 11 14 jul. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Solicita refundir boletines 18.361-02 y 18.381-02.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "30/6/2026",
+            "sesión": "N° 12 21 jul. 2026",
+            "destino": "Ministro de Seguridad Pública",
+            "referencia": "Solicita información sobre drones adquiridos por el Estado.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "29/6/2026",
+            "sesión": "N° 12 21 jul. 2026",
+            "destino": "Ministro de Defensa Nacional",
+            "referencia": "Solicita información sobre drones adquiridos por el Estado.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "28/6/2026",
+            "sesión": "N° 11 14 jul. 2026",
+            "destino": "Ministro de Defensa Nacional",
+            "referencia": "Información sobre mortero en río Putaendo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1260,6 +1822,99 @@
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4885",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "76/7/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 18 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "75/7/2026",
+            "sesión": "N° 14 11 ago. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 11 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "74/7/2026",
+            "sesión": "N° 14 11 ago. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 11 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "73/7/2026",
+            "sesión": "N° 14 11 ago. 2026",
+            "destino": "Presidente del Directorio de EFE",
+            "referencia": "Acuerdo adoptado en sesión de 14 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "72/7/2026",
+            "sesión": "N° 14 11 ago. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 11 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "71/7/2026",
+            "sesión": "N° 13 04 ago. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 4 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "70/7/2026",
+            "sesión": "N° 13 04 ago. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 4 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "69/7/2026",
+            "sesión": "N° 13 04 ago. 2026",
+            "destino": "Al Presidente del Directorio de EFE",
+            "referencia": "Acuerdo adoptado en sesión de 4 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 1
         }
       }
     },
@@ -1466,6 +2121,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4900",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "77/8/2026",
+            "sesión": "N° 17 01 sep. 2026",
+            "destino": "- AL DIRECTOR DEL TRABAJO",
+            "referencia": "Informar sobre compleja situación trabajadores Empresa Río King.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "76/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- AL FISCAL NACIONAL",
+            "referencia": "Solicita información relacionadas con causas vigentes de maltrato animal.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "75/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- AL DIRECTOR NACIONAL DEL SERVICIO AGRÍCOLA Y GANADERO",
+            "referencia": "Solicita informar fiscalizaciones efectuadas a la importación de huevos al país.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "74/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- AL MINISTRO DE AGRICULTURA",
+            "referencia": "Solicita informar efectos tratados de libre comercio en relación con la producción agrícola.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "73/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- AL MINISTRO DE ECONOMÍA, FOMENTO Y TURISMO",
+            "referencia": "Solicitar informar los efectos de tratados de libre comercio relacionados con la producción agrícola.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "72/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- A LA MINISTRA DE SALUD",
+            "referencia": "Solicita informar los estándares y exigencias aplicables a los huevos importados.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "71/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- AL DIRECTOR NACIONAL DEL SERVICIO AGRÍCOLA Y GANADERO",
+            "referencia": "Solicita informar resultado consulta ciudadana respecto requisitos comercialización de semillas corrientes en Chile.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "70/8/2026",
+            "sesión": "N° 16 18 ago. 2026",
+            "destino": "- AL MINISTRO DE AGRICULTURA",
+            "referencia": "Solicita informar resultado consulta ciudadana respecto requisitos comercialización semillas corrientes en Chile.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1626,6 +2374,99 @@
             "materia": "Modifica la ley N° 20.920, que establece marco para la gestión de residuos, la responsabilidad extendida del productor y fomento al reciclaje, para sancionar las infracciones en la gestión de desechos textiles",
             "estado": "En tramitación",
             "boletín": "18199-12"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4888",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "15/9/2026",
+            "sesión": "N° 16 22 jul. 2026",
+            "destino": "Ministra del Medio Ambiente",
+            "referencia": "Oficio N° 15 sobre los eventuales incumplimientos detectados en el proyecto de la Planta de Reconversión de Materiales Residuales de Rilesur Ltda, en la región de Los Ríos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "14/9/2026",
+            "sesión": "N° 16 22 jul. 2026",
+            "destino": "Director Ejecutivo del Servicio de Evaluación Ambiental",
+            "referencia": "Oficio N°14 sobre los eventuales incumplimientos detectados en el proyecto de la Planta de Reconversión de Materiales Residuales de Rilesur Ltda, en la región de Los Ríos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "13/9/2026",
+            "sesión": "N° 16 22 jul. 2026",
+            "destino": "Director Ejecutivo del Servicio de Evaluación Ambiental",
+            "referencia": "Oficio N° 13 sobre los proyectos de exploración y explotación minera que se proyecta desarrollar en la región de Ñuble, particularmente en las comunas de Cobquecura, Coelemu y Trehuaco.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "12/9/2026",
+            "sesión": "N° 16 22 jul. 2026",
+            "destino": "Ministra del Medio Ambiente",
+            "referencia": "Oficio N° 12 sobre otorgar prioridad y celeridad a la tramitación del Plan de Descontaminación Ambiental de Calama.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "11/9/2026",
+            "sesión": "N° 14 24 jun. 2026",
+            "destino": "Superintendenta del Medio Ambiente (S)",
+            "referencia": "Oficio N° 11",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "10/9/2026",
+            "sesión": "N° 14 24 jun. 2026",
+            "destino": "Director Ejecutivo del Servicio de Evaluación Ambiental",
+            "referencia": "Oficio N° 10",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "9/9/2026",
+            "sesión": "N° 14 24 jun. 2026",
+            "destino": "Ministra del Medio Ambiente",
+            "referencia": "Oficio N° 9",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "8/9/2026",
+            "sesión": "N° 11 03 jun. 2026",
+            "destino": "Alcalde de la Municipalidad de Antofagasta",
+            "referencia": "Oficio N° 8/9/2026 - Alcalde de la Municipalidad de Antofagasta",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -1827,6 +2668,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4894",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "184/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Director Servicio de Salud Osorno",
+            "referencia": "Sobre la dotación actual de ambulancias básicas y de soporte vital avanzado asignadas a la red de salud de la comuna de Osorno.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "183/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Subsecretario de Redes Asistenciales",
+            "referencia": "Sobre la dotación actual de ambulancias básicas y de soporte vital avanzado asignadas a la red de salud de la comuna de Osorno.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "182/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Seremi de Salud de la Región de Aysén",
+            "referencia": "Sobre las medidas de vigilancia sanitaria, fiscalización y monitoreo de la calidad de las aguas en el sector de Alto Mañihuales, comuna de Coyhaique.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "181/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Ministra de Salud",
+            "referencia": "Sobre las medidas de vigilancia sanitaria, fiscalización y monitoreo de la calidad de las aguas en el sector de Alto Mañihuales, comuna de Coyhaique.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "180/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Ministra de Salud",
+            "referencia": "Remite los antecedentes recibidos por esta Comisión, de la Confederación Democrática de Profesionales de la Salud (Confedeprus), relativos a la aplicación del artículo 66 de la ley N° 21.647.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "179/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Seremi de Salud de la Región de Coquimbo.",
+            "referencia": "Solicita remitir los antecedentes relativos a la situación sanitaria que afecta a las familias de la localidad de Cerrillos, sector Pan de Azúcar, comuna de Coquimbo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "178/10/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Presidente de la Comisión de Salud del Senado",
+            "referencia": "Respuesta a Comisión Salud Senado sobre el proyecto de ley que modifica el Código Sanitario para regular el ejercicio de las profesiones de la salud, correspondiente a los Boletines Nos 13.806-11, 13.817-11, 13.818-11, 13.821-11 y 13.838-11, refundidos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "177/10/2026",
+            "sesión": "N° 17 11 ago. 2026",
+            "destino": "DIRECTORA SERVICIO DE SALUD METROPOLITANO SUR ORIENTE",
+            "referencia": "Respecto del período comprendido entre los años 2022 y 2026 a la fecha, el número de médicos que, encontrándose sujetos al cumplimiento de un período asistencial obligatorio derivado de su formación financiada por el Estado.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1994,6 +2928,99 @@
             "materia": "Reconoce equivalencias a la experiencia laboral para promover la inserción laboral de las personas jóvenes",
             "estado": "En tramitación",
             "boletín": "18453-13"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4891",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "24/11/2026",
+            "sesión": "N° 20 01 sep. 2026",
+            "destino": "Al Ministro del Trabajo",
+            "referencia": "Oficiar al Ministerio del Trabajo y Previsión Social, en los mismos términos del oficio N° 13/11/2026, de 4 de agosto de 2026, a fin de solicitar que se revierta la decisión de suspender la Encuesta Laboral (ENCLA) y se provean los recursos necesarios para asegurar su continuidad.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "17/11/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Al Director Nacional del Trabajo",
+            "referencia": "Oficiar a la Dirección del Trabajo a fin de que informe las fiscalizaciones efectuadas respecto del cumplimiento de las normas sobre jornada de trabajo en las empresas Embonor y Embotelladora Andina, en los distintos lugares en que desarrollan sus operaciones. En particular, respecto de Embotelladora Andina, informar las denuncias recibidas por eventuales incumplimientos de la normativa sobre jornada laboral, las fiscalizaciones practicadas, las infracciones constatadas y las multas cursadas, indicando su estado de tramitación y las demás medidas adoptadas por ese Servicio en relación con tales antecedentes.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "16/11/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "Al Ministro del Interior",
+            "referencia": "Reiterar al Ministro del Interior, en todos sus términos, el oficio N° 6/11/2026, de 7 de julio de 2026, relativo a las solicitudes de pensiones de gracia formuladas por trabajadores portuarios pertenecientes a CONATRAPORT, atendido que a la fecha no se ha recibido respuesta.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "15/11/2026",
+            "sesión": "N° 17 11 ago. 2026",
+            "destino": "AL DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
+            "referencia": "En el marco del estudio del proyecto de ley que perfecciona los mecanismos de adaptabilidad de la jornada de trabajo y establece un régimen especial para el sector turismo y actividades conexas, correspondiente al boletín N° 18.478-13, solicitar a la Biblioteca del Congreso Nacional la elaboración de un informe de legislación comparada sobre los regímenes de jornada de trabajo aplicables al sector turismo y hotelería en distintos países.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "14/11/2026",
+            "sesión": "N° 16 04 ago. 2026",
+            "destino": "Al Director Nacional del Trabajo",
+            "referencia": "Oficiar a la Dirección del Trabajo, a fin de que informe acerca de las fiscalizaciones efectuadas y sus resultados con ocasión del accidente laboral fatal ocurrido el 16 de julio de 2026, en el kilómetro 25 de la Ruta Q-180, comuna de Negrete, región del Biobío.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "13/11/2026",
+            "sesión": "N° 16 04 ago. 2026",
+            "destino": "Al Ministro de Hacienda",
+            "referencia": "Oficiar, por mayoría de votos, al Ministerio de Hacienda, a fin de solicitar que se revierta la decisión de suspender la Encuesta Laboral (ENCLA).",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "12/11/2026",
+            "sesión": "N° 16 04 ago. 2026",
+            "destino": "Al director regional (s) del Trabajo de la Región de Los Lagos",
+            "referencia": "Oficiar a la Dirección Regional del Trabajo de Los Lagos, a fin de que fiscalice el cumplimiento, por parte de la empresa Ventisqueros.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "11/11/2026",
+            "sesión": "N° 16 04 ago. 2026",
+            "destino": "Al Director Nacional del Trabajo",
+            "referencia": "Complementar el oficio N° 8/11/2026, dirigido al Director Nacional del Trabajo.",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -2185,6 +3212,99 @@
             "materia": "Modifica el decreto ley N° 1.349, de 1976, que crea la Comisión Chilena del Cobre, para otorgar a la Contraloría General de la República facultades fiscalizadoras respecto de las empresas estatales productoras de cobre y sus derivados",
             "estado": "En tramitación",
             "boletín": "18313-08"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4892",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "64/12/2026",
+            "sesión": "N° 21 19 ago. 2026",
+            "destino": "Ministra Bienes Nacionales",
+            "referencia": "Disponibilidad de terrenos fiscales para planta de procesamiento de oro en Minas del Lirio, Punitaqui.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "63/12/2026",
+            "sesión": "N° 21 19 ago. 2026",
+            "destino": "Superintendenta (S) del Medio Ambiente",
+            "referencia": "Solicita pronunciamiento sobre contaminación y riesgo estructural del depósito de relaves del Complejo Productivo Sur de ENAMI.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "62/12/2026",
+            "sesión": "N° 21 19 ago. 2026",
+            "destino": "Presidente del Directorio de Codelco",
+            "referencia": "Solicita antecedentes sobre proceso de contratación de auditoría externa y mecanismos de prevención de conflictos de interés.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "61/12/2026",
+            "sesión": "N° 21 19 ago. 2026",
+            "destino": "Presidente del Directorio de Codelco",
+            "referencia": "Solicita informar sobre créditos o préstamos otorgados por la empresa a sindicatos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "60/12/2026",
+            "sesión": "N° 20 12 ago. 2026",
+            "destino": "Ministro de Hacienda",
+            "referencia": "Solicita antecedentes sobre capitalización del 100% de las utilidades de Codelco correspondientes al ejercicio 2025.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "59/12/2026",
+            "sesión": "N° 20 12 ago. 2026",
+            "destino": "VICEPRESIDENTE EJECUTIVO DE LA EMPRESA NACIONAL DE MINERÍA (ENAMI)",
+            "referencia": "Solicita antecedentes sobre medidas de limpieza, estabilización y adquisición de terrenos afectados por depósito de relaves de ENAMI.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "58/12/2026",
+            "sesión": "N° 20 12 ago. 2026",
+            "destino": "Ministra de Energía",
+            "referencia": "Solicita antecedentes sobre proyecto eléctrico en la Cordillera del Maule y sus impactos en la ranita del Pehuenche.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "57/12/2026",
+            "sesión": "N° 20 12 ago. 2026",
+            "destino": "Gerente General de División El Teniente de Codelco",
+            "referencia": "Solicita antecedentes técnicos que fundamentaron la suspensión del proyecto Andes Norte.",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -2407,6 +3527,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4893",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "14/13/2026",
+            "sesión": "N° 18 01 sep. 2026",
+            "destino": "a la presidenta de la Convención sobre la Eliminación de Todas las Formas de Discriminación contra la Mujer, CEDAW",
+            "referencia": "Solicita información sobre empleo e igualdad salarial entre hombres y mujeres.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "13/13/2026",
+            "sesión": "N° 15 04 ago. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Oficiar al Presidente de la Cámara de Diputados, con el propósito de poner en su conocimiento, según lo establece el artículo 18 del reglamento de la Corporación, la nómina de proyectos de ley referidos a mensajes, que resolvió enviar al archivo, para que si lo tiene a bien realice la respectiva consulta a S.E., el Presidente de la República.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "12/13/2026",
+            "sesión": "N° 15 04 ago. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Remite proyectos del Senado a Archivo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "11/13/2026",
+            "sesión": "N° 15 04 ago. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Archiva proyectos de Comisión de Economía.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "10/13/2026",
+            "sesión": "N° 15 04 ago. 2026",
+            "destino": "Al Director Nacional del Servicio de Registro Civil e Identificación.",
+            "referencia": "Sobre Registro Nacional de Deudores de Pensiones de Alimentos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "9/13/2026",
+            "sesión": "N° 14 21 jul. 2026",
+            "destino": "A la Subsecretaria de Turismo",
+            "referencia": "Sobre alcances y línea de apoyo directa a MIPYMES afectadas por reciente mal tiempo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "8/13/2026",
+            "sesión": "N° 14 21 jul. 2026",
+            "destino": "Al Ministro de Economía, Fomento y Turismo",
+            "referencia": "Sobre alcances y línea de apoyo directa a MIPYMES afectadas por reciente mal tiempo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "7/13/2026",
+            "sesión": "N° 13 14 jul. 2026",
+            "destino": "Al Director de la Biblioteca del Congreso Nacional",
+            "referencia": "Realiza invitación y solicita información que indica.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2570,6 +3783,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4899",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "167/14/2026",
+            "sesión": "N° 17 02 sep. 2026",
+            "destino": "Al Ministro de Vivienda y Urbanismo",
+            "referencia": "Solicita información sobre el término del programa arriendo a precio justo y el subsidio de arriendo regulado por el decreto supremo N.º 52.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "166/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "A la Presidenta de la Comisión Para el Mercado Financiero",
+            "referencia": "Reiterar oficio 140 a la Presidenta de la Comisión Para el Mercado Financiero.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "165/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Delegado Presidencial de la Provincia de Osorno",
+            "referencia": "Reiterar oficio N° 139 al Delegado Presidencial de la Provincia de Osorno",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "164/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "A la Directora (S) del Servicio de Vivienda y Urbanización de la Región de los Lagos",
+            "referencia": "Reiterar oficio N° 138 a la Directora del Servicio de Vivienda y Urbanización de la Región de los Lagos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "163/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Secretario Regional Ministerial de Vivienda y Urbanismo de la Región de Los Lagos",
+            "referencia": "Reiterar oficio 137 al Secretario Regional Ministerial de Vivienda y Urbanismo de la Región de Los Lagos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "162/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Ministro de Vivienda y Urbanismo",
+            "referencia": "Reiterar oficio N° 135 al Ministro de Vivienda y Urbanismo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "161/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Director (S) del Servicio de Vivienda y Urbanización de la región de Valparaíso",
+            "referencia": "Reiterar oficio N° 134 dirigido al Director (S) del Servicio de Vivienda y Urbanización de la región de Valparaíso.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "160/14/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Ministro de Vivienda y Urbanismo",
+            "referencia": "Reiterar oficio N°114, del 25 de junio de 2026, dirigido al Ministro de Vivienda y Urbanismo.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2704,6 +4010,99 @@
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4887",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "69/15/2026",
+            "sesión": "N° 15 12 ago. 2026",
+            "destino": "Ministra de Desarrollo Social y Familia",
+            "referencia": "informar el estado de avance de la preparación del proceso de consulta indígena que fuera anunciado por el Ejecutivo, para modificar la ley indígena, y la fecha estimada para su realización.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "68/15/2026",
+            "sesión": "N° 13 22 jul. 2026",
+            "destino": "CONTRALORA GENERAL DE LA REPÚBLICA",
+            "referencia": "acuerdo",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "67/15/2026",
+            "sesión": "N° 13 22 jul. 2026",
+            "destino": "CONTRALORA GENERAL DE LA REPÚBLICA",
+            "referencia": "acuerdo",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "65/15/2026",
+            "sesión": "N° 12 08 jul. 2026",
+            "destino": "Director de la Biblioteca del Congreso Nacional",
+            "referencia": "informe",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "64/15/2026",
+            "sesión": "N° 12 08 jul. 2026",
+            "destino": "Director de la Biblioteca del Congreso Nacional",
+            "referencia": "informe",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "63/15/2026",
+            "sesión": "N° 11 24 jun. 2026",
+            "destino": "Director del Servicio Nacional de Migraciones",
+            "referencia": "Informe comepetencia legal",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "62/15/2026",
+            "sesión": "N° 11 24 jun. 2026",
+            "destino": "Director Nacional de Gendarmería",
+            "referencia": "Reitera of 46",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "61/15/2026",
+            "sesión": "N° 11 24 jun. 2026",
+            "destino": "Director Nacional de CONADI",
+            "referencia": "Reirera of 48 a CONADI",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 1
         }
       }
     },
@@ -2874,6 +4273,99 @@
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4898",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "40/16/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "A LA PRESIDENTA DE LA CORTE SUPREMA",
+            "referencia": "Solicita información sobre proyecto boletín N° 18326-18.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "39/16/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "AL DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
+            "referencia": "Solicita información sobre proyecto boletín N° 18326-18.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "38/16/2026",
+            "sesión": "N° 18 17 ago. 2026",
+            "destino": "A LA PRESIDENTA DE LA EXCMA.CORTE SUPREMA",
+            "referencia": "Solicita opinión técnica sobre proyecto boletín N° 18326-18.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "37/16/2026",
+            "sesión": "N° 17 10 ago. 2026",
+            "destino": "al ministro de hacienda",
+            "referencia": "Solicita informe fundamentos técnicos, presupuestarios y jurídicos de los porcentajes propuestos para asignación contemplada en los artículos 61 y 62 de la Ley N.º 21.806.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "36/16/2026",
+            "sesión": "N° 17 10 ago. 2026",
+            "destino": "a la ministra de desarrollo social y familia",
+            "referencia": "Solicita informe estado de implementación de las Comisiones Coordinadoras de Protección en las distintas regiones, en el marco de la ley N.º 21.430 sobre Garantías y Protección Integral de los Derechos de la Niñez y Adolescencia.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "35/16/2026",
+            "sesión": "N° 17 10 ago. 2026",
+            "destino": "AL SUBSECRETARIO LEGISLATIVO DE LA CÁMARA DE DIPUTADOS, departamento de evaluación de la ley",
+            "referencia": "Solicita evaluación ley garantia",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "34/16/2026",
+            "sesión": "N° 17 10 ago. 2026",
+            "destino": "A LA CONTRALORA GENERAL DE LA REPÚBLICA",
+            "referencia": "Solicita opinión respecto del manejo, resguardo y eventual traspaso de información entre las municipalidades y los órganos del Ejecutivo, en el contexto de las acciones de protección de niños, niñas y adolescentes.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "33/16/2026",
+            "sesión": "N° 17 10 ago. 2026",
+            "destino": "AL PRESIDENTE DE LA ASOCIACIÓN NACIONAL DE TRABAJADORES/AS DEL SERVICIO NACIONAL DE PROTECCIÓN ESPECIALIZADA A LA NIÑEZ Y ADOLESCENCIA, ANTRAP",
+            "referencia": "Remitir condolencia a ANTRAP.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 1
         }
       }
     },
@@ -3059,6 +4551,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4886",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "27/17/2026",
+            "sesión": "N° 19 17 ago. 2026",
+            "destino": "Al Director de la Biblioteca del Congreso Nacional",
+            "referencia": "En el marco de la discusión del proyecto de ley, en primer trámite constitucional, que incorpora la alfabetización en materias digitales y sobre inteligencia artificial en el currículum educacional, correspondiente al boletín N° 18.507-04, solicitar a Ud. la elaboración de un estudio de legislación comparada sobre la experiencia de otros países en la incorporación de estas materias en el ámbito educacional.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "26/17/2026",
+            "sesión": "N° 19 17 ago. 2026",
+            "destino": "Al Fiscal Nacional del Ministerio Público",
+            "referencia": "En el marco de la discusión del proyecto de ley que establece la obligación de fijar domicilio en Chile a las plataformas digitales, correspondiente al boletín N° 18.362-19, oficiar a Ud. con el objeto de solicitarle tenga a bien informar a la Comisión acerca de las eventuales dificultades prácticas que se hayan presentado para efectuar notificaciones a prestadores de servicios digitales que no cuenten con domicilio ni residencia en Chile.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "25/17/2026",
+            "sesión": "N° 19 17 ago. 2026",
+            "destino": "A LA PRESIDENTA DE LA EXCMA. CORTE SUPREMA",
+            "referencia": "En el marco de la discusión del proyecto de ley que establece la obligación de fijar domicilio en Chile a las plataformas digitales, correspondiente al boletín N° 18.362-19, solicitar a V.E. que tenga a bien requerir a la Dirección de Estudios de esa Excma. Corte Suprema se sirva remitir a esta Comisión su opinión respecto del mencionado proyecto.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "24/17/2026",
+            "sesión": "N° 18 10 ago. 2026",
+            "destino": "A LA MINISTRA DE CIENCIAS, TECNOLOGÍA, CONOCIMIENTO E INNOVACIÓN",
+            "referencia": "Solicita urgencia para la tramitación del proyecto de ley, en primer trámite constitucional, originado en mociones refundidas correspondientes a los boletines N° 18224-18, 18246-18, 18318-19 y 18415-18",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "23/17/2026",
+            "sesión": "N° 18 10 ago. 2026",
+            "destino": "A la Ministra de Desarrollo Social y Familia",
+            "referencia": "Solicita urgencia a la tramitación del proyecto de ley, en primer trámite constitucional, originado en mociones refundidas correspondientes a los boletines N° 18224-18, 18246-18, 18318-19 y 18415-18",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "22/17/2026",
+            "sesión": "N° 18 10 ago. 2026",
+            "destino": "Al Director del Servicio de Impuestos Internos",
+            "referencia": "Solicitar información, en el marco del proyecto de ley que establece la obligación de fijar domicilio en Chile a las plataformas digitales (boletín N° 18362-19)",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "21/17/2026",
+            "sesión": "N° 17 03 ago. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "20/17/2026",
+            "sesión": "N° 15 08 jul. 2026",
+            "destino": "Al Director de la Bibiloteca del Congreso Nacional",
+            "referencia": "Oficio a la BCN, proyecto tecnologías y redes sociales menores de edad",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3177,6 +4762,99 @@
             "materia": "Modifica la ley N°21.069, que crea el Instituto Nacional de Desarrollo Sustentable de la Pesca Artesanal y de la Acuicultura de Pequeña Escala, Indespa, en lo relativo a la manera de regular el periodo de inscripción y postulación a beneficios que indica",
             "estado": "En tramitación",
             "boletín": "18280-21"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4902",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "75/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "74/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "A la Director Ejecutiva de CONAF",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "73/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Director Nacional de CONADI",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "72/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Director del Centro Ecocéanos",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "71/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "A la Presidenta de la Fundación Libera",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "70/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Presidente de la Federación de Sindicatos Marítimos y Gente de Mar, FESIMAR",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "69/18/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "Al Presidente de la Directiva Nacional de la Federación Nacional de Sindicatos de Oficiales de Naves Mercantes y Especiales de Chile",
+            "referencia": "Acuerdo adoptado en sesión de 19 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "68/18/2026",
+            "sesión": "N° 15 12 ago. 2026",
+            "destino": "Al Subsecretario de Pesca y Acuicultura",
+            "referencia": "Acuerdo adoptado en sesión de 12 de agosto 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -3364,6 +5042,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4910",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "119/19/2026",
+            "sesión": "N° 19 01 sep. 2026",
+            "destino": "AL PRESIDENTE DE LA CAMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "RINDA HOMENAJE FUTBOLISTA CARLA GUERRERO",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "118/19/2026",
+            "sesión": "N° 19 01 sep. 2026",
+            "destino": "AL DIRECTOR NACIONAL DEL TRABAJO",
+            "referencia": "FISCALIZACIONES CONDICIONES DE SEGURIDAD Y SALUD LABORAL FUTBOL",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "117/19/2026",
+            "sesión": "N° 19 01 sep. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PUBLICA",
+            "referencia": "MEDIDAS Y PROTOCOLOS PARA PROTEGER A LOS TRABAJADORES ESPECTACULOS DE FUTBOL",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "116/19/2026",
+            "sesión": "N° 19 01 sep. 2026",
+            "destino": "AL PRESIDENTE DE LA FEDERACION DE VELA DE CHILE",
+            "referencia": "DEPORTISTA DE VELA DE 10 AÑOS",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "115/19/2026",
+            "sesión": "N° 19 01 sep. 2026",
+            "destino": "AL PRESIDENTE DEL COMITE NACIONAL DE ARBITRAJE DEPORTIVO (CNAD)",
+            "referencia": "DEPORTISTA DE VELA DE 10 AÑOS",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "114/19/2026",
+            "sesión": "N° 19 01 sep. 2026",
+            "destino": "AL DIRECTOR NACIONAL (S) DEL INSTITUTO NACIONAL DEL DEPORTE",
+            "referencia": "DEPORTISTA DE VELA DE 10 AÑOS",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "113/19/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "AL PRESIDENTE DE LA FEDERACION CHILENA DE ESGRIMA",
+            "referencia": "irregularidades federacion",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "112/19/2026",
+            "sesión": "N° 18 18 ago. 2026",
+            "destino": "AL DIRECTOR NACIONAL (S) DEL INSTITUTO NACIONAL DEL DEPORTE",
+            "referencia": "PLAZO PARA NOMBRAR EL CARGO DE DIRECTOR NACIONAL IND",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3459,6 +5230,99 @@
             {
               "text": "2017",
               "value": "2017"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4904",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "113/20/2026",
+            "sesión": "N° 16 31 ago. 2026",
+            "destino": "Al Ministro del Interior",
+            "referencia": "A propósito de lo solicitado por el alcalde de la Municipalidad de Camarones, señor Cristián Zavala Soto, mediante Oficio Ordinario N° 519/2026, oficiar al Ministro del Interior, a fin de que, por su intermedio, se haga presente a S.E. el Presidente de la República la solicitud de establecer, mediante decreto supremo, el día 9 de mayo de cada año como el “Día Nacional de la Ganadería Camélida”. Lo anterior, teniendo especialmente en consideración la Resolución N° 1636, de 4 de marzo de 2026, de la Cámara de Diputados, mediante la cual la Corporación solicitó a S.E. el Presidente de la República adoptar precisamente dicha medida.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "112/20/2026",
+            "sesión": "N° 16 31 ago. 2026",
+            "destino": "Al Secretario Regional Ministerial de Obras Públicas de la Región de Los Lagos",
+            "referencia": "Oficiar a la Secretaría Regional Ministerial de Obras Públicas de Los Lagos y a la Dirección Regional de Vialidad de Los Lagos, a fin de que informen acerca del estado de conservación de la Ruta 5 Sur en la provincia de Chiloé. En particular, solicitar un catastro actualizado de los baches y puntos críticos existentes, con indicación de su ubicación y tramo; la identificación del organismo, empresa contratista o concesionario responsable de su conservación; la planificación de las obras de reparación y mantención, señalando prioridades y fechas estimadas de ejecución; y las medidas inmediatas previstas respecto de aquellos sectores que puedan representar un riesgo para la seguridad vial.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "111/20/2026",
+            "sesión": "N° 16 31 ago. 2026",
+            "destino": "Al Subsecretario de Desarrollo Regional y Administrativo",
+            "referencia": "Oficiar a la Subsecretaría de Desarrollo Regional y Administrativo, a fin de que evalúe la posibilidad de otorgar una prórroga extraordinaria para la presentación de proyectos al Programa de Mejoramiento Urbano y Equipamiento Comunal, modalidad de Inversión Regional de Asignación Local (PMU-IRAL), correspondientes a las municipalidades de San Pablo, Río Negro y Fresia, de la Región de Los Lagos, que no alcanzaron a ingresarlos dentro del plazo establecido. Asimismo, solicitar que informe acerca de los criterios aplicados para determinar el plazo de ingreso de dichas iniciativas y las razones por las cuales la prórroga otorgada habría beneficiado únicamente a los proyectos que ya se encontraban incorporados en la plataforma durante el mes de julio, considerando especialmente la situación de comunas que recientemente se han visto afectadas por emergencias e inundaciones.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "110/20/2026",
+            "sesión": "N° 16 31 ago. 2026",
+            "destino": "Al Delegado Presidencial Provincial de Parinacota",
+            "referencia": "Oficiar a la Delegación Presidencial Provincial de Parinacota, a fin de que informe acerca de la factibilidad de establecer una restricción horaria temporal al funcionamiento del Complejo Fronterizo Chungará, atendida la ocurrencia de accidentes de tránsito protagonizados por vehículos de transporte de carga internacional, especialmente durante períodos de condiciones climáticas adversas. En particular, solicitar que se informe sobre: i. los antecedentes técnicos que permitan evaluar dicha medida, indicando sus principales ventajas, desventajas y eventuales efectos sobre el funcionamiento del complejo fronterizo; ii. la dotación de funcionarios chilenos y bolivianos destinada a la atención del paso fronterizo, particularmente durante el horario nocturno; iii. el flujo vehicular registrado en el complejo, desagregado por franjas horarias, con especial referencia al tránsito nocturno, y iv. los antecedentes disponibles acerca de los accidentes de tránsito registrados en el sector durante el último año, sus horarios de ocurrencia y sus principales efectos sobre la conectividad, seguridad y recursos naturales del territorio.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "109/20/2026",
+            "sesión": "N° 15 17 ago. 2026",
+            "destino": "Al Alcalde de la comuna de Arica",
+            "referencia": "Oficiar a las municipalidades de las regiones afectadas por el reciente sistema frontal, a fin de que informen acerca de los recursos presupuestarios destinados a la prevención, mitigación y atención de emergencias; la forma en que dichos recursos han sido asignados y priorizados; las medidas preventivas adoptadas con anterioridad al evento meteorológico; y los principales requerimientos formulados para enfrentar sus efectos y fortalecer la preparación frente a futuras emergencias.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "108/20/2026",
+            "sesión": "N° 15 17 ago. 2026",
+            "destino": "Al Gobernador Regional de Arica y Parinacota",
+            "referencia": "Oficiar a los gobiernos regionales de las regiones afectadas por el reciente sistema frontal, a fin de que informen acerca de los recursos presupuestarios destinados a la prevención, mitigación y atención de emergencias; la forma en que dichos recursos han sido asignados y priorizados; las medidas preventivas adoptadas con anterioridad al evento meteorológico; y los principales requerimientos formulados para enfrentar sus efectos y fortalecer la preparación frente a futuras emergencias.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "107/20/2026",
+            "sesión": "N° 15 17 ago. 2026",
+            "destino": "Al Ministro de Obras Públicas",
+            "referencia": "Oficiar al Ministerio de Obras Públicas, a fin de que informe acerca de las filtraciones y goteras registradas en el Aeropuerto Chacalluta de Arica con ocasión de las recientes precipitaciones.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "106/20/2026",
+            "sesión": "N° 15 17 ago. 2026",
+            "destino": "Al Subsecretario de Transportes",
+            "referencia": "Oficiar a la Subsecretaría de Transportes y a la Secretaría Regional Ministerial de Transportes y Telecomunicaciones de Arica y Parinacota, a fin de que informen acerca del proceso de licitación relativo al servicio de taxis internacionales del corredor Arica-Tacna.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
             }
           ]
         },
@@ -3653,6 +5517,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4903",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "92/21/2026",
+            "sesión": "N° 34 31 ago. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
+            "referencia": "Solicita información ACOT.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "91/21/2026",
+            "sesión": "N° 32 19 ago. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Solicita el acuerdo de la sala para que sea remitido el proyecto de ley, boletín N°18458-07.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "90/21/2026",
+            "sesión": "N° 32 19 ago. 2026",
+            "destino": "AL DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
+            "referencia": "Solicita informe de legislación y experiencia comparada,",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "89/21/2026",
+            "sesión": "N° 32 19 ago. 2026",
+            "destino": "AL MINISTRO DE TRANSPORTES Y TELECOMUNICACIONES",
+            "referencia": "Solicita informe acerca de los mecanismos técnicos disponibles para bloquear sitios web o plataformas digitales.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "88/21/2026",
+            "sesión": "N° 32 19 ago. 2026",
+            "destino": "AL DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
+            "referencia": "Solicita informe",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "87/21/2026",
+            "sesión": "N° 31 17 ago. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
+            "referencia": "Solicita Oficiar a las unidades especializadas de Carabineros de Chile y de la Policía de Investigaciones de Chile,",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "86/21/2026",
+            "sesión": "N° 30 10 ago. 2026",
+            "destino": "AL MINISTRO DE JUSTICIA Y DERECHOS HUMANOS",
+            "referencia": "Solicita informe, detalladamente, acerca del régimen penitenciario aplicable a los internos sometidos a condiciones de alta seguridad.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "85/21/2026",
+            "sesión": "N° 30 10 ago. 2026",
+            "destino": "AL MINISTRO DE EONOMÍA , FOMENTO Y TURISMO",
+            "referencia": "Solicita informe, específicamente, el número, sexo y rango etario de las víctimas de robo con violación, previsto y sancionado en el artículo 433 del Código Penal,",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3809,6 +5766,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4905",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "113/22/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "A la Ministra de Educación",
+            "referencia": "Remitir copia del acta con las exposiciones del señor Héctor Morales Romo, cultor; del señor Roberto Sáez Soto, Director Ejecutivo de la Academia Tierra y Patria, y de la señora Catherine Aillon Páez, Directora de dicha organización, relativas a la normativa vigente en materia de protección, promoción, difusión y transmisión de la cueca.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "112/22/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio.",
+            "referencia": "Remitir copia del acta con las exposiciones del señor Héctor Morales Romo, cultor; del señor Roberto Sáez Soto, Director Ejecutivo de la Academia Tierra y Patria, y de la señora Catherine Aillon Páez, Directora de dicha organización, relativas a la normativa vigente en materia de protección, promoción, difusión y transmisión de la cueca.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "111/22/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "Al Ministro del Deporte",
+            "referencia": "Remitir copia del acta con las exposiciones del señor Héctor Morales Romo, cultor; del señor Roberto Sáez Soto, Director Ejecutivo de la Academia Tierra y Patria, y de la señora Catherine Aillon Páez, Directora de dicha organización, relativas a la normativa vigente en materia de protección, promoción, difusión y transmisión de la cueca.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "110/22/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "Al Subsecretario del Patrimonio Cultural",
+            "referencia": "Solicita al Subsecretario del Patrimonio Cultural, que junto al Director Nacional del Servicio Nacional del Patrimonio Cultural, visiten la Región de Los Lagos, con el objeto que detalla.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "109/22/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "Al Presidente del Directorio Televisión Nacional de Chile",
+            "referencia": "Oficiar al Presidente del Directorio de Televisión Nacional de Chile para solicitarle impulse una campaña nacional de prevención del suicidio y promoción de la salud mental.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "108/22/2026",
+            "sesión": "N° 18 17 ago. 2026",
+            "destino": "A la Presidenta del Consejo para la Transparencia.",
+            "referencia": "Reitera oficio N°76, de 14 de julio de 2026, dirigido a la Presidenta del Consejo para la Transparencia.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "107/22/2026",
+            "sesión": "N° 18 17 ago. 2026",
+            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio.",
+            "referencia": "Reitera oficio N° 73, de 14 de julio de 2026, dirigido al Ministro de las Culturas, las Artes y el Patrimonio.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "106/22/2026",
+            "sesión": "N° 18 17 ago. 2026",
+            "destino": "Al Director de Presupuestos.",
+            "referencia": "Reitera oficio N°72, de 14 de julio de 2026, dirigido al Director de Presupuestos.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3937,6 +5987,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4907",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "20/23/2026",
+            "sesión": "N° 24 17 ago. 2026",
+            "destino": "Director Nacional de la Junta Nacional de Auxilio Escolar y Beca (JUNAEB)",
+            "referencia": "En sesión celebrada el día de ayer, acordó oficiar a esa entidad, para que informe las medidas previstas para mantener la oportuna distribución de alimentos durante el período de suspensión de actividades educacionales en la Región de Tarapacá, derivada de las intensas lluvias que afectan actualmente a la zona.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "19/23/2026",
+            "sesión": "N° 24 17 ago. 2026",
+            "destino": "Ministerio de Desarrollo Social y Familia",
+            "referencia": "En sesión celebrada el día de ayer, acordó oficiar a esa entidad, para que informe las medidas previstas para mantener la oportuna distribución de alimentos durante el período de suspensión de actividades educacionales en la Región de Tarapacá, derivada de las intensas lluvias que afectan actualmente a la zona.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "18/23/2026",
+            "sesión": "N° 19 20 jul. 2026",
+            "destino": "Ministro de Hacienda",
+            "referencia": "La comisión acordó oficiar a US., con el objeto de informar por escrito su parecer respecto de las siguientes propuestas formuladas durante la discusión del proyecto de ley que establece un beneficio de compensación por la compra de pañales y medicamentos, correspondiente al boletín N° 18.255-31: - La fijación de montos mínimos garantizados para el beneficio y el aumento gradual de su límite fiscal anual. - La ampliación gradual de la cobertura del beneficio por sobre el 80% más vulnerable del Registro Social de Hogares. - La ampliación de los titulares del beneficio, mediante la incorporación de personas con discapacidad o dependencia menores de 65 años, la extensión de la cobertura de pañales a niños, niñas y adolescentes con condiciones de neurodesarrollo o patologías asociadas a la falta de control de esfínter, y la implementación de medidas complementarias de apoyo a personas cuidadoras. - El establecimiento de mecanismos de apoyo municipal para la tramitación del beneficio en comunas rurales o localidades aisladas. - El perfeccionamiento de los mecanismos y plazos de pago del beneficio..",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "17/23/2026",
+            "sesión": "N° 19 20 jul. 2026",
+            "destino": "Ministerio del Trabajo y Previsión Social",
+            "referencia": "La comisión acordó oficiar a US., con el objeto de que le informe por escrito, su parecer respecto de las siguientes propuestas formuladas durante la discusión del proyecto de ley que Establece un beneficio de compensación por la compra de pañales y medicamentos, correspondiente al boletín N° 18.255-31: - La fijación de montos mínimos garantizados para el beneficio y el aumento gradual de su límite fiscal anual. - La ampliación gradual de la cobertura del beneficio por sobre el 80% más vulnerable del Registro Social de Hogares. - La ampliación de los titulares del beneficio, mediante la incorporación de personas menores de 65 años con discapacidad o dependencia, la extensión de la cobertura de pañales a niños, niñas y adolescentes con condiciones de neurodesarrollo o patologías asociadas a la falta de control de esfínter, y la implementación de medidas complementarias de apoyo a personas cuidadoras. - El establecimiento de mecanismos de apoyo municipal para la tramitación del beneficio en comunas rurales o localidades aisladas. - El perfeccionamiento de los mecanismos y plazos de pago del beneficio.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "16/23/2026",
+            "sesión": "N° 7 11 may. 2026",
+            "destino": "Ministra de Desarrollo Social y Familia",
+            "referencia": "Oficio N° 16/23/2026 - Ministra de Desarrollo Social y Familia",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "15/23/2026",
+            "sesión": "N° 7 11 may. 2026",
+            "destino": "Subsecretario de Desarrollo Regional y Administrativo",
+            "referencia": "Oficio N° 15/23/2026 - Subsecretario de Desarrollo Regional y Administrativo",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "14/23/2026",
+            "sesión": "N° 7 11 may. 2026",
+            "destino": "Ministra de Salud",
+            "referencia": "Oficio N° 14/23/2026 - Ministra de Salud",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "13/23/2026",
+            "sesión": "N° 7 11 may. 2026",
+            "destino": "Ministra de Desarrollo Social y Familia",
+            "referencia": "Oficio N° 13/23/2026 - Ministra de Desarrollo Social y Familia",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -4048,6 +6191,99 @@
             "materia": "Modifica el Código de Aguas para fortalecer la protección de nacientes, vertientes y cabeceras de cuenca",
             "estado": "En tramitación",
             "boletín": "18402-33"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4909",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "148/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL MINISTRO DE OBRAS PÚBLICAS.",
+            "referencia": "Solicita informar sobre medición caudales de los ríos en Chile.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "147/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL DIRECTOR NACIONAL DE LA DIRECCIÓN GENERAL DE AGUAS",
+            "referencia": "Solicita informar sobre mediciones de caudales de ríos en Chile.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "146/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL DIRECTOR NACIONAL DE LA DIRECCIÓN DE OBRAS HIDRÁULICAS",
+            "referencia": "Solicita informar sobre medición de los caudales de los ríos en Chile.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "145/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL DIRECTOR NACIONAL DE LA DIRECCIÓN GENERAL DE AGUAS",
+            "referencia": "Solicita informar medidas de mitigación comunidades del Valle del Pupío y Caimanes, con riesgos del tranque El Mauro de la Minera Los Pelambres.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "144/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL DIRECTOR NACIONAL DEL SERVICIO DE GEOLOGÍA Y MINERÍA",
+            "referencia": "Solicita informar acciones y medidas de mitigación para comunidades del Valle del Pupío y Caimanes.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "143/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL MINISTRO DE OBRAS PÚBLICAS",
+            "referencia": "Solicita informar sobre los problemas y daños ocasionados por la empresa Tranqura, comuna de Cunco, sector del lago Colico, Región de la Araucanía.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "142/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL MINISTRO DE OBRAS PÚBLICAS",
+            "referencia": "Solicita considerar camino de La Barda de Pucón, Región de la Araucanía, dentro de contratos globales de conservación vial año 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "141/24/2026",
+            "sesión": "N° 19 31 ago. 2026",
+            "destino": "- AL MINISTRO DE OBRAS PÚBLICAS",
+            "referencia": "Solicita informar sobre contratos globales de conservación vial y distribución de recursos, particularmente de la Región del Libertador General Bernardo O\"Higgins.",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -4207,6 +6443,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4912",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "387/25/2026",
+            "sesión": "N° 13 01 sep. 2026",
+            "destino": "Jefe del Departamento de Pesaje y Subdirector de Mantenimiento (S) de la Dirección de Vialidad del Ministerio de Obras Públicas.",
+            "referencia": "Solicita protocolo de coordinación suscrito entre SENAPRED y la Dirección de Vialidad, de fecha 5 de enero de 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "386/25/2026",
+            "sesión": "N° 13 01 sep. 2026",
+            "destino": "Directora del Centro de Investigación Interdisciplinaria en Riesgo, Resiliencia y Recuperación ante Desastres (Cigiden R+)",
+            "referencia": "Solicita visita de la Comisión de Emergencia, Desastres y Bomberos al centro recientemente inaugurado.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "385/25/2026",
+            "sesión": "N° 10 21 jul. 2026",
+            "destino": "A LA MUNICIPALIDAD DE SIERRA GORDA",
+            "referencia": "Solicita informar sobre acciones comunales de preparación y prevención ante el pronóstico de lluvias intensas en la macrozona norte.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "384/25/2026",
+            "sesión": "N° 10 21 jul. 2026",
+            "destino": "A LA MUNICIPALIDAD DE CAMIÑA",
+            "referencia": "Solicita informar sobre acciones comunales de preparación y prevención ante el pronóstico de lluvias intensas en la macrozona norte.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "383/25/2026",
+            "sesión": "N° 10 21 jul. 2026",
+            "destino": "A LA MUNICIPALIDAD DE TALTAL",
+            "referencia": "Solicita informar sobre acciones comunales de preparación y prevención ante el pronóstico de lluvias intensas en la macrozona norte.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "382/25/2026",
+            "sesión": "N° 10 21 jul. 2026",
+            "destino": "A LA MUNICIPALIDAD DE SAN PEDRO DE ATACAMA",
+            "referencia": "Solicita informar sobre acciones comunales de preparación y prevención ante el pronóstico de lluvias intensas en la macrozona norte.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "381/25/2026",
+            "sesión": "N° 10 21 jul. 2026",
+            "destino": "A LA MUNICIPALIDAD DE MARÍA ELENA",
+            "referencia": "Solicita informar sobre acciones comunales de preparación y prevención ante el pronóstico de lluvias intensas en la macrozona norte.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "380/25/2026",
+            "sesión": "N° 10 21 jul. 2026",
+            "destino": "A LA MUNICIPALIDAD DE PUTRE",
+            "referencia": "Solicita informar sobre acciones comunales de preparación y prevención ante el pronóstico de lluvias intensas en la macrozona norte.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -4285,67 +6614,94 @@
         }
       },
       "results": {
-        "status": "retrieved",
+        "status": "unavailable:ReadTimeout",
         "url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4913",
-        "rows": [
-          {
-            "date_context": "miércoles 2 septiembre 2026",
-            "horario": "15:08",
-            "sala": "Sala Manuel Bustos Huerta tercer nivel (Presencial)",
-            "citación": "Continuar la discusión general y votar la idea de legislar de los siguientes proyectos de ley, refundidos: 1) Moción de las diputadas Sara Concha Smith, Valentina Becerra Peña, Francesca Muñoz González, Paulina Muñoz Minte, Ximena Naranjo Pinto, Javiera Rodríguez Pascual, Marisela Santibáñez Novoa, Eileen Urqueta Rojas y Consuelo Veloso Ávila, y del diputado Eduardo Durán Salinas, que fortalece la protección de las víctimas de violencia intrafamiliar y previene su revictimización, correspondiente al boletín N°18236-18, en primer trámite constitucional y reglamentario. 2) Moción de las diputadas Valentina Becerra Peña, Paz Charpentier Rajcevich, Catalina Del Real Mihovilovic, Stephanie Jéldrez Ortiz, Claudia Mora Vega, Zandra Parisi Fernández, Claudia Reyes Larenas y Marisela Santibáñez Novoa, y de los diputados Felipe Camaño Cárdenas y Eduardo Durán Salinas, que modifica cuerpos legales que indica en materia de notificaciones de medidas cautelares dictadas en procesos de violencia intrafamiliar, correspondiente al boletín N°18414-18, en primer trámite constitucional y reglamentario. La Comisión escuchó a las representantes de la Red Chilena contra la Violencia hacia las Mujeres, doña Javiera Giacaman Ñancupán y doña Manuela Beltrán de la Fuente. La Comisión aprobó la idea de legislar los proyectos de ley refundidos boletines 18236-18 y 18414-18. Diputados Asistentes: Becerra Valentina; Concha Sara; Cucumides Carolina; Hassler Irací; Mora Claudia; Naranjo Ximena; Parra Andrea; Rodríguez Javiera Valentina; Schneider Emilia; Schonhaut Constanza Gabriela; Urqueta Eileen; Veloso Consuelo Reemplazos: El Diputado Araya Cristián fue reemplazado por la Diputada Santelices Macarena"
-          }
-        ],
-        "page_period": {
-          "selected_options": [
-            {
-              "text": "Septiembre",
-              "value": "09"
-            },
-            {
-              "text": "2026",
-              "value": "2026"
-            }
-          ]
-        },
-        "diagnostics": {
-          "top_level_tables_examined": 1,
-          "matching_tables": 1,
-          "nested_tables_skipped": 1,
-          "wide_rows_skipped": 0,
-          "duplicate_rows_skipped": 0
-        }
+        "rows": [],
+        "page_period": {},
+        "diagnostics": {}
       },
       "projects": {
-        "status": "retrieved",
+        "status": "unavailable:ReadTimeout",
         "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4913",
+        "rows": [],
+        "page_period": {},
+        "diagnostics": {}
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4913",
         "rows": [
           {
             "date_context": "",
-            "ingreso": "31 ago. 2026",
-            "materia": "Perfecciona las normas sobre medidas cautelares en los procedimientos de violencia intrafamiliar y de violencia contra las mujeres en razón de su género, y modifica las leyes que indica",
-            "estado": "En tramitación",
-            "boletín": "18621-34"
+            "número": "55/26/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "AL MINISTRO DE JUSTICIA Y DERECHOS HUMANOS",
+            "referencia": "BOLETIN 18236-18 Y 18414-18",
+            "documento": "ver",
+            "respuestas": "ver"
           },
           {
             "date_context": "",
-            "ingreso": "22 jun. 2026",
-            "materia": "Modifica cuerpos legales que indica en materia de notificaciones de medidas cautelares dictadas en procesos de violencia intrafamiliar",
-            "estado": "En tramitación",
-            "boletín": "18414-18"
+            "número": "54/26/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "A LA MINISTRA DE SALUD",
+            "referencia": "programas prevencion educacion sexual",
+            "documento": "ver",
+            "respuestas": "ver"
           },
           {
             "date_context": "",
-            "ingreso": "04 may. 2026",
-            "materia": "Fortalece la protección de las víctimas de violencia intrafamiliar y previene su revictimización",
-            "estado": "En tramitación",
-            "boletín": "18236-18"
+            "número": "53/26/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "A LA MINISTRA DE SALUD",
+            "referencia": "18419-11",
+            "documento": "ver",
+            "respuestas": "ver"
           },
           {
             "date_context": "",
-            "ingreso": "27 ene. 2026",
-            "materia": "Modifica la ley N° 18.695, orgánica constitucional de Municipalidades, para incorporar la perspectiva de género en los planes comunales de seguridad pública",
-            "estado": "En tramitación",
-            "boletín": "18089-34"
+            "número": "52/26/2026",
+            "sesión": "N° 16 19 ago. 2026",
+            "destino": "AL DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
+            "referencia": "18236-18 y 18414-18",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "51/26/2026",
+            "sesión": "N° 14 05 ago. 2026",
+            "destino": "A LA MINISTRA DE LA MUJER Y EQUIDAD DE GENERO",
+            "referencia": "reitera oficio 24.26.2026",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "50/26/2026",
+            "sesión": "N° 15 12 ago. 2026",
+            "destino": "A LA MINISTRA DE LA MUJER Y EQUIDAD DE GENERO",
+            "referencia": "REITERA OFICIO 13.26.2026",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "49/26/2026",
+            "sesión": "N° 15 12 ago. 2026",
+            "destino": "A LA MINISTRA DE LA MUJER Y EQUIDAD DE GENERO",
+            "referencia": "reitera oficio 16.26.2026",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "48/26/2026",
+            "sesión": "N° 15 12 ago. 2026",
+            "destino": "A LA MINISTRA DE LA MUJER Y EQUIDAD DE GENERO",
+            "referencia": "reitera oficio 25.26.2026",
+            "documento": "ver",
+            "respuestas": "ver"
           }
         ],
         "page_period": {
@@ -4533,6 +6889,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4914",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "479/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Superintendente de Servicios Sanitarios,",
+            "referencia": "A solicitud del diputado Nahuelquín, la Comisión acordó requerir a la Superintendencia de Servicios Sanitarios, para que informe acerca de las medidas de emergencia adoptadas para asegurar el abastecimiento de agua potable de las aproximadamente cuarenta familias del sector de Pelluco Alto de Puerto Montt, especialmente de las personas mayores y personas con discapacidad, y las alternativas consideradas para otorgar una solución definitiva al problema de abastecimiento de agua potable que afecta a dicho sector.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "478/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Ministro de Obras Públicas",
+            "referencia": "A solicitud del diputado Nahuelquín, la Comisión acordó requerir a la Subdirección de Servicios Sanitarios Rurales de la Región de Los Lagos y a la Superintendencia de Servicios Sanitarios, para que informen acerca de las medidas de emergencia adoptadas para asegurar el abastecimiento de agua potable de las aproximadamente cuarenta familias del sector de Pelluco Alto de Puerto Montt, especialmente de las personas mayores y personas con discapacidad, y las alternativas consideradas para otorgar una solución definitiva al problema de abastecimiento de agua potable que afecta a dicho sector.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "477/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Ministro de Obras Públicas",
+            "referencia": "A solicitud del diputado Nahuelquín, la Comisión acordó requerir a la Dirección de Obras Hidráulicas del Ministerio de Obras Públicas, para que informen acerca de las medidas de emergencia adoptadas para asegurar el abastecimiento de agua potable de las aproximadamente cuarenta familias del sector de Pelluco Alto, de Puerto Montt, especialmente de las personas mayores y personas con discapacidad, y las alternativas consideradas para otorgar una solución definitiva al problema de abastecimiento de agua potable que afecta a dicho sector.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "476/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "ALCALDE DE LA MUNICIPALIDAD DE PUERTO MONTT",
+            "referencia": "A solicitud del diputado Nahuelquín, la Comisión acordó requerir a la Municipalidad de Puerto Montt, para que informen acerca de las medidas de emergencia adoptadas para asegurar el abastecimiento de agua potable de las aproximadamente cuarenta familias del sector de Pelluco Alto, especialmente de las personas mayores y personas con discapacidad, y las alternativas consideradas para otorgar una solución definitiva al problema de abastecimiento de agua potable que afecta a dicho sector. Asimismo, informe sobre las coordinaciones realizadas para reponer el abastecimiento gratuito de agua mediante camiones aljibe, servicio que, según lo señalado por la comunidad, habría sido suspendido.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "475/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Ministra de Salud",
+            "referencia": "A solicitud de la diputada Gazmuri, la Comisión acordó reiterar los oficios acordados en la sesión de 12 de mayo de 2026, relativos a la implementación de la ley N° 21.168, que garantiza la atención preferente y oportuna de las personas mayores y de las personas con discapacidad, particularmente respecto de las instituciones y municipalidades que aún no hubieren remitido respuesta y el oficios N° 21/27/2026 a MINSAL",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "474/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Directora Servicio de Salud Metropolitano Sur Oriente",
+            "referencia": "A solicitud de la diputada Gazmuri, la Comisión acordó requerir al Servicio de Salud Metropolitano Sur Oriente y a la Corporación Municipal de Salud de Puente Alto, para que informen acerca del estado de la accesibilidad comunicacional del CESFAM Laurita Vicuña y de los dispositivos secundarios de la comuna, y sobre el plan de contingencia destinado a proveer intérpretes de lengua de señas chilena y permitir la reanudación del tratamiento de salud mental del adolescente individualizado en la solicitud.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "473/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Ministra de Desarrollo Social y Familia",
+            "referencia": "A solicitud de la diputada Gazmuri, la Comisión acordó requerir al Ministerio de Desarrollo Social y Familia y al Servicio Nacional de la Discapacidad, para que remitan el catastro y la evaluación de los convenios intersectoriales sobre accesibilidad comunicacional en salud, así como el detalle de las acciones fiscalizadoras adoptadas ante denuncias de barreras lingüísticas.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "472/27/2026",
+            "sesión": "N° 15 18 ago. 2026",
+            "destino": "Subsecretario de Redes Asistenciales",
+            "referencia": "A solicitud de la diputada Gazmuri, la Comisión acordó requerir a la Subsecretaría de Redes Asistenciales para que informe: - La cobertura de intérpretes de lengua de señas chilena en la atención primaria de salud, desagregada por región. - Las instrucciones y orientaciones técnicas emitidas para implementar la ley N° 21.303. - La existencia, avance y financiamiento de una estrategia nacional de acceso a la atención de salud mental. - El diagnóstico de las brechas de accesibilidad comunicacional existentes. - Los códigos arancelarios y las asignaciones presupuestarias destinadas a prestaciones que requieran mediación lingüística.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -4648,6 +7097,54 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4911",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "6//2026",
+            "sesión": "N° 4 13 jul. 2026",
+            "destino": "Director de la Biblioteca del Congreso Nacional",
+            "referencia": "Director BCN Informe",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "5//2026",
+            "sesión": "N° 1 11 may. 2026",
+            "destino": "",
+            "referencia": "Oficio de la Comisión, por el cual comunica, de conformidad con lo dispuesto en el artículo 242 del Reglamento de la Corporación, que procedió a elegir como Presidente al diputado señor JAVIER OLIVARES AVENDAÑO",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "44/0/2026",
+            "sesión": "N° 97 26 ene. 2026",
+            "destino": "Subsecretario del Interior.",
+            "referencia": "Oficio N° 44/0/2026 al Subsecretario del Interior. Víctor Ramos Muñoz (decreto N°824, 300 millones)",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -4729,6 +7226,21 @@
       "projects": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4882",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4882",
         "rows": [],
         "page_period": {
           "selected_options": []
@@ -4832,6 +7344,99 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4883",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "12/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA, SEÑOR LUIS CORDERO VEGA.",
+            "referencia": "Solicita información",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "11/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL FISCAL NACIONAL DEL MINISTERIO PÚBLICO, SEÑOR ÁNGEL VALENCIA VÁSQUEZ.",
+            "referencia": "Solicita información",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "10/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA, SEÑOR LUIS CORDERO VEGA.",
+            "referencia": "Solicita información",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "9/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA, SEÑOR LUIS CORDERO VEGA.",
+            "referencia": "Consejo Asesor de Seguridad",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "8/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA, SEÑOR LUIS CORDERO VEGA.",
+            "referencia": "Solicita información sobre el Proyecto de Persecución del Tráfico Portuario",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "7/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL FISCAL NACIONAL DEL MINISTERIO PÚBLICO, SEÑOR ÁNGEL VALENCIA VÁSQUEZ.",
+            "referencia": "Solicita información sobre el Proyecto de Persecución del Tráfico Portuario",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "6/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL MINISTRO DE RELACIONES EXTERIORES, SEÑOR ALBERTO VAN KLAVEREN STORK.",
+            "referencia": "Solicita informe",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "5/135/2025",
+            "sesión": "N° 6 22 abr. 2025",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA, SEÑOR LUIS CORDERO VEGA",
+            "referencia": "Estrategia Seguridad Pública",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2025",
+              "value": "2025"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -4920,6 +7525,90 @@
         "diagnostics": {
           "top_level_tables_examined": 1,
           "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4908",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "5//2026",
+            "sesión": "N° 2 03 jun. 2026",
+            "destino": "Secretario General de la Cámara de Diputadas y Diputados",
+            "referencia": "Oficio N° 5//2026 - Secretario General de la Cámara de Diputadas y Diputados",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "4//2026",
+            "sesión": "N° 2 03 jun. 2026",
+            "destino": "Presidente Cámara de Diputados",
+            "referencia": "Oficio N° 4//2026 - Presidente Cámara de Diputados",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "3//2026",
+            "sesión": "N° 2 03 jun. 2026",
+            "destino": "Coordinador de Auditoría Interna",
+            "referencia": "Oficio N° 3//2026 - Coordinador de Auditoría Interna",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "2//2026",
+            "sesión": "N° 1 13 may. 2026",
+            "destino": "",
+            "referencia": "Oficio de la Comisión, por el cual comunica, de conformidad con lo dispuesto en el artículo 242 del Reglamento de la Corporación, que procedió a elegir como Presidente al diputado señor FERNANDO ZAMORANO PERALTA",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "1//2026",
+            "sesión": "N° 1 13 may. 2026",
+            "destino": "Presidente de la Cámara de Diputados",
+            "referencia": "Oficio N° 1//2026 - Presidente de la Cámara de Diputados",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "24/0/2026",
+            "sesión": "N° 34 04 mar. 2026",
+            "destino": "Coordinador de la Unidad de Auditoría Interna",
+            "referencia": "Oficio N°24, accede a solicitud de UAI para que los informes de auditoría se remitan al Subsecretario Administrativo y al Fiscal.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "23/0/2026",
+            "sesión": "N° 33 21 ene. 2026",
+            "destino": "Jaime Osorio Fredes",
+            "referencia": "Oficio N° 23/0/2026 a Jaime Osorio Fredes, aprobación Plan Anual de Auditoría Interna correspondiente al año 2026.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
@@ -5067,6 +7756,81 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4906",
+        "rows": [
+          {
+            "date_context": "",
+            "número": "2//2026",
+            "sesión": "N° 1 09 jun. 2026",
+            "destino": "AL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "referencia": "Oficio N° 2//2026 - AL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "1//2026",
+            "sesión": "N° 1 09 jun. 2026",
+            "destino": "",
+            "referencia": "Oficio de la Comisión, por el cual comunica, de conformidad con lo dispuesto en el artículo 242 del Reglamento de la Corporación, que procedió a elegir como Presidente al diputado señor FERNANDO UGARTE TEJEDA",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "76/0/2026",
+            "sesión": "N° 125 03 mar. 2026",
+            "destino": "Cámara de Diputados",
+            "referencia": "RESOLUCIÓN DE LA COMISIÓN DE ÉTICA Y TRANSPARENCIA DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS RESPECTO DEL PROCEDIMIENTO INICIADO EN CONTRA DEL DIPUTADO RENÉ ALINCO BUSTOS, POR SU NEGATIVA INJUSTIFICADA A LA REALIZACIÓN DEL CONTROL DE DROGAS PREVISTO EN EL REGLAMENTO SOBRE CONTROL DE CONSUMO DE DROGAS EN DIPUTADAS Y DIPUTADOS.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "75/0/2026",
+            "sesión": "N° 125 03 mar. 2026",
+            "destino": "Cámara de Diputados",
+            "referencia": "RESOLUCIÓN DE LA COMISIÓN DE ÉTICA Y TRANSPARENCIA DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS RESPECTO DEL PROCEDIMIENTO INICIADO EN CONTRA DEL DIPUTADO AIME SÁEZ QUIROZ.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "74/0/2026",
+            "sesión": "N° 125 03 mar. 2026",
+            "destino": "Cámara de Diputados",
+            "referencia": "RESOLUCIÓN DE LA COMISIÓN DE ÉTICA Y TRANSPARENCIA DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS RECAÍDA EN EL REQUERIMIENTO PRESENTADO POR EL DIPUTADO HERNÁN PALMA PÉREZ EN CONTRA DE LA DIPUTADA MARISELA SANTIBÁÑEZ NOVOA, POR EVENTUALES INFRACCIONES A LOS ESPECIALES DEBERES PARLAMENTARIOS.",
+            "documento": "ver",
+            "respuestas": "ver"
+          },
+          {
+            "date_context": "",
+            "número": "73/0/2026",
+            "sesión": "N° 125 03 mar. 2026",
+            "destino": "Cámara de Diputados",
+            "referencia": "RESOLUCIÓN DE LA COMISIÓN DE ÉTICA Y TRANSPARENCIA DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS RESPECTO DEL REQUERIMIENTO, INICIADO DE OFICIO, EN CONTRA DEL DIPUTADO HERNÁN PALMA PÉREZ, POR LOS HECHOS ACAECIDOS DURANTE LA SESIÓN DE SALA N° 106ª, ORDINARIA, DE 6 DE ENERO DE 2026, EN LA CUAL HABRÍA INSULTADO A LA DIPUTADA MARISELA SANTIBÁÑEZ.",
+            "documento": "ver",
+            "respuestas": "ver"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -5193,6 +7957,21 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4901",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -5307,8 +8086,23 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "offices": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/oficios_enviados.aspx?prmID=4915",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     }
   ],
-  "scope_note": "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados; Proyectos de ley reproduce iniciativas que la vista institucional asocia a la comisión para el período seleccionado por defecto. Las cuatro capas se mantienen separadas. Que un proyecto aparezca en la tabla de una comisión no significa que esté aprobado, que la comisión sea su única instancia competente ni que la lista reconstruya todo su historial legislativo. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
+  "scope_note": "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados; Proyectos de ley reproduce iniciativas asociadas a la comisión; Oficios enviados registra comunicaciones institucionales emitidas por la comisión cuando la página las devuelve. Las cinco capas se mantienen separadas. Un oficio no se interpreta por sí solo como fiscalización efectiva, influencia, respuesta obtenida ni éxito. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
 }
