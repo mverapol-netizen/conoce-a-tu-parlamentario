@@ -7,11 +7,7 @@
       id: 'proyecto', mark: '01', title: 'Quiero opinar sobre un proyecto de ley', hint: 'Aportar una posición, antecedente o experiencia sobre una iniciativa en trámite.', status: 'yes', statusLabel: 'Sí: el Congreso es relevante', heading: 'Busca primero dónde está el proyecto',
       text: 'Este es un asunto directamente parlamentario. La forma más útil de participar depende de la etapa: puede convenir contactar representantes, identificar la comisión que estudia el proyecto, revisar si existe una audiencia pública o utilizar una consulta habilitada en Congreso Virtual.',
       steps: ['Identifica el número de boletín o el nombre exacto del proyecto.', 'Revisa en qué Cámara y etapa se encuentra.', 'Ubica la comisión competente y sus próximas sesiones.', 'Si existe audiencia pública o consulta abierta, revisa sus reglas antes de participar.', 'Si escribes a un parlamentario, identifica el proyecto y formula una solicitud concreta.'],
-      links: [
-        ['Cámara · proyectos de ley', 'https://www.camara.cl/legislacion/ProyectosDeLey/proyectos_ley.aspx'],
-        ['Senado · proyectos y ley fácil', 'https://www.senado.cl/actividad-legislativa/proyectos-de-ley'],
-        ['Congreso Virtual', 'https://congresovirtual.cl/']
-      ]
+      links: [['Cámara · proyectos de ley', 'https://www.camara.cl/legislacion/ProyectosDeLey/proyectos_ley.aspx'], ['Senado · proyectos de ley', 'https://www.senado.cl/actividad-legislativa/proyectos-de-ley'], ['Congreso Virtual', 'https://congresovirtual.cl/']]
     },
     {
       id: 'seguir', mark: '02', title: 'Quiero saber qué pasó con una ley o votación', hint: 'Seguir el trámite, revisar una etapa o saber cómo votaron representantes.', status: 'yes', statusLabel: 'Sí: información parlamentaria', heading: 'La pregunta se puede reconstruir con fuentes del Congreso',
@@ -35,7 +31,7 @@
       id: 'judicial', mark: '05', title: 'Tengo una causa judicial o necesito que alguien resuelva un conflicto', hint: 'Juicios, decisiones de tribunales, conflictos civiles o una resolución judicial pendiente.', status: 'no', statusLabel: 'No: el Congreso no decide causas', heading: 'Un parlamentario no puede resolver ni dirigir una causa judicial',
       text: 'La función legislativa no autoriza a diputadas o senadores a decidir controversias sometidas a tribunales. Si necesitas orientación jurídica o representación, debes acudir a los canales judiciales o de asistencia legal que correspondan.',
       steps: ['No pidas a un parlamentario que ordene a un juez fallar de determinada manera.', 'Busca orientación jurídica profesional o los servicios públicos de asistencia que correspondan a tu situación.', 'El Congreso puede cambiar reglas generales mediante leyes, pero no reemplaza la decisión del tribunal en un caso concreto.'],
-      links: [['Corporación de Asistencia Judicial', 'https://www.cajmetro.cl/'], ['Poder Judicial', 'https://www.pjud.cl/']]
+      links: [['ChileAtiende · asesoría jurídica gratuita', 'https://www.chileatiende.gob.cl/fichas/17940-asistencia-juridica-profesional-y-gratuita'], ['Poder Judicial', 'https://www.pjud.cl/']]
     },
     {
       id: 'delito', mark: '06', title: 'Quiero denunciar un posible delito o una emergencia', hint: 'Hechos que podrían requerir investigación penal o respuesta inmediata.', status: 'no', statusLabel: 'No: usa el canal competente', heading: 'El Congreso no recibe denuncias penales como órgano investigador',
@@ -57,9 +53,7 @@
     }
   ];
 
-  const escapeHtml = (value) => String(value ?? '')
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+  const escapeHtml = (value) => String(value ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
 
   const renderOptions = () => {
     root.innerHTML = `<div class="civic-options">${scenarios.map((item) => `<button class="civic-option" type="button" data-civic-id="${escapeHtml(item.id)}"><span class="civic-option-mark">${escapeHtml(item.mark)}</span><span><strong>${escapeHtml(item.title)}</strong><small>${escapeHtml(item.hint)}</small></span></button>`).join('')}</div><div id="civic-result" class="civic-result" hidden aria-live="polite"></div>`;
