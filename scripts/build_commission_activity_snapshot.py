@@ -90,6 +90,16 @@ def row_to_dict(cells: list[str], headers: list[str], date_context: str) -> dict
     return row
 
 
+def header_matches(layer: str, header_text: str) -> bool:
+    if layer == "citations":
+        return "citaci" in header_text or "invit" in header_text
+    if layer == "results":
+        return "resultado" in header_text or "materia_tratada" in header_text or "acuerdos" in header_text
+    if layer == "sessions":
+        return "inicio" in header_text and "estado" in header_text and ("dia" in header_text or "día" in header_text or "termino" in header_text or "término" in header_text)
+    return False
+
+
 def parse_tables(soup: BeautifulSoup, layer: str) -> tuple[list[dict], dict]:
     rows: list[dict] = []
     seen_signatures: set[str] = set()
@@ -116,9 +126,7 @@ def parse_tables(soup: BeautifulSoup, layer: str) -> tuple[list[dict], dict]:
             cells = direct_cells(tr)
             candidate = [normalize_header(cell.get_text(" ", strip=True)) for cell in cells]
             header_text = " ".join(candidate)
-            citation_match = "citaci" in header_text or "invit" in header_text
-            result_match = "resultado" in header_text or "materia_tratada" in header_text or "acuerdos" in header_text
-            if (layer == "citations" and citation_match) or (layer == "results" and result_match):
+            if header_matches(layer, header_text):
                 header_row_index = idx
                 headers = candidate
                 break
@@ -126,17 +134,17 @@ def parse_tables(soup: BeautifulSoup, layer: str) -> tuple[list[dict], dict]:
             continue
 
         diagnostics["matching_tables"] += 1
-        date_context = nearest_date(table)
+        date_context = "" if layer == "sessions" else nearest_date(table)
         for tr in tr_list[header_row_index + 1:]:
             cell_tags = direct_cells(tr, ("td",))
             cells = [clean(cell.get_text(" ", strip=True)) for cell in cell_tags]
             if not cells or not any(cells):
                 continue
-            if len(cells) > max(6, len(headers) + 1):
+            if len(cells) > max(14 if layer == "sessions" else 6, len(headers) + 1):
                 diagnostics["wide_rows_skipped"] += 1
                 continue
             substantive_text = clean(" ".join(cells))
-            if len(substantive_text) < 12:
+            if len(substantive_text) < 8:
                 continue
             signature = f"{date_context}|{substantive_text}"
             if signature in seen_signatures:
@@ -188,20 +196,26 @@ def main() -> None:
     activity = []
     citations_ok = 0
     results_ok = 0
+    sessions_ok = 0
     citation_rows = 0
     result_rows = 0
+    session_rows = 0
 
     for commission in commissions:
         citations = parse_layer(session, commission.get("citations_url", ""), "citations")
         results = parse_layer(session, commission.get("results_url", ""), "results")
+        sessions = parse_layer(session, commission.get("sessions_url", ""), "sessions")
         citations_ok += citations["status"] == "retrieved"
         results_ok += results["status"] == "retrieved"
+        sessions_ok += sessions["status"] == "retrieved"
         citation_rows += len(citations["rows"])
         result_rows += len(results["rows"])
+        session_rows += len(sessions["rows"])
         activity.append({
             "id": commission.get("id", ""),
             "number": commission.get("number", ""),
             "name": commission.get("name", ""),
+            "sessions": sessions,
             "citations": citations,
             "results": results,
         })
@@ -209,51 +223,54 @@ def main() -> None:
     n = len(activity)
     citation_coverage = citations_ok / n if n else 0
     result_coverage = results_ok / n if n else 0
-    passed = citation_coverage >= MIN_PAGE_COVERAGE and result_coverage >= MIN_PAGE_COVERAGE
+    session_coverage = sessions_ok / n if n else 0
+    passed = min(citation_coverage, result_coverage, session_coverage) >= MIN_PAGE_COVERAGE
     if not passed:
         raise RuntimeError(
-            f"Cobertura insuficiente: citaciones={citation_coverage:.1%}, resultados={result_coverage:.1%}"
+            f"Cobertura insuficiente: sesiones={session_coverage:.1%}, citaciones={citation_coverage:.1%}, resultados={result_coverage:.1%}"
         )
 
     now = datetime.now(TZ)
     payload = {
-        "schema_version": "commission-activity-web-v0.2",
+        "schema_version": "commission-activity-web-v0.3",
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
         "directory_schema": directory.get("schema_version"),
         "source": {
             "name": "Cámara de Diputadas y Diputados de Chile · fichas institucionales de comisión",
-            "layers": ["Citaciones", "Resultados"],
+            "layers": ["Sesiones", "Citaciones", "Resultados"],
             "method": "HTML institucional de cada prmID; solo tablas principales, excluyendo subtablas anidadas",
         },
         "counts": {
             "commissions": n,
+            "sessions_pages_retrieved": sessions_ok,
             "citations_pages_retrieved": citations_ok,
             "results_pages_retrieved": results_ok,
+            "session_rows_retained": session_rows,
             "citation_rows_retained": citation_rows,
             "result_rows_retained": result_rows,
         },
         "quality_gate": {
             "minimum_page_coverage": MIN_PAGE_COVERAGE,
+            "sessions_coverage": session_coverage,
             "citations_coverage": citation_coverage,
             "results_coverage": result_coverage,
             "passed": True,
-            "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas de asuntos no se convierten en eventos independientes.",
+            "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas no se convierten en eventos independientes.",
         },
         "commissions": activity,
         "scope_note": (
-            "Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados. "
-            "No se tratan como equivalentes. Este snapshot conserva solo las primeras filas principales que devuelve cada ficha institucional "
-            "y no pretende reconstruir todavía el historial completo de sesiones. Los detalles de varios asuntos dentro de una misma sesión pueden quedar "
-            "concatenados dentro de la celda institucional correspondiente. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
+            "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados. "
+            "Las tres capas se mantienen separadas. Este snapshot conserva solo las primeras filas principales que devuelve cada ficha institucional y no pretende todavía reconstruir "
+            "todo el historial documental de la comisión. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
         ),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
-        f"Actividad comisiones={n} | citaciones {citations_ok}/{n}, filas={citation_rows} | "
-        f"resultados {results_ok}/{n}, filas={result_rows}"
+        f"Actividad comisiones={n} | sesiones {sessions_ok}/{n}, filas={session_rows} | "
+        f"citaciones {citations_ok}/{n}, filas={citation_rows} | resultados {results_ok}/{n}, filas={result_rows}"
     )
 
 
