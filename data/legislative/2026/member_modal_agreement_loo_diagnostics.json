@@ -1,0 +1,704 @@
+{
+  "input_enriched_vote_rows": 56420,
+  "historical_members_observed": 155,
+  "output_rows": 1240,
+  "lookup_missing": 0,
+  "scope_diagnostics": {
+    "party:all": {
+      "threshold": 0.0,
+      "members_with_comparisons": 121,
+      "comparisons": 40655,
+      "matches": 39244,
+      "weighted_agreement_pct": 96.5293,
+      "median_member_comparisons": 351,
+      "p10_member_comparisons": 303,
+      "median_member_agreement_pct": 97.5,
+      "members_lt_20_comparisons": 0
+    },
+    "party:minority_ge_05": {
+      "threshold": 0.05,
+      "members_with_comparisons": 121,
+      "comparisons": 30390,
+      "matches": 29101,
+      "weighted_agreement_pct": 95.7585,
+      "median_member_comparisons": 262,
+      "p10_member_comparisons": 225,
+      "median_member_agreement_pct": 96.9349,
+      "members_lt_20_comparisons": 0
+    },
+    "party:minority_ge_10": {
+      "threshold": 0.1,
+      "members_with_comparisons": 121,
+      "comparisons": 29147,
+      "matches": 27922,
+      "weighted_agreement_pct": 95.7972,
+      "median_member_comparisons": 251,
+      "p10_member_comparisons": 216,
+      "median_member_agreement_pct": 97.1888,
+      "members_lt_20_comparisons": 0
+    },
+    "party:minority_ge_20": {
+      "threshold": 0.2,
+      "members_with_comparisons": 121,
+      "comparisons": 27050,
+      "matches": 25965,
+      "weighted_agreement_pct": 95.9889,
+      "median_member_comparisons": 233,
+      "p10_member_comparisons": 200,
+      "median_member_agreement_pct": 97.9079,
+      "members_lt_20_comparisons": 0
+    },
+    "caucus:all": {
+      "threshold": 0.0,
+      "members_with_comparisons": 152,
+      "comparisons": 50900,
+      "matches": 48856,
+      "weighted_agreement_pct": 95.9843,
+      "median_member_comparisons": 349.0,
+      "p10_member_comparisons": 305.0,
+      "median_member_agreement_pct": 97.1009,
+      "members_lt_20_comparisons": 0
+    },
+    "caucus:minority_ge_05": {
+      "threshold": 0.05,
+      "members_with_comparisons": 152,
+      "comparisons": 37985,
+      "matches": 36119,
+      "weighted_agreement_pct": 95.0875,
+      "median_member_comparisons": 259.5,
+      "p10_member_comparisons": 228.2,
+      "median_member_agreement_pct": 96.6292,
+      "members_lt_20_comparisons": 2
+    },
+    "caucus:minority_ge_10": {
+      "threshold": 0.1,
+      "members_with_comparisons": 152,
+      "comparisons": 36440,
+      "matches": 34662,
+      "weighted_agreement_pct": 95.1207,
+      "median_member_comparisons": 249.0,
+      "p10_member_comparisons": 219.2,
+      "median_member_agreement_pct": 96.6619,
+      "members_lt_20_comparisons": 2
+    },
+    "caucus:minority_ge_20": {
+      "threshold": 0.2,
+      "members_with_comparisons": 152,
+      "comparisons": 33794,
+      "matches": 32202,
+      "weighted_agreement_pct": 95.2891,
+      "median_member_comparisons": 231.0,
+      "p10_member_comparisons": 204.0,
+      "median_member_agreement_pct": 97.3333,
+      "members_lt_20_comparisons": 2
+    }
+  },
+  "threshold_sensitivity": {
+    "party:all_vs_minority_ge_10": {
+      "members_compared": 121,
+      "median_abs_difference_pp": 0.4396,
+      "p90_abs_difference_pp": 2.4866,
+      "max_abs_difference_pp": 9.7663,
+      "largest_changes": [
+        {
+          "diputado_id": "1200",
+          "diputado_nombre": "Cristian Contreras Radovic",
+          "left_pct": 72.3647,
+          "right_pct": 62.5984,
+          "difference_pp": -9.7663,
+          "left_comparisons": 351,
+          "right_comparisons": 254
+        },
+        {
+          "diputado_id": "1235",
+          "diputado_nombre": "Javier Olivares Avendaño",
+          "left_pct": 82.3204,
+          "right_pct": 75.3906,
+          "difference_pp": -6.9298,
+          "left_comparisons": 362,
+          "right_comparisons": 256
+        },
+        {
+          "diputado_id": "1239",
+          "diputado_nombre": "Fabián Ossandón Briceño",
+          "left_pct": 83.4783,
+          "right_pct": 77.7328,
+          "difference_pp": -5.7455,
+          "left_comparisons": 345,
+          "right_comparisons": 247
+        },
+        {
+          "diputado_id": "1039",
+          "diputado_nombre": "Pamela Jiles Moreno",
+          "left_pct": 83.7681,
+          "right_pct": 78.2609,
+          "difference_pp": -5.5072,
+          "left_comparisons": 345,
+          "right_comparisons": 253
+        },
+        {
+          "diputado_id": "1243",
+          "diputado_nombre": "Tamara Ramírez Ramírez",
+          "left_pct": 85.0282,
+          "right_pct": 79.9213,
+          "difference_pp": -5.1069,
+          "left_comparisons": 354,
+          "right_comparisons": 254
+        },
+        {
+          "diputado_id": "1255",
+          "diputado_nombre": "Eileen Urqueta Rojas",
+          "left_pct": 88.1543,
+          "right_pct": 83.2685,
+          "difference_pp": -4.8858,
+          "left_comparisons": 363,
+          "right_comparisons": 257
+        },
+        {
+          "diputado_id": "1192",
+          "diputado_nombre": "Lilian Betancurt Delgado",
+          "left_pct": 88.3178,
+          "right_pct": 83.4437,
+          "difference_pp": -4.8741,
+          "left_comparisons": 214,
+          "right_comparisons": 151
+        },
+        {
+          "diputado_id": "1240",
+          "diputado_nombre": "Zandra Parisi Fernández",
+          "left_pct": 90.1361,
+          "right_pct": 86.1905,
+          "difference_pp": -3.9456,
+          "left_comparisons": 294,
+          "right_comparisons": 210
+        },
+        {
+          "diputado_id": "1259",
+          "diputado_nombre": "Juan Marcelo Valenzuela Henríquez",
+          "left_pct": 91.453,
+          "right_pct": 88.0,
+          "difference_pp": -3.453,
+          "left_comparisons": 351,
+          "right_comparisons": 250
+        },
+        {
+          "diputado_id": "1230",
+          "diputado_nombre": "Alex Nahuelquin Nahuelquin",
+          "left_pct": 91.922,
+          "right_pct": 88.6719,
+          "difference_pp": -3.2501,
+          "left_comparisons": 359,
+          "right_comparisons": 256
+        }
+      ]
+    },
+    "party:minority_ge_05_vs_minority_ge_10": {
+      "members_compared": 121,
+      "median_abs_difference_pp": 0.1612,
+      "p90_abs_difference_pp": 0.5618,
+      "max_abs_difference_pp": 1.0139,
+      "largest_changes": [
+        {
+          "diputado_id": "1235",
+          "diputado_nombre": "Javier Olivares Avendaño",
+          "left_pct": 76.4045,
+          "right_pct": 75.3906,
+          "difference_pp": -1.0139,
+          "left_comparisons": 267,
+          "right_comparisons": 256
+        },
+        {
+          "diputado_id": "1192",
+          "diputado_nombre": "Lilian Betancurt Delgado",
+          "left_pct": 84.375,
+          "right_pct": 83.4437,
+          "difference_pp": -0.9313,
+          "left_comparisons": 160,
+          "right_comparisons": 151
+        },
+        {
+          "diputado_id": "1200",
+          "diputado_nombre": "Cristian Contreras Radovic",
+          "left_pct": 63.3962,
+          "right_pct": 62.5984,
+          "difference_pp": -0.7978,
+          "left_comparisons": 265,
+          "right_comparisons": 254
+        },
+        {
+          "diputado_id": "1240",
+          "diputado_nombre": "Zandra Parisi Fernández",
+          "left_pct": 86.8778,
+          "right_pct": 86.1905,
+          "difference_pp": -0.6873,
+          "left_comparisons": 221,
+          "right_comparisons": 210
+        },
+        {
+          "diputado_id": "1255",
+          "diputado_nombre": "Eileen Urqueta Rojas",
+          "left_pct": 83.9552,
+          "right_pct": 83.2685,
+          "difference_pp": -0.6867,
+          "left_comparisons": 268,
+          "right_comparisons": 257
+        },
+        {
+          "diputado_id": "1260",
+          "diputado_nombre": "César Valenzuela Maass",
+          "left_pct": 96.2121,
+          "right_pct": 96.8504,
+          "difference_pp": 0.6383,
+          "left_comparisons": 264,
+          "right_comparisons": 254
+        },
+        {
+          "diputado_id": "915",
+          "diputado_nombre": "Germán Verdugo Soto",
+          "left_pct": 95.6863,
+          "right_pct": 96.3115,
+          "difference_pp": 0.6252,
+          "left_comparisons": 255,
+          "right_comparisons": 244
+        },
+        {
+          "diputado_id": "1233",
+          "diputado_nombre": "Ricardo Neumann Bertín",
+          "left_pct": 96.2687,
+          "right_pct": 96.8872,
+          "difference_pp": 0.6185,
+          "left_comparisons": 268,
+          "right_comparisons": 257
+        },
+        {
+          "diputado_id": "1199",
+          "diputado_nombre": "Jaime Coloma Álamos",
+          "left_pct": 96.2825,
+          "right_pct": 96.8992,
+          "difference_pp": 0.6167,
+          "left_comparisons": 269,
+          "right_comparisons": 258
+        },
+        {
+          "diputado_id": "1202",
+          "diputado_nombre": "Eduardo Cretton Rebolledo",
+          "left_pct": 96.2825,
+          "right_pct": 96.8992,
+          "difference_pp": 0.6167,
+          "left_comparisons": 269,
+          "right_comparisons": 258
+        }
+      ]
+    },
+    "party:minority_ge_10_vs_minority_ge_20": {
+      "members_compared": 121,
+      "median_abs_difference_pp": 0.2865,
+      "p90_abs_difference_pp": 1.2195,
+      "max_abs_difference_pp": 3.3031,
+      "largest_changes": [
+        {
+          "diputado_id": "1222",
+          "diputado_nombre": "Andrea Macías Palma",
+          "left_pct": 93.3071,
+          "right_pct": 96.6102,
+          "difference_pp": 3.3031,
+          "left_comparisons": 254,
+          "right_comparisons": 236
+        },
+        {
+          "diputado_id": "1056",
+          "diputado_nombre": "Emilia Nuyado Ancapichun",
+          "left_pct": 94.9416,
+          "right_pct": 97.0588,
+          "difference_pp": 2.1172,
+          "left_comparisons": 257,
+          "right_comparisons": 238
+        },
+        {
+          "diputado_id": "1200",
+          "diputado_nombre": "Cristian Contreras Radovic",
+          "left_pct": 62.5984,
+          "right_pct": 60.5932,
+          "difference_pp": -2.0052,
+          "left_comparisons": 254,
+          "right_comparisons": 236
+        },
+        {
+          "diputado_id": "1239",
+          "diputado_nombre": "Fabián Ossandón Briceño",
+          "left_pct": 77.7328,
+          "right_pct": 75.9825,
+          "difference_pp": -1.7503,
+          "left_comparisons": 247,
+          "right_comparisons": 229
+        },
+        {
+          "diputado_id": "1073",
+          "diputado_nombre": "Juan Santana Castillo",
+          "left_pct": 96.6245,
+          "right_pct": 98.2301,
+          "difference_pp": 1.6056,
+          "left_comparisons": 237,
+          "right_comparisons": 226
+        },
+        {
+          "diputado_id": "1235",
+          "diputado_nombre": "Javier Olivares Avendaño",
+          "left_pct": 75.3906,
+          "right_pct": 73.8397,
+          "difference_pp": -1.5509,
+          "left_comparisons": 256,
+          "right_comparisons": 237
+        },
+        {
+          "diputado_id": "1028",
+          "diputado_nombre": "Eduardo Durán Salinas",
+          "left_pct": 97.2,
+          "right_pct": 98.7013,
+          "difference_pp": 1.5013,
+          "left_comparisons": 250,
+          "right_comparisons": 231
+        },
+        {
+          "diputado_id": "1038",
+          "diputado_nombre": "Marcos Ilabaca Cerda",
+          "left_pct": 94.0367,
+          "right_pct": 95.5,
+          "difference_pp": 1.4633,
+          "left_comparisons": 218,
+          "right_comparisons": 200
+        },
+        {
+          "diputado_id": "1061",
+          "diputado_nombre": "Andrea Parra Sauterel",
+          "left_pct": 95.3586,
+          "right_pct": 96.789,
+          "difference_pp": 1.4304,
+          "left_comparisons": 237,
+          "right_comparisons": 218
+        },
+        {
+          "diputado_id": "1114",
+          "diputado_nombre": "Félix Bugueño Sotelo",
+          "left_pct": 90.4762,
+          "right_pct": 91.8455,
+          "difference_pp": 1.3693,
+          "left_comparisons": 252,
+          "right_comparisons": 233
+        }
+      ]
+    },
+    "caucus:all_vs_minority_ge_10": {
+      "members_compared": 152,
+      "median_abs_difference_pp": 0.5611,
+      "p90_abs_difference_pp": 3.75,
+      "max_abs_difference_pp": 7.4628,
+      "largest_changes": [
+        {
+          "diputado_id": "1235",
+          "diputado_nombre": "Javier Olivares Avendaño",
+          "left_pct": 81.9484,
+          "right_pct": 74.4856,
+          "difference_pp": -7.4628,
+          "left_comparisons": 349,
+          "right_comparisons": 243
+        },
+        {
+          "diputado_id": "1013",
+          "diputado_nombre": "Alejandro Bernales Maldonado",
+          "left_pct": 75.2941,
+          "right_pct": 69.2,
+          "difference_pp": -6.0941,
+          "left_comparisons": 340,
+          "right_comparisons": 250
+        },
+        {
+          "diputado_id": "1182",
+          "diputado_nombre": "Sebastián Videla Castillo",
+          "left_pct": 79.4286,
+          "right_pct": 73.7052,
+          "difference_pp": -5.7234,
+          "left_comparisons": 350,
+          "right_comparisons": 251
+        },
+        {
+          "diputado_id": "1239",
+          "diputado_nombre": "Fabián Ossandón Briceño",
+          "left_pct": 84.9558,
+          "right_pct": 79.668,
+          "difference_pp": -5.2878,
+          "left_comparisons": 339,
+          "right_comparisons": 241
+        },
+        {
+          "diputado_id": "986",
+          "diputado_nombre": "Marcela Hernando Pérez",
+          "left_pct": 79.8742,
+          "right_pct": 74.7788,
+          "difference_pp": -5.0954,
+          "left_comparisons": 318,
+          "right_comparisons": 226
+        },
+        {
+          "diputado_id": "1039",
+          "diputado_nombre": "Pamela Jiles Moreno",
+          "left_pct": 85.2941,
+          "right_pct": 80.2419,
+          "difference_pp": -5.0522,
+          "left_comparisons": 340,
+          "right_comparisons": 248
+        },
+        {
+          "diputado_id": "1192",
+          "diputado_nombre": "Lilian Betancurt Delgado",
+          "left_pct": 88.4615,
+          "right_pct": 83.4483,
+          "difference_pp": -5.0132,
+          "left_comparisons": 208,
+          "right_comparisons": 145
+        },
+        {
+          "diputado_id": "1141",
+          "diputado_nombre": "Luis Malla Valenzuela",
+          "left_pct": 82.0,
+          "right_pct": 77.1084,
+          "difference_pp": -4.8916,
+          "left_comparisons": 350,
+          "right_comparisons": 249
+        },
+        {
+          "diputado_id": "1243",
+          "diputado_nombre": "Tamara Ramírez Ramírez",
+          "left_pct": 86.533,
+          "right_pct": 81.9277,
+          "difference_pp": -4.6053,
+          "left_comparisons": 349,
+          "right_comparisons": 249
+        },
+        {
+          "diputado_id": "1102",
+          "diputado_nombre": "Roberto Arroyo Muñoz",
+          "left_pct": 92.0,
+          "right_pct": 87.5,
+          "difference_pp": -4.5,
+          "left_comparisons": 25,
+          "right_comparisons": 16
+        }
+      ]
+    },
+    "caucus:minority_ge_05_vs_minority_ge_10": {
+      "members_compared": 152,
+      "median_abs_difference_pp": 0.2313,
+      "p90_abs_difference_pp": 0.6043,
+      "max_abs_difference_pp": 1.948,
+      "largest_changes": [
+        {
+          "diputado_id": "1200",
+          "diputado_nombre": "Cristian Contreras Radovic",
+          "left_pct": 92.8571,
+          "right_pct": 90.9091,
+          "difference_pp": -1.948,
+          "left_comparisons": 14,
+          "right_comparisons": 11
+        },
+        {
+          "diputado_id": "1235",
+          "diputado_nombre": "Javier Olivares Avendaño",
+          "left_pct": 75.5906,
+          "right_pct": 74.4856,
+          "difference_pp": -1.105,
+          "left_comparisons": 254,
+          "right_comparisons": 243
+        },
+        {
+          "diputado_id": "1260",
+          "diputado_nombre": "César Valenzuela Maass",
+          "left_pct": 95.4545,
+          "right_pct": 96.4427,
+          "difference_pp": 0.9882,
+          "left_comparisons": 264,
+          "right_comparisons": 253
+        },
+        {
+          "diputado_id": "803",
+          "diputado_nombre": "René Alinco Bustos",
+          "left_pct": 72.0339,
+          "right_pct": 71.0526,
+          "difference_pp": -0.9813,
+          "left_comparisons": 236,
+          "right_comparisons": 228
+        },
+        {
+          "diputado_id": "1192",
+          "diputado_nombre": "Lilian Betancurt Delgado",
+          "left_pct": 84.4156,
+          "right_pct": 83.4483,
+          "difference_pp": -0.9673,
+          "left_comparisons": 154,
+          "right_comparisons": 145
+        },
+        {
+          "diputado_id": "1222",
+          "diputado_nombre": "Andrea Macías Palma",
+          "left_pct": 92.3077,
+          "right_pct": 93.2271,
+          "difference_pp": 0.9194,
+          "left_comparisons": 260,
+          "right_comparisons": 251
+        },
+        {
+          "diputado_id": "872",
+          "diputado_nombre": "Jaime Mulet Martínez",
+          "left_pct": 84.0,
+          "right_pct": 83.2636,
+          "difference_pp": -0.7364,
+          "left_comparisons": 250,
+          "right_comparisons": 239
+        },
+        {
+          "diputado_id": "1044",
+          "diputado_nombre": "Raúl Leiva Carvajal",
+          "left_pct": 95.6897,
+          "right_pct": 96.3964,
+          "difference_pp": 0.7067,
+          "left_comparisons": 232,
+          "right_comparisons": 222
+        },
+        {
+          "diputado_id": "1240",
+          "diputado_nombre": "Zandra Parisi Fernández",
+          "left_pct": 87.9227,
+          "right_pct": 87.2449,
+          "difference_pp": -0.6778,
+          "left_comparisons": 207,
+          "right_comparisons": 196
+        },
+        {
+          "diputado_id": "1199",
+          "diputado_nombre": "Jaime Coloma Álamos",
+          "left_pct": 96.6418,
+          "right_pct": 97.2763,
+          "difference_pp": 0.6345,
+          "left_comparisons": 268,
+          "right_comparisons": 257
+        }
+      ]
+    },
+    "caucus:minority_ge_10_vs_minority_ge_20": {
+      "members_compared": 152,
+      "median_abs_difference_pp": 0.3321,
+      "p90_abs_difference_pp": 1.2673,
+      "max_abs_difference_pp": 15.9091,
+      "largest_changes": [
+        {
+          "diputado_id": "1200",
+          "diputado_nombre": "Cristian Contreras Radovic",
+          "left_pct": 90.9091,
+          "right_pct": 75.0,
+          "difference_pp": -15.9091,
+          "left_comparisons": 11,
+          "right_comparisons": 4
+        },
+        {
+          "diputado_id": "1102",
+          "diputado_nombre": "Roberto Arroyo Muñoz",
+          "left_pct": 87.5,
+          "right_pct": 92.3077,
+          "difference_pp": 4.8077,
+          "left_comparisons": 16,
+          "right_comparisons": 13
+        },
+        {
+          "diputado_id": "1222",
+          "diputado_nombre": "Andrea Macías Palma",
+          "left_pct": 93.2271,
+          "right_pct": 96.5517,
+          "difference_pp": 3.3246,
+          "left_comparisons": 251,
+          "right_comparisons": 232
+        },
+        {
+          "diputado_id": "1073",
+          "diputado_nombre": "Juan Santana Castillo",
+          "left_pct": 94.9791,
+          "right_pct": 97.3333,
+          "difference_pp": 2.3542,
+          "left_comparisons": 239,
+          "right_comparisons": 225
+        },
+        {
+          "diputado_id": "1013",
+          "diputado_nombre": "Alejandro Bernales Maldonado",
+          "left_pct": 69.2,
+          "right_pct": 67.0996,
+          "difference_pp": -2.1004,
+          "left_comparisons": 250,
+          "right_comparisons": 231
+        },
+        {
+          "diputado_id": "1184",
+          "diputado_nombre": "Roberto Celedón Fernández",
+          "left_pct": 96.5116,
+          "right_pct": 98.3264,
+          "difference_pp": 1.8148,
+          "left_comparisons": 258,
+          "right_comparisons": 239
+        },
+        {
+          "diputado_id": "1182",
+          "diputado_nombre": "Sebastián Videla Castillo",
+          "left_pct": 73.7052,
+          "right_pct": 71.9828,
+          "difference_pp": -1.7224,
+          "left_comparisons": 251,
+          "right_comparisons": 232
+        },
+        {
+          "diputado_id": "1235",
+          "diputado_nombre": "Javier Olivares Avendaño",
+          "left_pct": 74.4856,
+          "right_pct": 72.8889,
+          "difference_pp": -1.5967,
+          "left_comparisons": 243,
+          "right_comparisons": 225
+        },
+        {
+          "diputado_id": "1239",
+          "diputado_nombre": "Fabián Ossandón Briceño",
+          "left_pct": 79.668,
+          "right_pct": 78.125,
+          "difference_pp": -1.543,
+          "left_comparisons": 241,
+          "right_comparisons": 224
+        },
+        {
+          "diputado_id": "1061",
+          "diputado_nombre": "Andrea Parra Sauterel",
+          "left_pct": 92.0949,
+          "right_pct": 93.5897,
+          "difference_pp": 1.4948,
+          "left_comparisons": 253,
+          "right_comparisons": 234
+        }
+      ]
+    }
+  },
+  "exclusion_reasons": {
+    "caucus:minority_ge_05:below_chamber_threshold": 12915,
+    "caucus:minority_ge_10:below_chamber_threshold": 14484,
+    "caucus:minority_ge_20:below_chamber_threshold": 17159,
+    "caucus:not_formal_group": 5332,
+    "caucus:peer_modal_tie": 1115,
+    "member_non_substantive": 31112,
+    "party:fewer_than_two_peer_decisions": 5611,
+    "party:minority_ge_05:below_chamber_threshold": 10744,
+    "party:minority_ge_10:below_chamber_threshold": 12051,
+    "party:minority_ge_20:below_chamber_threshold": 14269,
+    "party:not_formal_group": 39620,
+    "party:peer_modal_tie": 587
+  },
+  "method_note": "Coincidencia modal leave-one-out: el voto de la persona se elimina antes de calcular la posición más frecuente de su grupo. Se requieren al menos dos decisiones sustantivas de pares y una moda única. No Vota y Dispensado no se comparan. Los scopes filtran según la proporción minoritaria Afirmativo/En Contra de toda la Cámara, no según la división interna del grupo.",
+  "errors": {
+    "lookup_missing_examples": []
+  }
+}
