@@ -6,7 +6,6 @@ on:
     - cron: "25 11 * * 1"
   push:
     paths:
-      - "scripts/congress_api.py"
       - "scripts/build_commissions_snapshot.py"
       - ".github/workflows/sync_commissions.yml"
 
@@ -32,8 +31,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependency
-        run: pip install requests
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
 
       - name: Build commissions snapshot
         run: python scripts/build_commissions_snapshot.py
@@ -47,7 +46,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No commission changes to commit"
           else
-            git commit -m "Actualiza comisiones vigentes"
+            git commit -m "Actualiza directorio institucional de comisiones"
             git pull --rebase origin main
             git push origin main
           fi
