@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora los patrones de votación de la Cámara de Diputadas y Diputados de Chile con W-NOMINATE en una y dos dimensiones.">
+  <meta name="theme-color" content="#0f2f53">
+  <title>Patrones de voto · Conoce a tu parlamentario</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/hemicycle.css">
+  <link rel="stylesheet" href="assets/css/wnominate.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Conoce a tu parlamentario, inicio">
+        <span class="brand-mark" aria-hidden="true">CP</span>
+        <span>Conoce a tu parlamentario</span>
+      </a>
+      <nav class="site-tabs" aria-label="Secciones principales">
+        <a class="site-tab" href="index.html">Tu distrito</a>
+        <a class="site-tab" href="hemiciclo.html">Hemiciclo</a>
+        <a class="site-tab is-active" href="wnominate.html" aria-current="page">Patrones de voto</a>
+      </nav>
+      <span class="data-badge">Cámara 2026–2030</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="wn-hero">
+      <div class="container wn-hero-grid">
+        <div>
+          <p class="eyebrow">Comportamiento legislativo</p>
+          <h1>¿Cómo se comporta la Cámara al votar?</h1>
+          <p class="wn-lead">W-NOMINATE resume semejanzas y diferencias observadas en cientos de votaciones nominales de Sala. La posición es relativa a esta Cámara y a este período: no es una puntuación ideológica absoluta.</p>
+        </div>
+        <aside class="wn-hero-note">
+          <strong>Dos formas de mirar el mismo período</strong>
+          <p><b>1D</b> muestra el principal patrón de votación y es nuestra referencia descriptiva. <b>2D</b> añade una segunda dimensión exploratoria: puede revelar diferencias residuales, pero no le asignamos todavía una etiqueta política sustantiva.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="wn-section">
+      <div class="container">
+        <div id="wn-status" class="wn-status" role="status" aria-live="polite">Cargando coordenadas y filtros…</div>
+
+        <div id="wn-app" hidden>
+          <div class="wn-toolbar">
+            <div class="wn-view-switch" role="group" aria-label="Vista del modelo">
+              <button id="wn-view-1d" class="wn-view-button is-active" type="button" aria-pressed="true">1D · patrón principal</button>
+              <button id="wn-view-2d" class="wn-view-button" type="button" aria-pressed="false">2D · exploratorio</button>
+            </div>
+            <div class="wn-toolbar-actions">
+              <button id="wn-uncertainty" class="wn-secondary-button" type="button" aria-pressed="false">Mostrar rango de incertidumbre</button>
+              <button id="wn-context" class="wn-secondary-button" type="button" aria-pressed="false">Mostrar el resto</button>
+              <button id="wn-show-all" class="wn-secondary-button" type="button">Ver los 155</button>
+              <button id="wn-download" class="wn-primary-button" type="button">Descargar PNG</button>
+            </div>
+          </div>
+
+          <div class="wn-layout">
+            <aside class="wn-filter-card" aria-label="Filtros del gráfico">
+              <div class="wn-filter-head">
+                <div>
+                  <p class="eyebrow">Explora la Cámara</p>
+                  <h2>Filtros</h2>
+                </div>
+                <button id="wn-reset" class="wn-reset" type="button">Restablecer</button>
+              </div>
+
+              <label class="wn-field">
+                <span>Comuna</span>
+                <select id="wn-commune"><option value="">Todas las comunas</option></select>
+                <small>Al elegir una comuna identificamos automáticamente su distrito y priorizamos sus representantes.</small>
+              </label>
+
+              <label class="wn-field">
+                <span>Tema de las votaciones</span>
+                <select id="wn-topic"><option value="">Todos los temas</option></select>
+                <small>El tema cambia el contexto descriptivo de votos, <b>no</b> las coordenadas W-NOMINATE.</small>
+              </label>
+
+              <label class="wn-field">
+                <span>Región</span>
+                <select id="wn-region"><option value="">Todas las regiones</option></select>
+              </label>
+
+              <label class="wn-field">
+                <span>Distrito</span>
+                <select id="wn-district"><option value="">Todos los distritos</option></select>
+              </label>
+
+              <details class="wn-filter-details" open>
+                <summary>Partidos</summary>
+                <div id="wn-party-list" class="wn-check-list"></div>
+              </details>
+
+              <details class="wn-filter-details">
+                <summary>Alineamiento político</summary>
+                <div id="wn-alignment-list" class="wn-check-list"></div>
+              </details>
+
+              <details class="wn-filter-details">
+                <summary>Parlamentarios</summary>
+                <label class="wn-mini-search">
+                  <span class="sr-only">Buscar parlamentario</span>
+                  <input id="wn-member-search" type="search" placeholder="Buscar por nombre…" autocomplete="off">
+                </label>
+                <div id="wn-member-list" class="wn-check-list wn-member-list"></div>
+              </details>
+            </aside>
+
+            <div class="wn-main-column">
+              <article class="wn-chart-card">
+                <div class="wn-chart-head">
+                  <div>
+                    <p id="wn-chart-eyebrow" class="eyebrow">W-NOMINATE · una dimensión</p>
+                    <h2 id="wn-chart-title">Principal patrón de votación</h2>
+                    <p id="wn-chart-description">Las posiciones se estiman a partir de votos Afirmativo/En Contra en votaciones nominales de Sala con suficiente desacuerdo.</p>
+                  </div>
+                  <div class="wn-chart-stats">
+                    <span><strong id="wn-visible-count">—</strong> visibles</span>
+                    <span><strong id="wn-model-count">154</strong> estimados</span>
+                  </div>
+                </div>
+
+                <div id="wn-topic-banner" class="wn-topic-banner" hidden></div>
+
+                <div id="wn-chart-wrap" class="wn-chart-wrap">
+                  <svg id="wn-chart" class="wn-chart" viewBox="0 0 1000 590" role="img" aria-label="Gráfico interactivo W-NOMINATE"></svg>
+                  <div id="wn-tooltip" class="wn-tooltip" hidden></div>
+                </div>
+
+                <div class="wn-axis-caption" id="wn-axis-caption">
+                  <span>Valores negativos</span>
+                  <span>Dimensión 1</span>
+                  <span>Valores positivos</span>
+                </div>
+
+                <div class="wn-chart-foot">
+                  <p id="wn-chart-footnote">El signo del eje es una orientación matemática del modelo. Una posición más cercana a cero no equivale automáticamente a mayor moderación.</p>
+                  <button id="wn-reset-zoom" class="wn-secondary-button" type="button" hidden>Restablecer zoom</button>
+                </div>
+              </article>
+
+              <article id="wn-member-card" class="wn-member-card" hidden aria-live="polite"></article>
+
+              <article class="wn-legend-card">
+                <div>
+                  <h3>Colores de partido</h3>
+                  <p>Usamos exactamente la misma codificación partidaria del hemiciclo. El color ayuda a contextualizar; partido y alineamiento no entran como variables del modelo espacial.</p>
+                </div>
+                <div id="wn-legend" class="wn-legend"></div>
+              </article>
+            </div>
+          </div>
+
+          <section class="wn-method-card" aria-labelledby="wn-method-title">
+            <p class="eyebrow">Cómo construimos esta vista</p>
+            <h2 id="wn-method-title">Qué significa —y qué no significa— W-NOMINATE</h2>
+            <div class="wn-method-grid">
+              <div>
+                <h3>1D: patrón principal</h3>
+                <p>La estimación base utiliza votaciones nominales de Sala, codifica Afirmativo/En Contra y excluye del cálculo espacial abstenciones, no votos y dispensas. La especificación base usa <code>lop=2,5%</code> y <code>minvotes=20</code>: 276 votaciones son elegibles y 154 integrantes reciben una coordenada.</p>
+              </div>
+              <div>
+                <h3>2D: diagnóstico exploratorio</h3>
+                <p>La segunda dimensión mejora modestamente el ajuste, pero es más sensible a qué proyectos componen la muestra. Por eso la mostramos para explorar, no como una segunda escala política ya nombrada.</p>
+              </div>
+              <div>
+                <h3>Filtros temáticos</h3>
+                <p>Los temas provienen de la clasificación analítica institucional-híbrida del proyecto. Al cambiar de tema <b>no reestimamos</b> W-NOMINATE: las coordenadas globales permanecen congeladas y el filtro solo resume cómo votó cada persona en las votaciones clasificadas bajo ese tema.</p>
+              </div>
+              <div>
+                <h3>Incertidumbre</h3>
+                <p>En 1D puedes mostrar un rango obtenido mediante bootstrap por proyectos. La franja recuerda que la ubicación puntual depende de qué proyectos legislativos integran la muestra; no debe leerse como una esencia fija del parlamentario.</p>
+              </div>
+            </div>
+            <div class="wn-method-warning">
+              <strong>Límites importantes.</strong> Proximidad espacial organiza patrones de probabilidad, no decisiones deterministas. Dos puntos próximos no votan necesariamente igual en cada proyecto. W-NOMINATE tampoco identifica por sí solo motivos, disciplina partidaria, calidad legislativa ni una ideología absoluta comparable entre legislaturas estimadas por separado.
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Conoce a tu parlamentario</p>
+      <p>Votaciones nominales de Sala · período observado desde marzo de 2026 · actualización de datos: 1 de septiembre de 2026.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/profiles.js"></script>
+  <script src="assets/js/political_config.js"></script>
+  <script src="assets/js/wnominate_explorer.js"></script>
+</body>
+</html>
