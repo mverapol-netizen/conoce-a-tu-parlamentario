@@ -18,8 +18,12 @@
 
 - [x] Habilitar una página interna y una URL estable para cada integrante de la Cámara.
 - [x] Conectar la selección por distrito y el Hemiciclo con esa ficha interna.
-- [ ] Definir posteriormente qué dimensiones, indicadores y documentos deberá contener la ficha legislativa.
-- [ ] Auditar el diseño definitivo de la ficha una vez que se defina su contenido.
+- [x] Definir el marco pedagógico general de la ficha: pregunta pública, lectura, significado, límites, método y evidencia para cada gráfico.
+- [x] Cerrar el diseño editorial y metodológico del **Módulo A: Participación y distribución de decisiones de voto** en `docs/MODULO_A_PARTICIPACION_VOTACIONES_V0_1.md`.
+- [ ] Adaptar el resumen de participación para usar **oportunidades efectivas durante la pertenencia a la Cámara** como denominador público y distinguir missing estructural de `No vota`.
+- [ ] Implementar y auditar visualmente el Módulo A en escritorio y celular después de corregir su denominador.
+- [ ] Cerrar secuencialmente los módulos restantes: distribución/objeto de voto, coincidencia con partido y bancada, mociones, coautoría, materias y posición espacial.
+- [ ] Auditar el diseño definitivo de la ficha una vez que se cierre el contenido de todos los módulos publicables.
 
 ## Base legislativa 2026–2030
 
