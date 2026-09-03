@@ -61,6 +61,7 @@
     const width = Math.max(1, viewBox.width || 1000);
     const height = Math.max(1, viewBox.height || 590);
     const scale = 2;
+    const footerHeight = 72;
 
     clone.setAttribute('width', String(width));
     clone.setAttribute('height', String(height));
@@ -86,17 +87,38 @@
     image.onload = () => {
       const canvas = document.createElement('canvas');
       canvas.width = Math.round(width * scale);
-      canvas.height = Math.round(height * scale);
+      canvas.height = Math.round((height + footerHeight) * scale);
       const ctx = canvas.getContext('2d');
       ctx.fillStyle = '#ffffff';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+      ctx.drawImage(image, 0, 0, width * scale, height * scale);
       URL.revokeObjectURL(url);
 
       const topic = document.getElementById('wn-topic')?.value || '';
-      const view = document.getElementById('wn-view-2d')?.getAttribute('aria-pressed') === 'true' ? '2d' : '1d';
+      const view = document.getElementById('wn-view-2d')?.getAttribute('aria-pressed') === 'true' ? '2D exploratorio' : '1D principal';
+      const footerY = height * scale;
+      const pad = 22 * scale;
+
+      ctx.strokeStyle = '#d8e0e8';
+      ctx.lineWidth = 1 * scale;
+      ctx.beginPath();
+      ctx.moveTo(pad, footerY + 10 * scale);
+      ctx.lineTo(canvas.width - pad, footerY + 10 * scale);
+      ctx.stroke();
+
+      ctx.fillStyle = '#173655';
+      ctx.font = `600 ${12 * scale}px Arial, sans-serif`;
+      ctx.fillText(`Conoce a tu parlamentario · W-NOMINATE ${view} · estimación experimental`, pad, footerY + 32 * scale);
+
+      ctx.fillStyle = '#647689';
+      ctx.font = `${10 * scale}px Arial, sans-serif`;
+      const topicText = topic ? ` · contexto temático del proyecto: ${topic}` : '';
+      ctx.fillText(`Corte: 1 sep 2026 · raw_lop025 · 276 votaciones elegibles · cobertura 154/155${topicText}`, pad, footerY + 50 * scale);
+      ctx.fillText('D1 visual = −D1 técnico · https://mverapol-netizen.github.io/conoce-a-tu-parlamentario/wnominate.html', pad, footerY + 66 * scale);
+
       const link = document.createElement('a');
-      link.download = `wnominate-${view}-${topic ? normalize(topic).replace(/\s+/g, '-') : 'todos'}-2026.png`;
+      const fileView = view.startsWith('2D') ? '2d' : '1d';
+      link.download = `wnominate-${fileView}-${topic ? normalize(topic).replace(/\s+/g, '-') : 'todos'}-2026.png`;
       link.href = canvas.toDataURL('image/png');
       link.click();
     };
