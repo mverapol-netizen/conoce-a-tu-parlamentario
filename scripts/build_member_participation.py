@@ -11,6 +11,7 @@ MEMBER_VOTES = OUT / "member_votes.csv"
 ROLLCALLS = OUT / "rollcalls.csv"
 OUTPUT = OUT / "member_participation_summary.csv"
 DIAGNOSTICS = OUT / "member_participation_diagnostics.json"
+PUBLIC_OUTPUT = ROOT / "assets" / "js" / "participation.js"
 
 EXPECTED_SEATS_PER_ROLLCALL = 155
 SUBSTANTIVE = {"Afirmativo", "En Contra", "Abstención"}
@@ -44,6 +45,25 @@ def read_csv(path: Path) -> list[dict]:
 
 def pct(num: int, den: int) -> str:
     return f"{100 * num / den:.4f}" if den else ""
+
+
+def public_record(row: dict) -> dict:
+    return {
+        "id": str(row["diputado_id"]),
+        "name": row["diputado_nombre"],
+        "opportunities": int(row["opportunity_rollcalls"]),
+        "firstOpportunityDate": row["first_opportunity_date"],
+        "lastOpportunityDate": row["last_opportunity_date"],
+        "affirmative": int(row["n_affirmative"]),
+        "against": int(row["n_against"]),
+        "abstention": int(row["n_abstention"]),
+        "noVote": int(row["n_no_vote"]),
+        "excused": int(row["n_excused"]),
+        "substantive": int(row["n_substantive"]),
+        "substantiveParticipationPct": float(row["substantive_participation_pct"]),
+        "binary": int(row["n_binary"]),
+        "binaryParticipationPct": float(row["binary_participation_pct"]),
+    }
 
 
 def main() -> None:
@@ -127,6 +147,24 @@ def main() -> None:
         writer.writeheader()
         writer.writerows(output_rows)
 
+    public_payload = {
+        "meta": {
+            "source": "Cámara de Diputadas y Diputados de Chile",
+            "periodStart": min((row.get("fecha", "") for row in rollcalls if row.get("fecha", "")), default=""),
+            "dataCut": max((row.get("fecha", "") for row in rollcalls if row.get("fecha", "")), default=""),
+            "rollcalls": len(rollcalls),
+            "denominator": "Cada registro nominal oficial vote_id × diputado_id cuenta como una oportunidad efectiva.",
+        },
+        "members": {row["diputado_id"]: public_record(row) for row in output_rows},
+    }
+    PUBLIC_OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    PUBLIC_OUTPUT.write_text(
+        "window.LEGISLATIVE_PARTICIPATION = "
+        + json.dumps(public_payload, ensure_ascii=False, separators=(",", ":"))
+        + ";\n",
+        encoding="utf-8",
+    )
+
     opportunity_counts = [int(row["opportunity_rollcalls"]) for row in output_rows]
     full_rollcall_count = len(rollcalls)
     diagnostics = {
@@ -137,6 +175,7 @@ def main() -> None:
         ),
         "historical_members_observed": len(by_member),
         "participation_rows": len(output_rows),
+        "public_asset_members": len(public_payload["members"]),
         "members_with_all_current_rollcalls_as_opportunities": sum(
             count == full_rollcall_count for count in opportunity_counts
         ),
@@ -165,6 +204,8 @@ def main() -> None:
         raise RuntimeError("La suma de oportunidades individuales no reproduce las filas nominales de entrada")
     if len(output_rows) != len(by_member):
         raise RuntimeError("El resumen individual perdió integrantes observados")
+    if len(public_payload["members"]) != len(output_rows):
+        raise RuntimeError("El activo público perdió integrantes del resumen auditado")
 
 
 if __name__ == "__main__":
