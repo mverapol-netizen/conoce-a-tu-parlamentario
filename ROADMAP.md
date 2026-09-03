@@ -24,7 +24,8 @@
 - [x] Implementar y auditar el Módulo A, incluyendo barra de cinco estados y drill-down hasta la votación oficial.
 - [x] Cerrar, implementar y desplegar el **Módulo B: Coincidencia con partido y bancada/comité**, con leave-one-out, umbral público de 10%, mínimo de 20 comparaciones y evidencia fragmentada por parlamentario. Contrato de cierre: `docs/MODULO_B_COINCIDENCIA_GRUPOS_V0_2.md`.
 - [x] Cerrar, implementar y desplegar el **Módulo C: Iniciativa legislativa**, restringido a mociones originadas en la Cámara durante el período, distinguiendo autoría formal compartida e individual y conservando evidencia por boletín. Contrato de cierre: `docs/MODULO_C_INICIATIVA_LEGISLATIVA_V0_1.md`.
-- [ ] Cerrar secuencialmente los módulos restantes: coautoría, materias y posición espacial.
+- [x] Cerrar, implementar y desplegar el **Módulo D: Red de coautoría**, con definición relacional explícita, síntesis de vínculos más repetidos, lista completa y evidencia por boletín. Contrato de cierre: `docs/MODULO_D_COAUTORIA_V0_1.md`.
+- [ ] Cerrar secuencialmente los módulos restantes: materias y posición espacial.
 - [ ] Auditar el diseño definitivo de la ficha una vez que se cierre el contenido de todos los módulos publicables.
 
 ## Base legislativa 2026–2030
