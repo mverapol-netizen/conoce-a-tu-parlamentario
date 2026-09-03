@@ -1,0 +1,53 @@
+name: Build member modal agreement LOO
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_member_modal_agreement_loo.py"
+      - "data/legislative/2026/member_votes_enriched.csv"
+      - "data/legislative/2026/group_rollcall_behavior.csv"
+      - ".github/workflows/build_member_modal_agreement_loo.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: member-modal-agreement-loo
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build leave-one-out modal agreement
+        run: python scripts/build_member_modal_agreement_loo.py
+
+      - name: Persist leave-one-out summaries
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/member_modal_agreement_loo.csv \
+                  data/legislative/2026/member_modal_agreement_loo_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No leave-one-out agreement changes"
+          else
+            git commit -m "Actualiza coincidencia modal leave-one-out"
+            git pull --rebase origin main
+            git push origin main
+          fi
