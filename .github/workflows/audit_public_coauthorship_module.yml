@@ -1,0 +1,52 @@
+name: Audit public coauthorship module
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/audit_public_coauthorship_module.py"
+      - "data/legislative/2026/coauthorship_nodes.csv"
+      - "data/legislative/2026/coauthorship_edges.csv"
+      - ".github/workflows/audit_public_coauthorship_module.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-public-coauthorship-module
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Audit public coauthorship module
+        run: python scripts/audit_public_coauthorship_module.py
+
+      - name: Persist diagnostics
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/public_coauthorship_module_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No coauthorship audit changes"
+          else
+            git commit -m "Actualiza auditoría pública de coautoría"
+            git pull --rebase origin main
+            git push origin main
+          fi
