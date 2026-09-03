@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="assets/css/wnominate.css">
   <link rel="stylesheet" href="assets/css/wnominate_v3.css">
   <link rel="stylesheet" href="assets/css/wnominate_v4.css">
+  <link rel="stylesheet" href="assets/css/wnominate_polish_v6.css">
 </head>
 <body>
   <header class="site-header">
@@ -32,13 +33,16 @@
     <section class="wn-hero">
       <div class="container wn-hero-grid">
         <div>
-          <p class="eyebrow">Comportamiento legislativo</p>
+          <div class="wn-status-line">
+            <p class="eyebrow">Comportamiento legislativo</p>
+            <span class="wn-experimental-badge">Estimación experimental · metodología en validación</span>
+          </div>
           <h1>¿Cómo se comporta la Cámara al votar?</h1>
-          <p class="wn-lead">W-NOMINATE resume semejanzas y diferencias observadas en cientos de votaciones nominales de Sala. La posición es relativa a esta Cámara y a este período: no es una puntuación ideológica absoluta.</p>
+          <p class="wn-lead">W-NOMINATE resume semejanzas y diferencias observadas en cientos de votaciones nominales de Sala. La posición es relativa a esta Cámara, a este período y a la agenda efectivamente votada: no es una puntuación ideológica absoluta ni representa todas las preferencias políticas de una persona.</p>
         </div>
         <aside class="wn-hero-note">
-          <strong>Dos formas de mirar el mismo período</strong>
-          <p><b>1D</b> muestra el principal patrón de votación y es nuestra referencia descriptiva. <b>2D</b> añade una segunda dimensión exploratoria: puede revelar diferencias residuales, pero no le asignamos todavía una etiqueta política sustantiva.</p>
+          <strong>Una referencia principal y un laboratorio</strong>
+          <p><b>1D</b> muestra el principal patrón de votación. La lectura izquierda–derecha es una interpretación sustantiva auditada pero todavía provisional. <b>Laboratorio 2D</b> añade una segunda dimensión exploratoria sin asignarle un significado político sustantivo.</p>
         </aside>
       </div>
     </section>
@@ -51,12 +55,12 @@
           <div class="wn-toolbar">
             <div class="wn-view-switch" role="group" aria-label="Vista del modelo">
               <button id="wn-view-1d" class="wn-view-button is-active" type="button" aria-pressed="true">1D · patrón principal</button>
-              <button id="wn-view-2d" class="wn-view-button" type="button" aria-pressed="false">2D · exploratorio</button>
+              <button id="wn-view-2d" class="wn-view-button" type="button" aria-pressed="false">Laboratorio 2D</button>
             </div>
             <div class="wn-toolbar-actions">
-              <button id="wn-uncertainty" class="wn-secondary-button" type="button" aria-pressed="false">Mostrar rango de incertidumbre</button>
+              <button id="wn-uncertainty" class="wn-secondary-button" type="button" aria-pressed="false">Robustez a proyectos</button>
               <button id="wn-context" class="wn-secondary-button" type="button" aria-pressed="false">Mostrar el resto</button>
-              <button id="wn-show-all" class="wn-secondary-button" type="button">Ver los 154 estimados</button>
+              <button id="wn-show-all" class="wn-secondary-button" type="button">Ver lista completa (154)</button>
               <button id="wn-download" class="wn-primary-button" type="button">Descargar PNG</button>
             </div>
           </div>
@@ -74,13 +78,13 @@
               <label class="wn-field">
                 <span>Comuna</span>
                 <select id="wn-commune"><option value="">Todas las comunas</option></select>
-                <small>Al elegir una comuna identificamos automáticamente su distrito y priorizamos sus representantes.</small>
+                <small>Al elegir una comuna identificamos automáticamente su distrito electoral.</small>
               </label>
 
               <label class="wn-field">
-                <span>Tema de las votaciones</span>
+                <span>Contexto temático del proyecto</span>
                 <select id="wn-topic"><option value="">Todos los temas</option></select>
-                <small>El tema cambia el contexto descriptivo de votos, <b>no</b> las coordenadas W-NOMINATE.</small>
+                <small>Las etiquetas corresponden al tema principal del proyecto asociado a cada votación. Una votación particular puede tratar un artículo, indicación o conflicto más específico. El filtro <b>no recalcula</b> las coordenadas W-NOMINATE.</small>
               </label>
 
               <label class="wn-field">
@@ -127,6 +131,13 @@
                   </div>
                 </div>
 
+                <details class="wn-model-coverage">
+                  <summary><strong>154 de 155 integrantes estimados</strong> · 1 caso no estimable</summary>
+                  <p><strong>María Francisca Bello Campos</strong> no recibe una coordenada porque no cuenta con suficientes votos binarios utilizables en el universo de esta estimación. No imputamos una posición artificial.</p>
+                </details>
+
+                <p class="wn-selection-note">Sin filtros, mostramos una selección determinista que cubre partidos y distintas zonas del eje. La lista completa está disponible sin convertirla en un ranking de desempeño.</p>
+
                 <div id="wn-topic-banner" class="wn-topic-banner" hidden></div>
 
                 <div id="wn-chart-wrap" class="wn-chart-wrap">
@@ -151,7 +162,7 @@
               <article class="wn-legend-card">
                 <div>
                   <h3>Colores de partido</h3>
-                  <p>Usamos exactamente la misma codificación partidaria del hemiciclo. El color ayuda a contextualizar; partido y alineamiento no entran como variables del modelo espacial.</p>
+                  <p>Usamos la misma codificación del hemiciclo. El color representa el <strong>partido actual al corte</strong> y sirve solo como contexto visual: partido y alineamiento no entran como variables del modelo espacial.</p>
                 </div>
                 <div id="wn-legend" class="wn-legend"></div>
               </article>
@@ -161,26 +172,47 @@
           <section class="wn-method-card" aria-labelledby="wn-method-title">
             <p class="eyebrow">Cómo construimos esta vista</p>
             <h2 id="wn-method-title">Qué significa —y qué no significa— W-NOMINATE</h2>
+
+            <div class="wn-model-meta" aria-label="Metadatos del modelo">
+              <span><strong>Corte:</strong> 1 sep 2026</span>
+              <span><strong>Especificación:</strong> raw_lop025</span>
+              <span><strong>Votaciones elegibles:</strong> 276</span>
+              <span><strong>Cobertura:</strong> 154/155</span>
+              <span><strong>Estado:</strong> experimental</span>
+            </div>
+
             <div class="wn-method-grid">
               <div>
                 <h3>1D: patrón principal</h3>
-                <p>La estimación base utiliza votaciones nominales de Sala, codifica Afirmativo/En Contra y excluye del cálculo espacial abstenciones, no votos y dispensas. La especificación base usa <code>lop=2,5%</code> y <code>minvotes=20</code>: 276 votaciones son elegibles y 154 integrantes reciben una coordenada. Para la visualización pública usamos <code>D1 visual = −D1 del modelo</code>, de modo que el eje quede orientado de izquierda a derecha.</p>
+                <p>La estimación base utiliza votaciones nominales de Sala, codifica Afirmativo/En Contra y excluye del cálculo espacial abstenciones, no votos y dispensas. Usa <code>lop=2,5%</code> y <code>minvotes=20</code>. La lectura izquierda–derecha proviene de una auditoría sustantiva del comportamiento legislativo; no es una etiqueta que W-NOMINATE produzca automáticamente. Para la visualización usamos <code>D1 visual = −D1 técnico</code>.</p>
               </div>
               <div>
-                <h3>2D: diagnóstico exploratorio</h3>
-                <p>La segunda dimensión mejora modestamente el ajuste, pero es más sensible a qué proyectos componen la muestra. En la visualización 2D invertimos solo D1 para mantener la misma orientación; D2 se conserva sin transformación y sin una etiqueta política sustantiva.</p>
+                <h3>Laboratorio 2D</h3>
+                <p>La segunda dimensión mejora modestamente el ajuste, pero es bastante más sensible a qué proyectos componen la muestra. Invertimos solo D1 para mantener la orientación izquierda → derecha; D2 permanece exactamente como fue estimada y sin una etiqueta política sustantiva.</p>
               </div>
               <div>
-                <h3>Filtros temáticos</h3>
-                <p>Los temas provienen de la clasificación analítica institucional-híbrida del proyecto. Al cambiar de tema <b>no reestimamos</b> W-NOMINATE: las coordenadas globales permanecen congeladas y el filtro solo resume cómo votó cada persona en las votaciones clasificadas bajo ese tema.</p>
+                <h3>Contexto temático</h3>
+                <p>Las familias temáticas son una clasificación analítica del proyecto, no materias oficiales de la Cámara ni una clasificación fina de cada artículo o indicación. Al elegir un tema <b>no reestimamos</b> W-NOMINATE: las coordenadas globales permanecen congeladas.</p>
               </div>
               <div>
-                <h3>Incertidumbre</h3>
-                <p>En 1D puedes mostrar un rango obtenido mediante bootstrap por proyectos. Los extremos del intervalo se invierten junto con D1, por lo que la incertidumbre mantiene exactamente la misma orientación pública del punto estimado.</p>
+                <h3>Robustez a proyectos</h3>
+                <p>La opción de robustez muestra un rango obtenido mediante bootstrap por proyectos. La banda indica cuánto puede moverse la ubicación cuando cambia la composición de proyectos utilizada para estimar el eje. No es un intervalo sobre una supuesta “ideología verdadera” de la persona.</p>
+              </div>
+              <div>
+                <h3>Un proyecto concentra muchas votaciones</h3>
+                <p>La Megareforma 18216-05 aporta 116 de las 276 votaciones elegibles de la especificación base. Por eso auditamos sensibilidades que limitan el peso de un mismo boletín. La estructura 1D permanece muy estable, pero esta concentración debe permanecer visible para interpretar el modelo responsablemente.</p>
+              </div>
+              <div>
+                <h3>La agenda observada importa</h3>
+                <p>El modelo solo puede resumir las votaciones nominales que efectivamente llegaron a Sala durante el período. No observa todas las preferencias programáticas de cada parlamentario, el trabajo en comisión ni decisiones políticas que nunca fueron sometidas a votación nominal.</p>
               </div>
             </div>
             <div class="wn-method-warning">
               <strong>Límites importantes.</strong> Proximidad espacial organiza patrones de probabilidad, no decisiones deterministas. Dos puntos próximos no votan necesariamente igual en cada proyecto. W-NOMINATE tampoco identifica por sí solo motivos, disciplina partidaria, calidad legislativa ni una ideología absoluta comparable entre legislaturas estimadas por separado.
+            </div>
+            <div class="wn-method-links">
+              <a href="https://github.com/mverapol-netizen/conoce-a-tu-parlamentario/blob/main/docs/RESULTADOS_WNOMINATE_V0_1.md" target="_blank" rel="noopener">Ver resultados metodológicos</a>
+              <a href="https://github.com/mverapol-netizen/conoce-a-tu-parlamentario/blob/main/ROADMAP.md" target="_blank" rel="noopener">Ver pendientes de validación</a>
             </div>
           </section>
         </div>
@@ -191,7 +223,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Conoce a tu parlamentario</p>
-      <p>Votaciones nominales de Sala · período observado desde marzo de 2026 · actualización de datos: 1 de septiembre de 2026.</p>
+      <p>Laboratorio W-NOMINATE experimental · votaciones nominales de Sala desde marzo de 2026 · corte de datos: 1 de septiembre de 2026.</p>
     </div>
   </footer>
 
@@ -201,5 +233,6 @@
   <script src="assets/js/wnominate_explorer_v3.js"></script>
   <script src="assets/js/wnominate_layout_v4.js"></script>
   <script src="assets/js/wnominate_export_v5.js"></script>
+  <script src="assets/js/wnominate_polish_v6.js"></script>
 </body>
 </html>
