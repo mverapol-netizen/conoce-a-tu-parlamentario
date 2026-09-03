@@ -25,7 +25,10 @@
 - [x] Cerrar, implementar y desplegar el **Módulo B: Coincidencia con partido y bancada/comité**, con leave-one-out, umbral público de 10%, mínimo de 20 comparaciones y evidencia fragmentada por parlamentario. Contrato de cierre: `docs/MODULO_B_COINCIDENCIA_GRUPOS_V0_2.md`.
 - [x] Cerrar, implementar y desplegar el **Módulo C: Iniciativa legislativa**, restringido a mociones originadas en la Cámara durante el período, distinguiendo autoría formal compartida e individual y conservando evidencia por boletín. Contrato de cierre: `docs/MODULO_C_INICIATIVA_LEGISLATIVA_V0_1.md`.
 - [x] Cerrar, implementar y desplegar el **Módulo D: Red de coautoría**, con definición relacional explícita, síntesis de vínculos más repetidos, lista completa y evidencia por boletín. Contrato de cierre: `docs/MODULO_D_COAUTORIA_V0_1.md`.
-- [ ] Cerrar secuencialmente los módulos restantes: materias y posición espacial.
+- [x] Publicar una pestaña separada **Patrones de voto** como **laboratorio W-NOMINATE experimental**, sin convertir todavía la coordenada espacial en indicador cerrado de las fichas.
+- [x] Añadir al laboratorio advertencia de estatus experimental, cobertura 154/155, concentración del omnibus, límites de agenda, contexto temático provisional, versionado visible y D2 como laboratorio exploratorio.
+- [ ] Cerrar el módulo de materias antes de integrarlo a las fichas individuales.
+- [ ] Cerrar los gates multimétodo/temporales antes de decidir si la posición espacial se incorpora como módulo individual definitivo.
 - [ ] Auditar el diseño definitivo de la ficha una vez que se cierre el contenido de todos los módulos publicables.
 
 ## Base legislativa 2026–2030
@@ -60,8 +63,10 @@
 - [x] Revisar fronteras y solapamientos de la taxonomía con casos ambiguos.
 - [x] Definir un método híbrido: señal institucional de comisión/destinación + trayectoria + texto + revisión semántica.
 - [x] Completar la primera clasificación temática de todos los proyectos disponibles, con trazabilidad de revisiones y cero casos pendientes.
+- [x] Mantener la clasificación temática fuera de los datos primarios y permitir reclasificación sin repetir la recolección legislativa.
+- [x] En la página W-NOMINATE rotular el filtro como **contexto temático del proyecto**, no como materia oficial ni tema exacto de cada objeto votado.
 - [ ] Realizar una validación externa/formal de precisión por macroárea antes de presentar la clasificación como métrica validada de investigación.
-- [ ] Mantener la clasificación temática fuera de los datos primarios y permitir reclasificación sin repetir la recolección legislativa.
+- [ ] Refinar, para usos analíticos por roll call, la clasificación de artículos/indicaciones/objetos exactos y `policy_chains`, especialmente dentro de proyectos omnibus.
 
 ## Historia política y análisis derivados
 
@@ -85,7 +90,8 @@
 - [x] Estimar un diagnóstico W-NOMINATE 2D y comparar su ganancia de ajuste frente a 1D.
 - [x] Alinear espacios 2D mediante Procrustes y comprobar que D2 es estable al cambiar `lop`, pero bastante más sensible al balanceo por boletín.
 - [x] Adoptar provisionalmente **1D como modelo espacial principal parsimonioso** y mantener D2 únicamente como diagnóstico exploratorio secundario.
-- [x] Documentar resultados experimentales en `docs/RESULTADOS_WNOMINATE_V0_1.md` y mantenerlos fuera de la ficha pública.
+- [x] Documentar resultados experimentales en `docs/RESULTADOS_WNOMINATE_V0_1.md`.
+- [x] Publicar esos resultados en una **pestaña experimental separada** con advertencias visibles, sin integrarlos todavía como indicador cerrado de la ficha individual.
 - [x] Ejecutar una primera prueba exploratoria de mitades temporales; conservarla como evidencia descriptiva porque usa `trials = 1` y las agendas no están balanceadas.
 - [x] Auditar literatura y experiencia previa y fijar el contrato prospectivo multimétodo en `docs/CONTRATO_MODELOS_ROLLCALL_V0_2.md`.
 - [x] Reestimar W-NOMINATE 1D con incertidumbre válida y cerrar la corrida de investigación correspondiente.
@@ -94,7 +100,7 @@
 - [x] Implementar B-Call como diagnóstico separado de posición y variabilidad, sin denominar D2 disciplina partidaria.
 - [x] Auditar efecto arco de D2 mediante la relación cuadrática entre D1 y D2 y estudiar los residuos; no hay evidencia fuerte de que D2 sea meramente un artefacto cuadrático, pero permanece exploratorio y sin etiqueta sustantiva pública.
 - [ ] Separar fiabilidad por partición, ventanas cronológicas balanceadas y un modelo dinámico conjunto para cerrar la **estabilidad temporal** de D1.
-- [ ] Validar sustantivamente la orientación e interpretación de D1; no denominar automáticamente el signo izquierda/derecha, gobierno/oposición o ideología.
-- [ ] Decidir la forma pública eventual de la posición espacial: coordenada, percentil, banda robusta, visualización sin ranking o ninguna.
+- [ ] Cerrar formalmente la validación sustantiva de D1 y decidir el lenguaje público definitivo: izquierda–derecha, continuo político-ideológico o formulación más prudente.
+- [ ] Decidir la forma pública eventual de la posición espacial dentro de las fichas: coordenada, percentil, banda robusta, visualización sin ranking o ninguna.
 - [x] Derivar redes de coautoría a partir de `bill_authors.csv` sin alterar la tabla primaria y actualizarlas semanalmente después del sync legislativo.
-- [ ] Decidir qué indicadores finalmente se publicarán en las fichas legislativas del sitio.
+- [ ] Decidir qué indicadores adicionales finalmente se publicarán en las fichas legislativas del sitio.
