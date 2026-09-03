@@ -1,0 +1,36 @@
+{
+  "generated_for": "2026-09-03",
+  "term_start": "2026-03-11",
+  "current_profiles": 155,
+  "eligible_chamber_motions": 305,
+  "reconstructed_deputy_edges": 3346,
+  "expected_deputy_edges": 3346,
+  "edge_weight_mismatches": 0,
+  "current_profiles_without_coauthors": 0,
+  "unique_coauthors": {
+    "min": 1,
+    "median": 41,
+    "max": 96
+  },
+  "recurrent_coauthors": {
+    "min": 0,
+    "median": 17,
+    "max": 49
+  },
+  "one_off_coauthors": {
+    "min": 1,
+    "median": 26,
+    "max": 52
+  },
+  "strongest_tie": {
+    "max": 17
+  },
+  "detail_files": 155,
+  "detail_file_size_bytes": {
+    "min": 637,
+    "max": 101726,
+    "total": 6225612
+  },
+  "public_top_visible": 8,
+  "method_note": "Dos personas están conectadas si figuran formalmente como autoras de la misma moción de origen Cámara durante el período. El peso es el número de mociones compartidas. La coautoría no se interpreta automáticamente como afinidad ideológica, amistad, coordinación estable ni intensidad causal de colaboración."
+}
