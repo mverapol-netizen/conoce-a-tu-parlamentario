@@ -1,6 +1,6 @@
 {
-  "schema_version": "commission-activity-web-v0.3",
-  "generated_at": "2026-09-03T10:38:56.545770-04:00",
+  "schema_version": "commission-activity-web-v0.4",
+  "generated_at": "2026-09-03T10:45:16.008203-04:00",
   "timezone": "America/Santiago",
   "directory_schema": "commissions-web-v0.4",
   "source": {
@@ -8,7 +8,8 @@
     "layers": [
       "Sesiones",
       "Citaciones",
-      "Resultados"
+      "Resultados",
+      "Proyectos de ley"
     ],
     "method": "HTML institucional de cada prmID; solo tablas principales, excluyendo subtablas anidadas"
   },
@@ -17,15 +18,18 @@
     "sessions_pages_retrieved": 34,
     "citations_pages_retrieved": 34,
     "results_pages_retrieved": 34,
-    "session_rows_retained": 32,
-    "citation_rows_retained": 32,
-    "result_rows_retained": 23
+    "projects_pages_retrieved": 34,
+    "session_rows_retained": 33,
+    "citation_rows_retained": 33,
+    "result_rows_retained": 23,
+    "project_rows_retained": 154
   },
   "quality_gate": {
     "minimum_page_coverage": 0.8,
     "sessions_coverage": 1.0,
     "citations_coverage": 1.0,
     "results_coverage": 1.0,
+    "projects_coverage": 1.0,
     "passed": true,
     "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas no se convierten en eventos independientes."
   },
@@ -135,6 +139,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4897",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "12 ago. 2026",
+            "materia": "Declara feriado nacional el 17 de septiembre de 2026",
+            "estado": "En tramitación",
+            "boletín": "18600-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Obliga a registrar un correo electrónico para efectos de notificación en domicilio digital",
+            "estado": "En tramitación",
+            "boletín": "18596-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "10 ago. 2026",
+            "materia": "Modifica la ley N°18.603, orgánica constitucional de los partidos políticos, para fijar un día para realizar a nivel nacional las elecciones internas de los partidos políticos",
+            "estado": "En tramitación",
+            "boletín": "18601-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "10 ago. 2026",
+            "materia": "Sanciona el incumplimiento de órdenes de evacuación o prohibiciones de ingreso emitidas por las autoridades y permite exigir el reembolso de los costos extraordinarios de búsqueda y rescate",
+            "estado": "En tramitación",
+            "boletín": "18587-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 ago. 2026",
+            "materia": "Modifica la ley N°20.000, que sanciona el tráfico ilícito de estupefacientes y sustancias sicotrópicas, para disponer como inhabilidad temporal para acceder a la función pública el haber patrocinado la defensa de imputados por infracciones a esa ley",
+            "estado": "En tramitación",
+            "boletín": "18569-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 ago. 2026",
+            "materia": "Declara feriado legal el 17 de septiembre de 2026",
+            "estado": "En tramitación",
+            "boletín": "18599-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 ago. 2026",
+            "materia": "Modifica la Ley sobre Rentas Municipales para ampliar el plazo de vigencia de las patentes municipales provisorias",
+            "estado": "En tramitación",
+            "boletín": "18576-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "04 ago. 2026",
+            "materia": "Sanciona la celebración de matrimonios y acuerdos de unión civil destinados a obtener beneficios estatales o residencia en el país",
+            "estado": "En tramitación",
+            "boletín": "18544-06"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -239,6 +320,55 @@
           "top_level_tables_examined": 1,
           "matching_tables": 1,
           "nested_tables_skipped": 1,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4889",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "27 jul. 2026",
+            "materia": "Aprueba el Acuerdo de alcance parcial entre la República de Chile y la República de Trinidad y Tobago, adoptado mediante suscripción virtual, el 25 de abril de 2025",
+            "estado": "En tramitación",
+            "boletín": "18501-10"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 jul. 2026",
+            "materia": "Aprueba el Sexto Protocolo Adicional al Acuerdo de Alcance Parcial sobre Transporte Internacional Terrestre, suscrito en Montevideo, el 4 de agosto de 2025",
+            "estado": "En tramitación",
+            "boletín": "18428-10"
+          },
+          {
+            "date_context": "",
+            "ingreso": "10 jun. 2026",
+            "materia": "Aprueba la \"Enmienda del Artículo VI del Estatuto del Organismo Internacional de Energía Atómica\", aprobada por la Conferencia General del Organismo, celebrada el 1 de octubre de 1999 en Viena, Austria",
+            "estado": "En tramitación",
+            "boletín": "18334-10"
+          },
+          {
+            "date_context": "",
+            "ingreso": "02 jun. 2026",
+            "materia": "Aprueba el Acuerdo que modifica el Convenio entre la República de Chile y el Gobierno de la República de Hungría con el Objeto de Autorizar el Ejercicio de Actividades Remuneradas en el Estado Receptor por los Familiares Dependientes del Personal Diplomático, Consular, Administrativo y Técnico de las Misiones Diplomáticas y Consulares Acreditadas ante los respectivos Gobiernos, y por los Familiares Dependientes de Nacionales Chilenos o Húngaros Acreditados ante Organizaciones Internacionales con Sede en Cualquiera de los Dos Países, adoptado por intercambio de Notas, fechadas en Santiago y Budapest, el 15 de julio de 2024.",
+            "estado": "En tramitación",
+            "boletín": "18279-10"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -376,6 +506,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4884",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "14 ago. 2026",
+            "materia": "Modifica diversos cuerpos legales para fortalecer la protección de redes de suministro de servicios públicos o domiciliarios",
+            "estado": "En tramitación",
+            "boletín": "18612-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "12 ago. 2026",
+            "materia": "Modifica el Código Penal para agravar la penalidad en caso de sustracción y receptación de combustibles en supuestos que indica",
+            "estado": "En tramitación",
+            "boletín": "18611-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "12 ago. 2026",
+            "materia": "Modifica la Constitución Política para disponer un plazo de prescripción en las acciones de cobro de los créditos otorgados conforme a la ley N° 20.027, sobre financiamiento de estudios de educación superior",
+            "estado": "En tramitación",
+            "boletín": "18610-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Modifica el Código Penal para agravar la pena por la receptación de vehículos en supuestos que indica",
+            "estado": "En tramitación",
+            "boletín": "18604-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Modifica la Constitución Política para disponer una cotización única de salud para los trabajadores pluriempleados y los pensionados que continúan ejerciendo labores remuneradas",
+            "estado": "En tramitación",
+            "boletín": "18595-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Modifica diversos cuerpos legales para agravar las sanciones por maltrato contra animales",
+            "estado": "En tramitación",
+            "boletín": "18602-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Modifica la Constitución Política para incorporar el derecho a una vivienda digna",
+            "estado": "En tramitación",
+            "boletín": "18593-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Modifica la ley Nº 19.903, que establece el procedimiento para el otorgamiento de la posesión efectiva de la herencia, para facilitar el acceso de los herederos a activos financieros hereditarios",
+            "estado": "En tramitación",
+            "boletín": "18591-07"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -483,6 +690,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4895",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "29 jul. 2026",
+            "materia": "Modifica la ley N°21.091, sobre educación superior, para que los establecimientos promuevan la inserción laboral y empleabilidad de sus egresados",
+            "estado": "En tramitación",
+            "boletín": "18527-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "21 jul. 2026",
+            "materia": "Crea una acción de tutela del derecho preferente de los padres a educar a sus hijos",
+            "estado": "En tramitación",
+            "boletín": "18508-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 jul. 2026",
+            "materia": "Modifica la leyes N°20.370, general de Educación, y 21.040, que crea el Sistema de Educación Pública, para implementar en la educación técnico-profesional criterios de territorialidad y descentralización",
+            "estado": "En tramitación",
+            "boletín": "18495-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 jul. 2026",
+            "materia": "Modifica la ley N°20.370, general de educación, para regular a los apoderados en el sistema educacional chileno",
+            "estado": "En tramitación",
+            "boletín": "18461-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "25 jun. 2026",
+            "materia": "Modifica diversos cuerpos legales para promover la ciudadanía digital y establecer medidas de prevención y protección frente al daño digital en el sistema escolar",
+            "estado": "En tramitación",
+            "boletín": "18433-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "23 jun. 2026",
+            "materia": "Refuerza el cumplimiento, por parte de las familias, de las medidas convencionales tendientes a resguardar la protección de la convivencia educativa, la seguridad escolar o la integridad física y psíquica del propio estudiante o de terceros",
+            "estado": "En tramitación",
+            "boletín": "18418-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "23 jun. 2026",
+            "materia": "Modifica la ley N° 21.091, para establecer la obligación de resguardar la seguridad en las instituciones de educación superior",
+            "estado": "En tramitación",
+            "boletín": "18417-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jun. 2026",
+            "materia": "Promueve la difusión de ceremonias republicanas en los establecimientos educacionales reconocidos por el Estado",
+            "estado": "En tramitación",
+            "boletín": "18392-04"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -556,6 +840,55 @@
         "diagnostics": {
           "top_level_tables_examined": 0,
           "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4890",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "17 jun. 2026",
+            "materia": "Prohíbe establecer como hecho gravado, base imponible o elemento constitutivo de la obligación tributaria una conducta ilícita o constitutiva de delito",
+            "estado": "En tramitación",
+            "boletín": "18459-05"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 jun. 2026",
+            "materia": "Promueve la austeridad y fortalece los requisitos para destinar recursos públicos en actividades institucionales",
+            "estado": "En tramitación",
+            "boletín": "18328-05"
+          },
+          {
+            "date_context": "",
+            "ingreso": "18 may. 2026",
+            "materia": "Modifica los cuerpos legales que indica para fortalecer la publicidad y transparencia en materia de modificación presupuestaria",
+            "estado": "En tramitación",
+            "boletín": "18285-05"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 abr. 2026",
+            "materia": "Modifica la ley N° 20.027, en materia de cobro de créditos de educación superior, para fortalecer las garantías del debido proceso",
+            "estado": "En tramitación",
+            "boletín": "18197-04"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
@@ -667,6 +1000,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4896",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "02 sep. 2026",
+            "materia": "Implementa el Protocolo de 1992, que enmienda el Convenio Internacional sobre la constitución de un Fondo Internacional de Indemnización de Daños Debidos a Contaminación por Hidrocarburos, de 1971, y modifica el decreto ley N° 2.222, de 1978, que sustituye Ley de Navegación",
+            "estado": "En tramitación",
+            "boletín": "18627-02"
+          },
+          {
+            "date_context": "",
+            "ingreso": "29 jul. 2026",
+            "materia": "Modifica las sanciones a los delitos de espionaje y protege la información estratégica del Estado",
+            "estado": "En tramitación",
+            "boletín": "18530-02"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 jul. 2026",
+            "materia": "Modifica la ley N°21.280, sobre el ámbito de aplicación del procedimiento de tutela laboral, para excluir a los funcionarios de las fuerzas Armadas, y de Orden y Seguridad Pública, de tales procedimientos",
+            "estado": "En tramitación",
+            "boletín": "18499-02"
+          },
+          {
+            "date_context": "",
+            "ingreso": "18 jun. 2026",
+            "materia": "Modifica leyes que indica para permitir la homologación del servicio militar en los procesos de formación e ingreso institucional de Carabineros de Chile y Gendarmería de Chile",
+            "estado": "En tramitación",
+            "boletín": "18408-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 jun. 2026",
+            "materia": "Aumenta la pena aplicable al delito de ingreso no autorizado a recintos militares y policiales",
+            "estado": "En tramitación",
+            "boletín": "18381-02"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 jun. 2026",
+            "materia": "Aumenta la pena aplicable al delito de ingreso no autorizado a recintos militares y policiales, y fortalece la protección de la seguridad pública",
+            "estado": "En tramitación",
+            "boletín": "18361-02"
+          },
+          {
+            "date_context": "",
+            "ingreso": "02 jun. 2026",
+            "materia": "Previene y sanciona la fabricación, adaptación y circulación de armas hechizas y dispositivos susceptibles de ser transformados en armas de fuego",
+            "estado": "En tramitación",
+            "boletín": "18316-02"
+          },
+          {
+            "date_context": "",
+            "ingreso": "10 abr. 2026",
+            "materia": "Modifica cuerpos legales que indica en materia de protección del espacio aéreo",
+            "estado": "En tramitación",
+            "boletín": "18175-02"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -771,6 +1181,83 @@
           "top_level_tables_examined": 1,
           "matching_tables": 1,
           "nested_tables_skipped": 1,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4885",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "12 ago. 2026",
+            "materia": "Modifica la ley N°18.290, de Tránsito, para disponer como infracción gravísima supuestos en que la víctima es una persona adulta mayor, con discapacidad o neurodivergente",
+            "estado": "En tramitación",
+            "boletín": "18605-15"
+          },
+          {
+            "date_context": "",
+            "ingreso": "26 jul. 2026",
+            "materia": "Sanciona la suplantación de identidad mediante el envío de mensajes fraudulentos y dispone en las concesionarias de telecomunicaciones deberes de detección y bloqueo de dichas comunicaciones",
+            "estado": "En tramitación",
+            "boletín": "18517-15"
+          },
+          {
+            "date_context": "",
+            "ingreso": "14 jul. 2026",
+            "materia": "Modifica la ley N°18.290, de Tránsito, para que las escuelas de conducción instruyan programas sobre defensa y reacción ante actos delictuales de alta connotación",
+            "estado": "En tramitación",
+            "boletín": "18484-15"
+          },
+          {
+            "date_context": "",
+            "ingreso": "08 jul. 2026",
+            "materia": "Modifica la Ley Orgánica de la Empresa de los Ferrocarriles del Estado, con el objeto de establecer una exención de derechos y tributos municipales por la ejecución de obras ferroviarias y declarar dichas obras como infraestructura ejecutada por el Estado",
+            "estado": "En tramitación",
+            "boletín": "18436-15"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 jul. 2026",
+            "materia": "Modifica la ley N°18.290, de Tránsito, para ampliar los supuestos de procedencia de la suspensión provisoria de la licencia de conducir",
+            "estado": "En tramitación",
+            "boletín": "18469-15"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jun. 2026",
+            "materia": "Regula la responsabilidad de empresas de servicios sanitarios para garantizar la reparación de bienes nacionales de uso público",
+            "estado": "En tramitación",
+            "boletín": "18391-09"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 jun. 2026",
+            "materia": "Modifica la ley N°18.290, de Tránsito, para eximir en todos los casos el pago de peaje a los cuerpos de bomberos",
+            "estado": "En tramitación",
+            "boletín": "18294-15"
+          },
+          {
+            "date_context": "",
+            "ingreso": "29 may. 2026",
+            "materia": "Modifica la ley N° 18.290, de tránsito, para sancionar la negativa a aceptar el pago de tarifa escolar en el transporte público remunerado de pasajeros",
+            "estado": "En tramitación",
+            "boletín": "18306-15"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -902,6 +1389,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4900",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "29 jul. 2026",
+            "materia": "Modifica la ley N°21.020, sobre tenencia responsable de mascotas y animales de compañía, para agravar las penas por abandonar animales en zonas rurales",
+            "estado": "En tramitación",
+            "boletín": "18528-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "14 jul. 2026",
+            "materia": "Fortalece la persecución del contrabando de alimentos",
+            "estado": "En tramitación",
+            "boletín": "18483-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 jul. 2026",
+            "materia": "Establece exigencias mínimas de factibilidad sanitaria y acreditación de derechos de agua en la etapa de subdivisión rural",
+            "estado": "En tramitación",
+            "boletín": "18450-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "29 jun. 2026",
+            "materia": "Establece un mecanismo de trazabilidad y control de insumos, maquinaria y bienes críticos rurales",
+            "estado": "En tramitación",
+            "boletín": "18435-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jun. 2026",
+            "materia": "Establece medidas a favor de la seguridad de las personas y la protección de la biodiversidad y la fauna local, por medio del control de los perros asilvestrados o ferales",
+            "estado": "En tramitación",
+            "boletín": "18400-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 may. 2026",
+            "materia": "Modifica el DFL N° 30, de 2004, que aprueba el texto refundido, coordinado y sistematizado del decreto con fuerza de ley de Hacienda N° 213, de 1953, sobre ordenanza de aduanas, para establecer sanciones en caso de contrabando de productos agropecuarios infestados",
+            "estado": "En tramitación",
+            "boletín": "18289-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "13 may. 2026",
+            "materia": "Establece medidas de prevención y control de riesgos asociados a perros salvajes o ferales, en la seguridad de las personas, el ganado y la fauna silvestre",
+            "estado": "En tramitación",
+            "boletín": "18269-01"
+          },
+          {
+            "date_context": "",
+            "ingreso": "14 abr. 2026",
+            "materia": "Declara el olivo y la aceituna del Valle de Azapa como patrimonio regional y promueve su denominación de origen",
+            "estado": "En tramitación",
+            "boletín": "18177-01"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1030,6 +1594,55 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4888",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "14 jul. 2026",
+            "materia": "Modifica la ley N°19.300, para eliminar las labores de exploración minera de aquellas que deben ingresar al Sistema de Evaluación de Impacto Ambiental",
+            "estado": "En tramitación",
+            "boletín": "18487-12"
+          },
+          {
+            "date_context": "",
+            "ingreso": "10 jun. 2026",
+            "materia": "Modifica la ley N° 21.368, con el objeto de prorrogar la entrada en vigencia de su reglamento y flexibilizar la aplicación de las disposiciones que indica",
+            "estado": "En tramitación",
+            "boletín": "18337-12"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 may. 2026",
+            "materia": "Introduce y regula la obligación de las empresas de rellenos sanitarios de elaborar un plan para la reducción de gas metano dentro de sus instalaciones",
+            "estado": "En tramitación",
+            "boletín": "18245-12"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 abr. 2026",
+            "materia": "Modifica la ley N° 20.920, que establece marco para la gestión de residuos, la responsabilidad extendida del productor y fomento al reciclaje, para sancionar las infracciones en la gestión de desechos textiles",
+            "estado": "En tramitación",
+            "boletín": "18199-12"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1137,6 +1750,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4894",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "10 ago. 2026",
+            "materia": "Modifica la Ley N°19.496, sobre protección de los derechos de los consumidores, para exigir la disponibilidad de servicios higiénicos de uso público en locales comerciales que indica",
+            "estado": "En tramitación",
+            "boletín": "18586-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 ago. 2026",
+            "materia": "Promueve el establecimiento de escuelas de medicina en todas las regiones del país",
+            "estado": "En tramitación",
+            "boletín": "18575-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 jul. 2026",
+            "materia": "Dispone estándares de resistencia estructural, gestión de riesgos y mantención para las ambulancias terrestres",
+            "estado": "En tramitación",
+            "boletín": "18497-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "08 jul. 2026",
+            "materia": "Obliga a los administradores de recintos de alta concurrencia pública a adoptar medidas para prevenir en ellos la ocurrencia de suicidios",
+            "estado": "En tramitación",
+            "boletín": "18474-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 jul. 2026",
+            "materia": "Prohíbe la venta de bebidas energéticas a menores de dieciocho años",
+            "estado": "En tramitación",
+            "boletín": "18454-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "25 jun. 2026",
+            "materia": "Modifica el Código Sanitario para establecer el deber del médico de informar a la mujer sobre la actividad cardíaca embrionaria o fetal, y de ofrecerle la oportunidad de escucharla, en forma previa a la interrupción del embarazo",
+            "estado": "En tramitación",
+            "boletín": "18419-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "19 jun. 2026",
+            "materia": "Modifica la ley N° 19.451, que establece normas sobre trasplante y donación de órganos, para impedir la discriminación en el acceso a esta prestación médica respecto de personas adoptadas, con filiación desconocida o sin vínculos familiares biológicos (Ley Thiare)",
+            "estado": "En tramitación",
+            "boletín": "18411-11"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jun. 2026",
+            "materia": "Incorpora responsabilidades civiles, administrativas y penales en materia de trasplante y donación de órganos",
+            "estado": "En tramitación",
+            "boletín": "18387-11"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1241,6 +1931,83 @@
           "top_level_tables_examined": 1,
           "matching_tables": 1,
           "nested_tables_skipped": 1,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4891",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Dispone un permiso laboral para el retiro de medicamentos en establecimientos de atención primaria y secundaria de salud",
+            "estado": "En tramitación",
+            "boletín": "18603-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 ago. 2026",
+            "materia": "Suspende transitoriamente los efectos de la ley N°21.643, que modifica el Código del Trabajo y otros cuerpos legales en materia de prevención, investigación y sanción del acoso laboral, sexual o de violencia en el trabajo",
+            "estado": "En tramitación",
+            "boletín": "18588-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "30 jul. 2026",
+            "materia": "Modifica el Código del Trabajo para extender la obligación de ofrecer trabajo a distancia o teletrabajo en casos de emergencia declarada por autoridad pública",
+            "estado": "En tramitación",
+            "boletín": "18534-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "27 jul. 2026",
+            "materia": "Establece un permiso laboral ante situaciones de emergencia o catástrofe declarada por la autoridad",
+            "estado": "En tramitación",
+            "boletín": "18519-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "21 jul. 2026",
+            "materia": "Perfecciona los mecanismos de adaptabilidad de la jornada de trabajo y establece un régimen especial para el sector turismo y actividades conexas",
+            "estado": "En tramitación",
+            "boletín": "18478-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 jul. 2026",
+            "materia": "Modifica el Código del Trabajo para fortalecer la formalidad laboral",
+            "estado": "En tramitación",
+            "boletín": "18500-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jul. 2026",
+            "materia": "Crea en el Código del Trabajo el cargo de responsable de gestión y ordenación del tiempo de trabajo en las empresas",
+            "estado": "En tramitación",
+            "boletín": "18492-13"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 jul. 2026",
+            "materia": "Reconoce equivalencias a la experiencia laboral para promover la inserción laboral de las personas jóvenes",
+            "estado": "En tramitación",
+            "boletín": "18453-13"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -1372,6 +2139,69 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4892",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "12 ago. 2026",
+            "materia": "Regula situación de labores mineras abandonadas",
+            "estado": "En tramitación",
+            "boletín": "18606-08"
+          },
+          {
+            "date_context": "",
+            "ingreso": "10 ago. 2026",
+            "materia": "Modifica el decreto ley N°3.525, de 1980, que crea el Servicio Nacional de Geología y Minería, para establecer la competencia de los tribunales para conocer reclamos contra resoluciones emitidas por ese servicio",
+            "estado": "En tramitación",
+            "boletín": "18589-08"
+          },
+          {
+            "date_context": "",
+            "ingreso": "24 jul. 2026",
+            "materia": "Prohíbe plantaciones de alta combustibilidad en zonas colindantes a líneas eléctricas",
+            "estado": "En tramitación",
+            "boletín": "18515-08"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jun. 2026",
+            "materia": "Modifica la ley N° 18.410, con el objeto de establecer compensaciones eléctricas automáticas agravadas para usuarios de territorios insulares y aislados afectados por interrupciones prolongadas",
+            "estado": "En tramitación",
+            "boletín": "18393-08"
+          },
+          {
+            "date_context": "",
+            "ingreso": "16 jun. 2026",
+            "materia": "Modifica la Ley General de Servicios Eléctricos para facilitar la incorporación y actualización del registro de personas electrodependientes",
+            "estado": "En tramitación",
+            "boletín": "18386-08"
+          },
+          {
+            "date_context": "",
+            "ingreso": "02 jun. 2026",
+            "materia": "Modifica el decreto ley N° 1.349, de 1976, que crea la Comisión Chilena del Cobre, para otorgar a la Contraloría General de la República facultades fiscalizadoras respecto de las empresas estatales productoras de cobre y sus derivados",
+            "estado": "En tramitación",
+            "boletín": "18313-08"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1382,6 +2212,21 @@
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4893",
         "rows": [
+          {
+            "date_context": "",
+            "n": "19",
+            "día": "08 sep. 2026",
+            "inicio": "17:30",
+            "término": "19:30",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
           {
             "date_context": "",
             "n": "18",
@@ -1423,6 +2268,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4893",
         "rows": [
           {
+            "date_context": "VIERNES 4 DE SEPTIEMBRE DE 2026",
+            "horario": "17:30",
+            "sala": "Sala Ramón Pérez Opazo tercer nivel",
+            "citación": "continuar la discusión y votación particular del proyecto de ley, originado en mensaje de S. E. el Presidente de la República, que modifica la ley N° 19.799, sobre documentos electrónicos, firma electrónica y servicios de certificación de dicha firma, y otros cuerpos legales relacionados, boletín N° 18286-03, con urgencia calificada de “simple”, en primer trámite constitucional y primero reglamentario. NOTA: Se recuerda que el plazo para la formulación de INDICACIONES a este l proyecto de ley es el VIERNES 4 DE SEPTIEMBRE DE 2026, a las 12:00 hrs (mediodía).. Se encuentra invitado a participar de la tramitación de esta iniciativa el Ministro de Economía, Fomento y Turismo, señor Daniel Mas; el Subsecretario de Economía, señor Karlfranz Koehler y un representante experto en la materia de dicho Ministerio."
+          },
+          {
             "date_context": "VIERNES 21 DE AGOSTO DE 2026",
             "horario": "17:30",
             "sala": "Sala Ramón Pérez Opazo tercer nivel",
@@ -1442,9 +2293,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 1,
-          "matching_tables": 1,
-          "nested_tables_skipped": 1,
+          "top_level_tables_examined": 2,
+          "matching_tables": 2,
+          "nested_tables_skipped": 2,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -1476,6 +2327,83 @@
           "top_level_tables_examined": 1,
           "matching_tables": 1,
           "nested_tables_skipped": 1,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4893",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Fortalece los derechos de los pasajeros ante la sobreventa, modificaciones de itinerario, retrasos, cancelaciones y desembarque involuntario en el transporte aéreo",
+            "estado": "En tramitación",
+            "boletín": "18592-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 ago. 2026",
+            "materia": "Incrementa la información sobre cobros en estados de cuenta y el control de cargos recurrentes en medios de pago",
+            "estado": "En tramitación",
+            "boletín": "18565-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "28 jul. 2026",
+            "materia": "Crea un marco de protección de activos estratégicos para la seguridad nacional y económica del país",
+            "estado": "En tramitación",
+            "boletín": "18531-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "23 jul. 2026",
+            "materia": "Modifica las leyes N° 19.496, sobre protección de los derechos de los consumidores, y N° 18.290, de Tránsito, para garantizar la alternativa de pago presencial por el servicio de estacionamiento en la vía pública",
+            "estado": "En tramitación",
+            "boletín": "18513-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "22 jul. 2026",
+            "materia": "Incorpora una leyenda informativa obligatoria en la publicidad creada, sustancialmente, mediante inteligencia artificial",
+            "estado": "En tramitación",
+            "boletín": "18512-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "14 jul. 2026",
+            "materia": "Modifica la ley N°18.490, sobre seguro obligatorio de accidentes personales causados por circulación de vehículos motorizados, para incrementar el monto de los reembolsos por gastos médicos",
+            "estado": "En tramitación",
+            "boletín": "18486-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "09 jul. 2026",
+            "materia": "Modifica la ley N°19.496, sobre protección de los derechos de los consumidores, para evitar la generación de cobros improcedentes con posterioridad al fallecimiento del titular de contratos de tracto sucesivo o de ejecución continua",
+            "estado": "En tramitación",
+            "boletín": "18476-03"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 jul. 2026",
+            "materia": "Fortalece la transparencia de los créditos hipotecarios con apoyo estatal y dispone como antecedente crediticio el comportamiento de pago de canon de arrendamiento",
+            "estado": "En tramitación",
+            "boletín": "18473-03"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -1586,6 +2514,62 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4899",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "07 ago. 2026",
+            "materia": "Modifica el decreto ley N°1.305, de 1975, para garantizar que las postulaciones a los programas habitacionales puedan realizarse de modo individual o colectivo",
+            "estado": "En tramitación",
+            "boletín": "18583-14"
+          },
+          {
+            "date_context": "",
+            "ingreso": "26 jun. 2026",
+            "materia": "Obliga a instalar detectores de humo en viviendas nuevas como requisito para la recepción final de las obras",
+            "estado": "En tramitación",
+            "boletín": "18444-14"
+          },
+          {
+            "date_context": "",
+            "ingreso": "03 jun. 2026",
+            "materia": "Fortalece la seguridad en edificaciones habitacionales en altura",
+            "estado": "En tramitación",
+            "boletín": "18321-14"
+          },
+          {
+            "date_context": "",
+            "ingreso": "31 may. 2026",
+            "materia": "Modifica la Ley General de Urbanismo y Construcciones para exigir la ejecución previa o simultánea de las medidas de mitigación directas en proyectos inmobiliarios",
+            "estado": "En tramitación",
+            "boletín": "18309-14"
+          },
+          {
+            "date_context": "",
+            "ingreso": "08 abr. 2026",
+            "materia": "Modifica la ley N° 20.898, que establece un procedimiento simplificado para la regularización de viviendas de autoconstrucción, con el objeto de establecer un mecanismo para la formulación de observaciones y subsanación de éstas y extender el plazo de vigencia del procedimiento",
+            "estado": "En tramitación",
+            "boletín": "18163-14"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1693,6 +2677,34 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4887",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "05 jun. 2026",
+            "materia": "Modifica la ley N° 20.405, del Instituto Nacional de Derechos Humanos, en materia de transparencia, responsabilidad institucional, gobierno corporativo y rendición de cuentas",
+            "estado": "En tramitación",
+            "boletín": "18331-17"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -1789,6 +2801,76 @@
         "diagnostics": {
           "top_level_tables_examined": 0,
           "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4898",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "24 jul. 2026",
+            "materia": "Modifica la ley N°16.618, de menores, para disponer la resolución inmediata de solicitudes de autorización de salida del país en caso de negativa de deudores de pensiones de alimentos",
+            "estado": "En tramitación",
+            "boletín": "18516-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "19 jun. 2026",
+            "materia": "Fortalece el ejercicio de la responsabilidad parental",
+            "estado": "En tramitación",
+            "boletín": "18378-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "02 jun. 2026",
+            "materia": "Modifica la ley N° 21.430 para incorporar medidas de protección de la infancia y la adolescencia en entornos digitales",
+            "estado": "En tramitación",
+            "boletín": "18320-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "02 jun. 2026",
+            "materia": "Refuerza la protección integral de niños, niñas y adolescentes en procesos judiciales y establece medidas de prevención y sanción de falsos informes y denuncias",
+            "estado": "En tramitación",
+            "boletín": "18326-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "14 abr. 2026",
+            "materia": "Prohíbe la apología y promoción de la narcocultura, incorporando medidas preventivas y sancionatorias para evitar la exposición de niños, niñas y adolescentes a contenidos que incentiven la comisión de delitos",
+            "estado": "En tramitación",
+            "boletín": "18179-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "14 ene. 2026",
+            "materia": "Prohíbe el ingreso, registro y uso de redes sociales a personas menores de dieciséis años de edad",
+            "estado": "En tramitación",
+            "boletín": "18062-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 ene. 2026",
+            "materia": "Sanciona y permite reparar las acusaciones, denuncias y querellas efectuadas en contextos de cuidado personal, relación directa y regular, alimentos y violencia intrafamiliar, que resultaren falsas",
+            "estado": "En tramitación",
+            "boletín": "18046-18"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
@@ -1900,6 +2982,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4886",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "21 jul. 2026",
+            "materia": "Incorpora la alfabetización en materias digitales y sobre inteligencia artificial en el curriculum educacional",
+            "estado": "En tramitación",
+            "boletín": "18507-04"
+          },
+          {
+            "date_context": "",
+            "ingreso": "20 jul. 2026",
+            "materia": "Dispone un estatuto de protección de los derechos de creadores de contenido digital en sus relaciones contractuales con plataformas digitales, marcas y agencias de representación",
+            "estado": "En tramitación",
+            "boletín": "18498-19"
+          },
+          {
+            "date_context": "",
+            "ingreso": "23 jun. 2026",
+            "materia": "Modifica la ley N° 21.663, marco de ciberseguridad, para incorporar los principios de protección a la infancia y adolescencia, restricción etaria e información preventiva en entornos digitales",
+            "estado": "En tramitación",
+            "boletín": "18415-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 jun. 2026",
+            "materia": "Establece la obligación de fijar domicilio en Chile a las plataformas digitales",
+            "estado": "En tramitación",
+            "boletín": "18362-19"
+          },
+          {
+            "date_context": "",
+            "ingreso": "02 jun. 2026",
+            "materia": "Establece un estatuto de responsabilidad algorítmica y protección digital de niños, niñas y adolescentes",
+            "estado": "En tramitación",
+            "boletín": "18318-19"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 may. 2026",
+            "materia": "Protege a los menores de edad frente a la adicción a las nuevas tecnologías y prohíbe el acceso a redes sociales y otras plataformas",
+            "estado": "En tramitación",
+            "boletín": "18246-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "29 abr. 2026",
+            "materia": "Impone a las plataformas de redes sociales la obligación de eliminar contenido que induzca a la realización de conductas extremas que pongan en riesgo la integridad o salud de las personas",
+            "estado": "En tramitación",
+            "boletín": "18235-19"
+          },
+          {
+            "date_context": "",
+            "ingreso": "27 abr. 2026",
+            "materia": "Establece un marco integral de protección de niñas, niños y adolescentes en el uso de redes sociales",
+            "estado": "En tramitación",
+            "boletín": "18224-18"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2004,6 +3163,34 @@
           "top_level_tables_examined": 1,
           "matching_tables": 1,
           "nested_tables_skipped": 1,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4902",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "31 may. 2026",
+            "materia": "Modifica la ley N°21.069, que crea el Instituto Nacional de Desarrollo Sustentable de la Pesca Artesanal y de la Acuicultura de Pequeña Escala, Indespa, en lo relativo a la manera de regular el periodo de inscripción y postulación a beneficios que indica",
+            "estado": "En tramitación",
+            "boletín": "18280-21"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -2114,6 +3301,69 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4910",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "04 ago. 2026",
+            "materia": "Modifica la ley N°19.712, del deporte, para promover la difusión de las disciplinas deportivas en los medios de comunicación social",
+            "estado": "En tramitación",
+            "boletín": "18542-29"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 jun. 2026",
+            "materia": "Establece normas para la regulación de la emisión de ruido generado por instalaciones deportivas",
+            "estado": "En tramitación",
+            "boletín": "18375-29"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 jun. 2026",
+            "materia": "Modifica ley N° 19.712, del Deporte, para establecer medidas de seguridad, protección y resguardo de la infancia y la adolescencia, en actividades físicas, deportivas y recreativas",
+            "estado": "En tramitación",
+            "boletín": "18382-29"
+          },
+          {
+            "date_context": "",
+            "ingreso": "08 jun. 2026",
+            "materia": "Establece la obligatoriedad de exámenes de detección de drogas para el personal técnico de divisiones inferiores de clubes de fútbol profesional",
+            "estado": "En tramitación",
+            "boletín": "18347-29"
+          },
+          {
+            "date_context": "",
+            "ingreso": "17 may. 2026",
+            "materia": "Establece medidas de control, prohibición y resguardo de la integridad deportiva respecto de plataformas de apuestas en línea no autorizadas",
+            "estado": "En tramitación",
+            "boletín": "18284-29"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 abr. 2026",
+            "materia": "Reconoce al fútbol amateur como actividad de interés público y establece normas sobre prevención de la violencia, seguridad, responsabilidad y transparencia en esa actividad",
+            "estado": "En tramitación",
+            "boletín": "18205-29"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2187,6 +3437,34 @@
         "diagnostics": {
           "top_level_tables_examined": 0,
           "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4904",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "09 nov. 2017",
+            "materia": "Modifica la ley General de Servicios Sanitarios y la ley N° 19.496, que Establece normas sobre protección de los derechos de los consumidores, en lo que respecta al concepto de fuerza mayor en las zonas extremas y a la suspensión injustificada de servicios que señala",
+            "estado": "En tramitación",
+            "boletín": "11500-27"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2017",
+              "value": "2017"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
@@ -2298,6 +3576,83 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4903",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "17 ago. 2026",
+            "materia": "Modifica el Código Penal para ampliar el ámbito de aplicación del delito de interrupción u obstaculización de la libre circulación y del funcionamiento de los servicios de transporte",
+            "estado": "En tramitación",
+            "boletín": "18584-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "17 ago. 2026",
+            "materia": "Modifica el Código Procesal Penal y la ley N°19.970, que crea el sistema nacional de registros de ADN, para agilizar las investigaciones penales",
+            "estado": "En tramitación",
+            "boletín": "18585-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 ago. 2026",
+            "materia": "Modifica el Código Penal y el Código Procesal Penal para sancionar la extorsión territorial y el cobro de protección",
+            "estado": "En tramitación",
+            "boletín": "18594-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 ago. 2026",
+            "materia": "Modifica el Código Penal para tipificar supuestos de tenencia de armas cortantes o punzantes en establecimientos penitenciarios",
+            "estado": "En tramitación",
+            "boletín": "18574-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 ago. 2026",
+            "materia": "Autoriza al Presidente de la República para recompensar a quienes aporten antecedentes útiles para la investigación y sanción de delitos vinculados al crimen organizado",
+            "estado": "En tramitación",
+            "boletín": "18573-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "04 ago. 2026",
+            "materia": "Modifica el Código Penal para incorporar una agravante en caso de robo o hurto cometido durante situaciones de desastre natural o evacuación preventiva",
+            "estado": "En tramitación",
+            "boletín": "18541-06"
+          },
+          {
+            "date_context": "",
+            "ingreso": "01 jul. 2026",
+            "materia": "Modifica la ley N°18.961, orgánica constitucional de Carabineros de Chile, en cuanto a los procedimientos de evaluación médica que fundamentan retiros de personal",
+            "estado": "En tramitación",
+            "boletín": "18448-25"
+          },
+          {
+            "date_context": "",
+            "ingreso": "17 jun. 2026",
+            "materia": "Autoriza administrativamente controles policiales preventivos en situaciones que indica",
+            "estado": "En tramitación",
+            "boletín": "18405-25"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2394,6 +3749,62 @@
         "diagnostics": {
           "top_level_tables_examined": 0,
           "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4905",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "29 jul. 2026",
+            "materia": "Establece requisitos de elegibilidad para el acceso a fondos públicos destinados a actividades culturales y artísticas",
+            "estado": "En tramitación",
+            "boletín": "18622-24"
+          },
+          {
+            "date_context": "",
+            "ingreso": "17 jun. 2026",
+            "materia": "Aumenta penalidad en delitos contra monumentos nacionales",
+            "estado": "En tramitación",
+            "boletín": "18403-24"
+          },
+          {
+            "date_context": "",
+            "ingreso": "07 abr. 2026",
+            "materia": "Declara patrimonio Biocultural de la Nación las especies vegetales que indica",
+            "estado": "En tramitación",
+            "boletín": "18153-24"
+          },
+          {
+            "date_context": "",
+            "ingreso": "17 mar. 2026",
+            "materia": "Modifica la ley N° 19.132, que crea empresa Televisión Nacional de Chile, con el objeto de modernizar su misión y estrategia de gobernanza",
+            "estado": "En tramitación",
+            "boletín": "18151-24"
+          },
+          {
+            "date_context": "",
+            "ingreso": "27 ene. 2026",
+            "materia": "Regula la representatividad étnica de autores y agrupaciones folclóricas en la difusión de expresiones artísticas autóctonas",
+            "estado": "En tramitación",
+            "boletín": "18094-24"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
@@ -2498,6 +3909,34 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4907",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "06 jul. 2021",
+            "materia": "Modifica el Código Sanitario en materia de ofertas de servicios funerarios y obligaciones de los cementerios particulares",
+            "estado": "En tramitación",
+            "boletín": "14464-11"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2021",
+              "value": "2021"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2594,6 +4033,34 @@
         "diagnostics": {
           "top_level_tables_examined": 0,
           "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4909",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "17 jun. 2026",
+            "materia": "Modifica el Código de Aguas para fortalecer la protección de nacientes, vertientes y cabeceras de cuenca",
+            "estado": "En tramitación",
+            "boletín": "18402-33"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
@@ -2705,6 +4172,41 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4912",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "12 ene. 2026",
+            "materia": "Modifica la Ley General de Servicios Eléctricos para establecer la obligación de entregar generadores de emergencia a las cooperativas y comités de agua potable rural, en los casos que señala",
+            "estado": "En tramitación",
+            "boletín": "18054-22"
+          },
+          {
+            "date_context": "",
+            "ingreso": "05 ene. 2026",
+            "materia": "Establece la obligación de contar con equipamiento especializado para el control y extinción de incendios, en recintos destinados al estacionamiento de vehículos eléctricos o almacenamiento de baterías de litio",
+            "estado": "En tramitación",
+            "boletín": "18042-22"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -2809,6 +4311,55 @@
           "top_level_tables_examined": 1,
           "matching_tables": 1,
           "nested_tables_skipped": 1,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4913",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "31 ago. 2026",
+            "materia": "Perfecciona las normas sobre medidas cautelares en los procedimientos de violencia intrafamiliar y de violencia contra las mujeres en razón de su género, y modifica las leyes que indica",
+            "estado": "En tramitación",
+            "boletín": "18621-34"
+          },
+          {
+            "date_context": "",
+            "ingreso": "22 jun. 2026",
+            "materia": "Modifica cuerpos legales que indica en materia de notificaciones de medidas cautelares dictadas en procesos de violencia intrafamiliar",
+            "estado": "En tramitación",
+            "boletín": "18414-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "04 may. 2026",
+            "materia": "Fortalece la protección de las víctimas de violencia intrafamiliar y previene su revictimización",
+            "estado": "En tramitación",
+            "boletín": "18236-18"
+          },
+          {
+            "date_context": "",
+            "ingreso": "27 ene. 2026",
+            "materia": "Modifica la ley N° 18.695, orgánica constitucional de Municipalidades, para incorporar la perspectiva de género en los planes comunales de seguridad pública",
+            "estado": "En tramitación",
+            "boletín": "18089-34"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -2919,6 +4470,69 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4914",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "04 ago. 2026",
+            "materia": "Fomenta el acceso y participación de personas mayores en actividades económicas",
+            "estado": "En tramitación",
+            "boletín": "18543-35"
+          },
+          {
+            "date_context": "",
+            "ingreso": "22 jul. 2026",
+            "materia": "Incorpora a las víctimas de los delitos de estafa y otros engaños como personas de atención prioritaria en el Servicio Nacional de Acceso a la Justicia y Defensoría de Víctimas",
+            "estado": "En tramitación",
+            "boletín": "18511-07"
+          },
+          {
+            "date_context": "",
+            "ingreso": "21 jul. 2026",
+            "materia": "Modifica la ley N°20.422, sobre igualdad de oportunidades e inclusión social de personas con discapacidad, para especificar el deber de señalización auditiva de estaciones y paradas en los servicios de transporte público",
+            "estado": "En tramitación",
+            "boletín": "18509-35"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 may. 2026",
+            "materia": "Dispone como beneficiarios de la cuota preferente de inclusión laboral a las y los cuidadores no remunerados y otras personas que indica",
+            "estado": "En tramitación",
+            "boletín": "18283-35"
+          },
+          {
+            "date_context": "",
+            "ingreso": "04 may. 2026",
+            "materia": "Establece el Día Nacional de la Teletón y el Día Nacional del Encuentro Familiar",
+            "estado": "En tramitación",
+            "boletín": "18231-35"
+          },
+          {
+            "date_context": "",
+            "ingreso": "29 abr. 2026",
+            "materia": "Establece el deber de implementar medidas de accesibilidad en la construcción y diseño de viviendas en beneficio de personas mayores",
+            "estado": "En tramitación",
+            "boletín": "18234-35"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3019,6 +4633,21 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4911",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3091,6 +4720,21 @@
         },
         "diagnostics": {
           "top_level_tables_examined": 0,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4882",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
           "matching_tables": 0,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
@@ -3173,6 +4817,21 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4883",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3245,6 +4904,21 @@
         },
         "diagnostics": {
           "top_level_tables_examined": 0,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4908",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
           "matching_tables": 0,
           "nested_tables_skipped": 0,
           "wide_rows_skipped": 0,
@@ -3378,6 +5052,21 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4906",
+        "rows": [],
+        "page_period": {
+          "selected_options": []
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3455,6 +5144,55 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4901",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "11 dic. 2014",
+            "materia": "Modifica el Reglamento de la Cámara de Diputados, con el objeto de regular el minuto de silencio en homenaje a personas honorables",
+            "estado": "En tramitación",
+            "boletín": "9781-16"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 dic. 2014",
+            "materia": "Modifica el Reglamento de la Cámara de Diputados en materia de homenajes",
+            "estado": "En tramitación",
+            "boletín": "9782-16"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 ago. 2014",
+            "materia": "Establece límite ético, para la determinación del monto de la dieta parlamentaria",
+            "estado": "En tramitación",
+            "boletín": "9502-16"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 may. 2014",
+            "materia": "Modifica nombre de la Comisión de Cultura, Artes y Comunicaciones, por el que indica.",
+            "estado": "En tramitación",
+            "boletín": "9355-16"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2014",
+              "value": "2014"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     },
     {
@@ -3520,8 +5258,57 @@
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
+      },
+      "projects": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4915",
+        "rows": [
+          {
+            "date_context": "",
+            "ingreso": "11 dic. 2014",
+            "materia": "Modifica el Reglamento de la Cámara de Diputados, con el objeto de regular el minuto de silencio en homenaje a personas honorables",
+            "estado": "En tramitación",
+            "boletín": "9781-16"
+          },
+          {
+            "date_context": "",
+            "ingreso": "11 dic. 2014",
+            "materia": "Modifica el Reglamento de la Cámara de Diputados en materia de homenajes",
+            "estado": "En tramitación",
+            "boletín": "9782-16"
+          },
+          {
+            "date_context": "",
+            "ingreso": "06 ago. 2014",
+            "materia": "Establece límite ético, para la determinación del monto de la dieta parlamentaria",
+            "estado": "En tramitación",
+            "boletín": "9502-16"
+          },
+          {
+            "date_context": "",
+            "ingreso": "15 may. 2014",
+            "materia": "Modifica nombre de la Comisión de Cultura, Artes y Comunicaciones, por el que indica.",
+            "estado": "En tramitación",
+            "boletín": "9355-16"
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "2014",
+              "value": "2014"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
       }
     }
   ],
-  "scope_note": "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados. Las tres capas se mantienen separadas. Este snapshot conserva solo las primeras filas principales que devuelve cada ficha institucional y no pretende todavía reconstruir todo el historial documental de la comisión. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
+  "scope_note": "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados; Proyectos de ley reproduce iniciativas que la vista institucional asocia a la comisión para el período seleccionado por defecto. Las cuatro capas se mantienen separadas. Que un proyecto aparezca en la tabla de una comisión no significa que esté aprobado, que la comisión sea su única instancia competente ni que la lista reconstruya todo su historial legislativo. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
 }
