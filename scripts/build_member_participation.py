@@ -9,13 +9,24 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "legislative" / "2026"
 MEMBER_VOTES = OUT / "member_votes.csv"
 ROLLCALLS = OUT / "rollcalls.csv"
+PROJECTS = OUT / "projects.csv"
 OUTPUT = OUT / "member_participation_summary.csv"
 DIAGNOSTICS = OUT / "member_participation_diagnostics.json"
 PUBLIC_OUTPUT = ROOT / "assets" / "js" / "participation.js"
+PUBLIC_DATA = ROOT / "assets" / "data"
+PUBLIC_ROLLCALLS = PUBLIC_DATA / "participation_rollcalls.json"
+PUBLIC_MEMBER_VOTES = PUBLIC_DATA / "participation_member_votes.json"
 
 EXPECTED_SEATS_PER_ROLLCALL = 155
 SUBSTANTIVE = {"Afirmativo", "En Contra", "Abstención"}
 KNOWN_OPTIONS = SUBSTANTIVE | {"No Vota", "Dispensado"}
+OPTION_CODES = {
+    "Afirmativo": "A",
+    "En Contra": "E",
+    "Abstención": "B",
+    "No Vota": "N",
+    "Dispensado": "D",
+}
 
 FIELDS = [
     "diputado_id",
@@ -66,15 +77,38 @@ def public_record(row: dict) -> dict:
     }
 
 
+def clean_object(row: dict) -> str:
+    article = (row.get("articulo") or "").strip()
+    description = (row.get("descripcion") or "").strip()
+    bulletin = (row.get("boletin") or "").strip()
+    generic_descriptions = {
+        f"Boletín N°{bulletin}",
+        f"Boletin N°{bulletin}",
+        f"Boletín Nº{bulletin}",
+    }
+    if article:
+        return article
+    if description and description not in generic_descriptions:
+        return description
+    return "Votación del proyecto"
+
+
 def main() -> None:
     votes = read_csv(MEMBER_VOTES)
     rollcalls = read_csv(ROLLCALLS)
+    projects = read_csv(PROJECTS)
     if not votes or not rollcalls:
         raise RuntimeError("Las tablas de entrada están vacías")
 
     rollcall_by_id = {row["vote_id"]: row for row in rollcalls if row.get("vote_id")}
     if len(rollcall_by_id) != len(rollcalls):
         raise RuntimeError("rollcalls.csv contiene vote_id duplicados o vacíos")
+
+    project_title_by_bill = {
+        (row.get("boletin") or "").strip(): (row.get("titulo") or "").strip()
+        for row in projects
+        if (row.get("boletin") or "").strip()
+    }
 
     keys = [(row.get("vote_id", ""), row.get("diputado_id", "")) for row in votes]
     if any(not vote_id or not deputy_id for vote_id, deputy_id in keys):
@@ -165,6 +199,41 @@ def main() -> None:
         encoding="utf-8",
     )
 
+    public_rollcalls = {}
+    missing_project_titles = []
+    for vote_id, row in sorted(rollcall_by_id.items(), key=lambda item: (item[1].get("fecha", ""), int(item[0]))):
+        bulletin = (row.get("boletin") or "").strip()
+        title = project_title_by_bill.get(bulletin, "")
+        if not title:
+            missing_project_titles.append({"vote_id": vote_id, "boletin": bulletin})
+            title = f"Proyecto boletín {bulletin}" if bulletin else "Votación de Sala"
+        public_rollcalls[vote_id] = {
+            "bulletin": bulletin,
+            "date": row.get("fecha", ""),
+            "title": title,
+            "object": clean_object(row),
+            "result": row.get("resultado", ""),
+            "url": row.get("verification_url", ""),
+        }
+
+    public_member_votes = {
+        deputy_id: [
+            [row["vote_id"], OPTION_CODES[row["opcion"]]]
+            for row in sorted(member_votes, key=lambda x: (x.get("fecha", ""), int(x["vote_id"])))
+        ]
+        for deputy_id, member_votes in sorted(by_member.items(), key=lambda item: int(item[0]))
+    }
+
+    PUBLIC_DATA.mkdir(parents=True, exist_ok=True)
+    PUBLIC_ROLLCALLS.write_text(
+        json.dumps({"rollcalls": public_rollcalls}, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+    PUBLIC_MEMBER_VOTES.write_text(
+        json.dumps({"members": public_member_votes}, ensure_ascii=False, separators=(",", ":")) + "\n",
+        encoding="utf-8",
+    )
+
     opportunity_counts = [int(row["opportunity_rollcalls"]) for row in output_rows]
     full_rollcall_count = len(rollcalls)
     diagnostics = {
@@ -176,6 +245,9 @@ def main() -> None:
         "historical_members_observed": len(by_member),
         "participation_rows": len(output_rows),
         "public_asset_members": len(public_payload["members"]),
+        "public_rollcalls": len(public_rollcalls),
+        "public_member_vote_rows": sum(len(rows) for rows in public_member_votes.values()),
+        "public_rollcalls_without_project_title": len(missing_project_titles),
         "members_with_all_current_rollcalls_as_opportunities": sum(
             count == full_rollcall_count for count in opportunity_counts
         ),
@@ -195,6 +267,7 @@ def main() -> None:
             "bad_rollcalls": bad_rollcalls,
             "unknown_options": dict(unknown_options),
             "missing_rollcall_ids": missing_rollcall_ids[:20],
+            "missing_project_title_examples": missing_project_titles[:20],
         },
     }
     DIAGNOSTICS.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -206,6 +279,10 @@ def main() -> None:
         raise RuntimeError("El resumen individual perdió integrantes observados")
     if len(public_payload["members"]) != len(output_rows):
         raise RuntimeError("El activo público perdió integrantes del resumen auditado")
+    if len(public_rollcalls) != len(rollcalls):
+        raise RuntimeError("La trazabilidad pública perdió votaciones")
+    if sum(len(rows) for rows in public_member_votes.values()) != len(votes):
+        raise RuntimeError("La trazabilidad pública perdió votos nominales")
 
 
 if __name__ == "__main__":
