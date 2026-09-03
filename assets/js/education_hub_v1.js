@@ -62,11 +62,21 @@
     </article>`).join('');
   };
 
-  const searchableRecords = [
+  const rawSearchableRecords = [
     ...data.featuredQuestions.map((q) => ({ type: 'Pregunta', title: q.title, text: q.summary, href: `aprender.html?id=${q.id}` })),
     ...Object.entries(data.lessons).map(([id, lesson]) => ({ type: 'Lección', title: lesson.title, text: lesson.intro, href: `aprender.html?id=${id}` })),
     ...data.glossary.map((g) => ({ type: 'Concepto', title: g.term, text: g.short, href: `aprender.html?concepto=${g.slug}` }))
   ];
+
+  const recordsByHref = new Map();
+  rawSearchableRecords.forEach((record) => {
+    if (!recordsByHref.has(record.href)) recordsByHref.set(record.href, record);
+  });
+  const searchableRecords = [...recordsByHref.values()].map((item) => ({
+    ...item,
+    titleNormalized: normalize(item.title),
+    haystack: normalize(`${item.title} ${item.text}`)
+  }));
 
   const renderSearch = () => {
     if (!els.search || !els.results) return;
@@ -75,9 +85,15 @@
       els.results.innerHTML = '<div class="edu-empty">Prueba con <strong>comisión mixta</strong>, <strong>urgencia</strong>, <strong>qué hace un diputado</strong> o <strong>bancada</strong>.</div>';
       return;
     }
+
+    const tokens = term.split(' ').filter(Boolean);
     const matches = searchableRecords
-      .map((item) => ({ ...item, haystack: normalize(`${item.title} ${item.text}`) }))
-      .filter((item) => item.haystack.includes(term))
+      .filter((item) => tokens.every((token) => item.haystack.includes(token)))
+      .map((item) => ({
+        ...item,
+        rank: item.titleNormalized === term ? 0 : item.titleNormalized.startsWith(term) ? 1 : item.titleNormalized.includes(term) ? 2 : 3
+      }))
+      .sort((a, b) => a.rank - b.rank || a.title.localeCompare(b.title, 'es'))
       .slice(0, 8);
 
     els.results.innerHTML = matches.length ? matches.map((item) => `<a class="edu-glossary-item" href="${escapeHtml(item.href)}">
