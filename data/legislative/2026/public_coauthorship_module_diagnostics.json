@@ -1,0 +1,235 @@
+{
+  "deputy_nodes": 155,
+  "deputy_edges": 3346,
+  "isolated_deputies": 0,
+  "isolated_ids": [],
+  "unique_coauthors": {
+    "min": 1,
+    "p10": 23.4,
+    "median": 41,
+    "p90": 64.6,
+    "max": 96
+  },
+  "weighted_degree": {
+    "min": 1,
+    "median": 83,
+    "p90": 155.2,
+    "max": 237
+  },
+  "max_tie_strength_per_member": {
+    "median": 6,
+    "p90": 11.0,
+    "max": 17
+  },
+  "one_off_coauthor_share_pct": {
+    "median": 60.29,
+    "p90": 82.39
+  },
+  "top_k_weight_coverage_pct": {
+    "5": {
+      "median": 29.95,
+      "p10": 20.99,
+      "p90": 40.98,
+      "members_below_50pct": 149,
+      "members_below_70pct": 153
+    },
+    "8": {
+      "median": 42.59,
+      "p10": 30.39,
+      "p90": 57.1,
+      "members_below_50pct": 114,
+      "members_below_70pct": 150
+    },
+    "10": {
+      "median": 49.15,
+      "p10": 35.87,
+      "p90": 64.83,
+      "members_below_50pct": 81,
+      "members_below_70pct": 143
+    },
+    "12": {
+      "median": 54.55,
+      "p10": 41.13,
+      "p90": 73.67,
+      "members_below_50pct": 50,
+      "members_below_70pct": 135
+    },
+    "15": {
+      "median": 61.64,
+      "p10": 47.93,
+      "p90": 82.79,
+      "members_below_50pct": 27,
+      "members_below_70pct": 112
+    }
+  },
+  "strongest_deputy_edge": {
+    "source_id": "1028",
+    "source_name": "Eduardo Durán Salinas",
+    "target_id": "1059",
+    "target_name": "Ximena Ossandón Irarrázabal",
+    "shared_bills": 17
+  },
+  "highest_unique_coauthor_profiles": [
+    {
+      "diputado_id": "1193",
+      "diputado_nombre": "Patricio Briones Moller",
+      "unique_coauthors": 96,
+      "weighted_degree": 237,
+      "max_shared_bills_with_one_coauthor": 10,
+      "one_off_coauthors": 47,
+      "one_off_coauthor_share_pct": 48.96,
+      "top_k_weight_coverage_pct": {
+        "5": 18.57,
+        "8": 27.0,
+        "10": 31.65,
+        "12": 35.86,
+        "15": 41.77
+      }
+    },
+    {
+      "diputado_id": "1241",
+      "diputado_nombre": "Patricio Pinilla Valencia",
+      "unique_coauthors": 85,
+      "weighted_degree": 207,
+      "max_shared_bills_with_one_coauthor": 9,
+      "one_off_coauthors": 42,
+      "one_off_coauthor_share_pct": 49.41,
+      "top_k_weight_coverage_pct": {
+        "5": 18.84,
+        "8": 28.02,
+        "10": 32.85,
+        "12": 37.68,
+        "15": 43.96
+      }
+    },
+    {
+      "diputado_id": "1178",
+      "diputado_nombre": "Héctor Ulloa Aguilera",
+      "unique_coauthors": 76,
+      "weighted_degree": 183,
+      "max_shared_bills_with_one_coauthor": 11,
+      "one_off_coauthors": 52,
+      "one_off_coauthor_share_pct": 68.42,
+      "top_k_weight_coverage_pct": {
+        "5": 27.87,
+        "8": 42.08,
+        "10": 49.73,
+        "12": 55.19,
+        "15": 61.75
+      }
+    },
+    {
+      "diputado_id": "1059",
+      "diputado_nombre": "Ximena Ossandón Irarrázabal",
+      "unique_coauthors": 74,
+      "weighted_degree": 216,
+      "max_shared_bills_with_one_coauthor": 17,
+      "one_off_coauthors": 39,
+      "one_off_coauthor_share_pct": 52.7,
+      "top_k_weight_coverage_pct": {
+        "5": 28.7,
+        "8": 41.2,
+        "10": 48.15,
+        "12": 53.7,
+        "15": 59.72
+      }
+    },
+    {
+      "diputado_id": "1074",
+      "diputado_nombre": "Marisela Santibáñez Novoa",
+      "unique_coauthors": 73,
+      "weighted_degree": 131,
+      "max_shared_bills_with_one_coauthor": 5,
+      "one_off_coauthors": 34,
+      "one_off_coauthor_share_pct": 46.58,
+      "top_k_weight_coverage_pct": {
+        "5": 16.79,
+        "8": 23.66,
+        "10": 28.24,
+        "12": 32.82,
+        "15": 37.4
+      }
+    },
+    {
+      "diputado_id": "1236",
+      "diputado_nombre": "Paula Olmos Contreras",
+      "unique_coauthors": 71,
+      "weighted_degree": 152,
+      "max_shared_bills_with_one_coauthor": 9,
+      "one_off_coauthors": 35,
+      "one_off_coauthor_share_pct": 49.3,
+      "top_k_weight_coverage_pct": {
+        "5": 23.68,
+        "8": 32.89,
+        "10": 38.16,
+        "12": 43.42,
+        "15": 49.34
+      }
+    },
+    {
+      "diputado_id": "1128",
+      "diputado_nombre": "Ana María Gazmuri Vieira",
+      "unique_coauthors": 71,
+      "weighted_degree": 137,
+      "max_shared_bills_with_one_coauthor": 6,
+      "one_off_coauthors": 38,
+      "one_off_coauthor_share_pct": 53.52,
+      "top_k_weight_coverage_pct": {
+        "5": 18.98,
+        "8": 27.74,
+        "10": 33.58,
+        "12": 37.96,
+        "15": 44.53
+      }
+    },
+    {
+      "diputado_id": "1237",
+      "diputado_nombre": "Francisco Orrego Gutiérrez",
+      "unique_coauthors": 69,
+      "weighted_degree": 181,
+      "max_shared_bills_with_one_coauthor": 10,
+      "one_off_coauthors": 33,
+      "one_off_coauthor_share_pct": 47.83,
+      "top_k_weight_coverage_pct": {
+        "5": 25.41,
+        "8": 35.36,
+        "10": 40.88,
+        "12": 46.41,
+        "15": 53.04
+      }
+    },
+    {
+      "diputado_id": "1087",
+      "diputado_nombre": "Gael Yeomans Araya",
+      "unique_coauthors": 69,
+      "weighted_degree": 165,
+      "max_shared_bills_with_one_coauthor": 7,
+      "one_off_coauthors": 29,
+      "one_off_coauthor_share_pct": 42.03,
+      "top_k_weight_coverage_pct": {
+        "5": 19.39,
+        "8": 27.88,
+        "10": 32.73,
+        "12": 37.58,
+        "15": 44.85
+      }
+    },
+    {
+      "diputado_id": "1062",
+      "diputado_nombre": "Joanna Pérez Olea",
+      "unique_coauthors": 68,
+      "weighted_degree": 129,
+      "max_shared_bills_with_one_coauthor": 6,
+      "one_off_coauthors": 41,
+      "one_off_coauthor_share_pct": 60.29,
+      "top_k_weight_coverage_pct": {
+        "5": 20.93,
+        "8": 30.23,
+        "10": 36.43,
+        "12": 42.64,
+        "15": 49.61
+      }
+    }
+  ],
+  "method_note": "La cobertura top-k se calcula sobre weighted_degree, es decir, la suma de mociones compartidas a través de todos los vínculos de coautoría de la persona. No es proporción de mociones únicas: una moción con varios coautores contribuye a varios vínculos."
+}
