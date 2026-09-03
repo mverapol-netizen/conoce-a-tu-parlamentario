@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explora proyectos de ley del período 2026–2030 por boletín o título y sigue su tramitación con datos oficiales.">
+  <meta name="theme-color" content="#0f2f53">
+  <meta name="robots" content="noindex">
+  <title>Explorar proyectos · Entiende el Congreso</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/education.css">
+  <link rel="stylesheet" href="assets/css/project_explorer.css">
+</head>
+<body>
+  <header class="site-header"><div class="container header-inner"><a class="brand" href="index.html" aria-label="Conoce a tu parlamentario, inicio"><span class="brand-mark" aria-hidden="true">CP</span><span>Conoce a tu parlamentario</span></a><nav class="site-tabs" aria-label="Secciones principales"><a class="site-tab" href="index.html">Tu distrito</a><a class="site-tab" href="hemiciclo.html">Hemiciclo</a><a class="site-tab" href="wnominate.html">Patrones de voto</a><a class="site-tab is-active" href="entender.html">Entiende el Congreso</a></nav><span class="data-badge">Vista interna v0.1</span></div></header>
+  <main class="project-shell">
+    <div class="container">
+      <nav class="edu-breadcrumb" aria-label="Migas de pan"><a href="entender.html">Entiende el Congreso</a><span>›</span><a href="aprender.html?id=como-se-hace-una-ley">Cómo se hace una ley</a><span>›</span><strong>Explorar proyectos</strong></nav>
+      <section class="project-hero"><span class="edu-preview">Datos reales · prototipo interno</span><p class="eyebrow" style="margin-top:16px">Sigue un proyecto</p><h1>Del boletín a la historia completa</h1><p>Busca por número de boletín o palabras del título. La ficha reconstruye el estado registrado, los eventos de tramitación y las votaciones nominales de Sala vinculadas en nuestra base legislativa del período.</p></section>
+      <section class="project-search-card">
+        <label class="edu-search-label" for="project-search">Busca un proyecto</label>
+        <div class="project-search-row"><input id="project-search" class="project-search-input" type="search" autocomplete="off" placeholder="Ej.: 18131-06, educación, seguridad, probidad"></div>
+        <p class="project-search-help">El buscador consulta la base ya recolectada por el proyecto. Sin búsqueda, muestra los ingresos más recientes.</p>
+        <p id="project-count" class="project-search-help" aria-live="polite"></p>
+      </section>
+      <div id="project-results" class="project-results" aria-live="polite"></div>
+      <p class="project-caveat"><strong>Alcance:</strong> esta primera versión sigue proyectos presentes en la base legislativa 2026–2030 y utiliza la información recolectada desde la Cámara. No reemplaza la ficha oficial ni pretende reconstruir todavía toda la actividad del Senado.</p>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><p>Conoce a tu parlamentario</p><p>Explorador interno de proyectos · datos legislativos actualizados por la pipeline del sitio.</p></div></footer>
+  <script src="assets/js/csv_utils_v1.js"></script>
+  <script src="assets/js/project_explorer_v1.js"></script>
+</body>
+</html>
