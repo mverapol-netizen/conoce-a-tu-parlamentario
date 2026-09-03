@@ -27,10 +27,11 @@
   },
   "detail_files": 155,
   "detail_file_size_bytes": {
-    "min": 637,
-    "max": 101726,
-    "total": 6225612
+    "min": 650,
+    "max": 31456,
+    "total": 1949636
   },
   "public_top_visible": 8,
+  "detail_normalization": "motion catalog + billIds per coauthor; no repeated title/url inside each edge",
   "method_note": "Dos personas están conectadas si figuran formalmente como autoras de la misma moción de origen Cámara durante el período. El peso es el número de mociones compartidas. La coautoría no se interpreta automáticamente como afinidad ideológica, amistad, coordinación estable ni intensidad causal de colaboración."
 }
