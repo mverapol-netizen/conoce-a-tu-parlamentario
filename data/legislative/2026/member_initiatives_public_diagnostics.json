@@ -1,0 +1,24 @@
+{
+  "generated_for": "2026-09-03",
+  "term_start": "2026-03-11",
+  "current_profiles": 155,
+  "historical_deputy_author_ids_in_primary_data": 155,
+  "current_members_with_motions": 155,
+  "current_members_with_zero_motions": 0,
+  "current_member_motion_relations": 1975,
+  "current_member_shared_relations": 1937,
+  "current_member_individual_relations": 38,
+  "unique_current_chamber_motions": 305,
+  "max_motions_by_member": 39,
+  "detail_files": 155,
+  "detail_file_size_bytes": {
+    "min": 478,
+    "max": 15242,
+    "total": 786705
+  },
+  "duplicate_author_relations": 0,
+  "missing_projects": 0,
+  "invalid_current_relations": 0,
+  "coauthorship_node_mismatches": 0,
+  "method_note": "Una moción cuenta una sola vez por diputado y boletín. Autoría individual significa que la lista formal del boletín contiene una sola persona; autoría compartida, dos o más. El indicador describe autoría formal registrada y no atribuye redacción, esfuerzo, calidad, éxito ni impacto."
+}
