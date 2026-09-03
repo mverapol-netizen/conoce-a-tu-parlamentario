@@ -683,6 +683,164 @@
       ]
     }
   },
+  "leave_one_out_effect_vs_inclusive": {
+    "party:all": {
+      "members_compared": 121,
+      "median_difference_pp_loo_minus_inclusive": -0.2962,
+      "median_abs_difference_pp": 0.2962,
+      "p90_abs_difference_pp": 2.1866,
+      "max_abs_difference_pp": 3.9527,
+      "members_losing_comparability": 4,
+      "lost_comparability_examples": [
+        {
+          "diputado_id": "1013",
+          "diputado_nombre": "Alejandro Bernales Maldonado",
+          "inclusive_comparisons": 298
+        },
+        {
+          "diputado_id": "1132",
+          "diputado_nombre": "Jorge Guzmán Zepeda",
+          "inclusive_comparisons": 319
+        },
+        {
+          "diputado_id": "1141",
+          "diputado_nombre": "Luis Malla Valenzuela",
+          "inclusive_comparisons": 298
+        },
+        {
+          "diputado_id": "1219",
+          "diputado_nombre": "Tomás Kast Sommerhoff",
+          "inclusive_comparisons": 319
+        }
+      ]
+    },
+    "party:minority_ge_05": {
+      "members_compared": 121,
+      "median_difference_pp_loo_minus_inclusive": -0.148,
+      "median_abs_difference_pp": 0.148,
+      "p90_abs_difference_pp": 2.8263,
+      "max_abs_difference_pp": 5.1675,
+      "members_losing_comparability": 4,
+      "lost_comparability_examples": [
+        {
+          "diputado_id": "1013",
+          "diputado_nombre": "Alejandro Bernales Maldonado",
+          "inclusive_comparisons": 223
+        },
+        {
+          "diputado_id": "1132",
+          "diputado_nombre": "Jorge Guzmán Zepeda",
+          "inclusive_comparisons": 240
+        },
+        {
+          "diputado_id": "1141",
+          "diputado_nombre": "Luis Malla Valenzuela",
+          "inclusive_comparisons": 223
+        },
+        {
+          "diputado_id": "1219",
+          "diputado_nombre": "Tomás Kast Sommerhoff",
+          "inclusive_comparisons": 240
+        }
+      ]
+    },
+    "party:minority_ge_10": {
+      "members_compared": 121,
+      "median_difference_pp_loo_minus_inclusive": -0.043,
+      "median_abs_difference_pp": 0.043,
+      "p90_abs_difference_pp": 2.9227,
+      "max_abs_difference_pp": 5.4452,
+      "members_losing_comparability": 4,
+      "lost_comparability_examples": [
+        {
+          "diputado_id": "1013",
+          "diputado_nombre": "Alejandro Bernales Maldonado",
+          "inclusive_comparisons": 215
+        },
+        {
+          "diputado_id": "1132",
+          "diputado_nombre": "Jorge Guzmán Zepeda",
+          "inclusive_comparisons": 230
+        },
+        {
+          "diputado_id": "1141",
+          "diputado_nombre": "Luis Malla Valenzuela",
+          "inclusive_comparisons": 215
+        },
+        {
+          "diputado_id": "1219",
+          "diputado_nombre": "Tomás Kast Sommerhoff",
+          "inclusive_comparisons": 230
+        }
+      ]
+    },
+    "party:minority_ge_20": {
+      "members_compared": 121,
+      "median_difference_pp_loo_minus_inclusive": -0.025,
+      "median_abs_difference_pp": 0.025,
+      "p90_abs_difference_pp": 3.1168,
+      "max_abs_difference_pp": 5.9026,
+      "members_losing_comparability": 4,
+      "lost_comparability_examples": [
+        {
+          "diputado_id": "1013",
+          "diputado_nombre": "Alejandro Bernales Maldonado",
+          "inclusive_comparisons": 197
+        },
+        {
+          "diputado_id": "1132",
+          "diputado_nombre": "Jorge Guzmán Zepeda",
+          "inclusive_comparisons": 214
+        },
+        {
+          "diputado_id": "1141",
+          "diputado_nombre": "Luis Malla Valenzuela",
+          "inclusive_comparisons": 197
+        },
+        {
+          "diputado_id": "1219",
+          "diputado_nombre": "Tomás Kast Sommerhoff",
+          "inclusive_comparisons": 214
+        }
+      ]
+    },
+    "caucus:all": {
+      "members_compared": 152,
+      "median_difference_pp_loo_minus_inclusive": -0.0093,
+      "median_abs_difference_pp": 0.0093,
+      "p90_abs_difference_pp": 0.9041,
+      "max_abs_difference_pp": 4.7619,
+      "members_losing_comparability": 0,
+      "lost_comparability_examples": []
+    },
+    "caucus:minority_ge_05": {
+      "members_compared": 152,
+      "median_difference_pp_loo_minus_inclusive": -0.0138,
+      "median_abs_difference_pp": 0.0138,
+      "p90_abs_difference_pp": 1.1967,
+      "max_abs_difference_pp": 7.1429,
+      "members_losing_comparability": 0,
+      "lost_comparability_examples": []
+    },
+    "caucus:minority_ge_10": {
+      "members_compared": 152,
+      "median_difference_pp_loo_minus_inclusive": -0.0109,
+      "median_abs_difference_pp": 0.0109,
+      "p90_abs_difference_pp": 1.1865,
+      "max_abs_difference_pp": 9.0909,
+      "members_losing_comparability": 0,
+      "lost_comparability_examples": []
+    },
+    "caucus:minority_ge_20": {
+      "members_compared": 152,
+      "median_difference_pp_loo_minus_inclusive": -0.0039,
+      "median_abs_difference_pp": 0.0039,
+      "p90_abs_difference_pp": 0.9839,
+      "max_abs_difference_pp": 25.0,
+      "members_losing_comparability": 0,
+      "lost_comparability_examples": []
+    }
+  },
   "exclusion_reasons": {
     "caucus:minority_ge_05:below_chamber_threshold": 12915,
     "caucus:minority_ge_10:below_chamber_threshold": 14484,
