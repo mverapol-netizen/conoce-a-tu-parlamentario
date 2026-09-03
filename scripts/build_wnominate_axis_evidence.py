@@ -28,6 +28,12 @@ BASE_2D_SPEC = "raw_lop025_2d"
 YES, NO = "Afirmativo", "En Contra"
 BINARY = {YES, NO}
 
+# Proyectos omnibus que no pueden interpretarse como una sola unidad sustantiva.
+# Se auditan por separado, roll call por roll call, identificando articulo/indicacion exacta.
+SPECIAL_OMNIBUS = {
+    "18216-05": "Megareforma / proyecto omnibus del gobierno de Jose Antonio Kast",
+}
+
 
 def read_csv(path: Path) -> list[dict]:
     if not path.exists():
@@ -45,6 +51,10 @@ def fnum(v, default=None):
 
 def clean(v) -> str:
     return (v or "").strip()
+
+
+def is_special_omnibus(row: dict) -> bool:
+    return clean(row.get("boletin")) in SPECIAL_OMNIBUS
 
 
 def cluster(row: dict) -> str:
@@ -106,6 +116,7 @@ def metadata(base: dict, rc_by_id: dict, proj_by_bill: dict, topic_by_bill: dict
     boletin = clean(rc.get("boletin") or base.get("boletin"))
     pr = proj_by_bill.get(boletin, {}) if boletin else {}
     tp = topic_by_bill.get(boletin, {}) if boletin else {}
+    omnibus = boletin in SPECIAL_OMNIBUS
     return {
         **base,
         "fecha": rc.get("fecha", base.get("fecha", "")),
@@ -121,7 +132,14 @@ def metadata(base: dict, rc_by_id: dict, proj_by_bill: dict, topic_by_bill: dict
         "topic_primary_internal": tp.get("topic_primary", base.get("topic_primary", "")),
         "topic_secondary_internal": tp.get("topic_secondary", ""),
         "topic_confidence_internal": tp.get("confidence", base.get("topic_confidence", "")),
-        "topic_validation_status": "internal_not_external_validated",
+        "topic_validation_status": (
+            "project_level_not_sufficient_for_omnibus_rollcall"
+            if omnibus else "internal_not_external_validated"
+        ),
+        "special_omnibus": "1" if omnibus else "0",
+        "special_omnibus_label": SPECIAL_OMNIBUS.get(boletin, ""),
+        "interpretation_unit": "exact_rollcall_item" if omnibus else "rollcall_with_project_context",
+        "omnibus_audit_required": "1" if omnibus else "0",
     }
 
 
@@ -136,6 +154,11 @@ def diversify(rows: list[dict], n: int) -> list[dict]:
         if len(out) >= n:
             break
     return out
+
+
+def diversify_non_omnibus(rows: list[dict], n: int) -> list[dict]:
+    """Muestra transversal entre proyectos ordinarios; los omnibus se auditan aparte."""
+    return diversify([r for r in rows if not is_special_omnibus(r)], n)
 
 
 def write_rows(path: Path, rows: list[dict]) -> None:
@@ -199,8 +222,14 @@ def main() -> None:
         r["rank_abs_spread_1d"] = i
     d1_raw = d1[:30]
     d1_div = diversify(d1, 30)
+    d1_non_omnibus_div = diversify_non_omnibus(d1, 30)
+    d1_omnibus = [r for r in d1 if is_special_omnibus(r)]
     for i, r in enumerate(d1_div, 1):
         r["rank_bill_diverse_d1"] = i
+    for i, r in enumerate(d1_non_omnibus_div, 1):
+        r["rank_non_omnibus_bill_diverse_d1"] = i
+    for i, r in enumerate(d1_omnibus, 1):
+        r["rank_within_omnibus_d1"] = i
 
     d2 = []
     for row in top2:
@@ -219,16 +248,26 @@ def main() -> None:
         r["rank_relative_dim2_loading"] = i
     d2_raw = d2[:25]
     d2_div = diversify(d2, min(25, len(d2)))
+    d2_non_omnibus_div = diversify_non_omnibus(d2, min(25, len(d2)))
+    d2_omnibus = [r for r in d2 if is_special_omnibus(r)]
     for i, r in enumerate(d2_div, 1):
         r["rank_bill_diverse_d2"] = i
+    for i, r in enumerate(d2_non_omnibus_div, 1):
+        r["rank_non_omnibus_bill_diverse_d2"] = i
+    for i, r in enumerate(d2_omnibus, 1):
+        r["rank_within_omnibus_d2"] = i
 
     outputs = {
         "d1_rollcall_evidence_full.csv": d1,
         "d1_top30_raw.csv": d1_raw,
         "d1_top30_bill_diverse.csv": d1_div,
+        "d1_top30_non_omnibus_bill_diverse.csv": d1_non_omnibus_div,
+        "d1_omnibus_18216_05.csv": d1_omnibus,
         "d2_candidate_evidence.csv": d2,
         "d2_top25_raw.csv": d2_raw,
         "d2_top25_bill_diverse.csv": d2_div,
+        "d2_top25_non_omnibus_bill_diverse.csv": d2_non_omnibus_div,
+        "d2_omnibus_18216_05.csv": d2_omnibus,
     }
     for name, rows in outputs.items():
         write_rows(OUT / name, rows)
@@ -240,25 +279,31 @@ def main() -> None:
         "d1_rollcalls": len(d1),
         "d1_top30_raw_concentration": concentration(d1_raw),
         "d1_top30_bill_diverse_concentration": concentration(d1_div),
+        "d1_non_omnibus_diverse_concentration": concentration(d1_non_omnibus_div),
+        "d1_special_omnibus_rollcalls": {b: sum(clean(r.get("boletin")) == b for r in d1) for b in SPECIAL_OMNIBUS},
         "d2_base_spec": BASE_2D_SPEC,
         "d2_candidates_available": len(d2),
         "d2_top25_raw_concentration": concentration(d2_raw),
         "d2_top25_bill_diverse_concentration": concentration(d2_div),
+        "d2_non_omnibus_diverse_concentration": concentration(d2_non_omnibus_div),
+        "d2_special_omnibus_candidates": {b: sum(clean(r.get("boletin")) == b for r in d2) for b in SPECIAL_OMNIBUS},
         "member_vote_rows": len(member_votes),
         "rollcalls_with_member_votes": len(votes_by_id),
+        "special_omnibus": SPECIAL_OMNIBUS,
         "method": {
             "d1_identifying_strength": "abs(spread_1d) from 501-trial research fit; no composite score",
-            "d1_diversification": "descending abs(spread_1d), max one roll call per bill/cluster",
+            "ordinary_bill_diversification": "descending identifying strength, max one roll call per ordinary bill/cluster",
+            "omnibus_treatment": "special omnibus bills are excluded from the ordinary diversified audit and audited separately at exact roll-call/article/indication level before contributing substantive evidence",
             "d2_identifying_strength": "relative_dim2_loading from existing 2D diagnostic",
-            "d2_diversification": "descending relative_dim2_loading, max one roll call per bill/cluster",
             "coalitions": "temporal party/caucus/alignment at each vote date from member_votes_enriched",
-            "topics": "internal classification only; not externally validated and never sufficient to name an axis",
+            "topics": "project-level topic classification is never sufficient for an omnibus roll call; exact voted content must be recovered",
         },
         "warnings": [
             "D1 sign is arbitrary; display orientation is only a reflection.",
             "D2 remains exploratory and small relative to D1.",
             "Identifying strength alone does not supply substantive meaning.",
-            "Axis interpretation requires recurring evidence across bills, actual coalitions, external context and alternative-hypothesis tests.",
+            "The omnibus bill 18216-05 contains heterogeneous substantive items and must not be interpreted from its project title or counted as either one homogeneous item or many independent projects.",
+            "Axis interpretation requires recurring evidence across ordinary bills plus separately audited omnibus subitems, actual coalitions, external context and alternative-hypothesis tests.",
         ],
     }
     (OUT / "diagnostics.json").write_text(
@@ -270,16 +315,21 @@ def main() -> None:
         "Capa interna de investigación: estos archivos **no nombran** D1 ni D2.\n\n"
         "## D1\n"
         "- `d1_rollcall_evidence_full.csv`: universo completo de la corrida research.\n"
-        "- `d1_top30_raw.csv`: 30 mayores valores de |spread| sin corregir concentración por proyecto.\n"
-        "- `d1_top30_bill_diverse.csv`: ranking con máximo una votación por proyecto/cluster.\n\n"
+        "- `d1_top30_raw.csv`: 30 mayores valores de |spread| sin corregir concentración.\n"
+        "- `d1_top30_bill_diverse.csv`: ranking histórico con máximo una votación por boletín.\n"
+        "- `d1_top30_non_omnibus_bill_diverse.csv`: muestra transversal recomendada para auditoría histórico-política; excluye proyectos omnibus.\n"
+        "- `d1_omnibus_18216_05.csv`: todas las votaciones D1 de la Megareforma, para auditoría interna separada.\n\n"
         "## D2\n"
         "- `d2_candidate_evidence.csv`: candidatos de la auditoría 2D base.\n"
         "- `d2_top25_raw.csv`: mayores cargas relativas sobre D2.\n"
-        "- `d2_top25_bill_diverse.csv`: máximo una votación por proyecto/cluster.\n\n"
+        "- `d2_top25_non_omnibus_bill_diverse.csv`: muestra transversal sin proyectos omnibus.\n"
+        "- `d2_omnibus_18216_05.csv`: candidatos D2 internos de la Megareforma.\n\n"
+        "## Regla especial: boletín 18216-05\n"
+        "Es la Megareforma/proyecto omnibus y contiene materias heterogéneas. No puede tratarse como una unidad sustantiva homogénea, pero sus roll calls tampoco pueden contarse como proyectos independientes. Cada votación debe recuperar el artículo, numeral o indicación exacta, clasificarse por materia y compararse con otras votaciones de la misma familia antes de usarse para nombrar un eje.\n\n"
         "## Coaliciones\n"
         "Cada fila resume votos por alineamiento, partido y comité usando la afiliación vigente en la fecha exacta.\n\n"
         "## Regla de interpretación\n"
-        "Una votación fuerte matemáticamente es un caso a investigar, no una etiqueta sustantiva. Nombrar un eje requiere recurrencia entre proyectos, coaliciones coherentes, fuentes externas y descarte de hipótesis alternativas.\n"
+        "Una votación fuerte matemáticamente es un caso a investigar, no una etiqueta sustantiva. Nombrar un eje requiere recurrencia entre materias y proyectos, coaliciones coherentes, fuentes externas y descarte de hipótesis alternativas.\n"
     )
     (OUT / "README.md").write_text(readme, encoding="utf-8")
     print(json.dumps(diagnostics, ensure_ascii=False, indent=2))
