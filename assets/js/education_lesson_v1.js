@@ -12,7 +12,7 @@
   const unitById = new Map(data.units.map((u) => [u.id, u]));
   const statusLabel = (status) => ({ research: 'Investigación en curso', planned: 'Planificada', design: 'En diseño', ready: 'Lista para revisión editorial' }[status] || 'En preparación');
   const typeLabel = (type) => ({
-    intuition: 'Intuición', institution: 'Institución', evidence: 'Evidencia', debate: 'Debate', history: 'Historia', myth: 'Mito frecuente'
+    intuition: 'Intuición', institution: 'Institución', evidence: 'Evidencia', debate: 'Debate', history: 'Historia', myth: 'Mito frecuente', case: 'Caso real'
   }[type] || type || 'Contenido');
 
   const renderSourceRefs = (ids = []) => {
