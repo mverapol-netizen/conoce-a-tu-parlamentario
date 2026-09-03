@@ -1,137 +1,116 @@
 # Conoce a tu parlamentario
 
-Herramienta cívica para conectar a una persona con sus representantes en la Cámara de Diputadas y Diputados de Chile y ofrecer una vista comprensible de la composición de la Cámara.
+Herramienta cívica y politológica para conectar a una persona con sus representantes en la Cámara de Diputadas y Diputados de Chile y explorar, con evidencia auditable, distintas dimensiones de su actividad legislativa y del comportamiento de la Cámara.
 
-## Qué hace esta versión
+## Qué ofrece la versión pública
 
 ### Tu distrito
 
-1. La persona selecciona su **región**.
-2. El sitio limita automáticamente el segundo selector a las **comunas de esa región**.
-3. La persona selecciona su **comuna**.
-4. El sitio identifica automáticamente su **distrito electoral**.
-5. Muestra las **diputadas y diputados del distrito** con fotografía, partido y número de distrito.
-6. Al elegir una persona, abre una ficha resumida con **correo oficial** y enlace directo a su **ficha de la Cámara**.
+1. La persona selecciona su **región** y **comuna**.
+2. El sitio identifica automáticamente su **distrito electoral**.
+3. Muestra las diputadas y diputados que representan ese territorio.
+4. Desde cada representante se puede abrir una ficha legislativa estable.
 
 ### Hemiciclo
 
-La pestaña `hemiciclo.html` muestra los **155 escaños** como un mapa interactivo de fuerzas. Permite ver:
+`hemiciclo.html` presenta los **155 escaños** como un mapa interactivo de fuerzas. Distingue deliberadamente:
 
-- partido de cada diputada o diputado;
+- partido;
 - bancada o Comité Parlamentario;
-- independientes adscritos a una bancada, sin presentarlos como militantes del partido;
-- distribución editorial entre **oficialismo, oposición y no alineados**;
-- número de integrantes de cada partido y de cada bancada/comité;
-- mayoría absoluta de 78 escaños;
-- identificación individual de cada escaño al tocarlo o seleccionarlo.
+- independientes adscritos a una bancada, sin presentarlos como militantes;
+- clasificación editorial entre oficialismo, oposición y no alineados.
 
-El hemiciclo representa **distribución de fuerzas**, no la ubicación física exacta de cada parlamentario en la Sala.
+El gráfico representa **distribución de fuerzas**, no la ubicación física exacta de los escaños en la Sala.
+
+### Fichas legislativas
+
+Las fichas públicas incluyen actualmente cuatro módulos metodológicamente cerrados:
+
+- **A · Participación y decisiones de voto:** oportunidades efectivas de votación, con Afirmativo, En Contra, Abstención, No Vota y Dispensado preservados por separado y drill-down a la evidencia oficial.
+- **B · Coincidencia con partido y bancada/comité:** comparación leave-one-out con la posición predominante de pares, umbral público de minoría binaria ≥10% y mínimo de 20 comparaciones para publicar porcentaje.
+- **C · Iniciativa legislativa:** mociones originadas en Cámara en las que la persona figura formalmente como autor/a, distinguiendo autoría individual y compartida.
+- **D · Coautoría:** relaciones formales entre autores de una misma moción, con acceso a los boletines que sostienen cada vínculo.
+
+Estos módulos describen comportamiento observable. No se transforman en un puntaje general de desempeño.
+
+### Patrones de voto · laboratorio W-NOMINATE
+
+`wnominate.html` es un **laboratorio público experimental**, separado de las fichas cerradas. Permite explorar:
+
+- W-NOMINATE 1D como patrón espacial principal de trabajo;
+- una vista 2D explícitamente exploratoria;
+- filtros territoriales, partidarios y por parlamentario;
+- contexto temático del proyecto asociado a cada votación;
+- bootstrap por proyectos como diagnóstico de robustez;
+- descarga PNG y modo pantalla completa.
+
+La estimación base usa `lop = 2.5%` y `minvotes = 20`, con 276 votaciones elegibles y 154 de 155 integrantes estimados.
+
+La visualización pública invierte el signo técnico de D1 para mantener la convención izquierda → derecha (`D1 visual = -D1 técnico`). La lectura izquierda–derecha está fuertemente respaldada por la auditoría sustantiva interna, pero sigue siendo **provisional** hasta cerrar los gates multimétodo y temporales pendientes.
+
+La segunda dimensión permanece sin etiqueta política sustantiva.
+
+## Principios metodológicos
+
+El proyecto mantiene separadas cuatro capas:
+
+1. **datos primarios oficiales**;
+2. **clasificaciones analíticas derivadas**;
+3. **indicadores descriptivos**;
+4. **modelos estadísticos e interpretaciones politológicas**.
+
+Una capa derivada nunca reemplaza silenciosamente la fuente primaria.
+
+Regla editorial general:
+
+> Cada gráfico debe responder una pregunta concreta, formular una conclusión limitada y permitir reconstruir la evidencia y el método que la sostienen.
 
 ## Cobertura actual
 
 - 16 regiones.
 - 28 distritos electorales.
-- 346 comunas de Chile.
-- 155 integrantes de la Cámara para el período 2026–2030.
-- 155 fotografías oficiales almacenadas localmente en el repositorio.
-- 155 correos institucionales extraídos desde las fichas oficiales de la Cámara.
-- Partido, bancada/comité, distrito, región, ID parlamentario y vínculo a la ficha oficial.
-
-La Cámara no muestra un teléfono individual utilizable en todas las fichas revisadas, por lo que el sitio no inventa ni rellena ese dato.
+- 346 comunas.
+- 155 integrantes de la Cámara 2026–2030.
+- 155 fotografías oficiales almacenadas localmente.
+- perfiles, partido, bancada/comité, distrito, región y contacto institucional.
+- base legislativa incremental desde el 11 de marzo de 2026.
+- votaciones nominales de Sala, proyectos, autorías, tramitación, afiliaciones históricas y capas derivadas.
 
 ## Fuentes
 
-La base territorial y parlamentaria se construye y contrasta con fuentes públicas oficiales:
+La base se construye y contrasta con fuentes públicas oficiales:
 
-- Servicio Electoral de Chile (Servel), para territorios electorales.
-- Biblioteca del Congreso Nacional (BCN), para reportes distritales y antecedentes parlamentarios.
-- Cámara de Diputadas y Diputados de Chile, para integración vigente, partidos, bancadas/comités, fotografías, fichas y correos institucionales.
-- Portal de Datos Abiertos del Congreso, para IDs e integración vigente de la Cámara.
+- Servicio Electoral de Chile (Servel);
+- Biblioteca del Congreso Nacional (BCN);
+- Cámara de Diputadas y Diputados de Chile;
+- Portal de Datos Abiertos del Congreso.
 
-## Partido, bancada y bloque político
+## Actualización
 
-Estas dimensiones se mantienen separadas deliberadamente.
+El repositorio utiliza GitHub Actions para sincronización de perfiles y actualización legislativa. Los hechos institucionales pueden actualizarse automáticamente cuando la fuente lo permite; clasificaciones editoriales como oficialismo/oposición/no alineado requieren revisión pública separada.
 
-- **Partido:** militancia o pertenencia partidaria publicada por la Cámara.
-- **Bancada / Comité Parlamentario:** organización parlamentaria publicada por la Cámara. Los independientes deben integrarse a un Comité Parlamentario.
-- **Adscripción de independientes:** se muestra como `Independiente en [bancada/comité]`. Para los cálculos de fuerzas parlamentarias se ubica al independiente en la bancada a la que está adscrito, pero nunca se altera su condición de independiente.
-- **Oficialismo / oposición / no alineado:** capa editorial independiente de los datos oficiales. Está fechada en `assets/js/political_config.js` y debe revisarse cuando cambie públicamente la posición de una colectividad respecto del Gobierno.
+## Estado científico del laboratorio espacial
 
-Esta separación evita transformar una pertenencia a bancada en una militancia partidaria ficticia.
+W-NOMINATE 1D es actualmente el benchmark descriptivo espacial del proyecto. Antes de convertir su coordenada en un indicador individual cerrado dentro de las fichas todavía deben completarse, entre otros:
 
-## Actualización automática
+- IRT bayesiano 2PL 1D;
+- Optimal Classification;
+- estabilidad temporal con ventanas comparables;
+- contrato final de incertidumbre/robustez;
+- cierre formal de la interpretación pública de D1.
 
-El repositorio incluye sincronización mediante **GitHub Actions**.
-
-- `.github/workflows/sync_profiles.yml` ejecuta la sincronización completa el **primer día de cada mes** y también puede ejecutarse manualmente.
-- `scripts/sync_profiles.py` empareja los 155 nombres con los IDs oficiales, actualiza partidos y descarga fotografías.
-- `scripts/sync_contacts.py` recupera los correos institucionales.
-- `scripts/sync_political.py` actualiza bancada/comité y aplica la clasificación política vigente configurada para el proyecto.
-- `.github/workflows/sync_contacts_only.yml` permite actualizar solo contactos sin volver a descargar todas las fotografías.
-
-Después de cada actualización, GitHub Pages vuelve a desplegar automáticamente el sitio.
-
-La pertenencia a partido y bancada puede sincronizarse automáticamente desde la Cámara. En cambio, un cambio político como “un partido deja de ser oficialista y pasa a la oposición” requiere una **revisión editorial de fuentes públicas**; no se infiere automáticamente a partir de una sola votación.
-
-## Estructura principal
-
-```text
-conoce-a-tu-parlamentario/
-├── index.html
-├── hemiciclo.html
-├── README.md
-├── ROADMAP.md
-├── .nojekyll
-├── .github/
-│   └── workflows/
-│       ├── sync_profiles.yml
-│       └── sync_contacts_only.yml
-├── scripts/
-│   ├── sync_profiles.py
-│   ├── sync_contacts.py
-│   └── sync_political.py
-└── assets/
-    ├── css/
-    │   ├── styles.css
-    │   ├── profiles.css
-    │   └── hemicycle.css
-    ├── js/
-    │   ├── data.js
-    │   ├── profiles.js
-    │   ├── political_config.js
-    │   ├── app.js
-    │   └── hemicycle.js
-    └── photos/
-        └── 155 fotografías
-```
-
-## Diseño de los datos
-
-`assets/js/data.js` conserva la relación territorial:
-
-**región → comuna → distrito → representantes**
-
-`assets/js/profiles.js` agrega la capa individual:
-
-**representante → partido → bancada → foto → correo → ficha oficial**
-
-`assets/js/political_config.js` contiene únicamente la capa interpretativa y visual del hemiciclo:
-
-**partido/bancada → color → orden → bloque político**
-
-Separar estas capas permite actualizar los hechos oficiales sin confundirlos con decisiones de clasificación editorial.
+La taxonomía temática también mantiene pendiente una validación externa/formal por macroárea. Por eso el filtro de la página se presenta como **contexto temático del proyecto**, no como materia oficial ni clasificación exacta de cada roll call.
 
 ## Próximas capas
 
-La siguiente etapa natural es convertir la selección de un parlamentario en una ficha de desempeño más completa. Entre otras cosas, se pueden agregar:
+La expansión natural del proyecto incluye:
 
-- reseña biográfica resumida;
-- asistencia a Sala;
-- votaciones;
-- mociones y proyectos patrocinados;
-- comisiones permanentes y especiales;
-- oficios y actividad fiscalizadora;
-- comparación con los demás representantes del distrito;
-- series históricas y visualizaciones.
+- materias de iniciativas, una vez validada la taxonomía;
+- comisiones y roles institucionales;
+- estado de tramitación de mociones;
+- actividad fiscalizadora;
+- indicaciones/enmiendas cuando exista atribución individual fiable;
+- apoyo al Ejecutivo solo después de reconstruir su posición en cada votación;
+- validación multimétodo y temporal del modelo espacial.
 
-El objetivo es que una persona pueda pasar de **“¿quién me representa?”** a **“¿qué hace mi representante?”** y, al mismo tiempo, entender **cómo está compuesto el Congreso**.
+El objetivo es pasar de **“¿quién me representa?”** a **“¿qué hace mi representante?”**, y además ofrecer una lectura transparente de **cómo se estructura empíricamente el comportamiento legislativo de la Cámara**.
