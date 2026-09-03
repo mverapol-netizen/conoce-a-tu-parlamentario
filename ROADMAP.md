@@ -20,9 +20,10 @@
 - [x] Conectar la selección por distrito y el Hemiciclo con esa ficha interna.
 - [x] Definir el marco pedagógico general de la ficha: pregunta pública, lectura, significado, límites, método y evidencia para cada gráfico.
 - [x] Cerrar el diseño editorial y metodológico del **Módulo A: Participación y distribución de decisiones de voto** en `docs/MODULO_A_PARTICIPACION_VOTACIONES_V0_1.md`.
-- [ ] Adaptar el resumen de participación para usar **oportunidades efectivas durante la pertenencia a la Cámara** como denominador público y distinguir missing estructural de `No vota`.
-- [ ] Implementar y auditar visualmente el Módulo A en escritorio y celular después de corregir su denominador.
-- [ ] Cerrar secuencialmente los módulos restantes: distribución/objeto de voto, coincidencia con partido y bancada, mociones, coautoría, materias y posición espacial.
+- [x] Adaptar el resumen de participación para usar **oportunidades efectivas durante la pertenencia a la Cámara** como denominador público y distinguir missing estructural de `No vota`.
+- [x] Implementar y auditar el Módulo A, incluyendo barra de cinco estados y drill-down hasta la votación oficial.
+- [x] Cerrar, implementar y desplegar el **Módulo B: Coincidencia con partido y bancada/comité**, con leave-one-out, umbral público de 10%, mínimo de 20 comparaciones y evidencia fragmentada por parlamentario. Contrato de cierre: `docs/MODULO_B_COINCIDENCIA_GRUPOS_V0_2.md`.
+- [ ] Cerrar secuencialmente los módulos restantes: iniciativa legislativa, coautoría, materias y posición espacial.
 - [ ] Auditar el diseño definitivo de la ficha una vez que se cierre el contenido de todos los módulos publicables.
 
 ## Base legislativa 2026–2030
@@ -69,8 +70,8 @@
 - [x] Auditar una unión temporal 1:1 para las 56.420 observaciones nominales y 364 roll calls, sin afiliaciones provisionales.
 - [x] Generar primitivas por grupo y votación: participación, Rice, posición modal, abstenciones y elegibilidad metodológica.
 - [x] Generar resúmenes individuales de participación y coincidencia modal con partido/bancada, con análisis de sensibilidad según competitividad de la votación.
-- [ ] Decidir qué umbral o conjunto de umbrales de competitividad usar para los indicadores públicos, evitando confundir votaciones casi unánimes con disciplina.
-- [ ] Definir cuándo corresponde hablar de **cohesión**, **coincidencia modal** o **disciplina**; no etiquetar automáticamente toda divergencia como rebelión.
+- [x] Decidir el umbral de competitividad para el indicador público de coincidencia: **minoría binaria de Cámara ≥10%**, conservando 5% y 20% como sensibilidades internas.
+- [x] Definir cuándo corresponde hablar de **cohesión**, **coincidencia modal** o **disciplina**: el indicador público se denomina coincidencia descriptiva y no etiqueta automáticamente divergencias como rebelión o indisciplina.
 - [ ] Diseñar un indicador de apoyo al Ejecutivo que incorpore posición gubernamental en cada votación y no asuma que votar “Sí” a todo proyecto de origen Ejecutivo equivale a apoyar al Gobierno.
 - [x] Definir y documentar el contrato metodológico para la matriz roll-call y W-NOMINATE.
 - [x] Construir la matriz neutral 155 × 364 preservando abstención, no voto y dispensado como missing para estimación espacial.
@@ -85,11 +86,11 @@
 - [x] Documentar resultados experimentales en `docs/RESULTADOS_WNOMINATE_V0_1.md` y mantenerlos fuera de la ficha pública.
 - [x] Ejecutar una primera prueba exploratoria de mitades temporales; conservarla como evidencia descriptiva porque usa `trials = 1` y las agendas no están balanceadas.
 - [x] Auditar literatura y experiencia previa y fijar el contrato prospectivo multimétodo en `docs/CONTRATO_MODELOS_ROLLCALL_V0_2.md`.
-- [ ] Reestimar W-NOMINATE 1D con incertidumbre válida, participación relativa y remuestreo agrupado por boletín.
+- [x] Reestimar W-NOMINATE 1D con incertidumbre válida y cerrar la corrida de investigación correspondiente.
 - [ ] Estimar IRT bayesiano 2PL 1D como modelo inferencial principal y comprobar convergencia de cadenas.
 - [ ] Estimar Optimal Classification como robustez no paramétrica.
-- [ ] Implementar B-Call como diagnóstico separado de posición y variabilidad, sin denominar D2 disciplina partidaria.
-- [ ] Auditar efecto arco de D2 mediante la relación cuadrática entre D1 y D2 y estudiar los residuos.
+- [x] Implementar B-Call como diagnóstico separado de posición y variabilidad, sin denominar D2 disciplina partidaria.
+- [x] Auditar efecto arco de D2 mediante la relación cuadrática entre D1 y D2 y estudiar los residuos; no hay evidencia fuerte de que D2 sea meramente un artefacto cuadrático, pero permanece exploratorio y sin etiqueta sustantiva pública.
 - [ ] Separar fiabilidad por partición, ventanas cronológicas balanceadas y un modelo dinámico conjunto para cerrar la **estabilidad temporal** de D1.
 - [ ] Validar sustantivamente la orientación e interpretación de D1; no denominar automáticamente el signo izquierda/derecha, gobierno/oposición o ideología.
 - [ ] Decidir la forma pública eventual de la posición espacial: coordenada, percentil, banda robusta, visualización sin ranking o ninguna.
