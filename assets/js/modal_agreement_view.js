@@ -214,19 +214,26 @@
   let detailsPromise = null;
   const loadDetails = () => {
     if (!detailsPromise) {
+      const template = String(meta.detailPathTemplate || 'assets/data/modal_agreement/{id}.json');
+      const detailPath = template.replace('{id}', encodeURIComponent(String(profile.id)));
       detailsPromise = Promise.all([
-        fetch('assets/data/modal_agreement_details.json').then((response) => {
-          if (!response.ok) throw new Error('No se pudo cargar el detalle de coincidencias.');
+        fetch(detailPath).then((response) => {
+          if (!response.ok) throw new Error('No se pudo cargar el detalle de coincidencias de esta persona.');
           return response.json();
         }),
         fetch('assets/data/participation_rollcalls.json').then((response) => {
           if (!response.ok) throw new Error('No se pudo cargar el catálogo de votaciones.');
           return response.json();
         }),
-      ]).then(([details, rollcalls]) => ({
-        members: details.members || {},
-        rollcalls: rollcalls.rollcalls || {},
-      }));
+      ]).then(([details, rollcalls]) => {
+        if (String(details.id || '') !== String(profile.id)) {
+          throw new Error('El archivo de evidencia no corresponde a esta ficha.');
+        }
+        return {
+          member: details,
+          rollcalls: rollcalls.rollcalls || {},
+        };
+      });
     }
     return detailsPromise;
   };
@@ -247,7 +254,7 @@
 
     try {
       const data = await loadDetails();
-      const rows = (data.members[String(profile.id)]?.[type] || [])
+      const rows = (data.member?.[type] || [])
         .filter((row) => mode === 'all' || (mode === 'match' ? Number(row[4]) === 1 : Number(row[4]) === 0))
         .map((row) => ({
           voteId: String(row[0]),
