@@ -1,156 +1,206 @@
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import parse_qs, urljoin, urlparse
 from zoneinfo import ZoneInfo
 
-from congress_api import child, child_text, descendants, enum_value, get_xml, person
+import requests
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "legislative" / "2026" / "commissions" / "commissions_snapshot.json"
 TZ = ZoneInfo("America/Santiago")
-MIN_EXPECTED_COMMISSION_COUNT = 10
+LIST_URL = "https://www.camara.cl/legislacion/comisiones/comisiones_permanentes.aspx"
+DETAIL_BASE = "https://www.camara.cl/legislacion/comisiones/"
+MIN_EXPECTED_COMMISSION_COUNT = 20
+GENERIC_LINK_TEXT = {
+    "integrantes", "sesiones", "proyectos de ley", "citaciones", "resultados",
+    "documentos", "jornadas temáticas", "oficios enviados", "informes",
+    "audiencias públicas", "ver", "volver",
+}
 
 
-def parse_dt(value: str) -> str:
-    raw = (value or "").strip()
-    if not raw:
+def clean(value: str) -> str:
+    return re.sub(r"\s+", " ", value or "").strip()
+
+
+def commission_id_from_href(href: str) -> str:
+    if not href:
         return ""
-    try:
-        parsed = datetime.fromisoformat(raw.replace("Z", "+00:00"))
-    except ValueError:
-        return raw
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=TZ)
-    return parsed.astimezone(TZ).isoformat()
+    parsed = urlparse(urljoin(DETAIL_BASE, href))
+    query = parse_qs(parsed.query)
+    for key, values in query.items():
+        if key.lower() == "prmid" and values:
+            return clean(values[0])
+    return ""
 
 
-def member_rows(node) -> list[dict]:
-    container = child(node, "Integrantes")
-    if container is None:
-        return []
-    rows = []
-    for wrapper in descendants(container, "DiputadoIntegrante"):
-        p = person(child(wrapper, "Diputado"))
-        if not (p["id"] or p["name"]):
+def fetch(session: requests.Session, url: str) -> BeautifulSoup:
+    response = session.get(url, timeout=(10, 35))
+    response.raise_for_status()
+    return BeautifulSoup(response.text, "html.parser")
+
+
+def list_commissions(session: requests.Session) -> list[dict]:
+    soup = fetch(session, LIST_URL)
+    found: dict[str, dict] = {}
+
+    # Prefer table rows, because the commission name and ordinal number live together.
+    for row in soup.find_all("tr"):
+        cells = row.find_all(["td", "th"])
+        if len(cells) < 2:
             continue
-        rows.append({
-            "id": p["id"],
-            "name": p["name"],
-            "start": parse_dt(child_text(wrapper, "FechaInicio")),
-            "end": parse_dt(child_text(wrapper, "FechaTermino")),
-        })
-    return rows
+        anchors = row.find_all("a", href=True)
+        candidates = []
+        for anchor in anchors:
+            cid = commission_id_from_href(anchor.get("href", ""))
+            text = clean(anchor.get_text(" ", strip=True))
+            if cid and text and text.lower() not in GENERIC_LINK_TEXT:
+                candidates.append((cid, text, anchor.get("href", "")))
+        if not candidates:
+            continue
+        cid, anchor_text, href = max(candidates, key=lambda item: len(item[1]))
+        number = clean(cells[0].get_text(" ", strip=True))
+        name = clean(cells[1].get_text(" ", strip=True)) or anchor_text
+        if not name or len(name) < 4:
+            continue
+        found[cid] = {
+            "id": cid,
+            "number": number if number.isdigit() else "",
+            "name": name,
+            "type": "Permanente",
+            "source_url": urljoin(DETAIL_BASE, href),
+            "members_url": f"{DETAIL_BASE}integrantes.aspx?prmID={cid}",
+            "sessions_url": f"{DETAIL_BASE}sesiones.aspx?prmID={cid}",
+            "projects_url": f"{DETAIL_BASE}proyecto_ley.aspx?prmID={cid}",
+            "citations_url": f"{DETAIL_BASE}citaciones.aspx?prmID={cid}",
+            "results_url": f"{DETAIL_BASE}resultados.aspx?prmID={cid}",
+        }
+
+    # Fallback in case the site markup changes and the link leaves the table cell.
+    if len(found) < MIN_EXPECTED_COMMISSION_COUNT:
+        for anchor in soup.find_all("a", href=True):
+            cid = commission_id_from_href(anchor.get("href", ""))
+            text = clean(anchor.get_text(" ", strip=True))
+            if not cid or not text or text.lower() in GENERIC_LINK_TEXT or len(text) < 4:
+                continue
+            href = anchor.get("href", "")
+            if "/legislacion/comisiones/" not in urljoin(DETAIL_BASE, href).lower():
+                continue
+            found.setdefault(cid, {
+                "id": cid,
+                "number": "",
+                "name": text,
+                "type": "Permanente",
+                "source_url": urljoin(DETAIL_BASE, href),
+                "members_url": f"{DETAIL_BASE}integrantes.aspx?prmID={cid}",
+                "sessions_url": f"{DETAIL_BASE}sesiones.aspx?prmID={cid}",
+                "projects_url": f"{DETAIL_BASE}proyecto_ley.aspx?prmID={cid}",
+                "citations_url": f"{DETAIL_BASE}citaciones.aspx?prmID={cid}",
+                "results_url": f"{DETAIL_BASE}resultados.aspx?prmID={cid}",
+            })
+
+    commissions = list(found.values())
+    commissions.sort(key=lambda row: (int(row["number"]) if row["number"].isdigit() else 999, row["name"]))
+    return commissions
 
 
-def session_rows(node) -> list[dict]:
-    container = child(node, "Sesiones")
-    if container is None:
-        return []
-    rows = []
-    for session in descendants(container, "SesionComision"):
-        state, state_code = enum_value(child(session, "Estado"))
-        session_type, type_code = enum_value(child(session, "Tipo"))
-        rows.append({
-            "id": child_text(session, "Id"),
-            "number": child_text(session, "Numero"),
-            "start": parse_dt(child_text(session, "FechaInicio")),
-            "end": parse_dt(child_text(session, "FechaTermino")),
-            "state": state,
-            "state_code": state_code,
-            "type": session_type,
-            "type_code": type_code,
-        })
-    return sorted(rows, key=lambda row: row["start"] or "")
+def parse_member_id(href: str) -> str:
+    parsed = urlparse(urljoin("https://www.camara.cl", href or ""))
+    query = parse_qs(parsed.query)
+    for key, values in query.items():
+        if key.lower() in {"prmid", "prmidiputado"} and values:
+            return clean(values[0])
+    return ""
 
 
-def commission_row(node) -> dict:
-    state, state_code = enum_value(child(node, "Estado"))
-    commission_type, type_code = enum_value(child(node, "Tipo"))
-    president = person(child(node, "Presidente"))
-    return {
-        "id": child_text(node, "Id"),
-        "number": child_text(node, "Numero"),
-        "name": child_text(node, "Nombre"),
-        "web_name": child_text(node, "NombreWeb"),
-        "alias": child_text(node, "Alias"),
-        "email": child_text(node, "Correo"),
-        "phone": child_text(node, "Telefono"),
-        "start": parse_dt(child_text(node, "FechaInicio")),
-        "constitution_date": parse_dt(child_text(node, "FechaConstitucion")),
-        "end": parse_dt(child_text(node, "FechaTermino")),
-        "state": state,
-        "state_code": state_code,
-        "type": commission_type,
-        "type_code": type_code,
-        "president": president if (president["id"] or president["name"]) else None,
-        "members": member_rows(node),
-        "sessions": session_rows(node),
-    }
+def enrich_members(session: requests.Session, commission: dict) -> dict:
+    try:
+        soup = fetch(session, commission["members_url"])
+    except requests.RequestException as exc:
+        commission["members_status"] = f"unavailable:{type(exc).__name__}"
+        commission["members"] = []
+        return commission
 
+    page_text = clean(soup.get_text(" ", strip=True))
+    type_match = re.search(r"Tipo de Comisión:\s*([^|]+?)(?:Integrantes|Sesiones|Proyectos de Ley|$)", page_text, re.IGNORECASE)
+    if type_match:
+        commission["type"] = clean(type_match.group(1))[:120]
 
-def current_period() -> dict:
-    root = get_xml("WSLegislativo", "retornarPeriodoLegislativoActual")
-    period_id = child_text(root, "Id")
-    if not period_id:
-        raise RuntimeError("retornarPeriodoLegislativoActual no devolvió Id")
-    return {
-        "id": period_id,
-        "name": child_text(root, "Nombre"),
-        "start": parse_dt(child_text(root, "FechaInicio")),
-        "end": parse_dt(child_text(root, "FechaTermino")),
-    }
+    members: dict[str, dict] = {}
+    for anchor in soup.find_all("a", href=True):
+        href = anchor.get("href", "")
+        full = urljoin("https://www.camara.cl", href)
+        if "/diputados/detalle/" not in full.lower():
+            continue
+        name = clean(anchor.get_text(" ", strip=True))
+        if not name or len(name) < 4:
+            continue
+        member_id = parse_member_id(href)
+        key = member_id or name.lower()
+        members[key] = {
+            "id": member_id,
+            "name": name,
+            "profile_url": full,
+        }
+
+    commission["members"] = sorted(members.values(), key=lambda row: row["name"])
+    commission["members_status"] = "retrieved" if members else "not_returned_by_page"
+    return commission
 
 
 def main() -> None:
     now = datetime.now(TZ)
-    period = current_period()
-    root = get_xml("WSComision", "retornarComisionesXPeriodo", {"prmPeriodoId": period["id"]})
-    nodes = descendants(root, "Comision")
-    commissions = [commission_row(node) for node in nodes]
-    commissions = [row for row in commissions if row["id"] and row["name"]]
-    commissions.sort(key=lambda row: (row["type"], row["name"]))
+    session = requests.Session()
+    session.headers.update({
+        "User-Agent": "Mozilla/5.0 (compatible; ConoceATuParlamentario/1.0; civic-research)",
+        "Accept-Language": "es-CL,es;q=0.9,en;q=0.5",
+    })
 
+    commissions = list_commissions(session)
     if len(commissions) < MIN_EXPECTED_COMMISSION_COUNT:
         raise RuntimeError(
-            f"Universo de comisiones no plausible para período {period['id']}: "
-            f"{len(commissions)} < {MIN_EXPECTED_COMMISSION_COUNT}"
+            f"Directorio oficial no plausible: {len(commissions)} comisiones con prmID "
+            f"(< {MIN_EXPECTED_COMMISSION_COUNT})"
         )
 
+    enriched = [enrich_members(session, commission) for commission in commissions]
     payload = {
-        "schema_version": "commissions-v0.2",
+        "schema_version": "commissions-web-v0.3",
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
-        "period": period,
         "source": {
-            "name": "Cámara de Diputadas y Diputados de Chile · Open Data",
-            "services": [
-                "WSLegislativo.retornarPeriodoLegislativoActual",
-                "WSComision.retornarComisionesXPeriodo",
-            ],
-            "url": "https://opendata.camara.cl/camaradiputados/WServices/WSComision.asmx?op=retornarComisionesXPeriodo",
+            "name": "Cámara de Diputadas y Diputados de Chile · Directorio institucional de comisiones permanentes",
+            "url": LIST_URL,
+            "method": "HTML institucional server-rendered; prmID como identificador de instancia",
         },
         "counts": {
-            "commissions": len(commissions),
-            "with_members": sum(bool(row["members"]) for row in commissions),
-            "with_president": sum(bool(row["president"]) for row in commissions),
-            "with_sessions_embedded": sum(bool(row["sessions"]) for row in commissions),
+            "commissions": len(enriched),
+            "with_members_retrieved": sum(bool(row.get("members")) for row in enriched),
+            "member_rows": sum(len(row.get("members", [])) for row in enriched),
         },
-        "commissions": commissions,
+        "commissions": enriched,
+        "quality_gate": {
+            "minimum_expected_commissions": MIN_EXPECTED_COMMISSION_COUNT,
+            "passed": True,
+            "note": "El workflow falla antes de persistir si el directorio devuelve un universo implausiblemente pequeño.",
+        },
         "scope_note": (
-            "El universo se obtiene para el período legislativo actual resuelto por el servicio oficial. "
-            "Una colección vacía de integrantes o sesiones significa que el método consultado no devolvió esos elementos; "
-            "no se interpreta como ausencia sustantiva."
+            "El directorio describe comisiones permanentes visibles en la página institucional actual. "
+            "Los integrantes se recuperan desde la ficha oficial cuando el HTML los expone; una lista vacía no se interpreta como ausencia sustantiva. "
+            "Comisiones investigadoras, unidas, mixtas u otras familias requieren capas separadas."
         ),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
-        f"Periodo {period['id']} {period['name']} | comisiones={len(commissions)} "
-        f"| con integrantes={payload['counts']['with_members']} "
-        f"| con sesiones={payload['counts']['with_sessions_embedded']}"
+        f"Directorio institucional: comisiones={len(enriched)} | "
+        f"con integrantes={payload['counts']['with_members_retrieved']} | "
+        f"filas integrantes={payload['counts']['member_rows']}"
     )
 
 
