@@ -10,6 +10,7 @@ OUT = ROOT / "data" / "legislative" / "2026"
 MEMBER_VOTES = OUT / "member_votes.csv"
 ROLLCALLS = OUT / "rollcalls.csv"
 PROJECTS = OUT / "projects.csv"
+INHERITED_PROJECTS = OUT / "topics" / "rollcall_inherited_topic_final.csv"
 OUTPUT = OUT / "member_participation_summary.csv"
 DIAGNOSTICS = OUT / "member_participation_diagnostics.json"
 PUBLIC_OUTPUT = ROOT / "assets" / "js" / "participation.js"
@@ -97,6 +98,7 @@ def main() -> None:
     votes = read_csv(MEMBER_VOTES)
     rollcalls = read_csv(ROLLCALLS)
     projects = read_csv(PROJECTS)
+    inherited_projects = read_csv(INHERITED_PROJECTS)
     if not votes or not rollcalls:
         raise RuntimeError("Las tablas de entrada están vacías")
 
@@ -107,8 +109,13 @@ def main() -> None:
     project_title_by_bill = {
         (row.get("boletin") or "").strip(): (row.get("titulo") or "").strip()
         for row in projects
-        if (row.get("boletin") or "").strip()
+        if (row.get("boletin") or "").strip() and (row.get("titulo") or "").strip()
     }
+    for row in inherited_projects:
+        bulletin = (row.get("boletin") or "").strip()
+        title = (row.get("titulo") or "").strip()
+        if bulletin and title:
+            project_title_by_bill.setdefault(bulletin, title)
 
     keys = [(row.get("vote_id", ""), row.get("diputado_id", "")) for row in votes]
     if any(not vote_id or not deputy_id for vote_id, deputy_id in keys):
