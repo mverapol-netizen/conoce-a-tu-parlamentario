@@ -88,10 +88,10 @@ def main() -> None:
         if bill and deputy_id and name:
             authors_by_bill[bill][deputy_id] = name
 
-    pair_bills: dict[tuple[str, str], list[dict]] = defaultdict(list)
+    pair_bill_ids: dict[tuple[str, str], list[str]] = defaultdict(list)
+    bill_catalog: dict[str, dict] = {}
     person_names: dict[str, str] = {}
     eligible_bills = 0
-    invalid_bills = []
 
     for bill, people in authors_by_bill.items():
         project = project_lookup.get(bill)
@@ -104,16 +104,14 @@ def main() -> None:
             clean(project.get("fecha_ingreso")) >= TERM_START,
         )
         if not all(checks):
-            # bill_authors también contiene mociones originadas en Senado. Esas
-            # no pertenecen al universo de coautoría de diputados de la ficha.
+            # bill_authors contiene también mociones originadas en Senado.
             continue
         eligible_bills += 1
         for deputy_id, name in people.items():
             person_names[deputy_id] = name
         if len(people) < 2:
             continue
-        bill_meta = {
-            "boletin": bill,
+        bill_catalog[bill] = {
             "title": clean(project.get("titulo")),
             "date": clean(project.get("fecha_ingreso")),
             "state": clean(project.get("estado_actual")),
@@ -121,7 +119,7 @@ def main() -> None:
             "formalAuthorCount": len(people),
         }
         for a, b in combinations(sorted(people, key=int), 2):
-            pair_bills[pair_key(a, b)].append(bill_meta)
+            pair_bill_ids[pair_key(a, b)].append(bill)
 
     # Reconciliación con la red derivada ya existente.
     expected_edges = {}
@@ -133,7 +131,7 @@ def main() -> None:
             raise RuntimeError(f"Arista duplicada en coauthorship_edges.csv: {key}")
         expected_edges[key] = int(row.get("shared_bills") or 0)
 
-    observed_edges = {key: len(bills) for key, bills in pair_bills.items()}
+    observed_edges = {key: len(bills) for key, bills in pair_bill_ids.items()}
     missing_edges = sorted(set(expected_edges) - set(observed_edges))
     extra_edges = sorted(set(observed_edges) - set(expected_edges))
     weight_mismatches = [
@@ -152,17 +150,22 @@ def main() -> None:
         )
 
     incident: dict[str, list[dict]] = defaultdict(list)
-    for (a, b), bills in pair_bills.items():
-        sorted_bills = sorted(bills, key=lambda row: (row["date"], row["boletin"]), reverse=True)
+    for (a, b), bill_ids in pair_bill_ids.items():
+        sorted_ids = sorted(
+            bill_ids,
+            key=lambda bill: (bill_catalog[bill]["date"], bill),
+            reverse=True,
+        )
+        dates = [bill_catalog[bill]["date"] for bill in sorted_ids]
         for central, other in ((a, b), (b, a)):
             incident[central].append({
                 "id": other,
                 "name": person_names.get(other, ""),
-                "sharedMotions": len(sorted_bills),
-                "firstSharedDate": min((row["date"] for row in sorted_bills), default=""),
-                "lastSharedDate": max((row["date"] for row in sorted_bills), default=""),
+                "sharedMotions": len(sorted_ids),
+                "firstSharedDate": min(dates, default=""),
+                "lastSharedDate": max(dates, default=""),
                 "profileAvailable": other in profile_by_id,
-                "motions": sorted_bills,
+                "billIds": sorted_ids,
             })
 
     summaries = {}
@@ -204,9 +207,16 @@ def main() -> None:
             "strongestTie": strongest,
             "topVisible": top,
         }
+
+        relevant_bill_ids = sorted(
+            {bill for row in coauthors for bill in row["billIds"]},
+            key=lambda bill: (bill_catalog[bill]["date"], bill),
+            reverse=True,
+        )
         details[deputy_id] = {
             "id": deputy_id,
             "name": name,
+            "motions": {bill: bill_catalog[bill] for bill in relevant_bill_ids},
             "coauthors": coauthors,
         }
         summary_rows.append({
@@ -281,9 +291,7 @@ def main() -> None:
             "median": sorted(all_one_off_counts)[len(all_one_off_counts)//2] if all_one_off_counts else 0,
             "max": max(all_one_off_counts, default=0),
         },
-        "strongest_tie": {
-            "max": max(all_strongest, default=0),
-        },
+        "strongest_tie": {"max": max(all_strongest, default=0)},
         "detail_files": len(details),
         "detail_file_size_bytes": {
             "min": min(sizes, default=0),
@@ -291,6 +299,7 @@ def main() -> None:
             "total": sum(sizes),
         },
         "public_top_visible": TOP_VISIBLE,
+        "detail_normalization": "motion catalog + billIds per coauthor; no repeated title/url inside each edge",
         "method_note": (
             "Dos personas están conectadas si figuran formalmente como autoras de la misma moción de origen Cámara durante el período. "
             "El peso es el número de mociones compartidas. La coautoría no se interpreta automáticamente como afinidad ideológica, amistad, coordinación estable ni intensidad causal de colaboración."
