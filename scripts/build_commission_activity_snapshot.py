@@ -4,6 +4,7 @@ import json
 import re
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
 
 import requests
@@ -91,6 +92,21 @@ def row_to_dict(cells: list[str], headers: list[str], date_context: str) -> dict
     return row
 
 
+def enrich_office_links(row: dict, cell_tags: list[Tag], headers: list[str]) -> dict:
+    for index, cell in enumerate(cell_tags):
+        key = headers[index] if index < len(headers) and headers[index] else f"col_{index + 1}"
+        if key not in {"documento", "respuestas", "respuesta"}:
+            continue
+        anchor = cell.find("a", href=True)
+        if not anchor:
+            continue
+        href = clean(anchor.get("href", ""))
+        if not href or href.lower().startswith("javascript:"):
+            continue
+        row[f"{key}_url"] = urljoin("https://www.camara.cl/", href)
+    return row
+
+
 def header_matches(layer: str, header_text: str) -> bool:
     if layer == "citations":
         return "citaci" in header_text or "invit" in header_text
@@ -157,7 +173,10 @@ def parse_tables(soup: BeautifulSoup, layer: str) -> tuple[list[dict], dict]:
                 diagnostics["duplicate_rows_skipped"] += 1
                 continue
             seen_signatures.add(signature)
-            rows.append(row_to_dict(cells, headers, date_context))
+            row = row_to_dict(cells, headers, date_context)
+            if layer == "offices":
+                row = enrich_office_links(row, cell_tags, headers)
+            rows.append(row)
 
     return rows[:MAX_ROWS_PER_LAYER], diagnostics
 
@@ -250,14 +269,14 @@ def main() -> None:
 
     now = datetime.now(TZ)
     payload = {
-        "schema_version": "commission-activity-web-v0.5",
+        "schema_version": "commission-activity-web-v0.6",
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
         "directory_schema": directory.get("schema_version"),
         "source": {
             "name": "Cámara de Diputadas y Diputados de Chile · fichas institucionales de comisión",
             "layers": ["Sesiones", "Citaciones", "Resultados", "Proyectos de ley", "Oficios enviados"],
-            "method": "HTML institucional de cada prmID; solo tablas principales, excluyendo subtablas anidadas",
+            "method": "HTML institucional de cada prmID; solo tablas principales, excluyendo subtablas anidadas; los enlaces de documento/respuesta se conservan cuando existen",
         },
         "counts": {
             "commissions": n,
@@ -287,7 +306,8 @@ def main() -> None:
             "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; "
             "Resultados describe materias tratadas o acuerdos registrados; Proyectos de ley reproduce iniciativas asociadas a la comisión; "
             "Oficios enviados registra comunicaciones institucionales emitidas por la comisión cuando la página las devuelve. Las cinco capas se mantienen separadas. "
-            "Un oficio no se interpreta por sí solo como fiscalización efectiva, influencia, respuesta obtenida ni éxito. Una lista vacía significa que esa vista no devolvió filas, "
+            "Un oficio no se interpreta por sí solo como fiscalización efectiva, influencia, respuesta obtenida ni éxito. Cuando la fuente publica un enlace en la columna Respuestas, "
+            "el snapshot conserva ese enlace como evidencia documental, pero su existencia no evalúa suficiencia, oportunidad ni calidad de la respuesta. Una lista vacía significa que esa vista no devolvió filas, "
             "no ausencia sustantiva de actividad."
         ),
     }
