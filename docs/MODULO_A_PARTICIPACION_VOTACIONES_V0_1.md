@@ -2,7 +2,8 @@
 
 **Proyecto:** Conoce a tu parlamentario  
 **Cámara:** Cámara de Diputadas y Diputados de Chile, período 2026–2030  
-**Estado:** especificación editorial, pedagógica y de interacción cerrada; pendiente adaptación del denominador técnico a oportunidades efectivas de pertenencia antes de activación pública  
+**Estado:** **CERRADO E IMPLEMENTADO** en su núcleo público; comparación contextual de Cámara queda como extensión opcional posterior  
+**Corte auditado:** 364 votaciones nominales de Sala y 56.420 registros nominales, hasta el 1 de septiembre de 2026  
 
 Este documento convierte la primera capa de comportamiento legislativo en una pieza pública interpretable y auditable. El módulo responde dos preguntas distintas pero relacionadas:
 
@@ -15,7 +16,7 @@ La pieza no mide asistencia general, trabajo parlamentario, productividad ni cal
 
 ## 1. Idea pública central
 
-La primera información sustantiva de la ficha debe ser un dato observable y fácil de comprender antes de entrar a relaciones partidarias o modelos espaciales.
+La primera información sustantiva de la ficha es un dato observable y comprensible antes de entrar a relaciones partidarias o modelos espaciales.
 
 ### Título visible
 
@@ -25,38 +26,49 @@ La primera información sustantiva de la ficha debe ser un dato observable y fá
 
 **[X]%**
 
-### Texto principal dinámico
+### Texto dinámico
 
-> **[Nombre] registró una decisión —a favor, en contra o abstención— en [n] de [N] votaciones nominales de Sala que ocurrieron mientras integraba la Cámara durante el período observado.**
+> **[Nombre] registró una decisión —a favor, en contra o abstención— en [n] de [N] votaciones nominales de Sala en las que tuvo una oportunidad registrada de votar.**
 
 El porcentaje principal es:
 
 `participación sustantiva = (Afirmativo + En contra + Abstención) / oportunidades efectivas de votación`
 
-La denominación pública será **participación en votaciones**, nunca `asistencia`.
+La denominación pública es **participación en votaciones**, nunca `asistencia`.
 
 ---
 
-## 2. Denominador público correcto
+## 2. Denominador público: regla cerrada
 
 ### Regla definitiva
 
-El denominador `N` debe corresponder únicamente a las votaciones nominales de Sala celebradas **mientras la persona tenía una oportunidad institucional de participar como integrante de la Cámara**.
+El denominador `N` no se obtiene suponiendo que toda persona histórica deba estar presente en todas las votaciones de la legislatura. Se deriva directamente del detalle nominal oficial:
 
-Esto exige distinguir:
+> **Cada fila oficial `vote_id × diputado_id` en `member_votes.csv` cuenta como una oportunidad efectiva de votación para esa persona.**
 
-- votaciones ocurridas durante su pertenencia efectiva a la legislatura;
-- votaciones anteriores a su ingreso;
-- votaciones posteriores a una eventual salida;
-- estados oficiales registrados durante las oportunidades efectivas.
+Si el ID de una persona no aparece en el detalle nominal de una votación —por ejemplo porque todavía no integraba la Cámara o porque ya dejó el cargo— esa votación no entra en su denominador.
 
-### Razón pedagógica y metodológica
+### Por qué esta solución es mejor que una ventana imputada
 
-Una persona que ingresa a mitad del período no puede ser tratada como si hubiera dejado de votar en las sesiones anteriores a su ingreso. Esa diferencia debe representarse como **missing estructural / fuera del período de pertenencia**, no como `No vota`.
+Inicialmente se consideró reconstruir el denominador mediante una tabla separada de fechas de ingreso y salida. La auditoría mostró que no es necesario para este indicador: la propia fuente nominal define quién tiene un registro asociado a cada roll call.
 
-### Pendiente técnico detectado
+Esto evita convertir en `No vota` una votación en la que la persona no tenía una oportunidad institucional de participar.
 
-La tabla actual `member_participation_summary.csv` resume las 364 filas observadas para cada integrante del snapshot actual. Antes de activar este módulo públicamente, el constructor debe utilizar las ventanas de pertenencia a la Cámara y producir `eligible_rollcalls` u otra variable equivalente. Esta modificación no altera los datos primarios y debe permanecer como transformación derivada.
+### Auditoría del corte actual
+
+En el corte vigente:
+
+- 364 roll calls verificados de Sala;
+- 155 registros nominales en cada roll call;
+- 56.420 pares únicos `vote_id × diputado_id`;
+- 155 integrantes históricos observados hasta ahora;
+- 155 filas en el resumen público;
+- suma de oportunidades individuales: 56.420;
+- cero roll calls con cardinalidad distinta de 155;
+- cero opciones de voto desconocidas;
+- cero votos nominales sin roll call asociado.
+
+Actualmente todos los integrantes observados tienen 364 oportunidades porque todavía no se ha producido un reemplazo dentro del universo acumulado. El pipeline, sin embargo, ya no exige que la historia completa contenga exactamente 155 IDs únicos y está preparado para que ese número crezca durante la legislatura.
 
 ---
 
@@ -74,306 +86,247 @@ Segmentos:
 4. **No vota**
 5. **Dispensado**
 
-No se agruparán `No vota` y `Dispensado`, porque son categorías oficiales diferentes.
+`No vota` y `Dispensado` permanecen separados porque son categorías oficiales diferentes.
 
 ### Encima de la barra
 
-A la izquierda:
+La ficha muestra:
 
-**[X]% participación en votaciones**
-
-Debajo, en texto menor:
-
-**[n] decisiones registradas de [N] oportunidades**
-
-A la derecha, cuando exista espacio:
-
-**Período: [fecha de inicio individual]–[fecha de corte]**
+- **[X]% participación en votaciones**;
+- `[n] decisiones registradas de [N] oportunidades`;
+- período entre la primera y la última oportunidad observada de la persona.
 
 ### Debajo de la barra
 
-Una leyenda con número y porcentaje de cada estado:
+La leyenda informa para cada estado:
 
-- A favor: `[n] · [x%]`
-- En contra: `[n] · [x%]`
-- Abstención: `[n] · [x%]`
-- No vota: `[n] · [x%]`
-- Dispensado: `[n] · [x%]`
+- número absoluto;
+- porcentaje sobre las oportunidades efectivas.
 
-Los porcentajes de esta leyenda usan como denominador las oportunidades efectivas `N`, de modo que la barra completa suma 100%.
+La suma de los cinco estados reproduce exactamente `N`.
 
 ---
 
 ## 4. Por qué la abstención cuenta como participación
 
-La abstención es una opción de voto registrada por la Cámara. Por ello se incluye en la **participación sustantiva** del módulo descriptivo.
+La abstención es una opción expresamente registrada por la Cámara y por eso se incluye en la **participación sustantiva** de este módulo descriptivo.
 
-Esto no contradice el tratamiento del modelo espacial. W-NOMINATE e IRT utilizan principalmente la decisión binaria `Afirmativo / En contra`, y por tanto la abstención se trata allí como observación no binaria. Las dos decisiones responden a preguntas diferentes:
+Esto no contradice el tratamiento del modelo espacial:
 
 - este gráfico pregunta **si hubo una decisión parlamentaria registrada**;
-- el modelo espacial pregunta **cómo se ordenan las decisiones binarias entre alternativas enfrentadas**.
+- W-NOMINATE/IRT preguntan **cómo se ordenan las decisiones binarias entre alternativas enfrentadas** y tratan la abstención como observación no binaria.
 
-La ficha debe explicar esta diferencia cuando el usuario llegue posteriormente al módulo espacial.
+La misma categoría puede, por tanto, recibir tratamientos diferentes cuando las preguntas analíticas son distintas.
 
 ---
 
-## 5. Significado preciso de cada categoría
+## 5. Significado preciso de las categorías
 
 ### A favor
 
-La Cámara registra una opción afirmativa en esa votación.
+La Cámara registra una opción afirmativa.
 
-**No significa:** apoyo al Gobierno, apoyo al proyecto completo, posición ideológica progresista/conservadora ni aprobación general de una política. El objeto sometido a votación puede ser un proyecto completo, un artículo, una indicación, una insistencia, una observación presidencial u otra proposición.
+**No significa por sí sola:** apoyo al Gobierno, apoyo al proyecto completo, posición ideológica ni aprobación general de una política. El objeto puede ser un proyecto completo, artículo, numeral, indicación, insistencia, observación presidencial u otra proposición.
 
 ### En contra
 
-La Cámara registra una opción negativa en esa votación.
+La Cámara registra una opción negativa.
 
-**No significa:** oposición al Gobierno ni rechazo del proyecto completo. Debe interpretarse respecto del objeto exacto sometido a votación.
+**No significa por sí sola:** oposición al Gobierno ni rechazo del proyecto completo. Se interpreta respecto del objeto exacto sometido a votación.
 
 ### Abstención
 
-La Cámara registra expresamente una abstención.
-
-**Sí cuenta como participación sustantiva** en este módulo.
-
-**No debe presentarse** como ausencia ni como equivalente a votar en contra.
+La Cámara registra expresamente una abstención. Cuenta como participación sustantiva en este módulo y no se presenta como ausencia ni como voto en contra.
 
 ### No vota
 
-La fuente oficial registra `No Vota`.
-
-**No debe traducirse automáticamente como ausencia física**, inasistencia, negligencia ni rechazo. El proyecto conserva la categoría oficial y no infiere el motivo cuando la fuente no lo establece.
+La fuente oficial registra `No Vota`. El proyecto conserva esa categoría y **no infiere automáticamente ausencia física, inasistencia, negligencia ni rechazo**.
 
 ### Dispensado
 
-La fuente oficial registra una dispensa.
-
-Se mantiene separada de `No vota` y no se transforma en una evaluación del parlamentario.
+La fuente oficial registra una dispensa. Se mantiene separada de `No vota` y no se transforma en una evaluación del parlamentario.
 
 ---
 
-## 6. Interacción del gráfico
+## 6. Interacción y trazabilidad pública
 
-Cada segmento de la barra debe ser seleccionable.
+La barra y la leyenda son interactivas.
 
 ### Al seleccionar un segmento
 
-Se abre una lista de las votaciones que componen ese segmento, con:
+La ficha carga bajo demanda las votaciones que forman esa categoría y muestra, de la más reciente a la más antigua:
 
 - fecha;
 - boletín;
-- título abreviado del proyecto;
-- objeto exacto de la votación cuando esté disponible;
-- opción registrada del parlamentario;
-- resultado general de la votación;
-- enlace a la votación oficial de la Cámara.
+- título del proyecto;
+- objeto exacto de la votación cuando la fuente lo entrega;
+- opción registrada de la persona;
+- resultado general;
+- enlace directo al detalle oficial de la Cámara.
 
-### Ejemplo de interacción
+También existe el control **Ver las [N] votaciones**, que abre todas las oportunidades de la persona y conserva su opción en cada una.
 
-Si el usuario selecciona **Abstención · 14**, no recibe solamente el número 14: puede abrir esas 14 votaciones y comprobar en qué asuntos se abstuvo.
+### Títulos de proyectos heredados
 
-La lista debe poder ordenarse por fecha y, una vez validada la taxonomía temática, filtrarse por materia.
+Algunas votaciones del período corresponden a proyectos ingresados antes del 11 de marzo de 2026. `projects.csv` no contiene necesariamente todos esos proyectos. Para evitar títulos incompletos, el activo público complementa exclusivamente el **título documental** desde `topics/rollcall_inherited_topic_final.csv`.
 
----
+Este uso no publica ni utiliza todavía la clasificación temática de esa tabla. Solo recupera un dato factual ya reconstruido.
 
-## 7. Caja `Cómo leer este gráfico`
+En la auditoría final del módulo:
 
-Texto visible recomendado:
-
-> **La barra muestra qué registró oficialmente la Cámara en cada votación nominal de Sala durante el período en que esta persona integró la corporación. A favor, en contra y abstención cuentan como decisiones registradas. “No vota” y “Dispensado” se muestran por separado y no se interpretan automáticamente como inasistencia.**
-
----
-
-## 8. Desplegable `¿Qué significa?`
-
-> Este indicador permite observar con qué frecuencia una diputada o diputado registra una decisión en las votaciones nominales de Sala y cómo se distribuyen esas decisiones. Es una descripción de comportamiento en votaciones, no una evaluación general de desempeño.
+- roll calls públicos: **364/364**;
+- relaciones individuales públicas: **56.420/56.420**;
+- roll calls sin título de proyecto: **0**.
 
 ---
 
-## 9. Desplegable `¿Qué no significa?`
+## 7. Texto `¿Cómo leer este gráfico?`
 
-Texto recomendado:
+La versión implementada explica:
 
-> **No es un indicador de asistencia al Congreso.** Una parlamentaria o parlamentario puede desarrollar actividad legislativa fuera de una votación nominal de Sala, y la categoría “No vota” no permite inferir por sí sola si estaba o no presente en la sesión.
->
-> **No mide productividad ni calidad.** Participar en más votaciones no permite concluir, por sí solo, que una persona trabaja más o mejor que otra.
->
-> **No mide apoyo u oposición política.** La cantidad de votos afirmativos y negativos no puede interpretarse sin conocer qué se estaba votando en cada caso.
+> La cifra principal cuenta como participación una decisión registrada a favor, en contra o como abstención. La barra conserva además por separado los estados oficiales No vota y Dispensado. El largo de cada segmento representa su proporción real dentro de las oportunidades de votación de esta persona.
 
 ---
 
-## 10. Desplegable `¿Cómo lo calculamos?`
+## 8. Texto `¿Qué significa y qué no significa?`
 
-Versión pública breve:
+La ficha explica explícitamente que el indicador describe participación observada en **votaciones nominales de Sala**.
 
-> Usamos exclusivamente votaciones nominales verificadas como votaciones de Sala de la Cámara de Diputadas y Diputados desde el 11 de marzo de 2026. Para cada integrante conservamos por separado las categorías oficiales Afirmativo, En contra, Abstención, No vota y Dispensado. El porcentaje de participación cuenta Afirmativo, En contra y Abstención como decisiones registradas y utiliza como denominador solo las votaciones ocurridas mientras la persona integraba la Cámara.
+No mide:
 
-### Versión técnica enlazada
+- asistencia general al Congreso;
+- trabajo en comisiones;
+- productividad legislativa;
+- calidad del desempeño;
+- apoyo u oposición al Gobierno.
 
-Debe explicar además:
-
-- fuente oficial de cada roll call;
-- fuente de los votos nominales;
-- reconstrucción temporal de pertenencia;
-- fecha de corte;
-- SHA/versión del pipeline;
-- definición exacta de `substantive_participation_pct`;
-- tratamiento de missing estructural;
-- relación con `member_votes.csv`, `member_votes_enriched.csv` y la tabla derivada de participación.
+Tampoco convierte `No vota` en inasistencia ni una abstención en falta de participación.
 
 ---
 
-## 11. Contexto comparativo de Cámara
+## 9. Texto `¿Cómo lo calculamos?`
 
-### Decisión editorial
+Versión pública implementada:
 
-La comparación con otros parlamentarios debe ser **secundaria**, no el centro del gráfico.
-
-No se mostrará un ranking `1 de 155` ni etiquetas como `alto/bajo desempeño`.
-
-### Forma recomendada
-
-Debajo del gráfico puede existir un pequeño bloque opcional:
-
-**Contexto de la Cámara**
-
-> `Mediana de participación en votaciones: [M]%`
-
-Y, si el espacio visual lo permite, un mini-distribución horizontal con:
-
-- todos los parlamentarios como marcas neutras;
-- mediana de Cámara;
-- parlamentario seleccionado destacado.
-
-### Regla
-
-La comparación solo se activa cuando todos los integrantes comparados utilizan el mismo criterio de oportunidades efectivas. Si existen cohortes con ventanas de pertenencia demasiado distintas, debe informarse explícitamente y evitar un ranking ordinal.
+> **Participación = (A favor + En contra + Abstención) / oportunidades efectivas de votación.** Cada registro nominal oficial que vincula una votación con esta diputada o diputado cuenta como una oportunidad. Si una persona todavía no integraba la Cámara o ya había dejado el cargo y su ID no aparece en el detalle nominal oficial, esa votación no entra en su denominador. Las categorías No vota y Dispensado se conservan sin recodificarlas.
 
 ---
 
-## 12. Casos límite
+## 10. Arquitectura de datos implementada
+
+### Datos primarios
+
+- `data/legislative/2026/member_votes.csv`
+- `data/legislative/2026/rollcalls.csv`
+- `data/legislative/2026/projects.csv`
+
+### Complemento documental para proyectos heredados
+
+- `data/legislative/2026/topics/rollcall_inherited_topic_final.csv` — solo título del proyecto en este módulo.
+
+### Transformación derivada
+
+- `scripts/build_member_participation.py`
+
+### Salidas auditables
+
+- `data/legislative/2026/member_participation_summary.csv`
+- `data/legislative/2026/member_participation_diagnostics.json`
+
+### Activos públicos
+
+- `assets/js/participation.js` — resumen individual ligero cargado con la ficha;
+- `assets/data/participation_rollcalls.json` — metadatos públicos de las votaciones;
+- `assets/data/participation_member_votes.json` — pares compactos de votación y opción por integrante, cargados solo cuando el usuario pide evidencia.
+
+La separación permite que la ficha inicial sea liviana y que el historial detallado se descargue únicamente al abrir una categoría.
+
+---
+
+## 11. Separación respecto de otros indicadores
+
+La participación se calcula directamente desde los votos nominales primarios y **no depende de partido, bancada, clasificación temática ni W-NOMINATE**.
+
+La coincidencia con partido/bancada sigue un pipeline separado (`build_member_voting_summary.py`) porque responde una pregunta distinta y necesita afiliaciones temporales y primitivas de grupo.
+
+Esta separación impide que un problema de afiliación política invalide un indicador puramente descriptivo de voto.
+
+---
+
+## 12. Contexto comparativo de Cámara
+
+La comparación con otros parlamentarios queda como **extensión secundaria**, no como parte necesaria del módulo A.
+
+No se publica por ahora:
+
+- ranking `1 de 155`;
+- etiquetas `alto/bajo desempeño`;
+- percentil normativo de participación.
+
+Una futura vista de contexto podrá mostrar mediana y distribución de Cámara de forma descriptiva, siempre que las ventanas individuales sean comparables.
+
+---
+
+## 13. Casos límite
 
 ### Integrante sin oportunidades observadas
 
-Mostrar:
+Mostrar: **Sin período comparable todavía**. No imputar porcentaje.
 
-**Sin período comparable todavía**
+### Integrante con pocas oportunidades
 
-No calcular porcentaje.
+Mostrar el porcentaje junto al denominador absoluto y una advertencia del tipo: **Basado en solo [N] votaciones desde su incorporación.**
 
-### Integrante con muy pocas oportunidades
+### Reemplazos o salidas
 
-Mostrar el porcentaje, pero acompañado por:
+El denominador se adapta automáticamente a las filas nominales asociadas al ID de cada persona. El total histórico de personas puede superar 155 sin romper el resumen.
 
-> **Basado en solo [N] votaciones desde su incorporación.**
+### Correcciones posteriores de la fuente
 
-No comparar ordinalmente con toda la Cámara si el denominador es demasiado pequeño.
-
-### Cambios de pertenencia durante el período
-
-La ventana pública se construye sobre las fechas de pertenencia, no sobre el snapshot partidario actual.
-
-### Datos oficiales corregidos posteriormente
-
-El módulo se regenera en cada actualización. La fecha de corte debe estar visible y las correcciones retroactivas de la fuente deben propagarse al resumen.
+El workflow regenera resumen y activos públicos cuando cambian `member_votes.csv`, `rollcalls.csv`, `projects.csv` o la fuente documental de proyectos heredados.
 
 ---
 
-## 13. Accesibilidad
+## 14. Accesibilidad
 
-La barra no puede depender exclusivamente del color.
+La barra no depende solo del color:
 
-Cada segmento debe tener:
-
-- etiqueta textual;
-- valor numérico;
-- porcentaje;
-- `aria-label` descriptivo;
-- navegación por teclado.
-
-En móvil, la leyenda numérica sustituye cualquier información que no quepa dentro de los segmentos pequeños.
+- cada segmento es un botón con `aria-label`;
+- la leyenda contiene etiqueta, valor y porcentaje;
+- las categorías con cero registros se muestran pero quedan deshabilitadas;
+- existe foco visible para navegación por teclado;
+- en móvil la leyenda conserva toda la información aunque un segmento sea demasiado pequeño para contener texto.
 
 ---
 
-## 14. Orden visual dentro de la ficha
-
-El módulo aparece inmediatamente después del encabezado biográfico básico.
-
-Secuencia:
-
-1. título `Participación en votaciones de Sala`;
-2. cifra principal;
-3. frase interpretativa;
-4. barra apilada;
-5. leyenda numérica;
-6. botón `Ver votaciones`;
-7. bloque opcional `Contexto de la Cámara`;
-8. desplegables `Cómo leerlo`, `Qué significa`, `Qué no significa`, `Cómo lo calculamos`.
-
-No deben aparecer términos como `score`, `nota`, `desempeño`, `ranking`, `asistencia` o `cumplimiento`.
-
----
-
-## 15. Contrato de datos para implementación
-
-La capa web deberá recibir por parlamentario al menos:
-
-- `member_id`
-- `period_start`
-- `period_end_or_cutoff`
-- `eligible_rollcalls`
-- `n_affirmative`
-- `n_against`
-- `n_abstention`
-- `n_no_vote`
-- `n_excused`
-- `n_substantive`
-- `substantive_participation_pct`
-- `data_cutoff`
-- `method_version`
-
-Invariante obligatorio:
-
-`eligible_rollcalls = n_affirmative + n_against + n_abstention + n_no_vote + n_excused`
-
-Y:
-
-`n_substantive = n_affirmative + n_against + n_abstention`
-
-Las observaciones fuera de la ventana de pertenencia no entran en ninguna de esas cinco categorías.
-
----
-
-## 16. Gate de publicación del módulo A
+## 15. Gate de publicación del módulo A
 
 ### Editorial/pedagógico
 
 **CERRADO.**
 
-Quedan fijados:
+### Denominador y auditoría
 
-- pregunta pública;
-- vocabulario permitido;
-- vocabulario prohibido;
-- gráfico principal;
-- interpretación;
-- interacción;
-- trazabilidad;
-- manejo de casos límite.
+**CERRADO.**
 
-### Técnico
+### Trazabilidad pública
 
-**PENDIENTE DE UNA CORRECCIÓN ACOTADA:** adaptar el resumen de participación a oportunidades efectivas según ventana de pertenencia antes de conectarlo con la ficha pública.
+**CERRADA.**
 
-Una vez corregido y auditado ese denominador, este módulo puede publicarse sin depender de W-NOMINATE, IRT, OC, clasificación temática ni interpretación ideológica.
+### Implementación web
+
+**IMPLEMENTADA.**
+
+La activación no depende de W-NOMINATE, IRT, OC ni de la validación temática. El único componente deliberadamente diferido es la comparación contextual de Cámara, que es una extensión y no modifica el significado del indicador.
 
 ---
 
-## 17. Principio interpretativo final
+## 16. Principio interpretativo final
 
-La afirmación que este gráfico autoriza es deliberadamente limitada:
+La afirmación autorizada es deliberadamente limitada:
 
 > **Sabemos qué opción registró oficialmente la Cámara para esta persona en cada votación nominal de Sala y podemos describir cuántas veces emitió una decisión durante sus oportunidades efectivas de participación.**
 
-No autoriza, por sí solo, ninguna afirmación sobre las razones de una no votación, la calidad del trabajo parlamentario, la ideología del representante ni su apoyo al Gobierno.
+El usuario puede además bajar desde cada segmento del gráfico hasta las votaciones concretas que lo componen y abrir la fuente oficial correspondiente.
+
+El módulo no autoriza, por sí solo, afirmaciones sobre las razones de una no votación, la calidad del trabajo parlamentario, la ideología del representante ni su apoyo al Gobierno.
