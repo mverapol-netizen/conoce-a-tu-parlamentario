@@ -1,6 +1,6 @@
 {
-  "schema_version": "commissions-web-v0.3",
-  "generated_at": "2026-09-03T10:21:30.917108-04:00",
+  "schema_version": "commissions-web-v0.4",
+  "generated_at": "2026-09-03T10:23:09.341537-04:00",
   "timezone": "America/Santiago",
   "source": {
     "name": "Cámara de Diputadas y Diputados de Chile · Directorio institucional de comisiones permanentes",
@@ -10,7 +10,8 @@
   "counts": {
     "commissions": 34,
     "with_members_retrieved": 34,
-    "member_rows": 418
+    "member_rows": 389,
+    "member_table_method": 0
   },
   "commissions": [
     {
@@ -25,11 +26,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4897",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4897",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1245",
           "name": "Sr. Alejandro Riquelme Ducci",
@@ -96,7 +92,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1062"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4889",
@@ -110,11 +107,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4889",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4889",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1100",
           "name": "Sr. Cristián Araya Lerdo de Tejada",
@@ -181,7 +173,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1240"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4884",
@@ -195,11 +188,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4884",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4884",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1202",
           "name": "Sr. Eduardo Cretton Rebolledo",
@@ -266,7 +254,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1039"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4895",
@@ -280,11 +269,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4895",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4895",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1262",
           "name": "Sr. Diego Vergara Rodríguez",
@@ -351,7 +335,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1191"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4890",
@@ -365,11 +350,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4890",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4890",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1165",
           "name": "Sr. Agustín Romero Leiva",
@@ -436,7 +416,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1196"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4896",
@@ -450,11 +431,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4896",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4896",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1205",
           "name": "Sr. Carlos Cuadrado Prats",
@@ -521,7 +497,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1017"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4885",
@@ -535,11 +512,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4885",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4885",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1110",
           "name": "Sr. Carlos Bianchi Chelech",
@@ -606,7 +578,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1117"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4900",
@@ -620,11 +593,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4900",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4900",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1225",
           "name": "Sr. Cristian Menchaca Pinochet",
@@ -691,7 +659,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1211"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4888",
@@ -705,11 +674,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4888",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4888",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1204",
           "name": "Sr. Francisco Crisóstomo Llanos",
@@ -776,7 +740,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1243"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4894",
@@ -790,11 +755,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4894",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1165",
           "name": "Sr. Agustín Romero Leiva",
@@ -861,7 +821,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1240"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4891",
@@ -875,11 +836,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4891",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4891",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1187",
           "name": "Sr. Carlo Arqueros Pizarro",
@@ -946,7 +902,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1059"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4892",
@@ -960,11 +917,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4892",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4892",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1250",
           "name": "Sr. Bernardo Salinas Maya",
@@ -1031,7 +983,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1207"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4893",
@@ -1045,11 +998,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4893",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4893",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1245",
           "name": "Sr. Alejandro Riquelme Ducci",
@@ -1116,7 +1064,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1196"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4899",
@@ -1130,11 +1079,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4899",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4899",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1230",
           "name": "Sr. Alex Nahuelquin Nahuelquin",
@@ -1201,7 +1145,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1256"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4887",
@@ -1215,11 +1160,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4887",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4887",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1021",
           "name": "Sr. Andrés Celis Montt",
@@ -1286,7 +1226,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1059"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4898",
@@ -1300,11 +1241,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4898",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4898",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1221",
           "name": "Sr. Benjamín Lorca Inzunza",
@@ -1371,7 +1307,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1240"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4886",
@@ -1385,11 +1322,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4886",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4886",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1021",
           "name": "Sr. Andrés Celis Montt",
@@ -1456,7 +1388,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1087"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4902",
@@ -1470,11 +1403,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4902",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4902",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1013",
           "name": "Sr. Alejandro Bernales Maldonado",
@@ -1541,7 +1469,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1117"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4910",
@@ -1555,11 +1484,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4910",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4910",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1195",
           "name": "Sr. Carlos Carvajal Gallardo",
@@ -1626,7 +1550,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1074"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4904",
@@ -1640,11 +1565,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4904",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4904",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1230",
           "name": "Sr. Alex Nahuelquin Nahuelquin",
@@ -1711,7 +1631,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1216"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4903",
@@ -1725,11 +1646,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4903",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4903",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1250",
           "name": "Sr. Bernardo Salinas Maya",
@@ -1796,7 +1712,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1256"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4905",
@@ -1810,11 +1727,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4905",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4905",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1013",
           "name": "Sr. Alejandro Bernales Maldonado",
@@ -1881,7 +1793,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1062"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4907",
@@ -1895,11 +1808,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4907",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4907",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1195",
           "name": "Sr. Carlos Carvajal Gallardo",
@@ -1966,7 +1874,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1207"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4909",
@@ -2046,7 +1955,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1117"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4912",
@@ -2060,11 +1970,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4912",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4912",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1253",
           "name": "Sr. Fernando Ugarte Tejeda",
@@ -2131,7 +2036,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1216"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4913",
@@ -2145,11 +2051,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4913",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4913",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1100",
           "name": "Sr. Cristián Araya Lerdo de Tejada",
@@ -2216,7 +2117,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1231"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4914",
@@ -2230,11 +2132,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4914",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4914",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1230",
           "name": "Sr. Alex Nahuelquin Nahuelquin",
@@ -2301,7 +2198,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1231"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4911",
@@ -2315,11 +2213,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4911",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4911",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1235",
           "name": "Sr. Javier Olivares Avendaño",
@@ -2356,7 +2249,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1211"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4882",
@@ -2376,7 +2270,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4883",
@@ -2396,7 +2291,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4908",
@@ -2410,11 +2306,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4908",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4908",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1150",
           "name": "Sr. Benjamín Moreno Bascur",
@@ -2461,7 +2352,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=843"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4906",
@@ -2475,11 +2367,6 @@
       "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4906",
       "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4906",
       "members": [
-        {
-          "id": "1009",
-          "name": "Jorge Alessandri Vergara",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
-        },
         {
           "id": "1195",
           "name": "Sr. Carlos Carvajal Gallardo",
@@ -2526,7 +2413,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1039"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4901",
@@ -2591,7 +2479,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1059"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     },
     {
       "id": "4915",
@@ -2611,7 +2500,8 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
         }
       ],
-      "members_status": "retrieved"
+      "members_status": "retrieved",
+      "members_extraction": "page_fallback"
     }
   ],
   "quality_gate": {
@@ -2619,5 +2509,5 @@
     "passed": true,
     "note": "El workflow falla antes de persistir si el directorio devuelve un universo implausiblemente pequeño."
   },
-  "scope_note": "El directorio describe comisiones permanentes visibles en la página institucional actual. Los integrantes se recuperan desde la ficha oficial cuando el HTML los expone; una lista vacía no se interpreta como ausencia sustantiva. Comisiones investigadoras, unidas, mixtas u otras familias requieren capas separadas."
+  "scope_note": "El directorio describe comisiones permanentes visibles en la página institucional actual. Los integrantes se recuperan desde la tabla de la ficha oficial cuando está disponible; una lista vacía no se interpreta como ausencia sustantiva. Comisiones investigadoras, unidas, mixtas u otras familias requieren capas separadas."
 }
