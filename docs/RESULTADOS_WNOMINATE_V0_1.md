@@ -3,9 +3,11 @@
 **Proyecto:** Conoce a tu parlamentario  
 **Período observado:** 11 de marzo de 2026 en adelante  
 **Fecha del corte:** 2 de septiembre de 2026  
-**Estado:** experimental; **no publicar todavía como indicador ideológico individual**.
+**Estado:** experimental; **apto para laboratorio público con advertencias, no cerrado todavía como indicador ideológico individual de las fichas**.
 
-Este documento registra los resultados de la primera estimación espacial de las votaciones nominales de Sala de la Cámara de Diputadas y Diputados. Complementa el contrato metodológico `CONTRATO_WNOMINATE_V0_1.md`; no modifica los datos primarios ni convierte las coordenadas en categorías políticas sustantivas.
+Este documento registra los resultados de la primera estimación espacial de las votaciones nominales de Sala de la Cámara de Diputadas y Diputados. Complementa el contrato metodológico `CONTRATO_WNOMINATE_V0_1.md`; no modifica los datos primarios ni convierte las coordenadas en categorías políticas sustantivas definitivas.
+
+La pestaña pública `wnominate.html` debe entenderse como un **laboratorio de exploración metodológica**. Su publicación no equivale al cierre de los gates multimétodo, temporales o interpretativos requeridos para integrar la coordenada como indicador individual definitivo dentro de las fichas legislativas.
 
 ## 1. Insumo y codificación
 
@@ -32,7 +34,7 @@ Se estimaron correctamente seis especificaciones 1D:
 | `cap20_balanced_lop025` | 180 | 154 | 95,66% | 0,880 |
 | `cap10_balanced_lop025` | 136 | 153 | 95,66% | 0,875 |
 
-La orientación del eje es arbitraria. Las corridas se alinean técnicamente entre sí para estudiar estabilidad, pero **no se interpreta el signo como izquierda/derecha** ni como una escala normativa.
+La orientación matemática del eje es arbitraria. Las corridas se alinean técnicamente entre sí para estudiar estabilidad. La visualización pública invierte el signo técnico (`D1 visual = -D1 técnico`) para mantener la convención izquierda → derecha. Esa lectura se apoya en una auditoría sustantiva posterior, pero permanece provisional hasta el cierre final del contrato de publicación.
 
 ## 3. Robustez frente a umbral y concentración por boletín
 
@@ -55,7 +57,7 @@ La especificación base estima 154 de 155 integrantes.
 - **María Francisca Bello Campos** no tiene votos binarios utilizables en el universo observado y queda fuera de todas las especificaciones. No se imputa una posición.
 - En el recorte extremo `cap10`, **Javiera Morales Alvarado** conserva solo 12 observaciones binarias y queda bajo `minvotes = 20`; sí es estimable en las demás especificaciones.
 
-Las exclusiones permanecen explícitas en `member_exclusions.csv`.
+Las exclusiones permanecen explícitas en `member_exclusions.csv` y deben permanecer visibles en cualquier presentación pública del modelo.
 
 ## 5. Estabilidad individual y relación con agrupaciones políticas
 
@@ -97,27 +99,31 @@ En la corrida base, la asociación descriptiva de D2 es:
 
 Esto sugiere que D2 no reproduce principalmente la separación gobierno/oposición. Parece recoger diferencias internas entre partidos y bancadas, pero su interpretación sustantiva todavía no está cerrada.
 
-Una exploración mediante los `spread` de W-NOMINATE muestra mayor carga relativa de D2 en algunos conjuntos temáticos —por ejemplo Deportes, Agua y recursos hídricos, Vivienda y territorio y ciertos roll calls de Educación—, pero esta evidencia **no basta para nombrar la dimensión**, especialmente porque la taxonomía temática aún tiene pendiente una validación externa/formal.
+Una exploración mediante los `spread` de W-NOMINATE muestra mayor carga relativa de D2 en algunos conjuntos temáticos, pero esta evidencia **no basta para nombrar la dimensión**, especialmente porque la taxonomía temática aún tiene pendiente una validación externa/formal y varios roll calls heredan el tema principal del proyecto asociado.
 
 ## 8. Decisión metodológica provisional
 
 A este corte:
 
 1. **1D será el modelo espacial principal y parsimonioso de trabajo.**
-2. **2D se conserva como diagnóstico exploratorio secundario**, no como segundo eje público.
-3. No se asignará todavía a D1 una etiqueta automática de izquierda/derecha, gobierno/oposición o ideología.
+2. **2D se conserva como diagnóstico exploratorio secundario** y puede mostrarse únicamente como laboratorio explícitamente exploratorio, no como segundo eje político cerrado.
+3. La lectura izquierda–derecha de D1 es la interpretación sustantiva líder y se muestra de manera provisional en el laboratorio, pero su nombre público definitivo sigue sujeto a los gates restantes.
 4. No se imputarán posiciones a diputados sin información suficiente.
-5. Las coordenadas no se integrarán todavía a las fichas públicas.
+5. Las coordenadas **no se integrarán todavía como indicador cerrado de las fichas individuales**.
+6. Los filtros temáticos públicos deben describirse como **contexto temático del proyecto**, no como clasificación oficial ni como codificación exacta del objeto de cada roll call.
 
-## 9. Pruebas pendientes antes de uso público
+## 9. Pruebas pendientes antes de uso individual cerrado
 
-Antes de transformar las coordenadas en una visualización o indicador público se debe:
+Antes de transformar las coordenadas en un indicador individual definitivo de las fichas se debe:
 
 - evaluar **estabilidad temporal** del eje 1D mediante subperíodos comparables;
-- comprobar sensibilidad adicional a composición temática/proyectos;
-- realizar validación sustantiva de la orientación e interpretación de D1;
-- distinguir posición espacial de disciplina partidaria, apoyo al Ejecutivo y cohesión;
-- decidir si se publican coordenadas, percentiles, intervalos/categorías robustas o ninguna de esas opciones;
-- documentar explícitamente missingness y casos no estimables.
+- realizar IRT bayesiano 2PL 1D;
+- estimar Optimal Classification como robustez no paramétrica;
+- cerrar el contrato final de incertidumbre/robustez individual;
+- cerrar formalmente la interpretación y nombre público de D1;
+- documentar explícitamente missingness y casos no estimables;
+- mejorar la explicación sustantiva mediante votaciones concretas auditadas.
 
-La regla mientras estas etapas estén abiertas es simple: **W-NOMINATE permanece como capa analítica interna y experimental**.
+La regla mientras estas etapas estén abiertas es:
+
+> **W-NOMINATE puede explorarse públicamente como laboratorio metodológico transparente, pero no debe presentarse todavía como un puntaje ideológico individual definitivo ni integrarse silenciosamente a las fichas cerradas.**
