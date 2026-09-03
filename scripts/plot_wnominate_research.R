@@ -3,9 +3,11 @@
 # Visualizaciones internas y reproducibles de los modelos espaciales 2026.
 #
 # IMPORTANTE:
-# - D1 mantiene signo arbitrario y NO se interpreta aquí como izquierda/derecha,
-#   oficialismo/oposición o ideología.
-# - D2 sigue siendo exploratoria.
+# - D1 mantiene signo matemáticamente arbitrario y NO se interpreta aquí como
+#   izquierda/derecha, oficialismo/oposición o ideología.
+# - Para presentación usamos una convención fija de orientación: D1_display = -D1_model.
+#   Esto refleja horizontalmente el eje, sin alterar distancias, ajuste ni orden relativo.
+# - D2 sigue siendo exploratoria y no se invierte en esta convención.
 # - Estas figuras viven en la capa de investigación y no se publican
 #   automáticamente en las fichas públicas.
 
@@ -14,6 +16,8 @@ suppressPackageStartupMessages({
 })
 
 options(stringsAsFactors = FALSE)
+
+D1_DISPLAY_MULTIPLIER <- -1
 
 root <- normalizePath(".", mustWork = TRUE)
 research_dir <- file.path(root, "data", "legislative", "2026", "wnominate", "research_1d")
@@ -58,8 +62,8 @@ idx_b <- match(coord$diputado_id, boot$diputado_id)
 idx_a <- match(coord$diputado_id, aff_now$deputy_id)
 
 p1 <- coord
-p1$q025 <- boot$q025[idx_b]
-p1$q975 <- boot$q975[idx_b]
+p1$q025_model <- boot$q025[idx_b]
+p1$q975_model <- boot$q975[idx_b]
 p1$interval_width <- boot$interval_width[idx_b]
 p1$n_success <- boot$n_success[idx_b]
 p1$party <- aff_now$party_reported[idx_a]
@@ -69,8 +73,19 @@ p1$alignment <- aff_now$alignment_reported[idx_a]
 p1$party[is.na(p1$party) | p1$party == ""] <- "Sin dato"
 p1$alignment[is.na(p1$alignment) | p1$alignment == ""] <- "Sin dato"
 
-# Orden espacial.
-p1 <- p1[order(p1$dimension_1_raw), , drop = FALSE]
+# Convención visual solicitada: reflejar D1 respecto de cero.
+# El intervalo [q025, q975] se transforma en [-q975, -q025].
+p1$dimension_1_display <- D1_DISPLAY_MULTIPLIER * p1$dimension_1_raw
+if (D1_DISPLAY_MULTIPLIER == -1) {
+  p1$q025_display <- -p1$q975_model
+  p1$q975_display <- -p1$q025_model
+} else {
+  p1$q025_display <- p1$q025_model
+  p1$q975_display <- p1$q975_model
+}
+
+# Orden espacial según la orientación de presentación.
+p1 <- p1[order(p1$dimension_1_display), , drop = FALSE]
 p1$rank_d1 <- seq_len(nrow(p1))
 p1$name_order <- factor(p1$diputado_nombre, levels = rev(p1$diputado_nombre))
 
@@ -94,11 +109,13 @@ base_theme <- theme_minimal(base_size = 12) +
 
 caption_common <- paste0(
   "Fuente: Cámara de Diputadas y Diputados de Chile; elaboración propia. ",
-  "Snapshot de afiliación: ", latest_snapshot, ". D1 tiene signo arbitrario. Uso interno de investigación."
+  "Snapshot de afiliación: ", latest_snapshot, ". ",
+  "Orientación de presentación: D1 = -D1 de la salida del modelo. ",
+  "El signo sigue siendo una convención; uso interno de investigación."
 )
 
 # 1. D1 ordenada por parlamentario, similar a un gráfico NOMINATE clásico.
-g_rank <- ggplot(p1, aes(x = rank_d1, y = dimension_1_raw, colour = party)) +
+g_rank <- ggplot(p1, aes(x = rank_d1, y = dimension_1_display, colour = party)) +
   geom_hline(yintercept = 0, linewidth = 0.35, linetype = 2) +
   geom_line(aes(group = 1), colour = "grey75", linewidth = 0.45) +
   geom_point(size = 2.2, alpha = 0.9) +
@@ -113,9 +130,9 @@ g_rank <- ggplot(p1, aes(x = rank_d1, y = dimension_1_raw, colour = party)) +
   ) +
   labs(
     title = "W-NOMINATE 2026: dimensión principal ordenada",
-    subtitle = "154 parlamentarios elegibles; color = partido reportado en el snapshot vigente",
+    subtitle = "154 parlamentarios elegibles; orientación visual reflejada; color = partido vigente",
     x = "Orden según D1",
-    y = "Coordenada D1 (signo arbitrario)",
+    y = "Coordenada D1 (convención de presentación)",
     colour = "Partido",
     caption = caption_common
   ) +
@@ -123,14 +140,14 @@ g_rank <- ggplot(p1, aes(x = rank_d1, y = dimension_1_raw, colour = party)) +
   theme(axis.text.x = element_blank(), axis.ticks.x = element_blank())
 
 # 2. Forest plot completo con sensibilidad bootstrap por proyecto.
-g_forest_full <- ggplot(p1, aes(y = name_order, x = dimension_1_raw, colour = party)) +
+g_forest_full <- ggplot(p1, aes(y = name_order, x = dimension_1_display, colour = party)) +
   geom_vline(xintercept = 0, linewidth = 0.35, linetype = 2) +
-  geom_errorbarh(aes(xmin = q025, xmax = q975), height = 0, linewidth = 0.45, alpha = 0.65) +
+  geom_errorbarh(aes(xmin = q025_display, xmax = q975_display), height = 0, linewidth = 0.45, alpha = 0.65) +
   geom_point(size = 1.8) +
   labs(
     title = "W-NOMINATE 2026: posición estimada y sensibilidad por proyecto",
-    subtitle = "Punto = D1 base; barra = percentiles 2,5–97,5 del bootstrap agrupado por boletín (200 réplicas)",
-    x = "Coordenada D1 (signo arbitrario)",
+    subtitle = "Punto = D1 reflejada; barra = percentiles 2,5–97,5 del bootstrap agrupado por boletín (200 réplicas)",
+    x = "Coordenada D1 (convención de presentación)",
     y = NULL,
     colour = "Partido",
     caption = caption_common
@@ -144,17 +161,17 @@ g_forest_full <- ggplot(p1, aes(y = name_order, x = dimension_1_raw, colour = pa
 # 3. Versión legible: 30 intervalos más anchos.
 wide30 <- p1[order(p1$interval_width, decreasing = TRUE, na.last = NA), , drop = FALSE]
 wide30 <- head(wide30, 30L)
-wide30 <- wide30[order(wide30$dimension_1_raw), , drop = FALSE]
+wide30 <- wide30[order(wide30$dimension_1_display), , drop = FALSE]
 wide30$name_order <- factor(wide30$diputado_nombre, levels = rev(wide30$diputado_nombre))
 
-g_forest_30 <- ggplot(wide30, aes(y = name_order, x = dimension_1_raw, colour = party)) +
+g_forest_30 <- ggplot(wide30, aes(y = name_order, x = dimension_1_display, colour = party)) +
   geom_vline(xintercept = 0, linewidth = 0.35, linetype = 2) +
-  geom_errorbarh(aes(xmin = q025, xmax = q975), height = 0, linewidth = 0.75, alpha = 0.75) +
+  geom_errorbarh(aes(xmin = q025_display, xmax = q975_display), height = 0, linewidth = 0.75, alpha = 0.75) +
   geom_point(size = 2.4) +
   labs(
     title = "W-NOMINATE 2026: parlamentarios más sensibles a la composición de proyectos",
     subtitle = "Los 30 intervalos bootstrap más anchos; no equivale a 'moderación' ni a cambio ideológico",
-    x = "Coordenada D1 (signo arbitrario)",
+    x = "Coordenada D1 (convención de presentación)",
     y = NULL,
     colour = "Partido",
     caption = caption_common
@@ -175,8 +192,12 @@ p2$alignment_current[is.na(p2$alignment_current) | p2$alignment_current == ""] <
 p2$party_current[is.na(p2$party_current) | p2$party_current == ""] <- "Sin dato"
 p2$alignment_current[is.na(p2$alignment_current) | p2$alignment_current == ""] <- "Sin dato"
 
+# La convención visual refleja solo D1; D2 permanece exactamente como estaba.
+p2$dimension_1_display <- D1_DISPLAY_MULTIPLIER * p2$dimension_1_aligned
+p2$dimension_2_display <- p2$dimension_2_aligned
+
 # Etiquetar extremos geométricos para evitar una nube ilegible de 154 nombres.
-score_extreme <- pmax(abs(p2$dimension_1_aligned), abs(p2$dimension_2_aligned), na.rm = TRUE)
+score_extreme <- pmax(abs(p2$dimension_1_display), abs(p2$dimension_2_display), na.rm = TRUE)
 lab2 <- order(score_extreme, decreasing = TRUE)
 lab2 <- head(lab2, 22L)
 p2$label <- ""
@@ -184,10 +205,11 @@ p2$label[lab2] <- p2$diputado_nombre[lab2]
 
 caption_2d <- paste0(
   "Fuente: Cámara de Diputadas y Diputados de Chile; elaboración propia. ",
+  "D1 se refleja solo para presentación (D1 = -D1 del modelo); D2 no se altera. ",
   "D2 es exploratoria y no tiene interpretación sustantiva validada. Snapshot: ", latest_snapshot, "."
 )
 
-g_2d_party <- ggplot(p2, aes(x = dimension_1_aligned, y = dimension_2_aligned, colour = party_current)) +
+g_2d_party <- ggplot(p2, aes(x = dimension_1_display, y = dimension_2_display, colour = party_current)) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "grey75") +
   geom_vline(xintercept = 0, linewidth = 0.3, colour = "grey75") +
   geom_point(size = 2.2, alpha = 0.82) +
@@ -203,15 +225,15 @@ g_2d_party <- ggplot(p2, aes(x = dimension_1_aligned, y = dimension_2_aligned, c
   coord_equal(xlim = c(-1.05, 1.05), ylim = c(-1.05, 1.05)) +
   labs(
     title = "W-NOMINATE 2026: solución bidimensional exploratoria",
-    subtitle = "Especificación raw_lop025_2d; color = partido vigente",
-    x = "D1 alineada (signo arbitrario)",
+    subtitle = "Especificación raw_lop025_2d; D1 reflejada para presentación; color = partido vigente",
+    x = "D1 (convención de presentación)",
     y = "D2 alineada (exploratoria)",
     colour = "Partido",
     caption = caption_2d
   ) +
   base_theme
 
-g_2d_alignment <- ggplot(p2, aes(x = dimension_1_aligned, y = dimension_2_aligned, colour = alignment_current)) +
+g_2d_alignment <- ggplot(p2, aes(x = dimension_1_display, y = dimension_2_display, colour = alignment_current)) +
   geom_hline(yintercept = 0, linewidth = 0.3, colour = "grey75") +
   geom_vline(xintercept = 0, linewidth = 0.3, colour = "grey75") +
   geom_point(size = 2.5, alpha = 0.86) +
@@ -227,8 +249,8 @@ g_2d_alignment <- ggplot(p2, aes(x = dimension_1_aligned, y = dimension_2_aligne
   coord_equal(xlim = c(-1.05, 1.05), ylim = c(-1.05, 1.05)) +
   labs(
     title = "W-NOMINATE 2026: D1 y D2 por alineamiento actual",
-    subtitle = "Visualización descriptiva; no implica que D1 sea gobierno-oposición ni que D2 sea un clivaje validado",
-    x = "D1 alineada (signo arbitrario)",
+    subtitle = "D1 reflejada para presentación; D2 sigue exploratoria",
+    x = "D1 (convención de presentación)",
     y = "D2 alineada (exploratoria)",
     colour = "Alineamiento",
     caption = caption_2d
@@ -254,6 +276,7 @@ manifest <- data.frame(
   file = basename(outputs),
   generated_at_utc = format(Sys.time(), tz = "UTC", usetz = TRUE),
   snapshot_affiliation = as.character(latest_snapshot),
+  d1_display_multiplier = D1_DISPLAY_MULTIPLIER,
   public_ready = FALSE,
   stringsAsFactors = FALSE
 )
@@ -261,4 +284,5 @@ write.csv(manifest, file.path(out_dir, "figure_manifest.csv"), row.names = FALSE
 
 cat("Figuras generadas:\n")
 cat(paste0(" - ", outputs, collapse = "\n"), "\n")
+cat("Orientación visual D1: multiplicador ", D1_DISPLAY_MULTIPLIER, "\n", sep = "")
 cat("Manifest: ", file.path(out_dir, "figure_manifest.csv"), "\n", sep = "")
