@@ -1,11 +1,12 @@
 {
-  "schema_version": "commission-activity-web-v0.2",
-  "generated_at": "2026-09-03T10:33:59.847645-04:00",
+  "schema_version": "commission-activity-web-v0.3",
+  "generated_at": "2026-09-03T10:38:56.545770-04:00",
   "timezone": "America/Santiago",
   "directory_schema": "commissions-web-v0.4",
   "source": {
     "name": "Cámara de Diputadas y Diputados de Chile · fichas institucionales de comisión",
     "layers": [
+      "Sesiones",
       "Citaciones",
       "Resultados"
     ],
@@ -13,23 +14,66 @@
   },
   "counts": {
     "commissions": 34,
+    "sessions_pages_retrieved": 34,
     "citations_pages_retrieved": 34,
     "results_pages_retrieved": 34,
+    "session_rows_retained": 32,
     "citation_rows_retained": 32,
     "result_rows_retained": 23
   },
   "quality_gate": {
     "minimum_page_coverage": 0.8,
+    "sessions_coverage": 1.0,
     "citations_coverage": 1.0,
     "results_coverage": 1.0,
     "passed": true,
-    "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas de asuntos no se convierten en eventos independientes."
+    "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas no se convierten en eventos independientes."
   },
   "commissions": [
     {
       "id": "4897",
       "number": "1",
       "name": "Gobierno Interior, Nacionalidad, Ciudadanía y Regionalización",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4897",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "22",
+            "día": "01 sep. 2026",
+            "inicio": "15:06",
+            "término": "16:58",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4897",
@@ -97,6 +141,46 @@
       "id": "4889",
       "number": "2",
       "name": "Relaciones Exteriores, Asuntos Interparlamentarios e Integración Latinoamericana",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4889",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "15",
+            "día": "01 sep. 2026",
+            "inicio": "15:05",
+            "término": "17:00",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4889",
@@ -164,6 +248,61 @@
       "id": "4884",
       "number": "3",
       "name": "Constitución, Legislación, Justicia y Reglamento",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4884",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "38",
+            "día": "02 sep. 2026",
+            "inicio": "15:07",
+            "término": "16:48",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "37",
+            "día": "01 sep. 2026",
+            "inicio": "15:07",
+            "término": "17:00",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4884",
@@ -243,6 +382,46 @@
       "id": "4895",
       "number": "4",
       "name": "Educación",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4895",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "32",
+            "día": "01 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4895",
@@ -310,6 +489,30 @@
       "id": "4890",
       "number": "5",
       "name": "Hacienda",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4890",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4890",
@@ -363,6 +566,46 @@
       "id": "4896",
       "number": "6",
       "name": "Defensa Nacional",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4896",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "16",
+            "día": "01 sep. 2026",
+            "inicio": "17:40",
+            "término": "19:20",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4896",
@@ -430,6 +673,46 @@
       "id": "4885",
       "number": "7",
       "name": "Obras Públicas, Transportes y Telecomunicaciones",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4885",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "16",
+            "día": "01 sep. 2026",
+            "inicio": "17:30",
+            "término": "19:30",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4885",
@@ -497,6 +780,61 @@
       "id": "4900",
       "number": "8",
       "name": "Agricultura, Silvicultura y Desarrollo Rural",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4900",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "18",
+            "día": "08 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "17",
+            "día": "01 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4900",
@@ -570,6 +908,61 @@
       "id": "4888",
       "number": "9",
       "name": "Medio Ambiente y Recursos Naturales",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4888",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "21",
+            "día": "09 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "20",
+            "día": "02 sep. 2026",
+            "inicio": "15:09",
+            "término": "16:36",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4888",
@@ -643,6 +1036,46 @@
       "id": "4894",
       "number": "10",
       "name": "Salud",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4894",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "19",
+            "día": "01 sep. 2026",
+            "inicio": "17:40",
+            "término": "18:19",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4894",
@@ -710,6 +1143,46 @@
       "id": "4891",
       "number": "11",
       "name": "Trabajo y Seguridad Social",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4891",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "20",
+            "día": "01 sep. 2026",
+            "inicio": "17:32",
+            "término": "19:45",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4891",
@@ -777,6 +1250,61 @@
       "id": "4892",
       "number": "12",
       "name": "Minería y Energía",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4892",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "23",
+            "día": "09 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "22",
+            "día": "02 sep. 2026",
+            "inicio": "15:04",
+            "término": "17:13",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4892",
@@ -850,6 +1378,46 @@
       "id": "4893",
       "number": "13",
       "name": "Economía, Fomento; Micro, Pequeña y Mediana Empresa; Protección de los Consumidores y Turismo",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4893",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "18",
+            "día": "01 sep. 2026",
+            "inicio": "17:30",
+            "término": "19:30",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4893",
@@ -917,6 +1485,46 @@
       "id": "4899",
       "number": "14",
       "name": "Vivienda, Desarrollo Urbano y Bienes Nacionales",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4899",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "17",
+            "día": "02 sep. 2026",
+            "inicio": "15:09",
+            "término": "17:01",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4899",
@@ -984,6 +1592,46 @@
       "id": "4887",
       "number": "15",
       "name": "Derechos Humanos y Pueblos Originarios",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4887",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "17",
+            "día": "02 sep. 2026",
+            "inicio": "15:00",
+            "término": "15:35",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4887",
@@ -1051,6 +1699,46 @@
       "id": "4898",
       "number": "16",
       "name": "la Familia",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4898",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "20",
+            "día": "07 sep. 2026",
+            "inicio": "14:50",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4898",
@@ -1111,6 +1799,46 @@
       "id": "4886",
       "number": "17",
       "name": "Futuro, Ciencias, Tecnología, Conocimiento e Innovación",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4886",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "21",
+            "día": "02 sep. 2026",
+            "inicio": "10:30",
+            "término": "12:53",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4886",
@@ -1178,6 +1906,46 @@
       "id": "4902",
       "number": "18",
       "name": "Pesca, Acuicultura e Intereses Marítimos",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4902",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "17",
+            "día": "02 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4902",
@@ -1245,6 +2013,46 @@
       "id": "4910",
       "number": "19",
       "name": "Deportes y Recreación",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4910",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "19",
+            "día": "01 sep. 2026",
+            "inicio": "15:00",
+            "término": "16:50",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4910",
@@ -1312,6 +2120,30 @@
       "id": "4904",
       "number": "20",
       "name": "Zonas Extremas y Antártica Chilena",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4904",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4904",
@@ -1365,6 +2197,46 @@
       "id": "4903",
       "number": "21",
       "name": "Seguridad Ciudadana",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4903",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "35",
+            "día": "02 sep. 2026",
+            "inicio": "10:30",
+            "término": "12:00",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4903",
@@ -1432,6 +2304,46 @@
       "id": "4905",
       "number": "22",
       "name": "Cultura, Artes y Comunicaciones",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4905",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "20",
+            "día": "07 sep. 2026",
+            "inicio": "14:50",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4905",
@@ -1492,6 +2404,46 @@
       "id": "4907",
       "number": "23",
       "name": "Desarrollo Social, Superación de la Pobreza y Planificación",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4907",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "26",
+            "día": "07 sep. 2026",
+            "inicio": "14:50",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4907",
@@ -1552,6 +2504,46 @@
       "id": "4909",
       "number": "24",
       "name": "Recursos Hídricos y Desertificación",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4909",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "20",
+            "día": "07 sep. 2026",
+            "inicio": "14:50",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4909",
@@ -1612,6 +2604,46 @@
       "id": "4912",
       "number": "25",
       "name": "Emergencia, Desastres y Bomberos",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4912",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "13",
+            "día": "01 sep. 2026",
+            "inicio": "17:36",
+            "término": "18:54",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4912",
@@ -1679,6 +2711,46 @@
       "id": "4913",
       "number": "26",
       "name": "Mujeres y Equidad de Género",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4913",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "17",
+            "día": "02 sep. 2026",
+            "inicio": "15:08",
+            "término": "16:51",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4913",
@@ -1746,6 +2818,46 @@
       "id": "4914",
       "number": "27",
       "name": "Personas Mayores y Discapacidad",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4914",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "16",
+            "día": "01 sep. 2026",
+            "inicio": "17:30",
+            "término": "19:30",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4914",
@@ -1813,6 +2925,46 @@
       "id": "4911",
       "number": "28",
       "name": "Control del Sistema de Inteligencia del Estado",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4911",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "7",
+            "día": "07 sep. 2026",
+            "inicio": "15:30",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4911",
@@ -1873,6 +3025,30 @@
       "id": "4882",
       "number": "29",
       "name": "Subcomisión de Reglamento",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4882",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4882",
@@ -1926,6 +3102,30 @@
       "id": "4883",
       "number": "30",
       "name": "Subcomisión de Crimen Organizado",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4883",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2025",
+              "value": "2025"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4883",
@@ -1979,6 +3179,30 @@
       "id": "4908",
       "number": "31",
       "name": "Revisora de Cuentas",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4908",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4908",
@@ -2032,6 +3256,61 @@
       "id": "4906",
       "number": "32",
       "name": "Ética y Transparencia",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4906",
+        "rows": [
+          {
+            "date_context": "",
+            "n": "7",
+            "día": "08 sep. 2026",
+            "inicio": "11:00",
+            "término": "12:30",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "6",
+            "día": "01 sep. 2026",
+            "inicio": "11:00",
+            "término": "12:30",
+            "estado": "Celebrada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          }
+        ],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 1,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4906",
@@ -2105,6 +3384,30 @@
       "id": "4901",
       "number": "33",
       "name": "Régimen Interno y Administración",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4901",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            },
+            {
+              "text": "2026",
+              "value": "2026"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4901",
@@ -2158,6 +3461,26 @@
       "id": "4915",
       "number": "34",
       "name": "Subcomisión de Régimen Interno en materia de Comunicaciones",
+      "sessions": {
+        "status": "retrieved",
+        "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4915",
+        "rows": [],
+        "page_period": {
+          "selected_options": [
+            {
+              "text": "Septiembre",
+              "value": "09"
+            }
+          ]
+        },
+        "diagnostics": {
+          "top_level_tables_examined": 1,
+          "matching_tables": 0,
+          "nested_tables_skipped": 0,
+          "wide_rows_skipped": 0,
+          "duplicate_rows_skipped": 0
+        }
+      },
       "citations": {
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4915",
@@ -2200,5 +3523,5 @@
       }
     }
   ],
-  "scope_note": "Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados. No se tratan como equivalentes. Este snapshot conserva solo las primeras filas principales que devuelve cada ficha institucional y no pretende reconstruir todavía el historial completo de sesiones. Los detalles de varios asuntos dentro de una misma sesión pueden quedar concatenados dentro de la celda institucional correspondiente. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
+  "scope_note": "Sesiones registra filas del calendario/historial que devuelve la ficha; Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados. Las tres capas se mantienen separadas. Este snapshot conserva solo las primeras filas principales que devuelve cada ficha institucional y no pretende todavía reconstruir todo el historial documental de la comisión. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
 }
