@@ -1,0 +1,25 @@
+{
+  "input_vote_rows": 56420,
+  "rollcalls": 364,
+  "rollcalls_with_155_rows": 364,
+  "historical_members_observed": 155,
+  "participation_rows": 155,
+  "members_with_all_current_rollcalls_as_opportunities": 155,
+  "min_opportunity_rollcalls": 364,
+  "max_opportunity_rollcalls": 364,
+  "sum_member_opportunities": 56420,
+  "vote_option_counts": {
+    "Afirmativo": 34491,
+    "Abstención": 1979,
+    "No Vota": 3865,
+    "En Contra": 16061,
+    "Dispensado": 24
+  },
+  "denominator_rule": "Cada fila oficial vote_id × diputado_id en member_votes.csv cuenta como una oportunidad efectiva de votación. La persona no recibe oportunidades por roll calls en los que su ID no aparece en el detalle nominal oficial.",
+  "public_method_note": "Participación sustantiva = (Afirmativo + En Contra + Abstención) / oportunidades efectivas. No Vota y Dispensado se muestran por separado. Este indicador no es asistencia general al Congreso.",
+  "errors": {
+    "bad_rollcalls": {},
+    "unknown_options": {},
+    "missing_rollcall_ids": []
+  }
+}
