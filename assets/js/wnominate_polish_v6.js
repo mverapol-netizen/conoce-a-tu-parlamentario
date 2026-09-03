@@ -6,6 +6,15 @@
   const chartCard = document.querySelector('.wn-chart-card');
   const chartDescription = document.getElementById('wn-chart-description');
 
+  const mainNav = document.querySelector('.site-tabs');
+  if (mainNav && !mainNav.querySelector('a[href="entender.html"]')) {
+    const educationLink = document.createElement('a');
+    educationLink.className = 'site-tab';
+    educationLink.href = 'entender.html';
+    educationLink.textContent = 'Entiende el Congreso';
+    mainNav.appendChild(educationLink);
+  }
+
   if (!svg || !view2 || !visibleCount || !showAll || !chartCard) return;
 
   const densityNote = document.createElement('p');
