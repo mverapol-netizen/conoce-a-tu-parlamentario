@@ -5,11 +5,12 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from congress_api import child, child_text, children, descendants, enum_value, get_xml, person
+from congress_api import child, child_text, descendants, enum_value, get_xml, person
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "legislative" / "2026" / "commissions" / "commissions_snapshot.json"
 TZ = ZoneInfo("America/Santiago")
+MIN_EXPECTED_COMMISSION_COUNT = 10
 
 
 def parse_dt(value: str) -> str:
@@ -89,22 +90,46 @@ def commission_row(node) -> dict:
     }
 
 
+def current_period() -> dict:
+    root = get_xml("WSLegislativo", "retornarPeriodoLegislativoActual")
+    period_id = child_text(root, "Id")
+    if not period_id:
+        raise RuntimeError("retornarPeriodoLegislativoActual no devolvió Id")
+    return {
+        "id": period_id,
+        "name": child_text(root, "Nombre"),
+        "start": parse_dt(child_text(root, "FechaInicio")),
+        "end": parse_dt(child_text(root, "FechaTermino")),
+    }
+
+
 def main() -> None:
     now = datetime.now(TZ)
-    root = get_xml("WSComision", "retornarComisionesVigentes")
+    period = current_period()
+    root = get_xml("WSComision", "retornarComisionesXPeriodo", {"prmPeriodoId": period["id"]})
     nodes = descendants(root, "Comision")
     commissions = [commission_row(node) for node in nodes]
     commissions = [row for row in commissions if row["id"] and row["name"]]
     commissions.sort(key=lambda row: (row["type"], row["name"]))
 
+    if len(commissions) < MIN_EXPECTED_COMMISSION_COUNT:
+        raise RuntimeError(
+            f"Universo de comisiones no plausible para período {period['id']}: "
+            f"{len(commissions)} < {MIN_EXPECTED_COMMISSION_COUNT}"
+        )
+
     payload = {
-        "schema_version": "commissions-v0.1",
+        "schema_version": "commissions-v0.2",
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
+        "period": period,
         "source": {
             "name": "Cámara de Diputadas y Diputados de Chile · Open Data",
-            "service": "WSComision.retornarComisionesVigentes",
-            "url": "https://opendata.camara.cl/camaradiputados/pages/comision/retornarComisionesVigentes.aspx",
+            "services": [
+                "WSLegislativo.retornarPeriodoLegislativoActual",
+                "WSComision.retornarComisionesXPeriodo",
+            ],
+            "url": "https://opendata.camara.cl/camaradiputados/WServices/WSComision.asmx?op=retornarComisionesXPeriodo",
         },
         "counts": {
             "commissions": len(commissions),
@@ -114,14 +139,19 @@ def main() -> None:
         },
         "commissions": commissions,
         "scope_note": (
-            "La ficha reproduce campos entregados por el servicio oficial de comisiones vigentes. "
-            "Una colección vacía significa que el método consultado no devolvió esos elementos; no se interpreta como ausencia sustantiva."
+            "El universo se obtiene para el período legislativo actual resuelto por el servicio oficial. "
+            "Una colección vacía de integrantes o sesiones significa que el método consultado no devolvió esos elementos; "
+            "no se interpreta como ausencia sustantiva."
         ),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Comisiones vigentes: {len(commissions)} | con integrantes={payload['counts']['with_members']}")
+    print(
+        f"Periodo {period['id']} {period['name']} | comisiones={len(commissions)} "
+        f"| con integrantes={payload['counts']['with_members']} "
+        f"| con sesiones={payload['counts']['with_sessions_embedded']}"
+    )
 
 
 if __name__ == "__main__":
