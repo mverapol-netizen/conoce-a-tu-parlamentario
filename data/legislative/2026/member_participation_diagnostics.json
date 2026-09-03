@@ -7,7 +7,7 @@
   "public_asset_members": 155,
   "public_rollcalls": 364,
   "public_member_vote_rows": 56420,
-  "public_rollcalls_without_project_title": 140,
+  "public_rollcalls_without_project_title": 0,
   "members_with_all_current_rollcalls_as_opportunities": 155,
   "min_opportunity_rollcalls": 364,
   "max_opportunity_rollcalls": 364,
@@ -25,87 +25,6 @@
     "bad_rollcalls": {},
     "unknown_options": {},
     "missing_rollcall_ids": [],
-    "missing_project_title_examples": [
-      {
-        "vote_id": "88442",
-        "boletin": "16944-25"
-      },
-      {
-        "vote_id": "88450",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88451",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88452",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88453",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88454",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88455",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88456",
-        "boletin": "15347-07"
-      },
-      {
-        "vote_id": "88472",
-        "boletin": "17737-14"
-      },
-      {
-        "vote_id": "88474",
-        "boletin": "17474-06"
-      },
-      {
-        "vote_id": "88475",
-        "boletin": "17474-06"
-      },
-      {
-        "vote_id": "88476",
-        "boletin": "16985-06"
-      },
-      {
-        "vote_id": "88477",
-        "boletin": "16487-12"
-      },
-      {
-        "vote_id": "88500",
-        "boletin": "18003-35"
-      },
-      {
-        "vote_id": "88501",
-        "boletin": "10634-29"
-      },
-      {
-        "vote_id": "88502",
-        "boletin": "10634-29"
-      },
-      {
-        "vote_id": "88503",
-        "boletin": "10634-29"
-      },
-      {
-        "vote_id": "88504",
-        "boletin": "10634-29"
-      },
-      {
-        "vote_id": "88505",
-        "boletin": "10634-29"
-      },
-      {
-        "vote_id": "88506",
-        "boletin": "10634-29"
-      }
-    ]
+    "missing_project_title_examples": []
   }
 }
