@@ -1,0 +1,148 @@
+{
+  "generated_at_utc": "2026-09-03T01:33:35.534350+00:00",
+  "status": "PASS",
+  "d1_display_multiplier": -1.0,
+  "d1_rollcalls": 276,
+  "d1_top30_raw_concentration": {
+    "n_rows": 30,
+    "unique_clusters": 21,
+    "top_clusters": [
+      {
+        "cluster": "bill:18216-05",
+        "n": 5,
+        "share": 0.1667
+      },
+      {
+        "cluster": "bill:17522-12",
+        "n": 2,
+        "share": 0.0667
+      },
+      {
+        "cluster": "bill:17170-07",
+        "n": 2,
+        "share": 0.0667
+      },
+      {
+        "cluster": "bill:17381-03",
+        "n": 2,
+        "share": 0.0667
+      },
+      {
+        "cluster": "bill:18156-04",
+        "n": 2,
+        "share": 0.0667
+      }
+    ]
+  },
+  "d1_top30_bill_diverse_concentration": {
+    "n_rows": 30,
+    "unique_clusters": 30,
+    "top_clusters": [
+      {
+        "cluster": "bill:15295-07",
+        "n": 1,
+        "share": 0.0333
+      },
+      {
+        "cluster": "bill:15936-18",
+        "n": 1,
+        "share": 0.0333
+      },
+      {
+        "cluster": "bill:18216-05",
+        "n": 1,
+        "share": 0.0333
+      },
+      {
+        "cluster": "bill:18155-25",
+        "n": 1,
+        "share": 0.0333
+      },
+      {
+        "cluster": "bill:17522-12",
+        "n": 1,
+        "share": 0.0333
+      }
+    ]
+  },
+  "d2_base_spec": "raw_lop025_2d",
+  "d2_candidates_available": 40,
+  "d2_top25_raw_concentration": {
+    "n_rows": 25,
+    "unique_clusters": 15,
+    "top_clusters": [
+      {
+        "cluster": "bill:18156-04",
+        "n": 5,
+        "share": 0.2
+      },
+      {
+        "cluster": "bill:10634-29",
+        "n": 4,
+        "share": 0.16
+      },
+      {
+        "cluster": "bill:18216-05",
+        "n": 3,
+        "share": 0.12
+      },
+      {
+        "cluster": "bill:18189-14",
+        "n": 2,
+        "share": 0.08
+      },
+      {
+        "cluster": "bill:17112-19",
+        "n": 1,
+        "share": 0.04
+      }
+    ]
+  },
+  "d2_top25_bill_diverse_concentration": {
+    "n_rows": 20,
+    "unique_clusters": 20,
+    "top_clusters": [
+      {
+        "cluster": "bill:17112-19",
+        "n": 1,
+        "share": 0.05
+      },
+      {
+        "cluster": "bill:17471-07",
+        "n": 1,
+        "share": 0.05
+      },
+      {
+        "cluster": "bill:18216-05",
+        "n": 1,
+        "share": 0.05
+      },
+      {
+        "cluster": "bill:18230-13",
+        "n": 1,
+        "share": 0.05
+      },
+      {
+        "cluster": "bill:18189-14",
+        "n": 1,
+        "share": 0.05
+      }
+    ]
+  },
+  "member_vote_rows": 56420,
+  "rollcalls_with_member_votes": 364,
+  "method": {
+    "d1_identifying_strength": "abs(spread_1d) from 501-trial research fit; no composite score",
+    "d1_diversification": "descending abs(spread_1d), max one roll call per bill/cluster",
+    "d2_identifying_strength": "relative_dim2_loading from existing 2D diagnostic",
+    "d2_diversification": "descending relative_dim2_loading, max one roll call per bill/cluster",
+    "coalitions": "temporal party/caucus/alignment at each vote date from member_votes_enriched",
+    "topics": "internal classification only; not externally validated and never sufficient to name an axis"
+  },
+  "warnings": [
+    "D1 sign is arbitrary; display orientation is only a reflection.",
+    "D2 remains exploratory and small relative to D1.",
+    "Identifying strength alone does not supply substantive meaning.",
+    "Axis interpretation requires recurring evidence across bills, actual coalitions, external context and alternative-hypothesis tests."
+  ]
+}
