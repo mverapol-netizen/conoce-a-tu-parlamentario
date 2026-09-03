@@ -1,65 +1,2623 @@
 {
-  "schema_version": "commissions-v0.1",
-  "generated_at": "2026-09-03T10:12:24.170091-04:00",
+  "schema_version": "commissions-web-v0.3",
+  "generated_at": "2026-09-03T10:21:30.917108-04:00",
   "timezone": "America/Santiago",
   "source": {
-    "name": "Cámara de Diputadas y Diputados de Chile · Open Data",
-    "service": "WSComision.retornarComisionesVigentes",
-    "url": "https://opendata.camara.cl/camaradiputados/pages/comision/retornarComisionesVigentes.aspx"
+    "name": "Cámara de Diputadas y Diputados de Chile · Directorio institucional de comisiones permanentes",
+    "url": "https://www.camara.cl/legislacion/comisiones/comisiones_permanentes.aspx",
+    "method": "HTML institucional server-rendered; prmID como identificador de instancia"
   },
   "counts": {
-    "commissions": 2,
-    "with_members": 0,
-    "with_president": 2,
-    "with_sessions_embedded": 0
+    "commissions": 34,
+    "with_members_retrieved": 34,
+    "member_rows": 418
   },
   "commissions": [
     {
-      "id": "411",
-      "number": "10",
-      "name": "Salud",
-      "web_name": "Salud",
-      "alias": "Salud",
-      "email": "saludcam@congreso.cl",
-      "phone": "+56-32-505520",
-      "start": "2022-03-25T10:15:01-03:00",
-      "constitution_date": "2022-03-14T10:15:01-03:00",
-      "end": "",
-      "state": "",
-      "state_code": "",
+      "id": "4897",
+      "number": "1",
+      "name": "Gobierno Interior, Nacionalidad, Ciudadanía y Regionalización",
       "type": "Permanente",
-      "type_code": "1",
-      "president": {
-        "id": "1070",
-        "name": "Patricio Rosas Barrientos",
-        "chamber": "Presidente"
-      },
-      "members": [],
-      "sessions": []
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4897",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4897",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4897",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4897",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4897",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4897",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1245",
+          "name": "Sr. Alejandro Riquelme Ducci",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1245"
+        },
+        {
+          "id": "1260",
+          "name": "Sr. César Valenzuela Maass",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1260"
+        },
+        {
+          "id": "1248",
+          "name": "Sr. Felipe Ross Correa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1248"
+        },
+        {
+          "id": "1235",
+          "name": "Sr. Javier Olivares Avendaño",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1235"
+        },
+        {
+          "id": "1234",
+          "name": "Sr. Mario Olavarría Rodríguez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1234"
+        },
+        {
+          "id": "1249",
+          "name": "Sr. Omar Sabat Guzmán",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1249"
+        },
+        {
+          "id": "1017",
+          "name": "Sr. Álvaro Carter Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1017"
+        },
+        {
+          "id": "1215",
+          "name": "Sr. Álvaro Jofré Cáceres",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1215"
+        },
+        {
+          "id": "1238",
+          "name": "Sr. Álvaro Ortiz Vera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1238"
+        },
+        {
+          "id": "1061",
+          "name": "Sra. Andrea Parra Sauterel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1061"
+        },
+        {
+          "id": "1177",
+          "name": "Sra. Carolina Tello Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1177"
+        },
+        {
+          "id": "1227",
+          "name": "Sra. Claudia Mora Vega",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1227"
+        },
+        {
+          "id": "1062",
+          "name": "Sra. Joanna Pérez Olea",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1062"
+        }
+      ],
+      "members_status": "retrieved"
     },
     {
-      "id": "544",
-      "number": "25",
-      "name": "Ética y Transparencia",
-      "web_name": "Ética y Transparencia",
-      "alias": "Ética y Transparencia",
-      "email": "tgarrido@congreso.cl",
-      "phone": "+56-32-50",
-      "start": "2022-03-14T10:15:01-03:00",
-      "constitution_date": "2022-03-14T10:15:01-03:00",
-      "end": "",
-      "state": "",
-      "state_code": "",
+      "id": "4889",
+      "number": "2",
+      "name": "Relaciones Exteriores, Asuntos Interparlamentarios e Integración Latinoamericana",
       "type": "Permanente",
-      "type_code": "1",
-      "president": {
-        "id": "1112",
-        "name": "Ana María Bravo Castro",
-        "chamber": "Presidente"
-      },
-      "members": [],
-      "sessions": []
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4889",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4889",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4889",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4889",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4889",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4889",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1100",
+          "name": "Sr. Cristián Araya Lerdo de Tejada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1100"
+        },
+        {
+          "id": "1143",
+          "name": "Sr. Cristóbal Martínez Ramírez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1143"
+        },
+        {
+          "id": "1086",
+          "name": "Sr. Gonzalo Winter Etcheberry",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1086"
+        },
+        {
+          "id": "1065",
+          "name": "Sr. Guillermo Ramírez Diez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1065"
+        },
+        {
+          "id": "1208",
+          "name": "Sr. Jorge Díaz Ibarra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1208"
+        },
+        {
+          "id": "1108",
+          "name": "Sr. Juan Carlos Beltrán Silva",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1108"
+        },
+        {
+          "id": "1181",
+          "name": "Sr. Nelson Venegas Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1181"
+        },
+        {
+          "id": "1077",
+          "name": "Sr. Raúl Soto Mardones",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1077"
+        },
+        {
+          "id": "1172",
+          "name": "Sr. Stephan Schubert Rubio",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1172"
+        },
+        {
+          "id": "1025",
+          "name": "Sra. Catalina Del Real Mihovilovic",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1025"
+        },
+        {
+          "id": "1054",
+          "name": "Sra. Francesca Muñoz González",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1054"
+        },
+        {
+          "id": "1159",
+          "name": "Sra. Lorena Pizarro Sierra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1159"
+        },
+        {
+          "id": "1240",
+          "name": "Sra. Zandra Parisi Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1240"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4884",
+      "number": "3",
+      "name": "Constitución, Legislación, Justicia y Reglamento",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4884",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4884",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4884",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4884",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4884",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4884",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1202",
+          "name": "Sr. Eduardo Cretton Rebolledo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1202"
+        },
+        {
+          "id": "1237",
+          "name": "Sr. Francisco Orrego Gutiérrez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1237"
+        },
+        {
+          "id": "872",
+          "name": "Sr. Jaime Mulet Martínez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=872"
+        },
+        {
+          "id": "1132",
+          "name": "Sr. Jorge Guzmán Zepeda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1132"
+        },
+        {
+          "id": "1218",
+          "name": "Sr. José Antonio Kast Adriasola",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1218"
+        },
+        {
+          "id": "1226",
+          "name": "Sr. José Montalva Feuerhake",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1226"
+        },
+        {
+          "id": "1133",
+          "name": "Sr. Juan Irarrázaval Rossel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1133"
+        },
+        {
+          "id": "1170",
+          "name": "Sr. Luis Sánchez Ossa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1170"
+        },
+        {
+          "id": "1188",
+          "name": "Sr. Marcos Barraza Gómez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1188"
+        },
+        {
+          "id": "1038",
+          "name": "Sr. Marcos Ilabaca Cerda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1038"
+        },
+        {
+          "id": "1214",
+          "name": "Sra. Constanza Hube Portus",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1214"
+        },
+        {
+          "id": "1127",
+          "name": "Sra. Lorena Fries Monleón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1127"
+        },
+        {
+          "id": "1039",
+          "name": "Sra. Pamela Jiles Moreno",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1039"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4895",
+      "number": "4",
+      "name": "Educación",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4895",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4895",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4895",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4895",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4895",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4895",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1262",
+          "name": "Sr. Diego Vergara Rodríguez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1262"
+        },
+        {
+          "id": "915",
+          "name": "Sr. Germán Verdugo Soto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=915"
+        },
+        {
+          "id": "1105",
+          "name": "Sr. Héctor Barría Angulo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1105"
+        },
+        {
+          "id": "1073",
+          "name": "Sr. Juan Santana Castillo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1073"
+        },
+        {
+          "id": "1060",
+          "name": "Sr. Luis Pardo Sáinz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1060"
+        },
+        {
+          "id": "1233",
+          "name": "Sr. Ricardo Neumann Bertín",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1233"
+        },
+        {
+          "id": "815",
+          "name": "Sr. Sergio Bobadilla Muñoz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=815"
+        },
+        {
+          "id": "1173",
+          "name": "Sra. Daniela Serrano Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1173"
+        },
+        {
+          "id": "1171",
+          "name": "Sra. Emilia Schneider Videla",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1171"
+        },
+        {
+          "id": "1236",
+          "name": "Sra. Paula Olmos Contreras",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1236"
+        },
+        {
+          "id": "1198",
+          "name": "Sra. Paz Charpentier Rajcevich",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1198"
+        },
+        {
+          "id": "1119",
+          "name": "Sra. Sara Concha Smith",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1119"
+        },
+        {
+          "id": "1191",
+          "name": "Sra. Valentina Becerra Peña",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1191"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4890",
+      "number": "5",
+      "name": "Hacienda",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4890",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4890",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4890",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4890",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4890",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4890",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1165",
+          "name": "Sr. Agustín Romero Leiva",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1165"
+        },
+        {
+          "id": "1012",
+          "name": "Sr. Boris Barrera Moreno",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1012"
+        },
+        {
+          "id": "1110",
+          "name": "Sr. Carlos Bianchi Chelech",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1110"
+        },
+        {
+          "id": "1075",
+          "name": "Sr. Diego Schalper Sepúlveda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1075"
+        },
+        {
+          "id": "1028",
+          "name": "Sr. Eduardo Durán Salinas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1028"
+        },
+        {
+          "id": "1253",
+          "name": "Sr. Fernando Ugarte Tejeda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1253"
+        },
+        {
+          "id": "1199",
+          "name": "Sr. Jaime Coloma Álamos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1199"
+        },
+        {
+          "id": "1015",
+          "name": "Sr. Jorge Brito Hasbún",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1015"
+        },
+        {
+          "id": "1146",
+          "name": "Sr. José Carlos Meza Pereira",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1146"
+        },
+        {
+          "id": "1259",
+          "name": "Sr. Juan Marcelo Valenzuela Henríquez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1259"
+        },
+        {
+          "id": "1217",
+          "name": "Sr. Pier Karlezi Hazleby",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1217"
+        },
+        {
+          "id": "1183",
+          "name": "Sra. Flor Weisse Novoa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1183"
+        },
+        {
+          "id": "1196",
+          "name": "Sra. Priscilla Castillo Gerli",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1196"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4896",
+      "number": "6",
+      "name": "Defensa Nacional",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4896",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4896",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4896",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4896",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4896",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4896",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1205",
+          "name": "Sr. Carlos Cuadrado Prats",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1205"
+        },
+        {
+          "id": "1261",
+          "name": "Sr. Daniel Valenzuela Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1261"
+        },
+        {
+          "id": "1075",
+          "name": "Sr. Diego Schalper Sepúlveda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1075"
+        },
+        {
+          "id": "1223",
+          "name": "Sr. Hans Marowski Cuevas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1223"
+        },
+        {
+          "id": "1189",
+          "name": "Sr. Jaime Bassa Mercado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1189"
+        },
+        {
+          "id": "1235",
+          "name": "Sr. Javier Olivares Avendaño",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1235"
+        },
+        {
+          "id": "1015",
+          "name": "Sr. Jorge Brito Hasbún",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1015"
+        },
+        {
+          "id": "1170",
+          "name": "Sr. Luis Sánchez Ossa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1170"
+        },
+        {
+          "id": "1188",
+          "name": "Sr. Marcos Barraza Gómez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1188"
+        },
+        {
+          "id": "1249",
+          "name": "Sr. Omar Sabat Guzmán",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1249"
+        },
+        {
+          "id": "1044",
+          "name": "Sr. Raúl Leiva Carvajal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1044"
+        },
+        {
+          "id": "1263",
+          "name": "Sr. Sebastián Zamora Soto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1263"
+        },
+        {
+          "id": "1017",
+          "name": "Sr. Álvaro Carter Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1017"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4885",
+      "number": "7",
+      "name": "Obras Públicas, Transportes y Telecomunicaciones",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4885",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4885",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4885",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4885",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4885",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4885",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1110",
+          "name": "Sr. Carlos Bianchi Chelech",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1110"
+        },
+        {
+          "id": "1225",
+          "name": "Sr. Cristian Menchaca Pinochet",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1225"
+        },
+        {
+          "id": "1239",
+          "name": "Sr. Fabián Ossandón Briceño",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1239"
+        },
+        {
+          "id": "1116",
+          "name": "Sr. Felipe Camaño Cárdenas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1116"
+        },
+        {
+          "id": "1204",
+          "name": "Sr. Francisco Crisóstomo Llanos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1204"
+        },
+        {
+          "id": "1186",
+          "name": "Sr. Ignacio Achurra Díaz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1186"
+        },
+        {
+          "id": "872",
+          "name": "Sr. Jaime Mulet Martínez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=872"
+        },
+        {
+          "id": "1220",
+          "name": "Sr. Leandro Kunstmann Collado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1220"
+        },
+        {
+          "id": "1217",
+          "name": "Sr. Pier Karlezi Hazleby",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1217"
+        },
+        {
+          "id": "843",
+          "name": "Sr. René Manuel García García",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=843"
+        },
+        {
+          "id": "1157",
+          "name": "Sra. Marlene Pérez Cartes",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1157"
+        },
+        {
+          "id": "1166",
+          "name": "Sra. Natalia Romero Talguia",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1166"
+        },
+        {
+          "id": "1117",
+          "name": "Sra. Nathalie Castillo Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1117"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4900",
+      "number": "8",
+      "name": "Agricultura, Silvicultura y Desarrollo Rural",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4900",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4900",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4900",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4900",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4900",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4900",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1225",
+          "name": "Sr. Cristian Menchaca Pinochet",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1225"
+        },
+        {
+          "id": "1194",
+          "name": "Sr. Daniel Bustos Leal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1194"
+        },
+        {
+          "id": "1140",
+          "name": "Sr. Daniel Lilayu Vivanco",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1140"
+        },
+        {
+          "id": "1114",
+          "name": "Sr. Félix Bugueño Sotelo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1114"
+        },
+        {
+          "id": "1258",
+          "name": "Sr. Guillermo Valdés Carmona",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1258"
+        },
+        {
+          "id": "1229",
+          "name": "Sr. Javier Muñoz Riquelme",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1229"
+        },
+        {
+          "id": "803",
+          "name": "Sr. René Alinco Bustos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=803"
+        },
+        {
+          "id": "1242",
+          "name": "Sr. Rodrigo Ramírez Parra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1242"
+        },
+        {
+          "id": "1244",
+          "name": "Sra. Claudia Reyes Larenas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1244"
+        },
+        {
+          "id": "1056",
+          "name": "Sra. Emilia Nuyado Ancapichun",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1056"
+        },
+        {
+          "id": "1152",
+          "name": "Sra. Gloria Naveillan Arriagada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1152"
+        },
+        {
+          "id": "1166",
+          "name": "Sra. Natalia Romero Talguia",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1166"
+        },
+        {
+          "id": "1211",
+          "name": "Sra. Sofía González Cortés",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1211"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4888",
+      "number": "9",
+      "name": "Medio Ambiente y Recursos Naturales",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4888",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4888",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4888",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4888",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4888",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4888",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1204",
+          "name": "Sr. Francisco Crisóstomo Llanos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1204"
+        },
+        {
+          "id": "1065",
+          "name": "Sr. Guillermo Ramírez Diez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1065"
+        },
+        {
+          "id": "1210",
+          "name": "Sr. Gustavo Gatica Villarroel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1210"
+        },
+        {
+          "id": "1099",
+          "name": "Sr. Jaime Araya Guerrero",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1099"
+        },
+        {
+          "id": "1189",
+          "name": "Sr. Jaime Bassa Mercado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1189"
+        },
+        {
+          "id": "1220",
+          "name": "Sr. Leandro Kunstmann Collado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1220"
+        },
+        {
+          "id": "1141",
+          "name": "Sr. Luis Malla Valenzuela",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1141"
+        },
+        {
+          "id": "1060",
+          "name": "Sr. Luis Pardo Sáinz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1060"
+        },
+        {
+          "id": "1233",
+          "name": "Sr. Ricardo Neumann Bertín",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1233"
+        },
+        {
+          "id": "1104",
+          "name": "Sra. Chiara Barchiesi Chávez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1104"
+        },
+        {
+          "id": "1244",
+          "name": "Sra. Claudia Reyes Larenas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1244"
+        },
+        {
+          "id": "1228",
+          "name": "Sra. Paulina Muñoz Minte",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1228"
+        },
+        {
+          "id": "1243",
+          "name": "Sra. Tamara Ramírez Ramírez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1243"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4894",
+      "number": "10",
+      "name": "Salud",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4894",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4894",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4894",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4894",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4894",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4894",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1165",
+          "name": "Sr. Agustín Romero Leiva",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1165"
+        },
+        {
+          "id": "1021",
+          "name": "Sr. Andrés Celis Montt",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1021"
+        },
+        {
+          "id": "1224",
+          "name": "Sr. Cristian Mella Andaur",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1224"
+        },
+        {
+          "id": "1140",
+          "name": "Sr. Daniel Lilayu Vivanco",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1140"
+        },
+        {
+          "id": "1142",
+          "name": "Sr. Daniel Manouchehri Lobos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1142"
+        },
+        {
+          "id": "1264",
+          "name": "Sr. Fernando Zamorano Peralta",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1264"
+        },
+        {
+          "id": "1209",
+          "name": "Sr. Matías Fernández Hartwig",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1209"
+        },
+        {
+          "id": "1102",
+          "name": "Sr. Roberto Arroyo Muñoz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1102"
+        },
+        {
+          "id": "1257",
+          "name": "Sra. Alejandra Valdebenito Torres",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1257"
+        },
+        {
+          "id": "1025",
+          "name": "Sra. Catalina Del Real Mihovilovic",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1025"
+        },
+        {
+          "id": "1251",
+          "name": "Sra. Macarena Santelices Cañas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1251"
+        },
+        {
+          "id": "1107",
+          "name": "Sra. María Francisca Bello Campos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1107"
+        },
+        {
+          "id": "1240",
+          "name": "Sra. Zandra Parisi Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1240"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4891",
+      "number": "11",
+      "name": "Trabajo y Seguridad Social",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4891",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4891",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4891",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4891",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4891",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4891",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1187",
+          "name": "Sr. Carlo Arqueros Pizarro",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1187"
+        },
+        {
+          "id": "1212",
+          "name": "Sr. Erich Grohs Marín",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1212"
+        },
+        {
+          "id": "1178",
+          "name": "Sr. Héctor Ulloa Aguilera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1178"
+        },
+        {
+          "id": "1146",
+          "name": "Sr. José Carlos Meza Pereira",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1146"
+        },
+        {
+          "id": "1122",
+          "name": "Sr. Luis Alberto Cuello Peña y Lillo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1122"
+        },
+        {
+          "id": "1234",
+          "name": "Sr. Mario Olavarría Rodríguez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1234"
+        },
+        {
+          "id": "1181",
+          "name": "Sr. Nelson Venegas Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1181"
+        },
+        {
+          "id": "1241",
+          "name": "Sr. Patricio Pinilla Valencia",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1241"
+        },
+        {
+          "id": "1172",
+          "name": "Sr. Stephan Schubert Rubio",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1172"
+        },
+        {
+          "id": "1214",
+          "name": "Sra. Constanza Hube Portus",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1214"
+        },
+        {
+          "id": "1087",
+          "name": "Sra. Gael Yeomans Araya",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1087"
+        },
+        {
+          "id": "1243",
+          "name": "Sra. Tamara Ramírez Ramírez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1243"
+        },
+        {
+          "id": "1059",
+          "name": "Sra. Ximena Ossandón Irarrázabal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1059"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4892",
+      "number": "12",
+      "name": "Minería y Energía",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4892",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4892",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4892",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4892",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4892",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4892",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1250",
+          "name": "Sr. Bernardo Salinas Maya",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1250"
+        },
+        {
+          "id": "1187",
+          "name": "Sr. Carlo Arqueros Pizarro",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1187"
+        },
+        {
+          "id": "1175",
+          "name": "Sr. Cristián Tapia Ramos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1175"
+        },
+        {
+          "id": "1261",
+          "name": "Sr. Daniel Valenzuela Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1261"
+        },
+        {
+          "id": "1212",
+          "name": "Sr. Erich Grohs Marín",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1212"
+        },
+        {
+          "id": "1254",
+          "name": "Sr. Ignacio Urcullú Clèment-Lund",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1254"
+        },
+        {
+          "id": "1208",
+          "name": "Sr. Jorge Díaz Ibarra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1208"
+        },
+        {
+          "id": "1246",
+          "name": "Sr. José Antonio Rivas Villalobos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1246"
+        },
+        {
+          "id": "1174",
+          "name": "Sr. Marco Antonio Sulantay Olivares",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1174"
+        },
+        {
+          "id": "1182",
+          "name": "Sr. Sebastián Videla Castillo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1182"
+        },
+        {
+          "id": "1236",
+          "name": "Sra. Paula Olmos Contreras",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1236"
+        },
+        {
+          "id": "1216",
+          "name": "Sra. Stephanie Jéldrez Ortiz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1216"
+        },
+        {
+          "id": "1207",
+          "name": "Sra. Valentina Cáceres Monsálvez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1207"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4893",
+      "number": "13",
+      "name": "Economía, Fomento; Micro, Pequeña y Mediana Empresa; Protección de los Consumidores y Turismo",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4893",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4893",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4893",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4893",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4893",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4893",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1245",
+          "name": "Sr. Alejandro Riquelme Ducci",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1245"
+        },
+        {
+          "id": "1248",
+          "name": "Sr. Felipe Ross Correa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1248"
+        },
+        {
+          "id": "915",
+          "name": "Sr. Germán Verdugo Soto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=915"
+        },
+        {
+          "id": "1176",
+          "name": "Sr. Hotuiti Teao Drago",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1176"
+        },
+        {
+          "id": "1174",
+          "name": "Sr. Marco Antonio Sulantay Olivares",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1174"
+        },
+        {
+          "id": "1193",
+          "name": "Sr. Patricio Briones Moller",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1193"
+        },
+        {
+          "id": "1077",
+          "name": "Sr. Raúl Soto Mardones",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1077"
+        },
+        {
+          "id": "1203",
+          "name": "Sr. Sebastián Cristoffanini Jaraquemada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1203"
+        },
+        {
+          "id": "1219",
+          "name": "Sr. Tomás Kast Sommerhoff",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1219"
+        },
+        {
+          "id": "1206",
+          "name": "Sra. Carolina Cucumides Calderón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1206"
+        },
+        {
+          "id": "1252",
+          "name": "Sra. Constanza Schonhaut Soto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1252"
+        },
+        {
+          "id": "1213",
+          "name": "Sra. Irací Hassler Jacob",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1213"
+        },
+        {
+          "id": "1196",
+          "name": "Sra. Priscilla Castillo Gerli",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1196"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4899",
+      "number": "14",
+      "name": "Vivienda, Desarrollo Urbano y Bienes Nacionales",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4899",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4899",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4899",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4899",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4899",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4899",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1230",
+          "name": "Sr. Alex Nahuelquin Nahuelquin",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1230"
+        },
+        {
+          "id": "1232",
+          "name": "Sr. Cristian Neira Martínez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1232"
+        },
+        {
+          "id": "1178",
+          "name": "Sr. Héctor Ulloa Aguilera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1178"
+        },
+        {
+          "id": "1229",
+          "name": "Sr. Javier Muñoz Riquelme",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1229"
+        },
+        {
+          "id": "1108",
+          "name": "Sr. Juan Carlos Beltrán Silva",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1108"
+        },
+        {
+          "id": "1234",
+          "name": "Sr. Mario Olavarría Rodríguez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1234"
+        },
+        {
+          "id": "1249",
+          "name": "Sr. Omar Sabat Guzmán",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1249"
+        },
+        {
+          "id": "1215",
+          "name": "Sr. Álvaro Jofré Cáceres",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1215"
+        },
+        {
+          "id": "1128",
+          "name": "Sra. Ana María Gazmuri Vieira",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1128"
+        },
+        {
+          "id": "1056",
+          "name": "Sra. Emilia Nuyado Ancapichun",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1056"
+        },
+        {
+          "id": "1251",
+          "name": "Sra. Macarena Santelices Cañas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1251"
+        },
+        {
+          "id": "1198",
+          "name": "Sra. Paz Charpentier Rajcevich",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1198"
+        },
+        {
+          "id": "1256",
+          "name": "Sra. Tatiana Urrutia Herrera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1256"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4887",
+      "number": "15",
+      "name": "Derechos Humanos y Pueblos Originarios",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4887",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4887",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4887",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4887",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4887",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4887",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1021",
+          "name": "Sr. Andrés Celis Montt",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1021"
+        },
+        {
+          "id": "1221",
+          "name": "Sr. Benjamín Lorca Inzunza",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1221"
+        },
+        {
+          "id": "1205",
+          "name": "Sr. Carlos Cuadrado Prats",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1205"
+        },
+        {
+          "id": "1190",
+          "name": "Sr. Enrique Bassaletti Riess",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1190"
+        },
+        {
+          "id": "1176",
+          "name": "Sr. Hotuiti Teao Drago",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1176"
+        },
+        {
+          "id": "1044",
+          "name": "Sr. Raúl Leiva Carvajal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1044"
+        },
+        {
+          "id": "1184",
+          "name": "Sr. Roberto Celedón Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1184"
+        },
+        {
+          "id": "1257",
+          "name": "Sra. Alejandra Valdebenito Torres",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1257"
+        },
+        {
+          "id": "1152",
+          "name": "Sra. Gloria Naveillan Arriagada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1152"
+        },
+        {
+          "id": "1148",
+          "name": "Sra. Javiera Morales Alvarado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1148"
+        },
+        {
+          "id": "1159",
+          "name": "Sra. Lorena Pizarro Sierra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1159"
+        },
+        {
+          "id": "986",
+          "name": "Sra. Marcela Hernando Pérez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=986"
+        },
+        {
+          "id": "1059",
+          "name": "Sra. Ximena Ossandón Irarrázabal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1059"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4898",
+      "number": "16",
+      "name": "la Familia",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4898",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4898",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4898",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4898",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4898",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4898",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1221",
+          "name": "Sr. Benjamín Lorca Inzunza",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1221"
+        },
+        {
+          "id": "1260",
+          "name": "Sr. César Valenzuela Maass",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1260"
+        },
+        {
+          "id": "1028",
+          "name": "Sr. Eduardo Durán Salinas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1028"
+        },
+        {
+          "id": "1218",
+          "name": "Sr. José Antonio Kast Adriasola",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1218"
+        },
+        {
+          "id": "1133",
+          "name": "Sr. Juan Irarrázaval Rossel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1133"
+        },
+        {
+          "id": "1184",
+          "name": "Sr. Roberto Celedón Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1184"
+        },
+        {
+          "id": "1238",
+          "name": "Sr. Álvaro Ortiz Vera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1238"
+        },
+        {
+          "id": "1054",
+          "name": "Sra. Francesca Muñoz González",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1054"
+        },
+        {
+          "id": "1127",
+          "name": "Sra. Lorena Fries Monleón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1127"
+        },
+        {
+          "id": "1159",
+          "name": "Sra. Lorena Pizarro Sierra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1159"
+        },
+        {
+          "id": "1236",
+          "name": "Sra. Paula Olmos Contreras",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1236"
+        },
+        {
+          "id": "1231",
+          "name": "Sra. Ximena Naranjo Pinto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1231"
+        },
+        {
+          "id": "1240",
+          "name": "Sra. Zandra Parisi Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1240"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4886",
+      "number": "17",
+      "name": "Futuro, Ciencias, Tecnología, Conocimiento e Innovación",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4886",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4886",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4886",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4886",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4886",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4886",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1021",
+          "name": "Sr. Andrés Celis Montt",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1021"
+        },
+        {
+          "id": "1232",
+          "name": "Sr. Cristian Neira Martínez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1232"
+        },
+        {
+          "id": "1143",
+          "name": "Sr. Cristóbal Martínez Ramírez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1143"
+        },
+        {
+          "id": "1142",
+          "name": "Sr. Daniel Manouchehri Lobos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1142"
+        },
+        {
+          "id": "1075",
+          "name": "Sr. Diego Schalper Sepúlveda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1075"
+        },
+        {
+          "id": "1248",
+          "name": "Sr. Felipe Ross Correa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1248"
+        },
+        {
+          "id": "1086",
+          "name": "Sr. Gonzalo Winter Etcheberry",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1086"
+        },
+        {
+          "id": "1223",
+          "name": "Sr. Hans Marowski Cuevas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1223"
+        },
+        {
+          "id": "1226",
+          "name": "Sr. José Montalva Feuerhake",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1226"
+        },
+        {
+          "id": "1193",
+          "name": "Sr. Patricio Briones Moller",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1193"
+        },
+        {
+          "id": "1180",
+          "name": "Sra. Consuelo Veloso Ávila",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1180"
+        },
+        {
+          "id": "1173",
+          "name": "Sra. Daniela Serrano Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1173"
+        },
+        {
+          "id": "1087",
+          "name": "Sra. Gael Yeomans Araya",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1087"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4902",
+      "number": "18",
+      "name": "Pesca, Acuicultura e Intereses Marítimos",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4902",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4902",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4902",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4902",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4902",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4902",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1013",
+          "name": "Sr. Alejandro Bernales Maldonado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1013"
+        },
+        {
+          "id": "1245",
+          "name": "Sr. Alejandro Riquelme Ducci",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1245"
+        },
+        {
+          "id": "1195",
+          "name": "Sr. Carlos Carvajal Gallardo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1195"
+        },
+        {
+          "id": "1262",
+          "name": "Sr. Diego Vergara Rodríguez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1262"
+        },
+        {
+          "id": "1239",
+          "name": "Sr. Fabián Ossandón Briceño",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1239"
+        },
+        {
+          "id": "1114",
+          "name": "Sr. Félix Bugueño Sotelo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1114"
+        },
+        {
+          "id": "1258",
+          "name": "Sr. Guillermo Valdés Carmona",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1258"
+        },
+        {
+          "id": "1131",
+          "name": "Sr. Mauro González Villarroel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1131"
+        },
+        {
+          "id": "815",
+          "name": "Sr. Sergio Bobadilla Muñoz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=815"
+        },
+        {
+          "id": "1222",
+          "name": "Sra. Andrea Macías Palma",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1222"
+        },
+        {
+          "id": "1177",
+          "name": "Sra. Carolina Tello Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1177"
+        },
+        {
+          "id": "1074",
+          "name": "Sra. Marisela Santibáñez Novoa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1074"
+        },
+        {
+          "id": "1117",
+          "name": "Sra. Nathalie Castillo Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1117"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4910",
+      "number": "19",
+      "name": "Deportes y Recreación",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4910",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4910",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4910",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4910",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4910",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4910",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1195",
+          "name": "Sr. Carlos Carvajal Gallardo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1195"
+        },
+        {
+          "id": "1197",
+          "name": "Sr. Carlos Chandía Alarcón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1197"
+        },
+        {
+          "id": "1200",
+          "name": "Sr. Cristian Contreras Radovic",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1200"
+        },
+        {
+          "id": "1224",
+          "name": "Sr. Cristian Mella Andaur",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1224"
+        },
+        {
+          "id": "1175",
+          "name": "Sr. Cristián Tapia Ramos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1175"
+        },
+        {
+          "id": "1176",
+          "name": "Sr. Hotuiti Teao Drago",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1176"
+        },
+        {
+          "id": "1174",
+          "name": "Sr. Marco Antonio Sulantay Olivares",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1174"
+        },
+        {
+          "id": "1209",
+          "name": "Sr. Matías Fernández Hartwig",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1209"
+        },
+        {
+          "id": "1193",
+          "name": "Sr. Patricio Briones Moller",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1193"
+        },
+        {
+          "id": "1102",
+          "name": "Sr. Roberto Arroyo Muñoz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1102"
+        },
+        {
+          "id": "1263",
+          "name": "Sr. Sebastián Zamora Soto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1263"
+        },
+        {
+          "id": "1251",
+          "name": "Sra. Macarena Santelices Cañas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1251"
+        },
+        {
+          "id": "1074",
+          "name": "Sra. Marisela Santibáñez Novoa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1074"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4904",
+      "number": "20",
+      "name": "Zonas Extremas y Antártica Chilena",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4904",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4904",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4904",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4904",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4904",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4904",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1230",
+          "name": "Sr. Alex Nahuelquin Nahuelquin",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1230"
+        },
+        {
+          "id": "1012",
+          "name": "Sr. Boris Barrera Moreno",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1012"
+        },
+        {
+          "id": "1110",
+          "name": "Sr. Carlos Bianchi Chelech",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1110"
+        },
+        {
+          "id": "1261",
+          "name": "Sr. Daniel Valenzuela Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1261"
+        },
+        {
+          "id": "1208",
+          "name": "Sr. Jorge Díaz Ibarra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1208"
+        },
+        {
+          "id": "1141",
+          "name": "Sr. Luis Malla Valenzuela",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1141"
+        },
+        {
+          "id": "803",
+          "name": "Sr. René Alinco Bustos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=803"
+        },
+        {
+          "id": "1215",
+          "name": "Sr. Álvaro Jofré Cáceres",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1215"
+        },
+        {
+          "id": "1257",
+          "name": "Sra. Alejandra Valdebenito Torres",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1257"
+        },
+        {
+          "id": "1244",
+          "name": "Sra. Claudia Reyes Larenas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1244"
+        },
+        {
+          "id": "1056",
+          "name": "Sra. Emilia Nuyado Ancapichun",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1056"
+        },
+        {
+          "id": "1148",
+          "name": "Sra. Javiera Morales Alvarado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1148"
+        },
+        {
+          "id": "1216",
+          "name": "Sra. Stephanie Jéldrez Ortiz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1216"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4903",
+      "number": "21",
+      "name": "Seguridad Ciudadana",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4903",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4903",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4903",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4903",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4903",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4903",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1250",
+          "name": "Sr. Bernardo Salinas Maya",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1250"
+        },
+        {
+          "id": "1100",
+          "name": "Sr. Cristián Araya Lerdo de Tejada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1100"
+        },
+        {
+          "id": "1202",
+          "name": "Sr. Eduardo Cretton Rebolledo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1202"
+        },
+        {
+          "id": "1190",
+          "name": "Sr. Enrique Bassaletti Riess",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1190"
+        },
+        {
+          "id": "1099",
+          "name": "Sr. Jaime Araya Guerrero",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1099"
+        },
+        {
+          "id": "1199",
+          "name": "Sr. Jaime Coloma Álamos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1199"
+        },
+        {
+          "id": "1259",
+          "name": "Sr. Juan Marcelo Valenzuela Henríquez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1259"
+        },
+        {
+          "id": "1131",
+          "name": "Sr. Mauro González Villarroel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1131"
+        },
+        {
+          "id": "1241",
+          "name": "Sr. Patricio Pinilla Valencia",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1241"
+        },
+        {
+          "id": "1044",
+          "name": "Sr. Raúl Leiva Carvajal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1044"
+        },
+        {
+          "id": "1104",
+          "name": "Sra. Chiara Barchiesi Chávez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1104"
+        },
+        {
+          "id": "1152",
+          "name": "Sra. Gloria Naveillan Arriagada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1152"
+        },
+        {
+          "id": "1256",
+          "name": "Sra. Tatiana Urrutia Herrera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1256"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4905",
+      "number": "22",
+      "name": "Cultura, Artes y Comunicaciones",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4905",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4905",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4905",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4905",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4905",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4905",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1013",
+          "name": "Sr. Alejandro Bernales Maldonado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1013"
+        },
+        {
+          "id": "1150",
+          "name": "Sr. Benjamín Moreno Bascur",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1150"
+        },
+        {
+          "id": "1197",
+          "name": "Sr. Carlos Chandía Alarcón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1197"
+        },
+        {
+          "id": "1200",
+          "name": "Sr. Cristian Contreras Radovic",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1200"
+        },
+        {
+          "id": "1082",
+          "name": "Sr. Cristóbal Urruticoechea Ríos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1082"
+        },
+        {
+          "id": "1237",
+          "name": "Sr. Francisco Orrego Gutiérrez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1237"
+        },
+        {
+          "id": "1186",
+          "name": "Sr. Ignacio Achurra Díaz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1186"
+        },
+        {
+          "id": "1073",
+          "name": "Sr. Juan Santana Castillo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1073"
+        },
+        {
+          "id": "1122",
+          "name": "Sr. Luis Alberto Cuello Peña y Lillo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1122"
+        },
+        {
+          "id": "1233",
+          "name": "Sr. Ricardo Neumann Bertín",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1233"
+        },
+        {
+          "id": "1182",
+          "name": "Sr. Sebastián Videla Castillo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1182"
+        },
+        {
+          "id": "1247",
+          "name": "Sra. Javiera Rodríguez Pascual",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1247"
+        },
+        {
+          "id": "1062",
+          "name": "Sra. Joanna Pérez Olea",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1062"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4907",
+      "number": "23",
+      "name": "Desarrollo Social, Superación de la Pobreza y Planificación",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4907",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4907",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4907",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4907",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4907",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4907",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1195",
+          "name": "Sr. Carlos Carvajal Gallardo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1195"
+        },
+        {
+          "id": "1210",
+          "name": "Sr. Gustavo Gatica Villarroel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1210"
+        },
+        {
+          "id": "1220",
+          "name": "Sr. Leandro Kunstmann Collado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1220"
+        },
+        {
+          "id": "1203",
+          "name": "Sr. Sebastián Cristoffanini Jaraquemada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1203"
+        },
+        {
+          "id": "1219",
+          "name": "Sr. Tomás Kast Sommerhoff",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1219"
+        },
+        {
+          "id": "1222",
+          "name": "Sra. Andrea Macías Palma",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1222"
+        },
+        {
+          "id": "1153",
+          "name": "Sra. Coca Ericka Ñanco Vásquez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1153"
+        },
+        {
+          "id": "1201",
+          "name": "Sra. Flor Contreras Vivallo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1201"
+        },
+        {
+          "id": "1157",
+          "name": "Sra. Marlene Pérez Cartes",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1157"
+        },
+        {
+          "id": "1228",
+          "name": "Sra. Paulina Muñoz Minte",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1228"
+        },
+        {
+          "id": "1119",
+          "name": "Sra. Sara Concha Smith",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1119"
+        },
+        {
+          "id": "1243",
+          "name": "Sra. Tamara Ramírez Ramírez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1243"
+        },
+        {
+          "id": "1207",
+          "name": "Sra. Valentina Cáceres Monsálvez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1207"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4909",
+      "number": "24",
+      "name": "Recursos Hídricos y Desertificación",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4909",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4909",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4909",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4909",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4909",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4909",
+      "members": [
+        {
+          "id": "1194",
+          "name": "Sr. Daniel Bustos Leal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1194"
+        },
+        {
+          "id": "1264",
+          "name": "Sr. Fernando Zamorano Peralta",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1264"
+        },
+        {
+          "id": "1105",
+          "name": "Sr. Héctor Barría Angulo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1105"
+        },
+        {
+          "id": "1254",
+          "name": "Sr. Ignacio Urcullú Clèment-Lund",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1254"
+        },
+        {
+          "id": "1229",
+          "name": "Sr. Javier Muñoz Riquelme",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1229"
+        },
+        {
+          "id": "1009",
+          "name": "Sr. Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "843",
+          "name": "Sr. René Manuel García García",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=843"
+        },
+        {
+          "id": "1206",
+          "name": "Sra. Carolina Cucumides Calderón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1206"
+        },
+        {
+          "id": "1177",
+          "name": "Sra. Carolina Tello Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1177"
+        },
+        {
+          "id": "1255",
+          "name": "Sra. Eileen Urqueta Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1255"
+        },
+        {
+          "id": "986",
+          "name": "Sra. Marcela Hernando Pérez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=986"
+        },
+        {
+          "id": "1107",
+          "name": "Sra. María Francisca Bello Campos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1107"
+        },
+        {
+          "id": "1117",
+          "name": "Sra. Nathalie Castillo Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1117"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4912",
+      "number": "25",
+      "name": "Emergencia, Desastres y Bomberos",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4912",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4912",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4912",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4912",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4912",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4912",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1253",
+          "name": "Sr. Fernando Ugarte Tejeda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1253"
+        },
+        {
+          "id": "1258",
+          "name": "Sr. Guillermo Valdés Carmona",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1258"
+        },
+        {
+          "id": "1246",
+          "name": "Sr. José Antonio Rivas Villalobos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1246"
+        },
+        {
+          "id": "1242",
+          "name": "Sr. Rodrigo Ramírez Parra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1242"
+        },
+        {
+          "id": "1238",
+          "name": "Sr. Álvaro Ortiz Vera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1238"
+        },
+        {
+          "id": "1227",
+          "name": "Sra. Claudia Mora Vega",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1227"
+        },
+        {
+          "id": "1153",
+          "name": "Sra. Coca Ericka Ñanco Vásquez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1153"
+        },
+        {
+          "id": "1180",
+          "name": "Sra. Consuelo Veloso Ávila",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1180"
+        },
+        {
+          "id": "1173",
+          "name": "Sra. Daniela Serrano Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1173"
+        },
+        {
+          "id": "1171",
+          "name": "Sra. Emilia Schneider Videla",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1171"
+        },
+        {
+          "id": "1201",
+          "name": "Sra. Flor Contreras Vivallo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1201"
+        },
+        {
+          "id": "1183",
+          "name": "Sra. Flor Weisse Novoa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1183"
+        },
+        {
+          "id": "1216",
+          "name": "Sra. Stephanie Jéldrez Ortiz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1216"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4913",
+      "number": "26",
+      "name": "Mujeres y Equidad de Género",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4913",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4913",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4913",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4913",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4913",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4913",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1100",
+          "name": "Sr. Cristián Araya Lerdo de Tejada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1100"
+        },
+        {
+          "id": "1061",
+          "name": "Sra. Andrea Parra Sauterel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1061"
+        },
+        {
+          "id": "1206",
+          "name": "Sra. Carolina Cucumides Calderón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1206"
+        },
+        {
+          "id": "1227",
+          "name": "Sra. Claudia Mora Vega",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1227"
+        },
+        {
+          "id": "1252",
+          "name": "Sra. Constanza Schonhaut Soto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1252"
+        },
+        {
+          "id": "1180",
+          "name": "Sra. Consuelo Veloso Ávila",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1180"
+        },
+        {
+          "id": "1255",
+          "name": "Sra. Eileen Urqueta Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1255"
+        },
+        {
+          "id": "1171",
+          "name": "Sra. Emilia Schneider Videla",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1171"
+        },
+        {
+          "id": "1213",
+          "name": "Sra. Irací Hassler Jacob",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1213"
+        },
+        {
+          "id": "1247",
+          "name": "Sra. Javiera Rodríguez Pascual",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1247"
+        },
+        {
+          "id": "1119",
+          "name": "Sra. Sara Concha Smith",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1119"
+        },
+        {
+          "id": "1191",
+          "name": "Sra. Valentina Becerra Peña",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1191"
+        },
+        {
+          "id": "1231",
+          "name": "Sra. Ximena Naranjo Pinto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1231"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4914",
+      "number": "27",
+      "name": "Personas Mayores y Discapacidad",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4914",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4914",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4914",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4914",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4914",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4914",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1230",
+          "name": "Sr. Alex Nahuelquin Nahuelquin",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1230"
+        },
+        {
+          "id": "1232",
+          "name": "Sr. Cristian Neira Martínez",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1232"
+        },
+        {
+          "id": "1114",
+          "name": "Sr. Félix Bugueño Sotelo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1114"
+        },
+        {
+          "id": "1208",
+          "name": "Sr. Jorge Díaz Ibarra",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1208"
+        },
+        {
+          "id": "1132",
+          "name": "Sr. Jorge Guzmán Zepeda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1132"
+        },
+        {
+          "id": "1141",
+          "name": "Sr. Luis Malla Valenzuela",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1141"
+        },
+        {
+          "id": "1128",
+          "name": "Sra. Ana María Gazmuri Vieira",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1128"
+        },
+        {
+          "id": "1255",
+          "name": "Sra. Eileen Urqueta Rojas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1255"
+        },
+        {
+          "id": "1056",
+          "name": "Sra. Emilia Nuyado Ancapichun",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1056"
+        },
+        {
+          "id": "1211",
+          "name": "Sra. Sofía González Cortés",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1211"
+        },
+        {
+          "id": "1256",
+          "name": "Sra. Tatiana Urrutia Herrera",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1256"
+        },
+        {
+          "id": "1191",
+          "name": "Sra. Valentina Becerra Peña",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1191"
+        },
+        {
+          "id": "1231",
+          "name": "Sra. Ximena Naranjo Pinto",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1231"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4911",
+      "number": "28",
+      "name": "Control del Sistema de Inteligencia del Estado",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4911",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4911",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4911",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4911",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4911",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4911",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1235",
+          "name": "Sr. Javier Olivares Avendaño",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1235"
+        },
+        {
+          "id": "1015",
+          "name": "Sr. Jorge Brito Hasbún",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1015"
+        },
+        {
+          "id": "1060",
+          "name": "Sr. Luis Pardo Sáinz",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1060"
+        },
+        {
+          "id": "1038",
+          "name": "Sr. Marcos Ilabaca Cerda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1038"
+        },
+        {
+          "id": "1172",
+          "name": "Sr. Stephan Schubert Rubio",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1172"
+        },
+        {
+          "id": "1183",
+          "name": "Sra. Flor Weisse Novoa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1183"
+        },
+        {
+          "id": "1211",
+          "name": "Sra. Sofía González Cortés",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1211"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4882",
+      "number": "29",
+      "name": "Subcomisión de Reglamento",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4882",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4882",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4882",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4882",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4882",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4882",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4883",
+      "number": "30",
+      "name": "Subcomisión de Crimen Organizado",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4883",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4883",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4883",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4883",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4883",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4883",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4908",
+      "number": "31",
+      "name": "Revisora de Cuentas",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4908",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4908",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4908",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4908",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4908",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4908",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1150",
+          "name": "Sr. Benjamín Moreno Bascur",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1150"
+        },
+        {
+          "id": "1012",
+          "name": "Sr. Boris Barrera Moreno",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1012"
+        },
+        {
+          "id": "1239",
+          "name": "Sr. Fabián Ossandón Briceño",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1239"
+        },
+        {
+          "id": "1264",
+          "name": "Sr. Fernando Zamorano Peralta",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1264"
+        },
+        {
+          "id": "1218",
+          "name": "Sr. José Antonio Kast Adriasola",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1218"
+        },
+        {
+          "id": "1174",
+          "name": "Sr. Marco Antonio Sulantay Olivares",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1174"
+        },
+        {
+          "id": "1209",
+          "name": "Sr. Matías Fernández Hartwig",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1209"
+        },
+        {
+          "id": "1181",
+          "name": "Sr. Nelson Venegas Salazar",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1181"
+        },
+        {
+          "id": "843",
+          "name": "Sr. René Manuel García García",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=843"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4906",
+      "number": "32",
+      "name": "Ética y Transparencia",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4906",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4906",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4906",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4906",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4906",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4906",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1195",
+          "name": "Sr. Carlos Carvajal Gallardo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1195"
+        },
+        {
+          "id": "1253",
+          "name": "Sr. Fernando Ugarte Tejeda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1253"
+        },
+        {
+          "id": "1210",
+          "name": "Sr. Gustavo Gatica Villarroel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1210"
+        },
+        {
+          "id": "1132",
+          "name": "Sr. Jorge Guzmán Zepeda",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1132"
+        },
+        {
+          "id": "1017",
+          "name": "Sr. Álvaro Carter Fernández",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1017"
+        },
+        {
+          "id": "1222",
+          "name": "Sra. Andrea Macías Palma",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1222"
+        },
+        {
+          "id": "1127",
+          "name": "Sra. Lorena Fries Monleón",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1127"
+        },
+        {
+          "id": "1166",
+          "name": "Sra. Natalia Romero Talguia",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1166"
+        },
+        {
+          "id": "1039",
+          "name": "Sra. Pamela Jiles Moreno",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1039"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4901",
+      "number": "33",
+      "name": "Régimen Interno y Administración",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4901",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4901",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4901",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4901",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4901",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4901",
+      "members": [
+        {
+          "id": "1142",
+          "name": "Sr. Daniel Manouchehri Lobos",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1142"
+        },
+        {
+          "id": "1116",
+          "name": "Sr. Felipe Camaño Cárdenas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1116"
+        },
+        {
+          "id": "1189",
+          "name": "Sr. Jaime Bassa Mercado",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1189"
+        },
+        {
+          "id": "1009",
+          "name": "Sr. Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        },
+        {
+          "id": "1061",
+          "name": "Sra. Andrea Parra Sauterel",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1061"
+        },
+        {
+          "id": "1025",
+          "name": "Sra. Catalina Del Real Mihovilovic",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1025"
+        },
+        {
+          "id": "1201",
+          "name": "Sra. Flor Contreras Vivallo",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1201"
+        },
+        {
+          "id": "1152",
+          "name": "Sra. Gloria Naveillan Arriagada",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1152"
+        },
+        {
+          "id": "1074",
+          "name": "Sra. Marisela Santibáñez Novoa",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1074"
+        },
+        {
+          "id": "1059",
+          "name": "Sra. Ximena Ossandón Irarrázabal",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1059"
+        }
+      ],
+      "members_status": "retrieved"
+    },
+    {
+      "id": "4915",
+      "number": "34",
+      "name": "Subcomisión de Régimen Interno en materia de Comunicaciones",
+      "type": "Permanente",
+      "source_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4915",
+      "members_url": "https://www.camara.cl/legislacion/comisiones/integrantes.aspx?prmID=4915",
+      "sessions_url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4915",
+      "projects_url": "https://www.camara.cl/legislacion/comisiones/proyecto_ley.aspx?prmID=4915",
+      "citations_url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4915",
+      "results_url": "https://www.camara.cl/legislacion/comisiones/resultados.aspx?prmID=4915",
+      "members": [
+        {
+          "id": "1009",
+          "name": "Jorge Alessandri Vergara",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1009"
+        }
+      ],
+      "members_status": "retrieved"
     }
   ],
-  "scope_note": "La ficha reproduce campos entregados por el servicio oficial de comisiones vigentes. Una colección vacía significa que el método consultado no devolvió esos elementos; no se interpreta como ausencia sustantiva."
+  "quality_gate": {
+    "minimum_expected_commissions": 20,
+    "passed": true,
+    "note": "El workflow falla antes de persistir si el directorio devuelve un universo implausiblemente pequeño."
+  },
+  "scope_note": "El directorio describe comisiones permanentes visibles en la página institucional actual. Los integrantes se recuperan desde la ficha oficial cuando el HTML los expone; una lista vacía no se interpreta como ausencia sustantiva. Comisiones investigadoras, unidas, mixtas u otras familias requieren capas separadas."
 }
