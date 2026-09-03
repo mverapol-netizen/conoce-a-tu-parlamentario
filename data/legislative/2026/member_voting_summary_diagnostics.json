@@ -1,7 +1,6 @@
 {
-  "input_vote_rows": 56420,
-  "deputies": 155,
-  "participation_rows": 155,
+  "input_enriched_vote_rows": 56420,
+  "historical_members_with_enriched_votes": 155,
   "modal_agreement_rows": 1240,
   "lookup_missing": 0,
   "scope_diagnostics": {
@@ -54,7 +53,7 @@
       "weighted_agreement_pct": 95.6031
     }
   },
-  "method_note": "Coincidencia modal es descriptiva, no una medida causal de disciplina. Solo compara Afirmativo/En Contra/Abstención cuando el grupo formal tiene al menos dos votos sustantivos y una moda única. No Vota y Dispensado no cuentan como divergencia. Los scopes 5/10/20% permiten sensibilidad a cuán dividida estaba la Cámara.",
+  "method_note": "Coincidencia modal es descriptiva, no una medida causal de disciplina. Solo compara Afirmativo/En Contra/Abstención cuando el grupo formal tiene al menos dos votos sustantivos y una moda única. No Vota y Dispensado no cuentan como divergencia. Los scopes 5/10/20% permiten sensibilidad a cuán dividida estaba la Cámara. La participación individual se calcula ahora en un pipeline independiente desde member_votes.csv.",
   "errors": {
     "lookup_missing_examples": []
   }
