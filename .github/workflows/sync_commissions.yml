@@ -1,0 +1,53 @@
+name: Sync current commissions
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 11 * * 1"
+  push:
+    paths:
+      - "scripts/congress_api.py"
+      - "scripts/build_commissions_snapshot.py"
+      - ".github/workflows/sync_commissions.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commissions-sync
+  cancel-in-progress: true
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependency
+        run: pip install requests
+
+      - name: Build commissions snapshot
+        run: python scripts/build_commissions_snapshot.py
+
+      - name: Persist snapshot
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/legislative/2026/commissions/commissions_snapshot.json
+          if git diff --cached --quiet; then
+            echo "No commission changes to commit"
+          else
+            git commit -m "Actualiza comisiones vigentes"
+            git pull --rebase origin main
+            git push origin main
+          fi
