@@ -43,9 +43,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/js/modal_agreement.js \
-                  assets/data/modal_agreement_details.json \
-                  data/legislative/2026/member_modal_agreement_public_diagnostics.json
+          # -A permite registrar tanto archivos nuevos por parlamentario como la
+          # eliminación del antiguo JSON monolítico durante la migración.
+          git add -A assets/js/modal_agreement.js \
+                     assets/data \
+                     data/legislative/2026/member_modal_agreement_public_diagnostics.json
           if git diff --cached --quiet; then
             echo "No public modal-agreement changes"
           else
