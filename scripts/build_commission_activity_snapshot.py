@@ -28,6 +28,12 @@ def clean(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
 
 
+def normalize_header(value: str) -> str:
+    text = clean(value).lower()
+    text = re.sub(r"[^a-záéíóúüñ0-9]+", "_", text, flags=re.IGNORECASE)
+    return text.strip("_")
+
+
 def fetch(session: requests.Session, url: str) -> BeautifulSoup:
     response = session.get(url, timeout=(10, 35))
     response.raise_for_status()
@@ -47,8 +53,6 @@ def selected_period(soup: BeautifulSoup) -> dict:
 
 
 def nearest_date(table: Tag) -> str:
-    # Search nearby previous elements, because the institutional page places
-    # a human-readable weekday/date heading immediately before each block.
     seen = 0
     for node in table.previous_elements:
         if not isinstance(node, Tag):
@@ -65,6 +69,19 @@ def nearest_date(table: Tag) -> str:
     return ""
 
 
+def top_level_rows(table: Tag) -> list[Tag]:
+    rows: list[Tag] = []
+    for section in table.find_all(["thead", "tbody", "tfoot"], recursive=False):
+        rows.extend(section.find_all("tr", recursive=False))
+    if not rows:
+        rows = table.find_all("tr", recursive=False)
+    return rows
+
+
+def direct_cells(row: Tag, names: tuple[str, ...] = ("th", "td")) -> list[Tag]:
+    return row.find_all(list(names), recursive=False)
+
+
 def row_to_dict(cells: list[str], headers: list[str], date_context: str) -> dict:
     row = {"date_context": date_context}
     for index, value in enumerate(cells):
@@ -73,32 +90,62 @@ def row_to_dict(cells: list[str], headers: list[str], date_context: str) -> dict
     return row
 
 
-def parse_tables(soup: BeautifulSoup, layer: str) -> list[dict]:
+def parse_tables(soup: BeautifulSoup, layer: str) -> tuple[list[dict], dict]:
     rows: list[dict] = []
+    seen_signatures: set[str] = set()
+    diagnostics = {
+        "top_level_tables_examined": 0,
+        "matching_tables": 0,
+        "nested_tables_skipped": 0,
+        "wide_rows_skipped": 0,
+        "duplicate_rows_skipped": 0,
+    }
+
     for table in soup.find_all("table"):
-        tr_list = table.find_all("tr")
+        if table.find_parent("table") is not None:
+            diagnostics["nested_tables_skipped"] += 1
+            continue
+        diagnostics["top_level_tables_examined"] += 1
+        tr_list = top_level_rows(table)
         if len(tr_list) < 2:
             continue
-        first_cells = tr_list[0].find_all(["th", "td"])
-        headers = [clean(cell.get_text(" ", strip=True)).lower().replace(" ", "_") for cell in first_cells]
-        header_text = " ".join(headers)
-        if layer == "citations" and not ("citaci" in header_text or "invit" in header_text):
-            continue
-        if layer == "results" and not ("resultado" in header_text or "materia_tratada" in header_text or "acuerdos" in header_text):
+
+        header_row_index = None
+        headers: list[str] = []
+        for idx, tr in enumerate(tr_list[:3]):
+            cells = direct_cells(tr)
+            candidate = [normalize_header(cell.get_text(" ", strip=True)) for cell in cells]
+            header_text = " ".join(candidate)
+            citation_match = "citaci" in header_text or "invit" in header_text
+            result_match = "resultado" in header_text or "materia_tratada" in header_text or "acuerdos" in header_text
+            if (layer == "citations" and citation_match) or (layer == "results" and result_match):
+                header_row_index = idx
+                headers = candidate
+                break
+        if header_row_index is None:
             continue
 
+        diagnostics["matching_tables"] += 1
         date_context = nearest_date(table)
-        for tr in tr_list[1:]:
-            cells = [clean(cell.get_text(" ", strip=True)) for cell in tr.find_all("td")]
+        for tr in tr_list[header_row_index + 1:]:
+            cell_tags = direct_cells(tr, ("td",))
+            cells = [clean(cell.get_text(" ", strip=True)) for cell in cell_tags]
             if not cells or not any(cells):
                 continue
-            row = row_to_dict(cells, headers, date_context)
-            # Avoid navigation/filter rows accidentally captured as data.
+            if len(cells) > max(6, len(headers) + 1):
+                diagnostics["wide_rows_skipped"] += 1
+                continue
             substantive_text = clean(" ".join(cells))
             if len(substantive_text) < 12:
                 continue
-            rows.append(row)
-    return rows[:MAX_ROWS_PER_LAYER]
+            signature = f"{date_context}|{substantive_text}"
+            if signature in seen_signatures:
+                diagnostics["duplicate_rows_skipped"] += 1
+                continue
+            seen_signatures.add(signature)
+            rows.append(row_to_dict(cells, headers, date_context))
+
+    return rows[:MAX_ROWS_PER_LAYER], diagnostics
 
 
 def parse_layer(session: requests.Session, url: str, layer: str) -> dict:
@@ -110,12 +157,15 @@ def parse_layer(session: requests.Session, url: str, layer: str) -> dict:
             "url": url,
             "rows": [],
             "page_period": {},
+            "diagnostics": {},
         }
+    rows, diagnostics = parse_tables(soup, layer)
     return {
         "status": "retrieved",
         "url": url,
-        "rows": parse_tables(soup, layer),
+        "rows": rows,
         "page_period": selected_period(soup),
+        "diagnostics": diagnostics,
     }
 
 
@@ -167,14 +217,14 @@ def main() -> None:
 
     now = datetime.now(TZ)
     payload = {
-        "schema_version": "commission-activity-web-v0.1",
+        "schema_version": "commission-activity-web-v0.2",
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
         "directory_schema": directory.get("schema_version"),
         "source": {
             "name": "Cámara de Diputadas y Diputados de Chile · fichas institucionales de comisión",
             "layers": ["Citaciones", "Resultados"],
-            "method": "HTML institucional de cada prmID; vista devuelta por defecto al momento de extracción",
+            "method": "HTML institucional de cada prmID; solo tablas principales, excluyendo subtablas anidadas",
         },
         "counts": {
             "commissions": n,
@@ -188,13 +238,14 @@ def main() -> None:
             "citations_coverage": citation_coverage,
             "results_coverage": result_coverage,
             "passed": True,
+            "content_rule": "Una fila retenida corresponde a una fila principal de la tabla institucional; las subtablas de asuntos no se convierten en eventos independientes.",
         },
         "commissions": activity,
         "scope_note": (
             "Citaciones describe asuntos convocados; Resultados describe materias tratadas o acuerdos registrados. "
-            "No se tratan como equivalentes. Este snapshot conserva solo las primeras filas que devuelve por defecto cada ficha institucional "
-            "y no pretende reconstruir todavía el historial completo de sesiones de la comisión. Una lista vacía significa que esa vista no devolvió filas, "
-            "no que la comisión carezca de actividad."
+            "No se tratan como equivalentes. Este snapshot conserva solo las primeras filas principales que devuelve cada ficha institucional "
+            "y no pretende reconstruir todavía el historial completo de sesiones. Los detalles de varios asuntos dentro de una misma sesión pueden quedar "
+            "concatenados dentro de la celda institucional correspondiente. Una lista vacía significa que esa vista no devolvió filas, no ausencia sustantiva de actividad."
         ),
     }
 
