@@ -1,0 +1,65 @@
+{
+  "schema_version": "commissions-v0.1",
+  "generated_at": "2026-09-03T10:12:24.170091-04:00",
+  "timezone": "America/Santiago",
+  "source": {
+    "name": "Cámara de Diputadas y Diputados de Chile · Open Data",
+    "service": "WSComision.retornarComisionesVigentes",
+    "url": "https://opendata.camara.cl/camaradiputados/pages/comision/retornarComisionesVigentes.aspx"
+  },
+  "counts": {
+    "commissions": 2,
+    "with_members": 0,
+    "with_president": 2,
+    "with_sessions_embedded": 0
+  },
+  "commissions": [
+    {
+      "id": "411",
+      "number": "10",
+      "name": "Salud",
+      "web_name": "Salud",
+      "alias": "Salud",
+      "email": "saludcam@congreso.cl",
+      "phone": "+56-32-505520",
+      "start": "2022-03-25T10:15:01-03:00",
+      "constitution_date": "2022-03-14T10:15:01-03:00",
+      "end": "",
+      "state": "",
+      "state_code": "",
+      "type": "Permanente",
+      "type_code": "1",
+      "president": {
+        "id": "1070",
+        "name": "Patricio Rosas Barrientos",
+        "chamber": "Presidente"
+      },
+      "members": [],
+      "sessions": []
+    },
+    {
+      "id": "544",
+      "number": "25",
+      "name": "Ética y Transparencia",
+      "web_name": "Ética y Transparencia",
+      "alias": "Ética y Transparencia",
+      "email": "tgarrido@congreso.cl",
+      "phone": "+56-32-50",
+      "start": "2022-03-14T10:15:01-03:00",
+      "constitution_date": "2022-03-14T10:15:01-03:00",
+      "end": "",
+      "state": "",
+      "state_code": "",
+      "type": "Permanente",
+      "type_code": "1",
+      "president": {
+        "id": "1112",
+        "name": "Ana María Bravo Castro",
+        "chamber": "Presidente"
+      },
+      "members": [],
+      "sessions": []
+    }
+  ],
+  "scope_note": "La ficha reproduce campos entregados por el servicio oficial de comisiones vigentes. Una colección vacía significa que el método consultado no devolvió esos elementos; no se interpreta como ausencia sustantiva."
+}
