@@ -11,7 +11,8 @@ AGGREGATE = OUT / "member_modal_agreement_loo.csv"
 VOTES = OUT / "member_votes_enriched.csv"
 GROUPS = OUT / "group_rollcall_behavior.csv"
 PUBLIC_JS = ROOT / "assets" / "js" / "modal_agreement.js"
-PUBLIC_DETAILS = ROOT / "assets" / "data" / "modal_agreement_details.json"
+PUBLIC_DETAILS_DIR = ROOT / "assets" / "data" / "modal_agreement"
+LEGACY_PUBLIC_DETAILS = ROOT / "assets" / "data" / "modal_agreement_details.json"
 DIAGNOSTICS = OUT / "member_modal_agreement_public_diagnostics.json"
 
 PUBLIC_SCOPE = "minority_ge_10"
@@ -164,6 +165,7 @@ def main() -> None:
             "chamberMinorityThreshold": PUBLIC_THRESHOLD,
             "minPublicComparisons": MIN_PUBLIC_COMPARISONS,
             "method": "leave-one-out modal agreement",
+            "detailPathTemplate": "assets/data/modal_agreement/{id}.json",
             "note": (
                 "El voto de la persona se retira antes de calcular la moda de sus pares. "
                 "Solo se comparan Afirmativo, En Contra y Abstención cuando hay al menos dos decisiones de pares y moda única."
@@ -180,11 +182,27 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    PUBLIC_DETAILS.parent.mkdir(parents=True, exist_ok=True)
-    PUBLIC_DETAILS.write_text(
-        json.dumps({"members": details}, ensure_ascii=False, separators=(",", ":")) + "\n",
-        encoding="utf-8",
-    )
+    PUBLIC_DETAILS_DIR.mkdir(parents=True, exist_ok=True)
+    expected_files = {f"{deputy_id}.json" for deputy_id in all_ids}
+    for existing in PUBLIC_DETAILS_DIR.glob("*.json"):
+        if existing.name not in expected_files:
+            existing.unlink()
+
+    detail_file_sizes = []
+    for deputy_id in all_ids:
+        detail_path = PUBLIC_DETAILS_DIR / f"{deputy_id}.json"
+        detail_path.write_text(
+            json.dumps({
+                "id": deputy_id,
+                "party": details[deputy_id]["party"],
+                "caucus": details[deputy_id]["caucus"],
+            }, ensure_ascii=False, separators=(",", ":")) + "\n",
+            encoding="utf-8",
+        )
+        detail_file_sizes.append(detail_path.stat().st_size)
+
+    if LEGACY_PUBLIC_DETAILS.exists():
+        LEGACY_PUBLIC_DETAILS.unlink()
 
     expected_party = sum(
         int(row["comparisons"])
@@ -211,10 +229,17 @@ def main() -> None:
             "caucus": expected_caucus,
         },
         "generated_detail_rows": detail_counts,
+        "detail_files": len(detail_file_sizes),
+        "detail_file_size_bytes": {
+            "min": min(detail_file_sizes) if detail_file_sizes else 0,
+            "max": max(detail_file_sizes) if detail_file_sizes else 0,
+            "total": sum(detail_file_sizes),
+        },
+        "legacy_monolithic_detail_removed": not LEGACY_PUBLIC_DETAILS.exists(),
         "lookup_missing": 0,
         "method_note": (
             "Activo público del corte 10%; los porcentajes solo se muestran si hay al menos 20 comparaciones. "
-            "Las filas de detalle conservan vote_id, grupo vigente, opción individual, moda leave-one-out y coincidencia/divergencia."
+            "La evidencia se fragmenta por parlamentario para evitar descargar el historial completo de la Cámara."
         ),
     }
     DIAGNOSTICS.write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -225,6 +250,8 @@ def main() -> None:
         raise RuntimeError(f"Detalle partido no reproduce agregados: {detail_counts['party']}/{expected_party}")
     if detail_counts["caucus"] != expected_caucus:
         raise RuntimeError(f"Detalle bancada no reproduce agregados: {detail_counts['caucus']}/{expected_caucus}")
+    if len(detail_file_sizes) != len(all_ids):
+        raise RuntimeError("No se generó un archivo de evidencia por integrante")
 
     print(json.dumps(diagnostics, ensure_ascii=False, indent=2))
 
