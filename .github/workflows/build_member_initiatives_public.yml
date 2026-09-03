@@ -1,0 +1,57 @@
+name: Build public member initiatives
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/build_member_initiatives_public.py"
+      - "data/legislative/2026/bill_authors.csv"
+      - "data/legislative/2026/projects.csv"
+      - "data/legislative/2026/coauthorship_nodes.csv"
+      - "assets/js/profiles.js"
+      - ".github/workflows/build_member_initiatives_public.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-member-initiatives
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Align with latest main
+        run: git pull --ff-only origin main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build public member initiatives
+        run: python scripts/build_member_initiatives_public.py
+
+      - name: Persist public member initiatives
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A assets/js/initiatives.js \
+                     assets/data/initiatives \
+                     data/legislative/2026/member_initiatives_summary.csv \
+                     data/legislative/2026/member_initiatives_public_diagnostics.json
+          if git diff --cached --quiet; then
+            echo "No initiative changes"
+          else
+            git commit -m "Actualiza activos públicos de iniciativa legislativa"
+            git pull --rebase origin main
+            git push origin main
+          fi
