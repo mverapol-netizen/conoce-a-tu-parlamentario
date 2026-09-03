@@ -48,14 +48,12 @@ def list_commissions(session: requests.Session) -> list[dict]:
     soup = fetch(session, LIST_URL)
     found: dict[str, dict] = {}
 
-    # Prefer table rows, because the commission name and ordinal number live together.
     for row in soup.find_all("tr"):
         cells = row.find_all(["td", "th"])
         if len(cells) < 2:
             continue
-        anchors = row.find_all("a", href=True)
         candidates = []
-        for anchor in anchors:
+        for anchor in row.find_all("a", href=True):
             cid = commission_id_from_href(anchor.get("href", ""))
             text = clean(anchor.get_text(" ", strip=True))
             if cid and text and text.lower() not in GENERIC_LINK_TEXT:
@@ -80,7 +78,6 @@ def list_commissions(session: requests.Session) -> list[dict]:
             "results_url": f"{DETAIL_BASE}resultados.aspx?prmID={cid}",
         }
 
-    # Fallback in case the site markup changes and the link leaves the table cell.
     if len(found) < MIN_EXPECTED_COMMISSION_COUNT:
         for anchor in soup.find_all("a", href=True):
             cid = commission_id_from_href(anchor.get("href", ""))
@@ -117,21 +114,9 @@ def parse_member_id(href: str) -> str:
     return ""
 
 
-def enrich_members(session: requests.Session, commission: dict) -> dict:
-    try:
-        soup = fetch(session, commission["members_url"])
-    except requests.RequestException as exc:
-        commission["members_status"] = f"unavailable:{type(exc).__name__}"
-        commission["members"] = []
-        return commission
-
-    page_text = clean(soup.get_text(" ", strip=True))
-    type_match = re.search(r"Tipo de Comisión:\s*([^|]+?)(?:Integrantes|Sesiones|Proyectos de Ley|$)", page_text, re.IGNORECASE)
-    if type_match:
-        commission["type"] = clean(type_match.group(1))[:120]
-
+def extract_member_links(scope) -> dict[str, dict]:
     members: dict[str, dict] = {}
-    for anchor in soup.find_all("a", href=True):
+    for anchor in scope.find_all("a", href=True):
         href = anchor.get("href", "")
         full = urljoin("https://www.camara.cl", href)
         if "/diputados/detalle/" not in full.lower():
@@ -146,9 +131,47 @@ def enrich_members(session: requests.Session, commission: dict) -> dict:
             "name": name,
             "profile_url": full,
         }
+    return members
+
+
+def enrich_members(session: requests.Session, commission: dict) -> dict:
+    try:
+        soup = fetch(session, commission["members_url"])
+    except requests.RequestException as exc:
+        commission["members_status"] = f"unavailable:{type(exc).__name__}"
+        commission["members"] = []
+        return commission
+
+    page_text = clean(soup.get_text(" ", strip=True))
+    type_match = re.search(r"Tipo de Comisión:\s*([^|]+?)(?:Integrantes|Sesiones|Proyectos de Ley|$)", page_text, re.IGNORECASE)
+    if type_match:
+        commission["type"] = clean(type_match.group(1))[:120]
+
+    # Global headers may contain links to deputies who are not commission members.
+    # Therefore choose the table with the densest cluster of deputy-profile links.
+    table_candidates: list[tuple[int, dict[str, dict]]] = []
+    for table in soup.find_all("table"):
+        members = extract_member_links(table)
+        if members:
+            table_candidates.append((len(members), members))
+
+    if table_candidates:
+        _, members = max(table_candidates, key=lambda item: item[0])
+        extraction_method = "member_table"
+    else:
+        broad = extract_member_links(soup)
+        # Fallback removes navigation/header links by preferring the honorific format
+        # used by the institutional integrantes list when it is present.
+        honorific = {
+            key: value for key, value in broad.items()
+            if re.match(r"^(Sr\.|Sra\.)\s", value["name"])
+        }
+        members = honorific or broad
+        extraction_method = "page_fallback"
 
     commission["members"] = sorted(members.values(), key=lambda row: row["name"])
     commission["members_status"] = "retrieved" if members else "not_returned_by_page"
+    commission["members_extraction"] = extraction_method
     return commission
 
 
@@ -169,7 +192,7 @@ def main() -> None:
 
     enriched = [enrich_members(session, commission) for commission in commissions]
     payload = {
-        "schema_version": "commissions-web-v0.3",
+        "schema_version": "commissions-web-v0.4",
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
         "source": {
@@ -181,6 +204,7 @@ def main() -> None:
             "commissions": len(enriched),
             "with_members_retrieved": sum(bool(row.get("members")) for row in enriched),
             "member_rows": sum(len(row.get("members", [])) for row in enriched),
+            "member_table_method": sum(row.get("members_extraction") == "member_table" for row in enriched),
         },
         "commissions": enriched,
         "quality_gate": {
@@ -190,7 +214,7 @@ def main() -> None:
         },
         "scope_note": (
             "El directorio describe comisiones permanentes visibles en la página institucional actual. "
-            "Los integrantes se recuperan desde la ficha oficial cuando el HTML los expone; una lista vacía no se interpreta como ausencia sustantiva. "
+            "Los integrantes se recuperan desde la tabla de la ficha oficial cuando está disponible; una lista vacía no se interpreta como ausencia sustantiva. "
             "Comisiones investigadoras, unidas, mixtas u otras familias requieren capas separadas."
         ),
     }
@@ -200,7 +224,8 @@ def main() -> None:
     print(
         f"Directorio institucional: comisiones={len(enriched)} | "
         f"con integrantes={payload['counts']['with_members_retrieved']} | "
-        f"filas integrantes={payload['counts']['member_rows']}"
+        f"filas integrantes={payload['counts']['member_rows']} | "
+        f"tabla={payload['counts']['member_table_method']}"
     )
 
 
