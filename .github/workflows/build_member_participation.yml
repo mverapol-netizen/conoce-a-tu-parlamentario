@@ -8,6 +8,7 @@ on:
       - "data/legislative/2026/member_votes.csv"
       - "data/legislative/2026/rollcalls.csv"
       - "data/legislative/2026/projects.csv"
+      - "data/legislative/2026/topics/rollcall_inherited_topic_final.csv"
       - ".github/workflows/build_member_participation.yml"
 
 permissions:
