@@ -45,11 +45,32 @@ def session_row(node) -> dict:
     }
 
 
+def current_legislature() -> dict:
+    root = get_xml("WSLegislativo", "retornarLegislaturaActual")
+    legislature_id = child_text(root, "Id")
+    if not legislature_id:
+        raise RuntimeError("retornarLegislaturaActual no devolvió Id")
+    legislature_type, type_code = enum_value(child(root, "Tipo"))
+    return {
+        "id": legislature_id,
+        "number": child_text(root, "Numero"),
+        "start": parse_dt(child_text(root, "FechaInicio")).isoformat() if parse_dt(child_text(root, "FechaInicio")) else "",
+        "end": parse_dt(child_text(root, "FechaTermino")).isoformat() if parse_dt(child_text(root, "FechaTermino")) else "",
+        "type": legislature_type,
+        "type_code": type_code,
+    }
+
+
 def main() -> None:
     now = datetime.now(TZ)
     today = now.date()
-    root = get_xml("WSSala", "retornarSesionesXAnno", {"prmAnno": today.year})
-    sessions = [session_row(node) for node in descendants(root, "SesionSala")]
+    legislature = current_legislature()
+    root = get_xml(
+        "WSSala",
+        "retornarSesionesXLegislatura",
+        {"prmLegislaturaId": legislature["id"]},
+    )
+    sessions = [session_row(node) for node in descendants(root, "Sesion")]
     sessions = [row for row in sessions if row["session_id"] and row["local_date"]]
     sessions.sort(key=lambda row: (row["start"], int(row["number"] or 0)))
 
@@ -65,18 +86,21 @@ def main() -> None:
     recent = [row for row in sessions if row["local_date"] < today.isoformat()][-4:]
 
     payload = {
-        "schema_version": "sala-agenda-v0.1",
+        "schema_version": "sala-agenda-v0.2",
         "source": {
             "name": "Cámara de Diputadas y Diputados de Chile · Open Data",
-            "service": "WSSala.retornarSesionesXAnno",
-            "url": "https://opendata.camara.cl/camaradiputados/pages/sala/retornarSesionesXAnno.aspx",
+            "services": [
+                "WSLegislativo.retornarLegislaturaActual",
+                "WSSala.retornarSesionesXLegislatura",
+            ],
+            "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura",
         },
         "generated_at": now.isoformat(),
         "timezone": "America/Santiago",
         "local_date": today.isoformat(),
-        "year": today.year,
+        "legislature": legislature,
         "counts": {
-            "sessions_returned_year": len(sessions),
+            "sessions_returned_legislature": len(sessions),
             "today": len(today_rows),
             "upcoming_shown": len(upcoming),
             "recent_shown": len(recent),
@@ -86,14 +110,17 @@ def main() -> None:
         "recent": recent,
         "window": window,
         "scope_note": (
-            "Este snapshot describe sesiones de Sala registradas por el servicio oficial. "
+            "Este snapshot describe sesiones de Sala registradas por el servicio oficial para la legislatura actual. "
             "No equivale a la tabla del Orden del Día ni afirma qué asuntos serán efectivamente votados."
         ),
     }
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Snapshot Sala: {OUT} | hoy={len(today_rows)} | próximas={len(upcoming)}")
+    print(
+        f"Legislatura {legislature['id']} N° {legislature['number']} | "
+        f"sesiones={len(sessions)} | hoy={len(today_rows)} | próximas={len(upcoming)}"
+    )
 
 
 if __name__ == "__main__":
