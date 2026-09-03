@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "legislative" / "2026"
 VOTES = OUT / "member_votes_enriched.csv"
 GROUPS = OUT / "group_rollcall_behavior.csv"
+INCLUSIVE = OUT / "member_modal_agreement.csv"
 OUTPUT = OUT / "member_modal_agreement_loo.csv"
 DIAGNOSTICS = OUT / "member_modal_agreement_loo_diagnostics.json"
 
@@ -85,6 +86,7 @@ def leave_one_out_mode(group: dict, member_option: str) -> tuple[str, str]:
 def main() -> None:
     votes = read_csv(VOTES)
     groups = read_csv(GROUPS)
+    inclusive_rows = read_csv(INCLUSIVE)
     if not votes or not groups:
         raise RuntimeError("Las tablas de entrada están vacías")
 
@@ -179,6 +181,10 @@ def main() -> None:
         (row["diputado_id"], row["group_type"], row["scope"]): row
         for row in rows_out
     }
+    inclusive_lookup = {
+        (row["diputado_id"], row["group_type"], row["scope"]): row
+        for row in inclusive_rows
+    }
 
     scope_diagnostics = {}
     for group_type in ("party", "caucus"):
@@ -236,6 +242,39 @@ def main() -> None:
                 "largest_changes": largest[:10],
             }
 
+    loo_effect = {}
+    for group_type in ("party", "caucus"):
+        for scope, _threshold in SCOPES:
+            diffs = []
+            abs_diffs = []
+            lost_comparability = []
+            for deputy_id in by_member:
+                loo = lookup.get((deputy_id, group_type, scope))
+                inclusive = inclusive_lookup.get((deputy_id, group_type, scope))
+                if not loo or not inclusive:
+                    continue
+                if inclusive.get("agreement_pct") and not loo.get("agreement_pct"):
+                    lost_comparability.append({
+                        "diputado_id": deputy_id,
+                        "diputado_nombre": inclusive["diputado_nombre"],
+                        "inclusive_comparisons": int(inclusive["comparisons"]),
+                    })
+                    continue
+                if not loo.get("agreement_pct") or not inclusive.get("agreement_pct"):
+                    continue
+                diff = float(loo["agreement_pct"]) - float(inclusive["agreement_pct"])
+                diffs.append(diff)
+                abs_diffs.append(abs(diff))
+            loo_effect[f"{group_type}:{scope}"] = {
+                "members_compared": len(diffs),
+                "median_difference_pp_loo_minus_inclusive": round(median(diffs), 4) if diffs else None,
+                "median_abs_difference_pp": round(median(abs_diffs), 4) if abs_diffs else None,
+                "p90_abs_difference_pp": round(quantile(abs_diffs, 0.90), 4) if abs_diffs else None,
+                "max_abs_difference_pp": round(max(abs_diffs), 4) if abs_diffs else None,
+                "members_losing_comparability": len(lost_comparability),
+                "lost_comparability_examples": lost_comparability[:20],
+            }
+
     diagnostics = {
         "input_enriched_vote_rows": len(votes),
         "historical_members_observed": len(by_member),
@@ -243,6 +282,7 @@ def main() -> None:
         "lookup_missing": len(lookup_missing),
         "scope_diagnostics": scope_diagnostics,
         "threshold_sensitivity": sensitivity,
+        "leave_one_out_effect_vs_inclusive": loo_effect,
         "exclusion_reasons": dict(sorted(exclusion_reasons.items())),
         "method_note": (
             "Coincidencia modal leave-one-out: el voto de la persona se elimina antes de calcular la posición más frecuente de su grupo. "
