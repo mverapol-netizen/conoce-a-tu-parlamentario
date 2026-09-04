@@ -1,6 +1,6 @@
 {
-  "corpus_rows": 496,
-  "usable_rows": 495,
+  "corpus_rows": 498,
+  "usable_rows": 497,
   "sample_rows": 80,
   "parliamentary_sample": 50,
   "executive_sample": 30,
@@ -8,7 +8,7 @@
   "suffix_is_sampling_only_not_label_signal": true,
   "sample_suffix_distribution": {
     "01": 2,
-    "02": 2,
+    "02": 3,
     "03": 3,
     "04": 5,
     "05": 4,
@@ -16,7 +16,7 @@
     "07": 5,
     "08": 4,
     "09": 2,
-    "10": 4,
+    "10": 3,
     "11": 2,
     "12": 2,
     "13": 4,
@@ -67,13 +67,14 @@
     "37": 2
   },
   "executive_suffix_distribution": {
+    "02": 1,
     "03": 1,
     "04": 3,
     "05": 3,
     "06": 1,
     "07": 3,
     "08": 2,
-    "10": 4,
+    "10": 3,
     "13": 2,
     "14": 1,
     "15": 1,
