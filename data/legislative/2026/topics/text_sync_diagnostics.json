@@ -1,17 +1,17 @@
 {
-  "projects": 496,
-  "corpus_rows": 496,
-  "refreshed_this_run": 0,
+  "projects": 498,
+  "corpus_rows": 498,
+  "refreshed_this_run": 2,
   "reused_this_run": 495,
   "no_candidate_documents": [],
   "quality": {
     "utilizable": 9,
-    "rica": 486,
+    "rica": 488,
     "sin_texto": 1
   },
   "formats": {
-    "application/pdf": 459,
-    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 36,
+    "application/pdf": 460,
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 37,
     "application/msword": 1
   },
   "by_origin": {
@@ -21,15 +21,15 @@
       "rich_or_usable": 451
     },
     "ejecutivo": {
-      "projects": 44,
-      "texts": 44,
-      "rich_or_usable": 44
+      "projects": 46,
+      "texts": 46,
+      "rich_or_usable": 46
     }
   },
   "errors": [
     {
       "boletin": "18459-05",
-      "error": "Command '['antiword', '/tmp/tmpalbqg1gv.doc']' returned non-zero exit status 1."
+      "error": "Command '['antiword', '/tmp/tmpi4lzt4t8.doc']' returned non-zero exit status 1."
     }
   ]
 }
