@@ -1,12 +1,12 @@
 {
-  "generated_for": "2026-09-02",
+  "generated_for": "2026-09-04",
   "status": "pass",
   "projects": {
-    "count": 497,
-    "events": 947,
-    "projects_with_events": 497,
+    "count": 498,
+    "events": 957,
+    "projects_with_events": 498,
     "event_coverage_pct": 100.0,
-    "commission_events": 160,
+    "commission_events": 162,
     "subject_rows": 0,
     "orphan_event_bills": []
   },
@@ -32,15 +32,15 @@
     }
   },
   "floor_votes": {
-    "rollcalls": 364,
-    "member_vote_rows": 56420,
+    "rollcalls": 366,
+    "member_vote_rows": 56730,
     "min_member_rows_per_rollcall": 155,
     "max_member_rows_per_rollcall": 155,
     "incomplete_rollcalls": {},
     "vote_option_counts": {
-      "Afirmativo": 34491,
+      "Afirmativo": 34769,
       "Abstención": 1979,
-      "No Vota": 3865,
+      "No Vota": 3897,
       "En Contra": 16061,
       "Dispensado": 24
     }
