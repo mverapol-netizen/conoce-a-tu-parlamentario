@@ -1,13 +1,13 @@
 {
-  "projects": 497,
-  "classified": 497,
-  "auto_accepted": 438,
+  "projects": 498,
+  "classified": 498,
+  "auto_accepted": 439,
   "review_queue": 59,
-  "review_rate": 0.1187,
-  "mean_confidence": 0.9295,
+  "review_rate": 0.1185,
+  "mean_confidence": 0.9296,
   "methods": {
     "hibrido_institucional_texto": 145,
-    "institucional_destinacion": 336,
+    "institucional_destinacion": 337,
     "institucional_trayectoria": 16
   },
   "primary_topics": {
@@ -20,7 +20,7 @@
     "Educación": 26,
     "Economía, comercio y consumidores": 25,
     "Transportes y telecomunicaciones": 25,
-    "Defensa": 15,
+    "Defensa": 16,
     "Relaciones exteriores": 15,
     "Minería y energía": 14,
     "Personas mayores y discapacidad": 12,
