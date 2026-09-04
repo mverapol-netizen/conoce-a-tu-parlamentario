@@ -1,9 +1,9 @@
 {
-  "generated_for": "2026-09-02",
+  "generated_for": "2026-09-04",
   "deputies": 155,
-  "history_intervals": 159,
+  "history_intervals": 161,
   "documented_manual_events": 4,
-  "detected_weekly_snapshot_events": 0,
+  "detected_weekly_snapshot_events": 2,
   "party_term_start_high_confidence": 26,
   "party_term_start_medium_confidence": 129,
   "party_term_start_provisional": 0,
@@ -12,31 +12,21 @@
   "caucus_term_start_provisional": 0,
   "party_interval_confidence_counts": {
     "high": 30,
-    "medium": 129
+    "medium": 131
   },
   "caucus_interval_confidence_counts": {
     "medium": 25,
-    "high": 134
+    "high": 136
   },
   "overall_interval_confidence_counts": {
-    "medium": 153,
+    "medium": 155,
     "high": 6
   },
   "official_snapshot_conflicts": [
     {
-      "deputy_id": "1054",
-      "deputy_name": "Francesca Muñoz González",
-      "detail": "party: Cámara=Partido Social Cristiano / historial=Partido Cristiano de Chile"
-    },
-    {
       "deputy_id": "1102",
       "deputy_name": "Roberto Arroyo Muñoz",
       "detail": "party: Cámara=Independientes / historial=Partido de la Gente"
-    },
-    {
-      "deputy_id": "1119",
-      "deputy_name": "Sara Concha Smith",
-      "detail": "party: Cámara=Partido Social Cristiano / historial=Partido Cristiano de Chile"
     },
     {
       "deputy_id": "1200",

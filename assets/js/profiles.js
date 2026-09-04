@@ -14,7 +14,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Luis Malla Valenzuela": {
     "officialName": "Luis Malla Valenzuela",
@@ -30,7 +30,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Liberal de Chile",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Stephanie Jéldrez Ortíz": {
     "officialName": "Stephanie Jéldrez Ortiz",
@@ -46,7 +46,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Álvaro Jofré Cáceres": {
     "officialName": "Álvaro Jofré Cáceres",
@@ -62,7 +62,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carlos Carvajal Gallardo": {
     "officialName": "Carlos Carvajal Gallardo",
@@ -78,7 +78,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ximena Naranjo Pinto": {
     "officialName": "Ximena Naranjo Pinto",
@@ -94,7 +94,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carlo Arqueros Pizarro": {
     "officialName": "Carlo Arqueros Pizarro",
@@ -110,7 +110,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Fabián Ossandón Briceño": {
     "officialName": "Fabián Ossandón Briceño",
@@ -126,7 +126,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jaime Araya Guerrero": {
     "officialName": "Jaime Araya Guerrero",
@@ -142,7 +142,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Marcela Hernando Pérez": {
     "officialName": "Marcela Hernando Pérez",
@@ -158,7 +158,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Radical de Chile",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Sebastián Videla Castillo": {
     "officialName": "Sebastián Videla Castillo",
@@ -174,7 +174,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Socialista, Liberal, Radical e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristián Tapia Ramos": {
     "officialName": "Cristián Tapia Ramos",
@@ -190,7 +190,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ignacio Urcullú Clement-Lund": {
     "officialName": "Ignacio Urcullú Clèment-Lund",
@@ -206,7 +206,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jaime Mulet Martínez": {
     "officialName": "Jaime Mulet Martínez",
@@ -222,7 +222,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Federación Regionalista Verde Social",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Juan Santana Castillo": {
     "officialName": "Juan Santana Castillo",
@@ -238,7 +238,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Paula Olmos Contreras": {
     "officialName": "Paula Olmos Contreras",
@@ -254,7 +254,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Bernardo Salinas Maya": {
     "officialName": "Bernardo Salinas Maya",
@@ -270,7 +270,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Comité Comunista e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carolina Tello Rojas": {
     "officialName": "Carolina Tello Rojas",
@@ -286,7 +286,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Daniel Manouchehri Lobos": {
     "officialName": "Daniel Manouchehri Lobos",
@@ -302,7 +302,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Eileen Urqueta Rojas": {
     "officialName": "Eileen Urqueta Rojas",
@@ -318,7 +318,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Erich Grohs Marín": {
     "officialName": "Erich Grohs Marín",
@@ -334,7 +334,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Marco Sulantay Olivares": {
     "officialName": "Marco Antonio Sulantay Olivares",
@@ -350,7 +350,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Nathalie Castillo Rojas": {
     "officialName": "Nathalie Castillo Rojas",
@@ -366,7 +366,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Benjamín Lorca Inzunza": {
     "officialName": "Benjamín Lorca Inzunza",
@@ -382,7 +382,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Chiara Barchiesi Chávez": {
     "officialName": "Chiara Barchiesi Chávez",
@@ -398,7 +398,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristian Mella Andaur": {
     "officialName": "Cristian Mella Andaur",
@@ -414,7 +414,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Javier Olivares Avendaño": {
     "officialName": "Javier Olivares Avendaño",
@@ -430,7 +430,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Luis Pardo Sáinz": {
     "officialName": "Luis Pardo Sáinz",
@@ -446,7 +446,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "María Francisca Bello Campos": {
     "officialName": "María Francisca Bello Campos",
@@ -462,7 +462,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Nelson Venegas Salazar": {
     "officialName": "Nelson Venegas Salazar",
@@ -478,7 +478,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Sofía González Cortés": {
     "officialName": "Sofía González Cortés",
@@ -494,7 +494,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Andrés Celis Montt": {
     "officialName": "Andrés Celis Montt",
@@ -510,7 +510,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Hotuiti Teao Drago": {
     "officialName": "Hotuiti Teao Drago",
@@ -526,7 +526,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jaime Bassa Mercado": {
     "officialName": "Jaime Bassa Mercado",
@@ -542,7 +542,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jorge Brito Hasbún": {
     "officialName": "Jorge Brito Hasbún",
@@ -558,7 +558,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Juan Marcelo Valenzuela Henríquez": {
     "officialName": "Juan Marcelo Valenzuela Henríquez",
@@ -574,7 +574,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Luis Alberto Cuello Peña y Lillo": {
     "officialName": "Luis Alberto Cuello Peña y Lillo",
@@ -590,7 +590,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Luis Fernando Sánchez Ossa": {
     "officialName": "Luis Sánchez Ossa",
@@ -606,7 +606,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Sebastián Zamora Soto": {
     "officialName": "Sebastián Zamora Soto",
@@ -622,7 +622,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Comité Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Agustín Matías Romero Leiva": {
     "officialName": "Agustín Romero Leiva",
@@ -638,7 +638,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristián Contreras Radovic": {
     "officialName": "Cristian Contreras Radovic",
@@ -654,7 +654,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Enrique Bassaletti Riess": {
     "officialName": "Enrique Bassaletti Riess",
@@ -670,7 +670,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Comité Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Gustavo Gatica Villarroel": {
     "officialName": "Gustavo Gatica Villarroel",
@@ -686,7 +686,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Comité Comunista e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Marcos Barraza Gómez": {
     "officialName": "Marcos Barraza Gómez",
@@ -702,7 +702,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Mario Olavarría Rodríguez": {
     "officialName": "Mario Olavarría Rodríguez",
@@ -718,7 +718,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Pier Karlezi Hazleby": {
     "officialName": "Pier Karlezi Hazleby",
@@ -734,7 +734,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Tatiana Urrutia Herrera": {
     "officialName": "Tatiana Urrutia Herrera",
@@ -750,7 +750,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Boris Barrera Moreno": {
     "officialName": "Boris Barrera Moreno",
@@ -766,7 +766,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carlos Cuadrado Prats": {
     "officialName": "Carlos Cuadrado Prats",
@@ -782,7 +782,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "César Valenzuela Maass": {
     "officialName": "César Valenzuela Maass",
@@ -798,7 +798,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Guillermo Ramírez Diez": {
     "officialName": "Guillermo Ramírez Diez",
@@ -814,7 +814,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Javiera Rodríguez Pascual": {
     "officialName": "Javiera Rodríguez Pascual",
@@ -830,7 +830,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "José Carlos Meza Pereira": {
     "officialName": "José Carlos Meza Pereira",
@@ -846,7 +846,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Tamara Ramírez Ramírez": {
     "officialName": "Tamara Ramírez Ramírez",
@@ -862,7 +862,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Emilia Schneider Videla": {
     "officialName": "Emilia Schneider Videla",
@@ -878,7 +878,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Francisco Orrego Gutiérrez": {
     "officialName": "Francisco Orrego Gutiérrez",
@@ -894,7 +894,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Gonzalo Winter Etcheberry": {
     "officialName": "Gonzalo Winter Etcheberry",
@@ -910,7 +910,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Hans Marowski Cuevas": {
     "officialName": "Hans Marowski Cuevas",
@@ -926,7 +926,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Irací Hassler Jacob": {
     "officialName": "Irací Hassler Jacob",
@@ -942,7 +942,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jorge Alessandri Vergara": {
     "officialName": "Jorge Alessandri Vergara",
@@ -958,7 +958,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "José Antonio Kast Adriasola": {
     "officialName": "José Antonio Kast Adriasola",
@@ -974,7 +974,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Lorena Fries Monleón": {
     "officialName": "Lorena Fries Monleón",
@@ -990,7 +990,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Catalina Del Real Mihovilovic": {
     "officialName": "Catalina Del Real Mihovilovic",
@@ -1006,7 +1006,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Claudia Mora Vega": {
     "officialName": "Claudia Mora Vega",
@@ -1022,7 +1022,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Constanza Hube Portus": {
     "officialName": "Constanza Hube Portus",
@@ -1038,7 +1038,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Constanza Schonhaut Soto": {
     "officialName": "Constanza Schonhaut Soto",
@@ -1054,7 +1054,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristián Araya Lerdo de Tejada": {
     "officialName": "Cristián Araya Lerdo de Tejada",
@@ -1070,7 +1070,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Diego Schalper Sepúlveda": {
     "officialName": "Diego Schalper Sepúlveda",
@@ -1086,7 +1086,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Álvaro Carter Fernández": {
     "officialName": "Álvaro Carter Fernández",
@@ -1102,7 +1102,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ana María Gazmuri Vieira": {
     "officialName": "Ana María Gazmuri Vieira",
@@ -1118,7 +1118,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Acción Humanista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Daniela Serrano Salazar": {
     "officialName": "Daniela Serrano Salazar",
@@ -1134,7 +1134,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Macarena Santelices Cañas": {
     "officialName": "Macarena Santelices Cañas",
@@ -1150,7 +1150,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Pamela Jiles Moreno": {
     "officialName": "Pamela Jiles Moreno",
@@ -1166,7 +1166,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ximena Ossandón Irarrázabal": {
     "officialName": "Ximena Ossandón Irarrázabal",
@@ -1182,7 +1182,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Zandra Parisi Fernández": {
     "officialName": "Zandra Parisi Fernández",
@@ -1198,7 +1198,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Eduardo Durán Salinas": {
     "officialName": "Eduardo Durán Salinas",
@@ -1214,7 +1214,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Felipe Ross Correa": {
     "officialName": "Felipe Ross Correa",
@@ -1230,7 +1230,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Gael Yeomans Araya": {
     "officialName": "Gael Yeomans Araya",
@@ -1246,7 +1246,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Lorena Pizarro Sierra": {
     "officialName": "Lorena Pizarro Sierra",
@@ -1262,7 +1262,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Valentina Becerra Peña": {
     "officialName": "Valentina Becerra Peña",
@@ -1278,7 +1278,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Diego Vergara Rodríguez": {
     "officialName": "Diego Vergara Rodríguez",
@@ -1294,7 +1294,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ignacio Achurra Díaz": {
     "officialName": "Ignacio Achurra Díaz",
@@ -1310,7 +1310,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jaime Coloma Álamos": {
     "officialName": "Jaime Coloma Álamos",
@@ -1326,7 +1326,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Juan Irarrázaval Rossel": {
     "officialName": "Juan Irarrázaval Rossel",
@@ -1342,7 +1342,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Marisela Santibáñez Novoa": {
     "officialName": "Marisela Santibáñez Novoa",
@@ -1358,7 +1358,7 @@ window.PROFILES = {
     "caucus": "Comité Comunista e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Comité Comunista e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Raúl Leiva Carvajal": {
     "officialName": "Raúl Leiva Carvajal",
@@ -1374,7 +1374,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Fernando Ugarte Tejeda": {
     "officialName": "Fernando Ugarte Tejeda",
@@ -1390,7 +1390,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Fernando Zamorano Peralta": {
     "officialName": "Fernando Zamorano Peralta",
@@ -1406,7 +1406,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Natalia Romero Talguia": {
     "officialName": "Natalia Romero Talguia",
@@ -1422,7 +1422,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Raúl Soto Mardones": {
     "officialName": "Raúl Soto Mardones",
@@ -1438,7 +1438,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Valentina Cáceres Monsalve": {
     "officialName": "Valentina Cáceres Monsálvez",
@@ -1454,7 +1454,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carolina Cucumides Calderón": {
     "officialName": "Carolina Cucumides Calderón",
@@ -1470,7 +1470,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Socialista, Liberal, Radical e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Félix Bugueño Sotelo": {
     "officialName": "Félix Bugueño Sotelo",
@@ -1486,7 +1486,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ricardo Neumann Bertin": {
     "officialName": "Ricardo Neumann Bertín",
@@ -1502,7 +1502,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Sebastián Cristoffanini Jaraquemada": {
     "officialName": "Sebastián Cristoffanini Jaraquemada",
@@ -1518,7 +1518,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Benjamín Moreno Bascur": {
     "officialName": "Benjamín Moreno Bascur",
@@ -1534,7 +1534,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Germán Verdugo Soto": {
     "officialName": "Germán Verdugo Soto",
@@ -1550,7 +1550,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Guillermo Valdés Carmona": {
     "officialName": "Guillermo Valdés Carmona",
@@ -1566,7 +1566,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Javier Muñoz Riquelme": {
     "officialName": "Javier Muñoz Riquelme",
@@ -1582,7 +1582,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Jorge Guzmán Zepeda": {
     "officialName": "Jorge Guzmán Zepeda",
@@ -1598,7 +1598,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Evolución Política",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Priscilla Castillo Gerli": {
     "officialName": "Priscilla Castillo Gerli",
@@ -1614,7 +1614,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Roberto Celedón Fernández": {
     "officialName": "Roberto Celedón Fernández",
@@ -1630,7 +1630,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Consuelo Veloso Ávila": {
     "officialName": "Consuelo Veloso Ávila",
@@ -1646,7 +1646,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristian Menchaca Pinochet": {
     "officialName": "Cristian Menchaca Pinochet",
@@ -1662,7 +1662,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Comité Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Daniel Bustos Leal": {
     "officialName": "Daniel Bustos Leal",
@@ -1678,7 +1678,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Rodrigo Ramírez Parra": {
     "officialName": "Rodrigo Ramírez Parra",
@@ -1694,7 +1694,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Renovación Nacional, Evopoli e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carlos Chandía Alarcón": {
     "officialName": "Carlos Chandía Alarcón",
@@ -1710,7 +1710,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristóbal Martínez Ramírez": {
     "officialName": "Cristóbal Martínez Ramírez",
@@ -1726,7 +1726,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Felipe Camaño Cárdenas": {
     "officialName": "Felipe Camaño Cárdenas",
@@ -1742,7 +1742,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Francisco Crisóstomo Llanos": {
     "officialName": "Francisco Crisóstomo Llanos",
@@ -1758,11 +1758,11 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Sara Concha Smith": {
     "officialName": "Sara Concha Smith",
-    "party": "Partido Social Cristiano",
+    "party": "Partido Cristiano de Chile",
     "district": 19,
     "profileUrl": "https://www.camara.cl/diputados/detalle/biografia.aspx?prmId=1119",
     "contactUrl": "https://www.camara.cl/diputados/detalle/biografia.aspx?prmId=1119",
@@ -1773,8 +1773,8 @@ window.PROFILES = {
     "region": "Ñuble",
     "caucus": "Por definir",
     "alignment": "oficialismo",
-    "affiliationLabel": "Partido Social Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "affiliationLabel": "Partido Cristiano de Chile",
+    "politicalUpdated": "2026-09-04"
   },
   "Álvaro Andrés Ortiz Vera": {
     "officialName": "Álvaro Ortiz Vera",
@@ -1790,11 +1790,11 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Francesca Muñoz González": {
     "officialName": "Francesca Muñoz González",
-    "party": "Partido Social Cristiano",
+    "party": "Partido Cristiano de Chile",
     "district": 20,
     "profileUrl": "https://www.camara.cl/diputados/detalle/biografia.aspx?prmId=1054",
     "contactUrl": "https://www.camara.cl/diputados/detalle/biografia.aspx?prmId=1054",
@@ -1805,8 +1805,8 @@ window.PROFILES = {
     "region": "Biobío",
     "caucus": "Por definir",
     "alignment": "oficialismo",
-    "affiliationLabel": "Partido Social Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "affiliationLabel": "Partido Cristiano de Chile",
+    "politicalUpdated": "2026-09-04"
   },
   "José Antonio Rivas Villalobos": {
     "officialName": "José Antonio Rivas Villalobos",
@@ -1822,7 +1822,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Marlene Pérez Cartes": {
     "officialName": "Marlene Pérez Cartes",
@@ -1838,7 +1838,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Patricio Briones Moller": {
     "officialName": "Patricio Briones Moller",
@@ -1854,7 +1854,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Paz Charpentier Rajcevich": {
     "officialName": "Paz Charpentier Rajcevich",
@@ -1870,7 +1870,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Roberto Arroyo Muñoz": {
     "officialName": "Roberto Arroyo Muñoz",
@@ -1886,7 +1886,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Comité Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Sergio Bobadilla Muñoz": {
     "officialName": "Sergio Bobadilla Muñoz",
@@ -1902,7 +1902,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristóbal Urruticoechea Ríos": {
     "officialName": "Cristóbal Urruticoechea Ríos",
@@ -1918,7 +1918,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Flor Weisse Novoa": {
     "officialName": "Flor Weisse Novoa",
@@ -1934,7 +1934,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Joanna Pérez Olea": {
     "officialName": "Joanna Pérez Olea",
@@ -1950,7 +1950,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Demócratas Chile",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Lilian Betancurt Delgado": {
     "officialName": "Lilian Betancurt Delgado",
@@ -1966,7 +1966,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Patricio Pinilla Valencia": {
     "officialName": "Patricio Pinilla Valencia",
@@ -1982,7 +1982,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Andrea Parra Sauterel": {
     "officialName": "Andrea Parra Sauterel",
@@ -1998,7 +1998,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Eduardo Cretton Rebolledo": {
     "officialName": "Eduardo Cretton Rebolledo",
@@ -2014,7 +2014,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Gloria Naveillan Arriagada": {
     "officialName": "Gloria Naveillan Arriagada",
@@ -2030,7 +2030,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Juan Beltrán Silva": {
     "officialName": "Juan Carlos Beltrán Silva",
@@ -2046,7 +2046,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Cristian Neira Martínez": {
     "officialName": "Cristian Neira Martínez",
@@ -2062,7 +2062,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Ericka Ñanco Vásquez": {
     "officialName": "Coca Ericka Ñanco Vásquez",
@@ -2078,7 +2078,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Flor Contreras Vivallo": {
     "officialName": "Flor Contreras Vivallo",
@@ -2094,7 +2094,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "José Montalva Feuerhake": {
     "officialName": "José Montalva Feuerhake",
@@ -2110,7 +2110,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Stephan Schubert Rubio": {
     "officialName": "Stephan Schubert Rubio",
@@ -2126,7 +2126,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Tomás Kast Sommerhoff": {
     "officialName": "Tomás Kast Sommerhoff",
@@ -2142,7 +2142,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Evolución Política",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Daniel Valenzuela Salazar": {
     "officialName": "Daniel Valenzuela Salazar",
@@ -2158,7 +2158,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Renovación Nacional, Evopoli e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Leandro Kunstmann Collado": {
     "officialName": "Leandro Kunstmann Collado",
@@ -2174,7 +2174,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Marcos Ilabaca Cerda": {
     "officialName": "Marcos Ilabaca Cerda",
@@ -2190,7 +2190,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Matías Fernández Hartwig": {
     "officialName": "Matías Fernández Hartwig",
@@ -2206,7 +2206,7 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Omar Sabat Guzmán": {
     "officialName": "Omar Sabat Guzmán",
@@ -2222,7 +2222,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Independiente en Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "René Manuel García García": {
     "officialName": "René Manuel García García",
@@ -2238,7 +2238,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Daniel Lilayu Vivanco": {
     "officialName": "Daniel Lilayu Vivanco",
@@ -2254,7 +2254,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Emilia Nuyado Ancapichún": {
     "officialName": "Emilia Nuyado Ancapichun",
@@ -2270,7 +2270,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Héctor Barría Angulo": {
     "officialName": "Héctor Barría Angulo",
@@ -2286,7 +2286,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Paulina Muñoz Minte": {
     "officialName": "Paulina Muñoz Minte",
@@ -2302,7 +2302,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Nacional Libertarios",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Alejandro Bernales Maldonado": {
     "officialName": "Alejandro Bernales Maldonado",
@@ -2318,7 +2318,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Liberal de Chile",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Alex Nahuelquín Nahuelquín": {
     "officialName": "Alex Nahuelquin Nahuelquin",
@@ -2334,7 +2334,7 @@ window.PROFILES = {
     "caucus": "Comité Partido de la Gente",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Claudia Reyes Larenas": {
     "officialName": "Claudia Reyes Larenas",
@@ -2350,7 +2350,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Héctor Ulloa Aguilera": {
     "officialName": "Héctor Ulloa Aguilera",
@@ -2366,7 +2366,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Mauro González Villaroel": {
     "officialName": "Mauro González Villarroel",
@@ -2382,7 +2382,7 @@ window.PROFILES = {
     "caucus": "Renovación Nacional, Evopoli e Independientes",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Alejandra Valdebenito Torres": {
     "officialName": "Alejandra Valdebenito Torres",
@@ -2398,7 +2398,7 @@ window.PROFILES = {
     "caucus": "Unión Demócrata Independiente",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Andrea Jacqueline Macías Palma": {
     "officialName": "Andrea Macías Palma",
@@ -2414,7 +2414,7 @@ window.PROFILES = {
     "caucus": "Socialista, Liberal, Radical e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "René Alinco Bustos": {
     "officialName": "René Alinco Bustos",
@@ -2430,7 +2430,7 @@ window.PROFILES = {
     "caucus": "Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Comité Democracia Cristiana, Federación Regionalista Verde Social e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Alejandro Riquelme Ducci": {
     "officialName": "Alejandro Riquelme Ducci",
@@ -2446,7 +2446,7 @@ window.PROFILES = {
     "caucus": "Comité Partido Republicano",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Carlos Bianchi Chelech": {
     "officialName": "Carlos Bianchi Chelech",
@@ -2462,7 +2462,7 @@ window.PROFILES = {
     "caucus": "Partido Por la Democracia e Independientes",
     "alignment": "oposicion",
     "affiliationLabel": "Independiente en Partido Por la Democracia e Independientes",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   },
   "Javiera Morales Alvarado": {
     "officialName": "Javiera Morales Alvarado",
@@ -2478,6 +2478,6 @@ window.PROFILES = {
     "caucus": "Frente Amplio",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-09-02"
+    "politicalUpdated": "2026-09-04"
   }
 };
