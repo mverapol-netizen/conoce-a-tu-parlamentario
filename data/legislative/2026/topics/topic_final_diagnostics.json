@@ -1,9 +1,9 @@
 {
-  "projects": 497,
+  "projects": 498,
   "automatic_review_queue_before": 59,
   "approved_model_overrides_available": 59,
   "model_overrides_applied": 59,
-  "final_accepted": 497,
+  "final_accepted": 498,
   "remaining_review_queue": 0,
   "remaining_review_rate": 0.0,
   "primary_topics_after_reviews": {
@@ -16,8 +16,8 @@
     "Economía, comercio y consumidores": 26,
     "Educación": 26,
     "Transportes y telecomunicaciones": 23,
+    "Defensa": 15,
     "Relaciones exteriores": 15,
-    "Defensa": 14,
     "Minería y energía": 14,
     "Personas mayores y discapacidad": 12,
     "Vivienda y territorio": 11,
