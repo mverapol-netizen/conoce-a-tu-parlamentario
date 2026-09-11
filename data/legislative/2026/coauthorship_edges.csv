@@ -1,76 +1,99 @@
 ﻿source_id,source_name,source_chamber,target_id,target_name,target_chamber,shared_bills,first_shared_bill_date,last_shared_bill_date
 1117,Iván Moreira Barros,Senador,1337,Paulina Núñez Urrutia,Senador,28,2026-03-24,2026-08-13
 1337,Paulina Núñez Urrutia,Senador,1339,Gastón Saavedra Chandía,Senador,19,2026-03-25,2026-08-13
+1330,Iván Flores García,Senador,1337,Paulina Núñez Urrutia,Senador,18,2026-03-25,2026-09-07
 1028,Eduardo Durán Salinas,Diputado,1059,Ximena Ossandón Irarrázabal,Diputado,17,2026-04-09,2026-08-10
-1330,Iván Flores García,Senador,1337,Paulina Núñez Urrutia,Senador,17,2026-03-25,2026-08-05
-1324,Karim Bianchi Retamales,Senador,1337,Paulina Núñez Urrutia,Senador,14,2026-04-08,2026-07-08
-1337,Paulina Núñez Urrutia,Senador,1450,Paulina Vodanovic Rojas,Senador,14,2026-04-08,2026-08-13
+1324,Karim Bianchi Retamales,Senador,1337,Paulina Núñez Urrutia,Senador,15,2026-04-08,2026-09-08
+1337,Paulina Núñez Urrutia,Senador,1450,Paulina Vodanovic Rojas,Senador,15,2026-04-08,2026-09-09
+1061,Andrea Parra Sauterel,Diputado,1195,Carlos Carvajal Gallardo,Diputado,14,2026-03-25,2026-08-17
+1061,Andrea Parra Sauterel,Diputado,1205,Carlos Cuadrado Prats,Diputado,13,2026-03-25,2026-08-17
+1061,Andrea Parra Sauterel,Diputado,1226,José Montalva Feuerhake,Diputado,13,2026-03-25,2026-08-17
+1110,Carlos Bianchi Chelech,Diputado,1195,Carlos Carvajal Gallardo,Diputado,13,2026-03-25,2026-08-17
+1195,Carlos Carvajal Gallardo,Diputado,1226,José Montalva Feuerhake,Diputado,13,2026-03-25,2026-08-17
+1178,Héctor Ulloa Aguilera,Diputado,1205,Carlos Cuadrado Prats,Diputado,13,2026-03-25,2026-08-17
 1157,Marlene Pérez Cartes,Diputado,1249,Omar Sabat Guzmán,Diputado,13,2026-04-20,2026-08-11
 1059,Ximena Ossandón Irarrázabal,Diputado,1075,Diego Schalper Sepúlveda,Diputado,13,2026-05-05,2026-08-10
 1013,Alejandro Bernales Maldonado,Diputado,1141,Luis Malla Valenzuela,Diputado,12,2026-04-08,2026-08-11
 1013,Alejandro Bernales Maldonado,Diputado,986,Marcela Hernando Pérez,Diputado,12,2026-04-08,2026-08-11
 1013,Alejandro Bernales Maldonado,Diputado,1182,Sebastián Videla Castillo,Diputado,12,2026-04-08,2026-08-11
-1061,Andrea Parra Sauterel,Diputado,1195,Carlos Carvajal Gallardo,Diputado,12,2026-03-25,2026-08-11
+1061,Andrea Parra Sauterel,Diputado,1110,Carlos Bianchi Chelech,Diputado,12,2026-03-25,2026-08-17
+1061,Andrea Parra Sauterel,Diputado,1264,Fernando Zamorano Peralta,Diputado,12,2026-03-25,2026-08-17
+1061,Andrea Parra Sauterel,Diputado,1178,Héctor Ulloa Aguilera,Diputado,12,2026-03-25,2026-08-17
 1021,Andrés Celis Montt,Diputado,1028,Eduardo Durán Salinas,Diputado,12,2026-04-14,2026-08-04
+1110,Carlos Bianchi Chelech,Diputado,1205,Carlos Cuadrado Prats,Diputado,12,2026-03-25,2026-08-17
+1195,Carlos Carvajal Gallardo,Diputado,1205,Carlos Cuadrado Prats,Diputado,12,2026-03-25,2026-08-17
+1195,Carlos Carvajal Gallardo,Diputado,1264,Fernando Zamorano Peralta,Diputado,12,2026-03-25,2026-08-17
+1205,Carlos Cuadrado Prats,Diputado,1226,José Montalva Feuerhake,Diputado,12,2026-03-25,2026-08-17
 1028,Eduardo Durán Salinas,Diputado,1227,Claudia Mora Vega,Diputado,12,2026-05-05,2026-08-10
+1178,Héctor Ulloa Aguilera,Diputado,1195,Carlos Carvajal Gallardo,Diputado,12,2026-03-25,2026-08-17
+1178,Héctor Ulloa Aguilera,Diputado,1264,Fernando Zamorano Peralta,Diputado,12,2026-03-25,2026-08-17
+1178,Héctor Ulloa Aguilera,Diputado,1226,José Montalva Feuerhake,Diputado,12,2026-03-25,2026-08-17
 1141,Luis Malla Valenzuela,Diputado,986,Marcela Hernando Pérez,Diputado,12,2026-04-08,2026-08-11
 1157,Marlene Pérez Cartes,Diputado,1231,Ximena Naranjo Pinto,Diputado,12,2026-04-20,2026-07-14
-1061,Andrea Parra Sauterel,Diputado,1205,Carlos Cuadrado Prats,Diputado,11,2026-03-25,2026-08-11
-1061,Andrea Parra Sauterel,Diputado,1226,José Montalva Feuerhake,Diputado,11,2026-03-25,2026-08-11
+1061,Andrea Parra Sauterel,Diputado,1175,Cristián Tapia Ramos,Diputado,11,2026-03-25,2026-08-17
 1021,Andrés Celis Montt,Diputado,1059,Ximena Ossandón Irarrázabal,Diputado,11,2026-04-14,2026-08-04
 1515,Arturo Squella Ovalle,Senador,1518,Cristian Vial Maceratta,Senador,11,2026-04-14,2026-07-14
-1195,Carlos Carvajal Gallardo,Diputado,1226,José Montalva Feuerhake,Diputado,11,2026-03-25,2026-08-11
+1110,Carlos Bianchi Chelech,Diputado,1178,Héctor Ulloa Aguilera,Diputado,11,2026-03-25,2026-08-17
+1110,Carlos Bianchi Chelech,Diputado,1226,José Montalva Feuerhake,Diputado,11,2026-03-25,2026-08-17
+1205,Carlos Cuadrado Prats,Diputado,1264,Fernando Zamorano Peralta,Diputado,11,2026-03-25,2026-08-17
+1175,Cristián Tapia Ramos,Diputado,1195,Carlos Carvajal Gallardo,Diputado,11,2026-03-25,2026-08-17
 1143,Cristóbal Martínez Ramírez,Diputado,1257,Alejandra Valdebenito Torres,Diputado,11,2026-04-20,2026-08-04
 1143,Cristóbal Martínez Ramírez,Diputado,1157,Marlene Pérez Cartes,Diputado,11,2026-04-20,2026-07-29
 1140,Daniel Lilayu Vivanco,Diputado,1257,Alejandra Valdebenito Torres,Diputado,11,2026-04-20,2026-06-05
 1075,Diego Schalper Sepúlveda,Diputado,1131,Mauro González Villarroel,Diputado,11,2026-04-15,2026-08-10
 1028,Eduardo Durán Salinas,Diputado,1075,Diego Schalper Sepúlveda,Diputado,11,2026-05-05,2026-08-10
 1028,Eduardo Durán Salinas,Diputado,1108,Juan Carlos Beltrán Silva,Diputado,11,2026-04-09,2026-08-10
-1178,Héctor Ulloa Aguilera,Diputado,1205,Carlos Cuadrado Prats,Diputado,11,2026-03-25,2026-08-11
 1517,Ignacio Urrutia Bonilla,Senador,1518,Cristian Vial Maceratta,Senador,11,2026-04-14,2026-07-15
 1117,Iván Moreira Barros,Senador,1339,Gastón Saavedra Chandía,Senador,11,2026-03-25,2026-07-07
+1099,Jaime Araya Guerrero,Diputado,1195,Carlos Carvajal Gallardo,Diputado,11,2026-03-25,2026-08-17
+1099,Jaime Araya Guerrero,Diputado,1205,Carlos Cuadrado Prats,Diputado,11,2026-03-25,2026-08-17
+1226,José Montalva Feuerhake,Diputado,1264,Fernando Zamorano Peralta,Diputado,11,2026-03-25,2026-08-17
 1141,Luis Malla Valenzuela,Diputado,1182,Sebastián Videla Castillo,Diputado,11,2026-04-08,2026-08-11
 1060,Luis Pardo Sáinz,Diputado,1075,Diego Schalper Sepúlveda,Diputado,11,2026-06-04,2026-08-10
+1077,Raúl Soto Mardones,Diputado,1195,Carlos Carvajal Gallardo,Diputado,11,2026-03-25,2026-08-17
+1077,Raúl Soto Mardones,Diputado,1178,Héctor Ulloa Aguilera,Diputado,11,2026-03-25,2026-08-17
+1077,Raúl Soto Mardones,Diputado,1226,José Montalva Feuerhake,Diputado,11,2026-03-25,2026-08-17
 1505,Rodolfo Carter Fernández,Senador,1518,Cristian Vial Maceratta,Senador,11,2026-04-14,2026-07-15
 1182,Sebastián Videla Castillo,Diputado,986,Marcela Hernando Pérez,Diputado,11,2026-04-08,2026-08-11
 1231,Ximena Naranjo Pinto,Diputado,1257,Alejandra Valdebenito Torres,Diputado,11,2026-04-20,2026-08-04
 1059,Ximena Ossandón Irarrázabal,Diputado,1227,Claudia Mora Vega,Diputado,11,2026-05-05,2026-08-10
-1061,Andrea Parra Sauterel,Diputado,1110,Carlos Bianchi Chelech,Diputado,10,2026-03-25,2026-08-11
-1061,Andrea Parra Sauterel,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-11
-1061,Andrea Parra Sauterel,Diputado,1178,Héctor Ulloa Aguilera,Diputado,10,2026-03-25,2026-08-11
-1110,Carlos Bianchi Chelech,Diputado,1195,Carlos Carvajal Gallardo,Diputado,10,2026-03-25,2026-08-11
-1110,Carlos Bianchi Chelech,Diputado,1205,Carlos Cuadrado Prats,Diputado,10,2026-03-25,2026-08-11
-1195,Carlos Carvajal Gallardo,Diputado,1205,Carlos Cuadrado Prats,Diputado,10,2026-03-25,2026-08-11
-1195,Carlos Carvajal Gallardo,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-11
-1205,Carlos Cuadrado Prats,Diputado,1226,José Montalva Feuerhake,Diputado,10,2026-03-25,2026-08-11
+1061,Andrea Parra Sauterel,Diputado,1099,Jaime Araya Guerrero,Diputado,10,2026-03-25,2026-08-17
+1061,Andrea Parra Sauterel,Diputado,1077,Raúl Soto Mardones,Diputado,10,2026-03-25,2026-08-17
+1110,Carlos Bianchi Chelech,Diputado,1175,Cristián Tapia Ramos,Diputado,10,2026-03-25,2026-08-17
+1110,Carlos Bianchi Chelech,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-17
+1175,Cristián Tapia Ramos,Diputado,1205,Carlos Cuadrado Prats,Diputado,10,2026-03-25,2026-08-17
+1175,Cristián Tapia Ramos,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-17
+1175,Cristián Tapia Ramos,Diputado,1178,Héctor Ulloa Aguilera,Diputado,10,2026-03-25,2026-08-17
+1175,Cristián Tapia Ramos,Diputado,1226,José Montalva Feuerhake,Diputado,10,2026-03-25,2026-08-17
 1143,Cristóbal Martínez Ramírez,Diputado,1234,Mario Olavarría Rodríguez,Diputado,10,2026-04-20,2026-07-29
 1143,Cristóbal Martínez Ramírez,Diputado,1231,Ximena Naranjo Pinto,Diputado,10,2026-04-20,2026-08-04
 1075,Diego Schalper Sepúlveda,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,10,2026-05-05,2026-08-07
 1028,Eduardo Durán Salinas,Diputado,1197,Carlos Chandía Alarcón,Diputado,10,2026-04-09,2026-08-10
 1116,Felipe Camaño Cárdenas,Diputado,1208,Jorge Díaz Ibarra,Diputado,10,2026-04-06,2026-07-24
 1223,Hans Marowski Cuevas,Diputado,1235,Javier Olivares Avendaño,Diputado,10,2026-04-21,2026-07-29
-1178,Héctor Ulloa Aguilera,Diputado,1195,Carlos Carvajal Gallardo,Diputado,10,2026-03-25,2026-08-11
-1178,Héctor Ulloa Aguilera,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-11
-1178,Héctor Ulloa Aguilera,Diputado,1226,José Montalva Feuerhake,Diputado,10,2026-03-25,2026-08-11
 1117,Iván Moreira Barros,Senador,1324,Karim Bianchi Retamales,Senador,10,2026-04-15,2026-07-08
+1099,Jaime Araya Guerrero,Diputado,1110,Carlos Bianchi Chelech,Diputado,10,2026-03-25,2026-08-17
+1099,Jaime Araya Guerrero,Diputado,1175,Cristián Tapia Ramos,Diputado,10,2026-03-25,2026-08-17
+1099,Jaime Araya Guerrero,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-17
+1099,Jaime Araya Guerrero,Diputado,1178,Héctor Ulloa Aguilera,Diputado,10,2026-03-25,2026-08-17
+1099,Jaime Araya Guerrero,Diputado,1226,José Montalva Feuerhake,Diputado,10,2026-03-25,2026-08-17
 1174,Marco Antonio Sulantay Olivares,Diputado,1257,Alejandra Valdebenito Torres,Diputado,10,2026-04-20,2026-08-04
 1234,Mario Olavarría Rodríguez,Diputado,1249,Omar Sabat Guzmán,Diputado,10,2026-04-20,2026-08-11
 1157,Marlene Pérez Cartes,Diputado,1257,Alejandra Valdebenito Torres,Diputado,10,2026-04-20,2026-07-14
 1157,Marlene Pérez Cartes,Diputado,1234,Mario Olavarría Rodríguez,Diputado,10,2026-04-20,2026-08-11
 1249,Omar Sabat Guzmán,Diputado,1257,Alejandra Valdebenito Torres,Diputado,10,2026-04-20,2026-07-14
 1193,Patricio Briones Moller,Diputado,1235,Javier Olivares Avendaño,Diputado,10,2026-04-21,2026-07-27
+1077,Raúl Soto Mardones,Diputado,1110,Carlos Bianchi Chelech,Diputado,10,2026-03-25,2026-08-17
+1077,Raúl Soto Mardones,Diputado,1205,Carlos Cuadrado Prats,Diputado,10,2026-03-25,2026-08-17
+1077,Raúl Soto Mardones,Diputado,1264,Fernando Zamorano Peralta,Diputado,10,2026-03-25,2026-08-17
+1102,Roberto Arroyo Muñoz,Diputado,1193,Patricio Briones Moller,Diputado,10,2026-05-09,2026-08-14
 1505,Rodolfo Carter Fernández,Senador,1517,Ignacio Urrutia Bonilla,Senador,10,2026-04-14,2026-07-15
 1059,Ximena Ossandón Irarrázabal,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,10,2026-05-05,2026-08-07
 1059,Ximena Ossandón Irarrázabal,Diputado,1108,Juan Carlos Beltrán Silva,Diputado,10,2026-04-09,2026-08-10
 1257,Alejandra Valdebenito Torres,Diputado,815,Sergio Bobadilla Muñoz,Diputado,9,2026-04-20,2026-08-04
-1061,Andrea Parra Sauterel,Diputado,1175,Cristián Tapia Ramos,Diputado,9,2026-03-25,2026-08-11
 1021,Andrés Celis Montt,Diputado,1075,Diego Schalper Sepúlveda,Diputado,9,2026-05-06,2026-08-04
 1515,Arturo Squella Ovalle,Senador,1517,Ignacio Urrutia Bonilla,Senador,9,2026-04-14,2026-06-30
-1110,Carlos Bianchi Chelech,Diputado,1178,Héctor Ulloa Aguilera,Diputado,9,2026-03-25,2026-08-11
-1110,Carlos Bianchi Chelech,Diputado,1226,José Montalva Feuerhake,Diputado,9,2026-03-25,2026-08-11
-1205,Carlos Cuadrado Prats,Diputado,1264,Fernando Zamorano Peralta,Diputado,9,2026-03-25,2026-08-11
 1227,Claudia Mora Vega,Diputado,1261,Daniel Valenzuela Salazar,Diputado,9,2026-05-05,2026-08-06
-1175,Cristián Tapia Ramos,Diputado,1195,Carlos Carvajal Gallardo,Diputado,9,2026-03-25,2026-08-11
 1143,Cristóbal Martínez Ramírez,Diputado,1174,Marco Antonio Sulantay Olivares,Diputado,9,2026-04-20,2026-08-04
 1143,Cristóbal Martínez Ramírez,Diputado,1249,Omar Sabat Guzmán,Diputado,9,2026-04-20,2026-07-29
 1143,Cristóbal Martínez Ramírez,Diputado,815,Sergio Bobadilla Muñoz,Diputado,9,2026-04-20,2026-08-04
@@ -78,38 +101,27 @@
 1140,Daniel Lilayu Vivanco,Diputado,1157,Marlene Pérez Cartes,Diputado,9,2026-04-20,2026-07-29
 1028,Eduardo Durán Salinas,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,9,2026-05-05,2026-08-06
 1028,Eduardo Durán Salinas,Diputado,1242,Rodrigo Ramírez Parra,Diputado,9,2026-04-09,2026-08-10
+1054,Francesca Muñoz González,Diputado,1119,Sara Concha Smith,Diputado,9,2026-04-14,2026-08-14
 1237,Francisco Orrego Gutiérrez,Diputado,1261,Daniel Valenzuela Salazar,Diputado,9,2026-05-05,2026-08-12
-1099,Jaime Araya Guerrero,Diputado,1195,Carlos Carvajal Gallardo,Diputado,9,2026-03-25,2026-08-11
-1099,Jaime Araya Guerrero,Diputado,1205,Carlos Cuadrado Prats,Diputado,9,2026-03-25,2026-08-11
 1199,Jaime Coloma Álamos,Diputado,1257,Alejandra Valdebenito Torres,Diputado,9,2026-04-20,2026-08-04
-1226,José Montalva Feuerhake,Diputado,1264,Fernando Zamorano Peralta,Diputado,9,2026-03-25,2026-08-11
 1174,Marco Antonio Sulantay Olivares,Diputado,1199,Jaime Coloma Álamos,Diputado,9,2026-04-20,2026-08-04
 1234,Mario Olavarría Rodríguez,Diputado,1257,Alejandra Valdebenito Torres,Diputado,9,2026-04-20,2026-06-18
 1157,Marlene Pérez Cartes,Diputado,815,Sergio Bobadilla Muñoz,Diputado,9,2026-04-20,2026-07-29
 1193,Patricio Briones Moller,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,9,2026-04-21,2026-08-05
 1241,Patricio Pinilla Valencia,Diputado,1246,José Antonio Rivas Villalobos,Diputado,9,2026-07-06,2026-08-12
 1236,Paula Olmos Contreras,Diputado,1243,Tamara Ramírez Ramírez,Diputado,9,2026-04-21,2026-08-06
-1077,Raúl Soto Mardones,Diputado,1195,Carlos Carvajal Gallardo,Diputado,9,2026-03-25,2026-08-11
-1077,Raúl Soto Mardones,Diputado,1178,Héctor Ulloa Aguilera,Diputado,9,2026-03-25,2026-08-11
-1077,Raúl Soto Mardones,Diputado,1226,José Montalva Feuerhake,Diputado,9,2026-03-25,2026-08-11
+1337,Paulina Núñez Urrutia,Senador,911,Carlos Ignacio Kuschel Silva,Senador,9,2026-03-25,2026-09-09
+1077,Raúl Soto Mardones,Diputado,1175,Cristián Tapia Ramos,Diputado,9,2026-03-25,2026-08-17
+1077,Raúl Soto Mardones,Diputado,1099,Jaime Araya Guerrero,Diputado,9,2026-03-25,2026-08-17
 1516,Renzo Trisotti Martínez,Senador,1518,Cristian Vial Maceratta,Senador,9,2026-04-14,2026-07-15
 1516,Renzo Trisotti Martínez,Senador,1517,Ignacio Urrutia Bonilla,Senador,9,2026-04-14,2026-07-15
-1102,Roberto Arroyo Muñoz,Diputado,1193,Patricio Briones Moller,Diputado,9,2026-05-09,2026-07-31
 1505,Rodolfo Carter Fernández,Senador,1516,Renzo Trisotti Martínez,Senador,9,2026-04-14,2026-07-15
 1231,Ximena Naranjo Pinto,Diputado,1249,Omar Sabat Guzmán,Diputado,9,2026-04-20,2026-07-14
 1231,Ximena Naranjo Pinto,Diputado,815,Sergio Bobadilla Muñoz,Diputado,9,2026-04-20,2026-08-04
 1059,Ximena Ossandón Irarrázabal,Diputado,1197,Carlos Chandía Alarcón,Diputado,9,2026-04-09,2026-08-10
-1061,Andrea Parra Sauterel,Diputado,1099,Jaime Araya Guerrero,Diputado,8,2026-03-25,2026-08-11
-1061,Andrea Parra Sauterel,Diputado,1077,Raúl Soto Mardones,Diputado,8,2026-03-25,2026-08-11
 1515,Arturo Squella Ovalle,Senador,1516,Renzo Trisotti Martínez,Senador,8,2026-04-14,2026-05-20
-1110,Carlos Bianchi Chelech,Diputado,1175,Cristián Tapia Ramos,Diputado,8,2026-03-25,2026-08-11
-1110,Carlos Bianchi Chelech,Diputado,1264,Fernando Zamorano Peralta,Diputado,8,2026-03-25,2026-08-11
 1197,Carlos Chandía Alarcón,Diputado,1227,Claudia Mora Vega,Diputado,8,2026-06-11,2026-08-11
 1197,Carlos Chandía Alarcón,Diputado,1242,Rodrigo Ramírez Parra,Diputado,8,2026-04-09,2026-08-10
-1175,Cristián Tapia Ramos,Diputado,1205,Carlos Cuadrado Prats,Diputado,8,2026-03-25,2026-08-11
-1175,Cristián Tapia Ramos,Diputado,1264,Fernando Zamorano Peralta,Diputado,8,2026-03-25,2026-08-11
-1175,Cristián Tapia Ramos,Diputado,1178,Héctor Ulloa Aguilera,Diputado,8,2026-03-25,2026-08-11
-1175,Cristián Tapia Ramos,Diputado,1226,José Montalva Feuerhake,Diputado,8,2026-03-25,2026-08-11
 1140,Daniel Lilayu Vivanco,Diputado,1174,Marco Antonio Sulantay Olivares,Diputado,8,2026-04-20,2026-07-29
 1140,Daniel Lilayu Vivanco,Diputado,1249,Omar Sabat Guzmán,Diputado,8,2026-04-20,2026-07-29
 1140,Daniel Lilayu Vivanco,Diputado,1231,Ximena Naranjo Pinto,Diputado,8,2026-04-20,2026-06-08
@@ -117,25 +129,19 @@
 1028,Eduardo Durán Salinas,Diputado,1261,Daniel Valenzuela Salazar,Diputado,8,2026-05-05,2026-08-06
 1116,Felipe Camaño Cárdenas,Diputado,872,Jaime Mulet Martínez,Diputado,8,2026-03-27,2026-08-05
 1116,Felipe Camaño Cárdenas,Diputado,1241,Patricio Pinilla Valencia,Diputado,8,2026-04-06,2026-08-06
-1054,Francesca Muñoz González,Diputado,1119,Sara Concha Smith,Diputado,8,2026-04-14,2026-08-04
+1201,Flor Contreras Vivallo,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,8,2026-06-10,2026-08-14
 1117,Iván Moreira Barros,Senador,1450,Paulina Vodanovic Rojas,Senador,8,2026-05-19,2026-08-13
-1099,Jaime Araya Guerrero,Diputado,1110,Carlos Bianchi Chelech,Diputado,8,2026-03-25,2026-08-11
-1099,Jaime Araya Guerrero,Diputado,1175,Cristián Tapia Ramos,Diputado,8,2026-03-25,2026-08-11
-1099,Jaime Araya Guerrero,Diputado,1264,Fernando Zamorano Peralta,Diputado,8,2026-03-25,2026-08-11
-1099,Jaime Araya Guerrero,Diputado,1178,Héctor Ulloa Aguilera,Diputado,8,2026-03-25,2026-08-11
-1099,Jaime Araya Guerrero,Diputado,1226,José Montalva Feuerhake,Diputado,8,2026-03-25,2026-08-11
 1199,Jaime Coloma Álamos,Diputado,815,Sergio Bobadilla Muñoz,Diputado,8,2026-04-20,2026-08-04
+1120,Manuel José Ossandón Irarrázabal,Senador,1337,Paulina Núñez Urrutia,Senador,8,2026-03-25,2026-09-07
 1174,Marco Antonio Sulantay Olivares,Diputado,1231,Ximena Naranjo Pinto,Diputado,8,2026-04-20,2026-08-04
 1157,Marlene Pérez Cartes,Diputado,1174,Marco Antonio Sulantay Olivares,Diputado,8,2026-04-20,2026-07-29
 1131,Mauro González Villarroel,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,8,2026-05-05,2026-08-07
 1249,Omar Sabat Guzmán,Diputado,815,Sergio Bobadilla Muñoz,Diputado,8,2026-04-20,2026-07-29
+1193,Patricio Briones Moller,Diputado,1201,Flor Contreras Vivallo,Diputado,8,2026-05-06,2026-08-14
 1193,Patricio Briones Moller,Diputado,1236,Paula Olmos Contreras,Diputado,8,2026-04-21,2026-08-05
 1193,Patricio Briones Moller,Diputado,1243,Tamara Ramírez Ramírez,Diputado,8,2026-04-21,2026-08-05
-1337,Paulina Núñez Urrutia,Senador,911,Carlos Ignacio Kuschel Silva,Senador,8,2026-03-25,2026-08-04
 1217,Pier Karlezi Hazleby,Diputado,1223,Hans Marowski Cuevas,Diputado,8,2026-04-15,2026-08-05
-1077,Raúl Soto Mardones,Diputado,1110,Carlos Bianchi Chelech,Diputado,8,2026-03-25,2026-08-11
-1077,Raúl Soto Mardones,Diputado,1205,Carlos Cuadrado Prats,Diputado,8,2026-03-25,2026-08-11
-1077,Raúl Soto Mardones,Diputado,1264,Fernando Zamorano Peralta,Diputado,8,2026-03-25,2026-08-11
+1102,Roberto Arroyo Muñoz,Diputado,1240,Zandra Parisi Fernández,Diputado,8,2026-05-27,2026-08-14
 1505,Rodolfo Carter Fernández,Senador,1515,Arturo Squella Ovalle,Senador,8,2026-04-14,2026-05-20
 1059,Ximena Ossandón Irarrázabal,Diputado,1060,Luis Pardo Sáinz,Diputado,8,2026-06-12,2026-08-10
 1059,Ximena Ossandón Irarrázabal,Diputado,1131,Mauro González Villarroel,Diputado,8,2026-05-05,2026-08-10
@@ -147,9 +153,9 @@
 1140,Daniel Lilayu Vivanco,Diputado,1166,Natalia Romero Talguia,Diputado,7,2026-04-28,2026-07-29
 1075,Diego Schalper Sepúlveda,Diputado,1108,Juan Carlos Beltrán Silva,Diputado,7,2026-05-05,2026-08-10
 1202,Eduardo Cretton Rebolledo,Diputado,1257,Alejandra Valdebenito Torres,Diputado,7,2026-04-29,2026-08-04
+1028,Eduardo Durán Salinas,Diputado,1054,Francesca Muñoz González,Diputado,7,2026-04-14,2026-08-14
 1028,Eduardo Durán Salinas,Diputado,1060,Luis Pardo Sáinz,Diputado,7,2026-06-04,2026-08-10
 1028,Eduardo Durán Salinas,Diputado,1131,Mauro González Villarroel,Diputado,7,2026-05-05,2026-08-10
-1201,Flor Contreras Vivallo,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,7,2026-06-10,2026-08-05
 1201,Flor Contreras Vivallo,Diputado,1239,Fabián Ossandón Briceño,Diputado,7,2026-05-06,2026-08-05
 1201,Flor Contreras Vivallo,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,7,2026-05-06,2026-08-05
 1183,Flor Weisse Novoa,Diputado,1257,Alejandra Valdebenito Torres,Diputado,7,2026-04-20,2026-08-04
@@ -169,20 +175,17 @@
 1108,Juan Carlos Beltrán Silva,Diputado,1227,Claudia Mora Vega,Diputado,7,2026-05-05,2026-08-10
 1108,Juan Carlos Beltrán Silva,Diputado,1261,Daniel Valenzuela Salazar,Diputado,7,2026-05-05,2026-08-07
 1326,Juan Luis Castro González,Senador,1339,Gastón Saavedra Chandía,Senador,7,2026-05-19,2026-08-19
+1192,Lilian Betancurt Delgado,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,7,2026-06-10,2026-08-14
 1060,Luis Pardo Sáinz,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,7,2026-06-12,2026-08-04
-1120,Manuel José Ossandón Irarrázabal,Senador,1337,Paulina Núñez Urrutia,Senador,7,2026-03-25,2026-07-07
 1174,Marco Antonio Sulantay Olivares,Diputado,1234,Mario Olavarría Rodríguez,Diputado,7,2026-04-20,2026-07-29
 1234,Mario Olavarría Rodríguez,Diputado,815,Sergio Bobadilla Muñoz,Diputado,7,2026-04-20,2026-07-29
 1157,Marlene Pérez Cartes,Diputado,1199,Jaime Coloma Álamos,Diputado,7,2026-04-20,2026-08-11
 1157,Marlene Pérez Cartes,Diputado,1166,Natalia Romero Talguia,Diputado,7,2026-04-28,2026-07-29
 1157,Marlene Pérez Cartes,Diputado,1233,Ricardo Neumann Bertín,Diputado,7,2026-04-20,2026-07-29
 1193,Patricio Briones Moller,Diputado,1239,Fabián Ossandón Briceño,Diputado,7,2026-05-06,2026-08-05
-1193,Patricio Briones Moller,Diputado,1201,Flor Contreras Vivallo,Diputado,7,2026-05-06,2026-08-05
+1193,Patricio Briones Moller,Diputado,1219,Tomás Kast Sommerhoff,Diputado,7,2026-05-06,2026-08-14
 1236,Paula Olmos Contreras,Diputado,1239,Fabián Ossandón Briceño,Diputado,7,2026-05-09,2026-08-05
-1077,Raúl Soto Mardones,Diputado,1175,Cristián Tapia Ramos,Diputado,7,2026-03-25,2026-08-11
-1077,Raúl Soto Mardones,Diputado,1099,Jaime Araya Guerrero,Diputado,7,2026-03-25,2026-08-11
 1233,Ricardo Neumann Bertín,Diputado,1249,Omar Sabat Guzmán,Diputado,7,2026-04-20,2026-07-29
-1102,Roberto Arroyo Muñoz,Diputado,1240,Zandra Parisi Fernández,Diputado,7,2026-05-27,2026-08-06
 1331,Sergio Gahona Salazar,Senador,1337,Paulina Núñez Urrutia,Senador,7,2026-05-19,2026-08-05
 1243,Tamara Ramírez Ramírez,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,7,2026-04-21,2026-08-05
 1219,Tomás Kast Sommerhoff,Diputado,1223,Hans Marowski Cuevas,Diputado,7,2026-06-15,2026-08-05
@@ -204,7 +207,7 @@
 1075,Diego Schalper Sepúlveda,Diputado,1219,Tomás Kast Sommerhoff,Diputado,6,2026-04-15,2026-07-06
 1202,Eduardo Cretton Rebolledo,Diputado,815,Sergio Bobadilla Muñoz,Diputado,6,2026-05-11,2026-08-04
 1202,Eduardo Cretton Rebolledo,Diputado,1231,Ximena Naranjo Pinto,Diputado,6,2026-05-11,2026-08-04
-1028,Eduardo Durán Salinas,Diputado,1054,Francesca Muñoz González,Diputado,6,2026-04-14,2026-08-03
+1028,Eduardo Durán Salinas,Diputado,843,René Manuel García García,Diputado,6,2026-04-14,2026-08-14
 1239,Fabián Ossandón Briceño,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,6,2026-05-06,2026-08-05
 1239,Fabián Ossandón Briceño,Diputado,1243,Tamara Ramírez Ramírez,Diputado,6,2026-05-06,2026-08-05
 1116,Felipe Camaño Cárdenas,Diputado,1196,Priscilla Castillo Gerli,Diputado,6,2026-04-06,2026-08-05
@@ -219,6 +222,8 @@
 1105,Héctor Barría Angulo,Diputado,1224,Cristian Mella Andaur,Diputado,6,2026-03-27,2026-07-11
 1178,Héctor Ulloa Aguilera,Diputado,1241,Patricio Pinilla Valencia,Diputado,6,2026-04-06,2026-07-30
 1330,Iván Flores García,Senador,1339,Gastón Saavedra Chandía,Senador,6,2026-03-25,2026-06-10
+1330,Iván Flores García,Senador,1344,Matías Walker Prieto,Senador,6,2026-04-08,2026-09-09
+1330,Iván Flores García,Senador,1450,Paulina Vodanovic Rojas,Senador,6,2026-04-08,2026-09-09
 1117,Iván Moreira Barros,Senador,1335,Javier Macaya Danús,Senador,6,2026-05-20,2026-07-08
 1199,Jaime Coloma Álamos,Diputado,1234,Mario Olavarría Rodríguez,Diputado,6,2026-04-20,2026-08-11
 1199,Jaime Coloma Álamos,Diputado,1231,Ximena Naranjo Pinto,Diputado,6,2026-04-20,2026-08-04
@@ -230,9 +235,9 @@
 1108,Juan Carlos Beltrán Silva,Diputado,1131,Mauro González Villarroel,Diputado,6,2026-05-05,2026-08-10
 1108,Juan Carlos Beltrán Silva,Diputado,843,René Manuel García García,Diputado,6,2026-05-05,2026-07-31
 1108,Juan Carlos Beltrán Silva,Diputado,1242,Rodrigo Ramírez Parra,Diputado,6,2026-04-09,2026-08-10
+1326,Juan Luis Castro González,Senador,1337,Paulina Núñez Urrutia,Senador,6,2026-06-09,2026-09-08
 1324,Karim Bianchi Retamales,Senador,1339,Gastón Saavedra Chandía,Senador,6,2026-04-15,2026-06-10
 1324,Karim Bianchi Retamales,Senador,1330,Iván Flores García,Senador,6,2026-04-08,2026-07-08
-1192,Lilian Betancurt Delgado,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,6,2026-06-10,2026-08-12
 1060,Luis Pardo Sáinz,Diputado,1131,Mauro González Villarroel,Diputado,6,2026-06-04,2026-08-10
 1174,Marco Antonio Sulantay Olivares,Diputado,1202,Eduardo Cretton Rebolledo,Diputado,6,2026-04-29,2026-08-04
 1174,Marco Antonio Sulantay Olivares,Diputado,1183,Flor Weisse Novoa,Diputado,6,2026-04-20,2026-08-04
@@ -244,11 +249,16 @@
 1166,Natalia Romero Talguia,Diputado,1174,Marco Antonio Sulantay Olivares,Diputado,6,2026-04-28,2026-08-04
 1166,Natalia Romero Talguia,Diputado,1231,Ximena Naranjo Pinto,Diputado,6,2026-04-29,2026-08-04
 1117,Nathalie Castillo Rojas,Diputado,1211,Sofía González Cortés,Diputado,6,2026-06-12,2026-08-12
-1193,Patricio Briones Moller,Diputado,1219,Tomás Kast Sommerhoff,Diputado,6,2026-05-06,2026-08-04
+1193,Patricio Briones Moller,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,6,2026-06-16,2026-08-14
+1193,Patricio Briones Moller,Diputado,1240,Zandra Parisi Fernández,Diputado,6,2026-05-09,2026-08-14
 1236,Paula Olmos Contreras,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,6,2026-04-21,2026-08-05
+1337,Paulina Núñez Urrutia,Senador,1508,Camila Flores Oporto,Senador,6,2026-04-22,2026-09-09
+1337,Paulina Núñez Urrutia,Senador,1518,Cristian Vial Maceratta,Senador,6,2026-05-19,2026-09-08
 1337,Paulina Núñez Urrutia,Senador,1344,Matías Walker Prieto,Senador,6,2026-04-15,2026-08-12
 1110,Pedro Araya Guerrero,Senador,1337,Paulina Núñez Urrutia,Senador,6,2026-04-08,2026-08-13
 1233,Ricardo Neumann Bertín,Diputado,815,Sergio Bobadilla Muñoz,Diputado,6,2026-05-11,2026-07-29
+1102,Roberto Arroyo Muñoz,Diputado,1192,Lilian Betancurt Delgado,Diputado,6,2026-06-16,2026-08-14
+1119,Sara Concha Smith,Diputado,1133,Juan Irarrázaval Rossel,Diputado,6,2026-04-14,2026-08-14
 1182,Sebastián Videla Castillo,Diputado,1246,José Antonio Rivas Villalobos,Diputado,6,2026-07-06,2026-08-12
 1231,Ximena Naranjo Pinto,Diputado,1233,Ricardo Neumann Bertín,Diputado,6,2026-04-20,2026-07-14
 1334,Alejandro Kusanovic Glusevic,Senador,1337,Paulina Núñez Urrutia,Senador,5,2026-03-25,2026-04-22
@@ -281,18 +291,23 @@
 1202,Eduardo Cretton Rebolledo,Diputado,1234,Mario Olavarría Rodríguez,Diputado,5,2026-04-29,2026-06-18
 1202,Eduardo Cretton Rebolledo,Diputado,1233,Ricardo Neumann Bertín,Diputado,5,2026-05-11,2026-07-27
 1028,Eduardo Durán Salinas,Diputado,1062,Joanna Pérez Olea,Diputado,5,2026-06-04,2026-08-10
-1028,Eduardo Durán Salinas,Diputado,843,René Manuel García García,Diputado,5,2026-04-14,2026-08-06
+1028,Eduardo Durán Salinas,Diputado,1133,Juan Irarrázaval Rossel,Diputado,5,2026-04-14,2026-08-14
+1028,Eduardo Durán Salinas,Diputado,1236,Paula Olmos Contreras,Diputado,5,2026-04-14,2026-08-14
+1028,Eduardo Durán Salinas,Diputado,1119,Sara Concha Smith,Diputado,5,2026-04-14,2026-08-14
+1056,Emilia Nuyado Ancapichun,Diputado,1206,Carolina Cucumides Calderón,Diputado,5,2026-06-22,2026-08-17
 1190,Enrique Bassaletti Riess,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,5,2026-07-01,2026-08-11
 1116,Felipe Camaño Cárdenas,Diputado,1229,Javier Muñoz Riquelme,Diputado,5,2026-04-15,2026-08-05
 1116,Felipe Camaño Cárdenas,Diputado,1238,Álvaro Ortiz Vera,Diputado,5,2026-04-15,2026-08-06
 1329,Fidel Espinoza Sandoval,Senador,1339,Gastón Saavedra Chandía,Senador,5,2026-04-08,2026-05-19
 1183,Flor Weisse Novoa,Diputado,1249,Omar Sabat Guzmán,Diputado,5,2026-04-20,2026-07-14
 1183,Flor Weisse Novoa,Diputado,1233,Ricardo Neumann Bertín,Diputado,5,2026-04-20,2026-07-14
+1054,Francesca Muñoz González,Diputado,1133,Juan Irarrázaval Rossel,Diputado,5,2026-04-14,2026-08-14
 1087,Gael Yeomans Araya,Diputado,1180,Consuelo Veloso Ávila,Diputado,5,2026-05-18,2026-07-27
 1087,Gael Yeomans Araya,Diputado,1178,Héctor Ulloa Aguilera,Diputado,5,2026-05-15,2026-07-30
 1087,Gael Yeomans Araya,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,5,2026-04-28,2026-07-27
 1339,Gastón Saavedra Chandía,Senador,911,Carlos Ignacio Kuschel Silva,Senador,5,2026-03-25,2026-07-07
 1339,Gastón Saavedra Chandía,Senador,1507,Daniella Cicardini Milla,Senador,5,2026-05-06,2026-08-19
+1339,Gastón Saavedra Chandía,Senador,1500,Danisa Astudillo Peiretti,Senador,5,2026-05-19,2026-09-09
 1152,Gloria Naveillan Arriagada,Diputado,1217,Pier Karlezi Hazleby,Diputado,5,2026-04-15,2026-08-11
 1065,Guillermo Ramírez Diez,Diputado,1257,Alejandra Valdebenito Torres,Diputado,5,2026-04-20,2026-06-18
 1065,Guillermo Ramírez Diez,Diputado,1140,Daniel Lilayu Vivanco,Diputado,5,2026-04-20,2026-06-08
@@ -302,9 +317,7 @@
 1105,Héctor Barría Angulo,Diputado,1238,Álvaro Ortiz Vera,Diputado,5,2026-03-27,2026-07-11
 1330,Iván Flores García,Senador,1334,Alejandro Kusanovic Glusevic,Senador,5,2026-03-25,2026-06-16
 1330,Iván Flores García,Senador,911,Carlos Ignacio Kuschel Silva,Senador,5,2026-03-25,2026-08-04
-1330,Iván Flores García,Senador,1344,Matías Walker Prieto,Senador,5,2026-04-08,2026-08-05
 1330,Iván Flores García,Senador,1503,Miguel Ángel Calisto Águila,Senador,5,2026-04-08,2026-08-04
-1330,Iván Flores García,Senador,1450,Paulina Vodanovic Rojas,Senador,5,2026-04-08,2026-08-05
 1099,Jaime Araya Guerrero,Diputado,1100,Cristián Araya Lerdo de Tejada,Diputado,5,2026-05-13,2026-08-14
 1335,Javier Macaya Danús,Senador,1337,Paulina Núñez Urrutia,Senador,5,2026-06-03,2026-07-08
 1235,Javier Olivares Avendaño,Diputado,1236,Paula Olmos Contreras,Diputado,5,2026-04-21,2026-07-23
@@ -314,13 +327,16 @@
 1132,Jorge Guzmán Zepeda,Diputado,843,René Manuel García García,Diputado,5,2026-05-05,2026-08-04
 1108,Juan Carlos Beltrán Silva,Diputado,1197,Carlos Chandía Alarcón,Diputado,5,2026-04-09,2026-08-10
 1108,Juan Carlos Beltrán Silva,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,5,2026-05-05,2026-08-07
-1326,Juan Luis Castro González,Senador,1337,Paulina Núñez Urrutia,Senador,5,2026-06-09,2026-08-10
 1326,Juan Luis Castro González,Senador,1450,Paulina Vodanovic Rojas,Senador,5,2026-03-18,2026-08-12
+1192,Lilian Betancurt Delgado,Diputado,1201,Flor Contreras Vivallo,Diputado,5,2026-06-10,2026-08-14
+1192,Lilian Betancurt Delgado,Diputado,1193,Patricio Briones Moller,Diputado,5,2026-06-10,2026-08-14
 1159,Lorena Pizarro Sierra,Diputado,1211,Sofía González Cortés,Diputado,5,2026-06-12,2026-08-12
+1320,Loreto Carvajal Ambiado,Senador,1500,Danisa Astudillo Peiretti,Senador,5,2026-06-17,2026-09-09
 1122,Luis Alberto Cuello Peña y Lillo,Diputado,1241,Patricio Pinilla Valencia,Diputado,5,2026-06-08,2026-07-30
 1060,Luis Pardo Sáinz,Diputado,1219,Tomás Kast Sommerhoff,Diputado,5,2026-06-04,2026-07-20
 1170,Luis Sánchez Ossa,Diputado,1223,Hans Marowski Cuevas,Diputado,5,2026-06-10,2026-07-29
 1170,Luis Sánchez Ossa,Diputado,1235,Javier Olivares Avendaño,Diputado,5,2026-06-10,2026-07-29
+1120,Manuel José Ossandón Irarrázabal,Senador,1518,Cristian Vial Maceratta,Senador,5,2026-05-19,2026-09-07
 1120,Manuel José Ossandón Irarrázabal,Senador,1502,Miguel Ángel Becker Alvear,Senador,5,2026-05-19,2026-07-07
 1188,Marcos Barraza Gómez,Diputado,1211,Sofía González Cortés,Diputado,5,2026-06-16,2026-08-12
 1074,Marisela Santibáñez Novoa,Diputado,1128,Ana María Gazmuri Vieira,Diputado,5,2026-06-15,2026-08-12
@@ -334,14 +350,11 @@
 1117,Nathalie Castillo Rojas,Diputado,1159,Lorena Pizarro Sierra,Diputado,5,2026-04-15,2026-08-12
 1039,Pamela Jiles Moreno,Diputado,1201,Flor Contreras Vivallo,Diputado,5,2026-05-06,2026-08-05
 1039,Pamela Jiles Moreno,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,5,2026-05-06,2026-08-05
-1193,Patricio Briones Moller,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,5,2026-06-16,2026-08-05
 1193,Patricio Briones Moller,Diputado,1261,Daniel Valenzuela Salazar,Diputado,5,2026-05-12,2026-08-05
 1193,Patricio Briones Moller,Diputado,1258,Guillermo Valdés Carmona,Diputado,5,2026-04-21,2026-07-13
 1193,Patricio Briones Moller,Diputado,1251,Macarena Santelices Cañas,Diputado,5,2026-05-06,2026-08-11
-1193,Patricio Briones Moller,Diputado,1240,Zandra Parisi Fernández,Diputado,5,2026-05-09,2026-07-23
 1241,Patricio Pinilla Valencia,Diputado,1250,Bernardo Salinas Maya,Diputado,5,2026-07-06,2026-08-12
 1236,Paula Olmos Contreras,Diputado,1240,Zandra Parisi Fernández,Diputado,5,2026-05-09,2026-08-06
-1337,Paulina Núñez Urrutia,Senador,1508,Camila Flores Oporto,Senador,5,2026-04-22,2026-08-04
 1198,Paz Charpentier Rajcevich,Diputado,1223,Hans Marowski Cuevas,Diputado,5,2026-06-23,2026-08-05
 1198,Paz Charpentier Rajcevich,Diputado,1247,Javiera Rodríguez Pascual,Diputado,5,2026-06-23,2026-07-27
 1217,Pier Karlezi Hazleby,Diputado,1228,Paulina Muñoz Minte,Diputado,5,2026-04-15,2026-08-11
@@ -350,8 +363,7 @@
 1044,Raúl Leiva Carvajal,Diputado,1075,Diego Schalper Sepúlveda,Diputado,5,2026-05-06,2026-08-07
 1233,Ricardo Neumann Bertín,Diputado,1257,Alejandra Valdebenito Torres,Diputado,5,2026-04-20,2026-07-14
 1102,Roberto Arroyo Muñoz,Diputado,1132,Jorge Guzmán Zepeda,Diputado,5,2026-06-04,2026-08-12
-1102,Roberto Arroyo Muñoz,Diputado,1192,Lilian Betancurt Delgado,Diputado,5,2026-06-16,2026-08-12
-1119,Sara Concha Smith,Diputado,1133,Juan Irarrázaval Rossel,Diputado,5,2026-04-14,2026-08-04
+1102,Roberto Arroyo Muñoz,Diputado,1219,Tomás Kast Sommerhoff,Diputado,5,2026-06-04,2026-08-14
 1182,Sebastián Videla Castillo,Diputado,1241,Patricio Pinilla Valencia,Diputado,5,2026-07-06,2026-08-12
 1243,Tamara Ramírez Ramírez,Diputado,1255,Eileen Urqueta Rojas,Diputado,5,2026-05-06,2026-08-05
 1219,Tomás Kast Sommerhoff,Diputado,843,René Manuel García García,Diputado,5,2026-06-03,2026-08-04
@@ -368,6 +380,7 @@
 1230,Alex Nahuelquin Nahuelquin,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,4,2026-06-10,2026-08-05
 1230,Alex Nahuelquin Nahuelquin,Diputado,1236,Paula Olmos Contreras,Diputado,4,2026-06-10,2026-08-06
 1230,Alex Nahuelquin Nahuelquin,Diputado,1243,Tamara Ramírez Ramírez,Diputado,4,2026-06-10,2026-08-06
+1230,Alex Nahuelquin Nahuelquin,Diputado,1240,Zandra Parisi Fernández,Diputado,4,2026-07-23,2026-08-14
 1115,Alfonso De Urresti Longton,Senador,1500,Danisa Astudillo Peiretti,Senador,4,2026-05-19,2026-08-19
 1128,Ana María Gazmuri Vieira,Diputado,1226,José Montalva Feuerhake,Diputado,4,2026-04-27,2026-07-08
 1128,Ana María Gazmuri Vieira,Diputado,1159,Lorena Pizarro Sierra,Diputado,4,2026-04-15,2026-08-12
@@ -376,10 +389,12 @@
 1021,Andrés Celis Montt,Diputado,1251,Macarena Santelices Cañas,Diputado,4,2026-05-06,2026-06-16
 1195,Carlos Carvajal Gallardo,Diputado,1224,Cristian Mella Andaur,Diputado,4,2026-04-15,2026-08-05
 1195,Carlos Carvajal Gallardo,Diputado,1241,Patricio Pinilla Valencia,Diputado,4,2026-06-10,2026-08-12
+1206,Carolina Cucumides Calderón,Diputado,1222,Andrea Macías Palma,Diputado,4,2026-07-06,2026-08-17
 1206,Carolina Cucumides Calderón,Diputado,1246,José Antonio Rivas Villalobos,Diputado,4,2026-06-22,2026-08-12
 1177,Carolina Tello Rojas,Diputado,1180,Consuelo Veloso Ávila,Diputado,4,2026-05-04,2026-07-27
 1177,Carolina Tello Rojas,Diputado,1256,Tatiana Urrutia Herrera,Diputado,4,2026-04-28,2026-07-27
 1025,Catalina Del Real Mihovilovic,Diputado,1244,Claudia Reyes Larenas,Diputado,4,2026-06-09,2026-06-25
+1025,Catalina Del Real Mihovilovic,Diputado,1102,Roberto Arroyo Muñoz,Diputado,4,2026-05-07,2026-08-14
 1153,Coca Ericka Ñanco Vásquez,Diputado,1177,Carolina Tello Rojas,Diputado,4,2026-04-28,2026-07-27
 1153,Coca Ericka Ñanco Vásquez,Diputado,1171,Emilia Schneider Videla,Diputado,4,2026-04-28,2026-07-27
 1153,Coca Ericka Ñanco Vásquez,Diputado,1256,Tatiana Urrutia Herrera,Diputado,4,2026-04-28,2026-07-27
@@ -395,11 +410,7 @@
 1173,Daniela Serrano Salazar,Diputado,1226,José Montalva Feuerhake,Diputado,4,2026-06-02,2026-07-21
 1075,Diego Schalper Sepúlveda,Diputado,1197,Carlos Chandía Alarcón,Diputado,4,2026-06-04,2026-08-10
 1202,Eduardo Cretton Rebolledo,Diputado,1249,Omar Sabat Guzmán,Diputado,4,2026-05-11,2026-06-09
-1028,Eduardo Durán Salinas,Diputado,1133,Juan Irarrázaval Rossel,Diputado,4,2026-04-14,2026-06-23
-1028,Eduardo Durán Salinas,Diputado,1236,Paula Olmos Contreras,Diputado,4,2026-04-14,2026-06-19
-1028,Eduardo Durán Salinas,Diputado,1119,Sara Concha Smith,Diputado,4,2026-04-14,2026-06-23
 1255,Eileen Urqueta Rojas,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,4,2026-05-06,2026-08-05
-1056,Emilia Nuyado Ancapichun,Diputado,1206,Carolina Cucumides Calderón,Diputado,4,2026-06-22,2026-08-11
 1171,Emilia Schneider Videla,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,4,2026-04-28,2026-07-27
 1190,Enrique Bassaletti Riess,Diputado,1223,Hans Marowski Cuevas,Diputado,4,2026-06-16,2026-07-29
 1190,Enrique Bassaletti Riess,Diputado,1235,Javier Olivares Avendaño,Diputado,4,2026-06-16,2026-07-29
@@ -408,10 +419,10 @@
 1239,Fabián Ossandón Briceño,Diputado,1255,Eileen Urqueta Rojas,Diputado,4,2026-05-06,2026-08-05
 1116,Felipe Camaño Cárdenas,Diputado,1224,Cristian Mella Andaur,Diputado,4,2026-03-27,2026-06-24
 1201,Flor Contreras Vivallo,Diputado,1255,Eileen Urqueta Rojas,Diputado,4,2026-05-06,2026-08-05
+1201,Flor Contreras Vivallo,Diputado,1240,Zandra Parisi Fernández,Diputado,4,2026-05-09,2026-08-14
 1183,Flor Weisse Novoa,Diputado,1202,Eduardo Cretton Rebolledo,Diputado,4,2026-05-13,2026-08-04
 1183,Flor Weisse Novoa,Diputado,1199,Jaime Coloma Álamos,Diputado,4,2026-05-13,2026-08-04
 1183,Flor Weisse Novoa,Diputado,815,Sergio Bobadilla Muñoz,Diputado,4,2026-05-13,2026-08-04
-1054,Francesca Muñoz González,Diputado,1133,Juan Irarrázaval Rossel,Diputado,4,2026-04-14,2026-08-04
 1114,Félix Bugueño Sotelo,Diputado,1177,Carolina Tello Rojas,Diputado,4,2026-05-04,2026-08-11
 1087,Gael Yeomans Araya,Diputado,1177,Carolina Tello Rojas,Diputado,4,2026-04-28,2026-07-27
 1087,Gael Yeomans Araya,Diputado,1142,Daniel Manouchehri Lobos,Diputado,4,2026-06-02,2026-07-21
@@ -420,7 +431,6 @@
 1087,Gael Yeomans Araya,Diputado,1181,Nelson Venegas Salazar,Diputado,4,2026-06-15,2026-07-20
 1087,Gael Yeomans Araya,Diputado,1243,Tamara Ramírez Ramírez,Diputado,4,2026-07-14,2026-07-30
 1087,Gael Yeomans Araya,Diputado,1256,Tatiana Urrutia Herrera,Diputado,4,2026-04-28,2026-07-27
-1339,Gastón Saavedra Chandía,Senador,1500,Danisa Astudillo Peiretti,Senador,4,2026-05-19,2026-08-19
 1152,Gloria Naveillan Arriagada,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,4,2026-04-21,2026-08-11
 1152,Gloria Naveillan Arriagada,Diputado,1228,Paulina Muñoz Minte,Diputado,4,2026-04-15,2026-08-11
 1086,Gonzalo Winter Etcheberry,Diputado,1142,Daniel Manouchehri Lobos,Diputado,4,2026-06-02,2026-07-21
@@ -454,6 +464,7 @@
 1132,Jorge Guzmán Zepeda,Diputado,1261,Daniel Valenzuela Salazar,Diputado,4,2026-05-05,2026-07-06
 1132,Jorge Guzmán Zepeda,Diputado,1193,Patricio Briones Moller,Diputado,4,2026-05-12,2026-08-04
 1226,José Montalva Feuerhake,Diputado,1241,Patricio Pinilla Valencia,Diputado,4,2026-06-10,2026-07-14
+1133,Juan Irarrázaval Rossel,Diputado,1236,Paula Olmos Contreras,Diputado,4,2026-04-14,2026-08-14
 1326,Juan Luis Castro González,Senador,1500,Danisa Astudillo Peiretti,Senador,4,2026-08-04,2026-08-19
 1326,Juan Luis Castro González,Senador,1511,Enrique Lee Flores,Senador,4,2026-03-18,2026-07-21
 1326,Juan Luis Castro González,Senador,1502,Miguel Ángel Becker Alvear,Senador,4,2026-06-03,2026-08-11
@@ -461,18 +472,15 @@
 1326,Juan Luis Castro González,Senador,1331,Sergio Gahona Salazar,Senador,4,2026-03-18,2026-07-15
 1073,Juan Santana Castillo,Diputado,1173,Daniela Serrano Salazar,Diputado,4,2026-04-07,2026-07-21
 1073,Juan Santana Castillo,Diputado,1122,Luis Alberto Cuello Peña y Lillo,Diputado,4,2026-04-07,2026-06-08
-1192,Lilian Betancurt Delgado,Diputado,1201,Flor Contreras Vivallo,Diputado,4,2026-06-10,2026-07-31
+1324,Karim Bianchi Retamales,Senador,1518,Cristian Vial Maceratta,Senador,4,2026-06-30,2026-09-08
 1192,Lilian Betancurt Delgado,Diputado,1235,Javier Olivares Avendaño,Diputado,4,2026-06-10,2026-07-23
-1192,Lilian Betancurt Delgado,Diputado,1193,Patricio Briones Moller,Diputado,4,2026-06-10,2026-07-23
 1192,Lilian Betancurt Delgado,Diputado,1236,Paula Olmos Contreras,Diputado,4,2026-04-07,2026-07-23
-1320,Loreto Carvajal Ambiado,Senador,1500,Danisa Astudillo Peiretti,Senador,4,2026-06-17,2026-08-10
 1122,Luis Alberto Cuello Peña y Lillo,Diputado,1128,Ana María Gazmuri Vieira,Diputado,4,2026-06-08,2026-08-05
 1122,Luis Alberto Cuello Peña y Lillo,Diputado,1178,Héctor Ulloa Aguilera,Diputado,4,2026-06-12,2026-07-30
 1122,Luis Alberto Cuello Peña y Lillo,Diputado,1211,Sofía González Cortés,Diputado,4,2026-05-06,2026-08-05
 1060,Luis Pardo Sáinz,Diputado,1227,Claudia Mora Vega,Diputado,4,2026-06-17,2026-08-10
 1060,Luis Pardo Sáinz,Diputado,1062,Joanna Pérez Olea,Diputado,4,2026-06-04,2026-08-10
 1170,Luis Sánchez Ossa,Diputado,1261,Daniel Valenzuela Salazar,Diputado,4,2026-06-10,2026-07-29
-1120,Manuel José Ossandón Irarrázabal,Senador,1518,Cristian Vial Maceratta,Senador,4,2026-05-19,2026-07-07
 1120,Manuel José Ossandón Irarrázabal,Senador,1339,Gastón Saavedra Chandía,Senador,4,2026-03-25,2026-07-07
 1174,Marco Antonio Sulantay Olivares,Diputado,1233,Ricardo Neumann Bertín,Diputado,4,2026-04-20,2026-07-29
 1074,Marisela Santibáñez Novoa,Diputado,1102,Roberto Arroyo Muñoz,Diputado,4,2026-06-04,2026-07-24
@@ -482,6 +490,7 @@
 1209,Matías Fernández Hartwig,Diputado,1222,Andrea Macías Palma,Diputado,4,2026-03-25,2026-08-11
 1209,Matías Fernández Hartwig,Diputado,1264,Fernando Zamorano Peralta,Diputado,4,2026-05-29,2026-08-11
 1344,Matías Walker Prieto,Senador,1503,Miguel Ángel Calisto Águila,Senador,4,2026-04-08,2026-06-24
+1344,Matías Walker Prieto,Senador,1450,Paulina Vodanovic Rojas,Senador,4,2026-07-22,2026-09-09
 1131,Mauro González Villarroel,Diputado,1227,Claudia Mora Vega,Diputado,4,2026-05-05,2026-08-10
 1131,Mauro González Villarroel,Diputado,1261,Daniel Valenzuela Salazar,Diputado,4,2026-05-05,2026-08-04
 1131,Mauro González Villarroel,Diputado,1242,Rodrigo Ramírez Parra,Diputado,4,2026-05-12,2026-08-10
@@ -505,15 +514,14 @@
 1241,Patricio Pinilla Valencia,Diputado,872,Jaime Mulet Martínez,Diputado,4,2026-04-15,2026-07-17
 1241,Patricio Pinilla Valencia,Diputado,1243,Tamara Ramírez Ramírez,Diputado,4,2026-07-14,2026-07-30
 1236,Paula Olmos Contreras,Diputado,1255,Eileen Urqueta Rojas,Diputado,4,2026-04-07,2026-08-05
-1337,Paulina Núñez Urrutia,Senador,1518,Cristian Vial Maceratta,Senador,4,2026-05-19,2026-08-13
 1110,Pedro Araya Guerrero,Senador,1117,Iván Moreira Barros,Senador,4,2026-06-30,2026-08-13
 1110,Pedro Araya Guerrero,Senador,1450,Paulina Vodanovic Rojas,Senador,4,2026-04-08,2026-08-13
 1217,Pier Karlezi Hazleby,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,4,2026-04-21,2026-08-11
 1217,Pier Karlezi Hazleby,Diputado,1219,Tomás Kast Sommerhoff,Diputado,4,2026-06-09,2026-08-05
 1196,Priscilla Castillo Gerli,Diputado,1229,Javier Muñoz Riquelme,Diputado,4,2026-04-15,2026-08-05
 1044,Raúl Leiva Carvajal,Diputado,1219,Tomás Kast Sommerhoff,Diputado,4,2026-05-06,2026-08-05
+1102,Roberto Arroyo Muñoz,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,4,2026-07-31,2026-08-14
 1102,Roberto Arroyo Muñoz,Diputado,1217,Pier Karlezi Hazleby,Diputado,4,2026-05-18,2026-07-24
-1102,Roberto Arroyo Muñoz,Diputado,1219,Tomás Kast Sommerhoff,Diputado,4,2026-06-04,2026-07-31
 1119,Sara Concha Smith,Diputado,1227,Claudia Mora Vega,Diputado,4,2026-05-12,2026-06-23
 1203,Sebastián Cristoffanini Jaraquemada,Diputado,1254,Ignacio Urcullú Clèment-Lund,Diputado,4,2026-05-12,2026-07-14
 1333,Sebastián Keitel Bianchi,Senador,1502,Miguel Ángel Becker Alvear,Senador,4,2026-06-03,2026-08-11
@@ -539,10 +547,11 @@
 1334,Alejandro Kusanovic Glusevic,Senador,1503,Miguel Ángel Calisto Águila,Senador,3,2026-04-08,2026-08-27
 1230,Alex Nahuelquin Nahuelquin,Diputado,1239,Fabián Ossandón Briceño,Diputado,3,2026-06-10,2026-08-05
 1230,Alex Nahuelquin Nahuelquin,Diputado,1235,Javier Olivares Avendaño,Diputado,3,2026-06-16,2026-07-23
-1230,Alex Nahuelquin Nahuelquin,Diputado,1240,Zandra Parisi Fernández,Diputado,3,2026-07-23,2026-08-06
 1115,Alfonso De Urresti Longton,Senador,1514,Beatriz Sánchez Muñoz,Senador,3,2026-04-15,2026-08-19
 1115,Alfonso De Urresti Longton,Senador,1507,Daniella Cicardini Milla,Senador,3,2026-05-19,2026-08-19
 1115,Alfonso De Urresti Longton,Senador,1326,Juan Luis Castro González,Senador,3,2026-08-12,2026-08-19
+1115,Alfonso De Urresti Longton,Senador,1332,María José Gatica Bertin,Senador,3,2026-07-22,2026-09-07
+1115,Alfonso De Urresti Longton,Senador,1224,Ximena Ordenes Neira,Senador,3,2026-04-15,2026-09-07
 1128,Ana María Gazmuri Vieira,Diputado,1250,Bernardo Salinas Maya,Diputado,3,2026-04-20,2026-08-12
 1128,Ana María Gazmuri Vieira,Diputado,1206,Carolina Cucumides Calderón,Diputado,3,2026-04-20,2026-07-05
 1128,Ana María Gazmuri Vieira,Diputado,1224,Cristian Mella Andaur,Diputado,3,2026-04-27,2026-07-08
@@ -564,11 +573,11 @@
 1150,Benjamín Moreno Bascur,Diputado,1245,Alejandro Riquelme Ducci,Diputado,3,2026-06-16,2026-07-09
 1012,Boris Barrera Moreno,Diputado,1173,Daniela Serrano Salazar,Diputado,3,2026-04-07,2026-08-05
 1012,Boris Barrera Moreno,Diputado,1122,Luis Alberto Cuello Peña y Lillo,Diputado,3,2026-04-07,2026-08-05
+1195,Carlos Carvajal Gallardo,Diputado,1222,Andrea Macías Palma,Diputado,3,2026-08-05,2026-08-17
 1195,Carlos Carvajal Gallardo,Diputado,1246,José Antonio Rivas Villalobos,Diputado,3,2026-08-11,2026-08-12
 1197,Carlos Chandía Alarcón,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-06-04,2026-06-17
 1205,Carlos Cuadrado Prats,Diputado,1251,Macarena Santelices Cañas,Diputado,3,2026-05-14,2026-06-16
 1205,Carlos Cuadrado Prats,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-06-03,2026-08-05
-1206,Carolina Cucumides Calderón,Diputado,1222,Andrea Macías Palma,Diputado,3,2026-07-06,2026-08-12
 1206,Carolina Cucumides Calderón,Diputado,1250,Bernardo Salinas Maya,Diputado,3,2026-04-20,2026-08-12
 1206,Carolina Cucumides Calderón,Diputado,1255,Eileen Urqueta Rojas,Diputado,3,2026-05-04,2026-07-05
 1206,Carolina Cucumides Calderón,Diputado,986,Marcela Hernando Pérez,Diputado,3,2026-04-22,2026-07-05
@@ -577,7 +586,6 @@
 1206,Carolina Cucumides Calderón,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,3,2026-07-06,2026-08-12
 1177,Carolina Tello Rojas,Diputado,1206,Carolina Cucumides Calderón,Diputado,3,2026-04-22,2026-06-17
 1025,Catalina Del Real Mihovilovic,Diputado,1251,Macarena Santelices Cañas,Diputado,3,2026-05-29,2026-06-16
-1025,Catalina Del Real Mihovilovic,Diputado,1102,Roberto Arroyo Muñoz,Diputado,3,2026-05-07,2026-07-06
 1104,Chiara Barchiesi Chávez,Diputado,1190,Enrique Bassaletti Riess,Diputado,3,2026-06-09,2026-08-07
 1227,Claudia Mora Vega,Diputado,1255,Eileen Urqueta Rojas,Diputado,3,2026-05-12,2026-07-21
 1227,Claudia Mora Vega,Diputado,1235,Javier Olivares Avendaño,Diputado,3,2026-05-12,2026-06-09
@@ -618,6 +626,7 @@
 1028,Eduardo Durán Salinas,Diputado,1231,Ximena Naranjo Pinto,Diputado,3,2026-04-14,2026-06-02
 1028,Eduardo Durán Salinas,Diputado,1240,Zandra Parisi Fernández,Diputado,3,2026-06-02,2026-06-22
 1255,Eileen Urqueta Rojas,Diputado,986,Marcela Hernando Pérez,Diputado,3,2026-06-17,2026-08-11
+1056,Emilia Nuyado Ancapichun,Diputado,1222,Andrea Macías Palma,Diputado,3,2026-07-06,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1246,José Antonio Rivas Villalobos,Diputado,3,2026-06-22,2026-07-29
 1171,Emilia Schneider Videla,Diputado,1177,Carolina Tello Rojas,Diputado,3,2026-04-28,2026-07-27
 1171,Emilia Schneider Videla,Diputado,1252,Constanza Schonhaut Soto,Diputado,3,2026-04-28,2026-07-27
@@ -626,6 +635,7 @@
 1171,Emilia Schneider Videla,Diputado,1256,Tatiana Urrutia Herrera,Diputado,3,2026-04-28,2026-07-27
 1190,Enrique Bassaletti Riess,Diputado,1247,Javiera Rodríguez Pascual,Diputado,3,2026-07-01,2026-08-07
 1190,Enrique Bassaletti Riess,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-06-09,2026-08-07
+1342,Enrique Van Rysselberghe Herrera,Senador,1500,Danisa Astudillo Peiretti,Senador,3,2026-06-17,2026-09-09
 1212,Erich Grohs Marín,Diputado,1228,Paulina Muñoz Minte,Diputado,3,2026-04-15,2026-08-05
 1343,Esteban Velásquez Núñez,Senador,1500,Danisa Astudillo Peiretti,Senador,3,2026-06-16,2026-06-17
 1325,Fabiola Campillai Rojas,Senador,1326,Juan Luis Castro González,Senador,3,2026-06-16,2026-08-11
@@ -635,8 +645,9 @@
 1329,Fidel Espinoza Sandoval,Senador,1336,Daniel Núñez Arancibia,Senador,3,2026-04-08,2026-05-19
 1201,Flor Contreras Vivallo,Diputado,1258,Guillermo Valdés Carmona,Diputado,3,2026-05-06,2026-07-13
 1201,Flor Contreras Vivallo,Diputado,1235,Javier Olivares Avendaño,Diputado,3,2026-05-09,2026-07-23
-1201,Flor Contreras Vivallo,Diputado,1240,Zandra Parisi Fernández,Diputado,3,2026-05-09,2026-07-31
 1183,Flor Weisse Novoa,Diputado,1234,Mario Olavarría Rodríguez,Diputado,3,2026-04-28,2026-06-18
+1054,Francesca Muñoz González,Diputado,1236,Paula Olmos Contreras,Diputado,3,2026-04-14,2026-08-14
+1054,Francesca Muñoz González,Diputado,843,René Manuel García García,Diputado,3,2026-05-18,2026-08-14
 1054,Francesca Muñoz González,Diputado,1102,Roberto Arroyo Muñoz,Diputado,3,2026-05-18,2026-08-12
 1204,Francisco Crisóstomo Llanos,Diputado,1241,Patricio Pinilla Valencia,Diputado,3,2026-07-06,2026-08-10
 1237,Francisco Orrego Gutiérrez,Diputado,1247,Javiera Rodríguez Pascual,Diputado,3,2026-06-10,2026-07-21
@@ -677,6 +688,7 @@
 1105,Héctor Barría Angulo,Diputado,1178,Héctor Ulloa Aguilera,Diputado,3,2026-04-20,2026-06-12
 1105,Héctor Barría Angulo,Diputado,1208,Jorge Díaz Ibarra,Diputado,3,2026-06-04,2026-07-11
 1213,Irací Hassler Jacob,Diputado,1260,César Valenzuela Maass,Diputado,3,2026-04-15,2026-06-08
+1330,Iván Flores García,Senador,1518,Cristian Vial Maceratta,Senador,3,2026-06-24,2026-09-07
 1117,Iván Moreira Barros,Senador,1334,Alejandro Kusanovic Glusevic,Senador,3,2026-04-15,2026-04-22
 1117,Iván Moreira Barros,Senador,1120,Manuel José Ossandón Irarrázabal,Senador,3,2026-05-19,2026-07-07
 1117,Iván Moreira Barros,Senador,1331,Sergio Gahona Salazar,Senador,3,2026-06-03,2026-06-03
@@ -691,6 +703,7 @@
 1235,Javier Olivares Avendaño,Diputado,1239,Fabián Ossandón Briceño,Diputado,3,2026-05-09,2026-07-13
 1235,Javier Olivares Avendaño,Diputado,1258,Guillermo Valdés Carmona,Diputado,3,2026-04-21,2026-07-13
 1235,Javier Olivares Avendaño,Diputado,1240,Zandra Parisi Fernández,Diputado,3,2026-05-09,2026-07-23
+1148,Javiera Morales Alvarado,Diputado,1222,Andrea Macías Palma,Diputado,3,2026-03-25,2026-08-17
 1247,Javiera Rodríguez Pascual,Diputado,1251,Macarena Santelices Cañas,Diputado,3,2026-06-23,2026-07-21
 1247,Javiera Rodríguez Pascual,Diputado,1263,Sebastián Zamora Soto,Diputado,3,2026-07-01,2026-08-07
 1062,Joanna Pérez Olea,Diputado,1177,Carolina Tello Rojas,Diputado,3,2026-04-21,2026-07-20
@@ -710,14 +723,13 @@
 1226,José Montalva Feuerhake,Diputado,1243,Tamara Ramírez Ramírez,Diputado,3,2026-06-23,2026-07-14
 1108,Juan Carlos Beltrán Silva,Diputado,1132,Jorge Guzmán Zepeda,Diputado,3,2026-05-05,2026-07-31
 1108,Juan Carlos Beltrán Silva,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-06-03,2026-07-31
-1133,Juan Irarrázaval Rossel,Diputado,1236,Paula Olmos Contreras,Diputado,3,2026-04-14,2026-06-02
 1133,Juan Irarrázaval Rossel,Diputado,1231,Ximena Naranjo Pinto,Diputado,3,2026-04-14,2026-06-09
 1073,Juan Santana Castillo,Diputado,1087,Gael Yeomans Araya,Diputado,3,2026-04-07,2026-07-21
 1073,Juan Santana Castillo,Diputado,1188,Marcos Barraza Gómez,Diputado,3,2026-04-07,2026-08-11
 1324,Karim Bianchi Retamales,Senador,1334,Alejandro Kusanovic Glusevic,Senador,3,2026-04-15,2026-04-22
 1324,Karim Bianchi Retamales,Senador,911,Carlos Ignacio Kuschel Silva,Senador,3,2026-04-22,2026-06-10
-1324,Karim Bianchi Retamales,Senador,1518,Cristian Vial Maceratta,Senador,3,2026-06-30,2026-07-07
 1324,Karim Bianchi Retamales,Senador,1500,Danisa Astudillo Peiretti,Senador,3,2026-05-13,2026-06-16
+1324,Karim Bianchi Retamales,Senador,1326,Juan Luis Castro González,Senador,3,2026-06-09,2026-09-08
 1324,Karim Bianchi Retamales,Senador,1503,Miguel Ángel Calisto Águila,Senador,3,2026-05-13,2026-05-20
 1324,Karim Bianchi Retamales,Senador,1450,Paulina Vodanovic Rojas,Senador,3,2026-04-08,2026-06-10
 1324,Karim Bianchi Retamales,Senador,1516,Renzo Trisotti Martínez,Senador,3,2026-06-16,2026-07-08
@@ -725,6 +737,8 @@
 1192,Lilian Betancurt Delgado,Diputado,1255,Eileen Urqueta Rojas,Diputado,3,2026-04-07,2026-08-12
 1192,Lilian Betancurt Delgado,Diputado,1223,Hans Marowski Cuevas,Diputado,3,2026-06-10,2026-06-25
 1192,Lilian Betancurt Delgado,Diputado,1243,Tamara Ramírez Ramírez,Diputado,3,2026-06-10,2026-07-23
+1192,Lilian Betancurt Delgado,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-06-16,2026-08-14
+1192,Lilian Betancurt Delgado,Diputado,1240,Zandra Parisi Fernández,Diputado,3,2026-07-23,2026-08-14
 1127,Lorena Fries Monleón,Diputado,1222,Andrea Macías Palma,Diputado,3,2026-03-25,2026-05-26
 1127,Lorena Fries Monleón,Diputado,1153,Coca Ericka Ñanco Vásquez,Diputado,3,2026-07-14,2026-07-22
 1127,Lorena Fries Monleón,Diputado,872,Jaime Mulet Martínez,Diputado,3,2026-03-27,2026-07-14
@@ -732,6 +746,7 @@
 1127,Lorena Fries Monleón,Diputado,1188,Marcos Barraza Gómez,Diputado,3,2026-07-14,2026-07-29
 1159,Lorena Pizarro Sierra,Diputado,1250,Bernardo Salinas Maya,Diputado,3,2026-06-12,2026-08-12
 1159,Lorena Pizarro Sierra,Diputado,1188,Marcos Barraza Gómez,Diputado,3,2026-06-16,2026-08-12
+1320,Loreto Carvajal Ambiado,Senador,1342,Enrique Van Rysselberghe Herrera,Senador,3,2026-06-17,2026-09-09
 1327,Luciano Cruz-Coke Carvallo,Senador,1501,Andrea Balladares Letelier,Senador,3,2026-04-08,2026-07-03
 1122,Luis Alberto Cuello Peña y Lillo,Diputado,1173,Daniela Serrano Salazar,Diputado,3,2026-04-07,2026-08-05
 1122,Luis Alberto Cuello Peña y Lillo,Diputado,1186,Ignacio Achurra Díaz,Diputado,3,2026-04-15,2026-06-17
@@ -745,6 +760,7 @@
 1170,Luis Sánchez Ossa,Diputado,1263,Sebastián Zamora Soto,Diputado,3,2026-06-15,2026-07-29
 1170,Luis Sánchez Ossa,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-06-15,2026-07-20
 1251,Macarena Santelices Cañas,Diputado,1262,Diego Vergara Rodríguez,Diputado,3,2026-06-23,2026-07-09
+1120,Manuel José Ossandón Irarrázabal,Senador,1330,Iván Flores García,Senador,3,2026-03-25,2026-09-07
 1188,Marcos Barraza Gómez,Diputado,1205,Carlos Cuadrado Prats,Diputado,3,2026-05-14,2026-07-29
 1188,Marcos Barraza Gómez,Diputado,1213,Irací Hassler Jacob,Diputado,3,2026-04-07,2026-08-12
 1188,Marcos Barraza Gómez,Diputado,1226,José Montalva Feuerhake,Diputado,3,2026-06-16,2026-07-14
@@ -768,7 +784,6 @@
 1332,María José Gatica Bertin,Senador,1502,Miguel Ángel Becker Alvear,Senador,3,2026-08-19,2026-09-02
 1332,María José Gatica Bertin,Senador,1337,Paulina Núñez Urrutia,Senador,3,2026-07-21,2026-08-04
 1209,Matías Fernández Hartwig,Diputado,1210,Gustavo Gatica Villarroel,Diputado,3,2026-03-25,2026-08-11
-1344,Matías Walker Prieto,Senador,1450,Paulina Vodanovic Rojas,Senador,3,2026-07-22,2026-08-05
 1131,Mauro González Villarroel,Diputado,1197,Carlos Chandía Alarcón,Diputado,3,2026-06-04,2026-08-10
 1131,Mauro González Villarroel,Diputado,1132,Jorge Guzmán Zepeda,Diputado,3,2026-04-15,2026-05-12
 1502,Miguel Ángel Becker Alvear,Senador,911,Carlos Ignacio Kuschel Silva,Senador,3,2026-06-03,2026-08-19
@@ -791,6 +806,7 @@
 1241,Patricio Pinilla Valencia,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,3,2026-06-02,2026-07-06
 1236,Paula Olmos Contreras,Diputado,1258,Guillermo Valdés Carmona,Diputado,3,2026-04-21,2026-06-16
 1228,Paulina Muñoz Minte,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,3,2026-04-21,2026-08-11
+1337,Paulina Núñez Urrutia,Senador,1512,Andrés Longton Herrera,Senador,3,2026-06-16,2026-09-09
 1337,Paulina Núñez Urrutia,Senador,1500,Danisa Astudillo Peiretti,Senador,3,2026-06-16,2026-07-30
 1337,Paulina Núñez Urrutia,Senador,1340,Gustavo Sanhueza Dueñas,Senador,3,2026-06-03,2026-06-03
 1337,Paulina Núñez Urrutia,Senador,1503,Miguel Ángel Calisto Águila,Senador,3,2026-04-15,2026-08-04
@@ -807,9 +823,9 @@
 1044,Raúl Leiva Carvajal,Diputado,1205,Carlos Cuadrado Prats,Diputado,3,2026-06-16,2026-08-05
 1044,Raúl Leiva Carvajal,Diputado,1099,Jaime Araya Guerrero,Diputado,3,2026-05-13,2026-08-07
 1044,Raúl Leiva Carvajal,Diputado,1131,Mauro González Villarroel,Diputado,3,2026-05-13,2026-08-07
+843,René Manuel García García,Diputado,915,Germán Verdugo Soto,Diputado,3,2026-08-04,2026-08-14
 1233,Ricardo Neumann Bertín,Diputado,1247,Javiera Rodríguez Pascual,Diputado,3,2026-06-23,2026-07-27
 1233,Ricardo Neumann Bertín,Diputado,1234,Mario Olavarría Rodríguez,Diputado,3,2026-04-29,2026-07-29
-1102,Roberto Arroyo Muñoz,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,3,2026-07-31,2026-08-12
 1102,Roberto Arroyo Muñoz,Diputado,1224,Cristian Mella Andaur,Diputado,3,2026-06-04,2026-08-11
 1102,Roberto Arroyo Muñoz,Diputado,1175,Cristián Tapia Ramos,Diputado,3,2026-05-18,2026-06-15
 1102,Roberto Arroyo Muñoz,Diputado,1239,Fabián Ossandón Briceño,Diputado,3,2026-05-09,2026-07-20
@@ -819,7 +835,10 @@
 1242,Rodrigo Ramírez Parra,Diputado,843,René Manuel García García,Diputado,3,2026-04-14,2026-06-19
 1328,Rojo Edwards,Senador,1502,Miguel Ángel Becker Alvear,Senador,3,2026-06-17,2026-09-02
 1119,Sara Concha Smith,Diputado,1255,Eileen Urqueta Rojas,Diputado,3,2026-05-04,2026-06-09
+1119,Sara Concha Smith,Diputado,915,Germán Verdugo Soto,Diputado,3,2026-06-23,2026-08-14
 1119,Sara Concha Smith,Diputado,1193,Patricio Briones Moller,Diputado,3,2026-05-12,2026-06-23
+1119,Sara Concha Smith,Diputado,1236,Paula Olmos Contreras,Diputado,3,2026-04-14,2026-08-14
+1119,Sara Concha Smith,Diputado,843,René Manuel García García,Diputado,3,2026-05-18,2026-08-14
 1119,Sara Concha Smith,Diputado,1231,Ximena Naranjo Pinto,Diputado,3,2026-04-14,2026-06-09
 1182,Sebastián Videla Castillo,Diputado,1250,Bernardo Salinas Maya,Diputado,3,2026-07-06,2026-08-12
 1331,Sergio Gahona Salazar,Senador,1511,Enrique Lee Flores,Senador,3,2026-03-18,2026-06-03
@@ -848,6 +867,7 @@
 1059,Ximena Ossandón Irarrázabal,Diputado,1122,Luis Alberto Cuello Peña y Lillo,Diputado,3,2026-05-06,2026-07-30
 1059,Ximena Ossandón Irarrázabal,Diputado,1074,Marisela Santibáñez Novoa,Diputado,3,2026-05-06,2026-06-15
 1059,Ximena Ossandón Irarrázabal,Diputado,1219,Tomás Kast Sommerhoff,Diputado,3,2026-05-06,2026-07-06
+1215,Yasna Provoste Campillay,Senador,1344,Matías Walker Prieto,Senador,3,2026-07-08,2026-09-09
 1017,Álvaro Carter Fernández,Diputado,1261,Daniel Valenzuela Salazar,Diputado,3,2026-06-15,2026-07-29
 1017,Álvaro Carter Fernández,Diputado,1190,Enrique Bassaletti Riess,Diputado,3,2026-06-11,2026-07-29
 1017,Álvaro Carter Fernández,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,3,2026-06-11,2026-07-14
@@ -860,6 +880,8 @@
 1165,Agustín Romero Leiva,Diputado,1247,Javiera Rodríguez Pascual,Diputado,2,2026-07-21,2026-08-07
 1165,Agustín Romero Leiva,Diputado,1263,Sebastián Zamora Soto,Diputado,2,2026-07-14,2026-08-07
 1165,Agustín Romero Leiva,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,2,2026-06-11,2026-07-14
+1341,Alejandra Sepúlveda Orbenes,Senador,1344,Matías Walker Prieto,Senador,2,2026-05-05,2026-09-09
+1257,Alejandra Valdebenito Torres,Diputado,803,René Alinco Bustos,Diputado,2,2026-05-13,2026-08-17
 1013,Alejandro Bernales Maldonado,Diputado,1197,Carlos Chandía Alarcón,Diputado,2,2026-06-08,2026-06-17
 1013,Alejandro Bernales Maldonado,Diputado,1177,Carolina Tello Rojas,Diputado,2,2026-04-15,2026-05-31
 1013,Alejandro Bernales Maldonado,Diputado,1176,Hotuiti Teao Drago,Diputado,2,2026-06-08,2026-06-17
@@ -881,9 +903,7 @@
 1115,Alfonso De Urresti Longton,Senador,1511,Enrique Lee Flores,Senador,2,2026-04-15,2026-08-10
 1115,Alfonso De Urresti Longton,Senador,1329,Fidel Espinoza Sandoval,Senador,2,2026-04-08,2026-05-19
 1115,Alfonso De Urresti Longton,Senador,1327,Luciano Cruz-Coke Carvallo,Senador,2,2026-07-03,2026-07-14
-1115,Alfonso De Urresti Longton,Senador,1332,María José Gatica Bertin,Senador,2,2026-07-22,2026-08-19
 1115,Alfonso De Urresti Longton,Senador,1450,Paulina Vodanovic Rojas,Senador,2,2026-07-03,2026-08-12
-1115,Alfonso De Urresti Longton,Senador,1224,Ximena Ordenes Neira,Senador,2,2026-04-15,2026-07-22
 1128,Ana María Gazmuri Vieira,Diputado,1222,Andrea Macías Palma,Diputado,2,2026-04-27,2026-05-26
 1128,Ana María Gazmuri Vieira,Diputado,1227,Claudia Mora Vega,Diputado,2,2026-06-26,2026-07-21
 1128,Ana María Gazmuri Vieira,Diputado,1252,Constanza Schonhaut Soto,Diputado,2,2026-05-26,2026-07-08
@@ -899,6 +919,7 @@
 1222,Andrea Macías Palma,Diputado,1250,Bernardo Salinas Maya,Diputado,2,2026-07-06,2026-08-12
 1222,Andrea Macías Palma,Diputado,1264,Fernando Zamorano Peralta,Diputado,2,2026-08-05,2026-08-11
 1222,Andrea Macías Palma,Diputado,1241,Patricio Pinilla Valencia,Diputado,2,2026-07-06,2026-08-12
+1222,Andrea Macías Palma,Diputado,803,René Alinco Bustos,Diputado,2,2026-08-05,2026-08-17
 1061,Andrea Parra Sauterel,Diputado,1128,Ana María Gazmuri Vieira,Diputado,2,2026-05-15,2026-06-22
 1061,Andrea Parra Sauterel,Diputado,1189,Jaime Bassa Mercado,Diputado,2,2026-06-10,2026-06-10
 1061,Andrea Parra Sauterel,Diputado,1141,Luis Malla Valenzuela,Diputado,2,2026-04-15,2026-05-15
@@ -931,15 +952,18 @@
 1012,Boris Barrera Moreno,Diputado,1188,Marcos Barraza Gómez,Diputado,2,2026-04-07,2026-06-08
 1012,Boris Barrera Moreno,Diputado,1117,Nathalie Castillo Rojas,Diputado,2,2026-06-08,2026-08-05
 1187,Carlo Arqueros Pizarro,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,2,2026-07-14,2026-07-14
+1110,Carlos Bianchi Chelech,Diputado,1257,Alejandra Valdebenito Torres,Diputado,2,2026-06-16,2026-08-17
 1110,Carlos Bianchi Chelech,Diputado,1116,Felipe Camaño Cárdenas,Diputado,2,2026-05-28,2026-05-29
 1110,Carlos Bianchi Chelech,Diputado,1189,Jaime Bassa Mercado,Diputado,2,2026-06-10,2026-06-10
 1110,Carlos Bianchi Chelech,Diputado,872,Jaime Mulet Martínez,Diputado,2,2026-05-28,2026-05-29
+1110,Carlos Bianchi Chelech,Diputado,1208,Jorge Díaz Ibarra,Diputado,2,2026-05-28,2026-08-17
 1110,Carlos Bianchi Chelech,Diputado,1241,Patricio Pinilla Valencia,Diputado,2,2026-06-10,2026-06-10
-1195,Carlos Carvajal Gallardo,Diputado,1222,Andrea Macías Palma,Diputado,2,2026-08-05,2026-08-12
 1195,Carlos Carvajal Gallardo,Diputado,1250,Bernardo Salinas Maya,Diputado,2,2026-08-12,2026-08-12
 1195,Carlos Carvajal Gallardo,Diputado,1197,Carlos Chandía Alarcón,Diputado,2,2026-06-04,2026-06-17
+1195,Carlos Carvajal Gallardo,Diputado,1206,Carolina Cucumides Calderón,Diputado,2,2026-08-12,2026-08-17
 1195,Carlos Carvajal Gallardo,Diputado,1209,Matías Fernández Hartwig,Diputado,2,2026-04-15,2026-08-05
 1195,Carlos Carvajal Gallardo,Diputado,1236,Paula Olmos Contreras,Diputado,2,2026-06-10,2026-08-12
+1195,Carlos Carvajal Gallardo,Diputado,803,René Alinco Bustos,Diputado,2,2026-08-05,2026-08-17
 1195,Carlos Carvajal Gallardo,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,2,2026-08-12,2026-08-12
 1197,Carlos Chandía Alarcón,Diputado,1251,Macarena Santelices Cañas,Diputado,2,2026-06-26,2026-08-11
 1197,Carlos Chandía Alarcón,Diputado,986,Marcela Hernando Pérez,Diputado,2,2026-06-08,2026-08-05
@@ -957,6 +981,10 @@
 1177,Carolina Tello Rojas,Diputado,1184,Roberto Celedón Fernández,Diputado,2,2026-04-15,2026-07-15
 1177,Carolina Tello Rojas,Diputado,1182,Sebastián Videla Castillo,Diputado,2,2026-07-13,2026-07-20
 1025,Catalina Del Real Mihovilovic,Diputado,1257,Alejandra Valdebenito Torres,Diputado,2,2026-05-29,2026-06-16
+1025,Catalina Del Real Mihovilovic,Diputado,1192,Lilian Betancurt Delgado,Diputado,2,2026-06-16,2026-08-14
+1025,Catalina Del Real Mihovilovic,Diputado,1193,Patricio Briones Moller,Diputado,2,2026-06-16,2026-08-14
+1025,Catalina Del Real Mihovilovic,Diputado,1219,Tomás Kast Sommerhoff,Diputado,2,2026-06-16,2026-08-14
+1025,Catalina Del Real Mihovilovic,Diputado,1240,Zandra Parisi Fernández,Diputado,2,2026-06-22,2026-08-14
 1104,Chiara Barchiesi Chávez,Diputado,1245,Alejandro Riquelme Ducci,Diputado,2,2026-07-06,2026-08-07
 1104,Chiara Barchiesi Chávez,Diputado,1220,Leandro Kunstmann Collado,Diputado,2,2026-05-13,2026-08-07
 1104,Chiara Barchiesi Chávez,Diputado,1219,Tomás Kast Sommerhoff,Diputado,2,2026-06-09,2026-08-07
@@ -1054,7 +1082,7 @@
 1028,Eduardo Durán Salinas,Diputado,1243,Tamara Ramírez Ramírez,Diputado,2,2026-06-08,2026-06-19
 1028,Eduardo Durán Salinas,Diputado,1191,Valentina Becerra Peña,Diputado,2,2026-05-04,2026-06-22
 1056,Emilia Nuyado Ancapichun,Diputado,1128,Ana María Gazmuri Vieira,Diputado,2,2026-05-11,2026-05-31
-1056,Emilia Nuyado Ancapichun,Diputado,1222,Andrea Macías Palma,Diputado,2,2026-07-06,2026-07-29
+1056,Emilia Nuyado Ancapichun,Diputado,1110,Carlos Bianchi Chelech,Diputado,2,2026-05-11,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1260,César Valenzuela Maass,Diputado,2,2026-06-22,2026-07-29
 1056,Emilia Nuyado Ancapichun,Diputado,1114,Félix Bugueño Sotelo,Diputado,2,2026-05-20,2026-06-29
 1056,Emilia Nuyado Ancapichun,Diputado,1229,Javier Muñoz Riquelme,Diputado,2,2026-05-31,2026-06-29
@@ -1073,7 +1101,6 @@
 1190,Enrique Bassaletti Riess,Diputado,1234,Mario Olavarría Rodríguez,Diputado,2,2026-06-09,2026-08-11
 1190,Enrique Bassaletti Riess,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,2,2026-06-11,2026-07-14
 1190,Enrique Bassaletti Riess,Diputado,1191,Valentina Becerra Peña,Diputado,2,2026-07-01,2026-08-07
-1342,Enrique Van Rysselberghe Herrera,Senador,1500,Danisa Astudillo Peiretti,Senador,2,2026-06-17,2026-08-10
 1212,Erich Grohs Marín,Diputado,1261,Daniel Valenzuela Salazar,Diputado,2,2026-07-14,2026-08-05
 1212,Erich Grohs Marín,Diputado,1215,Álvaro Jofré Cáceres,Diputado,2,2026-04-15,2026-08-05
 1343,Esteban Velásquez Núñez,Senador,1502,Miguel Ángel Becker Alvear,Senador,2,2026-07-15,2026-08-11
@@ -1097,12 +1124,11 @@
 1054,Francesca Muñoz González,Diputado,1227,Claudia Mora Vega,Diputado,2,2026-05-18,2026-06-26
 1054,Francesca Muñoz González,Diputado,1175,Cristián Tapia Ramos,Diputado,2,2026-05-18,2026-06-15
 1054,Francesca Muñoz González,Diputado,1255,Eileen Urqueta Rojas,Diputado,2,2026-05-04,2026-08-12
+1054,Francesca Muñoz González,Diputado,915,Germán Verdugo Soto,Diputado,2,2026-08-04,2026-08-14
 1054,Francesca Muñoz González,Diputado,1074,Marisela Santibáñez Novoa,Diputado,2,2026-05-04,2026-06-15
 1054,Francesca Muñoz González,Diputado,1193,Patricio Briones Moller,Diputado,2,2026-06-15,2026-06-23
-1054,Francesca Muñoz González,Diputado,1236,Paula Olmos Contreras,Diputado,2,2026-04-14,2026-06-02
 1054,Francesca Muñoz González,Diputado,1228,Paulina Muñoz Minte,Diputado,2,2026-05-04,2026-05-18
 1054,Francesca Muñoz González,Diputado,1217,Pier Karlezi Hazleby,Diputado,2,2026-04-14,2026-05-18
-1054,Francesca Muñoz González,Diputado,843,René Manuel García García,Diputado,2,2026-05-18,2026-08-04
 1054,Francesca Muñoz González,Diputado,1191,Valentina Becerra Peña,Diputado,2,2026-05-04,2026-08-12
 1054,Francesca Muñoz González,Diputado,1231,Ximena Naranjo Pinto,Diputado,2,2026-04-14,2026-05-04
 1204,Francisco Crisóstomo Llanos,Diputado,1206,Carolina Cucumides Calderón,Diputado,2,2026-07-06,2026-08-10
@@ -1134,6 +1160,7 @@
 1339,Gastón Saavedra Chandía,Senador,1341,Alejandra Sepúlveda Orbenes,Senador,2,2026-04-08,2026-05-06
 1339,Gastón Saavedra Chandía,Senador,1501,Andrea Balladares Letelier,Senador,2,2026-05-05,2026-06-24
 1339,Gastón Saavedra Chandía,Senador,1509,Diego Ibáñez Cotroneo,Senador,2,2026-07-14,2026-08-05
+1339,Gastón Saavedra Chandía,Senador,1342,Enrique Van Rysselberghe Herrera,Senador,2,2026-04-08,2026-09-09
 1339,Gastón Saavedra Chandía,Senador,1503,Miguel Ángel Calisto Águila,Senador,2,2026-04-15,2026-05-05
 1152,Gloria Naveillan Arriagada,Diputado,1202,Eduardo Cretton Rebolledo,Diputado,2,2026-04-21,2026-07-07
 1152,Gloria Naveillan Arriagada,Diputado,1234,Mario Olavarría Rodríguez,Diputado,2,2026-06-09,2026-08-11
@@ -1181,7 +1208,6 @@
 1213,Irací Hassler Jacob,Diputado,1240,Zandra Parisi Fernández,Diputado,2,2026-06-19,2026-07-24
 1330,Iván Flores García,Senador,1512,Andrés Longton Herrera,Senador,2,2026-06-16,2026-07-14
 1330,Iván Flores García,Senador,1508,Camila Flores Oporto,Senador,2,2026-04-22,2026-06-10
-1330,Iván Flores García,Senador,1518,Cristian Vial Maceratta,Senador,2,2026-06-24,2026-07-14
 1330,Iván Flores García,Senador,1331,Sergio Gahona Salazar,Senador,2,2026-08-04,2026-08-05
 1117,Iván Moreira Barros,Senador,1327,Luciano Cruz-Coke Carvallo,Senador,2,2026-03-24,2026-06-24
 1117,Iván Moreira Barros,Senador,1503,Miguel Ángel Calisto Águila,Senador,2,2026-04-15,2026-08-04
@@ -1210,7 +1236,6 @@
 1235,Javier Olivares Avendaño,Diputado,1255,Eileen Urqueta Rojas,Diputado,2,2026-05-09,2026-05-12
 1235,Javier Olivares Avendaño,Diputado,1248,Felipe Ross Correa,Diputado,2,2026-06-09,2026-07-06
 1235,Javier Olivares Avendaño,Diputado,1249,Omar Sabat Guzmán,Diputado,2,2026-04-21,2026-06-18
-1148,Javiera Morales Alvarado,Diputado,1222,Andrea Macías Palma,Diputado,2,2026-03-25,2026-05-26
 1148,Javiera Morales Alvarado,Diputado,1256,Tatiana Urrutia Herrera,Diputado,2,2026-05-26,2026-07-15
 1247,Javiera Rodríguez Pascual,Diputado,1262,Diego Vergara Rodríguez,Diputado,2,2026-06-23,2026-07-09
 1247,Javiera Rodríguez Pascual,Diputado,1255,Eileen Urqueta Rojas,Diputado,2,2026-05-04,2026-06-09
@@ -1239,6 +1264,7 @@
 1015,Jorge Brito Hasbún,Diputado,1171,Emilia Schneider Videla,Diputado,2,2026-05-18,2026-07-22
 1015,Jorge Brito Hasbún,Diputado,1087,Gael Yeomans Araya,Diputado,2,2026-05-18,2026-07-22
 1015,Jorge Brito Hasbún,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,2,2026-05-18,2026-07-22
+1208,Jorge Díaz Ibarra,Diputado,1257,Alejandra Valdebenito Torres,Diputado,2,2026-07-14,2026-08-17
 1208,Jorge Díaz Ibarra,Diputado,1227,Claudia Mora Vega,Diputado,2,2026-07-14,2026-07-20
 1208,Jorge Díaz Ibarra,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,2,2026-05-13,2026-06-24
 1208,Jorge Díaz Ibarra,Diputado,1236,Paula Olmos Contreras,Diputado,2,2026-07-14,2026-07-24
@@ -1265,6 +1291,8 @@
 1108,Juan Carlos Beltrán Silva,Diputado,1251,Macarena Santelices Cañas,Diputado,2,2026-06-03,2026-06-26
 1108,Juan Carlos Beltrán Silva,Diputado,1193,Patricio Briones Moller,Diputado,2,2026-06-02,2026-07-31
 1108,Juan Carlos Beltrán Silva,Diputado,1215,Álvaro Jofré Cáceres,Diputado,2,2026-06-03,2026-06-05
+1133,Juan Irarrázaval Rossel,Diputado,915,Germán Verdugo Soto,Diputado,2,2026-08-04,2026-08-14
+1133,Juan Irarrázaval Rossel,Diputado,843,René Manuel García García,Diputado,2,2026-08-04,2026-08-14
 1133,Juan Irarrázaval Rossel,Diputado,1184,Roberto Celedón Fernández,Diputado,2,2026-06-02,2026-06-23
 1133,Juan Irarrázaval Rossel,Diputado,1240,Zandra Parisi Fernández,Diputado,2,2026-06-02,2026-08-04
 1326,Juan Luis Castro González,Senador,911,Carlos Ignacio Kuschel Silva,Senador,2,2026-06-03,2026-06-10
@@ -1282,14 +1310,11 @@
 1073,Juan Santana Castillo,Diputado,1211,Sofía González Cortés,Diputado,2,2026-05-06,2026-08-11
 1324,Karim Bianchi Retamales,Senador,1515,Arturo Squella Ovalle,Senador,2,2026-06-30,2026-07-07
 1324,Karim Bianchi Retamales,Senador,1511,Enrique Lee Flores,Senador,2,2026-05-20,2026-07-07
-1324,Karim Bianchi Retamales,Senador,1326,Juan Luis Castro González,Senador,2,2026-06-09,2026-06-10
 1324,Karim Bianchi Retamales,Senador,1502,Miguel Ángel Becker Alvear,Senador,2,2026-07-07,2026-07-07
 1504,Karol Cariola Oliva,Senador,1511,Enrique Lee Flores,Senador,2,2026-03-18,2026-04-07
 1220,Leandro Kunstmann Collado,Diputado,1245,Alejandro Riquelme Ducci,Diputado,2,2026-06-16,2026-08-07
 1192,Lilian Betancurt Delgado,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,2,2026-06-10,2026-07-23
 1192,Lilian Betancurt Delgado,Diputado,1217,Pier Karlezi Hazleby,Diputado,2,2026-06-16,2026-06-25
-1192,Lilian Betancurt Delgado,Diputado,1219,Tomás Kast Sommerhoff,Diputado,2,2026-06-16,2026-06-25
-1192,Lilian Betancurt Delgado,Diputado,1240,Zandra Parisi Fernández,Diputado,2,2026-07-23,2026-07-31
 1127,Lorena Fries Monleón,Diputado,1128,Ana María Gazmuri Vieira,Diputado,2,2026-04-27,2026-05-26
 1127,Lorena Fries Monleón,Diputado,1252,Constanza Schonhaut Soto,Diputado,2,2026-05-26,2026-07-22
 1127,Lorena Fries Monleón,Diputado,1224,Cristian Mella Andaur,Diputado,2,2026-03-27,2026-04-27
@@ -1301,8 +1326,9 @@
 1159,Lorena Pizarro Sierra,Diputado,1173,Daniela Serrano Salazar,Diputado,2,2026-08-05,2026-08-12
 1159,Lorena Pizarro Sierra,Diputado,1213,Irací Hassler Jacob,Diputado,2,2026-06-16,2026-08-12
 1159,Lorena Pizarro Sierra,Diputado,1189,Jaime Bassa Mercado,Diputado,2,2026-06-12,2026-06-16
-1320,Loreto Carvajal Ambiado,Senador,1342,Enrique Van Rysselberghe Herrera,Senador,2,2026-06-17,2026-08-10
 1320,Loreto Carvajal Ambiado,Senador,1325,Fabiola Campillai Rojas,Senador,2,2026-08-04,2026-08-10
+1320,Loreto Carvajal Ambiado,Senador,1339,Gastón Saavedra Chandía,Senador,2,2026-05-06,2026-09-09
+1320,Loreto Carvajal Ambiado,Senador,1326,Juan Luis Castro González,Senador,2,2026-08-04,2026-09-08
 1327,Luciano Cruz-Coke Carvallo,Senador,1512,Andrés Longton Herrera,Senador,2,2026-04-08,2026-06-17
 1327,Luciano Cruz-Coke Carvallo,Senador,1338,Claudia Pascual Grau,Senador,2,2026-03-24,2026-07-14
 1327,Luciano Cruz-Coke Carvallo,Senador,1337,Paulina Núñez Urrutia,Senador,2,2026-03-24,2026-06-24
@@ -1339,7 +1365,6 @@
 1251,Macarena Santelices Cañas,Diputado,843,René Manuel García García,Diputado,2,2026-06-03,2026-08-04
 1120,Manuel José Ossandón Irarrázabal,Senador,1334,Alejandro Kusanovic Glusevic,Senador,2,2026-03-25,2026-03-25
 1120,Manuel José Ossandón Irarrázabal,Senador,911,Carlos Ignacio Kuschel Silva,Senador,2,2026-06-23,2026-07-07
-1120,Manuel José Ossandón Irarrázabal,Senador,1330,Iván Flores García,Senador,2,2026-03-25,2026-03-25
 1120,Manuel José Ossandón Irarrázabal,Senador,1324,Karim Bianchi Retamales,Senador,2,2026-07-07,2026-07-07
 1120,Manuel José Ossandón Irarrázabal,Senador,1450,Paulina Vodanovic Rojas,Senador,2,2026-05-19,2026-07-07
 1174,Marco Antonio Sulantay Olivares,Diputado,1197,Carlos Chandía Alarcón,Diputado,2,2026-06-04,2026-06-15
@@ -1430,6 +1455,7 @@
 1039,Pamela Jiles Moreno,Diputado,1192,Lilian Betancurt Delgado,Diputado,2,2026-04-07,2026-07-23
 1039,Pamela Jiles Moreno,Diputado,1240,Zandra Parisi Fernández,Diputado,2,2026-05-09,2026-07-23
 1193,Patricio Briones Moller,Diputado,1227,Claudia Mora Vega,Diputado,2,2026-05-12,2026-08-11
+1193,Patricio Briones Moller,Diputado,1212,Erich Grohs Marín,Diputado,2,2026-08-05,2026-08-14
 1193,Patricio Briones Moller,Diputado,1248,Felipe Ross Correa,Diputado,2,2026-06-05,2026-07-06
 1193,Patricio Briones Moller,Diputado,1199,Jaime Coloma Álamos,Diputado,2,2026-06-05,2026-08-11
 1193,Patricio Briones Moller,Diputado,1247,Javiera Rodríguez Pascual,Diputado,2,2026-06-10,2026-07-27
@@ -1446,11 +1472,11 @@
 1228,Paulina Muñoz Minte,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,2,2026-07-30,2026-08-06
 1228,Paulina Muñoz Minte,Diputado,1261,Daniel Valenzuela Salazar,Diputado,2,2026-07-09,2026-08-05
 1228,Paulina Muñoz Minte,Diputado,1234,Mario Olavarría Rodríguez,Diputado,2,2026-08-05,2026-08-11
-1337,Paulina Núñez Urrutia,Senador,1512,Andrés Longton Herrera,Senador,2,2026-06-16,2026-07-21
 1337,Paulina Núñez Urrutia,Senador,1515,Arturo Squella Ovalle,Senador,2,2026-07-21,2026-08-13
 1337,Paulina Núñez Urrutia,Senador,1338,Claudia Pascual Grau,Senador,2,2026-03-24,2026-07-15
 1337,Paulina Núñez Urrutia,Senador,1343,Esteban Velásquez Núñez,Senador,2,2026-06-16,2026-06-17
 1337,Paulina Núñez Urrutia,Senador,1502,Miguel Ángel Becker Alvear,Senador,2,2026-05-19,2026-05-19
+1450,Paulina Vodanovic Rojas,Senador,1512,Andrés Longton Herrera,Senador,2,2026-07-14,2026-09-09
 1450,Paulina Vodanovic Rojas,Senador,1500,Danisa Astudillo Peiretti,Senador,2,2026-07-30,2026-08-12
 1198,Paz Charpentier Rajcevich,Diputado,1244,Claudia Reyes Larenas,Diputado,2,2026-06-22,2026-07-09
 1198,Paz Charpentier Rajcevich,Diputado,1262,Diego Vergara Rodríguez,Diputado,2,2026-06-23,2026-07-09
@@ -1475,7 +1501,6 @@
 1077,Raúl Soto Mardones,Diputado,1224,Cristian Mella Andaur,Diputado,2,2026-06-24,2026-07-08
 1077,Raúl Soto Mardones,Diputado,1116,Felipe Camaño Cárdenas,Diputado,2,2026-05-29,2026-06-24
 1077,Raúl Soto Mardones,Diputado,1241,Patricio Pinilla Valencia,Diputado,2,2026-06-10,2026-06-24
-843,René Manuel García García,Diputado,915,Germán Verdugo Soto,Diputado,2,2026-08-04,2026-08-04
 843,René Manuel García García,Diputado,872,Jaime Mulet Martínez,Diputado,2,2026-05-28,2026-08-04
 1506,Ricardo Celis Araya,Senador,1515,Arturo Squella Ovalle,Senador,2,2026-08-13,2026-08-19
 1506,Ricardo Celis Araya,Senador,1509,Diego Ibáñez Cotroneo,Senador,2,2026-07-14,2026-08-19
@@ -1484,6 +1509,7 @@
 1102,Roberto Arroyo Muñoz,Diputado,1195,Carlos Carvajal Gallardo,Diputado,2,2026-06-04,2026-08-05
 1102,Roberto Arroyo Muñoz,Diputado,1197,Carlos Chandía Alarcón,Diputado,2,2026-06-04,2026-06-15
 1102,Roberto Arroyo Muñoz,Diputado,1264,Fernando Zamorano Peralta,Diputado,2,2026-08-05,2026-08-11
+1102,Roberto Arroyo Muñoz,Diputado,1201,Flor Contreras Vivallo,Diputado,2,2026-07-31,2026-08-14
 1102,Roberto Arroyo Muñoz,Diputado,1258,Guillermo Valdés Carmona,Diputado,2,2026-05-09,2026-06-16
 1102,Roberto Arroyo Muñoz,Diputado,1210,Gustavo Gatica Villarroel,Diputado,2,2026-07-24,2026-08-11
 1102,Roberto Arroyo Muñoz,Diputado,1223,Hans Marowski Cuevas,Diputado,2,2026-06-16,2026-06-25
@@ -1499,13 +1525,10 @@
 1328,Rojo Edwards,Senador,1518,Cristian Vial Maceratta,Senador,2,2026-06-17,2026-09-02
 1119,Sara Concha Smith,Diputado,1175,Cristián Tapia Ramos,Diputado,2,2026-05-18,2026-06-15
 1119,Sara Concha Smith,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,2,2026-06-23,2026-06-23
-1119,Sara Concha Smith,Diputado,915,Germán Verdugo Soto,Diputado,2,2026-06-23,2026-08-04
 1119,Sara Concha Smith,Diputado,1247,Javiera Rodríguez Pascual,Diputado,2,2026-05-04,2026-06-09
 1119,Sara Concha Smith,Diputado,1166,Natalia Romero Talguia,Diputado,2,2026-05-18,2026-06-29
-1119,Sara Concha Smith,Diputado,1236,Paula Olmos Contreras,Diputado,2,2026-04-14,2026-06-02
 1119,Sara Concha Smith,Diputado,1228,Paulina Muñoz Minte,Diputado,2,2026-05-04,2026-05-18
 1119,Sara Concha Smith,Diputado,1217,Pier Karlezi Hazleby,Diputado,2,2026-04-14,2026-05-18
-1119,Sara Concha Smith,Diputado,843,René Manuel García García,Diputado,2,2026-05-18,2026-08-04
 1119,Sara Concha Smith,Diputado,1242,Rodrigo Ramírez Parra,Diputado,2,2026-05-12,2026-06-29
 1119,Sara Concha Smith,Diputado,1243,Tamara Ramírez Ramírez,Diputado,2,2026-06-09,2026-06-23
 1203,Sebastián Cristoffanini Jaraquemada,Diputado,1244,Claudia Reyes Larenas,Diputado,2,2026-06-09,2026-06-16
@@ -1553,6 +1576,7 @@
 1224,Ximena Ordenes Neira,Senador,1514,Beatriz Sánchez Muñoz,Senador,2,2026-04-15,2026-07-22
 1224,Ximena Ordenes Neira,Senador,1336,Daniel Núñez Arancibia,Senador,2,2026-05-19,2026-05-19
 1224,Ximena Ordenes Neira,Senador,1329,Fidel Espinoza Sandoval,Senador,2,2026-05-19,2026-05-19
+1224,Ximena Ordenes Neira,Senador,1332,María José Gatica Bertin,Senador,2,2026-07-22,2026-09-07
 1224,Ximena Ordenes Neira,Senador,1450,Paulina Vodanovic Rojas,Senador,2,2026-06-24,2026-07-22
 1224,Ximena Ordenes Neira,Senador,1505,Rodolfo Carter Fernández,Senador,2,2026-06-17,2026-07-22
 1224,Ximena Ordenes Neira,Senador,1333,Sebastián Keitel Bianchi,Senador,2,2026-04-15,2026-07-22
@@ -1571,8 +1595,9 @@
 1059,Ximena Ossandón Irarrázabal,Diputado,1240,Zandra Parisi Fernández,Diputado,2,2026-04-22,2026-05-06
 1215,Yasna Provoste Campillay,Senador,1338,Claudia Pascual Grau,Senador,2,2026-03-24,2026-06-03
 1215,Yasna Provoste Campillay,Senador,1339,Gastón Saavedra Chandía,Senador,2,2026-07-22,2026-08-19
-1215,Yasna Provoste Campillay,Senador,1344,Matías Walker Prieto,Senador,2,2026-07-08,2026-07-22
+1215,Yasna Provoste Campillay,Senador,1330,Iván Flores García,Senador,2,2026-07-08,2026-09-09
 1215,Yasna Provoste Campillay,Senador,1337,Paulina Núñez Urrutia,Senador,2,2026-03-24,2026-07-22
+1215,Yasna Provoste Campillay,Senador,1450,Paulina Vodanovic Rojas,Senador,2,2026-07-22,2026-09-09
 1215,Yasna Provoste Campillay,Senador,1513,Vlado Mirosevic Verdugo,Senador,2,2026-07-21,2026-08-19
 1240,Zandra Parisi Fernández,Diputado,1259,Juan Marcelo Valenzuela Henríquez,Diputado,2,2026-05-09,2026-07-23
 1017,Álvaro Carter Fernández,Diputado,1165,Agustín Romero Leiva,Diputado,2,2026-06-11,2026-07-14
@@ -1598,12 +1623,11 @@
 1341,Alejandra Sepúlveda Orbenes,Senador,1514,Beatriz Sánchez Muñoz,Senador,1,2026-07-14,2026-07-14
 1341,Alejandra Sepúlveda Orbenes,Senador,1507,Daniella Cicardini Milla,Senador,1,2026-05-06,2026-05-06
 1341,Alejandra Sepúlveda Orbenes,Senador,1500,Danisa Astudillo Peiretti,Senador,1,2026-06-17,2026-06-17
-1341,Alejandra Sepúlveda Orbenes,Senador,1344,Matías Walker Prieto,Senador,1,2026-05-05,2026-05-05
 1341,Alejandra Sepúlveda Orbenes,Senador,1502,Miguel Ángel Becker Alvear,Senador,1,2026-07-15,2026-07-15
 1341,Alejandra Sepúlveda Orbenes,Senador,1503,Miguel Ángel Calisto Águila,Senador,1,2026-05-05,2026-05-05
+1341,Alejandra Sepúlveda Orbenes,Senador,1450,Paulina Vodanovic Rojas,Senador,1,2026-09-09,2026-09-09
 1257,Alejandra Valdebenito Torres,Diputado,1264,Fernando Zamorano Peralta,Diputado,1,2026-05-29,2026-05-29
 1257,Alejandra Valdebenito Torres,Diputado,1258,Guillermo Valdés Carmona,Diputado,1,2026-06-16,2026-06-16
-1257,Alejandra Valdebenito Torres,Diputado,803,René Alinco Bustos,Diputado,1,2026-05-13,2026-05-13
 1013,Alejandro Bernales Maldonado,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,1,2026-08-11,2026-08-11
 1013,Alejandro Bernales Maldonado,Diputado,1128,Ana María Gazmuri Vieira,Diputado,1,2026-05-11,2026-05-11
 1013,Alejandro Bernales Maldonado,Diputado,1222,Andrea Macías Palma,Diputado,1,2026-05-31,2026-05-31
@@ -1692,12 +1716,12 @@
 1501,Andrea Balladares Letelier,Senador,1511,Enrique Lee Flores,Senador,1,2026-07-07,2026-07-07
 1501,Andrea Balladares Letelier,Senador,1503,Miguel Ángel Calisto Águila,Senador,1,2026-05-05,2026-05-05
 1501,Andrea Balladares Letelier,Senador,1516,Renzo Trisotti Martínez,Senador,1,2026-04-08,2026-04-08
+1222,Andrea Macías Palma,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-08-17,2026-08-17
 1222,Andrea Macías Palma,Diputado,1252,Constanza Schonhaut Soto,Diputado,1,2026-05-26,2026-05-26
 1222,Andrea Macías Palma,Diputado,1260,César Valenzuela Maass,Diputado,1,2026-07-29,2026-07-29
 1222,Andrea Macías Palma,Diputado,1239,Fabián Ossandón Briceño,Diputado,1,2026-05-31,2026-05-31
 1222,Andrea Macías Palma,Diputado,1226,José Montalva Feuerhake,Diputado,1,2026-04-27,2026-04-27
 1222,Andrea Macías Palma,Diputado,986,Marcela Hernando Pérez,Diputado,1,2026-08-11,2026-08-11
-1222,Andrea Macías Palma,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-05,2026-08-05
 1222,Andrea Macías Palma,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-05-26,2026-05-26
 1222,Andrea Macías Palma,Diputado,1240,Zandra Parisi Fernández,Diputado,1,2026-04-27,2026-04-27
 1061,Andrea Parra Sauterel,Diputado,1222,Andrea Macías Palma,Diputado,1,2026-08-05,2026-08-05
@@ -1755,6 +1779,7 @@
 1021,Andrés Celis Montt,Diputado,1211,Sofía González Cortés,Diputado,1,2026-06-12,2026-06-12
 1021,Andrés Celis Montt,Diputado,1243,Tamara Ramírez Ramírez,Diputado,1,2026-06-23,2026-06-23
 1021,Andrés Celis Montt,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,1,2026-06-12,2026-06-12
+1512,Andrés Longton Herrera,Senador,911,Carlos Ignacio Kuschel Silva,Senador,1,2026-09-09,2026-09-09
 1512,Andrés Longton Herrera,Senador,1517,Ignacio Urrutia Bonilla,Senador,1,2026-06-24,2026-06-24
 1512,Andrés Longton Herrera,Senador,1516,Renzo Trisotti Martínez,Senador,1,2026-04-08,2026-04-08
 1515,Arturo Squella Ovalle,Senador,911,Carlos Ignacio Kuschel Silva,Senador,1,2026-06-23,2026-06-23
@@ -1795,6 +1820,8 @@
 1012,Boris Barrera Moreno,Diputado,1241,Patricio Pinilla Valencia,Diputado,1,2026-06-08,2026-06-08
 1012,Boris Barrera Moreno,Diputado,1236,Paula Olmos Contreras,Diputado,1,2026-06-08,2026-06-08
 1012,Boris Barrera Moreno,Diputado,1211,Sofía González Cortés,Diputado,1,2026-08-05,2026-08-05
+1508,Camila Flores Oporto,Senador,1512,Andrés Longton Herrera,Senador,1,2026-09-09,2026-09-09
+1508,Camila Flores Oporto,Senador,911,Carlos Ignacio Kuschel Silva,Senador,1,2026-09-09,2026-09-09
 1508,Camila Flores Oporto,Senador,1517,Ignacio Urrutia Bonilla,Senador,1,2026-08-12,2026-08-12
 1508,Camila Flores Oporto,Senador,1510,Vanessa Kaiser Barents-Von Hohenhagen,Senador,1,2026-08-12,2026-08-12
 1187,Carlo Arqueros Pizarro,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-07-14,2026-07-14
@@ -1814,13 +1841,14 @@
 1187,Carlo Arqueros Pizarro,Diputado,1236,Paula Olmos Contreras,Diputado,1,2026-07-14,2026-07-14
 1187,Carlo Arqueros Pizarro,Diputado,1203,Sebastián Cristoffanini Jaraquemada,Diputado,1,2026-07-14,2026-07-14
 1187,Carlo Arqueros Pizarro,Diputado,1215,Álvaro Jofré Cáceres,Diputado,1,2026-07-14,2026-07-14
-1110,Carlos Bianchi Chelech,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-06-16,2026-06-16
 1110,Carlos Bianchi Chelech,Diputado,1128,Ana María Gazmuri Vieira,Diputado,1,2026-05-11,2026-05-11
+1110,Carlos Bianchi Chelech,Diputado,1222,Andrea Macías Palma,Diputado,1,2026-08-17,2026-08-17
+1110,Carlos Bianchi Chelech,Diputado,1206,Carolina Cucumides Calderón,Diputado,1,2026-08-17,2026-08-17
 1110,Carlos Bianchi Chelech,Diputado,1173,Daniela Serrano Salazar,Diputado,1,2026-04-07,2026-04-07
 1110,Carlos Bianchi Chelech,Diputado,1258,Guillermo Valdés Carmona,Diputado,1,2026-06-16,2026-06-16
 1110,Carlos Bianchi Chelech,Diputado,1186,Ignacio Achurra Díaz,Diputado,1,2026-05-29,2026-05-29
 1110,Carlos Bianchi Chelech,Diputado,1213,Irací Hassler Jacob,Diputado,1,2026-04-07,2026-04-07
-1110,Carlos Bianchi Chelech,Diputado,1208,Jorge Díaz Ibarra,Diputado,1,2026-05-28,2026-05-28
+1110,Carlos Bianchi Chelech,Diputado,1148,Javiera Morales Alvarado,Diputado,1,2026-08-17,2026-08-17
 1110,Carlos Bianchi Chelech,Diputado,1192,Lilian Betancurt Delgado,Diputado,1,2026-06-16,2026-06-16
 1110,Carlos Bianchi Chelech,Diputado,1122,Luis Alberto Cuello Peña y Lillo,Diputado,1,2026-04-07,2026-04-07
 1110,Carlos Bianchi Chelech,Diputado,1141,Luis Malla Valenzuela,Diputado,1,2026-05-11,2026-05-11
@@ -1830,16 +1858,17 @@
 1110,Carlos Bianchi Chelech,Diputado,1117,Nathalie Castillo Rojas,Diputado,1,2026-05-28,2026-05-28
 1110,Carlos Bianchi Chelech,Diputado,1193,Patricio Briones Moller,Diputado,1,2026-06-16,2026-06-16
 1110,Carlos Bianchi Chelech,Diputado,1236,Paula Olmos Contreras,Diputado,1,2026-06-16,2026-06-16
+1110,Carlos Bianchi Chelech,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-17,2026-08-17
 1110,Carlos Bianchi Chelech,Diputado,843,René Manuel García García,Diputado,1,2026-05-28,2026-05-28
 1110,Carlos Bianchi Chelech,Diputado,1182,Sebastián Videla Castillo,Diputado,1,2026-05-11,2026-05-11
 1110,Carlos Bianchi Chelech,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-06-10,2026-06-10
-1195,Carlos Carvajal Gallardo,Diputado,1206,Carolina Cucumides Calderón,Diputado,1,2026-08-12,2026-08-12
+1195,Carlos Carvajal Gallardo,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-08-17,2026-08-17
 1195,Carlos Carvajal Gallardo,Diputado,1252,Constanza Schonhaut Soto,Diputado,1,2026-07-08,2026-07-08
 1195,Carlos Carvajal Gallardo,Diputado,1232,Cristian Neira Martínez,Diputado,1,2026-07-08,2026-07-08
 1195,Carlos Carvajal Gallardo,Diputado,1261,Daniel Valenzuela Salazar,Diputado,1,2026-08-12,2026-08-12
 1195,Carlos Carvajal Gallardo,Diputado,1239,Fabián Ossandón Briceño,Diputado,1,2026-06-10,2026-06-10
 1195,Carlos Carvajal Gallardo,Diputado,1204,Francisco Crisóstomo Llanos,Diputado,1,2026-06-10,2026-06-10
-1195,Carlos Carvajal Gallardo,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-05,2026-08-05
+1195,Carlos Carvajal Gallardo,Diputado,1208,Jorge Díaz Ibarra,Diputado,1,2026-08-17,2026-08-17
 1195,Carlos Carvajal Gallardo,Diputado,1263,Sebastián Zamora Soto,Diputado,1,2026-04-15,2026-04-15
 1195,Carlos Carvajal Gallardo,Diputado,1219,Tomás Kast Sommerhoff,Diputado,1,2026-06-04,2026-06-04
 1195,Carlos Carvajal Gallardo,Diputado,1231,Ximena Naranjo Pinto,Diputado,1,2026-06-16,2026-06-16
@@ -1869,10 +1898,13 @@
 1205,Carlos Cuadrado Prats,Diputado,843,René Manuel García García,Diputado,1,2026-06-03,2026-06-03
 1205,Carlos Cuadrado Prats,Diputado,1211,Sofía González Cortés,Diputado,1,2026-07-29,2026-07-29
 1205,Carlos Cuadrado Prats,Diputado,1215,Álvaro Jofré Cáceres,Diputado,1,2026-06-03,2026-06-03
+1206,Carolina Cucumides Calderón,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-08-17,2026-08-17
 1206,Carolina Cucumides Calderón,Diputado,1252,Constanza Schonhaut Soto,Diputado,1,2026-08-10,2026-08-10
 1206,Carolina Cucumides Calderón,Diputado,1210,Gustavo Gatica Villarroel,Diputado,1,2026-04-20,2026-04-20
 1206,Carolina Cucumides Calderón,Diputado,872,Jaime Mulet Martínez,Diputado,1,2026-05-04,2026-05-04
+1206,Carolina Cucumides Calderón,Diputado,1208,Jorge Díaz Ibarra,Diputado,1,2026-08-17,2026-08-17
 1206,Carolina Cucumides Calderón,Diputado,1226,José Montalva Feuerhake,Diputado,1,2026-06-02,2026-06-02
+1206,Carolina Cucumides Calderón,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-17,2026-08-17
 1206,Carolina Cucumides Calderón,Diputado,1240,Zandra Parisi Fernández,Diputado,1,2026-04-22,2026-04-22
 1177,Carolina Tello Rojas,Diputado,1222,Andrea Macías Palma,Diputado,1,2026-05-31,2026-05-31
 1177,Carolina Tello Rojas,Diputado,1195,Carlos Carvajal Gallardo,Diputado,1,2026-08-11,2026-08-11
@@ -1900,6 +1932,7 @@
 1177,Carolina Tello Rojas,Diputado,1240,Zandra Parisi Fernández,Diputado,1,2026-04-22,2026-04-22
 1177,Carolina Tello Rojas,Diputado,1215,Álvaro Jofré Cáceres,Diputado,1,2026-04-21,2026-04-21
 1177,Carolina Tello Rojas,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-04-21,2026-04-21
+1025,Catalina Del Real Mihovilovic,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,1,2026-08-14,2026-08-14
 1025,Catalina Del Real Mihovilovic,Diputado,1110,Carlos Bianchi Chelech,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1205,Carlos Cuadrado Prats,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1104,Chiara Barchiesi Chávez,Diputado,1,2026-06-25,2026-06-25
@@ -1911,26 +1944,24 @@
 1025,Catalina Del Real Mihovilovic,Diputado,1142,Daniel Manouchehri Lobos,Diputado,1,2026-05-29,2026-05-29
 1025,Catalina Del Real Mihovilovic,Diputado,1075,Diego Schalper Sepúlveda,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1028,Eduardo Durán Salinas,Diputado,1,2026-06-22,2026-06-22
+1025,Catalina Del Real Mihovilovic,Diputado,1212,Erich Grohs Marín,Diputado,1,2026-08-14,2026-08-14
 1025,Catalina Del Real Mihovilovic,Diputado,1116,Felipe Camaño Cárdenas,Diputado,1,2026-06-22,2026-06-22
 1025,Catalina Del Real Mihovilovic,Diputado,1264,Fernando Zamorano Peralta,Diputado,1,2026-05-29,2026-05-29
+1025,Catalina Del Real Mihovilovic,Diputado,1201,Flor Contreras Vivallo,Diputado,1,2026-08-14,2026-08-14
 1025,Catalina Del Real Mihovilovic,Diputado,1183,Flor Weisse Novoa,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1258,Guillermo Valdés Carmona,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1254,Ignacio Urcullú Clèment-Lund,Diputado,1,2026-06-09,2026-06-09
 1025,Catalina Del Real Mihovilovic,Diputado,1247,Javiera Rodríguez Pascual,Diputado,1,2026-06-09,2026-06-09
 1025,Catalina Del Real Mihovilovic,Diputado,1218,José Antonio Kast Adriasola,Diputado,1,2026-06-16,2026-06-16
-1025,Catalina Del Real Mihovilovic,Diputado,1192,Lilian Betancurt Delgado,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1074,Marisela Santibáñez Novoa,Diputado,1,2026-06-22,2026-06-22
 1025,Catalina Del Real Mihovilovic,Diputado,1107,María Francisca Bello Campos,Diputado,1,2026-05-29,2026-05-29
 1025,Catalina Del Real Mihovilovic,Diputado,1209,Matías Fernández Hartwig,Diputado,1,2026-05-29,2026-05-29
-1025,Catalina Del Real Mihovilovic,Diputado,1193,Patricio Briones Moller,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1236,Paula Olmos Contreras,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1198,Paz Charpentier Rajcevich,Diputado,1,2026-06-22,2026-06-22
 1025,Catalina Del Real Mihovilovic,Diputado,1044,Raúl Leiva Carvajal,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1203,Sebastián Cristoffanini Jaraquemada,Diputado,1,2026-06-09,2026-06-09
 1025,Catalina Del Real Mihovilovic,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,1,2026-06-22,2026-06-22
-1025,Catalina Del Real Mihovilovic,Diputado,1219,Tomás Kast Sommerhoff,Diputado,1,2026-06-16,2026-06-16
 1025,Catalina Del Real Mihovilovic,Diputado,1191,Valentina Becerra Peña,Diputado,1,2026-06-22,2026-06-22
-1025,Catalina Del Real Mihovilovic,Diputado,1240,Zandra Parisi Fernández,Diputado,1,2026-06-22,2026-06-22
 1025,Catalina Del Real Mihovilovic,Diputado,1215,Álvaro Jofré Cáceres,Diputado,1,2026-06-25,2026-06-25
 1104,Chiara Barchiesi Chávez,Diputado,1165,Agustín Romero Leiva,Diputado,1,2026-08-07,2026-08-07
 1104,Chiara Barchiesi Chávez,Diputado,1150,Benjamín Moreno Bascur,Diputado,1,2026-07-06,2026-07-06
@@ -2207,6 +2238,7 @@
 1028,Eduardo Durán Salinas,Diputado,1253,Fernando Ugarte Tejeda,Diputado,1,2026-04-14,2026-04-14
 1028,Eduardo Durán Salinas,Diputado,1201,Flor Contreras Vivallo,Diputado,1,2026-08-03,2026-08-03
 1028,Eduardo Durán Salinas,Diputado,1114,Félix Bugueño Sotelo,Diputado,1,2026-08-03,2026-08-03
+1028,Eduardo Durán Salinas,Diputado,915,Germán Verdugo Soto,Diputado,1,2026-08-14,2026-08-14
 1028,Eduardo Durán Salinas,Diputado,1178,Héctor Ulloa Aguilera,Diputado,1,2026-06-26,2026-06-26
 1028,Eduardo Durán Salinas,Diputado,1099,Jaime Araya Guerrero,Diputado,1,2026-06-28,2026-06-28
 1028,Eduardo Durán Salinas,Diputado,1247,Javiera Rodríguez Pascual,Diputado,1,2026-05-04,2026-05-04
@@ -2230,8 +2262,9 @@
 1255,Eileen Urqueta Rojas,Diputado,1258,Guillermo Valdés Carmona,Diputado,1,2026-05-06,2026-05-06
 1255,Eileen Urqueta Rojas,Diputado,872,Jaime Mulet Martínez,Diputado,1,2026-05-04,2026-05-04
 1255,Eileen Urqueta Rojas,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-07-22,2026-07-22
+1056,Emilia Nuyado Ancapichun,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-08-17,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1250,Bernardo Salinas Maya,Diputado,1,2026-07-06,2026-07-06
-1056,Emilia Nuyado Ancapichun,Diputado,1110,Carlos Bianchi Chelech,Diputado,1,2026-05-11,2026-05-11
+1056,Emilia Nuyado Ancapichun,Diputado,1195,Carlos Carvajal Gallardo,Diputado,1,2026-08-17,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1180,Consuelo Veloso Ávila,Diputado,1,2026-07-29,2026-07-29
 1056,Emilia Nuyado Ancapichun,Diputado,1194,Daniel Bustos Leal,Diputado,1,2026-06-29,2026-06-29
 1056,Emilia Nuyado Ancapichun,Diputado,1140,Daniel Lilayu Vivanco,Diputado,1,2026-06-29,2026-06-29
@@ -2241,7 +2274,9 @@
 1056,Emilia Nuyado Ancapichun,Diputado,1258,Guillermo Valdés Carmona,Diputado,1,2026-06-29,2026-06-29
 1056,Emilia Nuyado Ancapichun,Diputado,1178,Héctor Ulloa Aguilera,Diputado,1,2026-05-31,2026-05-31
 1056,Emilia Nuyado Ancapichun,Diputado,1213,Irací Hassler Jacob,Diputado,1,2026-05-31,2026-05-31
+1056,Emilia Nuyado Ancapichun,Diputado,1148,Javiera Morales Alvarado,Diputado,1,2026-08-17,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1062,Joanna Pérez Olea,Diputado,1,2026-06-29,2026-06-29
+1056,Emilia Nuyado Ancapichun,Diputado,1208,Jorge Díaz Ibarra,Diputado,1,2026-08-17,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1108,Juan Carlos Beltrán Silva,Diputado,1,2026-08-07,2026-08-07
 1056,Emilia Nuyado Ancapichun,Diputado,1073,Juan Santana Castillo,Diputado,1,2026-08-11,2026-08-11
 1056,Emilia Nuyado Ancapichun,Diputado,1159,Lorena Pizarro Sierra,Diputado,1,2026-08-11,2026-08-11
@@ -2252,6 +2287,7 @@
 1056,Emilia Nuyado Ancapichun,Diputado,1166,Natalia Romero Talguia,Diputado,1,2026-06-29,2026-06-29
 1056,Emilia Nuyado Ancapichun,Diputado,1241,Patricio Pinilla Valencia,Diputado,1,2026-07-06,2026-07-06
 1056,Emilia Nuyado Ancapichun,Diputado,1196,Priscilla Castillo Gerli,Diputado,1,2026-05-20,2026-05-20
+1056,Emilia Nuyado Ancapichun,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-17,2026-08-17
 1056,Emilia Nuyado Ancapichun,Diputado,1242,Rodrigo Ramírez Parra,Diputado,1,2026-06-29,2026-06-29
 1056,Emilia Nuyado Ancapichun,Diputado,1119,Sara Concha Smith,Diputado,1,2026-06-29,2026-06-29
 1056,Emilia Nuyado Ancapichun,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-05-31,2026-05-31
@@ -2291,6 +2327,7 @@
 1342,Enrique Van Rysselberghe Herrera,Senador,1508,Camila Flores Oporto,Senador,1,2026-06-17,2026-06-17
 1342,Enrique Van Rysselberghe Herrera,Senador,1518,Cristian Vial Maceratta,Senador,1,2026-05-20,2026-05-20
 1342,Enrique Van Rysselberghe Herrera,Senador,1510,Vanessa Kaiser Barents-Von Hohenhagen,Senador,1,2026-05-06,2026-05-06
+1212,Erich Grohs Marín,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,1,2026-08-14,2026-08-14
 1212,Erich Grohs Marín,Diputado,1262,Diego Vergara Rodríguez,Diputado,1,2026-08-05,2026-08-05
 1212,Erich Grohs Marín,Diputado,1253,Fernando Ugarte Tejeda,Diputado,1,2026-07-14,2026-07-14
 1212,Erich Grohs Marín,Diputado,915,Germán Verdugo Soto,Diputado,1,2026-04-15,2026-04-15
@@ -2301,6 +2338,8 @@
 1212,Erich Grohs Marín,Diputado,1249,Omar Sabat Guzmán,Diputado,1,2026-08-05,2026-08-05
 1212,Erich Grohs Marín,Diputado,1217,Pier Karlezi Hazleby,Diputado,1,2026-04-15,2026-04-15
 1212,Erich Grohs Marín,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,1,2026-07-14,2026-07-14
+1212,Erich Grohs Marín,Diputado,1219,Tomás Kast Sommerhoff,Diputado,1,2026-08-14,2026-08-14
+1212,Erich Grohs Marín,Diputado,1240,Zandra Parisi Fernández,Diputado,1,2026-08-14,2026-08-14
 1343,Esteban Velásquez Núñez,Senador,1516,Renzo Trisotti Martínez,Senador,1,2026-06-16,2026-06-16
 1343,Esteban Velásquez Núñez,Senador,1505,Rodolfo Carter Fernández,Senador,1,2026-06-17,2026-06-17
 1325,Fabiola Campillai Rojas,Senador,1342,Enrique Van Rysselberghe Herrera,Senador,1,2026-08-10,2026-08-10
@@ -2362,6 +2401,7 @@
 1329,Fidel Espinoza Sandoval,Senador,1450,Paulina Vodanovic Rojas,Senador,1,2026-07-07,2026-07-07
 1329,Fidel Espinoza Sandoval,Senador,1333,Sebastián Keitel Bianchi,Senador,1,2026-04-08,2026-04-08
 1201,Flor Contreras Vivallo,Diputado,1232,Cristian Neira Martínez,Diputado,1,2026-07-30,2026-07-30
+1201,Flor Contreras Vivallo,Diputado,1212,Erich Grohs Marín,Diputado,1,2026-08-14,2026-08-14
 1201,Flor Contreras Vivallo,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,1,2026-06-16,2026-06-16
 1201,Flor Contreras Vivallo,Diputado,1254,Ignacio Urcullú Clèment-Lund,Diputado,1,2026-05-12,2026-05-12
 1201,Flor Contreras Vivallo,Diputado,1246,José Antonio Rivas Villalobos,Diputado,1,2026-08-03,2026-08-03
@@ -2370,6 +2410,7 @@
 1201,Flor Contreras Vivallo,Diputado,1228,Paulina Muñoz Minte,Diputado,1,2026-07-30,2026-07-30
 1201,Flor Contreras Vivallo,Diputado,1217,Pier Karlezi Hazleby,Diputado,1,2026-06-16,2026-06-16
 1201,Flor Contreras Vivallo,Diputado,1203,Sebastián Cristoffanini Jaraquemada,Diputado,1,2026-05-12,2026-05-12
+1201,Flor Contreras Vivallo,Diputado,1219,Tomás Kast Sommerhoff,Diputado,1,2026-08-14,2026-08-14
 1201,Flor Contreras Vivallo,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-06-05,2026-06-05
 1183,Flor Weisse Novoa,Diputado,1205,Carlos Cuadrado Prats,Diputado,1,2026-06-16,2026-06-16
 1183,Flor Weisse Novoa,Diputado,1244,Claudia Reyes Larenas,Diputado,1,2026-06-16,2026-06-16
@@ -2390,7 +2431,6 @@
 1054,Francesca Muñoz González,Diputado,1201,Flor Contreras Vivallo,Diputado,1,2026-08-03,2026-08-03
 1054,Francesca Muñoz González,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,1,2026-06-23,2026-06-23
 1054,Francesca Muñoz González,Diputado,1114,Félix Bugueño Sotelo,Diputado,1,2026-08-03,2026-08-03
-1054,Francesca Muñoz González,Diputado,915,Germán Verdugo Soto,Diputado,1,2026-08-04,2026-08-04
 1054,Francesca Muñoz González,Diputado,1223,Hans Marowski Cuevas,Diputado,1,2026-06-23,2026-06-23
 1054,Francesca Muñoz González,Diputado,1178,Héctor Ulloa Aguilera,Diputado,1,2026-06-26,2026-06-26
 1054,Francesca Muñoz González,Diputado,1189,Jaime Bassa Mercado,Diputado,1,2026-06-15,2026-06-15
@@ -2491,7 +2531,6 @@
 1339,Gastón Saavedra Chandía,Senador,1514,Beatriz Sánchez Muñoz,Senador,1,2026-08-19,2026-08-19
 1339,Gastón Saavedra Chandía,Senador,1508,Camila Flores Oporto,Senador,1,2026-06-10,2026-06-10
 1339,Gastón Saavedra Chandía,Senador,1518,Cristian Vial Maceratta,Senador,1,2026-05-19,2026-05-19
-1339,Gastón Saavedra Chandía,Senador,1342,Enrique Van Rysselberghe Herrera,Senador,1,2026-04-08,2026-04-08
 1339,Gastón Saavedra Chandía,Senador,1502,Miguel Ángel Becker Alvear,Senador,1,2026-05-19,2026-05-19
 1339,Gastón Saavedra Chandía,Senador,1513,Vlado Mirosevic Verdugo,Senador,1,2026-08-19,2026-08-19
 1152,Gloria Naveillan Arriagada,Diputado,1250,Bernardo Salinas Maya,Diputado,1,2026-07-23,2026-07-23
@@ -2671,6 +2710,7 @@
 1213,Irací Hassler Jacob,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-05-31,2026-05-31
 1213,Irací Hassler Jacob,Diputado,1231,Ximena Naranjo Pinto,Diputado,1,2026-07-21,2026-07-21
 1213,Irací Hassler Jacob,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-07-21,2026-07-21
+1330,Iván Flores García,Senador,1341,Alejandra Sepúlveda Orbenes,Senador,1,2026-09-09,2026-09-09
 1330,Iván Flores García,Senador,1515,Arturo Squella Ovalle,Senador,1,2026-07-14,2026-07-14
 1330,Iván Flores García,Senador,1336,Daniel Núñez Arancibia,Senador,1,2026-04-08,2026-04-08
 1330,Iván Flores García,Senador,1500,Danisa Astudillo Peiretti,Senador,1,2026-07-30,2026-07-30
@@ -2764,13 +2804,18 @@
 1235,Javier Olivares Avendaño,Diputado,1242,Rodrigo Ramírez Parra,Diputado,1,2026-05-12,2026-05-12
 1235,Javier Olivares Avendaño,Diputado,815,Sergio Bobadilla Muñoz,Diputado,1,2026-07-20,2026-07-20
 1235,Javier Olivares Avendaño,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-04-21,2026-04-21
+1148,Javiera Morales Alvarado,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-08-17,2026-08-17
+1148,Javiera Morales Alvarado,Diputado,1195,Carlos Carvajal Gallardo,Diputado,1,2026-08-17,2026-08-17
+1148,Javiera Morales Alvarado,Diputado,1206,Carolina Cucumides Calderón,Diputado,1,2026-08-17,2026-08-17
 1148,Javiera Morales Alvarado,Diputado,1177,Carolina Tello Rojas,Diputado,1,2026-07-15,2026-07-15
 1148,Javiera Morales Alvarado,Diputado,1153,Coca Ericka Ñanco Vásquez,Diputado,1,2026-07-15,2026-07-15
 1148,Javiera Morales Alvarado,Diputado,1252,Constanza Schonhaut Soto,Diputado,1,2026-05-26,2026-05-26
 1148,Javiera Morales Alvarado,Diputado,1171,Emilia Schneider Videla,Diputado,1,2026-03-25,2026-03-25
 1148,Javiera Morales Alvarado,Diputado,1210,Gustavo Gatica Villarroel,Diputado,1,2026-03-25,2026-03-25
+1148,Javiera Morales Alvarado,Diputado,1208,Jorge Díaz Ibarra,Diputado,1,2026-08-17,2026-08-17
 1148,Javiera Morales Alvarado,Diputado,1209,Matías Fernández Hartwig,Diputado,1,2026-03-25,2026-03-25
 1148,Javiera Morales Alvarado,Diputado,1181,Nelson Venegas Salazar,Diputado,1,2026-07-15,2026-07-15
+1148,Javiera Morales Alvarado,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-17,2026-08-17
 1148,Javiera Morales Alvarado,Diputado,1184,Roberto Celedón Fernández,Diputado,1,2026-07-15,2026-07-15
 1148,Javiera Morales Alvarado,Diputado,1207,Valentina Cáceres Monsálvez,Diputado,1,2026-07-15,2026-07-15
 1247,Javiera Rodríguez Pascual,Diputado,1250,Bernardo Salinas Maya,Diputado,1,2026-07-01,2026-07-01
@@ -2860,12 +2905,13 @@
 1015,Jorge Brito Hasbún,Diputado,1241,Patricio Pinilla Valencia,Diputado,1,2026-06-02,2026-06-02
 1015,Jorge Brito Hasbún,Diputado,1263,Sebastián Zamora Soto,Diputado,1,2026-04-15,2026-04-15
 1015,Jorge Brito Hasbún,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-05-18,2026-05-18
-1208,Jorge Díaz Ibarra,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-07-14,2026-07-14
 1208,Jorge Díaz Ibarra,Diputado,1245,Alejandro Riquelme Ducci,Diputado,1,2026-07-14,2026-07-14
+1208,Jorge Díaz Ibarra,Diputado,1222,Andrea Macías Palma,Diputado,1,2026-08-17,2026-08-17
 1208,Jorge Díaz Ibarra,Diputado,1239,Fabián Ossandón Briceño,Diputado,1,2026-07-14,2026-07-14
 1208,Jorge Díaz Ibarra,Diputado,1248,Felipe Ross Correa,Diputado,1,2026-07-20,2026-07-20
 1208,Jorge Díaz Ibarra,Diputado,1210,Gustavo Gatica Villarroel,Diputado,1,2026-05-05,2026-05-05
 1208,Jorge Díaz Ibarra,Diputado,1234,Mario Olavarría Rodríguez,Diputado,1,2026-07-20,2026-07-20
+1208,Jorge Díaz Ibarra,Diputado,803,René Alinco Bustos,Diputado,1,2026-08-17,2026-08-17
 1208,Jorge Díaz Ibarra,Diputado,843,René Manuel García García,Diputado,1,2026-05-28,2026-05-28
 1208,Jorge Díaz Ibarra,Diputado,1216,Stephanie Jéldrez Ortiz,Diputado,1,2026-07-14,2026-07-14
 1132,Jorge Guzmán Zepeda,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,1,2026-08-12,2026-08-12
@@ -2960,19 +3006,18 @@
 1133,Juan Irarrázaval Rossel,Diputado,1255,Eileen Urqueta Rojas,Diputado,1,2026-06-09,2026-06-09
 1133,Juan Irarrázaval Rossel,Diputado,1253,Fernando Ugarte Tejeda,Diputado,1,2026-06-16,2026-06-16
 1133,Juan Irarrázaval Rossel,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,1,2026-06-23,2026-06-23
-1133,Juan Irarrázaval Rossel,Diputado,915,Germán Verdugo Soto,Diputado,1,2026-08-04,2026-08-04
 1133,Juan Irarrázaval Rossel,Diputado,1254,Ignacio Urcullú Clèment-Lund,Diputado,1,2026-06-16,2026-06-16
 1133,Juan Irarrázaval Rossel,Diputado,872,Jaime Mulet Martínez,Diputado,1,2026-08-04,2026-08-04
 1133,Juan Irarrázaval Rossel,Diputado,1247,Javiera Rodríguez Pascual,Diputado,1,2026-06-09,2026-06-09
 1133,Juan Irarrázaval Rossel,Diputado,1218,José Antonio Kast Adriasola,Diputado,1,2026-06-09,2026-06-09
 1133,Juan Irarrázaval Rossel,Diputado,1220,Leandro Kunstmann Collado,Diputado,1,2026-06-16,2026-06-16
 1133,Juan Irarrázaval Rossel,Diputado,1217,Pier Karlezi Hazleby,Diputado,1,2026-04-14,2026-04-14
-1133,Juan Irarrázaval Rossel,Diputado,843,René Manuel García García,Diputado,1,2026-08-04,2026-08-04
 1133,Juan Irarrázaval Rossel,Diputado,1203,Sebastián Cristoffanini Jaraquemada,Diputado,1,2026-06-16,2026-06-16
 1133,Juan Irarrázaval Rossel,Diputado,1243,Tamara Ramírez Ramírez,Diputado,1,2026-06-09,2026-06-09
 1133,Juan Irarrázaval Rossel,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-06-02,2026-06-02
 1326,Juan Luis Castro González,Senador,1512,Andrés Longton Herrera,Senador,1,2026-06-16,2026-06-16
 1326,Juan Luis Castro González,Senador,1338,Claudia Pascual Grau,Senador,1,2026-07-15,2026-07-15
+1326,Juan Luis Castro González,Senador,1518,Cristian Vial Maceratta,Senador,1,2026-09-08,2026-09-08
 1326,Juan Luis Castro González,Senador,1509,Diego Ibáñez Cotroneo,Senador,1,2026-08-05,2026-08-05
 1326,Juan Luis Castro González,Senador,1343,Esteban Velásquez Núñez,Senador,1,2026-08-11,2026-08-11
 1326,Juan Luis Castro González,Senador,1506,Ricardo Celis Araya,Senador,1,2026-07-15,2026-07-15
@@ -3021,6 +3066,7 @@
 1192,Lilian Betancurt Delgado,Diputado,1257,Alejandra Valdebenito Torres,Diputado,1,2026-06-16,2026-06-16
 1192,Lilian Betancurt Delgado,Diputado,1232,Cristian Neira Martínez,Diputado,1,2026-07-30,2026-07-30
 1192,Lilian Betancurt Delgado,Diputado,1261,Daniel Valenzuela Salazar,Diputado,1,2026-06-10,2026-06-10
+1192,Lilian Betancurt Delgado,Diputado,1212,Erich Grohs Marín,Diputado,1,2026-08-14,2026-08-14
 1192,Lilian Betancurt Delgado,Diputado,1239,Fabián Ossandón Briceño,Diputado,1,2026-06-10,2026-06-10
 1192,Lilian Betancurt Delgado,Diputado,1237,Francisco Orrego Gutiérrez,Diputado,1,2026-06-10,2026-06-10
 1192,Lilian Betancurt Delgado,Diputado,1258,Guillermo Valdés Carmona,Diputado,1,2026-06-16,2026-06-16
@@ -3048,12 +3094,13 @@
 1320,Loreto Carvajal Ambiado,Senador,1341,Alejandra Sepúlveda Orbenes,Senador,1,2026-05-06,2026-05-06
 1320,Loreto Carvajal Ambiado,Senador,1334,Alejandro Kusanovic Glusevic,Senador,1,2026-06-17,2026-06-17
 1320,Loreto Carvajal Ambiado,Senador,1508,Camila Flores Oporto,Senador,1,2026-06-17,2026-06-17
+1320,Loreto Carvajal Ambiado,Senador,1518,Cristian Vial Maceratta,Senador,1,2026-09-08,2026-09-08
 1320,Loreto Carvajal Ambiado,Senador,1507,Daniella Cicardini Milla,Senador,1,2026-05-06,2026-05-06
-1320,Loreto Carvajal Ambiado,Senador,1339,Gastón Saavedra Chandía,Senador,1,2026-05-06,2026-05-06
-1320,Loreto Carvajal Ambiado,Senador,1326,Juan Luis Castro González,Senador,1,2026-08-04,2026-08-04
+1320,Loreto Carvajal Ambiado,Senador,1324,Karim Bianchi Retamales,Senador,1,2026-09-08,2026-09-08
 1320,Loreto Carvajal Ambiado,Senador,1344,Matías Walker Prieto,Senador,1,2026-06-24,2026-06-24
 1320,Loreto Carvajal Ambiado,Senador,1502,Miguel Ángel Becker Alvear,Senador,1,2026-06-24,2026-06-24
 1320,Loreto Carvajal Ambiado,Senador,1503,Miguel Ángel Calisto Águila,Senador,1,2026-06-24,2026-06-24
+1320,Loreto Carvajal Ambiado,Senador,1337,Paulina Núñez Urrutia,Senador,1,2026-09-08,2026-09-08
 1327,Luciano Cruz-Coke Carvallo,Senador,1341,Alejandra Sepúlveda Orbenes,Senador,1,2026-07-14,2026-07-14
 1327,Luciano Cruz-Coke Carvallo,Senador,1514,Beatriz Sánchez Muñoz,Senador,1,2026-07-14,2026-07-14
 1327,Luciano Cruz-Coke Carvallo,Senador,1518,Cristian Vial Maceratta,Senador,1,2026-06-17,2026-06-17
@@ -3371,7 +3418,6 @@
 1193,Patricio Briones Moller,Diputado,1260,César Valenzuela Maass,Diputado,1,2026-06-11,2026-06-11
 1193,Patricio Briones Moller,Diputado,1262,Diego Vergara Rodríguez,Diputado,1,2026-08-05,2026-08-05
 1193,Patricio Briones Moller,Diputado,1202,Eduardo Cretton Rebolledo,Diputado,1,2026-07-27,2026-07-27
-1193,Patricio Briones Moller,Diputado,1212,Erich Grohs Marín,Diputado,1,2026-08-05,2026-08-05
 1193,Patricio Briones Moller,Diputado,1253,Fernando Ugarte Tejeda,Diputado,1,2026-07-06,2026-07-06
 1193,Patricio Briones Moller,Diputado,915,Germán Verdugo Soto,Diputado,1,2026-08-04,2026-08-04
 1193,Patricio Briones Moller,Diputado,1213,Irací Hassler Jacob,Diputado,1,2026-05-29,2026-05-29
@@ -3393,8 +3439,10 @@
 1241,Patricio Pinilla Valencia,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-08-11,2026-08-11
 1236,Paula Olmos Contreras,Diputado,1245,Alejandro Riquelme Ducci,Diputado,1,2026-07-14,2026-07-14
 1236,Paula Olmos Contreras,Diputado,1261,Daniel Valenzuela Salazar,Diputado,1,2026-08-12,2026-08-12
+1236,Paula Olmos Contreras,Diputado,915,Germán Verdugo Soto,Diputado,1,2026-08-14,2026-08-14
 1236,Paula Olmos Contreras,Diputado,1254,Ignacio Urcullú Clèment-Lund,Diputado,1,2026-05-12,2026-05-12
 1236,Paula Olmos Contreras,Diputado,872,Jaime Mulet Martínez,Diputado,1,2026-05-12,2026-05-12
+1236,Paula Olmos Contreras,Diputado,843,René Manuel García García,Diputado,1,2026-08-14,2026-08-14
 1236,Paula Olmos Contreras,Diputado,1238,Álvaro Ortiz Vera,Diputado,1,2026-06-02,2026-06-02
 1228,Paulina Muñoz Minte,Diputado,1244,Claudia Reyes Larenas,Diputado,1,2026-05-18,2026-05-18
 1228,Paulina Muñoz Minte,Diputado,1232,Cristian Neira Martínez,Diputado,1,2026-07-30,2026-07-30
@@ -3415,8 +3463,9 @@
 1337,Paulina Núñez Urrutia,Senador,1511,Enrique Lee Flores,Senador,1,2026-08-10,2026-08-10
 1337,Paulina Núñez Urrutia,Senador,1505,Rodolfo Carter Fernández,Senador,1,2026-06-17,2026-06-17
 1450,Paulina Vodanovic Rojas,Senador,1501,Andrea Balladares Letelier,Senador,1,2026-07-03,2026-07-03
-1450,Paulina Vodanovic Rojas,Senador,1512,Andrés Longton Herrera,Senador,1,2026-07-14,2026-07-14
 1450,Paulina Vodanovic Rojas,Senador,1515,Arturo Squella Ovalle,Senador,1,2026-07-14,2026-07-14
+1450,Paulina Vodanovic Rojas,Senador,1508,Camila Flores Oporto,Senador,1,2026-09-09,2026-09-09
+1450,Paulina Vodanovic Rojas,Senador,911,Carlos Ignacio Kuschel Silva,Senador,1,2026-09-09,2026-09-09
 1450,Paulina Vodanovic Rojas,Senador,1509,Diego Ibáñez Cotroneo,Senador,1,2026-08-05,2026-08-05
 1450,Paulina Vodanovic Rojas,Senador,1511,Enrique Lee Flores,Senador,1,2026-03-18,2026-03-18
 1450,Paulina Vodanovic Rojas,Senador,1504,Karol Cariola Oliva,Senador,1,2026-03-18,2026-03-18
@@ -3523,8 +3572,8 @@
 1102,Roberto Arroyo Muñoz,Diputado,1180,Consuelo Veloso Ávila,Diputado,1,2026-08-11,2026-08-11
 1102,Roberto Arroyo Muñoz,Diputado,1255,Eileen Urqueta Rojas,Diputado,1,2026-08-12,2026-08-12
 1102,Roberto Arroyo Muñoz,Diputado,1190,Enrique Bassaletti Riess,Diputado,1,2026-06-16,2026-06-16
+1102,Roberto Arroyo Muñoz,Diputado,1212,Erich Grohs Marín,Diputado,1,2026-08-14,2026-08-14
 1102,Roberto Arroyo Muñoz,Diputado,1116,Felipe Camaño Cárdenas,Diputado,1,2026-07-24,2026-07-24
-1102,Roberto Arroyo Muñoz,Diputado,1201,Flor Contreras Vivallo,Diputado,1,2026-07-31,2026-07-31
 1102,Roberto Arroyo Muñoz,Diputado,1114,Félix Bugueño Sotelo,Diputado,1,2026-08-05,2026-08-05
 1102,Roberto Arroyo Muñoz,Diputado,1108,Juan Carlos Beltrán Silva,Diputado,1,2026-07-31,2026-07-31
 1102,Roberto Arroyo Muñoz,Diputado,1141,Luis Malla Valenzuela,Diputado,1,2026-08-12,2026-08-12
@@ -3671,6 +3720,7 @@
 1243,Tamara Ramírez Ramírez,Diputado,1261,Daniel Valenzuela Salazar,Diputado,1,2026-06-10,2026-06-10
 1243,Tamara Ramírez Ramírez,Diputado,1246,José Antonio Rivas Villalobos,Diputado,1,2026-07-30,2026-07-30
 1219,Tomás Kast Sommerhoff,Diputado,1245,Alejandro Riquelme Ducci,Diputado,1,2026-08-07,2026-08-07
+1219,Tomás Kast Sommerhoff,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,1,2026-08-14,2026-08-14
 1219,Tomás Kast Sommerhoff,Diputado,1227,Claudia Mora Vega,Diputado,1,2026-06-17,2026-06-17
 1219,Tomás Kast Sommerhoff,Diputado,1244,Claudia Reyes Larenas,Diputado,1,2026-06-16,2026-06-16
 1219,Tomás Kast Sommerhoff,Diputado,1224,Cristian Mella Andaur,Diputado,1,2026-06-04,2026-06-04
@@ -3684,6 +3734,7 @@
 1219,Tomás Kast Sommerhoff,Diputado,1228,Paulina Muñoz Minte,Diputado,1,2026-08-05,2026-08-05
 1219,Tomás Kast Sommerhoff,Diputado,815,Sergio Bobadilla Muñoz,Diputado,1,2026-07-20,2026-07-20
 1219,Tomás Kast Sommerhoff,Diputado,1243,Tamara Ramírez Ramírez,Diputado,1,2026-06-23,2026-06-23
+1219,Tomás Kast Sommerhoff,Diputado,1240,Zandra Parisi Fernández,Diputado,1,2026-08-14,2026-08-14
 1191,Valentina Becerra Peña,Diputado,1245,Alejandro Riquelme Ducci,Diputado,1,2026-08-07,2026-08-07
 1191,Valentina Becerra Peña,Diputado,1230,Alex Nahuelquin Nahuelquin,Diputado,1,2026-08-12,2026-08-12
 1191,Valentina Becerra Peña,Diputado,1250,Bernardo Salinas Maya,Diputado,1,2026-07-01,2026-07-01
@@ -3722,7 +3773,6 @@
 1224,Ximena Ordenes Neira,Senador,1330,Iván Flores García,Senador,1,2026-06-16,2026-06-16
 1224,Ximena Ordenes Neira,Senador,1504,Karol Cariola Oliva,Senador,1,2026-04-07,2026-04-07
 1224,Ximena Ordenes Neira,Senador,1320,Loreto Carvajal Ambiado,Senador,1,2026-05-06,2026-05-06
-1224,Ximena Ordenes Neira,Senador,1332,María José Gatica Bertin,Senador,1,2026-07-22,2026-07-22
 1224,Ximena Ordenes Neira,Senador,1513,Vlado Mirosevic Verdugo,Senador,1,2026-07-22,2026-07-22
 1059,Ximena Ossandón Irarrázabal,Diputado,1222,Andrea Macías Palma,Diputado,1,2026-05-31,2026-05-31
 1059,Ximena Ossandón Irarrázabal,Diputado,1221,Benjamín Lorca Inzunza,Diputado,1,2026-05-15,2026-05-15
@@ -3759,13 +3809,12 @@
 1059,Ximena Ossandón Irarrázabal,Diputado,815,Sergio Bobadilla Muñoz,Diputado,1,2026-06-23,2026-06-23
 1059,Ximena Ossandón Irarrázabal,Diputado,1256,Tatiana Urrutia Herrera,Diputado,1,2026-05-15,2026-05-15
 1059,Ximena Ossandón Irarrázabal,Diputado,1215,Álvaro Jofré Cáceres,Diputado,1,2026-06-05,2026-06-05
+1215,Yasna Provoste Campillay,Senador,1341,Alejandra Sepúlveda Orbenes,Senador,1,2026-09-09,2026-09-09
 1215,Yasna Provoste Campillay,Senador,1334,Alejandro Kusanovic Glusevic,Senador,1,2026-08-27,2026-08-27
 1215,Yasna Provoste Campillay,Senador,1514,Beatriz Sánchez Muñoz,Senador,1,2026-08-19,2026-08-19
 1215,Yasna Provoste Campillay,Senador,1340,Gustavo Sanhueza Dueñas,Senador,1,2026-06-03,2026-06-03
-1215,Yasna Provoste Campillay,Senador,1330,Iván Flores García,Senador,1,2026-07-08,2026-07-08
 1215,Yasna Provoste Campillay,Senador,1327,Luciano Cruz-Coke Carvallo,Senador,1,2026-03-24,2026-03-24
 1215,Yasna Provoste Campillay,Senador,1503,Miguel Ángel Calisto Águila,Senador,1,2026-08-27,2026-08-27
-1215,Yasna Provoste Campillay,Senador,1450,Paulina Vodanovic Rojas,Senador,1,2026-07-22,2026-07-22
 1215,Yasna Provoste Campillay,Senador,1516,Renzo Trisotti Martínez,Senador,1,2026-08-27,2026-08-27
 1215,Yasna Provoste Campillay,Senador,1333,Sebastián Keitel Bianchi,Senador,1,2026-08-27,2026-08-27
 1215,Yasna Provoste Campillay,Senador,1224,Ximena Ordenes Neira,Senador,1,2026-06-03,2026-06-03
