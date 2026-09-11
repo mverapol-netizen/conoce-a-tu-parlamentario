@@ -1,48 +1,48 @@
 {
-  "generated_for": "2026-09-04",
+  "generated_for": "2026-09-11",
   "status": "pass",
   "projects": {
-    "count": 498,
-    "events": 957,
-    "projects_with_events": 498,
+    "count": 513,
+    "events": 1002,
+    "projects_with_events": 513,
     "event_coverage_pct": 100.0,
-    "commission_events": 162,
+    "commission_events": 169,
     "subject_rows": 0,
     "orphan_event_bills": []
   },
   "authorship": {
-    "parliamentary_bills": 452,
-    "author_relations": 2579,
-    "bills_with_authors": 452,
+    "parliamentary_bills": 466,
+    "author_relations": 2653,
+    "bills_with_authors": 466,
     "unresolved_motions": [],
     "orphan_author_bills": [],
-    "multi_author_bills": 399,
+    "multi_author_bills": 410,
     "max_authors_on_bill": 10,
     "author_count_distribution": {
-      "1": 53,
+      "1": 56,
       "2": 22,
-      "3": 23,
-      "4": 41,
-      "5": 123,
+      "3": 24,
+      "4": 43,
+      "5": 126,
       "6": 24,
-      "7": 32,
+      "7": 33,
       "8": 22,
-      "9": 30,
-      "10": 82
+      "9": 32,
+      "10": 84
     }
   },
   "floor_votes": {
-    "rollcalls": 366,
-    "member_vote_rows": 56730,
+    "rollcalls": 377,
+    "member_vote_rows": 58435,
     "min_member_rows_per_rollcall": 155,
     "max_member_rows_per_rollcall": 155,
     "incomplete_rollcalls": {},
     "vote_option_counts": {
-      "Afirmativo": 34769,
-      "Abstención": 1979,
-      "No Vota": 3897,
-      "En Contra": 16061,
-      "Dispensado": 24
+      "Afirmativo": 35945,
+      "Abstención": 2011,
+      "No Vota": 4138,
+      "En Contra": 16312,
+      "Dispensado": 29
     }
   },
   "duplicates": {
