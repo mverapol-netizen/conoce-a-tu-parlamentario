@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-09-14T08:23:25.082216-03:00",
+  "generated_at": "2026-09-15T08:22:04.423523-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-09-14",
+  "local_date": "2026-09-15",
   "legislature": {
     "id": "58",
     "number": "374",
