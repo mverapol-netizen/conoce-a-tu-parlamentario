@@ -1,19 +1,19 @@
 {
-  "generated_for": "2026-09-11",
-  "primary_author_rows": 2653,
-  "motions_with_authors": 466,
+  "generated_for": "2026-09-18",
+  "primary_author_rows": 2665,
+  "motions_with_authors": 470,
   "nodes": 205,
-  "edges": 3860,
+  "edges": 3866,
   "nodes_by_chamber": {
     "Diputado": 155,
     "Senador": 50
   },
   "edges_by_scope": {
     "Diputado": 3383,
-    "Senador": 477
+    "Senador": 483
   },
-  "multi_author_motions": 410,
-  "solo_author_motions": 56,
+  "multi_author_motions": 413,
+  "solo_author_motions": 57,
   "max_shared_bills_edge": 28,
   "note": "Red derivada de bill_authors.csv; los datos primarios no se modifican."
 }
