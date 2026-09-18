@@ -1,24 +1,24 @@
 {
-  "projects": 513,
-  "corpus_rows": 513,
-  "refreshed_this_run": 15,
-  "reused_this_run": 497,
+  "projects": 517,
+  "corpus_rows": 517,
+  "refreshed_this_run": 4,
+  "reused_this_run": 512,
   "no_candidate_documents": [],
   "quality": {
     "utilizable": 9,
-    "rica": 503,
+    "rica": 507,
     "sin_texto": 1
   },
   "formats": {
-    "application/pdf": 474,
+    "application/pdf": 478,
     "application/vnd.openxmlformats-officedocument.wordprocessingml.document": 38,
     "application/msword": 1
   },
   "by_origin": {
     "parlamentario": {
-      "projects": 466,
-      "texts": 466,
-      "rich_or_usable": 465
+      "projects": 470,
+      "texts": 470,
+      "rich_or_usable": 469
     },
     "ejecutivo": {
       "projects": 47,
@@ -29,7 +29,7 @@
   "errors": [
     {
       "boletin": "18459-05",
-      "error": "Command '['antiword', '/tmp/tmp6tto5aa8.doc']' returned non-zero exit status 1."
+      "error": "Command '['antiword', '/tmp/tmpqyou__iy.doc']' returned non-zero exit status 1."
     }
   ]
 }
