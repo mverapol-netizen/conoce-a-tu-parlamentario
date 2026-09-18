@@ -503,6 +503,7 @@
 18516-18,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18517-15,Transportes y telecomunicaciones,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18501-10,Relaciones exteriores,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18501-10,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18518-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18519-13,Trabajo y seguridad social,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18520-07,Constitución y justicia,principal,hibrido_institucional_texto,0.875,0,institutional-hybrid-v0.3
@@ -546,6 +547,7 @@
 18552-07,Vivienda y territorio,principal,hibrido_institucional_texto,0.826,0,institutional-hybrid-v0.3
 18552-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.826,0,institutional-hybrid-v0.3
 18551-04,Educación,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18551-04,Economía y hacienda,secundario,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18553-11,Salud,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18554-36,"Familia, infancia y adolescencia",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
 18555-17,Derechos humanos,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
@@ -667,3 +669,9 @@
 18642-07,Constitución y justicia,principal,hibrido_institucional_texto,0.691,1,institutional-hybrid-v0.3
 18643-05,"Economía, comercio y consumidores",principal,hibrido_institucional_texto,0.888,0,institutional-hybrid-v0.3
 18643-05,Economía y hacienda,secundario,hibrido_institucional_texto,0.888,0,institutional-hybrid-v0.3
+18645-06,Gobierno interior y descentralización,principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18646-03,"Economía, comercio y consumidores",principal,institucional_destinacion,0.97,0,institutional-hybrid-v0.3
+18647-07,Transportes y telecomunicaciones,principal,hibrido_institucional_texto,0.763,1,institutional-hybrid-v0.3
+18647-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.763,1,institutional-hybrid-v0.3
+18648-07,Defensa,principal,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
+18648-07,Constitución y justicia,secundario,hibrido_institucional_texto,0.92,0,institutional-hybrid-v0.3
