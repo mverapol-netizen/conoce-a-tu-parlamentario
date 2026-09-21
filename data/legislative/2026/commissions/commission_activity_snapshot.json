@@ -1,6 +1,6 @@
 {
   "schema_version": "commission-activity-web-v0.6",
-  "generated_at": "2026-09-14T08:36:38.382030-03:00",
+  "generated_at": "2026-09-21T08:36:06.958547-03:00",
   "timezone": "America/Santiago",
   "directory_schema": "commissions-web-v0.4",
   "source": {
@@ -21,8 +21,8 @@
     "results_pages_retrieved": 34,
     "projects_pages_retrieved": 34,
     "offices_pages_retrieved": 34,
-    "session_rows_retained": 84,
-    "citation_rows_retained": 84,
+    "session_rows_retained": 93,
+    "citation_rows_retained": 93,
     "result_rows_retained": 60,
     "project_rows_retained": 155,
     "office_rows_retained": 242
@@ -46,6 +46,21 @@
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4897",
         "rows": [
+          {
+            "date_context": "",
+            "n": "24",
+            "día": "22 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
           {
             "date_context": "",
             "n": "23",
@@ -102,6 +117,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4897",
         "rows": [
           {
+            "date_context": "martes 22 septiembre 2026",
+            "horario": "15:00",
+            "sala": "Sala Arturo Longton Guerrero tercer nivel",
+            "citación": "Iniciar la discusión general del proyecto de ley, de origen en moción de la diputada señora Flor Weisse; de los diputados señores Sergio Bobadilla y Marco Antonio Sulantay; de la exdiputada señora Marta Bravo (A); y de los exdiputados señores Gustavo Benavente, Fernando Bórquez, Eduardo Cornejo, Juan Fuenzalida, Christian Moreira y Gastón Von Mühlenbrock, en primer trámite constitucional y con urgencia calificada de “suma”, que modifica la ley N°18.700, orgánica constitucional sobre Votaciones Populares y Escrutinios, para permitir que los efectivos de las Fuerzas Armadas y de Orden y Seguridad Pública puedan sufragar en el mismo local en que deban cumplir funciones el día de una elección o plebiscito (Boletín N° 17.904-06). Vencimiento de la urgencia: 22 de septiembre. Se ha invitado a los coautores del proyecto, diputada señora Flor Weisse, y diputados señores Sergio Bobadilla y Marco Antonio Sulantay; al ministro de Defensa Nacional, señor Fernando Barros y, por su intermedio a los comandantes en jefe del Ejército, de la Armada y de la Fuerza Aérea; y, a la presidenta del Consejo Directivo del SERVEL, señora Pamela Figueroa. Iniciar la discusión general del proyecto de ley, en primer trámite constitucional y reglamentario, de origen en moción de los diputados señores Roberto Arroyo, Juan Carlos Beltrán, Patricio Briones, René Manuel García, Jorge Guzmán y Tomás Kast (A), que tipifica la simulación al celebrar matrimonios o acuerdos de unión civil con fines migratorios (Boletín N°18.537-06); y continuar con la discusión general del proyecto de ley, en primer trámite constitucional y reglamentario, de origen en moción de las diputadas señoras Claudia Mora, Ximena Ossandón y Joanna Pérez; y de los diputados señores Andrés Celis, Eduardo Durán, Francisco Orrego, Luis Pardo, Diego Schalper (A) y Daniel Valenzuela, que sanciona la celebración de matrimonios y acuerdos de unión civil destinados a obtener beneficios estatales o residencia en el país (Boletín N°18.544-06). Para estos efectos se ha invitado a los autores de ambas mociones, diputados señores Tomás Kast y Diego Schalper, respectivamente; y al ministro de Justicia, señor Fernando Rabat."
+          },
+          {
             "date_context": "martes 8 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala Arturo Longton Guerrero tercer nivel",
@@ -127,9 +148,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 2,
-          "matching_tables": 2,
-          "nested_tables_skipped": 2,
+          "top_level_tables_examined": 3,
+          "matching_tables": 3,
+          "nested_tables_skipped": 3,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -368,6 +389,21 @@
         "rows": [
           {
             "date_context": "",
+            "n": "17",
+            "día": "22 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
             "n": "16",
             "día": "08 sep. 2026",
             "inicio": "15:02",
@@ -422,6 +458,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4889",
         "rows": [
           {
+            "date_context": "martes 22 septiembre 2026",
+            "horario": "15:00",
+            "sala": "Sala Manuel Bustos Huerta tercer nivel",
+            "citación": "Recibir a la Subsecretaria de Relaciones Económicas Internacionales, a fin de que exponga los resultados de la gira realizada por Europa entre los días 7 y 11 de septiembre, que comprendió visitas a Italia, Alemania y Bélgica, así como sus proyecciones, especialmente en materia de comercio, inversión y cooperación, además del fortalecimiento de las relaciones económicas y comerciales de Chile con la Unión Europea. - Subsecretaria de Relaciones Económicas Internacionales, señora Paula Estévez Weinstein."
+          },
+          {
             "date_context": "martes 8 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala Manuel Bustos Huerta tercer nivel",
@@ -447,9 +489,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 2,
-          "matching_tables": 2,
-          "nested_tables_skipped": 2,
+          "top_level_tables_examined": 3,
+          "matching_tables": 3,
+          "nested_tables_skipped": 3,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -653,7 +695,7 @@
         "rows": [
           {
             "date_context": "",
-            "n": "42",
+            "n": "43",
             "día": "23 sep. 2026",
             "inicio": "15:00",
             "término": "17:00",
@@ -668,10 +710,25 @@
           },
           {
             "date_context": "",
-            "n": "41",
+            "n": "42",
             "día": "22 sep. 2026",
             "inicio": "15:00",
             "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "41",
+            "día": "21 sep. 2026",
+            "inicio": "19:15",
+            "término": "21:40",
             "estado": "Citada",
             "citación": "",
             "cuenta": "",
@@ -779,6 +836,12 @@
             "citación": "Continuar la tramitación en general del proyecto de ley refundido, iniciado en moción, que “Modifica el Código Penal para sancionar toda forma de instrumentalización de niños, niñas y adolescentes para cometer delitos''. Boletines N° 18.282-07 y N°18.590. Urgencia suma. Se ha invitado al señor Ministro de Justicia y Derechos Humanos; a los académicos Alejandro Leiva López (U. Andrés Bello); Gonzalo Berríos Díaz (U. de Chile), y a la señora Andrea Bluck Muñoz, del Observatorio Legislativo MIRA. Continuar la tramitación en segundo trámite reglamentario y segundo constitucional, del proyecto de ley que “Modifica el Código Penal, en materia de internación al territorio nacional de enfermedades animales o plagas vegetales”. Boletín N° 16.777-07 (S). Urgencia simple. Se ha invitado al señor Ministro de Justicia y Derechos Humanos."
           },
           {
+            "date_context": "lunes 21 septiembre 2026",
+            "horario": "19:15",
+            "sala": "Sala Francisco Bulnes Sanfuentes tercer nivel",
+            "citación": "recibir al Fiscal Nacional del Ministerio Público y al Director Nacional de la Policía de Investigaciones de Chile, a fin de que proporcionen antecedentes sobre eventuales casos de corrupción que afectarían a exfuncionario y funcionarios de sus instituciones, respectivamente, según se ha difundido por medios de comunicación, sin perjuicio de otros antecedentes de relevancia para la Comisión."
+          },
+          {
             "date_context": "miércoles 9 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala Francisco Bulnes Sanfuentes tercer nivel",
@@ -816,9 +879,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 6,
-          "matching_tables": 6,
-          "nested_tables_skipped": 6,
+          "top_level_tables_examined": 7,
+          "matching_tables": 7,
+          "nested_tables_skipped": 7,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -1497,7 +1560,7 @@
             "date_context": "martes 22 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala de Conferencias Juan Bustos Ramírez segundo nivel",
-            "citación": "Con objeto de continuar la exposición de los antecedentes, por parte del Ejecutivo, y las preguntas de los integrantes de la Comisión, respecto del proyecto de ley, iniciado en Mensaje de S.E. el Presidente de la República, señor José Antonio Kast Rist, de Reforma al mercado de capitales y financiamiento de la casa propia, Boletín N°18643-05, con urgencia calificada de Suma. Ministro de Hacienda, señor Jorge Quiroz Castro. Subsecretario de Hacienda, señor Sebastián Vallebona Espinosa."
+            "citación": "Con objeto de continuar la exposición de los antecedentes, por parte del Ejecutivo, y las preguntas de los integrantes de la Comisión, respecto del proyecto de ley, iniciado en Mensaje de S.E. el Presidente de la República, señor José Antonio Kast Rist, de Reforma al mercado de capitales y financiamiento de la casa propia, Boletín N°18643-05, con urgencia calificada de Suma. Ministro de Hacienda, señor Jorge Quiroz Castro. Subsecretario de Hacienda, señor Sebastián Vallebona Espinosa. Presidenta del Banco Central, señora Rosanna Costa Costa. Presidenta de la Comisión para el Mercado Financiero (CMF), señora Catherine Tornel León. Superintendente de Pensiones, señor Joaquín Cortez Huerta. Presidente del Banco Estado, señor Mario Farren Risopatrón."
           },
           {
             "date_context": "lunes 21 septiembre 2026",
@@ -2347,6 +2410,50 @@
         "rows": [
           {
             "date_context": "",
+            "número": "81/7/2026",
+            "sesión": "N° 17 08 sep. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 8 de septiembre 2026.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279971&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=279971"
+          },
+          {
+            "date_context": "",
+            "número": "80/7/2026",
+            "sesión": "N° 17 08 sep. 2026",
+            "destino": "Al Secretario Regional Ministerial de Ñuble",
+            "referencia": "Acuerdo adoptado en sesión de 8 de septiembre 2026.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279967&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=279967"
+          },
+          {
+            "date_context": "",
+            "número": "79/7/2026",
+            "sesión": "N° 17 08 sep. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 8 de septiembre 2026.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279966&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=279966"
+          },
+          {
+            "date_context": "",
+            "número": "78/7/2026",
+            "sesión": "N° 17 08 sep. 2026",
+            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
+            "referencia": "Acuerdo adoptado en sesión de 8 de septiembre 2026.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279965&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=279965"
+          },
+          {
+            "date_context": "",
             "número": "77/7/2026",
             "sesión": "N° 16 01 sep. 2026",
             "destino": "Subsecretario de Desarrollo Regional y Administrativo, SUBDERE",
@@ -2388,50 +2495,6 @@
             "respuestas": "ver",
             "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=277457&prmTipo=DOCUMENTOOFICIOCOMISION",
             "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=277457"
-          },
-          {
-            "date_context": "",
-            "número": "73/7/2026",
-            "sesión": "N° 14 11 ago. 2026",
-            "destino": "Presidente del Directorio de EFE",
-            "referencia": "Acuerdo adoptado en sesión de 14 de agosto 2026.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=277455&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=277455"
-          },
-          {
-            "date_context": "",
-            "número": "72/7/2026",
-            "sesión": "N° 14 11 ago. 2026",
-            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
-            "referencia": "Acuerdo adoptado en sesión de 11 de agosto 2026.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=277079&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=277079"
-          },
-          {
-            "date_context": "",
-            "número": "71/7/2026",
-            "sesión": "N° 13 04 ago. 2026",
-            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
-            "referencia": "Acuerdo adoptado en sesión de 4 de agosto 2026.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=275860&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=275860"
-          },
-          {
-            "date_context": "",
-            "número": "70/7/2026",
-            "sesión": "N° 13 04 ago. 2026",
-            "destino": "Al Biministro de Obras Públicas, Transportes y Telecomunicaciones",
-            "referencia": "Acuerdo adoptado en sesión de 4 de agosto 2026.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=275859&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4885&prmIdOficio=275859"
           }
         ],
         "page_period": {
@@ -2802,6 +2865,21 @@
         "rows": [
           {
             "date_context": "",
+            "n": "22",
+            "día": "23 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
             "n": "21",
             "día": "09 sep. 2026",
             "inicio": "15:12",
@@ -2856,6 +2934,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4888",
         "rows": [
           {
+            "date_context": "miércoles 23 septiembre 2026",
+            "horario": "15:00",
+            "sala": "Sala Juan Lobos Krause tercer nivel",
+            "citación": "Recibir al nuevo Superintendente del Medio Ambiente, señor Emanuel Ibarra Soto, a fin se presente ante la Comisión y exponga su plan de trabajo para la Superintendencia, así como los énfasis, desafíos del servicio para el presente periodo y atender las inquietudes de los parlamentarios respecto de materias de su competencia."
+          },
+          {
             "date_context": "miércoles 9 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala Juan Lobos Krause tercer nivel",
@@ -2881,9 +2965,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 2,
-          "matching_tables": 2,
-          "nested_tables_skipped": 2,
+          "top_level_tables_examined": 3,
+          "matching_tables": 3,
+          "nested_tables_skipped": 3,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -2973,6 +3057,28 @@
         "rows": [
           {
             "date_context": "",
+            "número": "17/9/2026",
+            "sesión": "N° 21 09 sep. 2026",
+            "destino": "Ministra del Medio Ambiente",
+            "referencia": "Solicita visitar la ciudad de Tocopilla, a fin de conocer e inspeccionar en terreno la situación ambiental derivada del escurrimiento de residuos y cenizas provenientes de la ciudad y de las termoeléctricas que operan en la zona, producto de las lluvias registradas durante el mes de agosto.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279985&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4888&prmIdOficio=279985"
+          },
+          {
+            "date_context": "",
+            "número": "16/9/2026",
+            "sesión": "N° 21 09 sep. 2026",
+            "destino": "Ministra del Medio Ambiente",
+            "referencia": "Sobre el estado de tramitación del decreto que declara al pingüino de Humboldt como Monumento Natural.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279984&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4888&prmIdOficio=279984"
+          },
+          {
+            "date_context": "",
             "número": "15/9/2026",
             "sesión": "N° 16 22 jul. 2026",
             "destino": "Ministra del Medio Ambiente",
@@ -3036,28 +3142,6 @@
             "respuestas": "ver",
             "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=272320&prmTipo=DOCUMENTOOFICIOCOMISION",
             "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4888&prmIdOficio=272320"
-          },
-          {
-            "date_context": "",
-            "número": "9/9/2026",
-            "sesión": "N° 14 24 jun. 2026",
-            "destino": "Ministra del Medio Ambiente",
-            "referencia": "Oficio N° 9",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=272319&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4888&prmIdOficio=272319"
-          },
-          {
-            "date_context": "",
-            "número": "8/9/2026",
-            "sesión": "N° 11 03 jun. 2026",
-            "destino": "Alcalde de la Municipalidad de Antofagasta",
-            "referencia": "Oficio N° 8/9/2026 - Alcalde de la Municipalidad de Antofagasta",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=269950&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4888&prmIdOficio=269950"
           }
         ],
         "page_period": {
@@ -3428,6 +3512,21 @@
         "rows": [
           {
             "date_context": "",
+            "n": "23",
+            "día": "22 sep. 2026",
+            "inicio": "17:30",
+            "término": "19:30",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
             "n": "22",
             "día": "08 sep. 2026",
             "inicio": "17:30",
@@ -3497,6 +3596,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4891",
         "rows": [
           {
+            "date_context": "martes 22 septiembre 2026",
+            "horario": "17:30",
+            "sala": "Sala Manuel Bustos Huerta tercer nivel",
+            "citación": "La sesión tiene por objeto tratar materias propias de su competencia."
+          },
+          {
             "date_context": "martes 8 septiembre 2026",
             "horario": "17:30",
             "sala": "Sala Manuel Bustos Huerta tercer nivel",
@@ -3528,9 +3633,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 3,
-          "matching_tables": 3,
-          "nested_tables_skipped": 3,
+          "top_level_tables_examined": 4,
+          "matching_tables": 4,
+          "nested_tables_skipped": 4,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -3847,7 +3952,7 @@
             "date_context": "miércoles 23 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala Octavio Jara Wolff tercer nivel",
-            "citación": "Recibir al Biministro de Economía, Fomento y Turismo y Minería, con el objeto de que informe acerca de los alcances, fundamentos y efectos de la decisión recientemente anunciada de capitalizar el 100% de las utilidades de Codelco correspondientes al ejercicio 2025, particularmente respecto de su impacto en la situación financiera y nivel de endeudamiento de la empresa, su capacidad de inversión y ejecución de proyectos estructurales, así como de sus eventuales efectos fiscales y en las finanzas públicas, además de referirse a otras materias de interés de la Comisión relacionadas con su Cartera. - Biministro de Economía, Fomento y Turismo y Minería, señor Daniel Mas Valdés. Recibir al Presidente del Directorio y al Presidente Ejecutivo de Codelco, a objeto de que se refieran a la situación actual de la empresa, su desempeño y principales desafíos, así como a sus perspectivas de desarrollo y proyecciones para los próximos años, incluyendo los aspectos que estimen pertinentes en relación con la actividad productiva, los proyectos en ejecución y futuros, y las condiciones necesarias para fortalecer el rol de Codelco en la minería nacional. - Presidente del Directorio de Codelco, señor Bernardo Fontaine Talavera. - Presidente Ejecutivo de Codelco, señor Jorge Gómez Díaz."
+            "citación": "Recibir al Biministro de Economía, Fomento y Turismo y Minería, con el objeto de que informe acerca de los alcances, fundamentos y efectos de la decisión recientemente anunciada de capitalizar el 100% de las utilidades de Codelco correspondientes al ejercicio 2025, particularmente respecto de su impacto en la situación financiera y nivel de endeudamiento de la empresa, su capacidad de inversión y ejecución de proyectos estructurales, así como de sus eventuales efectos fiscales y en las finanzas públicas, además de referirse a otras materias de interés de la Comisión relacionadas con su Cartera. - Biministro de Economía, Fomento y Turismo y Minería, señor Daniel Mas Valdés. Recibir al alcalde de Concón, con el objeto de abordar la investigación por irregularidades detectadas en la entrega de información a la autoridad ambiental e incumplimientos asociados a obligaciones de la Refinería Aconcagua de ENAP, particularmente en materias relacionadas con las emisiones de dióxido de azufre y la eficiencia en la recuperación de azufre, así como las eventuales afectaciones a la salud de la población de la comuna. - Alcalde de la comuna de Concón, señor Freddy Antonio Ramírez Villalobos."
           },
           {
             "date_context": "miércoles 9 septiembre 2026",
@@ -4443,6 +4548,21 @@
         "rows": [
           {
             "date_context": "",
+            "n": "19",
+            "día": "23 sep. 2026",
+            "inicio": "15:00",
+            "término": "17:00",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
             "n": "18",
             "día": "09 sep. 2026",
             "inicio": "15:04",
@@ -4497,6 +4617,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4899",
         "rows": [
           {
+            "date_context": "miércoles 23 septiembre 2026",
+            "horario": "15:00",
+            "sala": "Sala N° 410 cuarto nivel",
+            "citación": "Recibir al Presidente de la Cámara Chilena de la Construcción de la región de La Araucanía, señor Lorenzo Dubois Herrera, para que se refiera a las políticas habitacionales. Se ha invitado al Presidente de la Cámara Chilena de la Construcción de La Araucanía, señor Lorenzo Dubois Herrera. Iniciar la discusión general del proyecto de ley, originado en moción de los diputados señores Daniel Valenzuela y Beltrán, y de la diputada señora Nuyado, que modifica el decreto ley N° 1.305, de 1975, para garantizar que las postulaciones a los programas habitacionales puedan realizarse de manera individual o colectiva, correspondiente al boletín N° 18583-14. Se ha invitado al H. diputado señor Daniel Valenzuela Salazar, en su calidad de autor, para que exponga acerca del contenido y alcance de la iniciativa. Continuar la discusión general del proyecto de ley, originado en moción de las diputadas señoras Gazmuri, Hassler, Nuyado y Urrutia y de los diputados señores Javier Muñoz, Olavarría y Ulloa y que modifica la Ley General de Urbanismo y Construcciones para exigir la ejecución previa o simultánea de las medidas de mitigación directa en proyectos inmobiliarios, correspondiente al boletín N° 18.309-14. Se encuentra invitado el arquitecto y experto en urbanismo, señor Pablo Jordán Fuchs."
+          },
+          {
             "date_context": "miércoles 9 septiembre 2026",
             "horario": "15:00",
             "sala": "Sala N° 410 cuarto nivel",
@@ -4522,9 +4648,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 2,
-          "matching_tables": 2,
-          "nested_tables_skipped": 2,
+          "top_level_tables_examined": 3,
+          "matching_tables": 3,
+          "nested_tables_skipped": 3,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -4628,6 +4754,28 @@
         "rows": [
           {
             "date_context": "",
+            "número": "184/14/2026",
+            "sesión": "N° 18 09 sep. 2026",
+            "destino": "Al Ministro de Vivienda y Urbanismo",
+            "referencia": "Reitera oficio N° 149 al Ministro de Vivienda y Urbanismo.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280015&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4899&prmIdOficio=280015"
+          },
+          {
+            "date_context": "",
+            "número": "183/14/2026",
+            "sesión": "N° 18 09 sep. 2026",
+            "destino": "Al Ministro de Vivienda y Urbanismo",
+            "referencia": "Reitera oficio N° 148 al Ministro de Vivienda y Urbanismo.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280014&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4899&prmIdOficio=280014"
+          },
+          {
+            "date_context": "",
             "número": "182/14/2026",
             "sesión": "N° 18 09 sep. 2026",
             "destino": "Al Director (S) del Servicio de Vivienda y Urbanización de la región de Valparaíso",
@@ -4691,28 +4839,6 @@
             "respuestas": "ver",
             "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279790&prmTipo=DOCUMENTOOFICIOCOMISION",
             "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4899&prmIdOficio=279790"
-          },
-          {
-            "date_context": "",
-            "número": "176/14/2026",
-            "sesión": "N° 18 09 sep. 2026",
-            "destino": "Al Director del Servicio de Vivienda y Urbanización región de Atacama",
-            "referencia": "Solicita informe el estado actual del proyecto habitacional del Comité de Vivienda Esperanza III, de la comuna de Caldera.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279785&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4899&prmIdOficio=279785"
-          },
-          {
-            "date_context": "",
-            "número": "175/14/2026",
-            "sesión": "N° 18 09 sep. 2026",
-            "destino": "Al Ministro de Vivienda y Urbanismo",
-            "referencia": "Reitera y complementa oficio N° 1.922, de 29 de enero de 2026, relacionado con la Junta de Vecinos N° 34, C.H. Guañacagua I, de la comuna de Arica.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279783&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4899&prmIdOficio=279783"
           }
         ],
         "page_period": {
@@ -5388,8 +5514,8 @@
             "date_context": "",
             "n": "22",
             "día": "07 sep. 2026",
-            "inicio": "16:15",
-            "término": "19:00",
+            "inicio": "16:16",
+            "término": "17:00",
             "estado": "Celebrada",
             "citación": "",
             "cuenta": "",
@@ -5443,7 +5569,7 @@
             "date_context": "lunes 21 septiembre 2026",
             "horario": "14:50",
             "sala": "Sala Arturo Longton Guerrero tercer nivel",
-            "citación": "Sesión ordinaria citada con objeto recibir a los siguientes invitados: * Los indicados en la citación. 1) De 14:50 a 15:50 horas: A representantes del equipo de robótica Team Chile 2026, que este año busca representar a Chile en el Mundial First Global Challenge, a realizarse en Corea del Sur durante el mes de octubre. 2) De 15:50 a 16:50 horas: A S.E.R. el Arzobispo de Santiago de Chile, Cardenal Fernando Chomali Garib, quien expondrá respecto de la Carta Encíclica de Su Santidad León XIV “Magnifica Humanitas”, en especial, sobre los alcances de la inteligencia artificial."
+            "citación": "Sesión ordinaria citada con objeto de recibir a los siguientes invitados: * Los indicados en la citación. 1) De 14:50 a 15:50 horas: A representantes del equipo de robótica Team Chile 2026, que este año busca representar a Chile en el Mundial First Global Challenge, a realizarse en Corea del Sur durante el mes de octubre. 2) De 15:50 a 16:50 horas: A S.E.R. el Arzobispo de Santiago de Chile, Cardenal Fernando Chomali Garib, quien expondrá respecto de la Carta Encíclica de Su Santidad León XIV “Magnifica Humanitas”, en especial, sobre los alcances de la inteligencia artificial."
           },
           {
             "date_context": "miércoles 9 septiembre 2026",
@@ -5498,11 +5624,11 @@
             "date_context": "martes 8 septiembre 2026",
             "horario": "08:40",
             "sala": "Sala Arturo Longton Guerrero tercer nivel (Presencial)",
-            "citación": "Sesión especial citada con objeto de continuar con la votación en particular del proyecto de ley, en primer trámite constitucional, con urgencia calificada de “suma”, originado en las siguientes mociones refundidas: 1) El que establece un marco integral de protección de niñas, niños y adolescentes en el uso de redes sociales (boletín N° 18224-18), de los diputados y diputadas Lorena Fries (A), Jaime Araya, Matías Fernández, Ana María Gazmuri, Andrea Macías, Luis Malla, Cristian Mella, José Montalva, Zandra Parisi y Gonzalo Winter. 2) El que protege a los menores de edad frente a la adicción a las nuevas tecnologías y prohíbe el acceso a redes sociales y otras plataformas (boletín N° 18246-18), de las diputadas y diputados Diego Schalper (A), Héctor Barría, Patricio Briones, Andrés Celis, Tomás Kast, Raúl Leiva, Paula Olmos, Ximena Ossandón, Macarena Santelices y Héctor Ulloa. 3) El que establece un estatuto de responsabilidad algorítmica y protección digital de niños, niñas y adolescentes (boletín N° 18318-19), de las diputadas y diputados Daniel Manouchehri (A), Patricio Briones, Andrés Celis, Carolina Cucumides, Cristóbal Martínez, José Montalva, Daniela Serrano, Consuelo Veloso, Gonzalo Winter y Gael Yeomans. 4) El que modifica la ley N° 21.663, marco de ciberseguridad, para incorporar los principios de protección a la infancia y adolescencia, restricción etaria e información preventiva en entornos digitales (boletín N° 18415-18), de los diputados y diputadas Sara Concha (A), Patricio Briones, Andrés Celis, Tomás Kast, José Montalva, Francesca Muñoz y Tamara Ramírez. En razón de lo anterior, la Comisión ha invitado a la ministra de Desarrollo Social y Familia, señora María Jesús Wulf Le May, y/o al subsecretario de la Niñez, señor Marcelo Sánchez Ahumada. Asisten el subsecretario de la Niñez, don Marcelo Sánchez, lo acompañan el coordinador legislativo del Ministerio de Desarrollo Social, don Sebastián Sotomayor y el asesor legislativo, don Roberto Astaburuaga. Diputados Asistentes: Briones Patricio; Manouchehri Daniel; Marowski Hans Alberto; Montalva José; Neira Cristian; Ross Felipe; Schalper Diego; Serrano Daniela; Winter Gonzalo; Yeomans Gael Reemplazos: El Diputado Celis Andrés fue reemplazado por el Diputado Ramírez Rodrigo; El Diputado Martínez Cristóbal fue reemplazado por la Diputada Romero Natalia Angelica"
+            "citación": "Sesión especial citada con objeto de continuar con la votación en particular del proyecto de ley, en primer trámite constitucional, con urgencia calificada de “simple”, originado en las siguientes mociones refundidas: 1) El que establece un marco integral de protección de niñas, niños y adolescentes en el uso de redes sociales (boletín N° 18224-18), de los diputados y diputadas Lorena Fries (A), Jaime Araya, Matías Fernández, Ana María Gazmuri, Andrea Macías, Luis Malla, Cristian Mella, José Montalva, Zandra Parisi y Gonzalo Winter. 2) El que protege a los menores de edad frente a la adicción a las nuevas tecnologías y prohíbe el acceso a redes sociales y otras plataformas (boletín N° 18246-18), de las diputadas y diputados Diego Schalper (A), Héctor Barría, Patricio Briones, Andrés Celis, Tomás Kast, Raúl Leiva, Paula Olmos, Ximena Ossandón, Macarena Santelices y Héctor Ulloa. 3) El que establece un estatuto de responsabilidad algorítmica y protección digital de niños, niñas y adolescentes (boletín N° 18318-19), de las diputadas y diputados Daniel Manouchehri (A), Patricio Briones, Andrés Celis, Carolina Cucumides, Cristóbal Martínez, José Montalva, Daniela Serrano, Consuelo Veloso, Gonzalo Winter y Gael Yeomans. 4) El que modifica la ley N° 21.663, marco de ciberseguridad, para incorporar los principios de protección a la infancia y adolescencia, restricción etaria e información preventiva en entornos digitales (boletín N° 18415-18), de los diputados y diputadas Sara Concha (A), Patricio Briones, Andrés Celis, Tomás Kast, José Montalva, Francesca Muñoz y Tamara Ramírez. En razón de lo anterior, la Comisión ha invitado a la ministra de Desarrollo Social y Familia, señora María Jesús Wulf Le May, y/o al subsecretario de la Niñez, señor Marcelo Sánchez Ahumada. Asisten el subsecretario de la Niñez, don Marcelo Sánchez, lo acompañan el coordinador legislativo del Ministerio de Desarrollo Social, don Sebastián Sotomayor y el asesor legislativo, don Roberto Astaburuaga. Diputados Asistentes: Briones Patricio; Manouchehri Daniel; Marowski Hans Alberto; Montalva José; Neira Cristian; Ross Felipe; Schalper Diego; Serrano Daniela; Winter Gonzalo; Yeomans Gael Reemplazos: El Diputado Celis Andrés fue reemplazado por el Diputado Ramírez Rodrigo; El Diputado Martínez Cristóbal fue reemplazado por la Diputada Romero Natalia Angelica"
           },
           {
             "date_context": "lunes 7 septiembre 2026",
-            "horario": "16:15",
+            "horario": "16:16",
             "sala": "Sala Arturo Longton Guerrero tercer nivel (Presencial)",
             "citación": "Sesión especial* citada con objeto de continuar con la votación en particular del proyecto de ley, en primer trámite constitucional, con urgencia calificada de “suma”, originado en las siguientes mociones refundidas: 1) El que establece un marco integral de protección de niñas, niños y adolescentes en el uso de redes sociales (boletín N° 18224-18), de los diputados y diputadas Lorena Fries (A), Jaime Araya, Matías Fernández, Ana María Gazmuri, Andrea Macías, Luis Malla, Cristian Mella, José Montalva, Zandra Parisi y Gonzalo Winter. 2) El que protege a los menores de edad frente a la adicción a las nuevas tecnologías y prohíbe el acceso a redes sociales y otras plataformas (boletín N° 18246-18), de las diputadas y diputados Diego Schalper (A), Héctor Barría, Patricio Briones, Andrés Celis, Tomás Kast, Raúl Leiva, Paula Olmos, Ximena Ossandón, Macarena Santelices y Héctor Ulloa. 3) El que establece un estatuto de responsabilidad algorítmica y protección digital de niños, niñas y adolescentes (boletín N° 18318-19), de las diputadas y diputados Daniel Manouchehri (A), Patricio Briones, Andrés Celis, Carolina Cucumides, Cristóbal Martínez, José Montalva, Daniela Serrano, Consuelo Veloso, Gonzalo Winter y Gael Yeomans. 4) El que modifica la ley N° 21.663, marco de ciberseguridad, para incorporar los principios de protección a la infancia y adolescencia, restricción etaria e información preventiva en entornos digitales (boletín N° 18415-18), de los diputados y diputadas Sara Concha (A), Patricio Briones, Andrés Celis, Tomás Kast, José Montalva, Francesca Muñoz y Tamara Ramírez. En razón de lo anterior, la Comisión ha invitado a la ministra de Desarrollo Social y Familia, señora María Jesús Wulf Le May, y/o al subsecretario de la Niñez, señor Marcelo Sánchez Ahumada. * Esta sesión reemplaza a la ordinaria, toda vez que la Comisión tiene una actividad oficial en Santiago con la ministra de Ciencia, Tecnología, Conocimiento e Innovación. Asisten la ministra de Desarrollo Social y Familia, señora María Jesús Wulf, acompañadas de la asesora doña Javiera Corvalán y el coordinador legislativo don Sebastián Sotomayor. Diputados Asistentes: Briones Patricio; Manouchehri Daniel; Marowski Hans Alberto; Martínez Cristóbal; Montalva José; Neira Cristian; Ross Felipe; Schalper Diego; Serrano Daniela; Winter Gonzalo Reemplazos: El Diputado Celis Andrés fue reemplazado por la Diputada Mora Claudia; La Diputada Veloso Consuelo fue reemplazada por la Diputada Macías Andrea; La Diputada Yeomans Gael fue reemplazada por el Diputado Bugueño Felix Elliot"
           },
@@ -6235,6 +6361,17 @@
         "rows": [
           {
             "date_context": "",
+            "número": "129/19/2026",
+            "sesión": "N° 20 08 sep. 2026",
+            "destino": "A LA ATLETA MÁSTER",
+            "referencia": "felicitaciones a Sara Montecinos",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279964&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4910&prmIdOficio=279964"
+          },
+          {
+            "date_context": "",
             "número": "128/19/2026",
             "sesión": "N° 20 08 sep. 2026",
             "destino": "Al Director Nacional (S) del Instituto Nacional de Deportes,",
@@ -6309,17 +6446,6 @@
             "respuestas": "ver",
             "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279843&prmTipo=DOCUMENTOOFICIOCOMISION",
             "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4910&prmIdOficio=279843"
-          },
-          {
-            "date_context": "",
-            "número": "121/19/2026",
-            "sesión": "N° 20 08 sep. 2026",
-            "destino": "AL PRESIDENTE DEL COMITE NACIONAL DE ARBITRAJE DEPORTIVO (CNAD)",
-            "referencia": "SIETE CASOS DEPORTISTAS VULNERADOS EN SUS DERECHOS",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279842&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4910&prmIdOficio=279842"
           }
         ],
         "page_period": {
@@ -6347,6 +6473,21 @@
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4904",
         "rows": [
+          {
+            "date_context": "",
+            "n": "18",
+            "día": "21 sep. 2026",
+            "inicio": "14:50",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
           {
             "date_context": "",
             "n": "17",
@@ -6388,6 +6529,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4904",
         "rows": [
           {
+            "date_context": "lunes 21 septiembre 2026",
+            "horario": "14:50",
+            "sala": "Sala Manuel Bustos Huerta tercer nivel",
+            "citación": "La sesión tiene por objeto tratar materias propias de su competencia."
+          },
+          {
             "date_context": "lunes 7 septiembre 2026",
             "horario": "14:50",
             "sala": "Sala Manuel Bustos Huerta tercer nivel",
@@ -6407,9 +6554,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 1,
-          "matching_tables": 1,
-          "nested_tables_skipped": 1,
+          "top_level_tables_examined": 2,
+          "matching_tables": 2,
+          "nested_tables_skipped": 2,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -6479,6 +6626,61 @@
         "rows": [
           {
             "date_context": "",
+            "número": "129/20/2026",
+            "sesión": "N° 17 07 sep. 2026",
+            "destino": "Al Director de Fronteras de la Dirección Nacional de Fronteras y Límites del Estado (DIFROL)",
+            "referencia": "Solicitud de información sobre licitación y eventual enajenación de islas fiscales ubicadas en zona fronteriza, comuna de Timaukel.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279914&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279914"
+          },
+          {
+            "date_context": "",
+            "número": "128/20/2026",
+            "sesión": "N° 17 07 sep. 2026",
+            "destino": "Al Ministro de Defensa",
+            "referencia": "Solicitud de información sobre licitación y eventual enajenación de islas fiscales ubicadas en zona fronteriza, comuna de Timaukel.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279913&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279913"
+          },
+          {
+            "date_context": "",
+            "número": "127/20/2026",
+            "sesión": "N° 17 07 sep. 2026",
+            "destino": "Al Ministro de Relaciones Exteriores",
+            "referencia": "Solicitud de información sobre licitación y eventual enajenación de islas fiscales ubicadas en zona fronteriza, comuna de Timaukel.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279912&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279912"
+          },
+          {
+            "date_context": "",
+            "número": "126/20/2026",
+            "sesión": "N° 17 07 sep. 2026",
+            "destino": "Al Biministro del Interior y Secretaría General de Gobierno",
+            "referencia": "Solicitud de información sobre licitación y eventual enajenación de islas fiscales ubicadas en zona fronteriza, comuna de Timaukel.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279911&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279911"
+          },
+          {
+            "date_context": "",
+            "número": "125/20/2026",
+            "sesión": "N° 17 07 sep. 2026",
+            "destino": "A la Ministra de Bienes Nacionales",
+            "referencia": "Solicitud de información sobre licitación y eventual enajenación de islas fiscales ubicadas en zona fronteriza, comuna de Timaukel.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279910&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279910"
+          },
+          {
+            "date_context": "",
             "número": "124/20/2026",
             "sesión": "N° 17 07 sep. 2026",
             "destino": "A la Ministra de Salud",
@@ -6509,61 +6711,6 @@
             "respuestas": "ver",
             "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279872&prmTipo=DOCUMENTOOFICIOCOMISION",
             "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279872"
-          },
-          {
-            "date_context": "",
-            "número": "121/20/2026",
-            "sesión": "N° 17 07 sep. 2026",
-            "destino": "Al Ministro de Defensa",
-            "referencia": "Solicita información sobre embarcaciones pesqueras extranjeras y medios de vigilancia en torno a Rapa Nui.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279823&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279823"
-          },
-          {
-            "date_context": "",
-            "número": "120/20/2026",
-            "sesión": "N° 17 07 sep. 2026",
-            "destino": "Al Presidente de laTercera Subcomisión Mixta de Presupuestos, H. Diputado",
-            "referencia": "Solicita considerar iniciativa de implementación de un buque hospital en el marco de la discusión presupuestaria para el año 2027.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279811&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279811"
-          },
-          {
-            "date_context": "",
-            "número": "119/20/2026",
-            "sesión": "N° 17 07 sep. 2026",
-            "destino": "A la Ministra de Salud",
-            "referencia": "Solicita informar factibilidad técnica y sanitaria para la implementación de un buque hospital.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279810&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279810"
-          },
-          {
-            "date_context": "",
-            "número": "118/20/2026",
-            "sesión": "N° 17 07 sep. 2026",
-            "destino": "Al Ministro de Hacienda",
-            "referencia": "Solicita evaluar mecanismos presupuestarios y financieros para avanzar en la implementación de un buque hospital.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279809&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279809"
-          },
-          {
-            "date_context": "",
-            "número": "117/20/2026",
-            "sesión": "N° 17 07 sep. 2026",
-            "destino": "Al Biministro del Interior y Secretaría General de Gobierno",
-            "referencia": "Solicita hacer presente el respaldo de la Comisión a la iniciativa de implementar un buque hospital y promover su materialización.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279808&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4904&prmIdOficio=279808"
           }
         ],
         "page_period": {
@@ -6901,6 +7048,83 @@
         "rows": [
           {
             "date_context": "",
+            "número": "104/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "A S.E. EL PRESIDENTE DE LA REPUBLICA DE CHILE",
+            "referencia": "Representar los hechos ocurridos durante la tramitación del proyecto de ley, boletín N°18.584-25.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279975&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279975"
+          },
+          {
+            "date_context": "",
+            "número": "103/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "AL MINISTRO SECRETARIO GENERAL DE LA PRESIDENCIA",
+            "referencia": "Representar los hechos ocurridos durante la tramitación del proyecto de ley, boletín N°18.584-25.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279974&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279974"
+          },
+          {
+            "date_context": "",
+            "número": "102/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
+            "referencia": "Representar los hechos ocurridos durante la tramitación del proyecto de ley, boletín N°18.584-25.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279973&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279973"
+          },
+          {
+            "date_context": "",
+            "número": "101/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
+            "referencia": "Solicita información de personas privadas de libertad que hubieren fallecido bajo custodia del Estado.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279972&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279972"
+          },
+          {
+            "date_context": "",
+            "número": "100/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "AL FISCAL NACIONAL DEL MINISTERIO PÚBLICO",
+            "referencia": "Solicita información de funcionarios de Carabineros de Chile y de la Policia de Investigaciones de Chile.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279970&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279970"
+          },
+          {
+            "date_context": "",
+            "número": "99/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
+            "referencia": "Solicita información acerca de los vehículos utilizados por dicha cartera de Estado y por su comitiva.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279969&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279969"
+          },
+          {
+            "date_context": "",
+            "número": "98/21/2026",
+            "sesión": "N° 38 09 sep. 2026",
+            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
+            "referencia": "Solicita antecedentes relativos a la situación del parque automotriz de Carabineros de Chile.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279968&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279968"
+          },
+          {
+            "date_context": "",
             "número": "97/21/2026",
             "sesión": "N° 35 02 sep. 2026",
             "destino": "AL MINISTRO DE JUSTICIA Y DERECHOS HUMANOS",
@@ -6909,83 +7133,6 @@
             "respuestas": "ver",
             "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279244&prmTipo=DOCUMENTOOFICIOCOMISION",
             "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279244"
-          },
-          {
-            "date_context": "",
-            "número": "96/21/2026",
-            "sesión": "N° 35 02 sep. 2026",
-            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
-            "referencia": "Solicita información respecto al cierre de la unidad femenina del Hospital Psiquiátrico Dr. José Horwitz Barak,",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279237&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279237"
-          },
-          {
-            "date_context": "",
-            "número": "95/21/2026",
-            "sesión": "N° 35 02 sep. 2026",
-            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
-            "referencia": "Solicita Información a solicitud del Diputado Raúl Leiva.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279235&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279235"
-          },
-          {
-            "date_context": "",
-            "número": "94/21/2026",
-            "sesión": "N° 35 02 sep. 2026",
-            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
-            "referencia": "Solicita informe criterios utilizados para invitar a Diputadas y Diputados de la comisión.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279228&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279228"
-          },
-          {
-            "date_context": "",
-            "número": "93/21/2026",
-            "sesión": "N° 35 02 sep. 2026",
-            "destino": "AL ALCALDE DE LA COMUNA DE SAN BERNARDO",
-            "referencia": "Expresa solidaridad y el respaldo de la Comisión al alcalde de San Bernardo-",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279224&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=279224"
-          },
-          {
-            "date_context": "",
-            "número": "92/21/2026",
-            "sesión": "N° 34 31 ago. 2026",
-            "destino": "AL MINISTRO DE SEGURIDAD PÚBLICA",
-            "referencia": "Solicita información ACOT.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=278734&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=278734"
-          },
-          {
-            "date_context": "",
-            "número": "91/21/2026",
-            "sesión": "N° 32 19 ago. 2026",
-            "destino": "A S.E. EL PRESIDENTE DE LA CÁMARA DE DIPUTADAS Y DIPUTADOS",
-            "referencia": "Solicita el acuerdo de la sala para que sea remitido el proyecto de ley, boletín N°18458-07.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=278203&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=278203"
-          },
-          {
-            "date_context": "",
-            "número": "90/21/2026",
-            "sesión": "N° 32 19 ago. 2026",
-            "destino": "AL DIRECTOR DE LA BIBLIOTECA DEL CONGRESO NACIONAL",
-            "referencia": "Solicita informe de legislación y experiencia comparada,",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=278184&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4903&prmIdOficio=278184"
           }
         ],
         "page_period": {
@@ -7194,91 +7341,91 @@
         "rows": [
           {
             "date_context": "",
-            "número": "119/22/2026",
+            "número": "127/22/2026",
             "sesión": "N° 20 07 sep. 2026",
-            "destino": "Al Director de Presupuestos",
-            "referencia": "Solicita adopción de medidas destinadas a asegurar la continuidad de la ONG Toki Rapa Nui.",
+            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio",
+            "referencia": "Reitera oficio N°100, de 17 de agosto de 2026, al Ministerio de las Culturas, las Artes y el Patrimonio.",
             "documento": "ver",
             "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279470&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=279470"
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280037&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280037"
           },
           {
             "date_context": "",
-            "número": "118/22/2026",
+            "número": "126/22/2026",
+            "sesión": "N° 20 07 sep. 2026",
+            "destino": "Al Subsecretario de Patrimonio Cultural",
+            "referencia": "Reitera oficio N°99, de 17 de agosto de 2026, al Subsecretario de Patrimonio Cultural.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280035&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280035"
+          },
+          {
+            "date_context": "",
+            "número": "125/22/2026",
+            "sesión": "N° 20 07 sep. 2026",
+            "destino": "Al Presidente del Consejo de Monumentos Nacionales",
+            "referencia": "Reitera oficio N°98, de 17 de agosto de 2026, al Presidente del Consejo de Monumentos Nacionales.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280033&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280033"
+          },
+          {
+            "date_context": "",
+            "número": "124/22/2026",
+            "sesión": "N° 20 07 sep. 2026",
+            "destino": "Al Ministro de Economía, Fomento y Turismo",
+            "referencia": "Reitera oficio N° 97, de 11 de agosto de 2026.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280026&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280026"
+          },
+          {
+            "date_context": "",
+            "número": "123/22/2026",
+            "sesión": "N° 20 07 sep. 2026",
+            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio",
+            "referencia": "Reitera oficio N° 96, de 11 de agosto de 2026.",
+            "documento": "ver",
+            "respuestas": "ver",
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280025&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280025"
+          },
+          {
+            "date_context": "",
+            "número": "122/22/2026",
             "sesión": "N° 20 07 sep. 2026",
             "destino": "Al Ministro de Hacienda",
-            "referencia": "Solicita adopción de medidas destinadas a asegurar la continuidad de la ONG Toki Rapa Nui.",
+            "referencia": "Reitera oficio N° 95, de 11 de agosto de 2026.",
             "documento": "ver",
             "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279469&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=279469"
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280024&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280024"
           },
           {
             "date_context": "",
-            "número": "117/22/2026",
+            "número": "121/22/2026",
             "sesión": "N° 20 07 sep. 2026",
-            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio",
-            "referencia": "Solicita adopción de medidas destinadas a asegurar la continuidad de la ONG Toki Rapa Nui.",
+            "destino": "Al Comandante en Jefe del Ejercito",
+            "referencia": "Reitera oficio N° 94, de 11 de agosto de 2026.",
             "documento": "ver",
             "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279466&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=279466"
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280023&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280023"
           },
           {
             "date_context": "",
-            "número": "116/22/2026",
+            "número": "120/22/2026",
             "sesión": "N° 20 07 sep. 2026",
-            "destino": "Al Ministro Secretario General de Gobierno",
-            "referencia": "Al Ministerio Secretaría General de Gobierno para que se pronuncie acerca de la exclusión de Radio Universidad de Chile de la cobertura del Foro de Madrid.",
+            "destino": "Al Vicepresidente de la Corporación de Fomento de la Producción",
+            "referencia": "Reitera oficio N° 93, de 11 de agosto de 2026",
             "documento": "ver",
             "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279462&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=279462"
-          },
-          {
-            "date_context": "",
-            "número": "115/22/2026",
-            "sesión": "N° 20 07 sep. 2026",
-            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio",
-            "referencia": "Reiterar oficio 89, de 4 de agosto del año en curso, dirigido al Ministro de las Culturas, las Artes y el Patrimonio.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279336&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=279336"
-          },
-          {
-            "date_context": "",
-            "número": "114/22/2026",
-            "sesión": "N° 20 07 sep. 2026",
-            "destino": "A la Presidenta del Consejo Nacional de Televisión",
-            "referencia": "Reiterar oficio 87, de 3 de agosto del año en curso dirigido a la Presidenta del Consejo Nacional de Televisión.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=279332&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=279332"
-          },
-          {
-            "date_context": "",
-            "número": "113/22/2026",
-            "sesión": "N° 19 31 ago. 2026",
-            "destino": "A la Ministra de Educación",
-            "referencia": "Remitir copia del acta con las exposiciones del señor Héctor Morales Romo, cultor; del señor Roberto Sáez Soto, Director Ejecutivo de la Academia Tierra y Patria, y de la señora Catherine Aillon Páez, Directora de dicha organización, relativas a la normativa vigente en materia de protección, promoción, difusión y transmisión de la cueca.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=278531&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=278531"
-          },
-          {
-            "date_context": "",
-            "número": "112/22/2026",
-            "sesión": "N° 19 31 ago. 2026",
-            "destino": "Al Ministro de las Culturas, las Artes y el Patrimonio.",
-            "referencia": "Remitir copia del acta con las exposiciones del señor Héctor Morales Romo, cultor; del señor Roberto Sáez Soto, Director Ejecutivo de la Academia Tierra y Patria, y de la señora Catherine Aillon Páez, Directora de dicha organización, relativas a la normativa vigente en materia de protección, promoción, difusión y transmisión de la cueca.",
-            "documento": "ver",
-            "respuestas": "ver",
-            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=278530&prmTipo=DOCUMENTOOFICIOCOMISION",
-            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=278530"
+            "documento_url": "https://www.camara.cl/verDoc.aspx?prmID=280022&prmTipo=DOCUMENTOOFICIOCOMISION",
+            "respuestas_url": "https://www.camara.cl/respuestas_oficio.aspx?prmID=4905&prmIdOficio=280022"
           }
         ],
         "page_period": {
@@ -7306,6 +7453,21 @@
         "status": "retrieved",
         "url": "https://www.camara.cl/legislacion/comisiones/sesiones.aspx?prmID=4907",
         "rows": [
+          {
+            "date_context": "",
+            "n": "27",
+            "día": "21 sep. 2026",
+            "inicio": "14:50",
+            "término": "16:50",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
           {
             "date_context": "",
             "n": "26",
@@ -7347,6 +7509,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4907",
         "rows": [
           {
+            "date_context": "lunes 21 septiembre 2026",
+            "horario": "14:50",
+            "sala": "Sala Juan Lobos Krause tercer nivel",
+            "citación": "analizar, junto a las autoridades competentes invitadas, las conclusiones y propuestas contenidas en el Informe de la Mesa por la Niñez (elaborado por la Comisión de la Familia), e identificar las materias vinculadas al ámbito de su competencia, así como eventuales iniciativas legislativas que puedan impulsarse a partir de dicho trabajo. Para tales efectos se encuentran invitados: - Defensor de la Niñez, señor Anuar Quesille Vera. - Director (S) del Servicio Nacional para la Prevención y Rehabilitación del Consumo de Drogas y Alcohol (SENDA), señor Eduardo Barros Ronda."
+          },
+          {
             "date_context": "lunes 7 septiembre 2026",
             "horario": "14:50",
             "sala": "Sala Juan Lobos Krause tercer nivel",
@@ -7366,9 +7534,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 1,
-          "matching_tables": 1,
-          "nested_tables_skipped": 1,
+          "top_level_tables_examined": 2,
+          "matching_tables": 2,
+          "nested_tables_skipped": 2,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
@@ -9490,6 +9658,21 @@
           {
             "date_context": "",
             "n": "7",
+            "día": "22 sep. 2026",
+            "inicio": "11:00",
+            "término": "12:30",
+            "estado": "Citada",
+            "citación": "",
+            "cuenta": "",
+            "asistencia": "",
+            "acta": "",
+            "votación": "",
+            "resultado": "",
+            "video": ""
+          },
+          {
+            "date_context": "",
+            "n": "7",
             "día": "08 sep. 2026",
             "inicio": "11:00",
             "término": "12:30",
@@ -9543,6 +9726,12 @@
         "url": "https://www.camara.cl/legislacion/comisiones/citaciones.aspx?prmID=4906",
         "rows": [
           {
+            "date_context": "martes 22 septiembre 2026",
+            "horario": "11:00",
+            "sala": "Sala Pedro Pablo Álvarez-Salamanca tercer nivel",
+            "citación": "Con el objeto de tratar materias propias de su competencia."
+          },
+          {
             "date_context": "martes 8 septiembre 2026",
             "horario": "11:00 Suspendida",
             "sala": "Sala Pedro Pablo Álvarez-Salamanca tercer nivel",
@@ -9568,9 +9757,9 @@
           ]
         },
         "diagnostics": {
-          "top_level_tables_examined": 2,
-          "matching_tables": 2,
-          "nested_tables_skipped": 2,
+          "top_level_tables_examined": 3,
+          "matching_tables": 3,
+          "nested_tables_skipped": 3,
           "wide_rows_skipped": 0,
           "duplicate_rows_skipped": 0
         }
