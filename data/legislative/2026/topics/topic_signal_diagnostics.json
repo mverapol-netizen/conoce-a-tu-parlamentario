@@ -1,16 +1,16 @@
 {
-  "projects": 517,
-  "projects_with_suffix_destination_proxy": 517,
+  "projects": 541,
+  "projects_with_suffix_destination_proxy": 541,
   "projects_with_explicit_origin_event": 0,
-  "projects_with_origin_commission_proxy": 517,
-  "projects_with_any_commission": 517,
+  "projects_with_origin_commission_proxy": 541,
+  "projects_with_any_commission": 541,
   "projects_with_public_matter": 0,
   "projects_with_xml_subject": 0,
-  "commission_relations": 575,
+  "commission_relations": 601,
   "origin_proxy_mismatches": 0,
   "unknown_destination_codes": {},
-  "high_signal": 351,
-  "medium_signal": 166,
+  "high_signal": 366,
+  "medium_signal": 175,
   "low_signal": 0,
   "mismatch_examples": []
 }
