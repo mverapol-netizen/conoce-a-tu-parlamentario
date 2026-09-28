@@ -1,6 +1,6 @@
 {
   "schema_version": "commissions-web-v0.4",
-  "generated_at": "2026-09-21T08:33:41.653038-03:00",
+  "generated_at": "2026-09-28T08:36:10.357449-03:00",
   "timezone": "America/Santiago",
   "source": {
     "name": "Cámara de Diputadas y Diputados de Chile · Directorio institucional de comisiones permanentes",
@@ -761,11 +761,6 @@
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1165"
         },
         {
-          "id": "1021",
-          "name": "Sr. Andrés Celis Montt",
-          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1021"
-        },
-        {
           "id": "1224",
           "name": "Sr. Cristian Mella Andaur",
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1224"
@@ -779,6 +774,11 @@
           "id": "1142",
           "name": "Sr. Daniel Manouchehri Lobos",
           "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1142"
+        },
+        {
+          "id": "1028",
+          "name": "Sr. Eduardo Durán Salinas",
+          "profile_url": "https://www.camara.cl/diputados/detalle/mociones.aspx?prmID=1028"
         },
         {
           "id": "1264",
