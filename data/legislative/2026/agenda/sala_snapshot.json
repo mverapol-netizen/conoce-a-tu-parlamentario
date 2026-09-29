@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-09-28T08:23:40.991559-03:00",
+  "generated_at": "2026-09-29T08:23:32.339595-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-09-28",
+  "local_date": "2026-09-29",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -22,23 +22,10 @@
   "counts": {
     "sessions_returned_legislature": 76,
     "today": 1,
-    "upcoming_shown": 2,
+    "upcoming_shown": 1,
     "recent_shown": 4
   },
   "today": [
-    {
-      "session_id": "4828",
-      "number": "71",
-      "start": "2026-09-28T15:00:00-03:00",
-      "end": "2026-09-28T18:00:00-03:00",
-      "local_date": "2026-09-28",
-      "state": "Citada",
-      "state_code": "0",
-      "type": "Ordinaria",
-      "type_code": "1"
-    }
-  ],
-  "upcoming": [
     {
       "session_id": "4832",
       "number": "72",
@@ -49,7 +36,9 @@
       "state_code": "0",
       "type": "Ordinaria",
       "type_code": "1"
-    },
+    }
+  ],
+  "upcoming": [
     {
       "session_id": "4833",
       "number": "73",
@@ -63,17 +52,6 @@
     }
   ],
   "recent": [
-    {
-      "session_id": "4824",
-      "number": "67",
-      "start": "2026-09-21T19:37:35-03:00",
-      "end": "2026-09-21T19:31:05-03:00",
-      "local_date": "2026-09-21",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
     {
       "session_id": "4825",
       "number": "68",
@@ -106,17 +84,28 @@
       "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
+    },
+    {
+      "session_id": "4828",
+      "number": "71",
+      "start": "2026-09-28T15:05:51-03:00",
+      "end": "2026-09-28T17:20:22-03:00",
+      "local_date": "2026-09-28",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Ordinaria",
+      "type_code": "1"
     }
   ],
   "window": [
     {
       "session_id": "4828",
       "number": "71",
-      "start": "2026-09-28T15:00:00-03:00",
-      "end": "2026-09-28T18:00:00-03:00",
+      "start": "2026-09-28T15:05:51-03:00",
+      "end": "2026-09-28T17:20:22-03:00",
       "local_date": "2026-09-28",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
     },
