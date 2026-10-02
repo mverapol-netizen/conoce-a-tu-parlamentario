@@ -1,8 +1,8 @@
 {
   "projects": 541,
   "corpus_rows": 541,
-  "refreshed_this_run": 24,
-  "reused_this_run": 516,
+  "refreshed_this_run": 0,
+  "reused_this_run": 540,
   "no_candidate_documents": [],
   "quality": {
     "utilizable": 10,
@@ -29,7 +29,7 @@
   "errors": [
     {
       "boletin": "18459-05",
-      "error": "Command '['antiword', '/tmp/tmpn5k94dfp.doc']' returned non-zero exit status 1."
+      "error": "403 Client Error: Forbidden for url: https://www.camara.cl/verDoc.aspx?prmID=18692&prmTIPO=INICIATIVA"
     }
   ]
 }
