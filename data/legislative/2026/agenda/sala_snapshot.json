@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-10-01T14:21:12.145535-03:00",
+  "generated_at": "2026-10-02T13:36:40.312600-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-10-01",
+  "local_date": "2026-10-02",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -119,17 +119,6 @@
     }
   ],
   "window": [
-    {
-      "session_id": "4832",
-      "number": "72",
-      "start": "2026-09-29T10:02:22-03:00",
-      "end": "2026-09-29T13:48:20-03:00",
-      "local_date": "2026-09-29",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
     {
       "session_id": "4833",
       "number": "73",
