@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-10-14T12:48:17.256242-03:00",
+  "generated_at": "2026-10-15T12:34:21.480655-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-10-14",
+  "local_date": "2026-10-15",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -20,9 +20,9 @@
     "type_code": "3"
   },
   "counts": {
-    "sessions_returned_legislature": 82,
+    "sessions_returned_legislature": 83,
     "today": 0,
-    "upcoming_shown": 2,
+    "upcoming_shown": 3,
     "recent_shown": 4
   },
   "today": [],
@@ -41,9 +41,20 @@
     {
       "session_id": "4839",
       "number": "79",
-      "start": "2026-10-20T10:00:40-03:00",
-      "end": "2026-10-20T14:00:40-03:00",
+      "start": "2026-10-20T10:00:00-03:00",
+      "end": "2026-10-20T14:00:00-03:00",
       "local_date": "2026-10-20",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4840",
+      "number": "80",
+      "start": "2026-10-21T10:00:00-03:00",
+      "end": "2026-10-21T14:00:00-03:00",
+      "local_date": "2026-10-21",
       "state": "Citada",
       "state_code": "0",
       "type": "Ordinaria",
@@ -111,9 +122,20 @@
     {
       "session_id": "4839",
       "number": "79",
-      "start": "2026-10-20T10:00:40-03:00",
-      "end": "2026-10-20T14:00:40-03:00",
+      "start": "2026-10-20T10:00:00-03:00",
+      "end": "2026-10-20T14:00:00-03:00",
       "local_date": "2026-10-20",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4840",
+      "number": "80",
+      "start": "2026-10-21T10:00:00-03:00",
+      "end": "2026-10-21T14:00:00-03:00",
+      "local_date": "2026-10-21",
       "state": "Citada",
       "state_code": "0",
       "type": "Ordinaria",
