@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-10-26T14:18:45.139105-03:00",
+  "generated_at": "2026-10-27T13:32:27.939519-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-10-26",
+  "local_date": "2026-10-27",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -20,29 +20,16 @@
     "type_code": "3"
   },
   "counts": {
-    "sessions_returned_legislature": 87,
-    "today": 1,
-    "upcoming_shown": 3,
+    "sessions_returned_legislature": 88,
+    "today": 2,
+    "upcoming_shown": 2,
     "recent_shown": 4
   },
   "today": [
     {
-      "session_id": "4841",
-      "number": "81",
-      "start": "2026-10-26T17:00:00-03:00",
-      "end": "2026-10-26T19:00:00-03:00",
-      "local_date": "2026-10-26",
-      "state": "Citada",
-      "state_code": "0",
-      "type": "Ordinaria",
-      "type_code": "1"
-    }
-  ],
-  "upcoming": [
-    {
       "session_id": "4842",
       "number": "82",
-      "start": "2026-10-27T10:00:00-03:00",
+      "start": "2026-10-27T10:00:15-03:00",
       "end": "2026-10-27T14:00:00-03:00",
       "local_date": "2026-10-27",
       "state": "Citada",
@@ -60,7 +47,9 @@
       "state_code": "0",
       "type": "Especial",
       "type_code": "2"
-    },
+    }
+  ],
+  "upcoming": [
     {
       "session_id": "4844",
       "number": "84",
@@ -71,20 +60,20 @@
       "state_code": "0",
       "type": "Ordinaria",
       "type_code": "1"
+    },
+    {
+      "session_id": "4845",
+      "number": "85",
+      "start": "2026-10-28T15:00:00-03:00",
+      "end": "2026-10-28T17:00:00-03:00",
+      "local_date": "2026-10-28",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Especial",
+      "type_code": "2"
     }
   ],
   "recent": [
-    {
-      "session_id": "4837",
-      "number": "77",
-      "start": "2026-10-07T10:05:36-03:00",
-      "end": "2026-10-07T14:16:10-03:00",
-      "local_date": "2026-10-07",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
     {
       "session_id": "4838",
       "number": "78",
@@ -117,6 +106,17 @@
       "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
+    },
+    {
+      "session_id": "4841",
+      "number": "81",
+      "start": "2026-10-26T17:00:00-03:00",
+      "end": "2026-10-26T19:21:11-03:00",
+      "local_date": "2026-10-26",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Ordinaria",
+      "type_code": "1"
     }
   ],
   "window": [
@@ -124,17 +124,17 @@
       "session_id": "4841",
       "number": "81",
       "start": "2026-10-26T17:00:00-03:00",
-      "end": "2026-10-26T19:00:00-03:00",
+      "end": "2026-10-26T19:21:11-03:00",
       "local_date": "2026-10-26",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
     },
     {
       "session_id": "4842",
       "number": "82",
-      "start": "2026-10-27T10:00:00-03:00",
+      "start": "2026-10-27T10:00:15-03:00",
       "end": "2026-10-27T14:00:00-03:00",
       "local_date": "2026-10-27",
       "state": "Citada",
@@ -163,6 +163,17 @@
       "state_code": "0",
       "type": "Ordinaria",
       "type_code": "1"
+    },
+    {
+      "session_id": "4845",
+      "number": "85",
+      "start": "2026-10-28T15:00:00-03:00",
+      "end": "2026-10-28T17:00:00-03:00",
+      "local_date": "2026-10-28",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Especial",
+      "type_code": "2"
     }
   ],
   "scope_note": "Este snapshot describe sesiones de Sala registradas por el servicio oficial para la legislatura actual. No equivale a la tabla del Orden del Día ni afirma qué asuntos serán efectivamente votados."
