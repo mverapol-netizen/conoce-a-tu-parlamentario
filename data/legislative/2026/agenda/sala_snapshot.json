@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-10-27T13:32:27.939519-03:00",
+  "generated_at": "2026-10-28T14:08:38.227612-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-10-27",
+  "local_date": "2026-10-28",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -20,44 +20,20 @@
     "type_code": "3"
   },
   "counts": {
-    "sessions_returned_legislature": 88,
+    "sessions_returned_legislature": 89,
     "today": 2,
-    "upcoming_shown": 2,
+    "upcoming_shown": 1,
     "recent_shown": 4
   },
   "today": [
     {
-      "session_id": "4842",
-      "number": "82",
-      "start": "2026-10-27T10:00:15-03:00",
-      "end": "2026-10-27T14:00:00-03:00",
-      "local_date": "2026-10-27",
-      "state": "Citada",
-      "state_code": "0",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
-    {
-      "session_id": "4843",
-      "number": "83",
-      "start": "2026-10-27T19:05:00-03:00",
-      "end": "2026-10-27T21:00:00-03:00",
-      "local_date": "2026-10-27",
-      "state": "Citada",
-      "state_code": "0",
-      "type": "Especial",
-      "type_code": "2"
-    }
-  ],
-  "upcoming": [
-    {
       "session_id": "4844",
       "number": "84",
-      "start": "2026-10-28T10:00:00-03:00",
-      "end": "2026-10-28T14:00:00-03:00",
+      "start": "2026-10-28T10:04:53-03:00",
+      "end": "2026-10-28T14:05:56-03:00",
       "local_date": "2026-10-28",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
     },
@@ -73,29 +49,20 @@
       "type_code": "2"
     }
   ],
+  "upcoming": [
+    {
+      "session_id": "4846",
+      "number": "86",
+      "start": "2026-11-02T17:00:00-03:00",
+      "end": "2026-11-02T19:00:00-03:00",
+      "local_date": "2026-11-02",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    }
+  ],
   "recent": [
-    {
-      "session_id": "4838",
-      "number": "78",
-      "start": "2026-10-19T17:01:12-03:00",
-      "end": "2026-10-19T19:11:13-03:00",
-      "local_date": "2026-10-19",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
-    {
-      "session_id": "4839",
-      "number": "79",
-      "start": "2026-10-20T10:03:17-03:00",
-      "end": "2026-10-20T14:38:20-03:00",
-      "local_date": "2026-10-20",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
     {
       "session_id": "4840",
       "number": "80",
@@ -117,6 +84,28 @@
       "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
+    },
+    {
+      "session_id": "4842",
+      "number": "82",
+      "start": "2026-10-27T10:00:00-03:00",
+      "end": "2026-10-27T19:25:21-03:00",
+      "local_date": "2026-10-27",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4843",
+      "number": "83",
+      "start": "2026-10-27T19:42:39-03:00",
+      "end": "2026-10-27T21:48:40-03:00",
+      "local_date": "2026-10-27",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Especial",
+      "type_code": "2"
     }
   ],
   "window": [
@@ -134,33 +123,33 @@
     {
       "session_id": "4842",
       "number": "82",
-      "start": "2026-10-27T10:00:15-03:00",
-      "end": "2026-10-27T14:00:00-03:00",
+      "start": "2026-10-27T10:00:00-03:00",
+      "end": "2026-10-27T19:25:21-03:00",
       "local_date": "2026-10-27",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
     },
     {
       "session_id": "4843",
       "number": "83",
-      "start": "2026-10-27T19:05:00-03:00",
-      "end": "2026-10-27T21:00:00-03:00",
+      "start": "2026-10-27T19:42:39-03:00",
+      "end": "2026-10-27T21:48:40-03:00",
       "local_date": "2026-10-27",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Especial",
       "type_code": "2"
     },
     {
       "session_id": "4844",
       "number": "84",
-      "start": "2026-10-28T10:00:00-03:00",
-      "end": "2026-10-28T14:00:00-03:00",
+      "start": "2026-10-28T10:04:53-03:00",
+      "end": "2026-10-28T14:05:56-03:00",
       "local_date": "2026-10-28",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
     },
@@ -174,6 +163,17 @@
       "state_code": "0",
       "type": "Especial",
       "type_code": "2"
+    },
+    {
+      "session_id": "4846",
+      "number": "86",
+      "start": "2026-11-02T17:00:00-03:00",
+      "end": "2026-11-02T19:00:00-03:00",
+      "local_date": "2026-11-02",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
     }
   ],
   "scope_note": "Este snapshot describe sesiones de Sala registradas por el servicio oficial para la legislatura actual. No equivale a la tabla del Orden del Día ni afirma qué asuntos serán efectivamente votados."
