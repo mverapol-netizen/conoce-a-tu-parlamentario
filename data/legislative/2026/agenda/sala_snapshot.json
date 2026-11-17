@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-11-16T17:57:59.717013-03:00",
+  "generated_at": "2026-11-17T16:47:25.709271-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-11-16",
+  "local_date": "2026-11-17",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -22,16 +22,16 @@
   "counts": {
     "sessions_returned_legislature": 99,
     "today": 1,
-    "upcoming_shown": 2,
+    "upcoming_shown": 1,
     "recent_shown": 4
   },
   "today": [
     {
-      "session_id": "4854",
-      "number": "94",
-      "start": "2026-11-16T15:01:42-03:00",
-      "end": "2026-11-16T16:53:14-03:00",
-      "local_date": "2026-11-16",
+      "session_id": "4855",
+      "number": "95",
+      "start": "2026-11-17T10:01:20-03:00",
+      "end": "2026-11-17T13:33:00-03:00",
+      "local_date": "2026-11-17",
       "state": "Celebrada",
       "state_code": "1",
       "type": "Ordinaria",
@@ -39,17 +39,6 @@
     }
   ],
   "upcoming": [
-    {
-      "session_id": "4855",
-      "number": "95",
-      "start": "2026-11-17T10:00:00-03:00",
-      "end": "2026-11-17T14:00:00-03:00",
-      "local_date": "2026-11-17",
-      "state": "Citada",
-      "state_code": "0",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
     {
       "session_id": "4856",
       "number": "96",
@@ -63,17 +52,6 @@
     }
   ],
   "recent": [
-    {
-      "session_id": "4850",
-      "number": "90",
-      "start": "2026-11-09T18:30:13-03:00",
-      "end": "2026-11-09T19:55:14-03:00",
-      "local_date": "2026-11-09",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Especial",
-      "type_code": "2"
-    },
     {
       "session_id": "4851",
       "number": "91",
@@ -106,6 +84,17 @@
       "state_code": "1",
       "type": "Especial",
       "type_code": "2"
+    },
+    {
+      "session_id": "4854",
+      "number": "94",
+      "start": "2026-11-16T15:01:42-03:00",
+      "end": "2026-11-16T16:53:14-03:00",
+      "local_date": "2026-11-16",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Ordinaria",
+      "type_code": "1"
     }
   ],
   "window": [
@@ -123,11 +112,11 @@
     {
       "session_id": "4855",
       "number": "95",
-      "start": "2026-11-17T10:00:00-03:00",
-      "end": "2026-11-17T14:00:00-03:00",
+      "start": "2026-11-17T10:01:20-03:00",
+      "end": "2026-11-17T13:33:00-03:00",
       "local_date": "2026-11-17",
-      "state": "Citada",
-      "state_code": "0",
+      "state": "Celebrada",
+      "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
     },
