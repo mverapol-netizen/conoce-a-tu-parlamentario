@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-11-20T16:03:50.866439-03:00",
+  "generated_at": "2026-11-23T19:35:03.258414-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-11-20",
+  "local_date": "2026-11-23",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -20,13 +20,12 @@
     "type_code": "3"
   },
   "counts": {
-    "sessions_returned_legislature": 101,
-    "today": 0,
+    "sessions_returned_legislature": 102,
+    "today": 1,
     "upcoming_shown": 2,
     "recent_shown": 4
   },
-  "today": [],
-  "upcoming": [
+  "today": [
     {
       "session_id": "4857",
       "number": "97",
@@ -37,13 +36,26 @@
       "state_code": "0",
       "type": "Ordinaria",
       "type_code": "1"
-    },
+    }
+  ],
+  "upcoming": [
     {
       "session_id": "4858",
       "number": "98",
       "start": "2026-11-24T10:00:00-03:00",
       "end": "2026-11-24T14:00:00-03:00",
       "local_date": "2026-11-24",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4859",
+      "number": "99",
+      "start": "2026-11-25T10:00:00-03:00",
+      "end": "2026-11-25T14:00:00-03:00",
+      "local_date": "2026-11-25",
       "state": "Citada",
       "state_code": "0",
       "type": "Ordinaria",
@@ -98,17 +110,6 @@
   ],
   "window": [
     {
-      "session_id": "4856",
-      "number": "96",
-      "start": "2026-11-18T10:00:00-03:00",
-      "end": "2026-11-18T14:56:26-03:00",
-      "local_date": "2026-11-18",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
-    {
       "session_id": "4857",
       "number": "97",
       "start": "2026-11-23T15:30:00-03:00",
@@ -125,6 +126,17 @@
       "start": "2026-11-24T10:00:00-03:00",
       "end": "2026-11-24T14:00:00-03:00",
       "local_date": "2026-11-24",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4859",
+      "number": "99",
+      "start": "2026-11-25T10:00:00-03:00",
+      "end": "2026-11-25T14:00:00-03:00",
+      "local_date": "2026-11-25",
       "state": "Citada",
       "state_code": "0",
       "type": "Ordinaria",
