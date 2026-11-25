@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-11-24T18:07:22.572626-03:00",
+  "generated_at": "2026-11-25T17:26:56.828002-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-11-24",
+  "local_date": "2026-11-25",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -20,18 +20,18 @@
     "type_code": "3"
   },
   "counts": {
-    "sessions_returned_legislature": 102,
+    "sessions_returned_legislature": 105,
     "today": 1,
-    "upcoming_shown": 1,
+    "upcoming_shown": 3,
     "recent_shown": 4
   },
   "today": [
     {
-      "session_id": "4858",
-      "number": "98",
-      "start": "2026-11-24T10:02:28-03:00",
-      "end": "2026-11-24T13:35:00-03:00",
-      "local_date": "2026-11-24",
+      "session_id": "4859",
+      "number": "99",
+      "start": "2026-11-25T10:02:15-03:00",
+      "end": "2026-11-25T13:43:19-03:00",
+      "local_date": "2026-11-25",
       "state": "Celebrada",
       "state_code": "1",
       "type": "Ordinaria",
@@ -40,11 +40,33 @@
   ],
   "upcoming": [
     {
-      "session_id": "4859",
-      "number": "99",
-      "start": "2026-11-25T10:00:00-03:00",
-      "end": "2026-11-25T14:00:00-03:00",
-      "local_date": "2026-11-25",
+      "session_id": "4860",
+      "number": "100",
+      "start": "2026-11-30T12:00:00-03:00",
+      "end": "2026-11-30T23:55:00-03:00",
+      "local_date": "2026-11-30",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4861",
+      "number": "101",
+      "start": "2026-12-01T10:00:00-03:00",
+      "end": "2026-12-01T14:00:00-03:00",
+      "local_date": "2026-12-01",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4862",
+      "number": "102",
+      "start": "2026-12-02T10:00:00-03:00",
+      "end": "2026-12-02T14:00:00-03:00",
+      "local_date": "2026-12-02",
       "state": "Citada",
       "state_code": "0",
       "type": "Ordinaria",
@@ -52,17 +74,6 @@
     }
   ],
   "recent": [
-    {
-      "session_id": "4854",
-      "number": "94",
-      "start": "2026-11-16T15:01:42-03:00",
-      "end": "2026-11-16T16:53:14-03:00",
-      "local_date": "2026-11-16",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
     {
       "session_id": "4855",
       "number": "95",
@@ -95,6 +106,17 @@
       "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
+    },
+    {
+      "session_id": "4858",
+      "number": "98",
+      "start": "2026-11-24T10:02:28-03:00",
+      "end": "2026-11-24T13:35:00-03:00",
+      "local_date": "2026-11-24",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Ordinaria",
+      "type_code": "1"
     }
   ],
   "window": [
@@ -123,9 +145,42 @@
     {
       "session_id": "4859",
       "number": "99",
-      "start": "2026-11-25T10:00:00-03:00",
-      "end": "2026-11-25T14:00:00-03:00",
+      "start": "2026-11-25T10:02:15-03:00",
+      "end": "2026-11-25T13:43:19-03:00",
       "local_date": "2026-11-25",
+      "state": "Celebrada",
+      "state_code": "1",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4860",
+      "number": "100",
+      "start": "2026-11-30T12:00:00-03:00",
+      "end": "2026-11-30T23:55:00-03:00",
+      "local_date": "2026-11-30",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4861",
+      "number": "101",
+      "start": "2026-12-01T10:00:00-03:00",
+      "end": "2026-12-01T14:00:00-03:00",
+      "local_date": "2026-12-01",
+      "state": "Citada",
+      "state_code": "0",
+      "type": "Ordinaria",
+      "type_code": "1"
+    },
+    {
+      "session_id": "4862",
+      "number": "102",
+      "start": "2026-12-02T10:00:00-03:00",
+      "end": "2026-12-02T14:00:00-03:00",
+      "local_date": "2026-12-02",
       "state": "Citada",
       "state_code": "0",
       "type": "Ordinaria",
