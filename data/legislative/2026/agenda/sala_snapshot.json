@@ -8,9 +8,9 @@
     ],
     "url": "https://opendata.camara.cl/camaradiputados/WServices/WSSala.asmx?op=retornarSesionesXLegislatura"
   },
-  "generated_at": "2026-11-25T17:26:56.828002-03:00",
+  "generated_at": "2026-11-26T17:07:11.610644-03:00",
   "timezone": "America/Santiago",
-  "local_date": "2026-11-25",
+  "local_date": "2026-11-26",
   "legislature": {
     "id": "58",
     "number": "374",
@@ -21,23 +21,11 @@
   },
   "counts": {
     "sessions_returned_legislature": 105,
-    "today": 1,
+    "today": 0,
     "upcoming_shown": 3,
     "recent_shown": 4
   },
-  "today": [
-    {
-      "session_id": "4859",
-      "number": "99",
-      "start": "2026-11-25T10:02:15-03:00",
-      "end": "2026-11-25T13:43:19-03:00",
-      "local_date": "2026-11-25",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    }
-  ],
+  "today": [],
   "upcoming": [
     {
       "session_id": "4860",
@@ -75,17 +63,6 @@
   ],
   "recent": [
     {
-      "session_id": "4855",
-      "number": "95",
-      "start": "2026-11-17T10:01:20-03:00",
-      "end": "2026-11-17T13:33:00-03:00",
-      "local_date": "2026-11-17",
-      "state": "Celebrada",
-      "state_code": "1",
-      "type": "Ordinaria",
-      "type_code": "1"
-    },
-    {
       "session_id": "4856",
       "number": "96",
       "start": "2026-11-18T10:00:00-03:00",
@@ -117,20 +94,20 @@
       "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
-    }
-  ],
-  "window": [
+    },
     {
-      "session_id": "4857",
-      "number": "97",
-      "start": "2026-11-23T15:30:00-03:00",
-      "end": "2026-11-23T20:27:29-03:00",
-      "local_date": "2026-11-23",
+      "session_id": "4859",
+      "number": "99",
+      "start": "2026-11-25T10:02:15-03:00",
+      "end": "2026-11-25T13:43:19-03:00",
+      "local_date": "2026-11-25",
       "state": "Celebrada",
       "state_code": "1",
       "type": "Ordinaria",
       "type_code": "1"
-    },
+    }
+  ],
+  "window": [
     {
       "session_id": "4858",
       "number": "98",
