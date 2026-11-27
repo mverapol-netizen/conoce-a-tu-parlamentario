@@ -14,7 +14,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Luis Malla Valenzuela": {
     "officialName": "Luis Malla Valenzuela",
@@ -30,7 +30,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Liberal de Chile",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Stephanie Jéldrez Ortíz": {
     "officialName": "Stephanie Jéldrez Ortiz",
@@ -46,7 +46,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Álvaro Jofré Cáceres": {
     "officialName": "Álvaro Jofré Cáceres",
@@ -62,7 +62,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carlos Carvajal Gallardo": {
     "officialName": "Carlos Carvajal Gallardo",
@@ -78,7 +78,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ximena Naranjo Pinto": {
     "officialName": "Ximena Naranjo Pinto",
@@ -94,7 +94,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carlo Arqueros Pizarro": {
     "officialName": "Carlo Arqueros Pizarro",
@@ -110,7 +110,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Fabián Ossandón Briceño": {
     "officialName": "Fabián Ossandón Briceño",
@@ -126,7 +126,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jaime Araya Guerrero": {
     "officialName": "Jaime Araya Guerrero",
@@ -142,7 +142,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Marcela Hernando Pérez": {
     "officialName": "Marcela Hernando Pérez",
@@ -158,7 +158,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Radical de Chile",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Sebastián Videla Castillo": {
     "officialName": "Sebastián Videla Castillo",
@@ -174,7 +174,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristián Tapia Ramos": {
     "officialName": "Cristián Tapia Ramos",
@@ -190,7 +190,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ignacio Urcullú Clement-Lund": {
     "officialName": "Ignacio Urcullú Clèment-Lund",
@@ -206,7 +206,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jaime Mulet Martínez": {
     "officialName": "Jaime Mulet Martínez",
@@ -222,7 +222,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Federación Regionalista Verde Social",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Juan Santana Castillo": {
     "officialName": "Juan Santana Castillo",
@@ -238,7 +238,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Paula Olmos Contreras": {
     "officialName": "Paula Olmos Contreras",
@@ -254,7 +254,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Bernardo Salinas Maya": {
     "officialName": "Bernardo Salinas Maya",
@@ -270,7 +270,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carolina Tello Rojas": {
     "officialName": "Carolina Tello Rojas",
@@ -286,7 +286,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Daniel Manouchehri Lobos": {
     "officialName": "Daniel Manouchehri Lobos",
@@ -302,7 +302,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Eileen Urqueta Rojas": {
     "officialName": "Eileen Urqueta Rojas",
@@ -318,7 +318,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Erich Grohs Marín": {
     "officialName": "Erich Grohs Marín",
@@ -334,7 +334,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Marco Sulantay Olivares": {
     "officialName": "Marco Antonio Sulantay Olivares",
@@ -350,7 +350,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Nathalie Castillo Rojas": {
     "officialName": "Nathalie Castillo Rojas",
@@ -366,7 +366,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Benjamín Lorca Inzunza": {
     "officialName": "Benjamín Lorca Inzunza",
@@ -382,7 +382,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Chiara Barchiesi Chávez": {
     "officialName": "Chiara Barchiesi Chávez",
@@ -398,7 +398,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristian Mella Andaur": {
     "officialName": "Cristian Mella Andaur",
@@ -414,7 +414,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Javier Olivares Avendaño": {
     "officialName": "Javier Olivares Avendaño",
@@ -430,7 +430,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Luis Pardo Sáinz": {
     "officialName": "Luis Pardo Sáinz",
@@ -446,7 +446,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "María Francisca Bello Campos": {
     "officialName": "María Francisca Bello Campos",
@@ -462,7 +462,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Nelson Venegas Salazar": {
     "officialName": "Nelson Venegas Salazar",
@@ -478,7 +478,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Sofía González Cortés": {
     "officialName": "Sofía González Cortés",
@@ -494,7 +494,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Andrés Celis Montt": {
     "officialName": "Andrés Celis Montt",
@@ -510,7 +510,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Hotuiti Teao Drago": {
     "officialName": "Hotuiti Teao Drago",
@@ -526,7 +526,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jaime Bassa Mercado": {
     "officialName": "Jaime Bassa Mercado",
@@ -542,7 +542,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jorge Brito Hasbún": {
     "officialName": "Jorge Brito Hasbún",
@@ -558,7 +558,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Juan Marcelo Valenzuela Henríquez": {
     "officialName": "Juan Marcelo Valenzuela Henríquez",
@@ -574,7 +574,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Luis Alberto Cuello Peña y Lillo": {
     "officialName": "Luis Alberto Cuello Peña y Lillo",
@@ -590,7 +590,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Luis Fernando Sánchez Ossa": {
     "officialName": "Luis Sánchez Ossa",
@@ -606,7 +606,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Sebastián Zamora Soto": {
     "officialName": "Sebastián Zamora Soto",
@@ -622,7 +622,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Agustín Matías Romero Leiva": {
     "officialName": "Agustín Romero Leiva",
@@ -638,7 +638,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristián Contreras Radovic": {
     "officialName": "Cristian Contreras Radovic",
@@ -654,7 +654,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Enrique Bassaletti Riess": {
     "officialName": "Enrique Bassaletti Riess",
@@ -670,7 +670,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Gustavo Gatica Villarroel": {
     "officialName": "Gustavo Gatica Villarroel",
@@ -686,7 +686,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Marcos Barraza Gómez": {
     "officialName": "Marcos Barraza Gómez",
@@ -702,7 +702,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Mario Olavarría Rodríguez": {
     "officialName": "Mario Olavarría Rodríguez",
@@ -718,7 +718,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Pier Karlezi Hazleby": {
     "officialName": "Pier Karlezi Hazleby",
@@ -734,7 +734,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Tatiana Urrutia Herrera": {
     "officialName": "Tatiana Urrutia Herrera",
@@ -750,7 +750,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Boris Barrera Moreno": {
     "officialName": "Boris Barrera Moreno",
@@ -766,7 +766,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carlos Cuadrado Prats": {
     "officialName": "Carlos Cuadrado Prats",
@@ -782,7 +782,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "César Valenzuela Maass": {
     "officialName": "César Valenzuela Maass",
@@ -798,7 +798,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Guillermo Ramírez Diez": {
     "officialName": "Guillermo Ramírez Diez",
@@ -814,7 +814,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Javiera Rodríguez Pascual": {
     "officialName": "Javiera Rodríguez Pascual",
@@ -830,7 +830,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "José Carlos Meza Pereira": {
     "officialName": "José Carlos Meza Pereira",
@@ -846,7 +846,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Tamara Ramírez Ramírez": {
     "officialName": "Tamara Ramírez Ramírez",
@@ -862,7 +862,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Emilia Schneider Videla": {
     "officialName": "Emilia Schneider Videla",
@@ -878,7 +878,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Francisco Orrego Gutiérrez": {
     "officialName": "Francisco Orrego Gutiérrez",
@@ -894,7 +894,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Gonzalo Winter Etcheberry": {
     "officialName": "Gonzalo Winter Etcheberry",
@@ -910,7 +910,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Hans Marowski Cuevas": {
     "officialName": "Hans Marowski Cuevas",
@@ -926,7 +926,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Irací Hassler Jacob": {
     "officialName": "Irací Hassler Jacob",
@@ -942,7 +942,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jorge Alessandri Vergara": {
     "officialName": "Jorge Alessandri Vergara",
@@ -958,7 +958,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "José Antonio Kast Adriasola": {
     "officialName": "José Antonio Kast Adriasola",
@@ -974,7 +974,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Lorena Fries Monleón": {
     "officialName": "Lorena Fries Monleón",
@@ -990,7 +990,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Catalina Del Real Mihovilovic": {
     "officialName": "Catalina Del Real Mihovilovic",
@@ -1006,7 +1006,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Claudia Mora Vega": {
     "officialName": "Claudia Mora Vega",
@@ -1022,7 +1022,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Constanza Hube Portus": {
     "officialName": "Constanza Hube Portus",
@@ -1038,7 +1038,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Constanza Schonhaut Soto": {
     "officialName": "Constanza Schonhaut Soto",
@@ -1054,7 +1054,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristián Araya Lerdo de Tejada": {
     "officialName": "Cristián Araya Lerdo de Tejada",
@@ -1070,7 +1070,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Diego Schalper Sepúlveda": {
     "officialName": "Diego Schalper Sepúlveda",
@@ -1086,7 +1086,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Álvaro Carter Fernández": {
     "officialName": "Álvaro Carter Fernández",
@@ -1102,7 +1102,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ana María Gazmuri Vieira": {
     "officialName": "Ana María Gazmuri Vieira",
@@ -1118,7 +1118,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Acción Humanista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Daniela Serrano Salazar": {
     "officialName": "Daniela Serrano Salazar",
@@ -1134,7 +1134,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Macarena Santelices Cañas": {
     "officialName": "Macarena Santelices Cañas",
@@ -1150,7 +1150,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Pamela Jiles Moreno": {
     "officialName": "Pamela Jiles Moreno",
@@ -1166,7 +1166,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ximena Ossandón Irarrázabal": {
     "officialName": "Ximena Ossandón Irarrázabal",
@@ -1182,7 +1182,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Zandra Parisi Fernández": {
     "officialName": "Zandra Parisi Fernández",
@@ -1198,7 +1198,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Eduardo Durán Salinas": {
     "officialName": "Eduardo Durán Salinas",
@@ -1214,7 +1214,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Felipe Ross Correa": {
     "officialName": "Felipe Ross Correa",
@@ -1230,7 +1230,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Gael Yeomans Araya": {
     "officialName": "Gael Yeomans Araya",
@@ -1246,7 +1246,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Lorena Pizarro Sierra": {
     "officialName": "Lorena Pizarro Sierra",
@@ -1262,7 +1262,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Comunista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Valentina Becerra Peña": {
     "officialName": "Valentina Becerra Peña",
@@ -1278,7 +1278,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Diego Vergara Rodríguez": {
     "officialName": "Diego Vergara Rodríguez",
@@ -1294,7 +1294,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ignacio Achurra Díaz": {
     "officialName": "Ignacio Achurra Díaz",
@@ -1310,7 +1310,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jaime Coloma Álamos": {
     "officialName": "Jaime Coloma Álamos",
@@ -1326,7 +1326,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Juan Irarrázaval Rossel": {
     "officialName": "Juan Irarrázaval Rossel",
@@ -1342,7 +1342,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Marisela Santibáñez Novoa": {
     "officialName": "Marisela Santibáñez Novoa",
@@ -1358,7 +1358,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Raúl Leiva Carvajal": {
     "officialName": "Raúl Leiva Carvajal",
@@ -1374,7 +1374,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Fernando Ugarte Tejeda": {
     "officialName": "Fernando Ugarte Tejeda",
@@ -1390,7 +1390,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Fernando Zamorano Peralta": {
     "officialName": "Fernando Zamorano Peralta",
@@ -1406,7 +1406,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Natalia Romero Talguia": {
     "officialName": "Natalia Romero Talguia",
@@ -1422,7 +1422,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Raúl Soto Mardones": {
     "officialName": "Raúl Soto Mardones",
@@ -1438,7 +1438,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Valentina Cáceres Monsalve": {
     "officialName": "Valentina Cáceres Monsálvez",
@@ -1454,7 +1454,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carolina Cucumides Calderón": {
     "officialName": "Carolina Cucumides Calderón",
@@ -1470,7 +1470,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Félix Bugueño Sotelo": {
     "officialName": "Félix Bugueño Sotelo",
@@ -1486,7 +1486,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ricardo Neumann Bertin": {
     "officialName": "Ricardo Neumann Bertín",
@@ -1502,7 +1502,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Sebastián Cristoffanini Jaraquemada": {
     "officialName": "Sebastián Cristoffanini Jaraquemada",
@@ -1518,7 +1518,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Benjamín Moreno Bascur": {
     "officialName": "Benjamín Moreno Bascur",
@@ -1534,7 +1534,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Germán Verdugo Soto": {
     "officialName": "Germán Verdugo Soto",
@@ -1550,7 +1550,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Guillermo Valdés Carmona": {
     "officialName": "Guillermo Valdés Carmona",
@@ -1566,7 +1566,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Javier Muñoz Riquelme": {
     "officialName": "Javier Muñoz Riquelme",
@@ -1582,7 +1582,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Jorge Guzmán Zepeda": {
     "officialName": "Jorge Guzmán Zepeda",
@@ -1598,7 +1598,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Evolución Política",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Priscilla Castillo Gerli": {
     "officialName": "Priscilla Castillo Gerli",
@@ -1614,7 +1614,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Roberto Celedón Fernández": {
     "officialName": "Roberto Celedón Fernández",
@@ -1630,7 +1630,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Consuelo Veloso Ávila": {
     "officialName": "Consuelo Veloso Ávila",
@@ -1646,7 +1646,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristian Menchaca Pinochet": {
     "officialName": "Cristian Menchaca Pinochet",
@@ -1662,7 +1662,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Daniel Bustos Leal": {
     "officialName": "Daniel Bustos Leal",
@@ -1678,7 +1678,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Rodrigo Ramírez Parra": {
     "officialName": "Rodrigo Ramírez Parra",
@@ -1694,7 +1694,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carlos Chandía Alarcón": {
     "officialName": "Carlos Chandía Alarcón",
@@ -1710,7 +1710,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristóbal Martínez Ramírez": {
     "officialName": "Cristóbal Martínez Ramírez",
@@ -1726,7 +1726,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Felipe Camaño Cárdenas": {
     "officialName": "Felipe Camaño Cárdenas",
@@ -1742,7 +1742,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Francisco Crisóstomo Llanos": {
     "officialName": "Francisco Crisóstomo Llanos",
@@ -1758,7 +1758,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Sara Concha Smith": {
     "officialName": "Sara Concha Smith",
@@ -1774,7 +1774,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Cristiano de Chile",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Álvaro Andrés Ortiz Vera": {
     "officialName": "Álvaro Ortiz Vera",
@@ -1790,7 +1790,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Francesca Muñoz González": {
     "officialName": "Francesca Muñoz González",
@@ -1806,7 +1806,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Cristiano de Chile",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "José Antonio Rivas Villalobos": {
     "officialName": "José Antonio Rivas Villalobos",
@@ -1822,7 +1822,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Marlene Pérez Cartes": {
     "officialName": "Marlene Pérez Cartes",
@@ -1838,7 +1838,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Patricio Briones Moller": {
     "officialName": "Patricio Briones Moller",
@@ -1854,7 +1854,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Paz Charpentier Rajcevich": {
     "officialName": "Paz Charpentier Rajcevich",
@@ -1870,7 +1870,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Roberto Arroyo Muñoz": {
     "officialName": "Roberto Arroyo Muñoz",
@@ -1886,7 +1886,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Sergio Bobadilla Muñoz": {
     "officialName": "Sergio Bobadilla Muñoz",
@@ -1902,7 +1902,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristóbal Urruticoechea Ríos": {
     "officialName": "Cristóbal Urruticoechea Ríos",
@@ -1918,7 +1918,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Flor Weisse Novoa": {
     "officialName": "Flor Weisse Novoa",
@@ -1934,7 +1934,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Joanna Pérez Olea": {
     "officialName": "Joanna Pérez Olea",
@@ -1950,7 +1950,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Demócratas Chile",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Lilian Betancurt Delgado": {
     "officialName": "Lilian Betancurt Delgado",
@@ -1966,7 +1966,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Patricio Pinilla Valencia": {
     "officialName": "Patricio Pinilla Valencia",
@@ -1982,7 +1982,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Andrea Parra Sauterel": {
     "officialName": "Andrea Parra Sauterel",
@@ -1998,7 +1998,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Por la Democracia",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Eduardo Cretton Rebolledo": {
     "officialName": "Eduardo Cretton Rebolledo",
@@ -2014,7 +2014,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Gloria Naveillan Arriagada": {
     "officialName": "Gloria Naveillan Arriagada",
@@ -2030,7 +2030,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Juan Beltrán Silva": {
     "officialName": "Juan Carlos Beltrán Silva",
@@ -2046,7 +2046,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Cristian Neira Martínez": {
     "officialName": "Cristian Neira Martínez",
@@ -2062,7 +2062,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Ericka Ñanco Vásquez": {
     "officialName": "Coca Ericka Ñanco Vásquez",
@@ -2078,7 +2078,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Flor Contreras Vivallo": {
     "officialName": "Flor Contreras Vivallo",
@@ -2094,7 +2094,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "José Montalva Feuerhake": {
     "officialName": "José Montalva Feuerhake",
@@ -2110,7 +2110,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Stephan Schubert Rubio": {
     "officialName": "Stephan Schubert Rubio",
@@ -2126,7 +2126,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Tomás Kast Sommerhoff": {
     "officialName": "Tomás Kast Sommerhoff",
@@ -2142,7 +2142,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Evolución Política",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Daniel Valenzuela Salazar": {
     "officialName": "Daniel Valenzuela Salazar",
@@ -2158,7 +2158,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Leandro Kunstmann Collado": {
     "officialName": "Leandro Kunstmann Collado",
@@ -2174,7 +2174,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Marcos Ilabaca Cerda": {
     "officialName": "Marcos Ilabaca Cerda",
@@ -2190,7 +2190,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Matías Fernández Hartwig": {
     "officialName": "Matías Fernández Hartwig",
@@ -2206,7 +2206,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Omar Sabat Guzmán": {
     "officialName": "Omar Sabat Guzmán",
@@ -2222,7 +2222,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "René Manuel García García": {
     "officialName": "René Manuel García García",
@@ -2238,7 +2238,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Daniel Lilayu Vivanco": {
     "officialName": "Daniel Lilayu Vivanco",
@@ -2254,7 +2254,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Emilia Nuyado Ancapichún": {
     "officialName": "Emilia Nuyado Ancapichun",
@@ -2270,7 +2270,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Héctor Barría Angulo": {
     "officialName": "Héctor Barría Angulo",
@@ -2286,7 +2286,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Demócrata Cristiano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Paulina Muñoz Minte": {
     "officialName": "Paulina Muñoz Minte",
@@ -2302,7 +2302,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido Nacional Libertario",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Alejandro Bernales Maldonado": {
     "officialName": "Alejandro Bernales Maldonado",
@@ -2318,7 +2318,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Liberal de Chile",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Alex Nahuelquín Nahuelquín": {
     "officialName": "Alex Nahuelquin Nahuelquin",
@@ -2334,7 +2334,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Partido de la Gente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Claudia Reyes Larenas": {
     "officialName": "Claudia Reyes Larenas",
@@ -2350,7 +2350,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Héctor Ulloa Aguilera": {
     "officialName": "Héctor Ulloa Aguilera",
@@ -2366,7 +2366,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Mauro González Villaroel": {
     "officialName": "Mauro González Villarroel",
@@ -2382,7 +2382,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Renovación Nacional",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Alejandra Valdebenito Torres": {
     "officialName": "Alejandra Valdebenito Torres",
@@ -2398,7 +2398,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Unión Demócrata Independiente",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Andrea Jacqueline Macías Palma": {
     "officialName": "Andrea Macías Palma",
@@ -2414,7 +2414,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Partido Socialista",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "René Alinco Bustos": {
     "officialName": "René Alinco Bustos",
@@ -2430,7 +2430,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Alejandro Riquelme Ducci": {
     "officialName": "Alejandro Riquelme Ducci",
@@ -2446,7 +2446,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oficialismo",
     "affiliationLabel": "Partido Republicano",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Carlos Bianchi Chelech": {
     "officialName": "Carlos Bianchi Chelech",
@@ -2462,7 +2462,7 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "no_alineado",
     "affiliationLabel": "Independiente en Bancada por confirmar",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   },
   "Javiera Morales Alvarado": {
     "officialName": "Javiera Morales Alvarado",
@@ -2478,6 +2478,6 @@ window.PROFILES = {
     "caucus": "Bancada por confirmar",
     "alignment": "oposicion",
     "affiliationLabel": "Frente Amplio",
-    "politicalUpdated": "2026-11-20"
+    "politicalUpdated": "2026-11-27"
   }
 };
